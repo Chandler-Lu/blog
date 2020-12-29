@@ -292,7 +292,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-04-30 18:02:56" itemprop="dateModified" datetime="2020-04-30T18:02:56+08:00">2020-04-30</time>
+        <time title="修改时间：2020-12-29 22:13:44" itemprop="dateModified" datetime="2020-12-29T22:13:44+08:00">2020-12-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -317,39 +317,14 @@
           <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本期来说一说日记软件。</p>
 <p>真正意义上的日记软件，我在这里只推荐一个，所以本期主要并不是来推荐软件，而是想说说我对这种相对比较<strong>小众</strong>和<strong>专有功能</strong>的软件的看法。</p>
 <h2 id="日记软件需要什么"><a href="#日记软件需要什么" class="headerlink" title="日记软件需要什么"></a>日记软件需要什么</h2><h3 id="通用格式导入导出"><a href="#通用格式导入导出" class="headerlink" title="通用格式导入导出"></a>通用格式导入导出</h3><p>什么是通用格式呢？可以简单理解为这个格式中所包含的内容可以被主流软件读取，里面所包含的内容可以被人类理解。</p>
-<p>要是这样还觉得不好理解，那么举个例子。</p>
-<p>一个日记软件导出的格式如下：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 个人敏感信息已删除</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;entries&quot;</span>: [</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="attr">&quot;text&quot;</span>: <span class="string">&quot;测试内容&quot;</span>,</span><br><span class="line">      <span class="attr">&quot;location&quot;</span>: &#123;</span><br><span class="line">        <span class="attr">&quot;region&quot;</span>: &#123;</span><br><span class="line">          <span class="attr">&quot;center&quot;</span>: &#123;</span><br><span class="line">            <span class="attr">&quot;longitude&quot;</span>: <span class="number">0</span>,</span><br><span class="line">            <span class="attr">&quot;latitude&quot;</span>: <span class="number">0</span></span><br><span class="line">          &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attr">&quot;country&quot;</span>: <span class="string">&quot;中国&quot;</span></span><br><span class="line">      &#125;,</span><br><span class="line">      <span class="attr">&quot;timeZone&quot;</span>: <span class="string">&quot;Asia Shanghai&quot;</span>,</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>这是一个 json 格式，从结构中就可以看出，我在什么地方，发送了什么内容。这样的文本可以被几乎任何一个文本编辑器打开，你也可以自己编写程序，将其转换为你所需要的版式。</p>
-<p>但是，如果一个日记软件不能导出通用格式，比如这样：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">6edf6cff73c4a597a08ba801f414fe0b3881a4ef22a5b31acc1c9f83e19ebecd</span><br></pre></td></tr></table></figure>
-<p>这段文字就是上面内容的经过加密后的文本，可你能看出来我写的是什么内容吗？答案当然是否定的。</p>
-<p>大多数软件通常很难长久的更新下去，随着新系统的发布，技术的更新，又或者是软件开发者的自身原因，总会有新软件的兴起，旧软件的衰败。一旦一个软件停止维护，随着系统更新、手机升级，将产生越来越多的 Bug；甚至因为软件使用的某种开发方案不再被新系统支持，将直接导致软件无法在新系统上工作。</p>
-<p>如果您是一个真正的日记爱好者，那您一定想在未来十几年，甚至几十年之后，看到我那时候都在做什么，想什么。但是，当您在新系统上安装上那个已经数年未更新的软件之后，发现软件已经无法工作，仅有旧手机上还保留着原先的日记。您想把数据导出来存档，却发现软件并不支持导出，或者导出的数据都是加密后的，根本无法被读取和阅读，那就只能让这些日记永远尘封在旧手机上了。</p>
-<p>如果这款已经停止更新的软件可以以通用格式导出，而您准备用的新日记软件又支持通用格式导入的话，那么您的日记迁移便可以做到无缝衔接，或者仅需要稍作修改。</p>
-<p>上面说的情况其实不是个案，生活中数量可观的软件都不提供导出功能，甚至一部分老式手机的通讯录、短信也无法导出，所带来的不方便，相信大家也是体会过的。这也更凸显了笔记（日记）类软件，以 <strong>通用格式导入导出</strong> 的重要性。</p>
-<h3 id="友好的记录功能"><a href="#友好的记录功能" class="headerlink" title="友好的记录功能"></a>友好的记录功能</h3><p>我认为一个日记软件应当可以如下元素：</p>
-<ul>
-<li>主体：文字</li>
-<li>媒体：图片、语音、视频</li>
-<li>环境：时间、地点、天气</li>
-</ul>
-<p>当然，如果您还把日记当成游记，或者是手账本用的话，软件还应当支持更强大的图文混排，如 markdown，或者是类似 onenote 的无限扩展画布。很多日记软件只能记录几句话和日期，那这样的软件和备忘录又有什么区别呢？</p>
-<h3 id="那年今日"><a href="#那年今日" class="headerlink" title="那年今日"></a>那年今日</h3><p>几年下来，我记录了有数千条日记，但是真的想翻一翻日记，要从头刷到尾也是很困难的，所以 “那年今日” 是我觉得一个相对比较重要的功能。几乎每一天，我都可以看到去年的今天我在做什么，前年的今天我在做什么…… 时光流转，物是人非，“那年今日”能让人有一种穿越时空的感觉，也能带你找回当年的记忆。</p>
-<p>前段时间，我用 <a target="_blank" rel="noopener" href="https://github.com/wwwpf/QzoneExporter">QzoneExporter</a> 导出了 QQ 空间所有说说，并导入了我接下来将会推荐的软件 Day One。我只要打开 Day One，就可以看到几年前的今天，我发了什么动态，想来还是别有一番滋味的。</p>
-<h2 id="真的需要日记软件？"><a href="#真的需要日记软件？" class="headerlink" title="真的需要日记软件？"></a>真的需要日记软件？</h2><p>上面所说的一些功能仅仅是我个人的看法，如果你对这些需求并不感冒，那么就需要考量一下自己是否真的需要一个专业的日记软件了。</p>
-<p>回归日记的本源，无非是时间地点人物事件，比如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">今天妈妈开着车带我去会展中心买年货。我看见会场外面彩旗飘扬。进了会场，我看见会场里人山人海的，热闹极了！我们买了腊肉、香肠、旺旺大礼包。</span><br><span class="line">回家的时候，我还帮妈妈提了不少东西哦！我明年还想去，好快乐哟！</span><br></pre></td></tr></table></figure>
-<p>【手动狗头】你们看，完成一篇日记需要一个专业软件吗？答案是否定的。我也曾经陷入这样的误区，觉得什么需要都要搞一个对应的软件来做，结果增加了学习和经济成本，却没有带来对应的效率提升，希望大家可以不要陷入这样的误区。</p>
-<p>某种程度上来说，你手上任何一个可以写文字和图片的软件都可以完成记日记的需求，小到记事本，大到Word，等等。只是有些功能可能需要手动实现，有些功能用起来没有那么顺手罢了。但是比起多使用一个软件，多增加一份成本，这个问题并非不能克服。</p>
-<h2 id="软件推荐"><a href="#软件推荐" class="headerlink" title="软件推荐"></a>软件推荐</h2><p>当然了，说了这么多，还是回到主题，日记软件推荐，本次想推荐的软件叫做<a target="_blank" rel="noopener" href="https://dayoneapp.com/">Day One</a>，是迄今为止我觉得做的最专业的日记软件，没有之一。</p>
-<h3 id="Day-One"><a href="#Day-One" class="headerlink" title="Day One"></a>Day One</h3><h4 id="支持平台"><a href="#支持平台" class="headerlink" title="支持平台"></a>支持平台</h4><p>iOS，iPadOS，macOS，watchOS</p>
-<p>未完待续</p>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
-<li>总目录：<a href="https://www.yeslu.cn/archives/2ae541fb.html">https://www.yeslu.cn/archives/2ae541fb.html</a></li>
-</ol>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/archives/9b841902.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -406,7 +381,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-04-30 16:49:01" itemprop="dateModified" datetime="2020-04-30T16:49:01+08:00">2020-04-30</time>
+        <time title="修改时间：2020-12-29 22:13:21" itemprop="dateModified" datetime="2020-12-29T22:13:21+08:00">2020-12-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -431,58 +406,14 @@
           <h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>鉴于 App Store 内软件质量良莠不齐，很多软件过度关注新颖、美观和价格，却做不到此类软件最应该做到的功能，这样的软件并不具有过高的实用性，如某日记软件每天只能记一篇日记，看似高端小清新，实则实用性全无。</p>
 <p>软件之所以为软件，首先是工具，其次才是艺术品，不具有良好的稳定性和可扩展性，再漂亮的软件也终究只是花瓶而已。</p>
 <p>综上，本专题将对本人使用过的软件进行主观性评测，评测仅代表个人意见，<strong>无任何软件厂商对本人提供任何形式的赞助</strong>。</p>
-<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>因为学业原因，我打算用一年半的时间写完这个系列，目前计划的内容如下：</p>
-<ul>
-<li>日记</li>
-<li>笔记</li>
-<li>阅读（器）</li>
-<li>存储</li>
-<li>效率</li>
-</ul>
-<p>每款推荐软件将包含如下信息：</p>
-<ul>
-<li>平台</li>
-<li>价格</li>
-<li>软件版本</li>
-<li>这类软件应当做到哪些</li>
-<li>软件的优点、劣势</li>
-<li>我是怎么用这个软件的</li>
-<li>如何和其他软件联动的</li>
-</ul>
-<p>软件抛开使用途径来谈好坏没有意义，因此我会从数据创造到数据录入这一完整链条来说明软件使用。</p>
-<p>如日记篇，我将会提到我用“微信”进行语音转换构建日记的文本，用“NOMO”拍摄“每日一记”的照片构建日记的图片；以及利用 “IFTTT”，从“instagram”保存我发布照片，从“YouTube”保存我喜欢的视频等等。</p>
-<p>本系列主要针对 iOS、iPadOS、macOS，未来也可能会提到 watchOS、Windows 等其他平台的效率软件。</p>
-<h2 id="正版声明"><a href="#正版声明" class="headerlink" title="正版声明"></a>正版声明</h2><p>本人不使用任何<strong>定价针对个人（如 AutoCAD 除外）销售</strong>的盗版软件，所有推荐软件均为自购正版，并在 TOS (Terms of Service) 框架内使用。</p>
-<h2 id="我的设备"><a href="#我的设备" class="headerlink" title="我的设备"></a>我的设备</h2><ul>
-<li>MacBook Air (Early 2015, 256G)</li>
-<li>iPhone 8 (256G)</li>
-<li>iPad mini 5 (64G) + Apple Pencil</li>
-<li>鼠标：Logitech M590</li>
-<li>键盘：ANNE PRO 2</li>
-</ul>
-<h2 id="Apple-软件付费"><a href="#Apple-软件付费" class="headerlink" title="Apple 软件付费"></a>Apple 软件付费</h2><p><img src="https://img.yeslu.cn/blog-commend/101.png!blog_watermark"></p>
-<p>Apple 的软件主要分为在商店购买和内购两种，具体如上图所示。</p>
-<p>一般来说，商店购买获得的是软件的所有权，让你对软件的界面、交互有所了解，并体验一部分功能；而内购则属于软件的增值服务，可用于去除广告，解锁某项或全部的功能等。</p>
-<p>通常，软件所提供的价格为<strong>当前软件版本，当前系统版本</strong>下的价格。<strong>一次性买断软件</strong>一般提供小版本的免费更新：某软件由 v1.1 升级至 v1.2，则应当免费升级；而由于各种原因（如系统更新等），需要从 v1.2 升级至 v2.0 这样的大版本更新，则有可能需要重新付费或者更换付费策略，这就要看软件厂商的升级方案了。</p>
-<p><strong>订阅制软件</strong>一般允许用户直接更新至最新版本，需要注意的是，大部分订阅软件会提供免费试用，但根据苹果的扣费策略，在你进行扣费授权之后，所有的账单将由苹果接管，到期<strong>自动扣费，不会提醒</strong>。</p>
-<p><img src="https://img.yeslu.cn/blog-commend/103.png!blog_watermark"></p>
-<h3 id="如何取消订阅"><a href="#如何取消订阅" class="headerlink" title="如何取消订阅"></a>如何取消订阅</h3><p><img src="https://img.yeslu.cn/blog-commend/102.png!blog_watermark"></p>
-<h2 id="SETAPP"><a href="#SETAPP" class="headerlink" title="SETAPP"></a>SETAPP</h2><p><img src="https://img.yeslu.cn/blog-commend/setapp-app.png"></p>
-<p><a target="_blank" rel="noopener" href="https://setapp.com/">Setapp</a> 是著名的 macOS 正版软件订阅模式提供商，只需要一笔月使用费，就能随意使用其库内的 macOS 软件，相当于一个软件工具集， 包括 iStat Menus、Bartender、CleanMyMac X、Ulysses、BetterZip、iMazing、MoneyWiz、XMind 等等在内的近 200 款 macOS 软件。</p>
-<p>Setapp 的年费为 $8.99 * 12月，折合人民币 770 元左右，双设备使用；本人使用的为家庭版单人授权（Setapp 允许非家庭成员合租），价格约 210 元，单设备使用。</p>
-<p>需要注意的是，不同厂商虽然都有“家庭版”的购买方案，但是对“家庭”的定义有所不同。某些厂家支持非家庭成员组成“云家庭”合租，而有些厂商则要求家庭组必须由家庭成员组成。</p>
-<h2 id="对订阅制软件的看法"><a href="#对订阅制软件的看法" class="headerlink" title="对订阅制软件的看法"></a>对订阅制软件的看法</h2><p>对于存在云服务（存储）并且（或）使用收费接口并且（或）需要长期稳定维护的生产力软件，订阅制是完全可行的，如云盘，笔记，文字识别（翻译）软件等；但也有存在一些软件滥用订阅制，则需要多加鉴别了。</p>
-<h2 id="对老牌软件的看法"><a href="#对老牌软件的看法" class="headerlink" title="对老牌软件的看法"></a>对老牌软件的看法</h2><p>不得不说，尤其是一些核心生产力软件，老牌就是老牌。比如同价位下，目前还没有见过几款 PDF 阅读编辑器可以干过 PDF Expert，没有几款手写笔记软件可以干过 GoodNotes，Notability 等等。</p>
-<p>老牌软件所带来的并不是惊艳感，而是功能足够，性能稳定，长期使用下来会给你一种感觉：就这个软件，够用，不换了。</p>
-<h2 id="写在结尾"><a href="#写在结尾" class="headerlink" title="写在结尾"></a>写在结尾</h2><ol>
-<li>工具是用来帮助我的，要做工具的主人而不是工具的奴隶。</li>
-<li>免费的才是最贵的，不要指望有又免费又好用，还能长期维护的工具，用爱发电并不能喂饱开发者。</li>
-</ol>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
-<li>总目录：<a href="https://www.yeslu.cn/archives/2ae541fb.html">https://www.yeslu.cn/archives/2ae541fb.html</a></li>
-</ol>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/archives/86a324ce.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -625,7 +556,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-03-24 11:59:38" itemprop="dateModified" datetime="2020-03-24T11:59:38+08:00">2020-03-24</time>
+        <time title="修改时间：2020-12-29 22:14:32" itemprop="dateModified" datetime="2020-12-29T22:14:32+08:00">2020-12-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -648,27 +579,14 @@
     
     <div class="post-body" itemprop="articleBody">
           <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>很多人像我一样，在测试 Wi-Fi 的时候需要知道我的设备链接到 Wi-Fi 的什么频段，什么信道，信号强度如何等等，但 iOS/iPadOS 并不像 macOS 一样，对用户直接提供 Wi-Fi 的详细调试信息【<strong>macOS 可通过按住 option，鼠标点击 Wi-Fi 图标来获取</strong>】。因此，我们可以使用 Apple 面向开发者的调试文件来获得。</p>
-<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p><img src="https://img.yeslu.cn/blog-learn/learn-get-ios-wifi-band-01.png!blog_watermark"></p>
-<ol>
-<li>进入 <a target="_blank" rel="noopener" href="https://developer.apple.com/bug-reporting/profiles-and-logs/">https://developer.apple.com/bug-reporting/profiles-and-logs/</a>，找到 Wi-Fi for iOS 的字样，并下载后面的 Profile 文件；</li>
-<li>将上述配置文件传输至 iPhone/iPad，当然你也可以直接在手机上直接操作上述内容。</li>
-</ol>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ol>
-<li>点击“设置” -&gt; “通用” -&gt; “描述文件”，找到刚刚导入的描述文件；</li>
-<li>点击右上角“安装”，并输入密码完成安装。</li>
-</ol>
-<p><img src="https://img.yeslu.cn/blog-learn/learn-get-ios-wifi-band-02.png!blog_watermark"></p>
-<p><img src="https://img.yeslu.cn/blog-learn/learn-get-ios-wifi-band-03.png!blog_watermark"></p>
-<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><ul>
-<li>进入 Wi-Fi 设置界面，打开当前所连接 Wi-Fi 的详细信息，选择“Diagnostics”，就可以看到 Wi-Fi 的详细信息啦。</li>
-</ul>
-<p><img src="https://img.yeslu.cn/blog-learn/learn-get-ios-wifi-band-04.png!blog_watermark"></p>
-<p><img src="https://img.yeslu.cn/blog-learn/learn-get-ios-wifi-band-05.png!blog_watermark"></p>
-<p><img src="https://img.yeslu.cn/blog-learn/learn-get-ios-wifi-band-06.png!blog_watermark"></p>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ul>
-<li>为了避免一些不必要的系统日志或者引发一些 Bug，个人不建议在非调试需求下长期打开调试模式；如需关闭，请删除描述文件。</li>
-</ul>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/archives/dd75b10a.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
