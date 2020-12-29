@@ -643,7 +643,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-03-10 00:01:43" itemprop="dateModified" datetime="2020-03-10T00:01:43+08:00">2020-03-10</time>
+        <time title="修改时间：2020-12-29 22:27:54" itemprop="dateModified" datetime="2020-12-29T22:27:54+08:00">2020-12-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -669,7 +669,7 @@
 <li><a target="_blank" rel="noopener" href="https://getquicker.net/Sharedaction?code=f73ca43a-98c6-475d-a3cc-08d7c216a695">https://getquicker.net/Sharedaction?code=f73ca43a-98c6-475d-a3cc-08d7c216a695</a></li>
 </ul>
 <h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/Chandler-Lu/alfred-ocr/tree/master/src_quicker">https://github.com/Chandler-Lu/alfred-ocr/tree/master/src_quicker</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Chandler-Lu/quicker-ocr/">https://github.com/Chandler-Lu/quicker-ocr/</a></li>
 </ul>
 
       
@@ -728,7 +728,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-03-24 12:00:42" itemprop="dateModified" datetime="2020-03-24T12:00:42+08:00">2020-03-24</time>
+        <time title="修改时间：2020-12-29 22:27:29" itemprop="dateModified" datetime="2020-12-29T22:27:29+08:00">2020-12-29</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -756,55 +756,14 @@
 <h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><ul>
 <li><a target="_blank" rel="noopener" href="https://github.com/Chandler-Lu/alfred-ocr">https://github.com/Chandler-Lu/alfred-ocr</a></li>
 </ul>
-<h2 id="安装-Python"><a href="#安装-Python" class="headerlink" title="安装 Python"></a>安装 Python</h2><ul>
-<li>访问 <a target="_blank" rel="noopener" href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></li>
-</ul>
-<p><img src="https://img.yeslu.cn/blog-software/InstallPython-1.png!blog_watermark"></p>
-<ul>
-<li><p>点击 Download Python （由于您看到此文的时间不同，获取的 Python 版本也可能不同）</p>
-</li>
-<li><p>打开安装文件，您可以看到如下界面，点击“继续”直至安装完成</p>
-</li>
-</ul>
-<p><img src="https://img.yeslu.cn/blog-software/InstallPython-2.png!blog_watermark"></p>
-<ul>
-<li>打开“终端”工具，在终端工具中依次输入如下两行，您应当得到类似图片的内容。</li>
-</ul>
-<p><img src="https://img.yeslu.cn/blog-software/InstallPython-3.png!blog_watermark"></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">which</span> python3 (请记录此行返回的内容)</span><br><span class="line">python3 --version</span><br></pre></td></tr></table></figure>
-<p><img src="https://img.yeslu.cn/blog-software/InstallPython-4.png!blog_watermark"></p>
-<h2 id="安装-Python-模块"><a href="#安装-Python-模块" class="headerlink" title="安装 Python 模块"></a>安装 Python 模块</h2><ul>
-<li>打开“终端”工具，在终端工具中依次输入如下三行（需要注意的是，由于 cnocr 模块所依赖的数据文件位于 Dropbox，在国内无法正常访问，如果您不需要离线识别，则可不安装）</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pip3 install cnocr (可选)</span><br><span class="line">pip3 install zxing</span><br><span class="line">pip3 install requests</span><br></pre></td></tr></table></figure>
-<ul>
-<li>如果您在国内，以上安装方式可能速度较慢，您可以通过更换<a target="_blank" rel="noopener" href="https://mirror.tuna.tsinghua.edu.cn/help/pypi/">清华镜像</a>的方式安装。在终端工具中输入如下命令，然后重复以上操作。</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 config <span class="built_in">set</span> global.index-url https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
-<ul>
-<li>一切顺利的话，您将完成全部的部署工作</li>
-</ul>
-<h2 id="配置-Alfred"><a href="#配置-Alfred" class="headerlink" title="配置 Alfred"></a>配置 Alfred</h2><ul>
-<li>打开 Alfred 配置界面（您可以在 Alfred 窗口输入 Alfred 以打开配置界面）</li>
-</ul>
-<p><img src="https://img.yeslu.cn/blog-software/InstallPython-5.png!blog_watermark"></p>
-<ul>
-<li>进入 Capture than OCR 插件页，并点击右上角的环境变量配置按钮</li>
-</ul>
-<p><img src="https://img.yeslu.cn/blog-software/InstallPython-6.png!blog_watermark"></p>
-<ul>
-<li>找到 PYTHON_PATH 项目，双击右侧的 Value 值，修改为在“安装 Python”中由<code>which python3</code>返回的内容，如<code>/usr/bin/python3</code>，并保存。</li>
-</ul>
-<p><img src="https://img.yeslu.cn/blog-software/InstallPython-7.png!blog_watermark"></p>
-<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>通过<code>Ctrl+V</code>触发百度 OCR 截屏，如果可以正确返回识别内容，那么恭喜你安装成功。</p>
-<h2 id="反馈"><a href="#反馈" class="headerlink" title="反馈"></a>反馈</h2><p>如果您的没有得到预期的内容，请按如下方式操作：</p>
-<p><img src="https://img.yeslu.cn/blog-software/InstallPython-8.png!blog_watermark"></p>
-<ul>
-<li>点击插件配置页面右上角的 Debug 按钮</li>
-<li>触发一次识别</li>
-<li>下方的日志将会出现错误报告，点击右上角“Copy”，并将内容以 Issue 形式提交。</li>
-</ul>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/archives/7fe802d0.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
