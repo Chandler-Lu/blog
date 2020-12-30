@@ -26,23 +26,40 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"www.yeslu.cn","root":"/","images":"/images","scheme":"Pisces","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
-<meta name="description" content="更新最后更新：2020-12-30T21:04:37+08:00 简介Origin 是由 OriginLab 公司开发的一个科学绘图、数据分析软件。Origin 支持各种各样的 2D&#x2F;3D 图形。Origin 中的数据分析功能包括统计，信号处理，曲线拟合以及峰值分析。 声明 本教程除援引官方资源的内容外，其余内容与 OriginLab 无关； 如需增补内容，请直接提交 Issue； 提问前请阅读《">
+<meta name="description" content="OriginLab 版本 官方的支持文件给出的推荐版本为 OriginLab 9.0 及以上版本，低于此版本不保证正常使用 本教程使用 OriginPro 2018b (b9.5.5.409 教育版）  XRD 样品衍射图谱模板的制作 导入数据，制图  美化图像，至相对标准要求  鉴于每个衍射数据的情况都不一样，所以相对标准即可，后期肯定是需要微调的   保存模板，并给模板命名，这里命为“XRD-">
 <meta property="og:type" content="article">
-<meta property="og:title" content="OriginLab 非官方答疑合集">
-<meta property="og:url" content="https://www.yeslu.cn/archives/4033bbae.html">
+<meta property="og:title" content="OriginLab：模板法快速绘制XRD衍射图谱">
+<meta property="og:url" content="https://www.yeslu.cn/archives/2f7ab9e7.html">
 <meta property="og:site_name" content="这是只兔子">
-<meta property="og:description" content="更新最后更新：2020-12-30T21:04:37+08:00 简介Origin 是由 OriginLab 公司开发的一个科学绘图、数据分析软件。Origin 支持各种各样的 2D&#x2F;3D 图形。Origin 中的数据分析功能包括统计，信号处理，曲线拟合以及峰值分析。 声明 本教程除援引官方资源的内容外，其余内容与 OriginLab 无关； 如需增补内容，请直接提交 Issue； 提问前请阅读《">
+<meta property="og:description" content="OriginLab 版本 官方的支持文件给出的推荐版本为 OriginLab 9.0 及以上版本，低于此版本不保证正常使用 本教程使用 OriginPro 2018b (b9.5.5.409 教育版）  XRD 样品衍射图谱模板的制作 导入数据，制图  美化图像，至相对标准要求  鉴于每个衍射数据的情况都不一样，所以相对标准即可，后期肯定是需要微调的   保存模板，并给模板命名，这里命为“XRD-">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-12-30T12:27:32.000Z">
-<meta property="article:modified_time" content="2020-12-30T13:25:58.500Z">
+<meta property="og:image" content="https://img.yeslu.cn/blog-learn/48A0549E-3EEF-4DFA-BE8B-740B42E9C069.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog-learn/7A14C185-98A6-4783-9C7B-4D98ADA8271E.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog-learn/E2D74725-2375-4577-B4AC-6B47C4001797.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog-learn/9DB1D39D-0AC7-40F0-B167-297556413793.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog-learn/39B16835-69BC-41E0-AAB5-FE75FBF52DD3.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog-learn/4BE16FA1-7191-4984-9ACD-1DA8D4C7EB47.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog-learn/A67CDFE3-5ACF-486C-8971-60DA51FEC186.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog-learn/622A1549-1AA4-435A-9F80-D299A91D12AC.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog-learn/981FFAE9-0DBF-4C36-9C87-9EC62FB77043.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog-learn/6B76DB12-55A0-4A9D-9510-DC5C7D64A983.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog-learn/089A90D3-E26C-4669-AF6C-B0F70FCAA08B.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog-learn/CC02C533-4772-44F0-890E-A5E41280588F.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog-learn/F89A6AF0-1B7E-4994-ADE5-0ECF8D8205ED.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog-learn/D3A58E0C-A2BF-4B62-AA2C-6A2EF6D19630.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog-learn/FC5BB251-8A3D-41CE-9964-51A202EE18EB.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog-learn/2174144e-f300-4c4e-84a4-7c60b88c2806.png">
+<meta property="article:published_time" content="2018-06-29T14:53:20.000Z">
+<meta property="article:modified_time" content="2020-11-29T10:50:34.970Z">
 <meta property="article:author" content="Chandler-Lu">
-<meta property="article:tag" content="工具">
 <meta property="article:tag" content="OriginLab">
 <meta property="article:tag" content="论文">
+<meta property="article:tag" content="绘图">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img.yeslu.cn/blog-learn/48A0549E-3EEF-4DFA-BE8B-740B42E9C069.png">
 
 
-<link rel="canonical" href="https://www.yeslu.cn/archives/4033bbae.html">
+<link rel="canonical" href="https://www.yeslu.cn/archives/2f7ab9e7.html">
 
 
 <script class="page-configurations">
@@ -54,7 +71,7 @@
     lang   : 'zh-CN'
   };
 </script>
-<title>OriginLab 非官方答疑合集 | 这是只兔子</title>
+<title>OriginLab：模板法快速绘制XRD衍射图谱 | 这是只兔子</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163431903-2"></script>
     <script>
@@ -189,7 +206,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <section class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0"><span class="nav-number">1.</span> <span class="nav-text">更新</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%80%E4%BB%8B"><span class="nav-number">2.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A3%B0%E6%98%8E"><span class="nav-number">3.</span> <span class="nav-text">声明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%99%E7%A8%8B"><span class="nav-number">4.</span> <span class="nav-text">教程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#OriginLab-%E5%AE%98%E6%96%B9-bilibili"><span class="nav-number">4.1.</span> <span class="nav-text">OriginLab 官方 bilibili</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#OriginLab-%E5%AE%98%E6%96%B9%E5%9B%BE%E9%9B%86"><span class="nav-number">4.2.</span> <span class="nav-text">OriginLab 官方图集</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#bilibili-UP-%E4%B8%BB%EF%BC%9A%E7%88%B1%E9%97%AE%E5%90%B1%E5%90%B1"><span class="nav-number">4.3.</span> <span class="nav-text">bilibili UP 主：爱问吱吱</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%A6%E4%B9%A0%E7%89%88%E7%9B%B8%E5%85%B3"><span class="nav-number">5.</span> <span class="nav-text">学习版相关</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#00-%E6%9C%80%E6%96%B0%E7%89%88"><span class="nav-number">5.1.</span> <span class="nav-text">00 最新版</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#01-%E7%94%B3%E8%AF%B7"><span class="nav-number">5.2.</span> <span class="nav-text">01 申请</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8-Q-A"><span class="nav-number">6.</span> <span class="nav-text">软件使用 Q&#x2F;A</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#01-%E6%96%87%E4%BB%B6%E9%97%AE%E9%A2%98"><span class="nav-number">6.1.</span> <span class="nav-text">01 文件问题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%97%A0%E6%B3%95%E5%8F%8C%E5%87%BB%E6%89%93%E5%BC%80%E6%96%87%E4%BB%B6"><span class="nav-number">6.1.1.</span> <span class="nav-text">无法双击打开文件</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#02-%E6%95%B0%E6%8D%AE%E8%BE%93%E5%85%A5"><span class="nav-number">6.2.</span> <span class="nav-text">02 数据输入</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8A%93%E5%8F%96%E5%9B%BE%E7%89%87%E4%B8%8A%E7%9A%84%E6%95%B0%E6%8D%AE%E7%82%B9"><span class="nav-number">6.2.1.</span> <span class="nav-text">抓取图片上的数据点</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#02-%E6%8B%9F%E5%90%88%E9%97%AE%E9%A2%98"><span class="nav-number">6.3.</span> <span class="nav-text">02 拟合问题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%86%E6%AE%B5%E6%8B%9F%E5%90%88%E5%B7%A5%E5%85%B7"><span class="nav-number">6.3.1.</span> <span class="nav-text">分段拟合工具</span></a></li></ol></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#OriginLab-%E7%89%88%E6%9C%AC"><span class="nav-number">1.</span> <span class="nav-text">OriginLab 版本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#XRD-%E6%A0%B7%E5%93%81%E8%A1%8D%E5%B0%84%E5%9B%BE%E8%B0%B1%E6%A8%A1%E6%9D%BF%E7%9A%84%E5%88%B6%E4%BD%9C"><span class="nav-number">2.</span> <span class="nav-text">XRD 样品衍射图谱模板的制作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%87%E5%87%86-PDF-%E5%8D%A1%E7%89%87%E6%A8%A1%E6%9D%BF%E7%9A%84%E5%88%B6%E4%BD%9C"><span class="nav-number">3.</span> <span class="nav-text">标准 PDF 卡片模板的制作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A8%A1%E6%9D%BF%E8%B0%83%E7%94%A8"><span class="nav-number">4.</span> <span class="nav-text">模板调用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%B7%E5%93%81%E8%A1%8D%E5%B0%84%E5%9B%BE%E8%B0%B1%E7%9A%84%E5%88%B6%E4%BD%9C"><span class="nav-number">4.1.</span> <span class="nav-text">样品衍射图谱的制作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PDF-%E6%A0%87%E5%87%86%E5%9B%BE%E8%B0%B1%E7%9A%84%E5%88%B6%E4%BD%9C"><span class="nav-number">4.2.</span> <span class="nav-text">PDF 标准图谱的制作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%88%E5%B9%B6%E5%9B%BE%E5%B1%82"><span class="nav-number">4.3.</span> <span class="nav-text">合并图层</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%87%BA%E5%9B%BE%E7%89%87-DPI-%E4%BF%AE%E6%94%B9"><span class="nav-number">4.4.</span> <span class="nav-text">输出图片 DPI 修改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%BE%E5%83%8F%E5%8E%BB%E7%99%BD%E8%BE%B9"><span class="nav-number">4.5.</span> <span class="nav-text">图像去白边</span></a></li></ol></li></ol></div>
         </section>
         <!--/noindex-->
 
@@ -268,7 +285,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.yeslu.cn/archives/4033bbae.html">
+    <link itemprop="mainEntityOfPage" href="https://www.yeslu.cn/archives/2f7ab9e7.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -281,7 +298,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          OriginLab 非官方答疑合集
+          OriginLab：模板法快速绘制XRD衍射图谱
         </h1>
 
         <div class="post-meta-container">
@@ -291,17 +308,23 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2020-12-30 20:27:32 / 修改时间：21:25:58" itemprop="dateCreated datePublished" datetime="2020-12-30T20:27:32+08:00">2020-12-30</time>
+      <time title="创建时间：2018-06-29 22:53:20" itemprop="dateCreated datePublished" datetime="2018-06-29T22:53:20+08:00">2018-06-29</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2020-11-29 18:50:34" itemprop="dateModified" datetime="2020-11-29T18:50:34+08:00">2020-11-29</time>
+      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E7%AD%94%E7%96%91/" itemprop="url" rel="index"><span itemprop="name">答疑</span></a>
+          <a href="/categories/%E6%95%99%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">教程</span></a>
         </span>
     </span>
 
@@ -315,44 +338,50 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><p>最后更新：2020-12-30T21:04:37+08:00</p>
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Origin 是由 OriginLab 公司开发的一个科学绘图、数据分析软件。Origin 支持各种各样的 2D/3D 图形。Origin 中的数据分析功能包括统计，信号处理，曲线拟合以及峰值分析。</p>
-<h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><ol>
-<li>本教程除援引官方资源的内容外，其余内容与 OriginLab 无关；</li>
-<li>如需增补内容，请直接提交 <a target="_blank" rel="noopener" href="https://github.com/Chandler-Lu/blog/issues">Issue</a>；</li>
-<li>提问前请阅读<a target="_blank" rel="noopener" href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md">《提问的智慧》</a> ，表述不清的问题和模糊的截图，除了给回答者带来麻烦外，对解决问题没有任何帮助；</li>
-<li>解决方案存在时效性，随着软件更新，部分功能可能与教程中不同；</li>
-<li>转载请注明来源。</li>
+        <h2 id="OriginLab-版本"><a href="#OriginLab-版本" class="headerlink" title="OriginLab 版本"></a>OriginLab 版本</h2><ol>
+<li>官方的<a target="_blank" rel="noopener" href="https://www.originlab.com/doc/Origin-Help/Graph-Template-Basics">支持文件</a>给出的推荐版本为 OriginLab 9.0 及以上版本，低于此版本不保证正常使用</li>
+<li>本教程使用 OriginPro 2018b (b9.5.5.409 教育版）<br><img src="https://img.yeslu.cn/blog-learn/48A0549E-3EEF-4DFA-BE8B-740B42E9C069.png"></li>
 </ol>
-<a id="more"></a>
-
-<h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><h3 id="OriginLab-官方-bilibili"><a href="#OriginLab-官方-bilibili" class="headerlink" title="OriginLab 官方 bilibili"></a>OriginLab 官方 bilibili</h3><ul>
-<li>地址：<a target="_blank" rel="noopener" href="https://space.bilibili.com/509534849/">https://space.bilibili.com/509534849/</a></li>
-</ul>
-<h3 id="OriginLab-官方图集"><a href="#OriginLab-官方图集" class="headerlink" title="OriginLab 官方图集"></a>OriginLab 官方图集</h3><ul>
-<li>地址：<a target="_blank" rel="noopener" href="https://www.originlab.com/www/products/GraphGallery.aspx">https://www.originlab.com/www/products/GraphGallery.aspx</a></li>
-</ul>
-<h3 id="bilibili-UP-主：爱问吱吱"><a href="#bilibili-UP-主：爱问吱吱" class="headerlink" title="bilibili UP 主：爱问吱吱"></a>bilibili UP 主：爱问吱吱</h3><ul>
-<li>地址：<a target="_blank" rel="noopener" href="https://space.bilibili.com/386697953">https://space.bilibili.com/386697953</a></li>
-</ul>
-<h2 id="学习版相关"><a href="#学习版相关" class="headerlink" title="学习版相关"></a>学习版相关</h2><h3 id="00-最新版"><a href="#00-最新版" class="headerlink" title="00 最新版"></a>00 最新版</h3><ul>
-<li>版本号：OriginPro 2021 SR0 (内部版本号：9.8.0.200 (学习版))</li>
-<li>备注：SR0 = Stable Release Version 0</li>
-</ul>
-<h3 id="01-申请"><a href="#01-申请" class="headerlink" title="01 申请"></a>01 申请</h3><ul>
-<li>地址：<a target="_blank" rel="noopener" href="http://www.originlab.com/OriginProLearning.aspx">http://www.Originlab.com/OriginProLearning.aspx</a></li>
-<li>视频教程：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/av95893883">https://www.bilibili.com/video/av95893883</a></li>
-</ul>
-<h2 id="软件使用-Q-A"><a href="#软件使用-Q-A" class="headerlink" title="软件使用 Q/A"></a>软件使用 Q/A</h2><h3 id="01-文件问题"><a href="#01-文件问题" class="headerlink" title="01 文件问题"></a>01 文件问题</h3><h4 id="无法双击打开文件"><a href="#无法双击打开文件" class="headerlink" title="无法双击打开文件"></a>无法双击打开文件</h4><ul>
-<li>症状：双击已有文件后，实际显示空白页</li>
-<li>解决：<a target="_blank" rel="noopener" href="https://www.originlab.com/doc/Quick-Help/double-click-open-failed">https://www.originlab.com/doc/Quick-Help/double-click-open-failed</a></li>
-</ul>
-<h3 id="02-数据输入"><a href="#02-数据输入" class="headerlink" title="02 数据输入"></a>02 数据输入</h3><h4 id="抓取图片上的数据点"><a href="#抓取图片上的数据点" class="headerlink" title="抓取图片上的数据点"></a>抓取图片上的数据点</h4><ul>
-<li>地址：<a target="_blank" rel="noopener" href="https://my.originlab.com/forum/topic.asp?TOPIC_ID=22402">https://my.originlab.com/forum/topic.asp?TOPIC_ID=22402</a></li>
-</ul>
-<h3 id="02-拟合问题"><a href="#02-拟合问题" class="headerlink" title="02 拟合问题"></a>02 拟合问题</h3><h4 id="分段拟合工具"><a href="#分段拟合工具" class="headerlink" title="分段拟合工具"></a>分段拟合工具</h4><ul>
-<li>地址：<a target="_blank" rel="noopener" href="https://www.originlab.com/FileExchange/details.aspx?fid=325">https://www.originlab.com/FileExchange/details.aspx?fid=325</a></li>
-</ul>
+<h2 id="XRD-样品衍射图谱模板的制作"><a href="#XRD-样品衍射图谱模板的制作" class="headerlink" title="XRD 样品衍射图谱模板的制作"></a>XRD 样品衍射图谱模板的制作</h2><ol>
+<li><p>导入数据，制图<br><img src="https://img.yeslu.cn/blog-learn/7A14C185-98A6-4783-9C7B-4D98ADA8271E.png"></p>
+</li>
+<li><p>美化图像，至相对标准要求<br><img src="https://img.yeslu.cn/blog-learn/E2D74725-2375-4577-B4AC-6B47C4001797.png"></p>
+<blockquote>
+<p>鉴于每个衍射数据的情况都不一样，所以相对标准即可，后期肯定是需要微调的</p>
+</blockquote>
+</li>
+<li><p>保存模板，并给模板命名，这里命为“XRD-sample”<br><img src="https://img.yeslu.cn/blog-learn/9DB1D39D-0AC7-40F0-B167-297556413793.png"><br><img src="https://img.yeslu.cn/blog-learn/39B16835-69BC-41E0-AAB5-FE75FBF52DD3.png"></p>
+</li>
+</ol>
+<h2 id="标准-PDF-卡片模板的制作"><a href="#标准-PDF-卡片模板的制作" class="headerlink" title="标准 PDF 卡片模板的制作"></a>标准 PDF 卡片模板的制作</h2><ol>
+<li><p>导入数据，制图，美化图像，至相对标准要求<br><img src="https://img.yeslu.cn/blog-learn/4BE16FA1-7191-4984-9ACD-1DA8D4C7EB47.png"></p>
+<blockquote>
+<p>这里原本只需要 x 轴一条线即可，但为了最后合并的时候方便，建议暂时不要删去 x 轴的坐标；x 轴建议加粗（图中 thickness = 6），因为合并后需要压缩整个图层。</p>
+</blockquote>
+</li>
+<li><p>保存模板，同上，这里命为“XRD-pdf”<br><img src="https://img.yeslu.cn/blog-learn/A67CDFE3-5ACF-486C-8971-60DA51FEC186.png"></p>
+</li>
+</ol>
+<h2 id="模板调用"><a href="#模板调用" class="headerlink" title="模板调用"></a>模板调用</h2><h3 id="样品衍射图谱的制作"><a href="#样品衍射图谱的制作" class="headerlink" title="样品衍射图谱的制作"></a>样品衍射图谱的制作</h3><ol>
+<li>导入并选中数据，选择“plot”-“templates”-“Users”-“XRD-sample”<br><img src="https://img.yeslu.cn/blog-learn/622A1549-1AA4-435A-9F80-D299A91D12AC.png"></li>
+<li>直接获得标准衍射图谱，注意修改 legend，并且修改 x 轴坐标至合适范围（这个参数不会保存在模板中，每次都需要改）<br><img src="https://img.yeslu.cn/blog-learn/981FFAE9-0DBF-4C36-9C87-9EC62FB77043.png"></li>
+</ol>
+<h3 id="PDF-标准图谱的制作"><a href="#PDF-标准图谱的制作" class="headerlink" title="PDF 标准图谱的制作"></a>PDF 标准图谱的制作</h3><ol>
+<li>创建一个新的 sheet，导入 PDF 卡片数据并选中，选择“plot”-“templates”-“Users”-“XRD-pdf”<br><img src="https://img.yeslu.cn/blog-learn/6B76DB12-55A0-4A9D-9510-DC5C7D64A983.png"></li>
+<li>直接获得标准 PDF 卡片图像<br><img src="https://img.yeslu.cn/blog-learn/089A90D3-E26C-4669-AF6C-B0F70FCAA08B.png"></li>
+<li>鉴于部分参数（点的形状，x 轴坐标范围等）不会被保存在模板中，需手动调整</li>
+</ol>
+<h3 id="合并图层"><a href="#合并图层" class="headerlink" title="合并图层"></a>合并图层</h3><ol>
+<li>拖动图层，当示廓线变色时，表示已经对齐<br><img src="https://img.yeslu.cn/blog-learn/CC02C533-4772-44F0-890E-A5E41280588F.png"></li>
+<li>微调坐标轴范围，图层大小，线粗细等参数至美观，得最后图像<br><img src="https://img.yeslu.cn/blog-learn/F89A6AF0-1B7E-4994-ADE5-0ECF8D8205ED.png"></li>
+</ol>
+<h3 id="输出图片-DPI-修改"><a href="#输出图片-DPI-修改" class="headerlink" title="输出图片 DPI 修改"></a>输出图片 DPI 修改</h3><ol>
+<li>在输出图片时展开“Image Settings”，直接设置 DPI 为 300<br><img src="https://img.yeslu.cn/blog-learn/D3A58E0C-A2BF-4B62-AA2C-6A2EF6D19630.png"></li>
+</ol>
+<h3 id="图像去白边"><a href="#图像去白边" class="headerlink" title="图像去白边"></a>图像去白边</h3><ol>
+<li>输出图片时展开“Export Settings”，将“Margin Control”设置为“Tight in Page”即可<br><img src="https://img.yeslu.cn/blog-learn/FC5BB251-8A3D-41CE-9964-51A202EE18EB.png"></li>
+<li>输出得最终图像，DPI = 300，无白边<br><img src="https://img.yeslu.cn/blog-learn/2174144e-f300-4c4e-84a4-7c60b88c2806.png"></li>
+</ol>
 
     </div>
 
@@ -370,7 +399,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://www.yeslu.cn/archives/4033bbae.html" title="OriginLab 非官方答疑合集">https://www.yeslu.cn/archives/4033bbae.html</a>
+      <a href="https://www.yeslu.cn/archives/2f7ab9e7.html" title="OriginLab：模板法快速绘制XRD衍射图谱">https://www.yeslu.cn/archives/2f7ab9e7.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-ND</a> 许可协议。转载请注明出处！
@@ -396,20 +425,23 @@
 </div>
 
           <div class="post-tags">
-              <a href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag"># 工具</a>
               <a href="/tags/OriginLab/" rel="tag"># OriginLab</a>
               <a href="/tags/%E8%AE%BA%E6%96%87/" rel="tag"># 论文</a>
+              <a href="/tags/%E7%BB%98%E5%9B%BE/" rel="tag"># 绘图</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/archives/9b841902.html" rel="prev" title="我和我的软件们：日记（02）">
-                  <i class="fa fa-chevron-left"></i> 我和我的软件们：日记（02）
+                <a href="/archives/5bb81735.html" rel="prev" title="精读：《小王子》笔记">
+                  <i class="fa fa-chevron-left"></i> 精读：《小王子》笔记
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/archives/3a47af3d.html" rel="next" title="利用 GitHub API 获取最新 Releases 的版本号">
+                  利用 GitHub API 获取最新 Releases 的版本号 <i class="fa fa-chevron-right"></i>
+                </a>
             </div>
           </div>
     </footer>
