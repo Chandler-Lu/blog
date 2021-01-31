@@ -312,6 +312,27 @@
   </url>
   
   <url>
+    <loc>https://www.yeslu.cn/tags/GitHub/</loc>
+    <lastmod>2021-01-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yeslu.cn/tags/Bash/</loc>
+    <lastmod>2021-01-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yeslu.cn/tags/API/</loc>
+    <lastmod>2021-01-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.yeslu.cn/tags/%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2021-01-31</lastmod>
     <changefreq>daily</changefreq>
@@ -376,27 +397,6 @@
   
   <url>
     <loc>https://www.yeslu.cn/tags/%E5%85%B4%E8%B6%A3/</loc>
-    <lastmod>2021-01-31</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.yeslu.cn/tags/GitHub/</loc>
-    <lastmod>2021-01-31</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.yeslu.cn/tags/Bash/</loc>
-    <lastmod>2021-01-31</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.yeslu.cn/tags/API/</loc>
     <lastmod>2021-01-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
