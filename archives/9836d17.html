@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="p3nrVMZBUOfTth91mo4SrSJ3kcDao-5L0turXxUGhUU">
+  <meta name="msvalidate.01" content="EEDECC1EA4AE341CC57365E075EBC8B6">
+  <meta name="baidu-site-verification" content="Udzuh3od3qSnQYUO">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="/lib/@fortawesome/fontawesome-free/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="/lib/animate.css/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="/lib/@fancyapps/ui/dist/fancybox/fancybox.css" integrity="sha256-RvRHGSuWAxZpXKV9lLDt2e+rZ+btzn48Wp4ueS3NZKs=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"www.yeslu.cn","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="前言反应能量图（reaction energy diagram）是 DFT 计算中展现化学反应的重要方式，OriginLab 官方也提供了很有意思的方案来绘制这样的路径图。本文将以下图中的一条路径为例，对官方提供的方案进行详细解释和扩展。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OriginLab 绘制反应能量图">
+<meta property="og:url" content="https://www.yeslu.cn/archives/9836d17.html">
+<meta property="og:site_name" content="这是只兔子">
+<meta property="og:description" content="前言反应能量图（reaction energy diagram）是 DFT 计算中展现化学反应的重要方式，OriginLab 官方也提供了很有意思的方案来绘制这样的路径图。本文将以下图中的一条路径为例，对官方提供的方案进行详细解释和扩展。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img.yeslu.cn/blog/2022-06/19-1a1f48fcc08abea813bf23917a8dd95d.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog/2022-06/19-b1f3537a91174d360532a7edf897160f.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/2022-06/19-754eaec36d2c0f76d267e6d5700895bc.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/2022-06/19-44ff0b592a580445566aa06553a8d48f.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/2022-06/19-a6eff20b4a0a45daa1a244f7fff5d240.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/2022-06/19-0583652a875cfeaab12de74dd2ed3b31.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/2022-06/19-6b414a6f0b3136d5b1a2dfd47de68ab8.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/2022-06/19-4d7b7ee8cba64927acf97aa5791400b8.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/2022-06/19-2d934c24c6adb97c4c68bf0806358bec.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/2022-06/19-d2a1b2b9452c030407beaa3edc212e2c.gif">
+<meta property="og:image" content="https://img.yeslu.cn/blog/2022-06/19-6ac75391aa5553ebcf00fe8eb9a7ae57.png!blog_watermark">
+<meta property="article:published_time" content="2022-06-19T08:53:36.000Z">
+<meta property="article:modified_time" content="2022-06-19T16:51:08.261Z">
+<meta property="article:author" content="Chandler-Lu">
+<meta property="article:tag" content="Graph">
+<meta property="article:tag" content="Data-Analysis">
+<meta property="article:tag" content="OriginLab">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img.yeslu.cn/blog/2022-06/19-1a1f48fcc08abea813bf23917a8dd95d.png">
+
+
+<link rel="canonical" href="https://www.yeslu.cn/archives/9836d17.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://www.yeslu.cn/archives/9836d17.html","path":"archives/9836d17.html","title":"OriginLab 绘制反应能量图"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>OriginLab 绘制反应能量图 | 这是只兔子</title>
+  
+
+
+
+
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "i3tut7r0p1");
+</script>
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">这是只兔子</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">This is a Rabbit.</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%98%E5%9B%BE%E6%80%9D%E8%B7%AF"><span class="nav-number">2.</span> <span class="nav-text">绘图思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E5%87%86%E5%A4%87"><span class="nav-number">3.</span> <span class="nav-text">数据准备</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9D%E5%A7%8B%E6%95%B0%E6%8D%AE"><span class="nav-number">3.1.</span> <span class="nav-text">初始数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E8%BD%AC%E7%BD%AE"><span class="nav-number">3.2.</span> <span class="nav-text">数据转置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E5%88%B6%E5%9B%BE%E6%95%B0%E6%8D%AE"><span class="nav-number">3.3.</span> <span class="nav-text">生成制图数据</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%BE%E5%83%8F%E7%BB%98%E5%88%B6"><span class="nav-number">4.</span> <span class="nav-text">图像绘制</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E6%9D%A1%E8%B7%AF%E5%BE%84"><span class="nav-number">4.1.</span> <span class="nav-text">第一条路径</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E8%BF%9E%E6%8E%A5"><span class="nav-number">4.1.1.</span> <span class="nav-text">数据连接</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A2%9E%E5%8A%A0%E5%A4%9A%E6%9D%A1%E8%B7%AF%E5%BE%84"><span class="nav-number">4.2.</span> <span class="nav-text">增加多条路径</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8"><span class="nav-number">5.</span> <span class="nav-text">数据标注</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Labtalk-%E8%AF%A6%E8%A7%A3"><span class="nav-number">6.</span> <span class="nav-text">Labtalk 详解</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Range"><span class="nav-number">6.1.</span> <span class="nav-text">Range</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#New-Column"><span class="nav-number">6.2.</span> <span class="nav-text">New Column</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Loop"><span class="nav-number">6.3.</span> <span class="nav-text">Loop</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Header"><span class="nav-number">6.3.1.</span> <span class="nav-text">Header</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Body"><span class="nav-number">6.3.2.</span> <span class="nav-text">Body</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tips"><span class="nav-number">6.4.</span> <span class="nav-text">Tips</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83"><span class="nav-number">7.</span> <span class="nav-text">环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%87%E6%B3%A8"><span class="nav-number">8.</span> <span class="nav-text">备注</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Chandler-Lu"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Chandler-Lu</p>
+  <div class="site-description" itemprop="description">这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">38</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="mailto:ambles-09-rosters@icloud.com" title="E-Mail → mailto:ambles-09-rosters@icloud.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/Chandler-Lu" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Chandler-Lu" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/1908825" title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;1908825" rel="noopener me" target="_blank"><i class="fa fa-bold fa-fw"></i>Bilibili</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.cndzq.com/bbs/home.php?mod=space&uid=138196" title="CNDZQ → https:&#x2F;&#x2F;www.cndzq.com&#x2F;bbs&#x2F;home.php?mod&#x3D;space&amp;uid&#x3D;138196" rel="noopener me" target="_blank"><i class="fa fa-music fa-fw"></i>CNDZQ</a>
+      </span>
+  </div>
+<!-- recent posts -->
+    <br />
+    <div class="links-of-blogroll motion-element links-of-blogroll-block">
+        <div class="links-of-blogroll-title recent-posts-title">
+	    <i class="fa fa-history " aria-hidden="true"></i>
+            近期文章
+	</div>
+	<ul class="links-of-blogroll-list recent-posts-list">
+	        <li class="my-links-of-blogroll-item">
+		    <a href="/archives/2aff811f.html" title="论文实用干货：Office 设置优化（07）" target="">
+		    论文实用干货：Office 设置优化（07）
+		    </a>
+		</li>
+	        <li class="my-links-of-blogroll-item">
+		    <a href="/archives/2e6d2c4b.html" title="OriginLab 修改中文语言" target="">
+		    OriginLab 修改中文语言
+		    </a>
+		</li>
+	        <li class="my-links-of-blogroll-item">
+		    <a href="/archives/f49d4612.html" title="OriginLab 部分中文字体加粗不显示" target="">
+		    OriginLab 部分中文字体加粗不显示
+		    </a>
+		</li>
+	        <li class="my-links-of-blogroll-item">
+		    <a href="/archives/863b7bad.html" title="OriginLab 绘制 3D 图时无法正常显示图例" target="">
+		    OriginLab 绘制 3D 图时无法正常显示图例
+		    </a>
+		</li>
+	        <li class="my-links-of-blogroll-item">
+		    <a href="/archives/b4c2c415.html" title="OriginLab 快速绘制带 PDF 卡片的 XRD 图谱" target="">
+		    OriginLab 快速绘制带 PDF 卡片的 XRD 图谱
+		    </a>
+		</li>
+	</ul>
+    </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.yeslu.cn/archives/9836d17.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Chandler-Lu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="这是只兔子">
+      <meta itemprop="description" content="这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="OriginLab 绘制反应能量图 | 这是只兔子">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          OriginLab 绘制反应能量图
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-06-19 16:53:36" itemprop="dateCreated datePublished" datetime="2022-06-19T16:53:36+08:00">2022-06-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-06-20 00:51:08" itemprop="dateModified" datetime="2022-06-20T00:51:08+08:00">2022-06-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Science/" itemprop="url" rel="index"><span itemprop="name">Science</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>反应能量图（reaction energy diagram）是 DFT 计算中展现化学反应的重要方式，OriginLab 官方也提供了很有意思的<a target="_blank" rel="noopener" href="http://blog.originlab.com/make-energy-diagram-in-origin">方案</a>来绘制这样的路径图。本文将以下图中的一条路径为例，对官方提供的方案进行详细解释和扩展。</p>
+<img src="https://img.yeslu.cn/blog/2022-06/19-1a1f48fcc08abea813bf23917a8dd95d.png" alt="10.1038/s41467-022-29428-9" style="zoom:80%;" />
+
+<span id="more"></span>
+
+<h2 id="绘图思路"><a href="#绘图思路" class="headerlink" title="绘图思路"></a>绘图思路</h2><p>使用 Origin 绘制大部分图像都需要明确以下两点：</p>
+<ol>
+<li>数据点的表现形式</li>
+<li>数据点之间的连接方式</li>
+</ol>
+<p>本图与最常见的“Line”图十分相近，但实际数据却区别于“Line”图需要的数据。“Line”图是将一个个数据点连接成线，但本例中每一个中间产物只对应一个能量。也就是说，数据是不具有“平台”这个概念的，而图中却要将其表现出“平台”的样式。</p>
+<p>由此思路，我们得到了第一种绘图方法：人为地扩展数据点的横坐标。假设原数据为 <code>(A, 1.5)</code>，那么在绘图时，手动增加 <code>(A-1, 1.5)</code>、<code>(A+1, 1.5)</code> 两个点，即可得到“平台”的效果。</p>
+<p>然而，当反应的中间路径较多时，人为增加数据点是十分困难的。由此，官方提供了一个非常巧妙的方法，即 <a target="_blank" rel="noopener" href="https://www.originlab.com/doc/Origin-Help/Floating-Column-Graph">Floating Column</a>。Floating Column 本是柱状图的一种，数据至少分为三列：X、Y 下界、Y 上界。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-b1f3537a91174d360532a7edf897160f.png!blog_watermark" alt="Floating Column Graph"></p>
+<p>对于本例来说，柱状图自身可进行数据间的连接，且连接线样式可独立调整，这则是利用柱状图绘制的优势。由此，我们可以假设，当上界与下界数据相同时，柱状图的高度为零，而其本身的宽度即可作为我们的“平台”。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-754eaec36d2c0f76d267e6d5700895bc.png!blog_watermark"></p>
+<h2 id="数据准备"><a href="#数据准备" class="headerlink" title="数据准备"></a>数据准备</h2><h3 id="初始数据"><a href="#初始数据" class="headerlink" title="初始数据"></a>初始数据</h3><p>一般的，初始数据如下图所示，X 列为路径编号，每个 Y 列的 <code>Long Name</code> 为反应路径名，数值为反应能，<strong>从左至右</strong>为反应路径顺序。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-44ff0b592a580445566aa06553a8d48f.png!blog_watermark"></p>
+<h3 id="数据转置"><a href="#数据转置" class="headerlink" title="数据转置"></a>数据转置</h3><p>由于柱状图每一行为一个数据点，为了满足柱状图的数据要求，需要将数据转置，转置后，<strong>从上至下</strong>为反应路径顺序。</p>
+<img src="https://img.yeslu.cn/blog/2022-06/19-a6eff20b4a0a45daa1a244f7fff5d240.png!blog_watermark" style="zoom: 50%;" />
+
+<h3 id="生成制图数据"><a href="#生成制图数据" class="headerlink" title="生成制图数据"></a>生成制图数据</h3><p>在 OriginLab 官方教程中，使用了 Labtalk 脚本进行数据操作，此脚本是为了生成两列相同的数据分别作为 Floating Column 的<strong>上界</strong>和<strong>下界</strong>，<a href="#Labtalk-%E8%AF%A6%E8%A7%A3">文末</a>将详细说明。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">newsheet;</span><br><span class="line"><span class="built_in">range</span> rsrc = <span class="number">1</span>!; </span><br><span class="line"><span class="built_in">range</span> rdst = <span class="number">2</span>!;</span><br><span class="line">rdst.ncols = rsrc.ncols*<span class="number">2</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="built_in">int</span> ii = <span class="number">0</span>; ii &lt; rsrc.ncols; ii++)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">range</span> r1 = <span class="number">1</span>!$(ii+<span class="number">1</span>);</span><br><span class="line">	<span class="built_in">range</span> r2 = <span class="number">2</span>!$(<span class="number">2</span>*ii+<span class="number">1</span>);</span><br><span class="line">	<span class="built_in">range</span> r3 = <span class="number">2</span>!$(<span class="number">2</span>*ii+<span class="number">2</span>);	</span><br><span class="line">	colcopy irng:=r1 orng:=r2;</span><br><span class="line">	colcopy irng:=r1 orng:=r3;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-0583652a875cfeaab12de74dd2ed3b31.png!blog_watermark"></p>
+<p>最后，新增 X 列作为路径编号，并将列类型设置为 <code>XYY</code>。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-6b414a6f0b3136d5b1a2dfd47de68ab8.png!blog_watermark"></p>
+<h2 id="图像绘制"><a href="#图像绘制" class="headerlink" title="图像绘制"></a>图像绘制</h2><h3 id="第一条路径"><a href="#第一条路径" class="headerlink" title="第一条路径"></a>第一条路径</h3><p>本绘图方法中，每一条路径都需要独立绘制，每次选择一组数据。</p>
+<p>选中 B、C 列，选择 <code>Plot -&gt; Bar -&gt; Floating Columns</code> 制图，但此时图中是没有图像的，这是由于当柱状图高度为零时，OriginLab 默认不显示。我们可以通过 <a target="_blank" rel="noopener" href="https://www.originlab.com/doc/ja/LabTalk/ref/Page-obj">Labtalk 命令</a> <code>page.BarShowZero = 1</code> 或者勾选 <code>Preference -&gt; Options -&gt; Bar graph show Zero Value</code> 令其显示。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-4d7b7ee8cba64927acf97aa5791400b8.png!blog_watermark"></p>
+<h4 id="数据连接"><a href="#数据连接" class="headerlink" title="数据连接"></a>数据连接</h4><p>利用数据连接功能，我们可以将每个柱子连接起来，并自定义线形。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-2d934c24c6adb97c4c68bf0806358bec.png!blog_watermark"></p>
+<h3 id="增加多条路径"><a href="#增加多条路径" class="headerlink" title="增加多条路径"></a>增加多条路径</h3><p>如果需要绘制的路径不止一条，可以利用 OriginLab 的 <a target="_blank" rel="noopener" href="https://www.originlab.com/doc/Quick-Help/Add-Data-to-Layer">Add Data to Layer</a> 功能，将其他组数据拖入图像中。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-d2a1b2b9452c030407beaa3edc212e2c.gif"></p>
+<h2 id="数据标注"><a href="#数据标注" class="headerlink" title="数据标注"></a>数据标注</h2><p>这里介绍一个简便方法标注各个中间路径的名称，如图所示，增加 B 列（名称列）和 C、D 列（全为零），将 C、D 列数据添加至图中，并将该组路径的颜色设置为无色，显示其 Label，即可创建在同一水平线且与真实数据垂直对齐的名称。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-6ac75391aa5553ebcf00fe8eb9a7ae57.png!blog_watermark"></p>
+<h2 id="Labtalk-详解"><a href="#Labtalk-详解" class="headerlink" title="Labtalk 详解"></a>Labtalk 详解</h2><h3 id="Range"><a href="#Range" class="headerlink" title="Range"></a>Range</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">range</span> rsrc = <span class="number">1</span>!; </span><br><span class="line"><span class="built_in">range</span> rdst = <span class="number">2</span>!;</span><br></pre></td></tr></table></figure>
+
+<p>类似于 <code>range a = 1!</code> 是指当前活动工作簿的第一个工作表。本组命令是将数据来源设置为第一个工作表，将目标数据存放在第二个工作表。</p>
+<blockquote>
+<p>参考文档：<a target="_blank" rel="noopener" href="https://www.originlab.com/doc/en/LabTalk/guide/Range-Notation">Range-Notation</a></p>
+</blockquote>
+<h3 id="New-Column"><a href="#New-Column" class="headerlink" title="New Column"></a>New Column</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rdst.ncols = rsrc.ncols*<span class="number">2</span>;</span><br></pre></td></tr></table></figure>
+
+<p>上面我们说过，该 Labtalk 脚本是为了将一列数据复制成两列作为 Floating Column 的下界和上界，<code>ncol</code> 代表的是 <code>new column</code>。本组命令是将 <code>rdst</code> 的列数设置为 <code>rsrc</code> 的两倍。</p>
+<blockquote>
+<p>参考文档：<a target="_blank" rel="noopener" href="https://www.originlab.com/doc/LabTalk/guide/Basic-Worksheet-Column-Operation">Basic Worksheet Column</a></p>
+</blockquote>
+<h3 id="Loop"><a href="#Loop" class="headerlink" title="Loop"></a>Loop</h3><h4 id="Header"><a href="#Header" class="headerlink" title="Header"></a>Header</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="built_in">int</span> ii = <span class="number">0</span>; ii &lt; rsrc.ncols; ii++)&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>控制本次循环在遍历完源工作表的所有列后结束。</p>
+<h4 id="Body"><a href="#Body" class="headerlink" title="Body"></a>Body</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">range</span> r1 = <span class="number">1</span>!$(ii+<span class="number">1</span>);</span><br><span class="line"><span class="built_in">range</span> r2 = <span class="number">2</span>!$(<span class="number">2</span>*ii+<span class="number">1</span>);</span><br><span class="line"><span class="built_in">range</span> r3 = <span class="number">2</span>!$(<span class="number">2</span>*ii+<span class="number">2</span>);	</span><br><span class="line">colcopy irng:=r1 orng:=r2;</span><br><span class="line">colcopy irng:=r1 orng:=r3;</span><br></pre></td></tr></table></figure>
+
+<p>此处 <code>irng</code> 为 <code>input range</code>，<code>orng</code> 为 <code>output range</code>。</p>
+<p>当 <code>ii = 0</code>，则 <code>r1</code> 为源工作表的第 1 列， <code>r2</code> 为目标工作表的第 1 列， <code>r3</code> 为目标工作表的第 2 列。接着将源工作表的第 1 列追加到目标工作表的第 1、2 列。</p>
+<p>当 <code>ii = 1</code>，则 <code>r1</code> 为源数据工作表的第 2 列， <code>r2</code> 为目标数据工作表的第 3 列， <code>r3</code> 为目标数据工作表的第 4 列。接着将源工作表的第 2 列追加到目标工作表的第 3、4 列。</p>
+<p>由此可见，随着循环的进行，源工作表的每一列都被拷贝成了两列。</p>
+<blockquote>
+<p>参考文档：<a target="_blank" rel="noopener" href="https://www.originlab.com/doc/LabTalk/guide/Getting-Started-with-LT">Getting Started with LabTalk</a></p>
+</blockquote>
+<h3 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h3><p>在执行本 Labtalk 命令时，当前活动工作簿的第二个工作表会被覆盖，<strong>请确保第二个工作表内为空或没有有效数据</strong>。</p>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
+<li>Windows 11 (22000.652);</li>
+<li>OriginLab 2022b (Academic).</li>
+</ol>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文禁止转载；</li>
+<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
+</ol>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Chandler-Lu
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://www.yeslu.cn/archives/9836d17.html" title="OriginLab 绘制反应能量图">https://www.yeslu.cn/archives/9836d17.html</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-ND</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Graph/" rel="tag"># Graph</a>
+              <a href="/tags/Data-Analysis/" rel="tag"># Data-Analysis</a>
+              <a href="/tags/OriginLab/" rel="tag"># OriginLab</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/archives/fe0135af.html" rel="prev" title="存储设备性能对比测试">
+                  <i class="fa fa-angle-left"></i> 存储设备性能对比测试
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/archives/98f216a2.html" rel="next" title="OriginLab 直播公开课">
+                  OriginLab 直播公开课 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">皖ICP备16003997号 </a>
+      <img src="https://img.yeslu.cn/gongan_beian.png" alt=""><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=34011102003278" rel="noopener" target="_blank">皖公网安备34011102003278号 </a>
+  </div>
+  <div class="copyright">
+    &copy; 2014 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Chandler-Lu</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="/lib/animejs/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="/lib/@fancyapps/ui/dist/fancybox/fancybox.umd.js" integrity="sha256-q8XkJ6dj5VwSvzI8+nATCHHQG+Xv/dAZBCgqmu93zOY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="/lib/hexo-generator-searchdb/dist/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

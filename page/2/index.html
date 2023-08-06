@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="p3nrVMZBUOfTth91mo4SrSJ3kcDao-5L0turXxUGhUU">
+  <meta name="msvalidate.01" content="EEDECC1EA4AE341CC57365E075EBC8B6">
+  <meta name="baidu-site-verification" content="Udzuh3od3qSnQYUO">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="/lib/@fortawesome/fontawesome-free/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="/lib/animate.css/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="/lib/@fancyapps/ui/dist/fancybox/fancybox.css" integrity="sha256-RvRHGSuWAxZpXKV9lLDt2e+rZ+btzn48Wp4ueS3NZKs=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"www.yeslu.cn","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(&#x3D;^･^&#x3D;)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="这是只兔子">
+<meta property="og:url" content="https://www.yeslu.cn/page/2/index.html">
+<meta property="og:site_name" content="这是只兔子">
+<meta property="og:description" content="这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(&#x3D;^･^&#x3D;)">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Chandler-Lu">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://www.yeslu.cn/page/2/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"page/2/index.html","title":""}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>这是只兔子</title>
+  
+
+
+
+
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "i3tut7r0p1");
+</script>
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">这是只兔子</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">This is a Rabbit.</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Chandler-Lu"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Chandler-Lu</p>
+  <div class="site-description" itemprop="description">这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">38</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="mailto:ambles-09-rosters@icloud.com" title="E-Mail → mailto:ambles-09-rosters@icloud.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/Chandler-Lu" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Chandler-Lu" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/1908825" title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;1908825" rel="noopener me" target="_blank"><i class="fa fa-bold fa-fw"></i>Bilibili</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.cndzq.com/bbs/home.php?mod=space&uid=138196" title="CNDZQ → https:&#x2F;&#x2F;www.cndzq.com&#x2F;bbs&#x2F;home.php?mod&#x3D;space&amp;uid&#x3D;138196" rel="noopener me" target="_blank"><i class="fa fa-music fa-fw"></i>CNDZQ</a>
+      </span>
+  </div>
+<!-- recent posts -->
+    <br />
+    <div class="links-of-blogroll motion-element links-of-blogroll-block">
+        <div class="links-of-blogroll-title recent-posts-title">
+	    <i class="fa fa-history " aria-hidden="true"></i>
+            近期文章
+	</div>
+	<ul class="links-of-blogroll-list recent-posts-list">
+	        <li class="my-links-of-blogroll-item">
+		    <a href="/archives/2aff811f.html" title="论文实用干货：Office 设置优化（07）" target="">
+		    论文实用干货：Office 设置优化（07）
+		    </a>
+		</li>
+	        <li class="my-links-of-blogroll-item">
+		    <a href="/archives/2e6d2c4b.html" title="OriginLab 修改中文语言" target="">
+		    OriginLab 修改中文语言
+		    </a>
+		</li>
+	        <li class="my-links-of-blogroll-item">
+		    <a href="/archives/f49d4612.html" title="OriginLab 部分中文字体加粗不显示" target="">
+		    OriginLab 部分中文字体加粗不显示
+		    </a>
+		</li>
+	        <li class="my-links-of-blogroll-item">
+		    <a href="/archives/863b7bad.html" title="OriginLab 绘制 3D 图时无法正常显示图例" target="">
+		    OriginLab 绘制 3D 图时无法正常显示图例
+		    </a>
+		</li>
+	        <li class="my-links-of-blogroll-item">
+		    <a href="/archives/b4c2c415.html" title="OriginLab 快速绘制带 PDF 卡片的 XRD 图谱" target="">
+		    OriginLab 快速绘制带 PDF 卡片的 XRD 图谱
+		    </a>
+		</li>
+	</ul>
+    </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.yeslu.cn/archives/ff52424d.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Chandler-Lu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="这是只兔子">
+      <meta itemprop="description" content="这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 这是只兔子">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/archives/ff52424d.html" class="post-title-link" itemprop="url">解决群晖 NTP 自动同步失败</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-08-07 14:51:00" itemprop="dateCreated datePublished" datetime="2022-08-07T14:51:00+08:00">2022-08-07</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-10-19 14:38:49" itemprop="dateModified" datetime="2022-10-19T14:38:49+08:00">2022-10-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Hardware/" itemprop="url" rel="index"><span itemprop="name">Hardware</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>自从群晖（Synology）DSM 某个版本更新后，NTP 自动同步总是提示“无法同步。因为没有网络或网络连接不稳定。请参阅本文以了解详细信息”，而手动同步正常。群晖官方虽然提供了<a target="_blank" rel="noopener" href="https://kb.synology.cn/zh-cn/DSM/tutorial/Troubleshooting_issues_syncing_with_NTP_server">解决方案</a>，但测试后并没有解决问题。通过与群晖技术支持交流，获得了较好的解决方案。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/archives/ff52424d.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.yeslu.cn/archives/98f216a2.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Chandler-Lu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="这是只兔子">
+      <meta itemprop="description" content="这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 这是只兔子">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/archives/98f216a2.html" class="post-title-link" itemprop="url">OriginLab 直播公开课</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-06-24 14:32:21" itemprop="dateCreated datePublished" datetime="2022-06-24T14:32:21+08:00">2022-06-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-05-23 10:49:32" itemprop="dateModified" datetime="2023-05-23T10:49:32+08:00">2023-05-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Science/" itemprop="url" rel="index"><span itemprop="name">Science</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="2020-03-06"><a href="#2020-03-06" class="headerlink" title="2020.03.06"></a><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV19E411V7Tw">2020.03.06</a></h2><h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3><ul>
+<li>OriginPro 助力科研论文</li>
+</ul>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/archives/98f216a2.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.yeslu.cn/archives/9836d17.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Chandler-Lu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="这是只兔子">
+      <meta itemprop="description" content="这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 这是只兔子">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/archives/9836d17.html" class="post-title-link" itemprop="url">OriginLab 绘制反应能量图</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-06-19 16:53:36" itemprop="dateCreated datePublished" datetime="2022-06-19T16:53:36+08:00">2022-06-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-06-20 00:51:08" itemprop="dateModified" datetime="2022-06-20T00:51:08+08:00">2022-06-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Science/" itemprop="url" rel="index"><span itemprop="name">Science</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>反应能量图（reaction energy diagram）是 DFT 计算中展现化学反应的重要方式，OriginLab 官方也提供了很有意思的<a target="_blank" rel="noopener" href="http://blog.originlab.com/make-energy-diagram-in-origin">方案</a>来绘制这样的路径图。本文将以下图中的一条路径为例，对官方提供的方案进行详细解释和扩展。</p>
+<img src="https://img.yeslu.cn/blog/2022-06/19-1a1f48fcc08abea813bf23917a8dd95d.png" alt="10.1038/s41467-022-29428-9" style="zoom:80%;" />
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/archives/9836d17.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.yeslu.cn/archives/fe0135af.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Chandler-Lu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="这是只兔子">
+      <meta itemprop="description" content="这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 这是只兔子">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/archives/fe0135af.html" class="post-title-link" itemprop="url">存储设备性能对比测试</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-06-14 19:56:21" itemprop="dateCreated datePublished" datetime="2022-06-14T19:56:21+08:00">2022-06-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-11-20 23:42:50" itemprop="dateModified" datetime="2022-11-20T23:42:50+08:00">2022-11-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Hardware/" itemprop="url" rel="index"><span itemprop="name">Hardware</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>由于经常使用各类摄影设备，同时在数据存储方面也有一定的需求，本人经常会购买一些存储设备，如 SD、TF、U盘、硬盘等，而市面上存储设备（尤其是SD卡）的读写性能对比相对较少。本文将对自购的存储设备进行性能测试，给想要购买相关硬件的用户提供参考。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/archives/fe0135af.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.yeslu.cn/archives/6969f4f4.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Chandler-Lu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="这是只兔子">
+      <meta itemprop="description" content="这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 这是只兔子">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/archives/6969f4f4.html" class="post-title-link" itemprop="url">OriginLab 配置 nVIDIA 独立显卡及显卡调用异常的处理</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-04-29 15:55:00" itemprop="dateCreated datePublished" datetime="2022-04-29T15:55:00+08:00">2022-04-29</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-03-09 19:27:43" itemprop="dateModified" datetime="2023-03-09T19:27:43+08:00">2023-03-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Science/" itemprop="url" rel="index"><span itemprop="name">Science</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在双显卡（本文中“双显卡”特指核心显卡+ nVIDIA 独立显卡）的设备中，OriginLab 默认调用核心显卡进行图形处理，这可能会带来一系列问题。同时，由于 nVIDIA 显卡驱动的特性，即使手动指定 OriginLab 调用独立显卡，也可能出现软件调用显卡错误的情况。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/archives/6969f4f4.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.yeslu.cn/archives/71ef1cd6.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Chandler-Lu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="这是只兔子">
+      <meta itemprop="description" content="这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 这是只兔子">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/archives/71ef1cd6.html" class="post-title-link" itemprop="url">OriginLab 通过 Y 轴偏移制作层叠式线图的五种思路</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-04-17 12:53:00" itemprop="dateCreated datePublished" datetime="2022-04-17T12:53:00+08:00">2022-04-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-07-30 18:39:58" itemprop="dateModified" datetime="2022-07-30T18:39:58+08:00">2022-07-30</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Science/" itemprop="url" rel="index"><span itemprop="name">Science</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>层叠式线图是比较多组数据差异的重要手段，当数据对 Y 的实际值不敏感时，通过将数据堆叠在同一张图中，能够更好分析不同数据间峰强、峰位移等信息的变化。常见的表征手段中，XRD、XPS、XAS、FT-IR、Raman 等光（能）谱的数据，均可通过类似下图的手段，在 Y 方向上进行堆叠制图。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-04/17-966e0351a4f04e3d61b4d7513f19cb59.png" alt="10.1038/s41467-021-27768-6"></p>
+<p>在 OriginLab 中，软件至少提供了五种方法以实现层叠式线图，本文将简要介绍这些思路。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/archives/71ef1cd6.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" title="上一页" aria-label="上一页" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/3/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">皖ICP备16003997号 </a>
+      <img src="https://img.yeslu.cn/gongan_beian.png" alt=""><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=34011102003278" rel="noopener" target="_blank">皖公网安备34011102003278号 </a>
+  </div>
+  <div class="copyright">
+    &copy; 2014 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Chandler-Lu</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="/lib/animejs/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="/lib/@fancyapps/ui/dist/fancybox/fancybox.umd.js" integrity="sha256-q8XkJ6dj5VwSvzI8+nATCHHQG+Xv/dAZBCgqmu93zOY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="/lib/hexo-generator-searchdb/dist/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
