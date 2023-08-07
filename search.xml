@@ -6955,7 +6955,7 @@
       </tags>
   </entry>
   <entry>
-    <title>macOS 虚拟机上安装 OriginLab</title>
+    <title>在 macOS 虚拟机上安装 OriginLab</title>
     <url>/archives/53f8379a.html</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>随着 <a href="https://en.wikipedia.org/wiki/Apple_silicon">Apple silicon</a> 平台的普及，越来越多的用户开始使用 macOS 系统。然而，OriginLab 仅在 Windows 平台上进行了适配，对于 macOS 平台的用户则需要通过虚拟机进行安装。本文将从 Windows 的下载开始，详解 OriginLab 在 macOS 平台上的安装步骤。</p>
 <span id="more"></span>
@@ -6963,7 +6963,7 @@
 <h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><ol>
 <li>阅读此教程前，建议你具备<strong>全球互联网</strong>的访问能力和基本的问题处理能力；</li>
 <li>由于安全问题，所有软件均只提供官网或可信渠道的下载方式，本文不保证任何来自于<strong>第三方（含盗版）</strong>渠道的软件可以正常使用。互联网平台上存在大量第三方修改版的操作系统，用户无法知道这样的系统中加了什么料，如果底层环境都不可信，在其上层运行的软件的稳定性和安全性更是无从谈起；</li>
-<li>当前能在 Apple silicon 平台上运行 OriginLab 的虚拟机只有 Parallels Desktop 和 <a href="https://www.vmware.com/products/fusion/fusion-evaluation.html">VMware Fusion 13</a>，本文将以 Parallels Desktop 为例讲解，而 <a href="https://www.codeweavers.com/crossover">Crossover</a> 不具备完整的运行环境，无法适配 OriginLab；</li>
+<li>当前能在 Apple silicon 平台上运行 OriginLab 的虚拟机只有 Parallels Desktop 和 <a href="https://www.vmware.com/products/fusion/fusion-evaluation.html">VMware Fusion 13</a>，本文将以 Parallels Desktop 为例讲解。此外，<a href="https://www.codeweavers.com/crossover">Crossover</a> 不具备完整的运行环境，无法适配 OriginLab；</li>
 <li>由于架构的特殊性，OriginLab 在 Apple silicon 上运行存在 OriginLab、虚拟机、Windows、macOS 四方的兼容问题，本文仅保证撰文时所使用的软件和系统版本可以完美运行；</li>
 <li>本文对于 Intel 平台的 macOS 也适用，Intel 平台直接使用 x86-64 架构的 Windows 10&#x2F;11 即可。</li>
 </ol>
