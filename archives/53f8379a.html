@@ -24,25 +24,46 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"www.yeslu.cn","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(&#x3D;^･^&#x3D;)">
-<meta property="og:type" content="website">
-<meta property="og:title" content="这是只兔子">
-<meta property="og:url" content="https://www.yeslu.cn/index.html">
+    <meta name="description" content="前言随着 Apple silicon 平台的普及，越来越多的用户开始使用 macOS 系统。然而，OriginLab 仅在 Windows 平台上进行了适配，对于 macOS 平台的用户则需要通过虚拟机进行安装。本文将从 Windows 的下载开始，详解 OriginLab 在 macOS 平台上的安装步骤。 说明 阅读此教程前，建议你具备全球互联网的访问能力和基本的问题处理能力； 由于安全问题，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="macOS 虚拟机上安装 OriginLab">
+<meta property="og:url" content="https://www.yeslu.cn/archives/53f8379a.html">
 <meta property="og:site_name" content="这是只兔子">
-<meta property="og:description" content="这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(&#x3D;^･^&#x3D;)">
+<meta property="og:description" content="前言随着 Apple silicon 平台的普及，越来越多的用户开始使用 macOS 系统。然而，OriginLab 仅在 Windows 平台上进行了适配，对于 macOS 平台的用户则需要通过虚拟机进行安装。本文将从 Windows 的下载开始，详解 OriginLab 在 macOS 平台上的安装步骤。 说明 阅读此教程前，建议你具备全球互联网的访问能力和基本的问题处理能力； 由于安全问题，">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img.yeslu.cn/blog/2023-08/07-49dde98f87844ec285072bcf0a4d3a1d.jpeg">
+<meta property="og:image" content="https://img.yeslu.cn/blog/2023-08/07-b78b2cf68b8ffd4a9d364297da375b25.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog/2023-08/07-b4c1eb034706e26ec57e4c688d2bd27e.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog/2023-08/07-41edb8385f2289d0649ed654258df664.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog/2023-08/07-bbd1b27982c15d1d4abd23289fec4a53.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog/2023-08/07-3a818371aa2c961441494ddbf4af82e5.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog/2023-08/07-f8ba7f1824457e6155c343d1a0459ba9.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog/2023-08/07-9db4ad2b67959087c447bbd8a54e41eb.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog/2023-08/07-18e2eab41cffa334a5079ef583b3b2e0.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog/2023-08/07-60a345e527debe447df540d45c47eded.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog/2023-08/07-239fd33d5bf45ebbaa8cc7af6b71548d.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog/2023-08/07-1b8ee18dd0e5f6fa816c97a6e68dcc66.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog/2023-08/07-f065d2af1dea3a2f2694e0820b2c4c37.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog/2023-08/07-de553b3552c2d5d5f56a0b0035ac8daf.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog/2023-08/07-129ef853148fdd6ea0e0f79814a1bd21.png">
+<meta property="og:image" content="https://img.yeslu.cn/blog/2023-08/07-dcc6ea4a180bba8bcc9f7f33faf5a552.png">
+<meta property="article:published_time" content="2023-08-07T09:45:00.000Z">
+<meta property="article:modified_time" content="2023-08-07T09:46:12.683Z">
 <meta property="article:author" content="Chandler-Lu">
+<meta property="article:tag" content="Graph">
+<meta property="article:tag" content="OriginLab">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img.yeslu.cn/blog/2023-08/07-49dde98f87844ec285072bcf0a4d3a1d.jpeg">
 
 
-<link rel="canonical" href="https://www.yeslu.cn/">
+<link rel="canonical" href="https://www.yeslu.cn/archives/53f8379a.html">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://www.yeslu.cn/archives/53f8379a.html","path":"archives/53f8379a.html","title":"macOS 虚拟机上安装 OriginLab"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>这是只兔子</title>
+<title>macOS 虚拟机上安装 OriginLab | 这是只兔子</title>
   
 
 
@@ -82,7 +103,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">这是只兔子</h1>
+      <p class="site-title">这是只兔子</p>
       <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">This is a Rabbit.</p>
@@ -136,7 +157,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -149,6 +170,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%B4%E6%98%8E"><span class="nav-number">2.</span> <span class="nav-text">说明</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9E%B6%E6%9E%84"><span class="nav-number">2.1.</span> <span class="nav-text">架构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Window-11-for-ARM-%E7%89%B9%E5%88%AB%E8%AF%B4%E6%98%8E"><span class="nav-number">2.2.</span> <span class="nav-text">Window 11 for ARM 特别说明</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%9A%84%E5%AE%89%E8%A3%85"><span class="nav-number">3.</span> <span class="nav-text">虚拟机的安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD%E5%92%8C%E5%AE%89%E8%A3%85-Windows-11"><span class="nav-number">4.</span> <span class="nav-text">下载和安装 Windows 11</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#PD-%E8%87%AA%E5%B8%A6%E6%96%B9%E6%A1%88"><span class="nav-number">4.1.</span> <span class="nav-text">PD 自带方案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#UUP-dump-%E6%96%B9%E6%A1%88"><span class="nav-number">4.2.</span> <span class="nav-text">UUP dump 方案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD"><span class="nav-number">4.3.</span> <span class="nav-text">下载</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%85"><span class="nav-number">4.3.1.</span> <span class="nav-text">安装</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#OriginLab-%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E"><span class="nav-number">5.</span> <span class="nav-text">OriginLab 的安装与</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83"><span class="nav-number">6.</span> <span class="nav-text">环境</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -239,16 +261,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://www.yeslu.cn/archives/53f8379a.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -262,13 +285,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 这是只兔子">
+      <meta itemprop="name" content="macOS 虚拟机上安装 OriginLab | 这是只兔子">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/archives/53f8379a.html" class="post-title-link" itemprop="url">macOS 虚拟机上安装 OriginLab</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          macOS 虚拟机上安装 OriginLab
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -300,8 +323,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>随着 <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Apple_silicon">Apple silicon</a> 平台的普及，越来越多的用户开始使用 macOS 系统。然而，OriginLab 仅在 Windows 平台上进行了适配，对于 macOS 平台的用户则需要通过虚拟机进行安装。本文将从 Windows 的下载开始，详解 OriginLab 在 macOS 平台上的安装步骤。</p>
+    <div class="post-body" itemprop="articleBody"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>随着 <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Apple_silicon">Apple silicon</a> 平台的普及，越来越多的用户开始使用 macOS 系统。然而，OriginLab 仅在 Windows 平台上进行了适配，对于 macOS 平台的用户则需要通过虚拟机进行安装。本文将从 Windows 的下载开始，详解 OriginLab 在 macOS 平台上的安装步骤。</p>
 <h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><ol>
 <li>阅读此教程前，建议你具备<strong>全球互联网</strong>的访问能力和基本的问题处理能力；</li>
 <li>由于安全问题，所有软件均只提供官网或可信渠道的下载方式，本文不保证任何来自于<strong>第三方（含盗版）</strong>渠道的软件可以正常使用。互联网平台上存在大量第三方修改版的操作系统，用户无法知道这样的系统中加了什么料，如果底层环境都不可信，在其上层运行的软件的稳定性和安全性更是无从谈起；</li>
@@ -409,7 +431,6 @@
 <li>Window 11 for ARM：22H2 22621（UUP dump 方案）。</li>
 </ol>
 
-      
     </div>
 
     
@@ -417,274 +438,39 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Chandler-Lu
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://www.yeslu.cn/archives/53f8379a.html" title="macOS 虚拟机上安装 OriginLab">https://www.yeslu.cn/archives/53f8379a.html</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-ND</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
 </div>
 
+          <div class="post-tags">
+              <a href="/tags/Graph/" rel="tag"># Graph</a>
+              <a href="/tags/OriginLab/" rel="tag"># OriginLab</a>
+          </div>
 
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.yeslu.cn/archives/2aff811f.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Chandler-Lu">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="这是只兔子">
-      <meta itemprop="description" content="这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 这是只兔子">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/archives/2aff811f.html" class="post-title-link" itemprop="url">论文实用干货：Office 设置优化（07）</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2023-07-24 22:39:37" itemprop="dateCreated datePublished" datetime="2023-07-24T22:39:37+08:00">2023-07-24</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-08-06 16:10:00" itemprop="dateModified" datetime="2023-08-06T16:10:00+08:00">2023-08-06</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Science/" itemprop="url" rel="index"><span itemprop="name">Science</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Office 中的一些奇怪设置，会在使用过程中产生不符合逻辑的操作，本文是笔者自己遇到的坑以及进行的优化。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/archives/2aff811f.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.yeslu.cn/archives/2e6d2c4b.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Chandler-Lu">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="这是只兔子">
-      <meta itemprop="description" content="这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 这是只兔子">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/archives/2e6d2c4b.html" class="post-title-link" itemprop="url">OriginLab 修改中文语言</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2023-06-05 10:02:00 / 修改时间：19:23:08" itemprop="dateCreated datePublished" datetime="2023-06-05T10:02:00+08:00">2023-06-05</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Science/" itemprop="url" rel="index"><span itemprop="name">Science</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>OriginLab 原则上可以在软件内直接切换语言，但由于官方授权的一些特性和限制，部分用户无法在软件内切换，本文将详解语言切换的相关逻辑。</p>
-<img src="https://img.yeslu.cn/blog/2023-06/05-1908e3e7ae5b85ba8921fda9fe447e62.png" style="zoom:45%;" />
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/archives/2e6d2c4b.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/archives/2aff811f.html" rel="prev" title="论文实用干货：Office 设置优化（07）">
+                  <i class="fa fa-angle-left"></i> 论文实用干货：Office 设置优化（07）
+                </a>
             </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.yeslu.cn/archives/f49d4612.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Chandler-Lu">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="这是只兔子">
-      <meta itemprop="description" content="这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 这是只兔子">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/archives/f49d4612.html" class="post-title-link" itemprop="url">OriginLab 部分中文字体加粗不显示</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2023-05-05 09:11:00 / 修改时间：09:32:55" itemprop="dateCreated datePublished" datetime="2023-05-05T09:11:00+08:00">2023-05-05</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Science/" itemprop="url" rel="index"><span itemprop="name">Science</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h2><p>OriginLab <strong>部分中文字体</strong>（宋体、黑体、楷体等）在<strong>垂直方向</strong>上加粗后，实际不显示加粗。</p>
-<img src="https://img.yeslu.cn/blog/2023-05/05-8e92bc4a588a2195d4082ec88845e429.png!blog_watermark" style="zoom: 33%;" />
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/archives/f49d4612.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
+            <div class="post-nav-item">
             </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          </div>
     </footer>
   </article>
 </div>
@@ -692,194 +478,7 @@
 
 
 
-    
 
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.yeslu.cn/archives/863b7bad.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Chandler-Lu">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="这是只兔子">
-      <meta itemprop="description" content="这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 这是只兔子">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/archives/863b7bad.html" class="post-title-link" itemprop="url">OriginLab 绘制 3D 图时无法正常显示图例</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2023-04-25 15:23:00" itemprop="dateCreated datePublished" datetime="2023-04-25T15:23:00+08:00">2023-04-25</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-06-05 09:44:25" itemprop="dateModified" datetime="2023-06-05T09:44:25+08:00">2023-06-05</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Science/" itemprop="url" rel="index"><span itemprop="name">Science</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h2><p>OriginLab 部分版本在绘制图形时，图例等部分会出现如下图所示的异常的黑色色块，此问题与 AMD 显卡 OpenGL 与 OriginLab 的兼容性有关，本文将简述解决方案。</p>
-<img src="https://img.yeslu.cn/blog/2023-04/25-88b961d88dd9f971b194e69d3e1a79fc.png" alt="图片来自群友聊天记录" style="zoom: 50%;" />
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/archives/863b7bad.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.yeslu.cn/archives/b4c2c415.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Chandler-Lu">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="这是只兔子">
-      <meta itemprop="description" content="这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 这是只兔子">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/archives/b4c2c415.html" class="post-title-link" itemprop="url">OriginLab 快速绘制带 PDF 卡片的 XRD 图谱</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2022-10-22 23:40:00" itemprop="dateCreated datePublished" datetime="2022-10-22T23:40:00+08:00">2022-10-22</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-05-30 09:51:41" itemprop="dateModified" datetime="2023-05-30T09:51:41+08:00">2023-05-30</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Science/" itemprop="url" rel="index"><span itemprop="name">Science</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>X射线衍射（X-ray Diffraction, XRD）可用于揭示物质的晶体结构、化学组成以及物理性质，在处理 XRD 数据时，常与 PDF 卡片结合绘制。文本将介绍使用OriginLab 绘制带 PDF 卡片的 XRD 图谱。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/archives/b4c2c415.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
 
 </div>
   </main>
