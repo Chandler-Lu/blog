@@ -6955,7 +6955,7 @@
       </tags>
   </entry>
   <entry>
-    <title>如何在 macOS 虚拟机上安装 OriginLab</title>
+    <title>如何在 macOS 虚拟机上安装 Origin</title>
     <url>/archives/53f8379a.html</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>随着 <a href="https://en.wikipedia.org/wiki/Apple_silicon">Apple silicon</a> 平台的普及，越来越多的用户开始使用 macOS 系统。然而，Origin 仅在 Windows 平台上进行了适配，对于 macOS 平台的用户则需要通过虚拟机进行安装。本文将从 Windows 的下载开始，详解 Origin 在 macOS 平台上的安装步骤。</p>
 <p>在 macOS 平台部署虚拟机并安装 Origin 具有一定的成本，如果您只需要浏览数据和图片，不妨尝试由 OriginLab 开发的<strong>免费</strong>软件 <a href="https://www.originlab.com/viewer/">Origin Viewer</a>，这可以使您在 macOS 上原生查看和复制 Origin 项目文件中包含的信息。</p>
