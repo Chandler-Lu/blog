@@ -24,12 +24,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"www.yeslu.cn","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="前言在双显卡（本文中“双显卡”特指核心显卡+ nVIDIA 独立显卡）的设备中，OriginLab 默认调用核心显卡进行图形处理，这可能会带来一系列问题。同时，由于 nVIDIA 显卡驱动的特性，即使手动指定 OriginLab 调用独立显卡，也可能出现软件调用显卡错误的情况。">
+    <meta name="description" content="前言在双显卡（本文中“双显卡”特指核心显卡+ nVIDIA 独立显卡）的设备中，Origin 默认调用核心显卡进行图形处理，这可能会带来一系列问题。同时，由于 nVIDIA 显卡驱动的特性，即使手动指定 Origin 调用独立显卡，也可能出现软件调用显卡错误的情况。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="OriginLab 配置 nVIDIA 独立显卡及显卡调用异常的处理">
+<meta property="og:title" content="Origin 配置 nVIDIA 独立显卡及显卡调用异常的处理">
 <meta property="og:url" content="https://www.yeslu.cn/archives/6969f4f4.html">
 <meta property="og:site_name" content="这是只兔子">
-<meta property="og:description" content="前言在双显卡（本文中“双显卡”特指核心显卡+ nVIDIA 独立显卡）的设备中，OriginLab 默认调用核心显卡进行图形处理，这可能会带来一系列问题。同时，由于 nVIDIA 显卡驱动的特性，即使手动指定 OriginLab 调用独立显卡，也可能出现软件调用显卡错误的情况。">
+<meta property="og:description" content="前言在双显卡（本文中“双显卡”特指核心显卡+ nVIDIA 独立显卡）的设备中，Origin 默认调用核心显卡进行图形处理，这可能会带来一系列问题。同时，由于 nVIDIA 显卡驱动的特性，即使手动指定 Origin 调用独立显卡，也可能出现软件调用显卡错误的情况。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://img.yeslu.cn/blog/2022-04/29-c24201e8b002b6de779aaef5ed98420e.png!blog_watermark">
 <meta property="og:image" content="https://img.yeslu.cn/blog/2022-04/29-593ff8de1fe014405dd8baf6cc2071b9.png!blog_watermark">
@@ -41,9 +41,9 @@
 <meta property="og:image" content="https://img.yeslu.cn/blog/2022-04/29-a910e0ed18e8f941b223f17324ef0534.png!blog_watermark">
 <meta property="og:image" content="https://img.yeslu.cn/blog/2022-04/29-25ebdded69843a08fb0704a3936616d4.png!blog_watermark">
 <meta property="article:published_time" content="2022-04-29T07:55:00.000Z">
-<meta property="article:modified_time" content="2023-03-09T11:27:43.652Z">
+<meta property="article:modified_time" content="2023-08-12T14:06:14.980Z">
 <meta property="article:author" content="Chandler-Lu">
-<meta property="article:tag" content="OriginLab">
+<meta property="article:tag" content="Origin">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://img.yeslu.cn/blog/2022-04/29-c24201e8b002b6de779aaef5ed98420e.png!blog_watermark">
 
@@ -52,10 +52,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://www.yeslu.cn/archives/6969f4f4.html","path":"archives/6969f4f4.html","title":"OriginLab 配置 nVIDIA 独立显卡及显卡调用异常的处理"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://www.yeslu.cn/archives/6969f4f4.html","path":"archives/6969f4f4.html","title":"Origin 配置 nVIDIA 独立显卡及显卡调用异常的处理"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>OriginLab 配置 nVIDIA 独立显卡及显卡调用异常的处理 | 这是只兔子</title>
+<title>Origin 配置 nVIDIA 独立显卡及显卡调用异常的处理 | 这是只兔子</title>
   
 
 
@@ -162,7 +162,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B-OriginLab-%E5%BD%93%E5%89%8D%E8%B0%83%E7%94%A8%E7%9A%84%E6%98%BE%E5%8D%A1"><span class="nav-number">2.</span> <span class="nav-text">查看 OriginLab 当前调用的显卡</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8C%87%E5%AE%9A-OriginLab-%E8%B0%83%E7%94%A8%E7%8B%AC%E6%98%BE"><span class="nav-number">3.</span> <span class="nav-text">指定 OriginLab 调用独显</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%98%BE%E5%8D%A1%E8%B0%83%E7%94%A8%E5%BC%82%E5%B8%B8%E7%9A%84%E5%A4%84%E7%90%86"><span class="nav-number">4.</span> <span class="nav-text">显卡调用异常的处理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96-OriginLab-%E7%9F%AD%E8%B7%AF%E5%BE%84"><span class="nav-number">4.1.</span> <span class="nav-text">获取 OriginLab 短路径</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8C%87%E5%AE%9A%E8%AF%A5%E7%9F%AD%E8%B7%AF%E5%BE%84%E8%B0%83%E7%94%A8%E7%8B%AC%E6%98%BE"><span class="nav-number">4.2.</span> <span class="nav-text">指定该短路径调用独显</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83"><span class="nav-number">5.</span> <span class="nav-text">环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%87%E6%B3%A8"><span class="nav-number">6.</span> <span class="nav-text">备注</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B-Origin-%E5%BD%93%E5%89%8D%E8%B0%83%E7%94%A8%E7%9A%84%E6%98%BE%E5%8D%A1"><span class="nav-number">2.</span> <span class="nav-text">查看 Origin 当前调用的显卡</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8C%87%E5%AE%9A-Origin-%E8%B0%83%E7%94%A8%E7%8B%AC%E6%98%BE"><span class="nav-number">3.</span> <span class="nav-text">指定 Origin 调用独显</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%98%BE%E5%8D%A1%E8%B0%83%E7%94%A8%E5%BC%82%E5%B8%B8%E7%9A%84%E5%A4%84%E7%90%86"><span class="nav-number">4.</span> <span class="nav-text">显卡调用异常的处理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96-Origin-%E7%9F%AD%E8%B7%AF%E5%BE%84"><span class="nav-number">4.1.</span> <span class="nav-text">获取 Origin 短路径</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8C%87%E5%AE%9A%E8%AF%A5%E7%9F%AD%E8%B7%AF%E5%BE%84%E8%B0%83%E7%94%A8%E7%8B%AC%E6%98%BE"><span class="nav-number">4.2.</span> <span class="nav-text">指定该短路径调用独显</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8E%AF%E5%A2%83"><span class="nav-number">5.</span> <span class="nav-text">环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%87%E6%B3%A8"><span class="nav-number">6.</span> <span class="nav-text">备注</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -188,7 +188,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-count">28</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -226,18 +226,18 @@
 		    </a>
 		</li>
 	        <li class="my-links-of-blogroll-item">
-		    <a href="/archives/2e6d2c4b.html" title="OriginLab 修改中文语言" target="">
-		    OriginLab 修改中文语言
+		    <a href="/archives/2e6d2c4b.html" title="Origin 修改中文语言" target="">
+		    Origin 修改中文语言
 		    </a>
 		</li>
 	        <li class="my-links-of-blogroll-item">
-		    <a href="/archives/f49d4612.html" title="OriginLab 部分中文字体加粗不显示" target="">
-		    OriginLab 部分中文字体加粗不显示
+		    <a href="/archives/f49d4612.html" title="Origin 部分中文字体加粗不显示" target="">
+		    Origin 部分中文字体加粗不显示
 		    </a>
 		</li>
 	        <li class="my-links-of-blogroll-item">
-		    <a href="/archives/863b7bad.html" title="OriginLab 绘制 3D 图时无法正常显示图例" target="">
-		    OriginLab 绘制 3D 图时无法正常显示图例
+		    <a href="/archives/863b7bad.html" title="Origin 绘制 3D 图时无法正常显示图例" target="">
+		    Origin 绘制 3D 图时无法正常显示图例
 		    </a>
 		</li>
 	</ul>
@@ -277,12 +277,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="OriginLab 配置 nVIDIA 独立显卡及显卡调用异常的处理 | 这是只兔子">
+      <meta itemprop="name" content="Origin 配置 nVIDIA 独立显卡及显卡调用异常的处理 | 这是只兔子">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          OriginLab 配置 nVIDIA 独立显卡及显卡调用异常的处理
+          Origin 配置 nVIDIA 独立显卡及显卡调用异常的处理
         </h1>
 
         <div class="post-meta-container">
@@ -300,7 +300,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-03-09 19:27:43" itemprop="dateModified" datetime="2023-03-09T19:27:43+08:00">2023-03-09</time>
+      <time title="修改时间：2023-08-12 22:06:14" itemprop="dateModified" datetime="2023-08-12T22:06:14+08:00">2023-08-12</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -321,29 +321,29 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在双显卡（本文中“双显卡”特指核心显卡+ nVIDIA 独立显卡）的设备中，OriginLab 默认调用核心显卡进行图形处理，这可能会带来一系列问题。同时，由于 nVIDIA 显卡驱动的特性，即使手动指定 OriginLab 调用独立显卡，也可能出现软件调用显卡错误的情况。</p>
+    <div class="post-body" itemprop="articleBody"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在双显卡（本文中“双显卡”特指核心显卡+ nVIDIA 独立显卡）的设备中，Origin 默认调用核心显卡进行图形处理，这可能会带来一系列问题。同时，由于 nVIDIA 显卡驱动的特性，即使手动指定 Origin 调用独立显卡，也可能出现软件调用显卡错误的情况。</p>
 <span id="more"></span>
 
-<h2 id="查看-OriginLab-当前调用的显卡"><a href="#查看-OriginLab-当前调用的显卡" class="headerlink" title="查看 OriginLab 当前调用的显卡"></a>查看 OriginLab 当前调用的显卡</h2><ul>
+<h2 id="查看-Origin-当前调用的显卡"><a href="#查看-Origin-当前调用的显卡" class="headerlink" title="查看 Origin 当前调用的显卡"></a>查看 Origin 当前调用的显卡</h2><ul>
 <li>通过 “Preferences” - “3D OpenGL Settings” 即可查看。</li>
 </ul>
 <p><img src="https://img.yeslu.cn/blog/2022-04/29-c24201e8b002b6de779aaef5ed98420e.png!blog_watermark"></p>
 <img src="https://img.yeslu.cn/blog/2022-04/29-593ff8de1fe014405dd8baf6cc2071b9.png!blog_watermark" style="zoom:50%;" />
 
-<h2 id="指定-OriginLab-调用独显"><a href="#指定-OriginLab-调用独显" class="headerlink" title="指定 OriginLab 调用独显"></a>指定 OriginLab 调用独显</h2><ol>
+<h2 id="指定-Origin-调用独显"><a href="#指定-Origin-调用独显" class="headerlink" title="指定 Origin 调用独显"></a>指定 Origin 调用独显</h2><ol>
 <li>启动 “nVIDIA Control Panel” 应用程序；</li>
-<li>在“管理 3D 设置” - “程序设置”中找到 OriginLab ；</li>
+<li>在“管理 3D 设置” - “程序设置”中找到 Origin ；</li>
 <li>为其“首选图形处理器”配置“高性能 nVIDIA 处理器”。</li>
 </ol>
 <p><img src="https://img.yeslu.cn/blog/2022-04/29-0432ca9c3cc05db4b91b04f72d016009.png!blog_watermark"></p>
 <p><img src="https://img.yeslu.cn/blog/2022-04/29-bc6bae41bce6bacfdc4a8f1516d7cdaa.png!blog_watermark"></p>
 <p><img src="https://img.yeslu.cn/blog/2022-04/29-8c33e746b3df5d8551d9f3a71457b6d2.png!blog_watermark"></p>
 <h2 id="显卡调用异常的处理"><a href="#显卡调用异常的处理" class="headerlink" title="显卡调用异常的处理"></a>显卡调用异常的处理</h2><blockquote>
-<p><strong>OriginLab 2023 已经修复下文所述问题。</strong></p>
+<p><strong>Origin 2023 已经修复下文所述问题。</strong></p>
 </blockquote>
-<p><del>一般的，上述方法已经可以解决 OriginLab 的独显调用问题。但是我发现在某些特定环境中，直接启动 OriginLab 可以正常调用独显，而打开已有的 opju 工程文件时，软件又只能调用核显。</del></p>
+<p><del>一般的，上述方法已经可以解决 Origin 的独显调用问题。但是我发现在某些特定环境中，直接启动 Origin 可以正常调用独显，而打开已有的 opju 工程文件时，软件又只能调用核显。</del></p>
 <p>我于 2022 年 4 月 10 日向 OriginLab 提交了异常报告，OriginLab 方复现了这个问题（JIRA: ORG-25046），经其工程师测试认为可能与 nVIDIA 显卡驱动的特性有关，并提供了下述解决方案。</p>
-<h3 id="获取-OriginLab-短路径"><a href="#获取-OriginLab-短路径" class="headerlink" title="获取 OriginLab 短路径"></a>获取 OriginLab 短路径</h3><ol>
+<h3 id="获取-Origin-短路径"><a href="#获取-Origin-短路径" class="headerlink" title="获取 Origin 短路径"></a>获取 Origin 短路径</h3><ol>
 <li>打开 “Script Window”；</li>
 <li>输入 <code>type -dm</code>；</li>
 <li>找到 “Origin64.exe” 的短路径（如本例中为 <code>C:\PROGRA~1\ORIGIN~1\ORIGIN~1\Origin64.exe</code>）。</li>
@@ -359,7 +359,7 @@
 <p><img src="https://img.yeslu.cn/blog/2022-04/29-25ebdded69843a08fb0704a3936616d4.png!blog_watermark"></p>
 <h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
 <li>Windows 11 (22000.652);</li>
-<li>OriginLab 2022 SR1 (Academic);</li>
+<li>Origin 2022 SR1 (Academic);</li>
 <li>Intel Core i7-11370H, nVIDIA GeForce MX450.</li>
 </ol>
 <h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
@@ -383,7 +383,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://www.yeslu.cn/archives/6969f4f4.html" title="OriginLab 配置 nVIDIA 独立显卡及显卡调用异常的处理">https://www.yeslu.cn/archives/6969f4f4.html</a>
+      <a href="https://www.yeslu.cn/archives/6969f4f4.html" title="Origin 配置 nVIDIA 独立显卡及显卡调用异常的处理">https://www.yeslu.cn/archives/6969f4f4.html</a>
   </li>
   <li class="post-copyright-license">
       <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-ND</a> 许可协议。转载请注明出处！
@@ -392,15 +392,15 @@
 </div>
 
           <div class="post-tags">
-              <a href="/tags/OriginLab/" rel="tag"># OriginLab</a>
+              <a href="/tags/Origin/" rel="tag"># Origin</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/archives/71ef1cd6.html" rel="prev" title="OriginLab 通过 Y 轴偏移制作层叠式线图的五种思路">
-                  <i class="fa fa-angle-left"></i> OriginLab 通过 Y 轴偏移制作层叠式线图的五种思路
+                <a href="/archives/71ef1cd6.html" rel="prev" title="Origin 通过 Y 轴偏移制作层叠式线图的五种思路">
+                  <i class="fa fa-angle-left"></i> Origin 通过 Y 轴偏移制作层叠式线图的五种思路
                 </a>
             </div>
             <div class="post-nav-item">

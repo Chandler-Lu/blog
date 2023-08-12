@@ -5799,89 +5799,368 @@
       </categories>
   </entry>
   <entry>
-    <title>OriginLab 绘制反应能量图</title>
-    <url>/archives/9836d17.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>反应能量图（reaction energy diagram）是 DFT 计算中展现化学反应的重要方式，OriginLab 官方也提供了很有意思的<a href="http://blog.originlab.com/make-energy-diagram-in-origin">方案</a>来绘制这样的路径图。本文将以下图中的一条路径为例，对官方提供的方案进行详细解释和扩展。</p>
-<img src="https://img.yeslu.cn/blog/2022-06/19-1a1f48fcc08abea813bf23917a8dd95d.png" alt="10.1038/s41467-022-29428-9" style="zoom:80%;" />
-
+    <title>论文实用干货：总目录</title>
+    <url>/archives/dcc4cb4a.html</url>
+    <content><![CDATA[<h2 id="总目录"><a href="#总目录" class="headerlink" title="总目录"></a>总目录</h2><ul>
+<li><a href="https://www.yeslu.cn/archives/1fd4b1da.html">01 - 制作封面信息</a></li>
+<li><a href="https://www.yeslu.cn/archives/2d8df6ac.html">02 - 分页符与分节符</a></li>
+<li><a href="https://www.yeslu.cn/archives/5b5ea310.html">03 - 创建目录</a><span id="more"></span></li>
+<li><a href="https://www.yeslu.cn/archives/ff3dc88a.html">04 - 编辑页眉和页码</a></li>
+<li><a href="https://www.yeslu.cn/archives/7b0cfbef.html">05 - 将摘要加入目录</a></li>
+<li><a href="https://www.yeslu.cn/archives/510fef2a.html">06 - Endnote 避坑指南</a></li>
+<li><a href="https://www.yeslu.cn/archives/2aff811f.html">07 - Office 设置优化</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Office</tag>
+        <tag>Paper</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>论文实用干货：制作封面信息（01）</title>
+    <url>/archives/1fd4b1da.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>相信很多同学在制作论文封面时，会纠结于论文信息部分下划线，如何快速让信息位于下划线中间，同时保证每个下划线等宽是一个麻烦的问题。传统敲空格的方法难以保证上述问题，一旦信息需要进行修改，又需要重新调整，十分不便。<br>本文使用另类的制表法，实现快速排版的目的。</p>
 <span id="more"></span>
 
-<h2 id="绘图思路"><a href="#绘图思路" class="headerlink" title="绘图思路"></a>绘图思路</h2><p>使用 Origin 绘制大部分图像都需要明确以下两点：</p>
-<ol>
-<li>数据点的表现形式</li>
-<li>数据点之间的连接方式</li>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ul>
+<li>macOS: 10.14.5</li>
+<li>Office 365: 16.25 (19051201)</li>
+</ul>
+<h2 id="制表"><a href="#制表" class="headerlink" title="制表"></a>制表</h2><p>以示例封面为例，共有 5 条信息，分别为论文题目、专业、学生姓名、学号、指导教师。<br>为了便于间距调整，采用写一行空一行的方案，故需要生成一个 9 行 2 列的表格。<br><img src="https://img.yeslu.cn/blog/paper/paper-01-1.png!blog_watermark"></p>
+<h2 id="信息输入"><a href="#信息输入" class="headerlink" title="信息输入"></a>信息输入</h2><p>按如图所示方法输入信息：<br><img src="https://img.yeslu.cn/blog/paper/paper-01-2.png!blog_watermark"></p>
+<h2 id="排版（重点！敲黑板）"><a href="#排版（重点！敲黑板）" class="headerlink" title="排版（重点！敲黑板）"></a>排版（重点！敲黑板）</h2><ol>
+<li>第一列右对齐，第二列居中<br><img src="https://img.yeslu.cn/blog/paper/paper-01-3.png!blog_watermark"></li>
+<li>取消第一列所有的边框，第二列只保留有内容的 5 行的下边框（将光标移动至行首位置即可选中整行，按住 CTRL 进行多选，去除其上框线和右框线）<br><img src="https://img.yeslu.cn/blog/paper/paper-01-4.png!blog_watermark"></li>
+<li>去除剩余的右框线<br><img src="https://img.yeslu.cn/blog/paper/paper-01-5.png!blog_watermark"></li>
+<li>按要求对字体和字号进行修改（这里使用黑体，四号）<br><img src="https://img.yeslu.cn/blog/paper/paper-01-6.png!blog_watermark"></li>
 </ol>
-<p>本图与最常见的“Line”图十分相近，但实际数据却区别于“Line”图需要的数据。“Line”图是将一个个数据点连接成线，但本例中每一个中间产物只对应一个能量。也就是说，数据是不具有“平台”这个概念的，而图中却要将其表现出“平台”的样式。</p>
-<p>由此思路，我们得到了第一种绘图方法：人为地扩展数据点的横坐标。假设原数据为 <code>(A, 1.5)</code>，那么在绘图时，手动增加 <code>(A-1, 1.5)</code>、<code>(A+1, 1.5)</code> 两个点，即可得到“平台”的效果。</p>
-<p>然而，当反应的中间路径较多时，人为增加数据点是十分困难的。由此，官方提供了一个非常巧妙的方法，即 <a href="https://www.originlab.com/doc/Origin-Help/Floating-Column-Graph">Floating Column</a>。Floating Column 本是柱状图的一种，数据至少分为三列：X、Y 下界、Y 上界。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-06/19-b1f3537a91174d360532a7edf897160f.png!blog_watermark" alt="Floating Column Graph"></p>
-<p>对于本例来说，柱状图自身可进行数据间的连接，且连接线样式可独立调整，这则是利用柱状图绘制的优势。由此，我们可以假设，当上界与下界数据相同时，柱状图的高度为零，而其本身的宽度即可作为我们的“平台”。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-06/19-754eaec36d2c0f76d267e6d5700895bc.png!blog_watermark"></p>
-<h2 id="数据准备"><a href="#数据准备" class="headerlink" title="数据准备"></a>数据准备</h2><h3 id="初始数据"><a href="#初始数据" class="headerlink" title="初始数据"></a>初始数据</h3><p>一般的，初始数据如下图所示，X 列为路径编号，每个 Y 列的 <code>Long Name</code> 为反应路径名，数值为反应能，<strong>从左至右</strong>为反应路径顺序。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-06/19-44ff0b592a580445566aa06553a8d48f.png!blog_watermark"></p>
-<h3 id="数据转置"><a href="#数据转置" class="headerlink" title="数据转置"></a>数据转置</h3><p>由于柱状图每一行为一个数据点，为了满足柱状图的数据要求，需要将数据转置，转置后，<strong>从上至下</strong>为反应路径顺序。</p>
-<img src="https://img.yeslu.cn/blog/2022-06/19-a6eff20b4a0a45daa1a244f7fff5d240.png!blog_watermark" style="zoom: 50%;" />
-
-<h3 id="生成制图数据"><a href="#生成制图数据" class="headerlink" title="生成制图数据"></a>生成制图数据</h3><p>在 OriginLab 官方教程中，使用了 Labtalk 脚本进行数据操作，此脚本是为了生成两列相同的数据分别作为 Floating Column 的<strong>上界</strong>和<strong>下界</strong>，<a href="#Labtalk-%E8%AF%A6%E8%A7%A3">文末</a>将详细说明。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">newsheet;</span><br><span class="line"><span class="built_in">range</span> rsrc = <span class="number">1</span>!; </span><br><span class="line"><span class="built_in">range</span> rdst = <span class="number">2</span>!;</span><br><span class="line">rdst.ncols = rsrc.ncols*<span class="number">2</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="built_in">int</span> ii = <span class="number">0</span>; ii &lt; rsrc.ncols; ii++)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">range</span> r1 = <span class="number">1</span>!$(ii+<span class="number">1</span>);</span><br><span class="line">	<span class="built_in">range</span> r2 = <span class="number">2</span>!$(<span class="number">2</span>*ii+<span class="number">1</span>);</span><br><span class="line">	<span class="built_in">range</span> r3 = <span class="number">2</span>!$(<span class="number">2</span>*ii+<span class="number">2</span>);	</span><br><span class="line">	colcopy irng:=r1 orng:=r2;</span><br><span class="line">	colcopy irng:=r1 orng:=r3;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://img.yeslu.cn/blog/2022-06/19-0583652a875cfeaab12de74dd2ed3b31.png!blog_watermark"></p>
-<p>最后，新增 X 列作为路径编号，并将列类型设置为 <code>XYY</code>。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-06/19-6b414a6f0b3136d5b1a2dfd47de68ab8.png!blog_watermark"></p>
-<h2 id="图像绘制"><a href="#图像绘制" class="headerlink" title="图像绘制"></a>图像绘制</h2><h3 id="第一条路径"><a href="#第一条路径" class="headerlink" title="第一条路径"></a>第一条路径</h3><p>本绘图方法中，每一条路径都需要独立绘制，每次选择一组数据。</p>
-<p>选中 B、C 列，选择 <code>Plot -&gt; Bar -&gt; Floating Columns</code> 制图，但此时图中是没有图像的，这是由于当柱状图高度为零时，OriginLab 默认不显示。我们可以通过 <a href="https://www.originlab.com/doc/ja/LabTalk/ref/Page-obj">Labtalk 命令</a> <code>page.BarShowZero = 1</code> 或者勾选 <code>Preference -&gt; Options -&gt; Bar graph show Zero Value</code> 令其显示。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-06/19-4d7b7ee8cba64927acf97aa5791400b8.png!blog_watermark"></p>
-<h4 id="数据连接"><a href="#数据连接" class="headerlink" title="数据连接"></a>数据连接</h4><p>利用数据连接功能，我们可以将每个柱子连接起来，并自定义线形。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-06/19-2d934c24c6adb97c4c68bf0806358bec.png!blog_watermark"></p>
-<h3 id="增加多条路径"><a href="#增加多条路径" class="headerlink" title="增加多条路径"></a>增加多条路径</h3><p>如果需要绘制的路径不止一条，可以利用 OriginLab 的 <a href="https://www.originlab.com/doc/Quick-Help/Add-Data-to-Layer">Add Data to Layer</a> 功能，将其他组数据拖入图像中。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-06/19-d2a1b2b9452c030407beaa3edc212e2c.gif"></p>
-<h2 id="数据标注"><a href="#数据标注" class="headerlink" title="数据标注"></a>数据标注</h2><p>这里介绍一个简便方法标注各个中间路径的名称，如图所示，增加 B 列（名称列）和 C、D 列（全为零），将 C、D 列数据添加至图中，并将该组路径的颜色设置为无色，显示其 Label，即可创建在同一水平线且与真实数据垂直对齐的名称。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-06/19-6ac75391aa5553ebcf00fe8eb9a7ae57.png!blog_watermark"></p>
-<h2 id="Labtalk-详解"><a href="#Labtalk-详解" class="headerlink" title="Labtalk 详解"></a>Labtalk 详解</h2><h3 id="Range"><a href="#Range" class="headerlink" title="Range"></a>Range</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">range</span> rsrc = <span class="number">1</span>!; </span><br><span class="line"><span class="built_in">range</span> rdst = <span class="number">2</span>!;</span><br></pre></td></tr></table></figure>
-
-<p>类似于 <code>range a = 1!</code> 是指当前活动工作簿的第一个工作表。本组命令是将数据来源设置为第一个工作表，将目标数据存放在第二个工作表。</p>
-<blockquote>
-<p>参考文档：<a href="https://www.originlab.com/doc/en/LabTalk/guide/Range-Notation">Range-Notation</a></p>
-</blockquote>
-<h3 id="New-Column"><a href="#New-Column" class="headerlink" title="New Column"></a>New Column</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">rdst.ncols = rsrc.ncols*<span class="number">2</span>;</span><br></pre></td></tr></table></figure>
-
-<p>上面我们说过，该 Labtalk 脚本是为了将一列数据复制成两列作为 Floating Column 的下界和上界，<code>ncol</code> 代表的是 <code>new column</code>。本组命令是将 <code>rdst</code> 的列数设置为 <code>rsrc</code> 的两倍。</p>
-<blockquote>
-<p>参考文档：<a href="https://www.originlab.com/doc/LabTalk/guide/Basic-Worksheet-Column-Operation">Basic Worksheet Column</a></p>
-</blockquote>
-<h3 id="Loop"><a href="#Loop" class="headerlink" title="Loop"></a>Loop</h3><h4 id="Header"><a href="#Header" class="headerlink" title="Header"></a>Header</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="built_in">int</span> ii = <span class="number">0</span>; ii &lt; rsrc.ncols; ii++)&#123;&#125;</span><br></pre></td></tr></table></figure>
-
-<p>控制本次循环在遍历完源工作表的所有列后结束。</p>
-<h4 id="Body"><a href="#Body" class="headerlink" title="Body"></a>Body</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">range</span> r1 = <span class="number">1</span>!$(ii+<span class="number">1</span>);</span><br><span class="line"><span class="built_in">range</span> r2 = <span class="number">2</span>!$(<span class="number">2</span>*ii+<span class="number">1</span>);</span><br><span class="line"><span class="built_in">range</span> r3 = <span class="number">2</span>!$(<span class="number">2</span>*ii+<span class="number">2</span>);	</span><br><span class="line">colcopy irng:=r1 orng:=r2;</span><br><span class="line">colcopy irng:=r1 orng:=r3;</span><br></pre></td></tr></table></figure>
-
-<p>此处 <code>irng</code> 为 <code>input range</code>，<code>orng</code> 为 <code>output range</code>。</p>
-<p>当 <code>ii = 0</code>，则 <code>r1</code> 为源工作表的第 1 列， <code>r2</code> 为目标工作表的第 1 列， <code>r3</code> 为目标工作表的第 2 列。接着将源工作表的第 1 列追加到目标工作表的第 1、2 列。</p>
-<p>当 <code>ii = 1</code>，则 <code>r1</code> 为源数据工作表的第 2 列， <code>r2</code> 为目标数据工作表的第 3 列， <code>r3</code> 为目标数据工作表的第 4 列。接着将源工作表的第 2 列追加到目标工作表的第 3、4 列。</p>
-<p>由此可见，随着循环的进行，源工作表的每一列都被拷贝成了两列。</p>
-<blockquote>
-<p>参考文档：<a href="https://www.originlab.com/doc/LabTalk/guide/Getting-Started-with-LT">Getting Started with LabTalk</a></p>
-</blockquote>
-<h3 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h3><p>在执行本 Labtalk 命令时，当前活动工作簿的第二个工作表会被覆盖，<strong>请确保第二个工作表内为空或没有有效数据</strong>。</p>
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
-<li>Windows 11 (22000.652);</li>
-<li>OriginLab 2022b (Academic).</li>
+<h2 id="微调"><a href="#微调" class="headerlink" title="微调"></a>微调</h2><ol>
+<li>到这里，其实大部分工作就结束了，但为了使表格更接近于如图所示下划线的效果，我们需要对间距进行修改。<br><img src="https://img.yeslu.cn/blog/paper/paper-01-7.png!blog_watermark"></li>
+<li>我们分别对第 1、3、5、7、9 行及 2、4、6、8 行的行高进行调整<br><img src="https://img.yeslu.cn/blog/paper/paper-01-8.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-01-9.png!blog_watermark"></li>
+<li>最后，通过对第一列的列宽进行调整，使全表居中<br><img src="https://img.yeslu.cn/blog/paper/paper-01-10.png!blog_watermark"></li>
 </ol>
 <h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文禁止转载；</li>
-<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
+<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
 </ol>
 ]]></content>
       <categories>
         <category>Science</category>
       </categories>
       <tags>
-        <tag>Graph</tag>
-        <tag>Data-Analysis</tag>
-        <tag>OriginLab</tag>
+        <tag>Office</tag>
+        <tag>Paper</tag>
       </tags>
   </entry>
   <entry>
-    <title>OriginLab 直播公开课</title>
+    <title>论文实用干货：分页符与分节符（02）</title>
+    <url>/archives/2d8df6ac.html</url>
+    <content><![CDATA[<h2 id="重要说明"><a href="#重要说明" class="headerlink" title="重要说明"></a>重要说明</h2><p>在 Word 中，分页符、分隔符等标记符号<strong>默认不显示</strong>，点击如图所示按钮可使上述标记显示。未来的所有教程，均在<strong>显示标记符号</strong>的情况下演示。<br><img src="https://img.yeslu.cn/blog/paper/paper-02-1.png!blog_watermark"></p>
+<h2 id="分页符（Page-Break）"><a href="#分页符（Page-Break）" class="headerlink" title="分页符（Page Break）"></a>分页符（Page Break）</h2><h3 id="官方介绍"><a href="#官方介绍" class="headerlink" title="官方介绍"></a>官方介绍</h3><p>微软的官方说明建议直接阅读英文版，因为中文版为机翻，部分内容语序十分诡异：<a href="https://support.office.com/en-us/article/insert-a-page-break-7613ff46-96e5-4e46-9491-40d7d410a043?ui=en-US&rs=en-US&ad=US">Insert a page break</a></p>
+<span id="more"></span>
+
+<h3 id="通俗解释"><a href="#通俗解释" class="headerlink" title="通俗解释"></a>通俗解释</h3><p>换一张<strong>相同</strong>的纸，即前后纸张的版式（主要指页眉、页脚、格式、间距）相同。</p>
+<h3 id="图片演示"><a href="#图片演示" class="headerlink" title="图片演示"></a>图片演示</h3><p>在本图片中，我们已经完成了前言部分的写作，现在需要将“实验部分”另起一页。因此，我们在光标所示位置插入分页符。<br><img src="https://img.yeslu.cn/blog/paper/paper-02-2.png!blog_watermark"></p>
+<p>插入后，无论之前的内容怎么更改，“实验部分”将始终处在新的一页。<br><img src="https://img.yeslu.cn/blog/paper/paper-02-3.png!blog_watermark"></p>
+<h2 id="分节符（Section-Break）"><a href="#分节符（Section-Break）" class="headerlink" title="分节符（Section Break）"></a>分节符（Section Break）</h2><h3 id="官方介绍-1"><a href="#官方介绍-1" class="headerlink" title="官方介绍"></a>官方介绍</h3><p><a href="https://support.office.com/en-us/article/insert-a-section-break-eef20fd8-e38c-4ba6-a027-e503bdf8375c?ui=en-US&rs=en-US&ad=US">Insert a section break</a></p>
+<h3 id="通俗解释-1"><a href="#通俗解释-1" class="headerlink" title="通俗解释"></a>通俗解释</h3><p>换一张<strong>不同</strong>的纸，即前后纸张的版式（主要指页眉、页脚、格式、间距）可以不同。</p>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>分节符的相关说明，将在<a href="https://www.yeslu.cn/archives/ff3dc88a.html">第 4 节</a>中进行详细讲解。</li>
+<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Office</tag>
+        <tag>Paper</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>论文实用干货：将摘要加入目录（05）</title>
+    <url>/archives/7b0cfbef.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>很多同学在生成目录之后，会有另一个疑问：如何将摘要和关键词加入目录中。想要将指定文字加入标题中，必须为该文字应用标题样式。然而，系统默认的标题样式对段落生效，并不能应用于单个文字。因此，我们需要新建一个可应用于文字的样式。</p>
+<span id="more"></span>
+
+<h2 id="新建样式"><a href="#新建样式" class="headerlink" title="新建样式"></a>新建样式</h2><p>有了前文的基础，这里的操作就比较简单了，在新建样式的时候，除选择正确的字体、段落格式外，只需要注意两点：</p>
+<ul>
+<li>“样式类型”选择“链接段落和字符”，以此保证我们新建的样式可以应用于字符。</li>
+<li>“大纲级别”选择“1 级”，以此保证在创建目录时，应用该样式的文字位于一级标题中。</li>
+</ul>
+<p><img src="https://img.yeslu.cn/blog/paper/paper-05-01.png!blog_watermark"></p>
+<p>接下来，我们将该样式应用于摘要、关键词等文字，并生成目录即可。当然，此方法还可以用于对“参考文献”，“致谢”等文字的处理。</p>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
+<li>本文同步发布于个人微信【<a href="https://mp.weixin.qq.com/s/I7JloFOUU2DAqXPcTGVDkg">一只兔儿</a>】</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Office</tag>
+        <tag>Paper</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>论文实用干货：编辑页眉和页码（04）</title>
+    <url>/archives/ff3dc88a.html</url>
+    <content><![CDATA[<h2 id="官方介绍"><a href="#官方介绍" class="headerlink" title="官方介绍"></a>官方介绍</h2><p><a href="https://support.office.com/en-us/article/insert-a-header-or-footer-b87ee4df-abc1-41f8-995b-b39f6d99c7ed?ui=en-US&rs=en-US&ad=US">Insert a header or footer</a></p>
+<span id="more"></span>
+
+<h2 id="重要说明"><a href="#重要说明" class="headerlink" title="重要说明"></a>重要说明</h2><p>本节需要对具体的页面进行操作，请在阅读时重点关注是对哪一页的哪个位置进行操作。</p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>编辑论文的页码是很多童鞋在排版过程中遇到的难题，有些不要页码，有些用罗马数字，有些用阿拉伯数字(o´д`o)&#x3D;３ 这时，第 2 节中没有详述的分节符就派上用场了。<br>我们先来梳理一下每一页所对应的页码。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-1.png!blog_watermark"></p>
+<h2 id="文章分节"><a href="#文章分节" class="headerlink" title="文章分节"></a>文章分节</h2><p>在上图中，我们使用分节符将文章分为四节，分别位于封面、英文摘要和目录的结尾。分节符的插入位于“布局”-“分隔符”-“分节符”-“下一页”。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-2.png!blog_watermark"><br>打开页眉页脚设置后，可以看到每一节所对应的节号。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-3.png!blog_watermark"></p>
+<h2 id="页码编辑"><a href="#页码编辑" class="headerlink" title="页码编辑"></a>页码编辑</h2><h3 id="插入页码"><a href="#插入页码" class="headerlink" title="插入页码"></a>插入页码</h3><p>将光标移至<strong>封面任意位置</strong>，插入页码，页码格式暂且不用设置。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-4.png!blog_watermark"></p>
+<h3 id="封面页"><a href="#封面页" class="headerlink" title="封面页"></a>封面页</h3><p>进入<strong>页眉页脚设置</strong>，选择封面的页脚，勾选“首页不同”，即可去除封面页码。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-5.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-04-6.png!blog_watermark"></p>
+<h3 id="摘要页"><a href="#摘要页" class="headerlink" title="摘要页"></a>摘要页</h3><p>将光标移至<strong>摘要页的页脚</strong>，选择“页码”-“设置页码格式”，勾选“起始编号”并设置为罗马数字 I，即可将中文摘要设置为第 I 页，英文摘要设置为第 II 页。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-7.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-04-8.png!blog_watermark"></p>
+<h3 id="目录页"><a href="#目录页" class="headerlink" title="目录页"></a>目录页</h3><p>目录和封面一样，不需要页码。我们使用设置封面的方法，在目录页勾选“首页不同”，即可去除目录的页码。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-9.png!blog_watermark"></p>
+<h3 id="正文页（含参考文献和致谢）"><a href="#正文页（含参考文献和致谢）" class="headerlink" title="正文页（含参考文献和致谢）"></a>正文页（含参考文献和致谢）</h3><p>正文与摘要一样，需要设置起始页码。我们将光标移至<strong>正文第一页的页脚部分</strong>，设置页码格式如图所示即可。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-10.png!blog_watermark"><br>至此，页码设置结束，正文首页的页码为第 1 页。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-11.png!blog_watermark"></p>
+<h3 id="更新目录"><a href="#更新目录" class="headerlink" title="更新目录"></a>更新目录</h3><p>在目录部分右键“更新域”，即可对目录应用新页码。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-12.png!blog_watermark"></p>
+<h2 id="页眉编辑"><a href="#页眉编辑" class="headerlink" title="页眉编辑"></a>页眉编辑</h2><p>我校要求在正文页及其之后的所有页面添加页眉，下面讲述页眉添加方法。</p>
+<h3 id="插入页眉"><a href="#插入页眉" class="headerlink" title="插入页眉"></a>插入页眉</h3><p>将光标移至<strong>正文第一页</strong>，选择“插入”-“页眉”，这里使用默认的“空白”页眉。输入文字，并作适当调整。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-14.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-04-15.png!blog_watermark"></p>
+<h3 id="删除多余的页眉"><a href="#删除多余的页眉" class="headerlink" title="删除多余的页眉"></a>删除多余的页眉</h3><p>由于插入页眉操作对全文生效，我们发现操作后，中英文摘要部分也被插入了页眉（封面和目录没有被插入是因为我们对其设置了“首页不同”）。</p>
+<ol>
+<li>将光标移至<strong>正文第一页</strong>，取消“链接到上一节”，这样，我们对上一节的所有编辑不会影响到本节之后的设置。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-16.png!blog_watermark"></li>
+<li>将光标移至<strong>摘要页</strong>，选择“插入”-“页眉”-“删除页眉”即可。但是，删除仅删掉了文字，横线依然还在，我们可以选择以下两种方法删除横线。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-17.png!blog_watermark"></li>
+</ol>
+<p><strong>方法 1</strong>：进入“编辑页眉”界面后，直接点击“关闭页眉和页脚”，系统检测到页眉中没有内容，会自动删掉横线。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-18.png!blog_watermark"><br><strong>方法 2</strong>：如果上述方法不行，我们可以手动操作。选中页眉中的回车符，点击“下框线”按钮，即可删除横线。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-19.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-04-20.png"></p>
+<h3 id="设置奇偶页不同"><a href="#设置奇偶页不同" class="headerlink" title="设置奇偶页不同"></a>设置奇偶页不同</h3><p><img src="https://img.yeslu.cn/blog/2023-03/17-1460f27433aeab81a5a50c3f4fcd865c.png!blog_watermark"></p>
+<p>通常，上图所示方法可以为页眉页脚设置奇偶页不同，但应用本方法后可能出现<strong>排版混乱</strong>的情况，此问题可通过下图方法解决。</p>
+<p>需要注意的是，当勾选下图“页面设置”中的“奇偶页不同”后，上图所示位置也会被勾选，<strong>如需取消此功能，仍需要通过下图位置取消</strong>，否则排版会再次改变。</p>
+<img src="https://img.yeslu.cn/blog/2023-03/17-173f4e38f1aabc3f5036391a544a233d.png!blog_watermark" alt="" style="zoom: 33%;" />
+
+<p>这个问题也许是 Word 的 Bug，该解决方案未找到相关说明文档，仅为经验。</p>
+<h3 id="显示章节标题"><a href="#显示章节标题" class="headerlink" title="显示章节标题"></a>显示章节标题</h3><p>部分论文可能要求在页眉显示当前章节的标题，可通过下图方式增加。</p>
+<p><img src="https://img.yeslu.cn/blog/2023-03/17-79b4ed1b26b47bb128508e04b3b83636!blog_watermark"></p>
+<p><img src="https://img.yeslu.cn/blog/2023-03/17-e51d554678463868799c9dc82d700b4e!blog_watermark"></p>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
+<li>本文同步发布于个人微信【<a href="https://mp.weixin.qq.com/s/vonp-eZ6ouaFXItN-jvaqg">一只兔儿</a>】</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Office</tag>
+        <tag>Paper</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>论文实用干货：创建目录（03）</title>
+    <url>/archives/5b5ea310.html</url>
+    <content><![CDATA[<h2 id="官方介绍"><a href="#官方介绍" class="headerlink" title="官方介绍"></a>官方介绍</h2><p><a href="https://support.office.com/en-us/article/insert-a-table-of-contents-882e8564-0edb-435e-84b5-1d8552ccf0c0?ui=en-US&rs=en-US&ad=US">Insert a table of contents</a></p>
+<span id="more"></span>
+
+<h2 id="重要说明"><a href="#重要说明" class="headerlink" title="重要说明"></a>重要说明</h2><p>前面的两节主要讲解了制作论文封面信息和分页操作，为了方便后文的讲解，我对论文文档的结构进行了完善，使其具备论文的核心要素（封面，摘要，目录，正文，参考文献和致谢）。</p>
+<h2 id="修改样式"><a href="#修改样式" class="headerlink" title="修改样式"></a>修改样式</h2><p>为了使用 word 自动生成目录的功能，我们首先要修改同层级标题的字体和段落设置等参数，并应用于不同的标题。</p>
+<ol>
+<li><p>点击“样式窗格”按钮调出样式面板<br><img src="https://img.yeslu.cn/blog/paper/paper-03-1.png!blog_watermark"></p>
+</li>
+<li><p>对“标题 1”的样式进行修改：字体使用宋体&#x2F;Times New Roman，四号；段落使用 1.5 倍行距。<br><img src="https://img.yeslu.cn/blog/paper/paper-03-2.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-03-3.png!blog_watermark"></p>
+</li>
+<li><p>使用同样的方法，对“标题 2”和“标题 3”进行修改。这里分别使用小四和五号字体，其余格式不变。<br><img src="https://img.yeslu.cn/blog/paper/paper-03-4.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-03-5.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-03-6.png!blog_watermark"></p>
+</li>
+</ol>
+<h2 id="应用样式"><a href="#应用样式" class="headerlink" title="应用样式"></a>应用样式</h2><ol>
+<li><p>n 级标题默认对整个段落生效，因此我们只需要将光标移至段首，点击需要的样式按钮即可。<br><img src="https://img.yeslu.cn/blog/paper/paper-03-7.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-03-8.png!blog_watermark"></p>
+</li>
+<li><p>对不同层级的标题应用样式后，我们在“导航”中已经可以看到整篇文章的基本结构。当然，通过“导航”中的层级也可判断样式应用是否正确。<br><img src="https://img.yeslu.cn/blog/paper/paper-03-9.png!blog_watermark"></p>
+</li>
+</ol>
+<h2 id="创建目录"><a href="#创建目录" class="headerlink" title="创建目录"></a>创建目录</h2><ol>
+<li><p>将光标移动到需要插入目录的位置，选择“引用”-“目录”-“自定义目录”<br><img src="https://img.yeslu.cn/blog/paper/paper-03-10.png!blog_watermark"></p>
+</li>
+<li><p>通过“修改”按钮，可以修改目录中所显示 n 级标题的格式。这里我们依然沿用上述格式，但为了体现标题间的层级关系，TOC 2 缩进 2 字符，TOC 3 缩进 4 字符。<br><img src="https://img.yeslu.cn/blog/paper/paper-03-11.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-03-12.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-03-13.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-03-14.png!blog_watermark"></p>
+</li>
+<li><p>全部设置完成后，在此点击“确定”创建目录。<br><img src="https://img.yeslu.cn/blog/paper/paper-03-15.png!blog_watermark"></p>
+</li>
+<li><p>至此，完成目录的创建工作。<br><img src="https://img.yeslu.cn/blog/paper/paper-03-16.png!blog_watermark"></p>
+</li>
+</ol>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Office</tag>
+        <tag>Paper</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>论文实用干货：Endnote 避坑指南（06）</title>
+    <url>/archives/510fef2a.html</url>
+    <content><![CDATA[<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ul>
+<li>Endnote: X9.3.2</li>
+<li>GB&#x2F;T 7714 Style: <a href="https://github.com/wanzhenchn/EndNote_Tutorial_Hand_by_Hand/blob/master/resource/Chinese%20Std%20GBT7714%20(numeric)_20190409.ens">Chinese Std GBT7714 (numeric)</a></li>
+</ul>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>很多同学以为把参考文献用 Endnote 一股脑插进论文就完事了，那真是太图样图森破。在实际使用过程中，数据来源不同，参考文献类别不同，语言不同，软件本身限制，导致在使用过程中，导入的文献存在格式错误，需要手动修正。本文将介绍本人在使用过程中，遇到的几种不同类型的错误点，以供参考。</p>
+<p>对于中英文混排中出现的格式问题，已有前辈制作了非常完善的指南：<a href="https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.zh-CN.md">chinese-copywriting-guidelines</a>，这里将不再说明。</p>
+<span id="more"></span>
+
+<h2 id="如何修改"><a href="#如何修改" class="headerlink" title="如何修改"></a>如何修改</h2><p><strong>⚠️ 警告：这是一个危险操作，请务必阅读</strong></p>
+<p>Endnote 在向 Word 插入文献的过程中，会在 Word 中创建一个由 Endnote 管理的域，此区域随着 Endnote 中文献信息的更新而更新。</p>
+<p>因此，当该区域由 Endnote 管理的时候，是无法直接修改区域中内容的，否则当使用 “Update Citations and Bibliography” 更新文献信息时，所有的修改将丢失。</p>
+<p>在进行下述格式修正之前，你需要确保全篇论文的所有参考文献已被插入完毕。<strong>建议将当前文件备份，并在副本中操作。</strong></p>
+<p>使用 Tools - Convert to Plain Text，将该区域转换为纯文本。此时 Endnote 将失去对此区域的管理，并可作为常规文本进行编辑。</p>
+<p><img src="https://img.yeslu.cn/blog/paper/paper-06-01.png!blog_watermark"></p>
+<h2 id="避坑汇总"><a href="#避坑汇总" class="headerlink" title="避坑汇总"></a>避坑汇总</h2><h3 id="软件卡顿"><a href="#软件卡顿" class="headerlink" title="软件卡顿"></a>软件卡顿</h3><p><img src="https://img.yeslu.cn/blog/paper/paper-06-02.png!blog_watermark"></p>
+<p>Endnote 启动时默认是这样的界面，但由于右侧 PDF 预览窗口会随着你切换当前选择的文献，而不断刷新，造成窗口卡顿。</p>
+<p><img src="https://img.yeslu.cn/blog/paper/paper-06-03.png!blog_watermark"></p>
+<p>当你不需要实时预览文献内容时，选择此处的 References Only 按钮，即可关闭文献预览界面，一定程度上解决卡顿问题。</p>
+<h3 id="数据源错误"><a href="#数据源错误" class="headerlink" title="数据源错误"></a>数据源错误</h3><p><img src="https://img.yeslu.cn/blog/paper/paper-06-04.png!blog_watermark"></p>
+<p>以百度学术为例，大家通常从这里下载 Endnote 的数据文件并导入 Endnote。但无论是百度学术、谷歌学术，还是其他的文献平台，下载的数据文件本身可能存在内容缺失（如缺页码，缺年份等），这样最终导入 Word 的内容自然也不可能正确。</p>
+<h3 id="作者名格式"><a href="#作者名格式" class="headerlink" title="作者名格式"></a>作者名格式</h3><ul>
+<li>外文名作者，名在前，姓在后，姓名间空格分隔。对于 3 个及以上的外文名作者，使用 <code>A, B, C, et al.</code> 来表示，如 <code>Nitta N, Wu F, Lee J T, et al.</code></li>
+<li>中文名作者，姓在前，名在后，姓名间无分隔。对于 3 个及以上的中文名名作者，使用 <code>王, 赵, 李, 等.</code> 来表示，如 <code>张天戈, 张竹柳, 李延伟, 等.</code></li>
+<li>需要注意的是，无论作者名是中文还是外文，姓名之间、姓名和“等”之间，使用英文逗号+空格的形式来分隔，“等”之后使用英文句点。</li>
+</ul>
+<h3 id="公式格式"><a href="#公式格式" class="headerlink" title="公式格式"></a>公式格式</h3><p>一般的，标题中的含上下标的文字，在 Endnote 中和被导入 Word 时，会被显示为如 Al_(2)O_(3) 【氧化铝】的格式，需要手动将其改为正确的上下标格式。</p>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>对于拿捏不准的格式问题，请直接查阅国标[ 《信息与文献 参考文献著录规则》 ][3]。</p>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
+<li>总目录：<a href="https://www.yeslu.cn/archives/dcc4cb4a.html">https://www.yeslu.cn/archives/dcc4cb4a.html</a></li>
+<li>本文同步发布于个人微信【<a href="https://mp.weixin.qq.com/s/BQQi0s65is7AeW-BKHWndQ">一只兔儿</a>】</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Office</tag>
+        <tag>Paper</tag>
+        <tag>Endnote</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>获取腾讯云基于 TOTP 的 MFA Token</title>
+    <url>/archives/30dcf858.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>多因素身份验证（Multi-Factor Authentication, MFA）可以在登录等重要操作中增加一层额外的保护，基于虚拟设备的 MFA 是能产生 6 位数字认证码的应用程序，遵循基于时间的一次性密码 （TOTP）标准（<a href="https://datatracker.ietf.org/doc/html/rfc6238">RFC 6238</a>）。</p>
+<p>众多知名的 APP，如 Google Authenticator、Microsoft Authenticator、Authy 和一些常见的密码管理器，如 1Password、Bitwarden 等均支持生成一次性密码。然而，腾讯云并不直接提供用于生成一次性密码的 Token，而是将 MFA 其内置于“腾讯云助手”微信小程序中，这给实际操作带来了不便。</p>
+<p>文本通过抓包程序抓取真实 Token，从而优化腾讯云 MFA 验证的实际体验。</p>
+<span id="more"></span>
+
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ul>
+<li>iOS 15.3</li>
+<li>微信 (App Store) 8.0.18</li>
+<li>Thor (App Store) 1.4.4.891</li>
+</ul>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol>
+<li>如您已经绑定 MFA，需要首先前往<a href="https://console.cloud.tencent.com/developer/security">腾讯云后台</a>解绑；</li>
+</ol>
+<p><img src="https://img.yeslu.cn/blog/2022-01/30-da42d78a67e26b4604bd754e08abb158.png!blog_watermark"></p>
+<ol start="2">
+<li>打开抓包软件，通过微信扫码绑定，直至流程结束；</li>
+</ol>
+<p><img src="https://img.yeslu.cn/blog/2022-01/30-89b28443c09e6ee62b5a5aea7e9ef869.PNG!blog_watermark"></p>
+<ol start="3">
+<li>找到 <a href="https://weapp.cloud.tencent.com/authenticator/ajax/">https://weapp.cloud.tencent.com/authenticator/ajax/</a> 请求，查看其 Request 的消息体；</li>
+</ol>
+<p><img src="https://img.yeslu.cn/blog/2022-01/30-a99c715bd6df438e003dc56f9f5f00aa.PNG!blog_watermark"><br><img src="https://img.yeslu.cn/blog/2022-01/30-32d0e9d05efa3041ba2dc6227653db9a.PNG!blog_watermark"></p>
+<ol start="4">
+<li>其消息体结构如下，这里的 <code>secret</code> 就是 TOTP 的 Token 了；</li>
+</ol>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;authCode&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;ownerUin&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;uin&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;secret&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;version&quot;</span><span class="punctuation">:</span> <span class="string">&quot;v1&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;code&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;rawData&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;signature&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;iv&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;encryptedData&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>填入第三方 MFA 工具后，不妨核对一下其和微信小程序中的一次性密码是否一致以及是否同时变化，一定保管好 Token。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Development</category>
+      </categories>
+      <tags>
+        <tag>Security</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决群晖 NTP 自动同步失败</title>
+    <url>/archives/ff52424d.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>自从群晖（Synology）DSM 某个版本更新后，NTP 自动同步总是提示“无法同步。因为没有网络或网络连接不稳定。请参阅本文以了解详细信息”，而手动同步正常。群晖官方虽然提供了<a href="https://kb.synology.cn/zh-cn/DSM/tutorial/Troubleshooting_issues_syncing_with_NTP_server">解决方案</a>，但测试后并没有解决问题。通过与群晖技术支持交流，获得了较好的解决方案。</p>
+<span id="more"></span>
+
+<h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><h3 id="20221009"><a href="#20221009" class="headerlink" title="20221009"></a>20221009</h3><ul>
+<li>在 DSM 7.1.1-42962 Update 1 上，群晖似乎已经修复了这个问题。</li>
+</ul>
+<h2 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h2><p>NTP 无法正常自动同步，能够正常手动同步。</p>
+<img src="https://img.yeslu.cn/blog/2022-08/07-f221c5426bd4f7e911ba251e28132703.png"  />
+
+
+
+<h2 id="影响"><a href="#影响" class="headerlink" title="影响"></a>影响</h2><p>本人开启了 DSM 的 TOTP (Time-based One-Time Password) 二次验证，TOTP 与设备时间紧密相关。当 NTP 无法正常同步时，群晖平均每一天慢若干秒，约一周后，群晖与其他设备的时间误差超出 TOTP 的容忍范围，直接导致 TOTP 无法正常验证。</p>
+<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>群晖技术支持给出了 NTP 的自动更新策略：</p>
+<blockquote>
+<p>NAS 与 NTP 服务器进行轮询时，必须连续八次全部成功，才会认为该 NTP 服务器可信，从而显示自动更新成功，而您当前所处的网络环境似乎并不稳定，所以会导致轮询中出现失败。</p>
+</blockquote>
+<h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>技术支持向我提供了 NTP 更新脚本，利用 DSM 自带的“任务计划”功能进行自动同步。</p>
+<ul>
+<li>新建“用户自定义脚本”；</li>
+</ul>
+<p><img src="https://img.yeslu.cn/blog/2022-08/07-cd305dd0674ca68f2e4d3f7cc7b98b9c.png"></p>
+<ul>
+<li>以“root”账户执行，并在“用户定义的脚本”下输入如下脚本（<strong>root 账户具有系统最高执行权限，除非你知道自己在做什么，否则请勿随意修改如下脚本</strong>）；</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line">ntp_server=<span class="string">&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> grep -q <span class="string">&quot;time.google.com.conf&quot;</span> <span class="string">&quot;/etc/ntp.conf&quot;</span> ; <span class="keyword">then</span></span><br><span class="line">ntp_server=<span class="string">&quot;time.google.com&quot;</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">if</span> grep -q <span class="string">&quot;pool.ntp.org&quot;</span> <span class="string">&quot;/etc/ntp.conf&quot;</span> ; <span class="keyword">then</span></span><br><span class="line">ntp_server=<span class="string">&quot;pool.ntp.org&quot;</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">if</span> grep -q <span class="string">&quot;server &quot;</span> <span class="string">&quot;/etc/ntp.conf&quot;</span> ; <span class="keyword">then</span></span><br><span class="line">ntp_server=<span class="string">&quot;<span class="subst">$(grep <span class="string">&quot;server &quot;</span> <span class="string">&quot;/etc/ntp.conf&quot;</span> | cut -d <span class="string">&quot; &quot;</span> -f2)</span>&quot;</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$ntp_server</span>&quot;</span> != <span class="string">&quot;&quot;</span> ] ; <span class="keyword">then</span></span><br><span class="line">/sbin/ntpdate -u -b <span class="string">&quot;<span class="variable">$ntp_server</span>&quot;</span></span><br><span class="line"><span class="built_in">echo</span> $? &gt; /run/ntpdate.result</span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img.yeslu.cn/blog/2022-08/07-08a5d9ce1aa2604ddc930b82cdf3b52b.png"></p>
+<ul>
+<li>手动运行并检查执行结果，如果提示正常，则部署成功。</li>
+</ul>
+<img src="https://img.yeslu.cn/blog/2022-08/07-1175b5e91cf36bb07df832354960c938.png" style="zoom:50%;" />
+
+
+
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
+<li>Synology DS720+</li>
+<li>DSM 7.1-42661 Update 3</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Hardware</category>
+      </categories>
+      <tags>
+        <tag>Synology</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>论文实用干货：Office 设置优化（07）</title>
+    <url>/archives/2aff811f.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Office 中的一些奇怪设置，会在使用过程中产生不符合逻辑的操作，本文是笔者自己遇到的坑以及进行的优化。</p>
+<span id="more"></span>
+
+<h2 id="异常的选中"><a href="#异常的选中" class="headerlink" title="异常的选中"></a>异常的选中</h2><p><img src="https://img.yeslu.cn/blog/2023-07%2F24-7e9f98008ce83b6c6636c3a886e43d21.gif"></p>
+<p>在 Word&#x2F;PPT 中，默认设置下会产生异常的选中问题，如上图所示，我想选中不包含换行符的其他文字，但要么只能选中<strong>文字</strong>，要么只能选中<strong>文字+结尾标点+换行符</strong>，此问题需要关闭 Word 选项中的“使用智能段落选择”。</p>
+<img src="https://img.yeslu.cn/blog/2023-07/24-e217300b4dbbe682054f369ac46a3658.png!blog_watermark" style="zoom:80%;" />
+
+<p>同理，PPT 中建议关闭“选定时自动选定整个单词”的功能。</p>
+<img src="https://img.yeslu.cn/blog/2023-07/24-537c51ce69d86be30b26bb6ba3c3478f.png!blog_watermark" style="zoom:80%;" />
+
+<h2 id="OriginLab-Endnote-插入后“乱码”"><a href="#OriginLab-Endnote-插入后“乱码”" class="headerlink" title="OriginLab&#x2F;Endnote 插入后“乱码”"></a>OriginLab&#x2F;Endnote 插入后“乱码”</h2><p><img src="https://img.yeslu.cn/blog/2023-07/24-9060696582e4362352cdfeb4337de5c1.png!blog_watermark"></p>
+<p>当使用 OriginLab 的 Copy Page 功能，或者使用 Endnote 等通过域来管理的内容时，会显示如上图所示的“乱码”，这实际上是域代码，切换域代码和域值之间的显示，可以在设置中修改“显示域代码而非域值“。</p>
+<img src="https://img.yeslu.cn/blog/2023-07/24-89009b3e108eb99c82b5f2d36da2876c.png!blog_watermark" style="zoom:80%;" />
+
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
+<li>总目录：<a href="https://www.yeslu.cn/archives/dcc4cb4a.html">https://www.yeslu.cn/archives/dcc4cb4a.html</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Office</tag>
+        <tag>Paper</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Origin 直播公开课</title>
     <url>/archives/98f216a2.html</url>
     <content><![CDATA[<h2 id="2020-03-06"><a href="#2020-03-06" class="headerlink" title="2020.03.06"></a><a href="https://www.bilibili.com/video/BV19E411V7Tw">2020.03.06</a></h2><h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3><ul>
 <li>OriginPro 助力科研论文</li>
@@ -6161,177 +6440,118 @@
         <category>Science</category>
       </categories>
       <tags>
-        <tag>OriginLab</tag>
+        <tag>Origin</tag>
       </tags>
   </entry>
   <entry>
-    <title>OriginLab 简明答疑合集</title>
-    <url>/archives/4033bbae.html</url>
-    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Origin 是由 OriginLab 公司开发的一个科学绘图、数据分析软件。Origin 支持各种各样的 2D&#x2F;3D 图形。Origin 中的数据分析功能包括统计，信号处理，曲线拟合以及峰值分析。</p>
-<p>本文主要对个人在使用 OriginLab 的过程中所遇到的一些典型问题，和 OriginLab 官方交流群的群友所经常提问的问题进行整理归纳，形成一站式的导航文章。</p>
-<h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><ol>
-<li>如需增补内容，请直接提交 <a href="https://github.com/Chandler-Lu/blog/issues">Issue</a>；</li>
-<li>提问前请阅读 <a href="https://www.yeslu.cn/archives/fb3832f5.html">《提问的智慧》</a> ，表述不清的问题和模糊的截图，除了给回答者带来麻烦外，更难以解决您的问题；</li>
-<li>解决方案存在时效性，随着软件更新，部分功能可能与教程中不同；</li>
-<li>转载请注明来源。</li>
-</ol>
+    <title>Origin 部分中文字体加粗不显示</title>
+    <url>/archives/f49d4612.html</url>
+    <content><![CDATA[<h2 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h2><p>Origin <strong>部分中文字体</strong>（宋体、黑体、楷体等）在<strong>垂直方向</strong>上加粗后，实际不显示加粗。</p>
+<img src="https://img.yeslu.cn/blog/2023-05/05-8e92bc4a588a2195d4082ec88845e429.png!blog_watermark" style="zoom: 33%;" />
+
 <span id="more"></span>
 
-<h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><p>以下为官方及热心用户贡献的教程。</p>
-<h3 id="OriginLab-官方"><a href="#OriginLab-官方" class="headerlink" title="OriginLab 官方"></a>OriginLab 官方</h3><ul>
-<li>BiliBili：<a href="https://space.bilibili.com/509534849/">空间</a>、<a href="https://www.yeslu.cn/archives/98f216a2.html">直播公开课</a></li>
-<li>简明指南：<a href="https://shimo.im/docs/e9iqj6EdlXYgoZPB">点击查看</a></li>
-<li>完整文档：<a href="https://www.originlab.com/doc/">点击查看</a>、<a href="https://www.originlab.com/doc/Quick-Help">Quick Help (FAQ)</a></li>
-<li>官方图集：<a href="https://www.originlab.com/www/products/GraphGallery.aspx">点击查看</a></li>
-</ul>
-<h3 id="我自己的教程"><a href="#我自己的教程" class="headerlink" title="我自己的教程"></a>我自己的教程</h3><ul>
-<li>地址：<a href="https://www.yeslu.cn/tags/OriginLab">点击查看</a></li>
-</ul>
-<h3 id="BiliBili-UP-主：爱问吱吱"><a href="#BiliBili-UP-主：爱问吱吱" class="headerlink" title="BiliBili UP 主：爱问吱吱"></a>BiliBili UP 主：爱问吱吱</h3><ul>
-<li>地址：<a href="https://space.bilibili.com/386697953">点击查看</a></li>
-</ul>
-<h3 id="科研利剑：Origin-千问千答"><a href="#科研利剑：Origin-千问千答" class="headerlink" title="科研利剑：Origin 千问千答"></a>科研利剑：Origin 千问千答</h3><ul>
-<li>地址：<a href="https://docs.qq.com/doc/DUElFcmZLWEZCY3VU">点击查看</a></li>
-</ul>
-<h3 id="微信公众号：数据绘图"><a href="#微信公众号：数据绘图" class="headerlink" title="微信公众号：数据绘图"></a>微信公众号：数据绘图</h3><ul>
-<li>微信号：ScientificPlots</li>
-</ul>
-<h3 id="微信公众号：编辑之谭"><a href="#微信公众号：编辑之谭" class="headerlink" title="微信公众号：编辑之谭"></a>微信公众号：编辑之谭</h3><ul>
-<li>微信号：EditorTan</li>
-</ul>
-<p>考虑到教程覆盖的有限性，当您遇到上述教程无法解决的，或希望有针对性的解决自己的问题，建议您直接使用 <strong>Google 搜索</strong>“问题关键词（英文） + OriginLab”。</p>
-<p>例如，我希望了解 OriginLab 中 LabTalk 的语法知识，那么可以搜索 “LabTalk + OriginLab”。</p>
-<h2 id="版本"><a href="#版本" class="headerlink" title="版本"></a>版本</h2><h3 id="稳定版"><a href="#稳定版" class="headerlink" title="稳定版"></a>稳定版</h3><ul>
-<li>发布时间：2023.05.18</li>
-<li>版本：<a href="https://www.originlab.com/index.aspx?go=Products/Origin/2023b&pid=4460">OriginPro 2023b</a> SR1【内部版本号：10.0.5.157】</li>
-<li>备注：SR &#x3D; Stable Release</li>
-</ul>
-<h3 id="测试版"><a href="#测试版" class="headerlink" title="测试版"></a>测试版</h3><ul>
-<li>发布时间：2023.06.27</li>
-<li>版本：<a href="https://my.originlab.com/forum/topic.asp?TOPIC_ID=47989">OriginPro 2024 Beta 1</a></li>
-</ul>
-<h2 id="软件使用-Q-x2F-A"><a href="#软件使用-Q-x2F-A" class="headerlink" title="软件使用 Q&#x2F;A"></a>软件使用 Q&#x2F;A</h2><h3 id="00-学习版"><a href="#00-学习版" class="headerlink" title="00 学习版"></a>00 学习版</h3><h4 id="申请"><a href="#申请" class="headerlink" title="申请"></a>申请</h4><ul>
-<li>申请地址：<a href="http://www.originlab.com/OriginProLearning.aspx">点击查看</a></li>
-<li>申请后，下载地址将发送至邮箱。</li>
-</ul>
-<h3 id="01-文件问题"><a href="#01-文件问题" class="headerlink" title="01 文件问题"></a>01 文件问题</h3><h4 id="无法双击打开文件"><a href="#无法双击打开文件" class="headerlink" title="无法双击打开文件"></a>无法双击打开文件</h4><ul>
-<li>症状：双击已有文件后，实际显示空白页</li>
-<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/double-click-open-failed">点击查看</a></li>
-</ul>
-<h4 id="无法保存文件"><a href="#无法保存文件" class="headerlink" title="无法保存文件"></a>无法保存文件</h4><ul>
-<li>症状：提示“在保存项目或窗口之前，请关闭所有打开的对话框”</li>
-<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/saveOPJ-when-hidden-dialog">点击查看</a></li>
-</ul>
-<h4 id="保存的文件是只读的"><a href="#保存的文件是只读的" class="headerlink" title="保存的文件是只读的"></a>保存的文件是只读的</h4><ul>
-<li>症状：提示“此项目为只读文件”</li>
-<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/Declare-saving-file-read-only">点击查看</a></li>
-</ul>
-<h4 id="Origin-使用卡顿（Slow-or-Sluggish）"><a href="#Origin-使用卡顿（Slow-or-Sluggish）" class="headerlink" title="Origin 使用卡顿（Slow or Sluggish）"></a>Origin 使用卡顿（Slow or Sluggish）</h4><ul>
-<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/Origin-slow-Troubleshoot">点击查看</a></li>
-</ul>
-<h4 id="Origin-闪退或没有响应"><a href="#Origin-闪退或没有响应" class="headerlink" title="Origin 闪退或没有响应"></a>Origin 闪退或没有响应</h4><ul>
-<li>症状：Origin 闪退，进入假死状态，没有响应</li>
-<li>解决：<a href="https://www.originlab.com/doc/en/Quick-Help/troubleshooting-Origin-crash">点击查看</a></li>
-</ul>
-<h4 id="使用-Copy-Page-功能时提示“没有足够的内存实现此操作”"><a href="#使用-Copy-Page-功能时提示“没有足够的内存实现此操作”" class="headerlink" title="使用 Copy Page 功能时提示“没有足够的内存实现此操作”"></a>使用 Copy Page 功能时提示“没有足够的内存实现此操作”</h4><ul>
-<li>症状：将数据 Copy Page 至 PPT 时，提示“没有足够的内存实现此操作”。</li>
-<li>解决：该问题为 Office 的限制（<a href="https://www.originlab.com/doc/Quick-Help/OutOfMemory-CopyToPPT">点击查看</a>），无完美解决方案，但有网友称可以先 Copy Page 至 Word，再复制到PPT。</li>
-</ul>
-<h3 id="02-数据问题"><a href="#02-数据问题" class="headerlink" title="02 数据问题"></a>02 数据问题</h3><h4 id="抓取图片上的数据点（Digitizer）"><a href="#抓取图片上的数据点（Digitizer）" class="headerlink" title="抓取图片上的数据点（Digitizer）"></a>抓取图片上的数据点（Digitizer）</h4><ul>
-<li>地址：<a href="https://www.originlab.com/doc/Tutorials/enhanced-digitizer">点击查看</a></li>
-</ul>
-<h4 id="自定义数据格式（Custom-Numeric-Formats）"><a href="#自定义数据格式（Custom-Numeric-Formats）" class="headerlink" title="自定义数据格式（Custom Numeric Formats）"></a>自定义数据格式（Custom Numeric Formats）</h4><ul>
-<li>地址：<a href="https://www.originlab.com/doc/Origin-Help/Custom-Formats">点击查看</a></li>
-</ul>
-<h4 id="内置函数列表（LabTalk-Supported-Functions）"><a href="#内置函数列表（LabTalk-Supported-Functions）" class="headerlink" title="内置函数列表（LabTalk-Supported Functions）"></a>内置函数列表（LabTalk-Supported Functions）</h4><ul>
-<li>地址：<a href="https://www.originlab.com/doc/en/LabTalk/guide/LT-Supported-Functions">点击查看</a></li>
-</ul>
-<h4 id="支持的三角-x2F-双曲函数列表（Trigonometric-x2F-Hyperbolic-Functions）"><a href="#支持的三角-x2F-双曲函数列表（Trigonometric-x2F-Hyperbolic-Functions）" class="headerlink" title="支持的三角&#x2F;双曲函数列表（Trigonometric&#x2F;Hyperbolic Functions）"></a>支持的三角&#x2F;双曲函数列表（Trigonometric&#x2F;Hyperbolic Functions）</h4><ul>
-<li>地址：<a href="https://www.originlab.com/doc/LabTalk/ref/Trigonometric-Hyperbolic-Functions">点击查看</a></li>
-</ul>
-<h3 id="03-制图问题"><a href="#03-制图问题" class="headerlink" title="03 制图问题"></a>03 制图问题</h3><h4 id="拷贝到-Word、PPT-等后图像失真"><a href="#拷贝到-Word、PPT-等后图像失真" class="headerlink" title="拷贝到 Word、PPT 等后图像失真"></a>拷贝到 Word、PPT 等后图像失真</h4><ul>
-<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/TextDistorted-in-ExpGraph">点击查看</a></li>
-</ul>
-<h4 id="使用-Data-Connector-后数据丢失、图像中有一个下载标志"><a href="#使用-Data-Connector-后数据丢失、图像中有一个下载标志" class="headerlink" title="使用 Data Connector 后数据丢失、图像中有一个下载标志"></a>使用 Data Connector 后数据丢失、图像中有一个下载标志</h4><ul>
-<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/Connector-open-project-data-missing">点击查看</a></li>
-</ul>
-<p><img src="https://img.yeslu.cn/blog/2022-10/08-ddfe73484aadb491abf9ca9d3fc234b2.png"></p>
-<h4 id="无法退出缩放模式"><a href="#无法退出缩放模式" class="headerlink" title="无法退出缩放模式"></a>无法退出缩放模式</h4><ul>
-<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/Escape-from-Zooming-and-Panning">点击查看</a></li>
-</ul>
-<h4 id="无法通过双击编辑文字"><a href="#无法通过双击编辑文字" class="headerlink" title="无法通过双击编辑文字"></a>无法通过双击编辑文字</h4><ul>
-<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/Double-Click-Enter-In-Place-Edit-Mode">点击查看</a></li>
-</ul>
-<h4 id="无法修改页面尺寸"><a href="#无法修改页面尺寸" class="headerlink" title="无法修改页面尺寸"></a>无法修改页面尺寸</h4><ul>
-<li>症状：宽度和高度均为锁定状态，无法修改数值</li>
-</ul>
-<img src="https://img.yeslu.cn/blog/2023-03/01-bf932d958462531c74c1a558eba3e238.png" style="zoom: 33%;" />
-
-<ul>
-<li>解决：使用 Page View 模式，参考 <a href="https://www.originlab.com/doc/en/Origin-Help/Compare-PageView-Modes">Available Page Viewing Modes</a></li>
-</ul>
-<img src="https://img.yeslu.cn/blog/2023-03/01-99fed584f15cec8df17de20e15669ccb.jpg" style="zoom: 33%;" />
-
-<h4 id="数据点上的箭头和标记是什么"><a href="#数据点上的箭头和标记是什么" class="headerlink" title="数据点上的箭头和标记是什么"></a>数据点上的箭头和标记是什么</h4><ul>
-<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/Markers-Lock">点击查看</a></li>
-</ul>
-<p><img src="https://img.yeslu.cn/blog/2023-03/01-4e34ff4e8e1cef1ec3637c6a0abda6aa"></p>
-<h4 id="无法正常显示图例，图例出现黑色色块"><a href="#无法正常显示图例，图例出现黑色色块" class="headerlink" title="无法正常显示图例，图例出现黑色色块"></a>无法正常显示图例，图例出现黑色色块</h4><ul>
-<li>解决：<a href="https://www.yeslu.cn/archives/863b7bad.html">点击查看</a></li>
-</ul>
-<h4 id="导出文字可编辑的图片"><a href="#导出文字可编辑的图片" class="headerlink" title="导出文字可编辑的图片"></a>导出文字可编辑的图片</h4><ul>
-<li>地址：<a href="https://www.originlab.com/doc/en/Quick-Help/Exp-Editable-Text-EPSl">点击查看</a></li>
-</ul>
-<img src="https://img.yeslu.cn/blog/2023-06/27-91a68139a21df670ac0dcfaad94b8e57.png" style="zoom: 33%;" />
-
-<h3 id="04-个性化"><a href="#04-个性化" class="headerlink" title="04 个性化"></a>04 个性化</h3><h4 id="在论文中描述“数据使用-OriginLab-处理”（Citation）"><a href="#在论文中描述“数据使用-OriginLab-处理”（Citation）" class="headerlink" title="在论文中描述“数据使用 OriginLab 处理”（Citation）"></a>在论文中描述“数据使用 OriginLab 处理”（Citation）</h4><ul>
-<li>地址：<a href="https://www.originlab.com/index.aspx?go=Company&pid=1130">点击查看</a></li>
-</ul>
-<h4 id="使用短连字符号作为负号（hyphen-x2F-short-minus）"><a href="#使用短连字符号作为负号（hyphen-x2F-short-minus）" class="headerlink" title="使用短连字符号作为负号（hyphen&#x2F;short minus）"></a>使用短连字符号作为负号（hyphen&#x2F;short minus）</h4><ul>
-<li>地址：<a href="https://www.originlab.com/doc/Quick-Help/add-real-minus-to-tick-labels">点击查看</a></li>
-</ul>
-<h4 id="高级图例设置（Legend-Substitution-Notation）"><a href="#高级图例设置（Legend-Substitution-Notation）" class="headerlink" title="高级图例设置（Legend Substitution Notation）"></a>高级图例设置（Legend Substitution Notation）</h4><ul>
-<li>地址：<a href="https://www.originlab.com/doc/LabTalk/ref/Legend-Substitution-Notation">点击查看</a></li>
-</ul>
-<h4 id="色盲安全配色（ColorBlindSafe）"><a href="#色盲安全配色（ColorBlindSafe）" class="headerlink" title="色盲安全配色（ColorBlindSafe）"></a>色盲安全配色（ColorBlindSafe）</h4><ul>
-<li>地址：<a href="https://www.originlab.com/doc/Quick-Help/Colorblind-Friendly-Colors">点击查看</a></li>
-</ul>
-<img src="https://img.yeslu.cn/blog/2022-04/08-8e2ae1af7453a67551988cfa9637d61d.png" style="zoom:50%;" />
-
-<h4 id="复制格式（批量应用格式）"><a href="#复制格式（批量应用格式）" class="headerlink" title="复制格式（批量应用格式）"></a>复制格式（批量应用格式）</h4><ul>
-<li>解决：<a href="https://www.originlab.com/doc/en/Origin-Help/CopyPaste-Format">点击查看</a></li>
-</ul>
-<h4 id="标签过长或重叠"><a href="#标签过长或重叠" class="headerlink" title="标签过长或重叠"></a>标签过长或重叠</h4><ul>
-<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/wrap-axis-tick-labels">点击查看</a></li>
-</ul>
-<h2 id="常用插件"><a href="#常用插件" class="headerlink" title="常用插件"></a>常用插件</h2><h3 id="高亮图像中的某段区域"><a href="#高亮图像中的某段区域" class="headerlink" title="高亮图像中的某段区域"></a>高亮图像中的某段区域</h3><ul>
-<li><a href="https://www.originlab.com/FileExchange/details.aspx?fid=398">Data Highlighter</a><img src="https://img.yeslu.cn/blog/early/originlab-data-highlighter.png" style="zoom:50%;" /></li>
-</ul>
-<h3 id="坡度变化的起始点（Onset-点）"><a href="#坡度变化的起始点（Onset-点）" class="headerlink" title="坡度变化的起始点（Onset 点）"></a>坡度变化的起始点（Onset 点）</h3><ul>
-<li><a href="https://www.originlab.com/FileExchange/details.aspx?fid=288">Onset Of Slope</a><img src="https://img.yeslu.cn/blog/2022-07/29-10a8b6f6914e5cbd6846b22b30bfd20d.png" style="zoom:50%;" /></li>
-</ul>
-<h3 id="分段拟合"><a href="#分段拟合" class="headerlink" title="分段拟合"></a>分段拟合</h3><ul>
-<li><a href="https://www.originlab.com/FileExchange/details.aspx?fid=325">Piecewise Fit</a><img src="https://img.yeslu.cn/blog/early/originlab-piecewise-screenshot.png" style="zoom:50%;" /></li>
-</ul>
-<h3 id="将图像制作成动画"><a href="#将图像制作成动画" class="headerlink" title="将图像制作成动画"></a>将图像制作成动画</h3><ul>
-<li><a href="https://www.originlab.com/fileExchange/details.aspx?fid=370">Movie Creator</a> 或 <a href="https://www.originlab.com/FileExchange/details.aspx?fid=482">Graph Anim</a><img src="https://www.originlab.com/fileexchange/images/482/Anim%20v2.gif"  /></li>
-</ul>
+<h2 id="问题报告"><a href="#问题报告" class="headerlink" title="问题报告"></a>问题报告</h2><p>此问题为 OriginLab 方的已知问题（ORG-23517），但现阶段未能被修复。</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><h3 id="修改字体"><a href="#修改字体" class="headerlink" title="修改字体"></a>修改字体</h3><p>更换相近字体，有一部分中文字体的加粗能够被正常显示。</p>
+<p><img src="https://img.yeslu.cn/blog/2023-05/05-fbed6e174f7128ee9118cecb2dd8ddfa.png!blog_watermark"></p>
+<h3 id="修改旋转角度"><a href="#修改旋转角度" class="headerlink" title="修改旋转角度"></a>修改旋转角度</h3><p>将旋转角度修改至 89 度或者 91 度，也可以使加粗正常显示。</p>
+<p><img src="https://img.yeslu.cn/blog/2023-05/05-a5a37f89ec0c0e03959718d3ec0205de.png!blog_watermark"></p>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
+<li>Windows 11 (22621);</li>
+<li>Origin 2023b (Academic).</li>
+</ol>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文禁止转载；</li>
+<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
+</ol>
 ]]></content>
       <categories>
         <category>Science</category>
       </categories>
       <tags>
         <tag>Graph</tag>
-        <tag>Data-Analysis</tag>
-        <tag>OriginLab</tag>
+        <tag>Origin</tag>
       </tags>
   </entry>
   <entry>
-    <title>OriginLab 通过 Y 轴偏移制作层叠式线图的五种思路</title>
+    <title>Origin 绘制 3D 图时无法正常显示图例</title>
+    <url>/archives/863b7bad.html</url>
+    <content><![CDATA[<h2 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h2><p>Origin 部分版本在绘制图形时，图例等部分会出现如下图所示的异常的黑色色块，此问题与 AMD 显卡 OpenGL 与 Origin 的兼容性有关，本文将简述解决方案。</p>
+<img src="https://img.yeslu.cn/blog/2023-04/25-88b961d88dd9f971b194e69d3e1a79fc.png" alt="图片来自群友聊天记录" style="zoom: 50%;" />
+
+<span id="more"></span>
+
+<h2 id="官方解决方案"><a href="#官方解决方案" class="headerlink" title="官方解决方案"></a>官方解决方案</h2><blockquote>
+<p>Origin 在 2023b 中修复了这个问题：<a href="https://originlab.jira.com/wiki/spaces/main/pages/2630582301/Origin+2023b+Bug+Fixes">ORG-24094</a></p>
+</blockquote>
+<ol>
+<li>将软件<strong>更新至 Origin 2023b 及以上版本</strong>；</li>
+<li>通过 <code>Preference -&gt; System Variables</code> 打开系统变量设置窗口；</li>
+<li>设置系统变量<code>OGLDP</code>的值为<code>1</code>；</li>
+<li>重新打开软件。</li>
+</ol>
+<p><img src="https://img.yeslu.cn/blog/2023-05/23-82874450a4ae3f76e0da65e359f8783a.png!blog_watermark"></p>
+<p>如果上述方法无法解决问题，可尝试通过 <code>Preference -&gt; 3D OpenGL Settings</code> 取消勾选 <code>Enable Display List</code>。</p>
+<p><img src="https://img.yeslu.cn/blog/2023-04/25-7cbc67c6d7c42d0a7e7948126944da6a.png!blog_watermark"></p>
+<p>参考文档：<a href="https://www.originlab.com/doc/Quick-Help/Strange-Color-Block-On-3D-Graph">Strange-Color-Block-On-3D-Graph</a></p>
+<h2 id="坊间解决方案"><a href="#坊间解决方案" class="headerlink" title="坊间解决方案"></a>坊间解决方案</h2><blockquote>
+<p>以下方法为<strong>可能有效</strong>的方案，不保证解决问题。</p>
+</blockquote>
+<ul>
+<li>如果你是双显卡用户，可以将 Origin 调用的显卡切换为另一张显卡；</li>
+<li>尝试将 AMD 显卡的驱动程序<strong>更新到最新</strong>，或<strong>降级到上一个版本</strong>。</li>
+</ul>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
+<li>Windows 11 (22621);</li>
+<li>Origin 2023b beta2 (Academic).</li>
+</ol>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文禁止转载；</li>
+<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Graph</tag>
+        <tag>Origin</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Origin 修改中文语言</title>
+    <url>/archives/2e6d2c4b.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Origin 原则上可以在软件内直接切换语言，但由于官方授权的一些特性和限制，部分用户无法在软件内切换，本文将详解语言切换的相关逻辑。</p>
+<img src="https://img.yeslu.cn/blog/2023-06/05-1908e3e7ae5b85ba8921fda9fe447e62.png" style="zoom:45%;" />
+
+<span id="more"></span>
+
+<h2 id="语言切换"><a href="#语言切换" class="headerlink" title="语言切换"></a>语言切换</h2><p>Origin 切换中文需要<strong>软件已经激活、具备中国大陆的授权（例如国内的学习版 (Learning Edition) ）且在中国大陆激活使用</strong>。</p>
+<p>为了满足上述条件，在申请和激活时，需要<strong>使用国内 IP 申请和激活</strong>软件，但由于 Origin IP 库自身问题，<strong>国内部分地区的移动和教育网络可能被识别为境外</strong>，故可能需要临时切换至电信或联通的网络。</p>
+<p>Origin 切换语言的底层逻辑是修改 <code>HKEY_CURRENT_USER\Software\OriginLab</code> 的注册表值，但官方从未建议用户自行修改注册表，这是由于软件启动时会检测上述条件是否满足。换而言之，当条件满足时，软件内一定可以修改语言，而软件内无法修改语言时，通过注册表修改一样无效。</p>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
+<li>Windows 11 (22621);</li>
+<li>Origin 2023b SR1 (Academic).</li>
+</ol>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文禁止转载；</li>
+<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Graph</tag>
+        <tag>Origin</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Origin 通过 Y 轴偏移制作层叠式线图的五种思路</title>
     <url>/archives/71ef1cd6.html</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>层叠式线图是比较多组数据差异的重要手段，当数据对 Y 的实际值不敏感时，通过将数据堆叠在同一张图中，能够更好分析不同数据间峰强、峰位移等信息的变化。常见的表征手段中，XRD、XPS、XAS、FT-IR、Raman 等光（能）谱的数据，均可通过类似下图的手段，在 Y 方向上进行堆叠制图。</p>
 <p><img src="https://img.yeslu.cn/blog/2022-04/17-966e0351a4f04e3d61b4d7513f19cb59.png" alt="10.1038/s41467-021-27768-6"></p>
-<p>在 OriginLab 中，软件至少提供了五种方法以实现层叠式线图，本文将简要介绍这些思路。</p>
+<p>在 Origin 中，软件至少提供了五种方法以实现层叠式线图，本文将简要介绍这些思路。</p>
 <span id="more"></span>
 
 <h2 id="示例数据"><a href="#示例数据" class="headerlink" title="示例数据"></a>示例数据</h2><p>本科期间，我曾向 OriginLab GraphGallery 贡献过层叠式线图的<a href="https://www.originlab.com/www/products/GraphGallery.aspx?GID=472">例图</a>，此后 OriginLab 官方以该图为蓝本制作了《<a href="https://www.bilibili.com/video/BV1Rv411a7e5">XRD 二维层叠式带标准卡片</a>》的教学视频，感兴趣的同学可以下载原始工程和数据进行学习。</p>
@@ -6340,7 +6560,7 @@
 <p>本教程为简化复杂程度，使用如下图所示的精简数据。</p>
 <p><img src="https://img.yeslu.cn/blog/2022-04/17-1c181793129e8219d40dc2e73b28b0d6.png!blog_watermark"></p>
 <h2 id="制作层叠式线图的五种思路"><a href="#制作层叠式线图的五种思路" class="headerlink" title="制作层叠式线图的五种思路"></a>制作层叠式线图的五种思路</h2><h3 id="1-同加同减"><a href="#1-同加同减" class="headerlink" title="1 同加同减"></a>1 同加同减</h3><p>函数中，将 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="5.42ex" height="1.783ex" role="img" focusable="false" viewBox="0 -583 2395.6 788"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(767.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mi" transform="translate(1823.6,0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g></g></g></svg></mjx-container> 向上平移 2 个单位长度，得到 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="9.317ex" height="1.971ex" role="img" focusable="false" viewBox="0 -666 4118 871"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(767.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mi" transform="translate(1823.6,0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="mo" transform="translate(2617.8,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="mn" transform="translate(3618,0)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g></g></svg></mjx-container>。这与本例十分类似，也是所有方案中，最简单，也最容易想到的方法。</p>
-<p>利用 OriginLab 的 <a href="https://www.originlab.com/doc/Tutorials/SetColVal">Set Column/Cell Values</a> 功能，我们可以轻松的将整列值同加同减，得到拉开两线间距的效果。</p>
+<p>利用 Origin 的 <a href="https://www.originlab.com/doc/Tutorials/SetColVal">Set Column/Cell Values</a> 功能，我们可以轻松的将整列值同加同减，得到拉开两线间距的效果。</p>
 <p><img src="https://img.yeslu.cn/blog/2022-04/17-993706cc81af193971abbda9dc8e55c6.png!blog_watermark"></p>
 <h4 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h4><ol>
 <li>纯数学操作，方法简单；</li>
@@ -6354,7 +6574,7 @@
 </ul>
 <p>那么有没有直接在图中操作的方法呢？答案是肯定的。</p>
 <p><img src="https://img.yeslu.cn/blog/2022-04/17-fb2d9f2b1cbf61c8c385030edeb3ea02.png!blog_watermark"></p>
-<p>OriginLab 为我们提供了 Y/X 方向上独立的功能，通过启用 Y 方向上独立，在图中就可以直接上下拖动，调整需要的位置。</p>
+<p>Origin 为我们提供了 Y/X 方向上独立的功能，通过启用 Y 方向上独立，在图中就可以直接上下拖动，调整需要的位置。</p>
 <p><img src="https://img.yeslu.cn/blog/2022-04/17-dc17987bd35c6a44fcc0ce4c640c41b6.gif"></p>
 <h3 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h3><p>当 Individual 勾选时，<a href="https://www.originlab.com/doc/Origin-Help/PD-offset-tab">Offset 功能</a>便会启用，这里的 Multiplier 和 Offset 遵循如下公式，如果需要精确控制线间距，可以尝试使用本功能。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">X' = Multiplier_X * X + Offset_X</span><br><span class="line">Y' = Multiplier_Y * Y + Offset_Y</span><br></pre></td></tr></table></figure>
@@ -6370,7 +6590,7 @@
 <h3 id="3-Stacked-Lines-by-Y-Offsets"><a href="#3-Stacked-Lines-by-Y-Offsets" class="headerlink" title="3 Stacked Lines by Y Offsets"></a>3 Stacked Lines by Y Offsets</h3><ul>
 <li>官方说明：<a href="https://www.originlab.com/doc/Origin-Help/StackLineYOffset-Graph">StackLineYOffset-Graph</a></li>
 </ul>
-<p>Stacked Lines by Y Offsets 是 OriginLab 中的一种图形模板，实为上述“Individual Offset”的变体，其本质依然是允许数据在 Y 轴方向上偏移。此外，软件也提供了其他的 Offset 模式，大家可以根据自己的实际需要选择。</p>
+<p>Stacked Lines by Y Offsets 是 Origin 中的一种图形模板，实为上述“Individual Offset”的变体，其本质依然是允许数据在 Y 轴方向上偏移。此外，软件也提供了其他的 Offset 模式，大家可以根据自己的实际需要选择。</p>
 <p><img src="https://img.yeslu.cn/blog/2022-07/30-12cf176d57c518d338eab6ddb1535f14.png"></p>
 <p>当制作“Stacked Lines by Y Offsets”图时，软件会自动调整多条线的间距，以实现快速制图的功能。</p>
 <p><img src="https://img.yeslu.cn/blog/2022-04/17-f8f30f90f8ef64f1ebeda00a334b92ec.png!blog_watermark"></p>
@@ -6390,7 +6610,7 @@
 <h4 id="5-4-拖动至需要的位置"><a href="#5-4-拖动至需要的位置" class="headerlink" title="5.4 拖动至需要的位置"></a>5.4 拖动至需要的位置</h4><p><img src="https://img.yeslu.cn/blog/2022-04/17-5d29c84fe70ef35a587f35119d2f5506.gif"></p>
 <h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
 <li>Windows 11 (22000.652);</li>
-<li>OriginLab 2022 SR1 (Academic).</li>
+<li>Origin 2022 SR1 (Academic).</li>
 </ol>
 <h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
 <li>本文禁止转载；</li>
@@ -6403,555 +6623,7 @@
       <tags>
         <tag>Graph</tag>
         <tag>Data-Analysis</tag>
-        <tag>OriginLab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>OriginLab 快速绘制带 PDF 卡片的 XRD 图谱</title>
-    <url>/archives/b4c2c415.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>X射线衍射（X-ray Diffraction, XRD）可用于揭示物质的晶体结构、化学组成以及物理性质，在处理 XRD 数据时，常与 PDF 卡片结合绘制。文本将介绍使用OriginLab 绘制带 PDF 卡片的 XRD 图谱。</p>
-<span id="more"></span>
-
-<h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><img src="https://img.yeslu.cn/blog/2022-06/19-5f70a86a40402f95859c4a22bdb0eb95!blog_watermark" alt="XRD Curves" style="zoom: 67%;" />
-
-<p>本科期间，我向 OriginLab GraphGallery 贡献带 PDF 卡片的 XRD 图谱的<a href="https://www.originlab.com/www/products/GraphGallery.aspx?GID=472">例图</a>，此后 OriginLab 官方以该图数据及绘制思路为蓝本制作了<a href="https://www.bilibili.com/video/BV1Rv411a7e5">《XRD 二维层叠式带标准卡片》</a>的教学视频。</p>
-<p>在 <a href="https://originlab.jira.com/wiki/spaces/main/pages/2543452161/Origin+2023+Features">OriginLab 2023</a> 中，我和 Origin 的官方童鞋再一次优化了此图，将例图与快速绘制模板内嵌于该版本的 OriginLab 中。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-10/22-cd0f162d6b883805bed0a57344485ee6.jpg" alt="Learning Center &amp; Template Center"></p>
-<p>该版本下，只需要将 XRD 原始数据和标准 PDF 卡片数据如下图所示，填写于两个 Sheet 中，全选所有数据，使用上图模板即可一键完成制图。</p>
-<p><img src="https://img.yeslu.cn/blog/2023-05/09-7e27f5cfe27205c0bebe7564f04a1830.png"></p>
-<p><img src="https://img.yeslu.cn/blog/2023-05/09-deb82a3489e98e60b70f0e70f0d29b47.png"></p>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文禁止转载；</li>
-<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Graph</tag>
-        <tag>Data-Analysis</tag>
-        <tag>OriginLab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>论文实用干货：总目录</title>
-    <url>/archives/dcc4cb4a.html</url>
-    <content><![CDATA[<h2 id="总目录"><a href="#总目录" class="headerlink" title="总目录"></a>总目录</h2><ul>
-<li><a href="https://www.yeslu.cn/archives/1fd4b1da.html">01 - 制作封面信息</a></li>
-<li><a href="https://www.yeslu.cn/archives/2d8df6ac.html">02 - 分页符与分节符</a></li>
-<li><a href="https://www.yeslu.cn/archives/5b5ea310.html">03 - 创建目录</a><span id="more"></span></li>
-<li><a href="https://www.yeslu.cn/archives/ff3dc88a.html">04 - 编辑页眉和页码</a></li>
-<li><a href="https://www.yeslu.cn/archives/7b0cfbef.html">05 - 将摘要加入目录</a></li>
-<li><a href="https://www.yeslu.cn/archives/510fef2a.html">06 - Endnote 避坑指南</a></li>
-<li><a href="https://www.yeslu.cn/archives/2aff811f.html">07 - Office 设置优化</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Office</tag>
-        <tag>Paper</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>论文实用干货：制作封面信息（01）</title>
-    <url>/archives/1fd4b1da.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>相信很多同学在制作论文封面时，会纠结于论文信息部分下划线，如何快速让信息位于下划线中间，同时保证每个下划线等宽是一个麻烦的问题。传统敲空格的方法难以保证上述问题，一旦信息需要进行修改，又需要重新调整，十分不便。<br>本文使用另类的制表法，实现快速排版的目的。</p>
-<span id="more"></span>
-
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ul>
-<li>macOS: 10.14.5</li>
-<li>Office 365: 16.25 (19051201)</li>
-</ul>
-<h2 id="制表"><a href="#制表" class="headerlink" title="制表"></a>制表</h2><p>以示例封面为例，共有 5 条信息，分别为论文题目、专业、学生姓名、学号、指导教师。<br>为了便于间距调整，采用写一行空一行的方案，故需要生成一个 9 行 2 列的表格。<br><img src="https://img.yeslu.cn/blog/paper/paper-01-1.png!blog_watermark"></p>
-<h2 id="信息输入"><a href="#信息输入" class="headerlink" title="信息输入"></a>信息输入</h2><p>按如图所示方法输入信息：<br><img src="https://img.yeslu.cn/blog/paper/paper-01-2.png!blog_watermark"></p>
-<h2 id="排版（重点！敲黑板）"><a href="#排版（重点！敲黑板）" class="headerlink" title="排版（重点！敲黑板）"></a>排版（重点！敲黑板）</h2><ol>
-<li>第一列右对齐，第二列居中<br><img src="https://img.yeslu.cn/blog/paper/paper-01-3.png!blog_watermark"></li>
-<li>取消第一列所有的边框，第二列只保留有内容的 5 行的下边框（将光标移动至行首位置即可选中整行，按住 CTRL 进行多选，去除其上框线和右框线）<br><img src="https://img.yeslu.cn/blog/paper/paper-01-4.png!blog_watermark"></li>
-<li>去除剩余的右框线<br><img src="https://img.yeslu.cn/blog/paper/paper-01-5.png!blog_watermark"></li>
-<li>按要求对字体和字号进行修改（这里使用黑体，四号）<br><img src="https://img.yeslu.cn/blog/paper/paper-01-6.png!blog_watermark"></li>
-</ol>
-<h2 id="微调"><a href="#微调" class="headerlink" title="微调"></a>微调</h2><ol>
-<li>到这里，其实大部分工作就结束了，但为了使表格更接近于如图所示下划线的效果，我们需要对间距进行修改。<br><img src="https://img.yeslu.cn/blog/paper/paper-01-7.png!blog_watermark"></li>
-<li>我们分别对第 1、3、5、7、9 行及 2、4、6、8 行的行高进行调整<br><img src="https://img.yeslu.cn/blog/paper/paper-01-8.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-01-9.png!blog_watermark"></li>
-<li>最后，通过对第一列的列宽进行调整，使全表居中<br><img src="https://img.yeslu.cn/blog/paper/paper-01-10.png!blog_watermark"></li>
-</ol>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Office</tag>
-        <tag>Paper</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>论文实用干货：分页符与分节符（02）</title>
-    <url>/archives/2d8df6ac.html</url>
-    <content><![CDATA[<h2 id="重要说明"><a href="#重要说明" class="headerlink" title="重要说明"></a>重要说明</h2><p>在 Word 中，分页符、分隔符等标记符号<strong>默认不显示</strong>，点击如图所示按钮可使上述标记显示。未来的所有教程，均在<strong>显示标记符号</strong>的情况下演示。<br><img src="https://img.yeslu.cn/blog/paper/paper-02-1.png!blog_watermark"></p>
-<h2 id="分页符（Page-Break）"><a href="#分页符（Page-Break）" class="headerlink" title="分页符（Page Break）"></a>分页符（Page Break）</h2><h3 id="官方介绍"><a href="#官方介绍" class="headerlink" title="官方介绍"></a>官方介绍</h3><p>微软的官方说明建议直接阅读英文版，因为中文版为机翻，部分内容语序十分诡异：<a href="https://support.office.com/en-us/article/insert-a-page-break-7613ff46-96e5-4e46-9491-40d7d410a043?ui=en-US&rs=en-US&ad=US">Insert a page break</a></p>
-<span id="more"></span>
-
-<h3 id="通俗解释"><a href="#通俗解释" class="headerlink" title="通俗解释"></a>通俗解释</h3><p>换一张<strong>相同</strong>的纸，即前后纸张的版式（主要指页眉、页脚、格式、间距）相同。</p>
-<h3 id="图片演示"><a href="#图片演示" class="headerlink" title="图片演示"></a>图片演示</h3><p>在本图片中，我们已经完成了前言部分的写作，现在需要将“实验部分”另起一页。因此，我们在光标所示位置插入分页符。<br><img src="https://img.yeslu.cn/blog/paper/paper-02-2.png!blog_watermark"></p>
-<p>插入后，无论之前的内容怎么更改，“实验部分”将始终处在新的一页。<br><img src="https://img.yeslu.cn/blog/paper/paper-02-3.png!blog_watermark"></p>
-<h2 id="分节符（Section-Break）"><a href="#分节符（Section-Break）" class="headerlink" title="分节符（Section Break）"></a>分节符（Section Break）</h2><h3 id="官方介绍-1"><a href="#官方介绍-1" class="headerlink" title="官方介绍"></a>官方介绍</h3><p><a href="https://support.office.com/en-us/article/insert-a-section-break-eef20fd8-e38c-4ba6-a027-e503bdf8375c?ui=en-US&rs=en-US&ad=US">Insert a section break</a></p>
-<h3 id="通俗解释-1"><a href="#通俗解释-1" class="headerlink" title="通俗解释"></a>通俗解释</h3><p>换一张<strong>不同</strong>的纸，即前后纸张的版式（主要指页眉、页脚、格式、间距）可以不同。</p>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>分节符的相关说明，将在<a href="https://www.yeslu.cn/archives/ff3dc88a.html">第 4 节</a>中进行详细讲解。</li>
-<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Office</tag>
-        <tag>Paper</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>OriginLab 配置 nVIDIA 独立显卡及显卡调用异常的处理</title>
-    <url>/archives/6969f4f4.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在双显卡（本文中“双显卡”特指核心显卡+ nVIDIA 独立显卡）的设备中，OriginLab 默认调用核心显卡进行图形处理，这可能会带来一系列问题。同时，由于 nVIDIA 显卡驱动的特性，即使手动指定 OriginLab 调用独立显卡，也可能出现软件调用显卡错误的情况。</p>
-<span id="more"></span>
-
-<h2 id="查看-OriginLab-当前调用的显卡"><a href="#查看-OriginLab-当前调用的显卡" class="headerlink" title="查看 OriginLab 当前调用的显卡"></a>查看 OriginLab 当前调用的显卡</h2><ul>
-<li>通过 “Preferences” - “3D OpenGL Settings” 即可查看。</li>
-</ul>
-<p><img src="https://img.yeslu.cn/blog/2022-04/29-c24201e8b002b6de779aaef5ed98420e.png!blog_watermark"></p>
-<img src="https://img.yeslu.cn/blog/2022-04/29-593ff8de1fe014405dd8baf6cc2071b9.png!blog_watermark" style="zoom:50%;" />
-
-<h2 id="指定-OriginLab-调用独显"><a href="#指定-OriginLab-调用独显" class="headerlink" title="指定 OriginLab 调用独显"></a>指定 OriginLab 调用独显</h2><ol>
-<li>启动 “nVIDIA Control Panel” 应用程序；</li>
-<li>在“管理 3D 设置” - “程序设置”中找到 OriginLab ；</li>
-<li>为其“首选图形处理器”配置“高性能 nVIDIA 处理器”。</li>
-</ol>
-<p><img src="https://img.yeslu.cn/blog/2022-04/29-0432ca9c3cc05db4b91b04f72d016009.png!blog_watermark"></p>
-<p><img src="https://img.yeslu.cn/blog/2022-04/29-bc6bae41bce6bacfdc4a8f1516d7cdaa.png!blog_watermark"></p>
-<p><img src="https://img.yeslu.cn/blog/2022-04/29-8c33e746b3df5d8551d9f3a71457b6d2.png!blog_watermark"></p>
-<h2 id="显卡调用异常的处理"><a href="#显卡调用异常的处理" class="headerlink" title="显卡调用异常的处理"></a>显卡调用异常的处理</h2><blockquote>
-<p><strong>OriginLab 2023 已经修复下文所述问题。</strong></p>
-</blockquote>
-<p><del>一般的，上述方法已经可以解决 OriginLab 的独显调用问题。但是我发现在某些特定环境中，直接启动 OriginLab 可以正常调用独显，而打开已有的 opju 工程文件时，软件又只能调用核显。</del></p>
-<p>我于 2022 年 4 月 10 日向 OriginLab 提交了异常报告，OriginLab 方复现了这个问题（JIRA: ORG-25046），经其工程师测试认为可能与 nVIDIA 显卡驱动的特性有关，并提供了下述解决方案。</p>
-<h3 id="获取-OriginLab-短路径"><a href="#获取-OriginLab-短路径" class="headerlink" title="获取 OriginLab 短路径"></a>获取 OriginLab 短路径</h3><ol>
-<li>打开 “Script Window”；</li>
-<li>输入 <code>type -dm</code>；</li>
-<li>找到 “Origin64.exe” 的短路径（如本例中为 <code>C:\PROGRA~1\ORIGIN~1\ORIGIN~1\Origin64.exe</code>）。</li>
-</ol>
-<p><img src="https://img.yeslu.cn/blog/2022-04/29-8f7ce7d79aa7a55b0c99d3b89f75837b.png!blog_watermark"></p>
-<p><img src="https://img.yeslu.cn/blog/2022-04/29-ac11008cb45cee838b13756712b1eaca.jpg!blog_watermark"></p>
-<h3 id="指定该短路径调用独显"><a href="#指定该短路径调用独显" class="headerlink" title="指定该短路径调用独显"></a>指定该短路径调用独显</h3><ol>
-<li>在 “nVIDIA Control Panel” 中，直接将该短路径加入自定义程序中；</li>
-<li>为其配置“高性能 nVIDIA 处理器”；</li>
-<li>至此，该异常问题应当能够解决。</li>
-</ol>
-<p><img src="https://img.yeslu.cn/blog/2022-04/29-a910e0ed18e8f941b223f17324ef0534.png!blog_watermark"></p>
-<p><img src="https://img.yeslu.cn/blog/2022-04/29-25ebdded69843a08fb0704a3936616d4.png!blog_watermark"></p>
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
-<li>Windows 11 (22000.652);</li>
-<li>OriginLab 2022 SR1 (Academic);</li>
-<li>Intel Core i7-11370H, nVIDIA GeForce MX450.</li>
-</ol>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文禁止转载；</li>
-<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>OriginLab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>论文实用干货：将摘要加入目录（05）</title>
-    <url>/archives/7b0cfbef.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>很多同学在生成目录之后，会有另一个疑问：如何将摘要和关键词加入目录中。想要将指定文字加入标题中，必须为该文字应用标题样式。然而，系统默认的标题样式对段落生效，并不能应用于单个文字。因此，我们需要新建一个可应用于文字的样式。</p>
-<span id="more"></span>
-
-<h2 id="新建样式"><a href="#新建样式" class="headerlink" title="新建样式"></a>新建样式</h2><p>有了前文的基础，这里的操作就比较简单了，在新建样式的时候，除选择正确的字体、段落格式外，只需要注意两点：</p>
-<ul>
-<li>“样式类型”选择“链接段落和字符”，以此保证我们新建的样式可以应用于字符。</li>
-<li>“大纲级别”选择“1 级”，以此保证在创建目录时，应用该样式的文字位于一级标题中。</li>
-</ul>
-<p><img src="https://img.yeslu.cn/blog/paper/paper-05-01.png!blog_watermark"></p>
-<p>接下来，我们将该样式应用于摘要、关键词等文字，并生成目录即可。当然，此方法还可以用于对“参考文献”，“致谢”等文字的处理。</p>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
-<li>本文同步发布于个人微信【<a href="https://mp.weixin.qq.com/s/I7JloFOUU2DAqXPcTGVDkg">一只兔儿</a>】</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Office</tag>
-        <tag>Paper</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>论文实用干货：编辑页眉和页码（04）</title>
-    <url>/archives/ff3dc88a.html</url>
-    <content><![CDATA[<h2 id="官方介绍"><a href="#官方介绍" class="headerlink" title="官方介绍"></a>官方介绍</h2><p><a href="https://support.office.com/en-us/article/insert-a-header-or-footer-b87ee4df-abc1-41f8-995b-b39f6d99c7ed?ui=en-US&rs=en-US&ad=US">Insert a header or footer</a></p>
-<span id="more"></span>
-
-<h2 id="重要说明"><a href="#重要说明" class="headerlink" title="重要说明"></a>重要说明</h2><p>本节需要对具体的页面进行操作，请在阅读时重点关注是对哪一页的哪个位置进行操作。</p>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>编辑论文的页码是很多童鞋在排版过程中遇到的难题，有些不要页码，有些用罗马数字，有些用阿拉伯数字(o´д`o)&#x3D;３ 这时，第 2 节中没有详述的分节符就派上用场了。<br>我们先来梳理一下每一页所对应的页码。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-1.png!blog_watermark"></p>
-<h2 id="文章分节"><a href="#文章分节" class="headerlink" title="文章分节"></a>文章分节</h2><p>在上图中，我们使用分节符将文章分为四节，分别位于封面、英文摘要和目录的结尾。分节符的插入位于“布局”-“分隔符”-“分节符”-“下一页”。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-2.png!blog_watermark"><br>打开页眉页脚设置后，可以看到每一节所对应的节号。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-3.png!blog_watermark"></p>
-<h2 id="页码编辑"><a href="#页码编辑" class="headerlink" title="页码编辑"></a>页码编辑</h2><h3 id="插入页码"><a href="#插入页码" class="headerlink" title="插入页码"></a>插入页码</h3><p>将光标移至<strong>封面任意位置</strong>，插入页码，页码格式暂且不用设置。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-4.png!blog_watermark"></p>
-<h3 id="封面页"><a href="#封面页" class="headerlink" title="封面页"></a>封面页</h3><p>进入<strong>页眉页脚设置</strong>，选择封面的页脚，勾选“首页不同”，即可去除封面页码。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-5.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-04-6.png!blog_watermark"></p>
-<h3 id="摘要页"><a href="#摘要页" class="headerlink" title="摘要页"></a>摘要页</h3><p>将光标移至<strong>摘要页的页脚</strong>，选择“页码”-“设置页码格式”，勾选“起始编号”并设置为罗马数字 I，即可将中文摘要设置为第 I 页，英文摘要设置为第 II 页。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-7.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-04-8.png!blog_watermark"></p>
-<h3 id="目录页"><a href="#目录页" class="headerlink" title="目录页"></a>目录页</h3><p>目录和封面一样，不需要页码。我们使用设置封面的方法，在目录页勾选“首页不同”，即可去除目录的页码。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-9.png!blog_watermark"></p>
-<h3 id="正文页（含参考文献和致谢）"><a href="#正文页（含参考文献和致谢）" class="headerlink" title="正文页（含参考文献和致谢）"></a>正文页（含参考文献和致谢）</h3><p>正文与摘要一样，需要设置起始页码。我们将光标移至<strong>正文第一页的页脚部分</strong>，设置页码格式如图所示即可。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-10.png!blog_watermark"><br>至此，页码设置结束，正文首页的页码为第 1 页。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-11.png!blog_watermark"></p>
-<h3 id="更新目录"><a href="#更新目录" class="headerlink" title="更新目录"></a>更新目录</h3><p>在目录部分右键“更新域”，即可对目录应用新页码。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-12.png!blog_watermark"></p>
-<h2 id="页眉编辑"><a href="#页眉编辑" class="headerlink" title="页眉编辑"></a>页眉编辑</h2><p>我校要求在正文页及其之后的所有页面添加页眉，下面讲述页眉添加方法。</p>
-<h3 id="插入页眉"><a href="#插入页眉" class="headerlink" title="插入页眉"></a>插入页眉</h3><p>将光标移至<strong>正文第一页</strong>，选择“插入”-“页眉”，这里使用默认的“空白”页眉。输入文字，并作适当调整。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-14.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-04-15.png!blog_watermark"></p>
-<h3 id="删除多余的页眉"><a href="#删除多余的页眉" class="headerlink" title="删除多余的页眉"></a>删除多余的页眉</h3><p>由于插入页眉操作对全文生效，我们发现操作后，中英文摘要部分也被插入了页眉（封面和目录没有被插入是因为我们对其设置了“首页不同”）。</p>
-<ol>
-<li>将光标移至<strong>正文第一页</strong>，取消“链接到上一节”，这样，我们对上一节的所有编辑不会影响到本节之后的设置。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-16.png!blog_watermark"></li>
-<li>将光标移至<strong>摘要页</strong>，选择“插入”-“页眉”-“删除页眉”即可。但是，删除仅删掉了文字，横线依然还在，我们可以选择以下两种方法删除横线。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-17.png!blog_watermark"></li>
-</ol>
-<p><strong>方法 1</strong>：进入“编辑页眉”界面后，直接点击“关闭页眉和页脚”，系统检测到页眉中没有内容，会自动删掉横线。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-18.png!blog_watermark"><br><strong>方法 2</strong>：如果上述方法不行，我们可以手动操作。选中页眉中的回车符，点击“下框线”按钮，即可删除横线。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-19.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-04-20.png"></p>
-<h3 id="设置奇偶页不同"><a href="#设置奇偶页不同" class="headerlink" title="设置奇偶页不同"></a>设置奇偶页不同</h3><p><img src="https://img.yeslu.cn/blog/2023-03/17-1460f27433aeab81a5a50c3f4fcd865c.png!blog_watermark"></p>
-<p>通常，上图所示方法可以为页眉页脚设置奇偶页不同，但应用本方法后可能出现<strong>排版混乱</strong>的情况，此问题可通过下图方法解决。</p>
-<p>需要注意的是，当勾选下图“页面设置”中的“奇偶页不同”后，上图所示位置也会被勾选，<strong>如需取消此功能，仍需要通过下图位置取消</strong>，否则排版会再次改变。</p>
-<img src="https://img.yeslu.cn/blog/2023-03/17-173f4e38f1aabc3f5036391a544a233d.png!blog_watermark" alt="" style="zoom: 33%;" />
-
-<p>这个问题也许是 Word 的 Bug，该解决方案未找到相关说明文档，仅为经验。</p>
-<h3 id="显示章节标题"><a href="#显示章节标题" class="headerlink" title="显示章节标题"></a>显示章节标题</h3><p>部分论文可能要求在页眉显示当前章节的标题，可通过下图方式增加。</p>
-<p><img src="https://img.yeslu.cn/blog/2023-03/17-79b4ed1b26b47bb128508e04b3b83636!blog_watermark"></p>
-<p><img src="https://img.yeslu.cn/blog/2023-03/17-e51d554678463868799c9dc82d700b4e!blog_watermark"></p>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
-<li>本文同步发布于个人微信【<a href="https://mp.weixin.qq.com/s/vonp-eZ6ouaFXItN-jvaqg">一只兔儿</a>】</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Office</tag>
-        <tag>Paper</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>论文实用干货：创建目录（03）</title>
-    <url>/archives/5b5ea310.html</url>
-    <content><![CDATA[<h2 id="官方介绍"><a href="#官方介绍" class="headerlink" title="官方介绍"></a>官方介绍</h2><p><a href="https://support.office.com/en-us/article/insert-a-table-of-contents-882e8564-0edb-435e-84b5-1d8552ccf0c0?ui=en-US&rs=en-US&ad=US">Insert a table of contents</a></p>
-<span id="more"></span>
-
-<h2 id="重要说明"><a href="#重要说明" class="headerlink" title="重要说明"></a>重要说明</h2><p>前面的两节主要讲解了制作论文封面信息和分页操作，为了方便后文的讲解，我对论文文档的结构进行了完善，使其具备论文的核心要素（封面，摘要，目录，正文，参考文献和致谢）。</p>
-<h2 id="修改样式"><a href="#修改样式" class="headerlink" title="修改样式"></a>修改样式</h2><p>为了使用 word 自动生成目录的功能，我们首先要修改同层级标题的字体和段落设置等参数，并应用于不同的标题。</p>
-<ol>
-<li><p>点击“样式窗格”按钮调出样式面板<br><img src="https://img.yeslu.cn/blog/paper/paper-03-1.png!blog_watermark"></p>
-</li>
-<li><p>对“标题 1”的样式进行修改：字体使用宋体&#x2F;Times New Roman，四号；段落使用 1.5 倍行距。<br><img src="https://img.yeslu.cn/blog/paper/paper-03-2.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-03-3.png!blog_watermark"></p>
-</li>
-<li><p>使用同样的方法，对“标题 2”和“标题 3”进行修改。这里分别使用小四和五号字体，其余格式不变。<br><img src="https://img.yeslu.cn/blog/paper/paper-03-4.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-03-5.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-03-6.png!blog_watermark"></p>
-</li>
-</ol>
-<h2 id="应用样式"><a href="#应用样式" class="headerlink" title="应用样式"></a>应用样式</h2><ol>
-<li><p>n 级标题默认对整个段落生效，因此我们只需要将光标移至段首，点击需要的样式按钮即可。<br><img src="https://img.yeslu.cn/blog/paper/paper-03-7.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-03-8.png!blog_watermark"></p>
-</li>
-<li><p>对不同层级的标题应用样式后，我们在“导航”中已经可以看到整篇文章的基本结构。当然，通过“导航”中的层级也可判断样式应用是否正确。<br><img src="https://img.yeslu.cn/blog/paper/paper-03-9.png!blog_watermark"></p>
-</li>
-</ol>
-<h2 id="创建目录"><a href="#创建目录" class="headerlink" title="创建目录"></a>创建目录</h2><ol>
-<li><p>将光标移动到需要插入目录的位置，选择“引用”-“目录”-“自定义目录”<br><img src="https://img.yeslu.cn/blog/paper/paper-03-10.png!blog_watermark"></p>
-</li>
-<li><p>通过“修改”按钮，可以修改目录中所显示 n 级标题的格式。这里我们依然沿用上述格式，但为了体现标题间的层级关系，TOC 2 缩进 2 字符，TOC 3 缩进 4 字符。<br><img src="https://img.yeslu.cn/blog/paper/paper-03-11.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-03-12.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-03-13.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-03-14.png!blog_watermark"></p>
-</li>
-<li><p>全部设置完成后，在此点击“确定”创建目录。<br><img src="https://img.yeslu.cn/blog/paper/paper-03-15.png!blog_watermark"></p>
-</li>
-<li><p>至此，完成目录的创建工作。<br><img src="https://img.yeslu.cn/blog/paper/paper-03-16.png!blog_watermark"></p>
-</li>
-</ol>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Office</tag>
-        <tag>Paper</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>论文实用干货：Endnote 避坑指南（06）</title>
-    <url>/archives/510fef2a.html</url>
-    <content><![CDATA[<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ul>
-<li>Endnote: X9.3.2</li>
-<li>GB&#x2F;T 7714 Style: <a href="https://github.com/wanzhenchn/EndNote_Tutorial_Hand_by_Hand/blob/master/resource/Chinese%20Std%20GBT7714%20(numeric)_20190409.ens">Chinese Std GBT7714 (numeric)</a></li>
-</ul>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>很多同学以为把参考文献用 Endnote 一股脑插进论文就完事了，那真是太图样图森破。在实际使用过程中，数据来源不同，参考文献类别不同，语言不同，软件本身限制，导致在使用过程中，导入的文献存在格式错误，需要手动修正。本文将介绍本人在使用过程中，遇到的几种不同类型的错误点，以供参考。</p>
-<p>对于中英文混排中出现的格式问题，已有前辈制作了非常完善的指南：<a href="https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.zh-CN.md">chinese-copywriting-guidelines</a>，这里将不再说明。</p>
-<span id="more"></span>
-
-<h2 id="如何修改"><a href="#如何修改" class="headerlink" title="如何修改"></a>如何修改</h2><p><strong>⚠️ 警告：这是一个危险操作，请务必阅读</strong></p>
-<p>Endnote 在向 Word 插入文献的过程中，会在 Word 中创建一个由 Endnote 管理的域，此区域随着 Endnote 中文献信息的更新而更新。</p>
-<p>因此，当该区域由 Endnote 管理的时候，是无法直接修改区域中内容的，否则当使用 “Update Citations and Bibliography” 更新文献信息时，所有的修改将丢失。</p>
-<p>在进行下述格式修正之前，你需要确保全篇论文的所有参考文献已被插入完毕。<strong>建议将当前文件备份，并在副本中操作。</strong></p>
-<p>使用 Tools - Convert to Plain Text，将该区域转换为纯文本。此时 Endnote 将失去对此区域的管理，并可作为常规文本进行编辑。</p>
-<p><img src="https://img.yeslu.cn/blog/paper/paper-06-01.png!blog_watermark"></p>
-<h2 id="避坑汇总"><a href="#避坑汇总" class="headerlink" title="避坑汇总"></a>避坑汇总</h2><h3 id="软件卡顿"><a href="#软件卡顿" class="headerlink" title="软件卡顿"></a>软件卡顿</h3><p><img src="https://img.yeslu.cn/blog/paper/paper-06-02.png!blog_watermark"></p>
-<p>Endnote 启动时默认是这样的界面，但由于右侧 PDF 预览窗口会随着你切换当前选择的文献，而不断刷新，造成窗口卡顿。</p>
-<p><img src="https://img.yeslu.cn/blog/paper/paper-06-03.png!blog_watermark"></p>
-<p>当你不需要实时预览文献内容时，选择此处的 References Only 按钮，即可关闭文献预览界面，一定程度上解决卡顿问题。</p>
-<h3 id="数据源错误"><a href="#数据源错误" class="headerlink" title="数据源错误"></a>数据源错误</h3><p><img src="https://img.yeslu.cn/blog/paper/paper-06-04.png!blog_watermark"></p>
-<p>以百度学术为例，大家通常从这里下载 Endnote 的数据文件并导入 Endnote。但无论是百度学术、谷歌学术，还是其他的文献平台，下载的数据文件本身可能存在内容缺失（如缺页码，缺年份等），这样最终导入 Word 的内容自然也不可能正确。</p>
-<h3 id="作者名格式"><a href="#作者名格式" class="headerlink" title="作者名格式"></a>作者名格式</h3><ul>
-<li>外文名作者，名在前，姓在后，姓名间空格分隔。对于 3 个及以上的外文名作者，使用 <code>A, B, C, et al.</code> 来表示，如 <code>Nitta N, Wu F, Lee J T, et al.</code></li>
-<li>中文名作者，姓在前，名在后，姓名间无分隔。对于 3 个及以上的中文名名作者，使用 <code>王, 赵, 李, 等.</code> 来表示，如 <code>张天戈, 张竹柳, 李延伟, 等.</code></li>
-<li>需要注意的是，无论作者名是中文还是外文，姓名之间、姓名和“等”之间，使用英文逗号+空格的形式来分隔，“等”之后使用英文句点。</li>
-</ul>
-<h3 id="公式格式"><a href="#公式格式" class="headerlink" title="公式格式"></a>公式格式</h3><p>一般的，标题中的含上下标的文字，在 Endnote 中和被导入 Word 时，会被显示为如 Al_(2)O_(3) 【氧化铝】的格式，需要手动将其改为正确的上下标格式。</p>
-<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>对于拿捏不准的格式问题，请直接查阅国标[ 《信息与文献 参考文献著录规则》 ][3]。</p>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
-<li>总目录：<a href="https://www.yeslu.cn/archives/dcc4cb4a.html">https://www.yeslu.cn/archives/dcc4cb4a.html</a></li>
-<li>本文同步发布于个人微信【<a href="https://mp.weixin.qq.com/s/BQQi0s65is7AeW-BKHWndQ">一只兔儿</a>】</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Office</tag>
-        <tag>Paper</tag>
-        <tag>Endnote</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>获取腾讯云基于 TOTP 的 MFA Token</title>
-    <url>/archives/30dcf858.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>多因素身份验证（Multi-Factor Authentication, MFA）可以在登录等重要操作中增加一层额外的保护，基于虚拟设备的 MFA 是能产生 6 位数字认证码的应用程序，遵循基于时间的一次性密码 （TOTP）标准（<a href="https://datatracker.ietf.org/doc/html/rfc6238">RFC 6238</a>）。</p>
-<p>众多知名的 APP，如 Google Authenticator、Microsoft Authenticator、Authy 和一些常见的密码管理器，如 1Password、Bitwarden 等均支持生成一次性密码。然而，腾讯云并不直接提供用于生成一次性密码的 Token，而是将 MFA 其内置于“腾讯云助手”微信小程序中，这给实际操作带来了不便。</p>
-<p>文本通过抓包程序抓取真实 Token，从而优化腾讯云 MFA 验证的实际体验。</p>
-<span id="more"></span>
-
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ul>
-<li>iOS 15.3</li>
-<li>微信 (App Store) 8.0.18</li>
-<li>Thor (App Store) 1.4.4.891</li>
-</ul>
-<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol>
-<li>如您已经绑定 MFA，需要首先前往<a href="https://console.cloud.tencent.com/developer/security">腾讯云后台</a>解绑；</li>
-</ol>
-<p><img src="https://img.yeslu.cn/blog/2022-01/30-da42d78a67e26b4604bd754e08abb158.png!blog_watermark"></p>
-<ol start="2">
-<li>打开抓包软件，通过微信扫码绑定，直至流程结束；</li>
-</ol>
-<p><img src="https://img.yeslu.cn/blog/2022-01/30-89b28443c09e6ee62b5a5aea7e9ef869.PNG!blog_watermark"></p>
-<ol start="3">
-<li>找到 <a href="https://weapp.cloud.tencent.com/authenticator/ajax/">https://weapp.cloud.tencent.com/authenticator/ajax/</a> 请求，查看其 Request 的消息体；</li>
-</ol>
-<p><img src="https://img.yeslu.cn/blog/2022-01/30-a99c715bd6df438e003dc56f9f5f00aa.PNG!blog_watermark"><br><img src="https://img.yeslu.cn/blog/2022-01/30-32d0e9d05efa3041ba2dc6227653db9a.PNG!blog_watermark"></p>
-<ol start="4">
-<li>其消息体结构如下，这里的 <code>secret</code> 就是 TOTP 的 Token 了；</li>
-</ol>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;authCode&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;ownerUin&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;uin&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;secret&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;version&quot;</span><span class="punctuation">:</span> <span class="string">&quot;v1&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;code&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;rawData&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;signature&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;iv&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;encryptedData&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-
-<ol start="5">
-<li>填入第三方 MFA 工具后，不妨核对一下其和微信小程序中的一次性密码是否一致以及是否同时变化，一定保管好 Token。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Development</category>
-      </categories>
-      <tags>
-        <tag>Security</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决群晖 NTP 自动同步失败</title>
-    <url>/archives/ff52424d.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>自从群晖（Synology）DSM 某个版本更新后，NTP 自动同步总是提示“无法同步。因为没有网络或网络连接不稳定。请参阅本文以了解详细信息”，而手动同步正常。群晖官方虽然提供了<a href="https://kb.synology.cn/zh-cn/DSM/tutorial/Troubleshooting_issues_syncing_with_NTP_server">解决方案</a>，但测试后并没有解决问题。通过与群晖技术支持交流，获得了较好的解决方案。</p>
-<span id="more"></span>
-
-<h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><h3 id="20221009"><a href="#20221009" class="headerlink" title="20221009"></a>20221009</h3><ul>
-<li>在 DSM 7.1.1-42962 Update 1 上，群晖似乎已经修复了这个问题。</li>
-</ul>
-<h2 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h2><p>NTP 无法正常自动同步，能够正常手动同步。</p>
-<img src="https://img.yeslu.cn/blog/2022-08/07-f221c5426bd4f7e911ba251e28132703.png"  />
-
-
-
-<h2 id="影响"><a href="#影响" class="headerlink" title="影响"></a>影响</h2><p>本人开启了 DSM 的 TOTP (Time-based One-Time Password) 二次验证，TOTP 与设备时间紧密相关。当 NTP 无法正常同步时，群晖平均每一天慢若干秒，约一周后，群晖与其他设备的时间误差超出 TOTP 的容忍范围，直接导致 TOTP 无法正常验证。</p>
-<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>群晖技术支持给出了 NTP 的自动更新策略：</p>
-<blockquote>
-<p>NAS 与 NTP 服务器进行轮询时，必须连续八次全部成功，才会认为该 NTP 服务器可信，从而显示自动更新成功，而您当前所处的网络环境似乎并不稳定，所以会导致轮询中出现失败。</p>
-</blockquote>
-<h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>技术支持向我提供了 NTP 更新脚本，利用 DSM 自带的“任务计划”功能进行自动同步。</p>
-<ul>
-<li>新建“用户自定义脚本”；</li>
-</ul>
-<p><img src="https://img.yeslu.cn/blog/2022-08/07-cd305dd0674ca68f2e4d3f7cc7b98b9c.png"></p>
-<ul>
-<li>以“root”账户执行，并在“用户定义的脚本”下输入如下脚本（<strong>root 账户具有系统最高执行权限，除非你知道自己在做什么，否则请勿随意修改如下脚本</strong>）；</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line">ntp_server=<span class="string">&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> grep -q <span class="string">&quot;time.google.com.conf&quot;</span> <span class="string">&quot;/etc/ntp.conf&quot;</span> ; <span class="keyword">then</span></span><br><span class="line">ntp_server=<span class="string">&quot;time.google.com&quot;</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">if</span> grep -q <span class="string">&quot;pool.ntp.org&quot;</span> <span class="string">&quot;/etc/ntp.conf&quot;</span> ; <span class="keyword">then</span></span><br><span class="line">ntp_server=<span class="string">&quot;pool.ntp.org&quot;</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">if</span> grep -q <span class="string">&quot;server &quot;</span> <span class="string">&quot;/etc/ntp.conf&quot;</span> ; <span class="keyword">then</span></span><br><span class="line">ntp_server=<span class="string">&quot;<span class="subst">$(grep <span class="string">&quot;server &quot;</span> <span class="string">&quot;/etc/ntp.conf&quot;</span> | cut -d <span class="string">&quot; &quot;</span> -f2)</span>&quot;</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$ntp_server</span>&quot;</span> != <span class="string">&quot;&quot;</span> ] ; <span class="keyword">then</span></span><br><span class="line">/sbin/ntpdate -u -b <span class="string">&quot;<span class="variable">$ntp_server</span>&quot;</span></span><br><span class="line"><span class="built_in">echo</span> $? &gt; /run/ntpdate.result</span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://img.yeslu.cn/blog/2022-08/07-08a5d9ce1aa2604ddc930b82cdf3b52b.png"></p>
-<ul>
-<li>手动运行并检查执行结果，如果提示正常，则部署成功。</li>
-</ul>
-<img src="https://img.yeslu.cn/blog/2022-08/07-1175b5e91cf36bb07df832354960c938.png" style="zoom:50%;" />
-
-
-
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
-<li>Synology DS720+</li>
-<li>DSM 7.1-42661 Update 3</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Hardware</category>
-      </categories>
-      <tags>
-        <tag>Synology</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>OriginLab 绘制 3D 图时无法正常显示图例</title>
-    <url>/archives/863b7bad.html</url>
-    <content><![CDATA[<h2 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h2><p>OriginLab 部分版本在绘制图形时，图例等部分会出现如下图所示的异常的黑色色块，此问题与 AMD 显卡 OpenGL 与 OriginLab 的兼容性有关，本文将简述解决方案。</p>
-<img src="https://img.yeslu.cn/blog/2023-04/25-88b961d88dd9f971b194e69d3e1a79fc.png" alt="图片来自群友聊天记录" style="zoom: 50%;" />
-
-<span id="more"></span>
-
-<h2 id="官方解决方案"><a href="#官方解决方案" class="headerlink" title="官方解决方案"></a>官方解决方案</h2><blockquote>
-<p>OriginLab 在 2023b 中修复了这个问题：<a href="https://originlab.jira.com/wiki/spaces/main/pages/2630582301/Origin+2023b+Bug+Fixes">ORG-24094</a></p>
-</blockquote>
-<ol>
-<li>将软件<strong>更新至 OriginLab 2023b 及以上版本</strong>；</li>
-<li>通过 <code>Preference -&gt; System Variables</code> 打开系统变量设置窗口；</li>
-<li>设置系统变量<code>OGLDP</code>的值为<code>1</code>；</li>
-<li>重新打开软件。</li>
-</ol>
-<p><img src="https://img.yeslu.cn/blog/2023-05/23-82874450a4ae3f76e0da65e359f8783a.png!blog_watermark"></p>
-<p>如果上述方法无法解决问题，可尝试通过 <code>Preference -&gt; 3D OpenGL Settings</code> 取消勾选 <code>Enable Display List</code>。</p>
-<p><img src="https://img.yeslu.cn/blog/2023-04/25-7cbc67c6d7c42d0a7e7948126944da6a.png!blog_watermark"></p>
-<p>参考文档：<a href="https://www.originlab.com/doc/Quick-Help/Strange-Color-Block-On-3D-Graph">Strange-Color-Block-On-3D-Graph</a></p>
-<h2 id="坊间解决方案"><a href="#坊间解决方案" class="headerlink" title="坊间解决方案"></a>坊间解决方案</h2><blockquote>
-<p>以下方法为<strong>可能有效</strong>的方案，不保证解决问题。</p>
-</blockquote>
-<ul>
-<li>如果你是双显卡用户，可以将 OriginLab 调用的显卡切换为另一张显卡；</li>
-<li>尝试将 AMD 显卡的驱动程序<strong>更新到最新</strong>，或<strong>降级到上一个版本</strong>。</li>
-</ul>
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
-<li>Windows 11 (22621);</li>
-<li>OriginLab 2023b beta2 (Academic).</li>
-</ol>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文禁止转载；</li>
-<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Graph</tag>
-        <tag>OriginLab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>OriginLab 部分中文字体加粗不显示</title>
-    <url>/archives/f49d4612.html</url>
-    <content><![CDATA[<h2 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h2><p>OriginLab <strong>部分中文字体</strong>（宋体、黑体、楷体等）在<strong>垂直方向</strong>上加粗后，实际不显示加粗。</p>
-<img src="https://img.yeslu.cn/blog/2023-05/05-8e92bc4a588a2195d4082ec88845e429.png!blog_watermark" style="zoom: 33%;" />
-
-<span id="more"></span>
-
-<h2 id="问题报告"><a href="#问题报告" class="headerlink" title="问题报告"></a>问题报告</h2><p>此问题为 OriginLab 方的已知问题（ORG-23517），但现阶段未能被修复。</p>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><h3 id="修改字体"><a href="#修改字体" class="headerlink" title="修改字体"></a>修改字体</h3><p>更换相近字体，有一部分中文字体的加粗能够被正常显示。</p>
-<p><img src="https://img.yeslu.cn/blog/2023-05/05-fbed6e174f7128ee9118cecb2dd8ddfa.png!blog_watermark"></p>
-<h3 id="修改旋转角度"><a href="#修改旋转角度" class="headerlink" title="修改旋转角度"></a>修改旋转角度</h3><p>将旋转角度修改至 89 度或者 91 度，也可以使加粗正常显示。</p>
-<p><img src="https://img.yeslu.cn/blog/2023-05/05-a5a37f89ec0c0e03959718d3ec0205de.png!blog_watermark"></p>
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
-<li>Windows 11 (22621);</li>
-<li>OriginLab 2023b (Academic).</li>
-</ol>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文禁止转载；</li>
-<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Graph</tag>
-        <tag>OriginLab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>OriginLab 修改中文语言</title>
-    <url>/archives/2e6d2c4b.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>OriginLab 原则上可以在软件内直接切换语言，但由于官方授权的一些特性和限制，部分用户无法在软件内切换，本文将详解语言切换的相关逻辑。</p>
-<img src="https://img.yeslu.cn/blog/2023-06/05-1908e3e7ae5b85ba8921fda9fe447e62.png" style="zoom:45%;" />
-
-<span id="more"></span>
-
-<h2 id="语言切换"><a href="#语言切换" class="headerlink" title="语言切换"></a>语言切换</h2><p>OriginLab 切换中文需要<strong>软件已经激活、具备中国大陆的授权（例如国内的学习版 (Learning Edition) ）且在中国大陆激活使用</strong>。</p>
-<p>为了满足上述条件，在申请和激活时，需要<strong>使用国内 IP 申请和激活</strong>软件，但由于 OriginLab IP 库自身问题，<strong>国内部分地区的移动和教育网络可能被识别为境外</strong>，故可能需要临时切换至电信或联通的网络。</p>
-<p>OriginLab 切换语言的底层逻辑是修改 <code>HKEY_CURRENT_USER\Software\OriginLab</code> 的注册表值，但官方从未建议用户自行修改注册表，这是由于软件启动时会检测上述条件是否满足。换而言之，当条件满足时，软件内一定可以修改语言，而软件内无法修改语言时，通过注册表修改一样无效。</p>
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
-<li>Windows 11 (22621);</li>
-<li>OriginLab 2023b SR1 (Academic).</li>
-</ol>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文禁止转载；</li>
-<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Graph</tag>
-        <tag>OriginLab</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>论文实用干货：Office 设置优化（07）</title>
-    <url>/archives/2aff811f.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Office 中的一些奇怪设置，会在使用过程中产生不符合逻辑的操作，本文是笔者自己遇到的坑以及进行的优化。</p>
-<span id="more"></span>
-
-<h2 id="异常的选中"><a href="#异常的选中" class="headerlink" title="异常的选中"></a>异常的选中</h2><p><img src="https://img.yeslu.cn/blog/2023-07%2F24-7e9f98008ce83b6c6636c3a886e43d21.gif"></p>
-<p>在 Word&#x2F;PPT 中，默认设置下会产生异常的选中问题，如上图所示，我想选中不包含换行符的其他文字，但要么只能选中<strong>文字</strong>，要么只能选中<strong>文字+结尾标点+换行符</strong>，此问题需要关闭 Word 选项中的“使用智能段落选择”。</p>
-<img src="https://img.yeslu.cn/blog/2023-07/24-e217300b4dbbe682054f369ac46a3658.png!blog_watermark" style="zoom:80%;" />
-
-<p>同理，PPT 中建议关闭“选定时自动选定整个单词”的功能。</p>
-<img src="https://img.yeslu.cn/blog/2023-07/24-537c51ce69d86be30b26bb6ba3c3478f.png!blog_watermark" style="zoom:80%;" />
-
-<h2 id="OriginLab-Endnote-插入后“乱码”"><a href="#OriginLab-Endnote-插入后“乱码”" class="headerlink" title="OriginLab&#x2F;Endnote 插入后“乱码”"></a>OriginLab&#x2F;Endnote 插入后“乱码”</h2><p><img src="https://img.yeslu.cn/blog/2023-07/24-9060696582e4362352cdfeb4337de5c1.png!blog_watermark"></p>
-<p>当使用 OriginLab 的 Copy Page 功能，或者使用 Endnote 等通过域来管理的内容时，会显示如上图所示的“乱码”，这实际上是域代码，切换域代码和域值之间的显示，可以在设置中修改“显示域代码而非域值“。</p>
-<img src="https://img.yeslu.cn/blog/2023-07/24-89009b3e108eb99c82b5f2d36da2876c.png!blog_watermark" style="zoom:80%;" />
-
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
-<li>总目录：<a href="https://www.yeslu.cn/archives/dcc4cb4a.html">https://www.yeslu.cn/archives/dcc4cb4a.html</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Office</tag>
-        <tag>Paper</tag>
+        <tag>Origin</tag>
       </tags>
   </entry>
   <entry>
@@ -7080,6 +6752,334 @@
       <tags>
         <tag>Graph</tag>
         <tag>OriginLab</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Origin 绘制反应能量图</title>
+    <url>/archives/9836d17.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>反应能量图（reaction energy diagram）是 DFT 计算中展现化学反应的重要方式，OriginLab 官方也提供了很有意思的<a href="http://blog.originlab.com/make-energy-diagram-in-origin">方案</a>来绘制这样的路径图。本文将以下图中的一条路径为例，对官方提供的方案进行详细解释和扩展。</p>
+<img src="https://img.yeslu.cn/blog/2022-06/19-1a1f48fcc08abea813bf23917a8dd95d.png" alt="10.1038/s41467-022-29428-9" style="zoom:80%;" />
+
+<span id="more"></span>
+
+<h2 id="绘图思路"><a href="#绘图思路" class="headerlink" title="绘图思路"></a>绘图思路</h2><p>使用 Origin 绘制大部分图像都需要明确以下两点：</p>
+<ol>
+<li>数据点的表现形式</li>
+<li>数据点之间的连接方式</li>
+</ol>
+<p>本图与最常见的“Line”图十分相近，但实际数据却区别于“Line”图需要的数据。“Line”图是将一个个数据点连接成线，但本例中每一个中间产物只对应一个能量。也就是说，数据是不具有“平台”这个概念的，而图中却要将其表现出“平台”的样式。</p>
+<p>由此思路，我们得到了第一种绘图方法：人为地扩展数据点的横坐标。假设原数据为 <code>(A, 1.5)</code>，那么在绘图时，手动增加 <code>(A-1, 1.5)</code>、<code>(A+1, 1.5)</code> 两个点，即可得到“平台”的效果。</p>
+<p>然而，当反应的中间路径较多时，人为增加数据点是十分困难的。由此，官方提供了一个非常巧妙的方法，即 <a href="https://www.originlab.com/doc/Origin-Help/Floating-Column-Graph">Floating Column</a>。Floating Column 本是柱状图的一种，数据至少分为三列：X、Y 下界、Y 上界。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-b1f3537a91174d360532a7edf897160f.png!blog_watermark" alt="Floating Column Graph"></p>
+<p>对于本例来说，柱状图自身可进行数据间的连接，且连接线样式可独立调整，这则是利用柱状图绘制的优势。由此，我们可以假设，当上界与下界数据相同时，柱状图的高度为零，而其本身的宽度即可作为我们的“平台”。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-754eaec36d2c0f76d267e6d5700895bc.png!blog_watermark"></p>
+<h2 id="数据准备"><a href="#数据准备" class="headerlink" title="数据准备"></a>数据准备</h2><h3 id="初始数据"><a href="#初始数据" class="headerlink" title="初始数据"></a>初始数据</h3><p>一般的，初始数据如下图所示，X 列为路径编号，每个 Y 列的 <code>Long Name</code> 为反应路径名，数值为反应能，<strong>从左至右</strong>为反应路径顺序。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-44ff0b592a580445566aa06553a8d48f.png!blog_watermark"></p>
+<h3 id="数据转置"><a href="#数据转置" class="headerlink" title="数据转置"></a>数据转置</h3><p>由于柱状图每一行为一个数据点，为了满足柱状图的数据要求，需要将数据转置，转置后，<strong>从上至下</strong>为反应路径顺序。</p>
+<img src="https://img.yeslu.cn/blog/2022-06/19-a6eff20b4a0a45daa1a244f7fff5d240.png!blog_watermark" style="zoom: 50%;" />
+
+<h3 id="生成制图数据"><a href="#生成制图数据" class="headerlink" title="生成制图数据"></a>生成制图数据</h3><p>在 Origin 官方教程中，使用了 Labtalk 脚本进行数据操作，此脚本是为了生成两列相同的数据分别作为 Floating Column 的<strong>上界</strong>和<strong>下界</strong>，<a href="#Labtalk-%E8%AF%A6%E8%A7%A3">文末</a>将详细说明。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">newsheet;</span><br><span class="line"><span class="built_in">range</span> rsrc = <span class="number">1</span>!; </span><br><span class="line"><span class="built_in">range</span> rdst = <span class="number">2</span>!;</span><br><span class="line">rdst.ncols = rsrc.ncols*<span class="number">2</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="built_in">int</span> ii = <span class="number">0</span>; ii &lt; rsrc.ncols; ii++)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">range</span> r1 = <span class="number">1</span>!$(ii+<span class="number">1</span>);</span><br><span class="line">	<span class="built_in">range</span> r2 = <span class="number">2</span>!$(<span class="number">2</span>*ii+<span class="number">1</span>);</span><br><span class="line">	<span class="built_in">range</span> r3 = <span class="number">2</span>!$(<span class="number">2</span>*ii+<span class="number">2</span>);	</span><br><span class="line">	colcopy irng:=r1 orng:=r2;</span><br><span class="line">	colcopy irng:=r1 orng:=r3;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-0583652a875cfeaab12de74dd2ed3b31.png!blog_watermark"></p>
+<p>最后，新增 X 列作为路径编号，并将列类型设置为 <code>XYY</code>。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-6b414a6f0b3136d5b1a2dfd47de68ab8.png!blog_watermark"></p>
+<h2 id="图像绘制"><a href="#图像绘制" class="headerlink" title="图像绘制"></a>图像绘制</h2><h3 id="第一条路径"><a href="#第一条路径" class="headerlink" title="第一条路径"></a>第一条路径</h3><p>本绘图方法中，每一条路径都需要独立绘制，每次选择一组数据。</p>
+<p>选中 B、C 列，选择 <code>Plot -&gt; Bar -&gt; Floating Columns</code> 制图，但此时图中是没有图像的，这是由于当柱状图高度为零时，Origin 默认不显示。我们可以通过 <a href="https://www.originlab.com/doc/ja/LabTalk/ref/Page-obj">Labtalk 命令</a> <code>page.BarShowZero = 1</code> 或者勾选 <code>Preference -&gt; Options -&gt; Bar graph show Zero Value</code> 令其显示。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-4d7b7ee8cba64927acf97aa5791400b8.png!blog_watermark"></p>
+<h4 id="数据连接"><a href="#数据连接" class="headerlink" title="数据连接"></a>数据连接</h4><p>利用数据连接功能，我们可以将每个柱子连接起来，并自定义线形。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-2d934c24c6adb97c4c68bf0806358bec.png!blog_watermark"></p>
+<h3 id="增加多条路径"><a href="#增加多条路径" class="headerlink" title="增加多条路径"></a>增加多条路径</h3><p>如果需要绘制的路径不止一条，可以利用 Origin 的 <a href="https://www.originlab.com/doc/Quick-Help/Add-Data-to-Layer">Add Data to Layer</a> 功能，将其他组数据拖入图像中。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-d2a1b2b9452c030407beaa3edc212e2c.gif"></p>
+<h2 id="数据标注"><a href="#数据标注" class="headerlink" title="数据标注"></a>数据标注</h2><p>这里介绍一个简便方法标注各个中间路径的名称，如图所示，增加 B 列（名称列）和 C、D 列（全为零），将 C、D 列数据添加至图中，并将该组路径的颜色设置为无色，显示其 Label，即可创建在同一水平线且与真实数据垂直对齐的名称。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-6ac75391aa5553ebcf00fe8eb9a7ae57.png!blog_watermark"></p>
+<h2 id="Labtalk-详解"><a href="#Labtalk-详解" class="headerlink" title="Labtalk 详解"></a>Labtalk 详解</h2><h3 id="Range"><a href="#Range" class="headerlink" title="Range"></a>Range</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">range</span> rsrc = <span class="number">1</span>!; </span><br><span class="line"><span class="built_in">range</span> rdst = <span class="number">2</span>!;</span><br></pre></td></tr></table></figure>
+
+<p>类似于 <code>range a = 1!</code> 是指当前活动工作簿的第一个工作表。本组命令是将数据来源设置为第一个工作表，将目标数据存放在第二个工作表。</p>
+<blockquote>
+<p>参考文档：<a href="https://www.originlab.com/doc/en/LabTalk/guide/Range-Notation">Range-Notation</a></p>
+</blockquote>
+<h3 id="New-Column"><a href="#New-Column" class="headerlink" title="New Column"></a>New Column</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">rdst.ncols = rsrc.ncols*<span class="number">2</span>;</span><br></pre></td></tr></table></figure>
+
+<p>上面我们说过，该 Labtalk 脚本是为了将一列数据复制成两列作为 Floating Column 的下界和上界，<code>ncol</code> 代表的是 <code>new column</code>。本组命令是将 <code>rdst</code> 的列数设置为 <code>rsrc</code> 的两倍。</p>
+<blockquote>
+<p>参考文档：<a href="https://www.originlab.com/doc/LabTalk/guide/Basic-Worksheet-Column-Operation">Basic Worksheet Column</a></p>
+</blockquote>
+<h3 id="Loop"><a href="#Loop" class="headerlink" title="Loop"></a>Loop</h3><h4 id="Header"><a href="#Header" class="headerlink" title="Header"></a>Header</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="built_in">int</span> ii = <span class="number">0</span>; ii &lt; rsrc.ncols; ii++)&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>控制本次循环在遍历完源工作表的所有列后结束。</p>
+<h4 id="Body"><a href="#Body" class="headerlink" title="Body"></a>Body</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">range</span> r1 = <span class="number">1</span>!$(ii+<span class="number">1</span>);</span><br><span class="line"><span class="built_in">range</span> r2 = <span class="number">2</span>!$(<span class="number">2</span>*ii+<span class="number">1</span>);</span><br><span class="line"><span class="built_in">range</span> r3 = <span class="number">2</span>!$(<span class="number">2</span>*ii+<span class="number">2</span>);	</span><br><span class="line">colcopy irng:=r1 orng:=r2;</span><br><span class="line">colcopy irng:=r1 orng:=r3;</span><br></pre></td></tr></table></figure>
+
+<p>此处 <code>irng</code> 为 <code>input range</code>，<code>orng</code> 为 <code>output range</code>。</p>
+<p>当 <code>ii = 0</code>，则 <code>r1</code> 为源工作表的第 1 列， <code>r2</code> 为目标工作表的第 1 列， <code>r3</code> 为目标工作表的第 2 列。接着将源工作表的第 1 列追加到目标工作表的第 1、2 列。</p>
+<p>当 <code>ii = 1</code>，则 <code>r1</code> 为源数据工作表的第 2 列， <code>r2</code> 为目标数据工作表的第 3 列， <code>r3</code> 为目标数据工作表的第 4 列。接着将源工作表的第 2 列追加到目标工作表的第 3、4 列。</p>
+<p>由此可见，随着循环的进行，源工作表的每一列都被拷贝成了两列。</p>
+<blockquote>
+<p>参考文档：<a href="https://www.originlab.com/doc/LabTalk/guide/Getting-Started-with-LT">Getting Started with LabTalk</a></p>
+</blockquote>
+<h3 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h3><p>在执行本 Labtalk 命令时，当前活动工作簿的第二个工作表会被覆盖，<strong>请确保第二个工作表内为空或没有有效数据</strong>。</p>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
+<li>Windows 11 (22000.652);</li>
+<li>Origin 2022b (Academic).</li>
+</ol>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文禁止转载；</li>
+<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Graph</tag>
+        <tag>Data-Analysis</tag>
+        <tag>Origin</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Origin 配置 nVIDIA 独立显卡及显卡调用异常的处理</title>
+    <url>/archives/6969f4f4.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在双显卡（本文中“双显卡”特指核心显卡+ nVIDIA 独立显卡）的设备中，Origin 默认调用核心显卡进行图形处理，这可能会带来一系列问题。同时，由于 nVIDIA 显卡驱动的特性，即使手动指定 Origin 调用独立显卡，也可能出现软件调用显卡错误的情况。</p>
+<span id="more"></span>
+
+<h2 id="查看-Origin-当前调用的显卡"><a href="#查看-Origin-当前调用的显卡" class="headerlink" title="查看 Origin 当前调用的显卡"></a>查看 Origin 当前调用的显卡</h2><ul>
+<li>通过 “Preferences” - “3D OpenGL Settings” 即可查看。</li>
+</ul>
+<p><img src="https://img.yeslu.cn/blog/2022-04/29-c24201e8b002b6de779aaef5ed98420e.png!blog_watermark"></p>
+<img src="https://img.yeslu.cn/blog/2022-04/29-593ff8de1fe014405dd8baf6cc2071b9.png!blog_watermark" style="zoom:50%;" />
+
+<h2 id="指定-Origin-调用独显"><a href="#指定-Origin-调用独显" class="headerlink" title="指定 Origin 调用独显"></a>指定 Origin 调用独显</h2><ol>
+<li>启动 “nVIDIA Control Panel” 应用程序；</li>
+<li>在“管理 3D 设置” - “程序设置”中找到 Origin ；</li>
+<li>为其“首选图形处理器”配置“高性能 nVIDIA 处理器”。</li>
+</ol>
+<p><img src="https://img.yeslu.cn/blog/2022-04/29-0432ca9c3cc05db4b91b04f72d016009.png!blog_watermark"></p>
+<p><img src="https://img.yeslu.cn/blog/2022-04/29-bc6bae41bce6bacfdc4a8f1516d7cdaa.png!blog_watermark"></p>
+<p><img src="https://img.yeslu.cn/blog/2022-04/29-8c33e746b3df5d8551d9f3a71457b6d2.png!blog_watermark"></p>
+<h2 id="显卡调用异常的处理"><a href="#显卡调用异常的处理" class="headerlink" title="显卡调用异常的处理"></a>显卡调用异常的处理</h2><blockquote>
+<p><strong>Origin 2023 已经修复下文所述问题。</strong></p>
+</blockquote>
+<p><del>一般的，上述方法已经可以解决 Origin 的独显调用问题。但是我发现在某些特定环境中，直接启动 Origin 可以正常调用独显，而打开已有的 opju 工程文件时，软件又只能调用核显。</del></p>
+<p>我于 2022 年 4 月 10 日向 OriginLab 提交了异常报告，OriginLab 方复现了这个问题（JIRA: ORG-25046），经其工程师测试认为可能与 nVIDIA 显卡驱动的特性有关，并提供了下述解决方案。</p>
+<h3 id="获取-Origin-短路径"><a href="#获取-Origin-短路径" class="headerlink" title="获取 Origin 短路径"></a>获取 Origin 短路径</h3><ol>
+<li>打开 “Script Window”；</li>
+<li>输入 <code>type -dm</code>；</li>
+<li>找到 “Origin64.exe” 的短路径（如本例中为 <code>C:\PROGRA~1\ORIGIN~1\ORIGIN~1\Origin64.exe</code>）。</li>
+</ol>
+<p><img src="https://img.yeslu.cn/blog/2022-04/29-8f7ce7d79aa7a55b0c99d3b89f75837b.png!blog_watermark"></p>
+<p><img src="https://img.yeslu.cn/blog/2022-04/29-ac11008cb45cee838b13756712b1eaca.jpg!blog_watermark"></p>
+<h3 id="指定该短路径调用独显"><a href="#指定该短路径调用独显" class="headerlink" title="指定该短路径调用独显"></a>指定该短路径调用独显</h3><ol>
+<li>在 “nVIDIA Control Panel” 中，直接将该短路径加入自定义程序中；</li>
+<li>为其配置“高性能 nVIDIA 处理器”；</li>
+<li>至此，该异常问题应当能够解决。</li>
+</ol>
+<p><img src="https://img.yeslu.cn/blog/2022-04/29-a910e0ed18e8f941b223f17324ef0534.png!blog_watermark"></p>
+<p><img src="https://img.yeslu.cn/blog/2022-04/29-25ebdded69843a08fb0704a3936616d4.png!blog_watermark"></p>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
+<li>Windows 11 (22000.652);</li>
+<li>Origin 2022 SR1 (Academic);</li>
+<li>Intel Core i7-11370H, nVIDIA GeForce MX450.</li>
+</ol>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文禁止转载；</li>
+<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Origin</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Origin 简明答疑合集</title>
+    <url>/archives/4033bbae.html</url>
+    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Origin 是由 OriginLab 公司开发的一个科学绘图、数据分析软件。Origin 支持各种各样的 2D&#x2F;3D 图形。Origin 中的数据分析功能包括统计，信号处理，曲线拟合以及峰值分析。</p>
+<p>本文主要对个人在使用 Origin 的过程中所遇到的一些典型问题，和 OriginLab 官方交流群的群友所经常提问的问题进行整理归纳，形成一站式的导航文章。</p>
+<h2 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h2><ol>
+<li>如需增补内容，请直接提交 <a href="https://github.com/Chandler-Lu/blog/issues">Issue</a>；</li>
+<li>提问前请阅读 <a href="https://www.yeslu.cn/archives/fb3832f5.html">《提问的智慧》</a> ，表述不清的问题和模糊的截图，除了给回答者带来麻烦外，更难以解决您的问题；</li>
+<li>解决方案存在时效性，随着软件更新，部分功能可能与教程中不同；</li>
+<li>转载请注明来源。</li>
+</ol>
+<span id="more"></span>
+
+<h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><p>以下为官方及热心用户贡献的教程。</p>
+<h3 id="OriginLab-官方"><a href="#OriginLab-官方" class="headerlink" title="OriginLab 官方"></a>OriginLab 官方</h3><ul>
+<li>BiliBili：<a href="https://space.bilibili.com/509534849/">空间</a>、<a href="https://www.yeslu.cn/archives/98f216a2.html">直播公开课</a></li>
+<li>简明指南：<a href="https://shimo.im/docs/e9iqj6EdlXYgoZPB">点击查看</a></li>
+<li>完整文档：<a href="https://www.originlab.com/doc/">点击查看</a>、<a href="https://www.originlab.com/doc/Quick-Help">Quick Help (FAQ)</a></li>
+<li>官方图集：<a href="https://www.originlab.com/www/products/GraphGallery.aspx">点击查看</a></li>
+</ul>
+<h3 id="我自己的教程"><a href="#我自己的教程" class="headerlink" title="我自己的教程"></a>我自己的教程</h3><ul>
+<li>地址：<a href="https://www.yeslu.cn/tags/Origin">点击查看</a></li>
+</ul>
+<h3 id="BiliBili-UP-主：爱问吱吱"><a href="#BiliBili-UP-主：爱问吱吱" class="headerlink" title="BiliBili UP 主：爱问吱吱"></a>BiliBili UP 主：爱问吱吱</h3><ul>
+<li>地址：<a href="https://space.bilibili.com/386697953">点击查看</a></li>
+</ul>
+<h3 id="科研利剑：Origin-千问千答"><a href="#科研利剑：Origin-千问千答" class="headerlink" title="科研利剑：Origin 千问千答"></a>科研利剑：Origin 千问千答</h3><ul>
+<li>地址：<a href="https://docs.qq.com/doc/DUElFcmZLWEZCY3VU">点击查看</a></li>
+</ul>
+<h3 id="微信公众号：数据绘图"><a href="#微信公众号：数据绘图" class="headerlink" title="微信公众号：数据绘图"></a>微信公众号：数据绘图</h3><ul>
+<li>微信号：ScientificPlots</li>
+</ul>
+<h3 id="微信公众号：编辑之谭"><a href="#微信公众号：编辑之谭" class="headerlink" title="微信公众号：编辑之谭"></a>微信公众号：编辑之谭</h3><ul>
+<li>微信号：EditorTan</li>
+</ul>
+<p>考虑到教程覆盖的有限性，当您遇到上述教程无法解决的，或希望有针对性的解决自己的问题，建议您直接使用 <strong>Google 搜索</strong>“问题关键词（英文） + Origin”。</p>
+<p>例如，我希望了解 Origin 中 LabTalk 的语法知识，那么可以搜索 “LabTalk + Origin”。</p>
+<h2 id="版本"><a href="#版本" class="headerlink" title="版本"></a>版本</h2><h3 id="稳定版"><a href="#稳定版" class="headerlink" title="稳定版"></a>稳定版</h3><ul>
+<li>发布时间：2023.05.18</li>
+<li>版本：<a href="https://www.originlab.com/index.aspx?go=Products/Origin/2023b&pid=4460">OriginPro 2023b</a> SR1【内部版本号：10.0.5.157】</li>
+<li>备注：SR &#x3D; Stable Release</li>
+</ul>
+<h3 id="测试版"><a href="#测试版" class="headerlink" title="测试版"></a>测试版</h3><ul>
+<li>发布时间：2023.06.27</li>
+<li>版本：<a href="https://my.originlab.com/forum/topic.asp?TOPIC_ID=47989">OriginPro 2024 Beta 1</a></li>
+</ul>
+<h2 id="软件使用-Q-A"><a href="#软件使用-Q-A" class="headerlink" title="软件使用 Q&#x2F;A"></a>软件使用 Q&#x2F;A</h2><h3 id="00-学习版"><a href="#00-学习版" class="headerlink" title="00 学习版"></a>00 学习版</h3><h4 id="申请"><a href="#申请" class="headerlink" title="申请"></a>申请</h4><ul>
+<li>申请地址：<a href="http://www.originlab.com/OriginProLearning.aspx">点击查看</a></li>
+<li>申请后，下载地址将发送至邮箱。</li>
+</ul>
+<h3 id="01-文件问题"><a href="#01-文件问题" class="headerlink" title="01 文件问题"></a>01 文件问题</h3><h4 id="无法双击打开文件"><a href="#无法双击打开文件" class="headerlink" title="无法双击打开文件"></a>无法双击打开文件</h4><ul>
+<li>症状：双击已有文件后，实际显示空白页</li>
+<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/double-click-open-failed">点击查看</a></li>
+</ul>
+<h4 id="无法保存文件"><a href="#无法保存文件" class="headerlink" title="无法保存文件"></a>无法保存文件</h4><ul>
+<li>症状：提示“在保存项目或窗口之前，请关闭所有打开的对话框”</li>
+<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/saveOPJ-when-hidden-dialog">点击查看</a></li>
+</ul>
+<h4 id="保存的文件是只读的"><a href="#保存的文件是只读的" class="headerlink" title="保存的文件是只读的"></a>保存的文件是只读的</h4><ul>
+<li>症状：提示“此项目为只读文件”</li>
+<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/Declare-saving-file-read-only">点击查看</a></li>
+</ul>
+<h4 id="Origin-使用卡顿（Slow-or-Sluggish）"><a href="#Origin-使用卡顿（Slow-or-Sluggish）" class="headerlink" title="Origin 使用卡顿（Slow or Sluggish）"></a>Origin 使用卡顿（Slow or Sluggish）</h4><ul>
+<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/Origin-slow-Troubleshoot">点击查看</a></li>
+</ul>
+<h4 id="Origin-闪退或没有响应"><a href="#Origin-闪退或没有响应" class="headerlink" title="Origin 闪退或没有响应"></a>Origin 闪退或没有响应</h4><ul>
+<li>症状：Origin 闪退，进入假死状态，没有响应</li>
+<li>解决：<a href="https://www.originlab.com/doc/en/Quick-Help/troubleshooting-Origin-crash">点击查看</a></li>
+</ul>
+<h4 id="使用-Copy-Page-功能时提示“没有足够的内存实现此操作”"><a href="#使用-Copy-Page-功能时提示“没有足够的内存实现此操作”" class="headerlink" title="使用 Copy Page 功能时提示“没有足够的内存实现此操作”"></a>使用 Copy Page 功能时提示“没有足够的内存实现此操作”</h4><ul>
+<li>症状：将数据 Copy Page 至 PPT 时，提示“没有足够的内存实现此操作”。</li>
+<li>解决：该问题为 Office 的限制（<a href="https://www.originlab.com/doc/Quick-Help/OutOfMemory-CopyToPPT">点击查看</a>），无完美解决方案，但有网友称可以先 Copy Page 至 Word，再复制到PPT。</li>
+</ul>
+<h3 id="02-数据问题"><a href="#02-数据问题" class="headerlink" title="02 数据问题"></a>02 数据问题</h3><h4 id="抓取图片上的数据点（Digitizer）"><a href="#抓取图片上的数据点（Digitizer）" class="headerlink" title="抓取图片上的数据点（Digitizer）"></a>抓取图片上的数据点（Digitizer）</h4><ul>
+<li>地址：<a href="https://www.originlab.com/doc/Tutorials/enhanced-digitizer">点击查看</a></li>
+</ul>
+<h4 id="自定义数据格式（Custom-Numeric-Formats）"><a href="#自定义数据格式（Custom-Numeric-Formats）" class="headerlink" title="自定义数据格式（Custom Numeric Formats）"></a>自定义数据格式（Custom Numeric Formats）</h4><ul>
+<li>地址：<a href="https://www.originlab.com/doc/Origin-Help/Custom-Formats">点击查看</a></li>
+</ul>
+<h4 id="内置函数列表（LabTalk-Supported-Functions）"><a href="#内置函数列表（LabTalk-Supported-Functions）" class="headerlink" title="内置函数列表（LabTalk-Supported Functions）"></a>内置函数列表（LabTalk-Supported Functions）</h4><ul>
+<li>地址：<a href="https://www.originlab.com/doc/en/LabTalk/guide/LT-Supported-Functions">点击查看</a></li>
+</ul>
+<h4 id="支持的三角-双曲函数列表（Trigonometric-Hyperbolic-Functions）"><a href="#支持的三角-双曲函数列表（Trigonometric-Hyperbolic-Functions）" class="headerlink" title="支持的三角&#x2F;双曲函数列表（Trigonometric&#x2F;Hyperbolic Functions）"></a>支持的三角&#x2F;双曲函数列表（Trigonometric&#x2F;Hyperbolic Functions）</h4><ul>
+<li>地址：<a href="https://www.originlab.com/doc/LabTalk/ref/Trigonometric-Hyperbolic-Functions">点击查看</a></li>
+</ul>
+<h3 id="03-制图问题"><a href="#03-制图问题" class="headerlink" title="03 制图问题"></a>03 制图问题</h3><h4 id="拷贝到-Word、PPT-等后图像失真"><a href="#拷贝到-Word、PPT-等后图像失真" class="headerlink" title="拷贝到 Word、PPT 等后图像失真"></a>拷贝到 Word、PPT 等后图像失真</h4><ul>
+<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/TextDistorted-in-ExpGraph">点击查看</a></li>
+</ul>
+<h4 id="使用-Data-Connector-后数据丢失、图像中有一个下载标志"><a href="#使用-Data-Connector-后数据丢失、图像中有一个下载标志" class="headerlink" title="使用 Data Connector 后数据丢失、图像中有一个下载标志"></a>使用 Data Connector 后数据丢失、图像中有一个下载标志</h4><ul>
+<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/Connector-open-project-data-missing">点击查看</a></li>
+</ul>
+<p><img src="https://img.yeslu.cn/blog/2022-10/08-ddfe73484aadb491abf9ca9d3fc234b2.png"></p>
+<h4 id="无法退出缩放模式"><a href="#无法退出缩放模式" class="headerlink" title="无法退出缩放模式"></a>无法退出缩放模式</h4><ul>
+<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/Escape-from-Zooming-and-Panning">点击查看</a></li>
+</ul>
+<h4 id="无法通过双击编辑文字"><a href="#无法通过双击编辑文字" class="headerlink" title="无法通过双击编辑文字"></a>无法通过双击编辑文字</h4><ul>
+<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/Double-Click-Enter-In-Place-Edit-Mode">点击查看</a></li>
+</ul>
+<h4 id="无法修改页面尺寸"><a href="#无法修改页面尺寸" class="headerlink" title="无法修改页面尺寸"></a>无法修改页面尺寸</h4><ul>
+<li>症状：宽度和高度均为锁定状态，无法修改数值</li>
+</ul>
+<img src="https://img.yeslu.cn/blog/2023-03/01-bf932d958462531c74c1a558eba3e238.png" style="zoom: 33%;" />
+
+<ul>
+<li>解决：使用 Page View 模式，参考 <a href="https://www.originlab.com/doc/en/Origin-Help/Compare-PageView-Modes">Available Page Viewing Modes</a></li>
+</ul>
+<img src="https://img.yeslu.cn/blog/2023-03/01-99fed584f15cec8df17de20e15669ccb.jpg" style="zoom: 33%;" />
+
+<h4 id="数据点上的箭头和标记是什么"><a href="#数据点上的箭头和标记是什么" class="headerlink" title="数据点上的箭头和标记是什么"></a>数据点上的箭头和标记是什么</h4><ul>
+<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/Markers-Lock">点击查看</a></li>
+</ul>
+<p><img src="https://img.yeslu.cn/blog/2023-03/01-4e34ff4e8e1cef1ec3637c6a0abda6aa"></p>
+<h4 id="无法正常显示图例，图例出现黑色色块"><a href="#无法正常显示图例，图例出现黑色色块" class="headerlink" title="无法正常显示图例，图例出现黑色色块"></a>无法正常显示图例，图例出现黑色色块</h4><ul>
+<li>解决：<a href="https://www.yeslu.cn/archives/863b7bad.html">点击查看</a></li>
+</ul>
+<h4 id="导出文字可编辑的图片"><a href="#导出文字可编辑的图片" class="headerlink" title="导出文字可编辑的图片"></a>导出文字可编辑的图片</h4><ul>
+<li>地址：<a href="https://www.originlab.com/doc/en/Quick-Help/Exp-Editable-Text-EPSl">点击查看</a></li>
+</ul>
+<img src="https://img.yeslu.cn/blog/2023-06/27-91a68139a21df670ac0dcfaad94b8e57.png" style="zoom: 33%;" />
+
+<h3 id="04-个性化"><a href="#04-个性化" class="headerlink" title="04 个性化"></a>04 个性化</h3><h4 id="在论文中描述“数据使用-Origin-处理”（Citation）"><a href="#在论文中描述“数据使用-Origin-处理”（Citation）" class="headerlink" title="在论文中描述“数据使用 Origin 处理”（Citation）"></a>在论文中描述“数据使用 Origin 处理”（Citation）</h4><ul>
+<li>地址：<a href="https://www.originlab.com/index.aspx?go=Company&pid=1130">点击查看</a></li>
+</ul>
+<h4 id="使用短连字符号作为负号（hyphen-short-minus）"><a href="#使用短连字符号作为负号（hyphen-short-minus）" class="headerlink" title="使用短连字符号作为负号（hyphen&#x2F;short minus）"></a>使用短连字符号作为负号（hyphen&#x2F;short minus）</h4><ul>
+<li>地址：<a href="https://www.originlab.com/doc/Quick-Help/add-real-minus-to-tick-labels">点击查看</a></li>
+</ul>
+<h4 id="高级图例设置（Legend-Substitution-Notation）"><a href="#高级图例设置（Legend-Substitution-Notation）" class="headerlink" title="高级图例设置（Legend Substitution Notation）"></a>高级图例设置（Legend Substitution Notation）</h4><ul>
+<li>地址：<a href="https://www.originlab.com/doc/LabTalk/ref/Legend-Substitution-Notation">点击查看</a></li>
+</ul>
+<h4 id="色盲安全配色（ColorBlindSafe）"><a href="#色盲安全配色（ColorBlindSafe）" class="headerlink" title="色盲安全配色（ColorBlindSafe）"></a>色盲安全配色（ColorBlindSafe）</h4><ul>
+<li>地址：<a href="https://www.originlab.com/doc/Quick-Help/Colorblind-Friendly-Colors">点击查看</a></li>
+</ul>
+<img src="https://img.yeslu.cn/blog/2022-04/08-8e2ae1af7453a67551988cfa9637d61d.png" style="zoom:50%;" />
+
+<h4 id="复制格式（批量应用格式）"><a href="#复制格式（批量应用格式）" class="headerlink" title="复制格式（批量应用格式）"></a>复制格式（批量应用格式）</h4><ul>
+<li>解决：<a href="https://www.originlab.com/doc/en/Origin-Help/CopyPaste-Format">点击查看</a></li>
+</ul>
+<h4 id="标签过长或重叠"><a href="#标签过长或重叠" class="headerlink" title="标签过长或重叠"></a>标签过长或重叠</h4><ul>
+<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/wrap-axis-tick-labels">点击查看</a></li>
+</ul>
+<h2 id="常用插件"><a href="#常用插件" class="headerlink" title="常用插件"></a>常用插件</h2><h3 id="高亮图像中的某段区域"><a href="#高亮图像中的某段区域" class="headerlink" title="高亮图像中的某段区域"></a>高亮图像中的某段区域</h3><ul>
+<li><a href="https://www.originlab.com/FileExchange/details.aspx?fid=398">Data Highlighter</a><img src="https://img.yeslu.cn/blog/early/originlab-data-highlighter.png" style="zoom:50%;" /></li>
+</ul>
+<h3 id="坡度变化的起始点（Onset-点）"><a href="#坡度变化的起始点（Onset-点）" class="headerlink" title="坡度变化的起始点（Onset 点）"></a>坡度变化的起始点（Onset 点）</h3><ul>
+<li><a href="https://www.originlab.com/FileExchange/details.aspx?fid=288">Onset Of Slope</a><img src="https://img.yeslu.cn/blog/2022-07/29-10a8b6f6914e5cbd6846b22b30bfd20d.png" style="zoom:50%;" /></li>
+</ul>
+<h3 id="分段拟合"><a href="#分段拟合" class="headerlink" title="分段拟合"></a>分段拟合</h3><ul>
+<li><a href="https://www.originlab.com/FileExchange/details.aspx?fid=325">Piecewise Fit</a><img src="https://img.yeslu.cn/blog/early/originlab-piecewise-screenshot.png" style="zoom:50%;" /></li>
+</ul>
+<h3 id="将图像制作成动画"><a href="#将图像制作成动画" class="headerlink" title="将图像制作成动画"></a>将图像制作成动画</h3><ul>
+<li><a href="https://www.originlab.com/fileExchange/details.aspx?fid=370">Movie Creator</a> 或 <a href="https://www.originlab.com/FileExchange/details.aspx?fid=482">Graph Anim</a><img src="https://www.originlab.com/fileexchange/images/482/Anim%20v2.gif"  /></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Graph</tag>
+        <tag>Data-Analysis</tag>
+        <tag>Origin</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Origin 快速绘制带 PDF 卡片的 XRD 图谱</title>
+    <url>/archives/b4c2c415.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>X射线衍射（X-ray Diffraction, XRD）可用于揭示物质的晶体结构、化学组成以及物理性质，在处理 XRD 数据时，常与 PDF 卡片结合绘制。文本将介绍使用Origin 绘制带 PDF 卡片的 XRD 图谱。</p>
+<span id="more"></span>
+
+<h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><img src="https://img.yeslu.cn/blog/2022-06/19-5f70a86a40402f95859c4a22bdb0eb95!blog_watermark" alt="XRD Curves" style="zoom: 67%;" />
+
+<p>本科期间，我向 OriginLab GraphGallery 贡献带 PDF 卡片的 XRD 图谱的<a href="https://www.originlab.com/www/products/GraphGallery.aspx?GID=472">例图</a>，此后 OriginLab 官方以该图数据及绘制思路为蓝本制作了<a href="https://www.bilibili.com/video/BV1Rv411a7e5">《XRD 二维层叠式带标准卡片》</a>的教学视频。</p>
+<p>在 <a href="https://originlab.jira.com/wiki/spaces/main/pages/2543452161/Origin+2023+Features">Origin 2023</a> 中，我和 Origin 的官方童鞋再一次优化了此图，将例图与快速绘制模板内嵌于该版本的 Origin 中。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-10/22-cd0f162d6b883805bed0a57344485ee6.jpg" alt="Learning Center &amp; Template Center"></p>
+<p>该版本下，只需要将 XRD 原始数据和标准 PDF 卡片数据如下图所示，填写于两个 Sheet 中，全选所有数据，使用上图模板即可一键完成制图。</p>
+<p><img src="https://img.yeslu.cn/blog/2023-05/09-7e27f5cfe27205c0bebe7564f04a1830.png"></p>
+<p><img src="https://img.yeslu.cn/blog/2023-05/09-deb82a3489e98e60b70f0e70f0d29b47.png"></p>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文禁止转载；</li>
+<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Graph</tag>
+        <tag>Data-Analysis</tag>
+        <tag>Origin</tag>
       </tags>
   </entry>
 </search>
