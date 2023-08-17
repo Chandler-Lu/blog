@@ -6606,10 +6606,12 @@
 </ol>
 <img src="https://img.yeslu.cn/blog/2023-08/07-18e2eab41cffa334a5079ef583b3b2e0.png!blog_watermark" style="zoom:67%;" />
 
-<h2 id="虚拟机和-Windows-11-的安装"><a href="#虚拟机和-Windows-11-的安装" class="headerlink" title="虚拟机和 Windows 11 的安装"></a>虚拟机和 Windows 11 的安装</h2><h3 id="Paralles-Desktop"><a href="#Paralles-Desktop" class="headerlink" title="Paralles Desktop"></a>Paralles Desktop</h3><blockquote>
+<h2 id="虚拟机和操作系统的安装"><a href="#虚拟机和操作系统的安装" class="headerlink" title="虚拟机和操作系统的安装"></a>虚拟机和操作系统的安装</h2><p>本节将讲解 PD、VMware fusion、UTM 三个虚拟机本体以及操作系统的安装。PD 和 VMware 为商业产品，UTM 为免费开源产品。</p>
+<h3 id="Paralles-Desktop"><a href="#Paralles-Desktop" class="headerlink" title="Paralles Desktop"></a>Paralles Desktop</h3><blockquote>
 <p>版本：Paralles Desktop 18.3.2 (Standard Edition)</p>
 </blockquote>
-<p>PD 是当前 Apple silicon 上适配程度最高的虚拟机，前往 PD <a href="https://www.parallels.com/products/desktop/">官网</a>下载安装程序，启动后直至下载安装完成，激活 PD。</p>
+<p>PD 是个人认为当前 Apple silicon 上适配和优化最好的虚拟机，尤其在 3D 图形加速方面。</p>
+<h4 id="本体安装"><a href="#本体安装" class="headerlink" title="本体安装"></a>本体安装</h4><p>前往 PD <a href="https://www.parallels.com/products/desktop/">官网</a>下载安装程序，启动后直至下载安装完成，激活 PD。</p>
 <img src="https://img.yeslu.cn/blog/2023-08/07-49dde98f87844ec285072bcf0a4d3a1d.jpeg!blog_watermark" style="zoom:50%;" />
 
 <h4 id="系统安装"><a href="#系统安装" class="headerlink" title="系统安装"></a>系统安装</h4><ol>
@@ -6625,7 +6627,7 @@
 <ol start="3">
 <li>选择安装位置，如果你有个性化的需求，可以在安装前手动设定 CPU 核数和内存等；</li>
 </ol>
-<img src="https://img.yeslu.cn/blog/2023-08/07-1b8ee18dd0e5f6fa816c97a6e68dcc66.png!blog_watermark" style="zoom:67%;" />
+<img src="https://img.yeslu.cn/blog/2023-08/17-84db5a66f06ddd002fd4982ec392b3cf.PNG!blog_watermark" style="zoom:67%;" />
 
 <ol start="4">
 <li>等待 Windows 安装完毕；</li>
@@ -6642,14 +6644,64 @@
 </ol>
 <img src="https://img.yeslu.cn/blog/2023-08/07-129ef853148fdd6ea0e0f79814a1bd21.png!blog_watermark" alt="image-20230807165949196" style="zoom:60%;" />
 
-<h3 id="VMware-Fusion"><a href="#VMware-Fusion" class="headerlink" title="VMware Fusion"></a>VMware Fusion</h3><p><a href="https://www.vmware.com/hk/products/fusion/fusion-evaluation.html">VMware Fusion 13</a> 的安装方式与 PD 几乎一致，本文不再做详解。</p>
-<p><img src="https://img.yeslu.cn/blog/2023-08/17-c804492b00a00eab205fbfc39af191a8.png!blog_watermark"></p>
+<h3 id="VMware-Fusion"><a href="#VMware-Fusion" class="headerlink" title="VMware Fusion"></a>VMware Fusion</h3><blockquote>
+<p>版本：13.0.2 (21581413)</p>
+</blockquote>
+<p><a href="https://www.vmware.com/hk/products/fusion/fusion-evaluation.html">VMware Fusion 13</a> 是 2022 年年底发布的一款支持 Apple silicon 平台的新产品，但交互方面的适配程度极低，实际测试下来发现很多坑。</p>
+<h4 id="本体安装-1"><a href="#本体安装-1" class="headerlink" title="本体安装"></a>本体安装</h4><p><img src="https://img.yeslu.cn/blog/2023-08/17-c804492b00a00eab205fbfc39af191a8.png!blog_watermark"></p>
+<h4 id="系统安装-1"><a href="#系统安装-1" class="headerlink" title="系统安装"></a>系统安装</h4><ol>
+<li>从光盘或映像中启动安装，并将 ISO 镜像拖入界面；</li>
+</ol>
+<img src="https://img.yeslu.cn/blog/2023-08/17-dbf046eca3c6737c76c5bfbd0c9cea76.png!blog_watermark" style="zoom:90%;" />
+
+<ol start="2">
+<li>当出现 “Press any key to boot from CD or DVD” 时，请立即点击进入虚拟机并敲击任意按键，错过后可能会卡在这个界面；</li>
+</ol>
+<img src="https://img.yeslu.cn/blog/2023-08/17-c3dcbf8f9bb0167ef548c64c5c753d8c.png!blog_watermark" style="zoom:70%;" />
+
+<ol start="3">
+<li>正常安装 Windows；</li>
+</ol>
+<img src="https://img.yeslu.cn/blog/2023-08/17-2e80d92449f30ba8a9f76bf3cbd2ca54.png!blog_watermark" style="zoom:70%;" />
+
+<ol start="4">
+<li>Windows 安装结束后，会进行一系列初始化设置，由于 Windows 11 for ARM 并不自带适配 VMware 的网卡驱动，导致系统不能联网，无法进行下一步；</li>
+</ol>
+<img src="https://img.yeslu.cn/blog/2023-08/17-92bb04e60f723174e4ed01a43b8d0e07.png!blog_watermark" style="zoom:70%;" />
+
+<p>这里参考<a href="https://communities.vmware.com/t5/Fusion-22H2-Tech-Preview/Stuck-on-quot-Let-s-connect-to-a-network-quot-setup-page-windows/td-p/2868643">此文档</a>，使用 <code>Shift + F10</code> 启动 CMD，输入 <code>oobe\BypassNRO.cmd</code> 以启用 OOBE (Windows Out of Box Experience)，系统会自动重启；</p>
+<img src="https://img.yeslu.cn/blog/2023-08/17-5d7dcdc44c9c2b4b78e80e9e1ef231e0.png!blog_watermark" style="zoom:70%;" />
+
+<ol start="5">
+<li>此时，出现了不联网直接使用的选项；</li>
+</ol>
+<img src="https://img.yeslu.cn/blog/2023-08/17-8d17f19ba4015d9d7a150db050e5907c.png!blog_watermark" style="zoom:70%;" />
+
+<ol start="6">
+<li>进入系统后，手动启动 VMware Tools（下简称“VMT”）的安装，若 VMT 安装程序未自动启动，请进入虚拟光驱，并右键“使用 PowerShell 运行”启动安装程序；</li>
+</ol>
+<img src="https://img.yeslu.cn/blog/2023-08/17-504fd7c362075c81e01a46c8f87d0a33.png!blog_watermark" style="zoom:90%;" />
+
+<img src="https://img.yeslu.cn/blog/2023-08/17-532afd43603a1e9185c5d7b4a03636e5.png!blog_watermark" style="zoom:70%;" />
+
+<p>由于一些适配的问题，VMT 的安装程序在某些 Win 11 的版本中是无法被启动的，可能会出现下图“包无法进行更新、相关性或冲突验证”的提示；</p>
+<img src="https://img.yeslu.cn/blog/2023-08/17-c8f6816c269cf008a57fc3a875d3ba72.png!blog_watermark" alt="" style="zoom:70%;" />
+
+<p>参考<a href="https://communities.vmware.com/t5/VMware-Fusion-Discussions/VMWare-Tools-won-t-install-Windows-11-ARM/td-p/2939454">此文档</a>手动启动安装程序：以管理员模式进入 Windows Powershell，输入以下命令（VMT 安装前剪贴板是不互通的，需要手动输入），看到安装成功的提示后，表明安装完成；</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Set-ExecutionPolicy</span> RemoteSigned <span class="comment"># 输入 Set-Exec 后可以使用 Tab 进行自动补全</span></span><br><span class="line"><span class="built_in">cd</span> D:\ <span class="comment"># 如果 VMT 虚拟光驱盘符不是 D，请修改为实际盘符</span></span><br><span class="line">.\setup.ps1</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img.yeslu.cn/blog/2023-08/17-4665527ad35d5e644ddc4de646491b7f.png!blog_watermark"></p>
+<ol start="7">
+<li>VMware Fusion 13 不支持类似 PD 的文件拖动传送，推荐在主机上将文件拷贝至 U 盘等设备中，再挂载至虚拟机。</li>
+</ol>
+<img src="https://img.yeslu.cn/blog/2023-08/17-b1b7084c2f3f2da308ddc52e1c708c53.png!blog_watermark" style="zoom:70%;" />
+
 <h3 id="UTM"><a href="#UTM" class="headerlink" title="UTM"></a>UTM</h3><blockquote>
 <p>版本：UTM 4.3.5 (87)</p>
 </blockquote>
-<p><a href="https://mac.getutm.app/">UTM</a> 是一个免费<a href="https://github.com/utmapp/UTM">开源</a>的适配 Apple silicon 平台的虚拟机。其最大的优势是免费，但也只剩免费（Mac App Store 收费版本的实质是捐赠，和官网的下载版本没有区别）。UTM 的交互和对 3D 加速（OpenGL 和 DirectX）的支持很差，同时，UTM 无法将系统安装至外置硬盘中，这对于小容量的设备是致命的。综上，建议酌情使用 UTM。</p>
-<p><img src="https://img.yeslu.cn/blog/2023-08/17-f661bf1f3cff31bed850aad649f7e627.png!blog_watermark"></p>
-<h4 id="系统安装-1"><a href="#系统安装-1" class="headerlink" title="系统安装"></a>系统安装</h4><ol>
+<p><a href="https://mac.getutm.app/">UTM</a> 是一个免费<a href="https://github.com/utmapp/UTM">开源</a>的适配 Apple silicon 平台的虚拟机，其最大的优势是免费，但也只剩免费（Mac App Store 收费版本的实质是捐赠，和官网的下载版本没有区别）。UTM 的交互和对 3D 加速（OpenGL 和 DirectX）的支持很差，此外 UTM 无法将系统安装至外置硬盘中，这对于小容量的设备是致命的。综上，建议酌情使用 UTM。</p>
+<h4 id="本体安装-2"><a href="#本体安装-2" class="headerlink" title="本体安装"></a>本体安装</h4><p><img src="https://img.yeslu.cn/blog/2023-08/17-f661bf1f3cff31bed850aad649f7e627.png!blog_watermark"></p>
+<h4 id="系统安装-2"><a href="#系统安装-2" class="headerlink" title="系统安装"></a>系统安装</h4><ol>
 <li>新建一个虚拟机，使用“虚拟化”安装，选择下载的 ISO 镜像；</li>
 </ol>
 <img src="https://img.yeslu.cn/blog/2023-08/17-b3d2025998ff85db475523954d0e48ac.png!blog_watermark" style="zoom:90%;" />
@@ -6672,8 +6724,8 @@
 <img src="https://img.yeslu.cn/blog/2023-08/17-5710d657665f50b34da5fab5485a7419.png!blog_watermark" style="zoom:90%;" />
 
 <h4 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h4><ul>
-<li>UTM 的稳定性并不高，笔者在安装过程中出现了黑屏和卡顿的问题，重启大法基本可以解决；</li>
-<li>UTM 几乎没有 3D 的支持。</li>
+<li>UTM 的稳定性并不高，笔者在安装过程中出现了黑屏和卡顿的问题，基本可以通过重启解决；</li>
+<li>UTM 几乎没有 3D 相关的支持。</li>
 </ul>
 <img src="https://img.yeslu.cn/blog/2023-08/17-af3e5b506367f2077108d50f3e994c33.png!blog_watermark" style="zoom:70%;" />
 
