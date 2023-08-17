@@ -6567,10 +6567,10 @@
 <h2 id="下载-Windows-11"><a href="#下载-Windows-11" class="headerlink" title="下载 Windows 11"></a>下载 Windows 11</h2><h3 id="Paralles-Desktop-自带方案"><a href="#Paralles-Desktop-自带方案" class="headerlink" title="Paralles Desktop 自带方案"></a>Paralles Desktop 自带方案</h3><p><a href="https://www.parallels.com/products/desktop/">Paralles Desktop（下简称“PD”）</a> 自带了 Win 11 for ARM64 的下载途径，可以迅速完成操作系统的安装。但该方案仅针对使用 PD 虚拟机的用户，如果你不使用 PD 或对 Win 有更高的定制要求，可以阅读下方通过 UUP dump 下载的方案。</p>
 <img src="https://img.yeslu.cn/blog/2023-08/07-b78b2cf68b8ffd4a9d364297da375b25.png!blog_watermark" style="zoom: 67%;" />
 
-<h3 id="UUP-dump-方案"><a href="#UUP-dump-方案" class="headerlink" title="UUP dump 方案"></a>UUP dump 方案</h3><p>UUP dump（下简称“UUP”）是一个足够可信的系统下载平台，所下载的系统来自微软官方。UUP 本可以在全平台进行下载，但笔者实际测试发现 UUP 在 macOS 上下载及其繁琐，故建议在其他的 Windows 上完成操作后，再将系统转移至需要安装虚拟机的机器中。</p>
-<h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><blockquote>
+<h3 id="UUP-dump-方案"><a href="#UUP-dump-方案" class="headerlink" title="UUP dump 方案"></a>UUP dump 方案</h3><blockquote>
 <p>本小节在 Windows 环境中完成。</p>
 </blockquote>
+<p>UUP dump（下简称“UUP”）是一个足够可信的系统下载平台，所下载的系统来自微软官方。UUP 本可以在全平台进行下载，但笔者实际测试发现 UUP 在 macOS 上下载及其繁琐，故建议在其他的 Windows 上完成操作后，再将系统转移至需要安装虚拟机的机器中。</p>
 <ol>
 <li>进入 UUP <a href="https://uupdump.net/">官网</a>，选择正式发行的 arm64 架构版本；</li>
 </ol>
