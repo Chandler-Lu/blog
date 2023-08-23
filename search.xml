@@ -203,6 +203,24 @@
       </tags>
   </entry>
   <entry>
+    <title>我和我的软件们：目录</title>
+    <url>/archives/2ae541fb.html</url>
+    <content><![CDATA[<h2 id="总目录"><a href="#总目录" class="headerlink" title="总目录"></a>总目录</h2><ul>
+<li><a href="https://www.yeslu.cn/archives/86a324ce.html">01 - 前言</a></li>
+<li><a href="https://www.yeslu.cn/archives/9b841902.html">02 - 日记</a></li>
+</ul>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Software</category>
+      </categories>
+      <tags>
+        <tag>Recommend</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>我和我的软件们：前言（01）</title>
     <url>/archives/86a324ce.html</url>
     <content><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>鉴于 App Store 内软件质量良莠不齐，很多软件过度关注新颖、美观和价格，却做不到此类软件最应该做到的功能，这样的软件并不具有过高的实用性，如某日记软件每天只能记一篇日记，看似高端小清新，实则实用性全无。</p>
@@ -255,155 +273,6 @@
       </categories>
       <tags>
         <tag>Recommend</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我和我的软件们：目录</title>
-    <url>/archives/2ae541fb.html</url>
-    <content><![CDATA[<h2 id="总目录"><a href="#总目录" class="headerlink" title="总目录"></a>总目录</h2><ul>
-<li><a href="https://www.yeslu.cn/archives/86a324ce.html">01 - 前言</a></li>
-<li><a href="https://www.yeslu.cn/archives/9b841902.html">02 - 日记</a></li>
-</ul>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Software</category>
-      </categories>
-      <tags>
-        <tag>Recommend</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>双排键演奏 - Olympic Fanfare</title>
-    <url>/archives/b7422f24.html</url>
-    <content><![CDATA[<blockquote>
-<p>《奥林匹克号角》，是 John Williams 为1984年洛杉矶奥运会开幕式所作的一首管弦乐曲，后来经常被用在各种与奥运相关的场合，成为奥林匹克音乐史上最著名的作品之一，也是奥运会的音乐象征之一。</p>
-</blockquote>
-<span id="more"></span>
-
-<div class="bilibili">
-    <iframe src="//player.bilibili.com/player.html?aid=67805047&bvid=BV1NL4y1G79K&cid=117529968&page=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-</div>
-
-<p>看完冬奥会开幕式，突然想起来还有这首曲子，打算拿这首曲子来应个景，当然因为临近返校，时间比较赶，还是有不少出错的地方有待改正。在这里也祝北京2022年冬奥会圆满闭幕。</p>
-<hr>
-<p>曲名：Olympic Fanfare and Theme<br>作曲：John Williams<br>编曲：岩内佐織（Saori Iwauchi）<br>演奏：本人<br>作品选自：Electone Sound Inn 23 Orchestral Sound 2 (5-3)</p>
-<p>演奏琴：YAMAHA EL-900M<br>录音：YAMAHA AG06, Zoom H2n<br>录像：Sony A7R2 + Tamron 28-75mm F&#x2F;2.8, DJI Osmo Action</p>
-]]></content>
-      <categories>
-        <category>Music</category>
-      </categories>
-      <tags>
-        <tag>Electone</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我和我的软件们：日记（02）</title>
-    <url>/archives/9b841902.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本期来说一说日记软件。</p>
-<p>真正意义上的日记软件，我在这里只推荐一个，所以本期主要并不是来推荐软件，而是想说说我对这种相对比较<strong>小众</strong>和<strong>专有功能</strong>的软件的看法。</p>
-<h2 id="日记软件需要什么"><a href="#日记软件需要什么" class="headerlink" title="日记软件需要什么"></a>日记软件需要什么</h2><h3 id="通用格式导入导出"><a href="#通用格式导入导出" class="headerlink" title="通用格式导入导出"></a>通用格式导入导出</h3><p>什么是通用格式呢？可以简单理解为这个格式中所包含的内容可以被主流软件读取，里面所包含的内容可以被人类理解。</p>
-<span id="more"></span>
-
-<p>要是这样还觉得不好理解，那么举个例子。</p>
-<p>一个日记软件导出的格式如下：</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;entries&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;测试内容&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;location&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;region&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">          <span class="attr">&quot;center&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;longitude&quot;</span><span class="punctuation">:</span> <span class="number">0</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;latitude&quot;</span><span class="punctuation">:</span> <span class="number">0</span></span><br><span class="line">          <span class="punctuation">&#125;</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;country&quot;</span><span class="punctuation">:</span> <span class="string">&quot;中国&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;timeZone&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Asia Shanghai&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">]</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-
-<p>这是一个 json 格式，从结构中就可以看出，我在什么地方，发送了什么内容。这样的文本可以被几乎任何一个文本编辑器打开，你也可以自己编写程序，将其转换为你所需要的版式。</p>
-<p>大多数软件通常很难长久的更新下去，随着新系统的发布，技术的更新，又或者是软件开发者的自身原因，总会有新软件的兴起，旧软件的衰败。一旦一个软件停止维护，随着系统更新、手机升级，将产生越来越多的 Bug；甚至因为软件使用的某种开发方案不再被新系统支持，将直接导致软件无法在新系统上工作。</p>
-<p>如果您是一个真正的日记爱好者，那您一定想在未来十几年，甚至几十年之后，看到我那时候都在做什么，想什么。但是，当您在新系统上安装上那个已经数年未更新的软件之后，发现软件已经无法工作，仅有旧手机上还保留着原先的日记。您想把数据导出来存档，却发现软件并不支持导出，或者导出的数据都是加密后的，根本无法被读取和阅读，那就只能让这些日记永远尘封在旧手机上了。</p>
-<p>如果这款已经停止更新的软件可以以通用格式导出，而您准备用的新日记软件又支持通用格式导入的话，那么您的日记迁移便可以做到无缝衔接，或者仅需要稍作修改。</p>
-<p>上面说的情况其实不是个案，生活中数量可观的软件都不提供导出功能，甚至一部分老式手机的通讯录、短信也无法导出，所带来的不方便，相信大家也是体会过的。这也更凸显了笔记（日记）类软件，以 <strong>通用格式导入导出</strong> 的重要性。</p>
-<h3 id="友好的记录功能"><a href="#友好的记录功能" class="headerlink" title="友好的记录功能"></a>友好的记录功能</h3><p>我认为一个日记软件应当可以如下元素：</p>
-<ul>
-<li>主体：文字</li>
-<li>媒体：图片、语音、视频</li>
-<li>环境：时间、地点、天气</li>
-</ul>
-<p>当然，如果您还把日记当成游记，或者是手账本用的话，软件还应当支持更强大的图文混排，如 markdown，或者是类似 onenote 的无限扩展画布。很多日记软件只能记录几句话和日期，那这样的软件和备忘录又有什么区别呢？</p>
-<h3 id="那年今日"><a href="#那年今日" class="headerlink" title="那年今日"></a>那年今日</h3><p>几年下来，我记录了有数千条日记，但是真的想翻一翻日记，要从头刷到尾也是很困难的，所以 “那年今日” 是我觉得一个相对比较重要的功能。几乎每一天，我都可以看到去年的今天我在做什么，前年的今天我在做什么…… 时光流转，物是人非，“那年今日”能让人有一种穿越时空的感觉，也能带你找回当年的记忆。</p>
-<p>前段时间，我用 <a href="https://github.com/wwwpf/QzoneExporter">QzoneExporter</a> 导出了 QQ 空间所有说说，并导入了我接下来将会推荐的软件 Day One。我只要打开 Day One，就可以看到几年前的今天，我发了什么动态，想来还是别有一番滋味的。</p>
-<h2 id="真的需要日记软件？"><a href="#真的需要日记软件？" class="headerlink" title="真的需要日记软件？"></a>真的需要日记软件？</h2><p>上面所说的一些功能仅仅是我个人的看法，如果你对这些需求并不感冒，那么就需要考量一下自己是否真的需要一个专业的日记软件了。</p>
-<p>回归日记的本源，无非是时间地点人物事件，比如：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">今天妈妈开着车带我去会展中心买年货。我看见会场外面彩旗飘扬。进了会场，我看见会场里人山人海的，热闹极了！我们买了腊肉、香肠、旺旺大礼包。</span><br><span class="line">回家的时候，我还帮妈妈提了不少东西哦！我明年还想去，好快乐哟！</span><br></pre></td></tr></table></figure>
-
-<p>【手动狗头】你们看，完成一篇日记需要一个专业软件吗？答案是否定的。我也曾经陷入这样的误区，觉得什么需要都要搞一个对应的软件来做，结果增加了学习和经济成本，却没有带来对应的效率提升，希望大家可以不要陷入这样的误区。</p>
-<p>某种程度上来说，你手上任何一个可以写文字和图片的软件都可以完成记日记的需求，小到记事本，大到Word，等等。只是有些功能可能需要手动实现，有些功能用起来没有那么顺手罢了。但是比起多使用一个软件，多增加一份成本，这个问题并非不能克服。</p>
-<h2 id="软件推荐"><a href="#软件推荐" class="headerlink" title="软件推荐"></a>软件推荐</h2><p>当然了，说了这么多，还是回到主题，日记软件推荐，本次想推荐的软件叫做<a href="https://dayoneapp.com/">Day One</a>，是迄今为止我觉得做的最专业的日记软件，没有之一。</p>
-<h3 id="Day-One"><a href="#Day-One" class="headerlink" title="Day One"></a>Day One</h3><h4 id="支持平台"><a href="#支持平台" class="headerlink" title="支持平台"></a>支持平台</h4><p>iOS，iPadOS，macOS，watchOS</p>
-<p>未完待续</p>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
-<li>总目录：<a href="https://www.yeslu.cn/archives/2ae541fb.html">https://www.yeslu.cn/archives/2ae541fb.html</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Software</category>
-      </categories>
-      <tags>
-        <tag>Recommend</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>外刊精读：喜迎国庆，国民盛典</title>
-    <url>/archives/b3e1f1a7.html</url>
-    <content><![CDATA[<p>原标题：About 100,000 people to attend mass pageantry on National Day</p>
-<p>来源：<a href="https://www.shine.cn/news/nation/1909252725/">https://www.shine.cn/news/nation/1909252725/</a></p>
-<blockquote>
-<p>本文翻译中标有“「新华社」”的部分为新华网相关新闻中的官方解释，非本人翻译。</p>
-</blockquote>
-<span id="more"></span>
-
-<h2 id="P1"><a href="#P1" class="headerlink" title="P1"></a>P1</h2><p>About 100,000 ordinary citizens will march in a mass pageantry on National Day, which falls on Oct. 1, said a senior official with the event’s organizer on Wednesday.</p>
-<p>周三，一位活动组织者的高级官员称，约 10 万普通市民将参加于 10 月 1 日进行的国庆盛典。</p>
-<h2 id="P2"><a href="#P2" class="headerlink" title="P2"></a>P2</h2><p>The parade will consist of 70 big <strong>floats</strong> in 36 <strong>formations</strong> and will march down the <strong>Chang’an Avenue</strong> in downtown Beijing from east to west, said Zhang Ge, an executive director of the mass pageantry’s organizing department, at a <strong>press conference</strong>.</p>
-<p>张革，庆祝大会服务保障和群众游行指挥部执行指挥「新华社」在新闻发布会上称，由 36 个编队 70 个大型花车组成的游行队伍将沿从位于北京市区的长安街由东向西行进。</p>
-<h3 id="float"><a href="#float" class="headerlink" title="float"></a>float</h3><ul>
-<li>（节日游行时的）彩车，花车（A float is a truck on which displays and people in special costumes are carried in a festival procession.）</li>
-<li>v. 漂，浮</li>
-</ul>
-<h3 id="formation"><a href="#formation" class="headerlink" title="formation"></a>formation</h3><ul>
-<li>n. 编队；列队</li>
-<li>n. 形成，构成</li>
-</ul>
-<h3 id="avenue"><a href="#avenue" class="headerlink" title="avenue"></a>avenue</h3><ul>
-<li>n. 林阴道，大街</li>
-<li>n. 途径，手段</li>
-</ul>
-<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ol>
-<li>press conference — n. 记者招待会；新闻发布会</li>
-</ol>
-<h2 id="P3"><a href="#P3" class="headerlink" title="P3"></a>P3</h2><p>This year marks the 70th anniversary of the founding of the People’s Republic of China.</p>
-<p>今年是中华人民共和国成立 70 周年。</p>
-<h2 id="P4"><a href="#P4" class="headerlink" title="P4"></a>P4</h2><p>The mass parade will reconstruct the historical process from the PRC’s founding, the implementation of <strong>reform and opening-up</strong> and advancement of ** the cause of socialism with Chinese characteristics**, and to now as the cause of socialism with Chinese characteristics has entered a new era, Zhang said.</p>
-<p>群众游行将回顾中华人民共和国成立、推进改革开放和中国特色社会主义事业、中国特色社会主义事业进入新时代的历史进程「新华社」。</p>
-<h3 id="固定搭配"><a href="#固定搭配" class="headerlink" title="固定搭配"></a>固定搭配</h3><ol>
-<li>reform and opening-up — 改革开放</li>
-<li>the <strong>cause</strong> of socialism with Chinese characteristics — 中国特色社会主义事业【cause — n. 原因，事业，目标 v. 引起；导致】</li>
-</ol>
-<h2 id="P5"><a href="#P5" class="headerlink" title="P5"></a>P5</h2><p>The mass parade is designed to tell well the China story and express the confidence and trust the Chinese people have in the Party, he said.</p>
-<p>群众游行旨在讲好中国故事，表达中国人民对党的信心和信任。</p>
-<h2 id="P6"><a href="#P6" class="headerlink" title="P6"></a>P6</h2><p>Participants will be made up of people from <strong>all walks of life</strong>, including deliverymen and housewives, he added.</p>
-<p>参与者来自各行各业，包括快递员和家庭主妇。</p>
-<h3 id="固定搭配-1"><a href="#固定搭配-1" class="headerlink" title="固定搭配"></a>固定搭配</h3><ol>
-<li>all walks of life — 各界，各行各业</li>
-</ol>
-<blockquote>
-<p>One of the greatest pleasures of this job is meeting people from <strong>all walks of life</strong>. 这份工作最大的乐趣之一在于可以接触到各行各业的人。</p>
-</blockquote>
-<h2 id="P7"><a href="#P7" class="headerlink" title="P7"></a>P7</h2><p>Tian’anmen Square will be richly decorated to echo the festive atmosphere with 70 huge red lanterns hung along the roads on its east and west sides.</p>
-<p>天安门广场将华丽地装扮有 70 个大红灯笼，挂于其由东向西的道路两旁，以呼应节日气氛。</p>
-<h2 id="P8"><a href="#P8" class="headerlink" title="P8"></a>P8</h2><p>“On Oct. 1, 70,000 white doves and 70,000 colorful balloons will be released,” Zhang said.  </p>
-<p>届时，将放飞 7 万只白鸽和彩色气球。</p>
-]]></content>
-      <categories>
-        <category>Note</category>
-      </categories>
-      <tags>
-        <tag>English</tag>
-        <tag>News</tag>
       </tags>
   </entry>
   <entry>
@@ -526,6 +395,137 @@
       <tags>
         <tag>English</tag>
         <tag>Communication</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我和我的软件们：日记（02）</title>
+    <url>/archives/9b841902.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本期来说一说日记软件。</p>
+<p>真正意义上的日记软件，我在这里只推荐一个，所以本期主要并不是来推荐软件，而是想说说我对这种相对比较<strong>小众</strong>和<strong>专有功能</strong>的软件的看法。</p>
+<h2 id="日记软件需要什么"><a href="#日记软件需要什么" class="headerlink" title="日记软件需要什么"></a>日记软件需要什么</h2><h3 id="通用格式导入导出"><a href="#通用格式导入导出" class="headerlink" title="通用格式导入导出"></a>通用格式导入导出</h3><p>什么是通用格式呢？可以简单理解为这个格式中所包含的内容可以被主流软件读取，里面所包含的内容可以被人类理解。</p>
+<span id="more"></span>
+
+<p>要是这样还觉得不好理解，那么举个例子。</p>
+<p>一个日记软件导出的格式如下：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;entries&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;测试内容&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;location&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;region&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">          <span class="attr">&quot;center&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;longitude&quot;</span><span class="punctuation">:</span> <span class="number">0</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;latitude&quot;</span><span class="punctuation">:</span> <span class="number">0</span></span><br><span class="line">          <span class="punctuation">&#125;</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;country&quot;</span><span class="punctuation">:</span> <span class="string">&quot;中国&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;timeZone&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Asia Shanghai&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">]</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>这是一个 json 格式，从结构中就可以看出，我在什么地方，发送了什么内容。这样的文本可以被几乎任何一个文本编辑器打开，你也可以自己编写程序，将其转换为你所需要的版式。</p>
+<p>大多数软件通常很难长久的更新下去，随着新系统的发布，技术的更新，又或者是软件开发者的自身原因，总会有新软件的兴起，旧软件的衰败。一旦一个软件停止维护，随着系统更新、手机升级，将产生越来越多的 Bug；甚至因为软件使用的某种开发方案不再被新系统支持，将直接导致软件无法在新系统上工作。</p>
+<p>如果您是一个真正的日记爱好者，那您一定想在未来十几年，甚至几十年之后，看到我那时候都在做什么，想什么。但是，当您在新系统上安装上那个已经数年未更新的软件之后，发现软件已经无法工作，仅有旧手机上还保留着原先的日记。您想把数据导出来存档，却发现软件并不支持导出，或者导出的数据都是加密后的，根本无法被读取和阅读，那就只能让这些日记永远尘封在旧手机上了。</p>
+<p>如果这款已经停止更新的软件可以以通用格式导出，而您准备用的新日记软件又支持通用格式导入的话，那么您的日记迁移便可以做到无缝衔接，或者仅需要稍作修改。</p>
+<p>上面说的情况其实不是个案，生活中数量可观的软件都不提供导出功能，甚至一部分老式手机的通讯录、短信也无法导出，所带来的不方便，相信大家也是体会过的。这也更凸显了笔记（日记）类软件，以 <strong>通用格式导入导出</strong> 的重要性。</p>
+<h3 id="友好的记录功能"><a href="#友好的记录功能" class="headerlink" title="友好的记录功能"></a>友好的记录功能</h3><p>我认为一个日记软件应当可以如下元素：</p>
+<ul>
+<li>主体：文字</li>
+<li>媒体：图片、语音、视频</li>
+<li>环境：时间、地点、天气</li>
+</ul>
+<p>当然，如果您还把日记当成游记，或者是手账本用的话，软件还应当支持更强大的图文混排，如 markdown，或者是类似 onenote 的无限扩展画布。很多日记软件只能记录几句话和日期，那这样的软件和备忘录又有什么区别呢？</p>
+<h3 id="那年今日"><a href="#那年今日" class="headerlink" title="那年今日"></a>那年今日</h3><p>几年下来，我记录了有数千条日记，但是真的想翻一翻日记，要从头刷到尾也是很困难的，所以 “那年今日” 是我觉得一个相对比较重要的功能。几乎每一天，我都可以看到去年的今天我在做什么，前年的今天我在做什么…… 时光流转，物是人非，“那年今日”能让人有一种穿越时空的感觉，也能带你找回当年的记忆。</p>
+<p>前段时间，我用 <a href="https://github.com/wwwpf/QzoneExporter">QzoneExporter</a> 导出了 QQ 空间所有说说，并导入了我接下来将会推荐的软件 Day One。我只要打开 Day One，就可以看到几年前的今天，我发了什么动态，想来还是别有一番滋味的。</p>
+<h2 id="真的需要日记软件？"><a href="#真的需要日记软件？" class="headerlink" title="真的需要日记软件？"></a>真的需要日记软件？</h2><p>上面所说的一些功能仅仅是我个人的看法，如果你对这些需求并不感冒，那么就需要考量一下自己是否真的需要一个专业的日记软件了。</p>
+<p>回归日记的本源，无非是时间地点人物事件，比如：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">今天妈妈开着车带我去会展中心买年货。我看见会场外面彩旗飘扬。进了会场，我看见会场里人山人海的，热闹极了！我们买了腊肉、香肠、旺旺大礼包。</span><br><span class="line">回家的时候，我还帮妈妈提了不少东西哦！我明年还想去，好快乐哟！</span><br></pre></td></tr></table></figure>
+
+<p>【手动狗头】你们看，完成一篇日记需要一个专业软件吗？答案是否定的。我也曾经陷入这样的误区，觉得什么需要都要搞一个对应的软件来做，结果增加了学习和经济成本，却没有带来对应的效率提升，希望大家可以不要陷入这样的误区。</p>
+<p>某种程度上来说，你手上任何一个可以写文字和图片的软件都可以完成记日记的需求，小到记事本，大到Word，等等。只是有些功能可能需要手动实现，有些功能用起来没有那么顺手罢了。但是比起多使用一个软件，多增加一份成本，这个问题并非不能克服。</p>
+<h2 id="软件推荐"><a href="#软件推荐" class="headerlink" title="软件推荐"></a>软件推荐</h2><p>当然了，说了这么多，还是回到主题，日记软件推荐，本次想推荐的软件叫做<a href="https://dayoneapp.com/">Day One</a>，是迄今为止我觉得做的最专业的日记软件，没有之一。</p>
+<h3 id="Day-One"><a href="#Day-One" class="headerlink" title="Day One"></a>Day One</h3><h4 id="支持平台"><a href="#支持平台" class="headerlink" title="支持平台"></a>支持平台</h4><p>iOS，iPadOS，macOS，watchOS</p>
+<p>未完待续</p>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
+<li>总目录：<a href="https://www.yeslu.cn/archives/2ae541fb.html">https://www.yeslu.cn/archives/2ae541fb.html</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Software</category>
+      </categories>
+      <tags>
+        <tag>Recommend</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>双排键演奏 - Olympic Fanfare</title>
+    <url>/archives/b7422f24.html</url>
+    <content><![CDATA[<blockquote>
+<p>《奥林匹克号角》，是 John Williams 为1984年洛杉矶奥运会开幕式所作的一首管弦乐曲，后来经常被用在各种与奥运相关的场合，成为奥林匹克音乐史上最著名的作品之一，也是奥运会的音乐象征之一。</p>
+</blockquote>
+<span id="more"></span>
+
+<div class="bilibili">
+    <iframe src="//player.bilibili.com/player.html?aid=67805047&bvid=BV1NL4y1G79K&cid=117529968&page=1&high_quality=1&danmaku=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+</div>
+
+<p>看完冬奥会开幕式，突然想起来还有这首曲子，打算拿这首曲子来应个景，当然因为临近返校，时间比较赶，还是有不少出错的地方有待改正。在这里也祝北京2022年冬奥会圆满闭幕。</p>
+<hr>
+<p>曲名：Olympic Fanfare and Theme<br>作曲：John Williams<br>编曲：岩内佐織（Saori Iwauchi）<br>演奏：本人<br>作品选自：Electone Sound Inn 23 Orchestral Sound 2 (5-3)</p>
+<p>演奏琴：YAMAHA EL-900M<br>录音：YAMAHA AG06, Zoom H2n<br>录像：Sony A7R2 + Tamron 28-75mm F&#x2F;2.8, DJI Osmo Action</p>
+]]></content>
+      <categories>
+        <category>Music</category>
+      </categories>
+      <tags>
+        <tag>Electone</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>外刊精读：喜迎国庆，国民盛典</title>
+    <url>/archives/b3e1f1a7.html</url>
+    <content><![CDATA[<p>原标题：About 100,000 people to attend mass pageantry on National Day</p>
+<p>来源：<a href="https://www.shine.cn/news/nation/1909252725/">https://www.shine.cn/news/nation/1909252725/</a></p>
+<blockquote>
+<p>本文翻译中标有“「新华社」”的部分为新华网相关新闻中的官方解释，非本人翻译。</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="P1"><a href="#P1" class="headerlink" title="P1"></a>P1</h2><p>About 100,000 ordinary citizens will march in a mass pageantry on National Day, which falls on Oct. 1, said a senior official with the event’s organizer on Wednesday.</p>
+<p>周三，一位活动组织者的高级官员称，约 10 万普通市民将参加于 10 月 1 日进行的国庆盛典。</p>
+<h2 id="P2"><a href="#P2" class="headerlink" title="P2"></a>P2</h2><p>The parade will consist of 70 big <strong>floats</strong> in 36 <strong>formations</strong> and will march down the <strong>Chang’an Avenue</strong> in downtown Beijing from east to west, said Zhang Ge, an executive director of the mass pageantry’s organizing department, at a <strong>press conference</strong>.</p>
+<p>张革，庆祝大会服务保障和群众游行指挥部执行指挥「新华社」在新闻发布会上称，由 36 个编队 70 个大型花车组成的游行队伍将沿从位于北京市区的长安街由东向西行进。</p>
+<h3 id="float"><a href="#float" class="headerlink" title="float"></a>float</h3><ul>
+<li>（节日游行时的）彩车，花车（A float is a truck on which displays and people in special costumes are carried in a festival procession.）</li>
+<li>v. 漂，浮</li>
+</ul>
+<h3 id="formation"><a href="#formation" class="headerlink" title="formation"></a>formation</h3><ul>
+<li>n. 编队；列队</li>
+<li>n. 形成，构成</li>
+</ul>
+<h3 id="avenue"><a href="#avenue" class="headerlink" title="avenue"></a>avenue</h3><ul>
+<li>n. 林阴道，大街</li>
+<li>n. 途径，手段</li>
+</ul>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ol>
+<li>press conference — n. 记者招待会；新闻发布会</li>
+</ol>
+<h2 id="P3"><a href="#P3" class="headerlink" title="P3"></a>P3</h2><p>This year marks the 70th anniversary of the founding of the People’s Republic of China.</p>
+<p>今年是中华人民共和国成立 70 周年。</p>
+<h2 id="P4"><a href="#P4" class="headerlink" title="P4"></a>P4</h2><p>The mass parade will reconstruct the historical process from the PRC’s founding, the implementation of <strong>reform and opening-up</strong> and advancement of ** the cause of socialism with Chinese characteristics**, and to now as the cause of socialism with Chinese characteristics has entered a new era, Zhang said.</p>
+<p>群众游行将回顾中华人民共和国成立、推进改革开放和中国特色社会主义事业、中国特色社会主义事业进入新时代的历史进程「新华社」。</p>
+<h3 id="固定搭配"><a href="#固定搭配" class="headerlink" title="固定搭配"></a>固定搭配</h3><ol>
+<li>reform and opening-up — 改革开放</li>
+<li>the <strong>cause</strong> of socialism with Chinese characteristics — 中国特色社会主义事业【cause — n. 原因，事业，目标 v. 引起；导致】</li>
+</ol>
+<h2 id="P5"><a href="#P5" class="headerlink" title="P5"></a>P5</h2><p>The mass parade is designed to tell well the China story and express the confidence and trust the Chinese people have in the Party, he said.</p>
+<p>群众游行旨在讲好中国故事，表达中国人民对党的信心和信任。</p>
+<h2 id="P6"><a href="#P6" class="headerlink" title="P6"></a>P6</h2><p>Participants will be made up of people from <strong>all walks of life</strong>, including deliverymen and housewives, he added.</p>
+<p>参与者来自各行各业，包括快递员和家庭主妇。</p>
+<h3 id="固定搭配-1"><a href="#固定搭配-1" class="headerlink" title="固定搭配"></a>固定搭配</h3><ol>
+<li>all walks of life — 各界，各行各业</li>
+</ol>
+<blockquote>
+<p>One of the greatest pleasures of this job is meeting people from <strong>all walks of life</strong>. 这份工作最大的乐趣之一在于可以接触到各行各业的人。</p>
+</blockquote>
+<h2 id="P7"><a href="#P7" class="headerlink" title="P7"></a>P7</h2><p>Tian’anmen Square will be richly decorated to echo the festive atmosphere with 70 huge red lanterns hung along the roads on its east and west sides.</p>
+<p>天安门广场将华丽地装扮有 70 个大红灯笼，挂于其由东向西的道路两旁，以呼应节日气氛。</p>
+<h2 id="P8"><a href="#P8" class="headerlink" title="P8"></a>P8</h2><p>“On Oct. 1, 70,000 white doves and 70,000 colorful balloons will be released,” Zhang said.  </p>
+<p>届时，将放飞 7 万只白鸽和彩色气球。</p>
+]]></content>
+      <categories>
+        <category>Note</category>
+      </categories>
+      <tags>
+        <tag>English</tag>
+        <tag>News</tag>
       </tags>
   </entry>
   <entry>
@@ -2055,6 +2055,39 @@
       </tags>
   </entry>
   <entry>
+    <title>利用 GitHub API 获取最新 Releases 的版本号</title>
+    <url>/archives/3a47af3d.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文以 <a href="https://github.com/iina/iina">iina&#x2F;iina: The modern video player for macOS</a> 为例，展示利用 GitHub API 获取 Repo 中最新 Releases 的版本号。 </p>
+<span id="more"></span>
+
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -qO- -t1 -T2 <span class="string">&quot;https://api.github.com/repos/iina/iina/releases/latest&quot;</span> | grep <span class="string">&quot;tag_name&quot;</span> | <span class="built_in">head</span> -n 1 | awk -F <span class="string">&quot;:&quot;</span> <span class="string">&#x27;&#123;print $2&#125;&#x27;</span> | sed <span class="string">&#x27;s/\&quot;//g;s/,//g;s/ //g&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="代码解释"><a href="#代码解释" class="headerlink" title="代码解释"></a>代码解释</h2><h3 id="主字段"><a href="#主字段" class="headerlink" title="主字段"></a>主字段</h3><p><code>https://api.github.com/repos/iina/iina/releases/latest</code>这里用的是 GitHub 的官方 API，格式为<code>https://api.github.com/repos/&#123;项目名&#125;/releases/latest</code><br>打开上述链接后，可见包含下述字段的内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&quot;html_url&quot;: &quot;https://github.com/lhc70000/iina/releases/tag/v0.0.15.1&quot;,</span><br><span class="line">&quot;id&quot;: 10774475,</span><br><span class="line">&quot;node_id&quot;: &quot;MDc6UmVsZWFzZTEwNzc0NDc1&quot;,</span><br><span class="line">&quot;tag_name&quot;: &quot;v0.0.15.1&quot;,</span><br><span class="line">&quot;target_commitish&quot;: &quot;0.0.15.1&quot;,</span><br><span class="line">&quot;name&quot;: &quot;v0.0.15.1&quot;,</span><br></pre></td></tr></table></figure>
+
+<p>那么这里的<code>tag_name</code>就是我们所需要的东西啦</p>
+<h3 id="wget-参数"><a href="#wget-参数" class="headerlink" title="wget 参数"></a>wget 参数</h3><p><code>wget -qO- -t1 -T2</code>，在这里，我们使用了 4 个参数，分别是<code>q,O-,t1,T2</code></p>
+<ol>
+<li><code>-q</code>: q 就是 quiet 的意思了，没有该参数将会显示从请求到输出全过程的所有内容，这肯定不是我们想要的。</li>
+<li><code>-O-</code>: <code>-O</code>是指把文档写入文件中，而<code>-O-</code>是将内容写入标准输出，而不保存为文件。（注：这里是大写英文字母 O (Out)，不是数字 0）</li>
+<li><code>-t1,-T2</code>: 前者是设定最大尝试链接次数为 1 次，后者是设定响应超时的秒数为 2 秒，两者可以防止失败后反复获取，导致后续脚本无法执行。</li>
+</ol>
+<h3 id="筛选参数"><a href="#筛选参数" class="headerlink" title="筛选参数"></a>筛选参数</h3><ol>
+<li><code>grep &quot;tag_name&quot;</code>: grep 是 Linux 一个强大的文本搜索工具，在本代码中输出 tag_name 所在行，即输出<code>&quot;tag_name&quot;: &quot;v0.0.15.1&quot;,</code></li>
+<li><code>head -n 1</code>: <code>head -n</code>用于显示输出的行数，考虑到某些项目可能存在多个不同版本的 tag_name，这里我们只要第一个。</li>
+<li><code>awk -F &quot;:&quot; &#39;&#123;print $2&#125;&#39;</code>: awk 主要用于文本分析，在这里指定<code>:</code>为分隔符，将该行切分成多列，并输出第二列。于是我们得到了<code>(空格)&quot;v0.0.15.1&quot;,</code></li>
+<li><code>sed &#39;s/\&quot;//g;s/,//g;s/ //g&#39;</code>: 在这里 sed 用于数据查找替换，如<code>sed &#39;s/要被取代的字串/新的字串/g&#39;</code> ，因此本段命令可分为 3 个，以分号分隔。<code>s/\&quot;//g</code>即将引号删除（反斜杠是为了防止引号被转义），以此类推，最终留下我们需要的内容：<code>v0.0.15.1</code>。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Batch</category>
+      </categories>
+      <tags>
+        <tag>GitHub</tag>
+        <tag>API</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>获取 iOS 设备所链接 Wi-Fi 的具体信息</title>
     <url>/archives/dd75b10a.html</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>很多人像我一样，在测试 Wi-Fi 的时候需要知道我的设备链接到 Wi-Fi 的什么频段，什么信道，信号强度如何等等，但 iOS&#x2F;iPadOS 并不像 macOS 一样，对用户直接提供 Wi-Fi 的详细调试信息【<strong>macOS 可通过按住 option，鼠标点击 Wi-Fi 图标来获取</strong>】。因此，我们可以使用 Apple 面向开发者的调试文件来获得。</p>
@@ -2095,36 +2128,76 @@
       </tags>
   </entry>
   <entry>
-    <title>利用 GitHub API 获取最新 Releases 的版本号</title>
-    <url>/archives/3a47af3d.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文以 <a href="https://github.com/iina/iina">iina&#x2F;iina: The modern video player for macOS</a> 为例，展示利用 GitHub API 获取 Repo 中最新 Releases 的版本号。 </p>
+    <title>Jade 6.5 图文安装教程</title>
+    <url>/archives/403feac4.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Jade 是一种功能强大、全功能的粉末 XRD 图处理和分析软件，尤其注重定量分析和鉴定物相，可实现非常规少量物相的准确鉴定和定量分析。考虑到国内购买 Jade 的机构数量极其有限，本文将介绍 Jade 6.5 的安装方法，但不会提供安装程序。</p>
 <span id="more"></span>
 
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -qO- -t1 -T2 <span class="string">&quot;https://api.github.com/repos/iina/iina/releases/latest&quot;</span> | grep <span class="string">&quot;tag_name&quot;</span> | <span class="built_in">head</span> -n 1 | awk -F <span class="string">&quot;:&quot;</span> <span class="string">&#x27;&#123;print $2&#125;&#x27;</span> | sed <span class="string">&#x27;s/\&quot;//g;s/,//g;s/ //g&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="代码解释"><a href="#代码解释" class="headerlink" title="代码解释"></a>代码解释</h2><h3 id="主字段"><a href="#主字段" class="headerlink" title="主字段"></a>主字段</h3><p><code>https://api.github.com/repos/iina/iina/releases/latest</code>这里用的是 GitHub 的官方 API，格式为<code>https://api.github.com/repos/&#123;项目名&#125;/releases/latest</code><br>打开上述链接后，可见包含下述字段的内容：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&quot;html_url&quot;: &quot;https://github.com/lhc70000/iina/releases/tag/v0.0.15.1&quot;,</span><br><span class="line">&quot;id&quot;: 10774475,</span><br><span class="line">&quot;node_id&quot;: &quot;MDc6UmVsZWFzZTEwNzc0NDc1&quot;,</span><br><span class="line">&quot;tag_name&quot;: &quot;v0.0.15.1&quot;,</span><br><span class="line">&quot;target_commitish&quot;: &quot;0.0.15.1&quot;,</span><br><span class="line">&quot;name&quot;: &quot;v0.0.15.1&quot;,</span><br></pre></td></tr></table></figure>
-
-<p>那么这里的<code>tag_name</code>就是我们所需要的东西啦</p>
-<h3 id="wget-参数"><a href="#wget-参数" class="headerlink" title="wget 参数"></a>wget 参数</h3><p><code>wget -qO- -t1 -T2</code>，在这里，我们使用了 4 个参数，分别是<code>q,O-,t1,T2</code></p>
+<h2 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h2><ol>
+<li>你下载下来并解压的文件，以下称为”安装包”。</li>
+<li>安装时让你选择的路径，以下称为”安装目录”。</li>
+</ol>
+<h2 id="账户名查看"><a href="#账户名查看" class="headerlink" title="账户名查看"></a>账户名查看</h2><p>打开任务管理器，找到”用户”，这就是你的账户名（务必注意大小写和特殊符号），本步骤下面会用到。<br><img src="https://img.yeslu.cn/blog/early/15121411501122.jpg!blog_watermark"></p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol>
+<li>关闭所有安全软件以防在修改注册表时被拒绝。</li>
+<li>确保目前登陆账户不是 Administrator（上面说了怎么查看账户名）。</li>
+<li>将安装文件拷贝至不含<strong>任何中文及特殊符号</strong>的目录中。</li>
+<li><strong>下载后务必将安装包解压！</strong></li>
+</ol>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ol>
+<li>选择安装路径，点击安装，直至安装完成。安装结束后，窗口会自动关闭。<br><img src="https://img.yeslu.cn/blog/early/15121359925268.jpg!blog_watermark"></li>
+</ol>
+<h2 id="控件注册"><a href="#控件注册" class="headerlink" title="控件注册"></a>控件注册</h2><blockquote>
+<p>安装结束后，软件是无法正常运行的，此时我们要注册对象链接和嵌入用户控件（OCX）。</p>
+</blockquote>
 <ol>
-<li><code>-q</code>: q 就是 quiet 的意思了，没有该参数将会显示从请求到输出全过程的所有内容，这肯定不是我们想要的。</li>
-<li><code>-O-</code>: <code>-O</code>是指把文档写入文件中，而<code>-O-</code>是将内容写入标准输出，而不保存为文件。（注：这里是大写英文字母 O (Out)，不是数字 0）</li>
-<li><code>-t1,-T2</code>: 前者是设定最大尝试链接次数为 1 次，后者是设定响应超时的秒数为 2 秒，两者可以防止失败后反复获取，导致后续脚本无法执行。</li>
+<li><p>在安装包中找到”ocx”文件夹，编辑”注册 ocx.bat”；<br><img src="https://img.yeslu.cn/blog/early/15121367159312.jpg!blog_watermark"></p>
+</li>
+<li><p>将第一行修改为安装盘符（安装路径前 2 个字符，如 C:），第二行修改为”cd 安装路径”，如图所示，然后保存；<br><img src="https://img.yeslu.cn/blog/early/15121368895189.jpg!blog_watermark"></p>
+</li>
+<li><p>管理员模式运行”注册 ocx.bat”，接着会提示多个”xxxx 已成功”，全部点击确定直到窗口关闭；<br><img src="https://img.yeslu.cn/blog/early/15121369776732.jpg!blog_watermark"></p>
+</li>
 </ol>
-<h3 id="筛选参数"><a href="#筛选参数" class="headerlink" title="筛选参数"></a>筛选参数</h3><ol>
-<li><code>grep &quot;tag_name&quot;</code>: grep 是 Linux 一个强大的文本搜索工具，在本代码中输出 tag_name 所在行，即输出<code>&quot;tag_name&quot;: &quot;v0.0.15.1&quot;,</code></li>
-<li><code>head -n 1</code>: <code>head -n</code>用于显示输出的行数，考虑到某些项目可能存在多个不同版本的 tag_name，这里我们只要第一个。</li>
-<li><code>awk -F &quot;:&quot; &#39;&#123;print $2&#125;&#39;</code>: awk 主要用于文本分析，在这里指定<code>:</code>为分隔符，将该行切分成多列，并输出第二列。于是我们得到了<code>(空格)&quot;v0.0.15.1&quot;,</code></li>
-<li><code>sed &#39;s/\&quot;//g;s/,//g;s/ //g&#39;</code>: 在这里 sed 用于数据查找替换，如<code>sed &#39;s/要被取代的字串/新的字串/g&#39;</code> ，因此本段命令可分为 3 个，以分号分隔。<code>s/\&quot;//g</code>即将引号删除（反斜杠是为了防止引号被转义），以此类推，最终留下我们需要的内容：<code>v0.0.15.1</code>。</li>
+<h3 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h3><p>在进行以上步骤时，如果 <code>grid32.ocx</code> 和 <code>MSCOMCTL.OCX</code> 安装报错，请将安装包中所有的 <code>.ocx</code> 文件拷贝至 <code>C:\Windows\SysWOW64（假设系统盘是 C 盘）</code>后，重做第二、三步。此时，将第一行修改为安装盘符 <code>C:</code>，第二行修改为 <code>cd C:\Windows\SysWOW64</code>，然后保存，接着以管理员模式运行。</p>
+<h2 id="添加注册表"><a href="#添加注册表" class="headerlink" title="添加注册表"></a>添加注册表</h2><blockquote>
+<p>本步骤务必注意大小写。</p>
+</blockquote>
+<ol>
+<li>使用”win+R”组合键打开”运行”，键入以下命令，打开注册表编辑器；</li>
 </ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">%</span><span class="language-bash">systemroot%/regedit <span class="comment"># (32-bit OS)</span></span></span><br><span class="line"><span class="meta prompt_">%</span><span class="language-bash">systemroot%/syswow64/regedit <span class="comment"># (64-bit OS)</span></span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><p>展开”HKEY_LOCAL_MACHINE”，展开”SOFTWARE”，右键”SOFTWARE”，选择”添加项”，命名为”MDI”；<br><img src="https://img.yeslu.cn/blog/early/15121381401160.jpg!blog_watermark"></p>
+</li>
+<li><p>在”MDI”下新建一个新项，名为”license”；<br><img src="https://img.yeslu.cn/blog/early/15121382062726.jpg!blog_watermark"></p>
+</li>
+<li><p>在”license”左侧新建一个”字符串值”，命名为”Owner”；</p>
+</li>
+<li><p>修改”Owner”的值为你的用户名。<br><img src="https://img.yeslu.cn/blog/early/15121383163559.jpg!blog_watermark"><br><img src="https://img.yeslu.cn/blog/early/15121384083615.jpg!blog_watermark"></p>
+</li>
+</ol>
+<h2 id="配置-PDF-卡片"><a href="#配置-PDF-卡片" class="headerlink" title="配置 PDF 卡片"></a>配置 PDF 卡片</h2><ol>
+<li><p>随便打开一个示例文件（打开你自己的也行），点击上方”pdf”，选择”setup”；</p>
+</li>
+<li><p>点击如图所示按钮，在安装包中找到”pdf2.dat”文件，这个文件在安装包的”jade65&#x2F;PDF22004”中；<br><img src="https://img.yeslu.cn/blog/early/15121393867949.jpg!blog_watermark"></p>
+</li>
+<li><p>选定后，点击”select all”，然后”create”；<br><img src="https://img.yeslu.cn/blog/early/15121396295982.jpg!blog_watermark"></p>
+</li>
+<li><p>由于本步骤时间很长，开始时会提示是否在完成后关机&#x2F;注销，选择否；</p>
+</li>
+<li><p>全部完成后，将提示（已知部分系统在载入 pdf 卡片时出现 Run-time error ‘75’的报错，原因是没有管理员权限，无法写入相关数据。解决方法是，以管理员模式启动 Jade（以后不再需要，此问题多发于 win7 以上系统）；<br><img src="https://img.yeslu.cn/blog/early/15121406359428.jpg!blog_watermark"></p>
+</li>
+<li><p>如果可以正常查找，则安装成功。<br><img src="https://img.yeslu.cn/blog/early/15121410448613.jpg!blog_watermark"></p>
+</li>
+</ol>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><p>虚拟机：Parallels Desktop 13<br>操作系统环境：基于 MSDN 的 win10 专业版（1703）</p>
 ]]></content>
       <categories>
-        <category>Batch</category>
+        <category>Science</category>
       </categories>
       <tags>
-        <tag>GitHub</tag>
-        <tag>API</tag>
+        <tag>Jade</tag>
       </tags>
   </entry>
   <entry>
@@ -4877,79 +4950,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Jade 6.5 图文安装教程</title>
-    <url>/archives/403feac4.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Jade 是一种功能强大、全功能的粉末 XRD 图处理和分析软件，尤其注重定量分析和鉴定物相，可实现非常规少量物相的准确鉴定和定量分析。考虑到国内购买 Jade 的机构数量极其有限，本文将介绍 Jade 6.5 的安装方法，但不会提供安装程序。</p>
-<span id="more"></span>
-
-<h2 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h2><ol>
-<li>你下载下来并解压的文件，以下称为”安装包”。</li>
-<li>安装时让你选择的路径，以下称为”安装目录”。</li>
-</ol>
-<h2 id="账户名查看"><a href="#账户名查看" class="headerlink" title="账户名查看"></a>账户名查看</h2><p>打开任务管理器，找到”用户”，这就是你的账户名（务必注意大小写和特殊符号），本步骤下面会用到。<br><img src="https://img.yeslu.cn/blog/early/15121411501122.jpg!blog_watermark"></p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol>
-<li>关闭所有安全软件以防在修改注册表时被拒绝。</li>
-<li>确保目前登陆账户不是 Administrator（上面说了怎么查看账户名）。</li>
-<li>将安装文件拷贝至不含<strong>任何中文及特殊符号</strong>的目录中。</li>
-<li><strong>下载后务必将安装包解压！</strong></li>
-</ol>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ol>
-<li>选择安装路径，点击安装，直至安装完成。安装结束后，窗口会自动关闭。<br><img src="https://img.yeslu.cn/blog/early/15121359925268.jpg!blog_watermark"></li>
-</ol>
-<h2 id="控件注册"><a href="#控件注册" class="headerlink" title="控件注册"></a>控件注册</h2><blockquote>
-<p>安装结束后，软件是无法正常运行的，此时我们要注册对象链接和嵌入用户控件（OCX）。</p>
-</blockquote>
-<ol>
-<li><p>在安装包中找到”ocx”文件夹，编辑”注册 ocx.bat”；<br><img src="https://img.yeslu.cn/blog/early/15121367159312.jpg!blog_watermark"></p>
-</li>
-<li><p>将第一行修改为安装盘符（安装路径前 2 个字符，如 C:），第二行修改为”cd 安装路径”，如图所示，然后保存；<br><img src="https://img.yeslu.cn/blog/early/15121368895189.jpg!blog_watermark"></p>
-</li>
-<li><p>管理员模式运行”注册 ocx.bat”，接着会提示多个”xxxx 已成功”，全部点击确定直到窗口关闭；<br><img src="https://img.yeslu.cn/blog/early/15121369776732.jpg!blog_watermark"></p>
-</li>
-</ol>
-<h3 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h3><p>在进行以上步骤时，如果 <code>grid32.ocx</code> 和 <code>MSCOMCTL.OCX</code> 安装报错，请将安装包中所有的 <code>.ocx</code> 文件拷贝至 <code>C:\Windows\SysWOW64（假设系统盘是 C 盘）</code>后，重做第二、三步。此时，将第一行修改为安装盘符 <code>C:</code>，第二行修改为 <code>cd C:\Windows\SysWOW64</code>，然后保存，接着以管理员模式运行。</p>
-<h2 id="添加注册表"><a href="#添加注册表" class="headerlink" title="添加注册表"></a>添加注册表</h2><blockquote>
-<p>本步骤务必注意大小写。</p>
-</blockquote>
-<ol>
-<li>使用”win+R”组合键打开”运行”，键入以下命令，打开注册表编辑器；</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">%</span><span class="language-bash">systemroot%/regedit <span class="comment"># (32-bit OS)</span></span></span><br><span class="line"><span class="meta prompt_">%</span><span class="language-bash">systemroot%/syswow64/regedit <span class="comment"># (64-bit OS)</span></span></span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li><p>展开”HKEY_LOCAL_MACHINE”，展开”SOFTWARE”，右键”SOFTWARE”，选择”添加项”，命名为”MDI”；<br><img src="https://img.yeslu.cn/blog/early/15121381401160.jpg!blog_watermark"></p>
-</li>
-<li><p>在”MDI”下新建一个新项，名为”license”；<br><img src="https://img.yeslu.cn/blog/early/15121382062726.jpg!blog_watermark"></p>
-</li>
-<li><p>在”license”左侧新建一个”字符串值”，命名为”Owner”；</p>
-</li>
-<li><p>修改”Owner”的值为你的用户名。<br><img src="https://img.yeslu.cn/blog/early/15121383163559.jpg!blog_watermark"><br><img src="https://img.yeslu.cn/blog/early/15121384083615.jpg!blog_watermark"></p>
-</li>
-</ol>
-<h2 id="配置-PDF-卡片"><a href="#配置-PDF-卡片" class="headerlink" title="配置 PDF 卡片"></a>配置 PDF 卡片</h2><ol>
-<li><p>随便打开一个示例文件（打开你自己的也行），点击上方”pdf”，选择”setup”；</p>
-</li>
-<li><p>点击如图所示按钮，在安装包中找到”pdf2.dat”文件，这个文件在安装包的”jade65&#x2F;PDF22004”中；<br><img src="https://img.yeslu.cn/blog/early/15121393867949.jpg!blog_watermark"></p>
-</li>
-<li><p>选定后，点击”select all”，然后”create”；<br><img src="https://img.yeslu.cn/blog/early/15121396295982.jpg!blog_watermark"></p>
-</li>
-<li><p>由于本步骤时间很长，开始时会提示是否在完成后关机&#x2F;注销，选择否；</p>
-</li>
-<li><p>全部完成后，将提示（已知部分系统在载入 pdf 卡片时出现 Run-time error ‘75’的报错，原因是没有管理员权限，无法写入相关数据。解决方法是，以管理员模式启动 Jade（以后不再需要，此问题多发于 win7 以上系统）；<br><img src="https://img.yeslu.cn/blog/early/15121406359428.jpg!blog_watermark"></p>
-</li>
-<li><p>如果可以正常查找，则安装成功。<br><img src="https://img.yeslu.cn/blog/early/15121410448613.jpg!blog_watermark"></p>
-</li>
-</ol>
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><p>虚拟机：Parallels Desktop 13<br>操作系统环境：基于 MSDN 的 win10 专业版（1703）</p>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Jade</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>存储设备性能对比测试</title>
     <url>/archives/fe0135af.html</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>由于经常使用各类摄影设备，同时在数据存储方面也有一定的需求，本人经常会购买一些存储设备，如 SD、TF、U盘、硬盘等，而市面上存储设备（尤其是SD卡）的读写性能对比相对较少。本文将对自购的存储设备进行性能测试，给想要购买相关硬件的用户提供参考。</p>
@@ -5658,22 +5658,53 @@
       </categories>
   </entry>
   <entry>
-    <title>部署我的 Quicker-OCR 插件</title>
-    <url>/archives/bf56ccf3.html</url>
-    <content><![CDATA[<h2 id="动作"><a href="#动作" class="headerlink" title="动作"></a>动作</h2><ul>
-<li><a href="https://getquicker.net/Sharedaction?code=f73ca43a-98c6-475d-a3cc-08d7c216a695">https://getquicker.net/Sharedaction?code=f73ca43a-98c6-475d-a3cc-08d7c216a695</a></li>
+    <title>Nginx 反向代理 Sci-Hub</title>
+    <url>/archives/1005f72b.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><ul>
+<li>Sci-Hub 是科研民工重要的学术工具，但是 Sci-Hub 特殊的情况导致其服务器的网络并不是很好，为了解决此问题，自建镜像站点以优化 Sci-Hub 的访问是十分有意义的；</li>
+<li>本教程基于 Ubuntu 18.04.6 LTS 制作，在阅读本教程前，<strong>希望您已具备 Linux 和 Nginx 相关知识</strong>。<span id="more"></span></li>
 </ul>
-<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><ul>
-<li><a href="https://github.com/Chandler-Lu/alfred-ocr">Chandler-Lu&#x2F;alfred-ocr</a></li>
-</ul>
+<h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><ol>
+<li><a href="http://nginx.org/en/download.html">Nginx</a></li>
+<li><a href="https://www.pcre.org/">PCRE library</a>: 本例中请使用 PCRE v1</li>
+<li><a href="https://zlib.net/">zlib</a></li>
+<li><a href="https://www.openssl.org/source/">OpenSSL</a></li>
+</ol>
+<h2 id="模块解析"><a href="#模块解析" class="headerlink" title="模块解析"></a>模块解析</h2><ol>
+<li>ngx_http_sub_module: 用于进行关键字替换；</li>
+<li>ngx_http_gunzip_module: 用于解决 gzip 后无法进行关键字替换的问题。</li>
+</ol>
+<h2 id="Nginx-编译"><a href="#Nginx-编译" class="headerlink" title="Nginx 编译"></a>Nginx 编译</h2><h3 id="基础依赖"><a href="#基础依赖" class="headerlink" title="基础依赖"></a>基础依赖</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">apt-get install build-essential</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">其他的缺什么补什么</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="所需依赖"><a href="#所需依赖" class="headerlink" title="所需依赖"></a>所需依赖</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash"><span class="built_in">ls</span> /usr/local/src</span></span><br><span class="line"></span><br><span class="line">nginx-1.20.2  openssl-3.0.1  pcre-8.45  zlib-1.2.11</span><br></pre></td></tr></table></figure>
+
+<h3 id="开始编译"><a href="#开始编译" class="headerlink" title="开始编译"></a>开始编译</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash"><span class="built_in">cd</span> nginx-1.20.2</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">./configure \</span></span><br><span class="line"><span class="language-bash">    --sbin-path=/usr/local/nginx/nginx \</span></span><br><span class="line"><span class="language-bash">    --conf-path=/usr/local/nginx/nginx.conf \</span></span><br><span class="line"><span class="language-bash">    --pid-path=/usr/local/nginx/nginx.pid \</span></span><br><span class="line"><span class="language-bash">    --with-http_ssl_module \</span></span><br><span class="line"><span class="language-bash">    --with-http_gzip_static_module \</span></span><br><span class="line"><span class="language-bash">    --with-http_v2_module \</span></span><br><span class="line"><span class="language-bash">    --with-http_sub_module\</span></span><br><span class="line"><span class="language-bash">    --with-http_gunzip_module\</span></span><br><span class="line"><span class="language-bash">    --with-pcre=../pcre-8.45 \</span></span><br><span class="line"><span class="language-bash">    --with-zlib=../zlib-1.2.11 \</span></span><br><span class="line"><span class="language-bash">    --with-openssl=../openssl-3.0.1</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">make install</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="编译检查"><a href="#编译检查" class="headerlink" title="编译检查"></a>编译检查</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">/usr/local/nginx/nginx -V</span></span><br><span class="line"></span><br><span class="line">nginx version: nginx/1.20.2</span><br><span class="line">built by gcc 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) </span><br><span class="line">built with OpenSSL 3.0.1 14 Dec 2021</span><br><span class="line">TLS SNI support enabled</span><br><span class="line">configure arguments: --sbin-path=/usr/local/nginx/nginx --conf-path=/usr/local/nginx/nginx.conf --pid-path=/usr/local/nginx/nginx.pid --with-http_ssl_module --with-http_gzip_static_module --with-http_v2_module --with-http_sub_module --with-http_gunzip_module --with-pcre=../pcre-8.45 --with-zlib=../zlib-1.2.11 --with-openssl=../openssl-3.0.1</span><br></pre></td></tr></table></figure>
+
+<h3 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash"><span class="built_in">ln</span> -s /usr/local/nginx/nginx /usr/local/bin</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">nginx -v</span></span><br><span class="line"></span><br><span class="line">nginx version: nginx/1.20.2</span><br></pre></td></tr></table></figure>
+
+<h3 id="开机自启"><a href="#开机自启" class="headerlink" title="开机自启"></a>开机自启</h3><blockquote>
+<p>参考：<a href="https://www.nginx.com/resources/wiki/start/topics/examples/systemd/">https://www.nginx.com/resources/wiki/start/topics/examples/systemd/</a></p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=The NGINX HTTP and reverse proxy server</span><br><span class="line">After=syslog.target network-online.target remote-fs.target nss-lookup.target</span><br><span class="line">Wants=network-online.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type=forking</span><br><span class="line">PIDFile=/usr/local/nginx/nginx/nginx.pid</span><br><span class="line">ExecStartPre=/usr/local/nginx/nginx -t</span><br><span class="line">ExecStart=/usr/local/nginx/nginx</span><br><span class="line">ExecReload=/usr/local/nginx/nginx -s reload</span><br><span class="line">ExecStop=/bin/kill -s QUIT $MAINPID</span><br><span class="line">PrivateTmp=true</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
+
+<h2 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a>反向代理</h2><figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="section">server</span> &#123;</span><br><span class="line">  <span class="attribute">resolver</span> <span class="number">8.8.8.8</span>;</span><br><span class="line">  <span class="section">location</span> / &#123;</span><br><span class="line">    <span class="attribute">proxy_pass</span> https://sci-hub.se;</span><br><span class="line">    <span class="attribute">proxy_set_header</span> Host sci-hub.se;</span><br><span class="line">    <span class="attribute">proxy_set_header</span> X-Forwarded-Proto <span class="string">&quot;&quot;</span>;</span><br><span class="line">    <span class="attribute">proxy_set_header</span> X-Forwarded-Host <span class="variable">$host</span>;</span><br><span class="line">    <span class="attribute">proxy_set_header</span> X-Forwarded-For <span class="variable">$remote_addr</span>;</span><br><span class="line">    <span class="attribute">proxy_pass_request_headers</span> <span class="literal">on</span>;</span><br><span class="line">    <span class="attribute">proxy_ssl_name</span> sci-hub.se;</span><br><span class="line">    <span class="attribute">proxy_ssl_server_name</span> <span class="literal">on</span>;</span><br><span class="line">    <span class="attribute">gunzip</span> <span class="literal">on</span>;</span><br><span class="line">    <span class="attribute">gzip_disable</span> <span class="string">&quot;.&quot;</span>;</span><br><span class="line">    <span class="attribute">sub_filter</span> <span class="string">&#x27;sci-hub.se&#x27;</span> <span class="string">&#x27;sci.example.com&#x27;</span>;</span><br><span class="line">    <span class="attribute">sub_filter_once</span> <span class="literal">off</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>本代码参考自 <a href="https://gist.github.com/iczero/7cd7c90e9785449eeff7251be1ab3958">Sci-Hub nginx reverse proxy setup</a>，但该代码只是反代了主界面，而数据量最大的资源文件依然从原始站点获取，实际上并不能起到效果。</p>
+<p>我这里加入了 <code>sub_filter</code> ，将全页面的所有原始站点链接全部替换为 <code>sci.example.com</code>，以达到良好的效果。需要注意的是，<code>sub_filter</code> 无法修改 gzip 后的页面，所以本例中使用 <code>gunzip</code> 和 <code>gzip_disable</code> 来处理。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">gunzip on;</span><br><span class="line">gzip_disable &quot;.&quot;;</span><br><span class="line">sub_filter &#x27;sci-hub.se&#x27; &#x27;sci.example.com&#x27;;</span><br><span class="line">sub_filter_once off;</span><br></pre></td></tr></table></figure>
+
+<h2 id="追加模块"><a href="#追加模块" class="headerlink" title="追加模块"></a>追加模块</h2><p>Nginx 编译完成后，如果需要更新程序或者追加编译模块，只需要在原编译命令的基础上，增加你想要的模块，采用 <code>make</code> 而不是 <code>make install</code> 来编译即可。编译后的文件为 <code>objs/nginx</code>，将其替换原先的文件就可以啦。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">./configure \</span></span><br><span class="line"><span class="language-bash">    --sbin-path=/usr/local/nginx/nginx \</span></span><br><span class="line"><span class="language-bash">    --conf-path=/usr/local/nginx/nginx.conf \</span></span><br><span class="line"><span class="language-bash">    --pid-path=/usr/local/nginx/nginx.pid \</span></span><br><span class="line"><span class="language-bash">    --with-http_ssl_module \</span></span><br><span class="line"><span class="language-bash">    --... \</span></span><br><span class="line"><span class="language-bash">    -- &lt;modules you want to add&gt;</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">make</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash"><span class="built_in">cp</span> -f objs/nginx /usr/local/nginx/nginx</span></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>Utilize</category>
+        <category>Develop</category>
       </categories>
       <tags>
-        <tag>OCR</tag>
-        <tag>Quicker</tag>
-        <tag>Extension</tag>
+        <tag>Nginx</tag>
       </tags>
   </entry>
   <entry>
@@ -5744,103 +5775,27 @@
       </categories>
       <tags>
         <tag>OCR</tag>
-        <tag>Extension</tag>
         <tag>Alfred</tag>
+        <tag>Extension</tag>
       </tags>
   </entry>
   <entry>
-    <title>Nginx 反向代理 Sci-Hub</title>
-    <url>/archives/1005f72b.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><ul>
-<li>Sci-Hub 是科研民工重要的学术工具，但是 Sci-Hub 特殊的情况导致其服务器的网络并不是很好，为了解决此问题，自建镜像站点以优化 Sci-Hub 的访问是十分有意义的；</li>
-<li>本教程基于 Ubuntu 18.04.6 LTS 制作，在阅读本教程前，<strong>希望您已具备 Linux 和 Nginx 相关知识</strong>。<span id="more"></span></li>
+    <title>部署我的 Quicker-OCR 插件</title>
+    <url>/archives/bf56ccf3.html</url>
+    <content><![CDATA[<h2 id="动作"><a href="#动作" class="headerlink" title="动作"></a>动作</h2><ul>
+<li><a href="https://getquicker.net/Sharedaction?code=f73ca43a-98c6-475d-a3cc-08d7c216a695">https://getquicker.net/Sharedaction?code=f73ca43a-98c6-475d-a3cc-08d7c216a695</a></li>
 </ul>
-<h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><ol>
-<li><a href="http://nginx.org/en/download.html">Nginx</a></li>
-<li><a href="https://www.pcre.org/">PCRE library</a>: 本例中请使用 PCRE v1</li>
-<li><a href="https://zlib.net/">zlib</a></li>
-<li><a href="https://www.openssl.org/source/">OpenSSL</a></li>
-</ol>
-<h2 id="模块解析"><a href="#模块解析" class="headerlink" title="模块解析"></a>模块解析</h2><ol>
-<li>ngx_http_sub_module: 用于进行关键字替换；</li>
-<li>ngx_http_gunzip_module: 用于解决 gzip 后无法进行关键字替换的问题。</li>
-</ol>
-<h2 id="Nginx-编译"><a href="#Nginx-编译" class="headerlink" title="Nginx 编译"></a>Nginx 编译</h2><h3 id="基础依赖"><a href="#基础依赖" class="headerlink" title="基础依赖"></a>基础依赖</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">apt-get install build-essential</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">其他的缺什么补什么</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="所需依赖"><a href="#所需依赖" class="headerlink" title="所需依赖"></a>所需依赖</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash"><span class="built_in">ls</span> /usr/local/src</span></span><br><span class="line"></span><br><span class="line">nginx-1.20.2  openssl-3.0.1  pcre-8.45  zlib-1.2.11</span><br></pre></td></tr></table></figure>
-
-<h3 id="开始编译"><a href="#开始编译" class="headerlink" title="开始编译"></a>开始编译</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash"><span class="built_in">cd</span> nginx-1.20.2</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">./configure \</span></span><br><span class="line"><span class="language-bash">    --sbin-path=/usr/local/nginx/nginx \</span></span><br><span class="line"><span class="language-bash">    --conf-path=/usr/local/nginx/nginx.conf \</span></span><br><span class="line"><span class="language-bash">    --pid-path=/usr/local/nginx/nginx.pid \</span></span><br><span class="line"><span class="language-bash">    --with-http_ssl_module \</span></span><br><span class="line"><span class="language-bash">    --with-http_gzip_static_module \</span></span><br><span class="line"><span class="language-bash">    --with-http_v2_module \</span></span><br><span class="line"><span class="language-bash">    --with-http_sub_module\</span></span><br><span class="line"><span class="language-bash">    --with-http_gunzip_module\</span></span><br><span class="line"><span class="language-bash">    --with-pcre=../pcre-8.45 \</span></span><br><span class="line"><span class="language-bash">    --with-zlib=../zlib-1.2.11 \</span></span><br><span class="line"><span class="language-bash">    --with-openssl=../openssl-3.0.1</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">make install</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="编译检查"><a href="#编译检查" class="headerlink" title="编译检查"></a>编译检查</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">/usr/local/nginx/nginx -V</span></span><br><span class="line"></span><br><span class="line">nginx version: nginx/1.20.2</span><br><span class="line">built by gcc 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) </span><br><span class="line">built with OpenSSL 3.0.1 14 Dec 2021</span><br><span class="line">TLS SNI support enabled</span><br><span class="line">configure arguments: --sbin-path=/usr/local/nginx/nginx --conf-path=/usr/local/nginx/nginx.conf --pid-path=/usr/local/nginx/nginx.pid --with-http_ssl_module --with-http_gzip_static_module --with-http_v2_module --with-http_sub_module --with-http_gunzip_module --with-pcre=../pcre-8.45 --with-zlib=../zlib-1.2.11 --with-openssl=../openssl-3.0.1</span><br></pre></td></tr></table></figure>
-
-<h3 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash"><span class="built_in">ln</span> -s /usr/local/nginx/nginx /usr/local/bin</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">nginx -v</span></span><br><span class="line"></span><br><span class="line">nginx version: nginx/1.20.2</span><br></pre></td></tr></table></figure>
-
-<h3 id="开机自启"><a href="#开机自启" class="headerlink" title="开机自启"></a>开机自启</h3><blockquote>
-<p>参考：<a href="https://www.nginx.com/resources/wiki/start/topics/examples/systemd/">https://www.nginx.com/resources/wiki/start/topics/examples/systemd/</a></p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=The NGINX HTTP and reverse proxy server</span><br><span class="line">After=syslog.target network-online.target remote-fs.target nss-lookup.target</span><br><span class="line">Wants=network-online.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type=forking</span><br><span class="line">PIDFile=/usr/local/nginx/nginx/nginx.pid</span><br><span class="line">ExecStartPre=/usr/local/nginx/nginx -t</span><br><span class="line">ExecStart=/usr/local/nginx/nginx</span><br><span class="line">ExecReload=/usr/local/nginx/nginx -s reload</span><br><span class="line">ExecStop=/bin/kill -s QUIT $MAINPID</span><br><span class="line">PrivateTmp=true</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
-
-<h2 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a>反向代理</h2><figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="section">server</span> &#123;</span><br><span class="line">  <span class="attribute">resolver</span> <span class="number">8.8.8.8</span>;</span><br><span class="line">  <span class="section">location</span> / &#123;</span><br><span class="line">    <span class="attribute">proxy_pass</span> https://sci-hub.se;</span><br><span class="line">    <span class="attribute">proxy_set_header</span> Host sci-hub.se;</span><br><span class="line">    <span class="attribute">proxy_set_header</span> X-Forwarded-Proto <span class="string">&quot;&quot;</span>;</span><br><span class="line">    <span class="attribute">proxy_set_header</span> X-Forwarded-Host <span class="variable">$host</span>;</span><br><span class="line">    <span class="attribute">proxy_set_header</span> X-Forwarded-For <span class="variable">$remote_addr</span>;</span><br><span class="line">    <span class="attribute">proxy_pass_request_headers</span> <span class="literal">on</span>;</span><br><span class="line">    <span class="attribute">proxy_ssl_name</span> sci-hub.se;</span><br><span class="line">    <span class="attribute">proxy_ssl_server_name</span> <span class="literal">on</span>;</span><br><span class="line">    <span class="attribute">gunzip</span> <span class="literal">on</span>;</span><br><span class="line">    <span class="attribute">gzip_disable</span> <span class="string">&quot;.&quot;</span>;</span><br><span class="line">    <span class="attribute">sub_filter</span> <span class="string">&#x27;sci-hub.se&#x27;</span> <span class="string">&#x27;sci.example.com&#x27;</span>;</span><br><span class="line">    <span class="attribute">sub_filter_once</span> <span class="literal">off</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>本代码参考自 <a href="https://gist.github.com/iczero/7cd7c90e9785449eeff7251be1ab3958">Sci-Hub nginx reverse proxy setup</a>，但该代码只是反代了主界面，而数据量最大的资源文件依然从原始站点获取，实际上并不能起到效果。</p>
-<p>我这里加入了 <code>sub_filter</code> ，将全页面的所有原始站点链接全部替换为 <code>sci.example.com</code>，以达到良好的效果。需要注意的是，<code>sub_filter</code> 无法修改 gzip 后的页面，所以本例中使用 <code>gunzip</code> 和 <code>gzip_disable</code> 来处理。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">gunzip on;</span><br><span class="line">gzip_disable &quot;.&quot;;</span><br><span class="line">sub_filter &#x27;sci-hub.se&#x27; &#x27;sci.example.com&#x27;;</span><br><span class="line">sub_filter_once off;</span><br></pre></td></tr></table></figure>
-
-<h2 id="追加模块"><a href="#追加模块" class="headerlink" title="追加模块"></a>追加模块</h2><p>Nginx 编译完成后，如果需要更新程序或者追加编译模块，只需要在原编译命令的基础上，增加你想要的模块，采用 <code>make</code> 而不是 <code>make install</code> 来编译即可。编译后的文件为 <code>objs/nginx</code>，将其替换原先的文件就可以啦。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">./configure \</span></span><br><span class="line"><span class="language-bash">    --sbin-path=/usr/local/nginx/nginx \</span></span><br><span class="line"><span class="language-bash">    --conf-path=/usr/local/nginx/nginx.conf \</span></span><br><span class="line"><span class="language-bash">    --pid-path=/usr/local/nginx/nginx.pid \</span></span><br><span class="line"><span class="language-bash">    --with-http_ssl_module \</span></span><br><span class="line"><span class="language-bash">    --... \</span></span><br><span class="line"><span class="language-bash">    -- &lt;modules you want to add&gt;</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">make</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash"><span class="built_in">cp</span> -f objs/nginx /usr/local/nginx/nginx</span></span><br></pre></td></tr></table></figure>
+<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><ul>
+<li><a href="https://github.com/Chandler-Lu/alfred-ocr">Chandler-Lu&#x2F;alfred-ocr</a></li>
+</ul>
 ]]></content>
       <categories>
-        <category>Develop</category>
+        <category>Utilize</category>
       </categories>
       <tags>
-        <tag>Nginx</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Origin 绘制 3D 图时无法正常显示图例</title>
-    <url>/archives/863b7bad.html</url>
-    <content><![CDATA[<h2 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h2><p>Origin 部分版本在绘制图形时，图例等部分会出现如下图所示的异常的黑色色块，此问题与 AMD 显卡 OpenGL 与 Origin 的兼容性有关，本文将简述解决方案。</p>
-<img src="https://img.yeslu.cn/blog/2023-04/25-88b961d88dd9f971b194e69d3e1a79fc.png" alt="图片来自群友聊天记录" style="zoom: 50%;" />
-
-<span id="more"></span>
-
-<h2 id="官方解决方案"><a href="#官方解决方案" class="headerlink" title="官方解决方案"></a>官方解决方案</h2><blockquote>
-<p>Origin 在 2023b 中修复了这个问题：<a href="https://originlab.jira.com/wiki/spaces/main/pages/2630582301/Origin+2023b+Bug+Fixes">ORG-24094</a></p>
-</blockquote>
-<ol>
-<li>将软件<strong>更新至 Origin 2023b 及以上版本</strong>；</li>
-<li>通过 <code>Preference -&gt; System Variables</code> 打开系统变量设置窗口；</li>
-<li>设置系统变量<code>OGLDP</code>的值为<code>1</code>；</li>
-<li>重新打开软件。</li>
-</ol>
-<p><img src="https://img.yeslu.cn/blog/2023-05/23-82874450a4ae3f76e0da65e359f8783a.png!blog_watermark"></p>
-<p>如果上述方法无法解决问题，可尝试通过 <code>Preference -&gt; 3D OpenGL Settings</code> 取消勾选 <code>Enable Display List</code>。</p>
-<p><img src="https://img.yeslu.cn/blog/2023-04/25-7cbc67c6d7c42d0a7e7948126944da6a.png!blog_watermark"></p>
-<p>参考文档：<a href="https://www.originlab.com/doc/Quick-Help/Strange-Color-Block-On-3D-Graph">Strange-Color-Block-On-3D-Graph</a></p>
-<h2 id="坊间解决方案"><a href="#坊间解决方案" class="headerlink" title="坊间解决方案"></a>坊间解决方案</h2><blockquote>
-<p>以下方法为<strong>可能有效</strong>的方案，不保证解决问题。</p>
-</blockquote>
-<ul>
-<li>如果你是双显卡用户，可以将 Origin 调用的显卡切换为另一张显卡；</li>
-<li>尝试将 AMD 显卡的驱动程序<strong>更新到最新</strong>，或<strong>降级到上一个版本</strong>。</li>
-</ul>
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
-<li>Windows 11 (22621);</li>
-<li>Origin 2023b beta2 (Academic).</li>
-</ol>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文禁止转载；</li>
-<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Graph</tag>
-        <tag>Origin</tag>
+        <tag>OCR</tag>
+        <tag>Extension</tag>
+        <tag>Quicker</tag>
       </tags>
   </entry>
   <entry>
@@ -6128,36 +6083,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Origin 部分中文字体加粗不显示</title>
-    <url>/archives/f49d4612.html</url>
-    <content><![CDATA[<h2 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h2><p>Origin <strong>部分中文字体</strong>（宋体、黑体、楷体等）在<strong>垂直方向</strong>上加粗后，实际不显示加粗。</p>
-<img src="https://img.yeslu.cn/blog/2023-05/05-8e92bc4a588a2195d4082ec88845e429.png!blog_watermark" style="zoom: 33%;" />
-
-<span id="more"></span>
-
-<h2 id="问题报告"><a href="#问题报告" class="headerlink" title="问题报告"></a>问题报告</h2><p>此问题为 OriginLab 方的已知问题（ORG-23517），但现阶段未能被修复。</p>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><h3 id="修改字体"><a href="#修改字体" class="headerlink" title="修改字体"></a>修改字体</h3><p>更换相近字体，有一部分中文字体的加粗能够被正常显示。</p>
-<p><img src="https://img.yeslu.cn/blog/2023-05/05-fbed6e174f7128ee9118cecb2dd8ddfa.png!blog_watermark"></p>
-<h3 id="修改旋转角度"><a href="#修改旋转角度" class="headerlink" title="修改旋转角度"></a>修改旋转角度</h3><p>将旋转角度修改至 89 度或者 91 度，也可以使加粗正常显示。</p>
-<p><img src="https://img.yeslu.cn/blog/2023-05/05-a5a37f89ec0c0e03959718d3ec0205de.png!blog_watermark"></p>
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
-<li>Windows 11 (22621);</li>
-<li>Origin 2023b (Academic).</li>
-</ol>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文禁止转载；</li>
-<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Graph</tag>
-        <tag>Origin</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Origin 修改中文语言</title>
     <url>/archives/2e6d2c4b.html</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Origin 原则上可以在软件内直接切换语言，但由于官方授权的一些特性和限制，部分用户无法在软件内切换，本文将详解语言切换的相关逻辑。</p>
@@ -6181,8 +6106,53 @@
         <category>Science</category>
       </categories>
       <tags>
-        <tag>Graph</tag>
         <tag>Origin</tag>
+        <tag>Graph</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Origin 绘制 3D 图时无法正常显示图例</title>
+    <url>/archives/863b7bad.html</url>
+    <content><![CDATA[<h2 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h2><p>Origin 部分版本在绘制图形时，图例等部分会出现如下图所示的异常的黑色色块，此问题与 AMD 显卡 OpenGL 与 Origin 的兼容性有关，本文将简述解决方案。</p>
+<img src="https://img.yeslu.cn/blog/2023-04/25-88b961d88dd9f971b194e69d3e1a79fc.png" alt="图片来自群友聊天记录" style="zoom: 50%;" />
+
+<span id="more"></span>
+
+<h2 id="官方解决方案"><a href="#官方解决方案" class="headerlink" title="官方解决方案"></a>官方解决方案</h2><blockquote>
+<p>Origin 在 2023b 中修复了这个问题：<a href="https://originlab.jira.com/wiki/spaces/main/pages/2630582301/Origin+2023b+Bug+Fixes">ORG-24094</a></p>
+</blockquote>
+<ol>
+<li>将软件<strong>更新至 Origin 2023b 及以上版本</strong>；</li>
+<li>通过 <code>Preference -&gt; System Variables</code> 打开系统变量设置窗口；</li>
+<li>设置系统变量<code>OGLDP</code>的值为<code>1</code>；</li>
+<li>重新打开软件。</li>
+</ol>
+<p><img src="https://img.yeslu.cn/blog/2023-05/23-82874450a4ae3f76e0da65e359f8783a.png!blog_watermark"></p>
+<p>如果上述方法无法解决问题，可尝试通过 <code>Preference -&gt; 3D OpenGL Settings</code> 取消勾选 <code>Enable Display List</code>。</p>
+<p><img src="https://img.yeslu.cn/blog/2023-04/25-7cbc67c6d7c42d0a7e7948126944da6a.png!blog_watermark"></p>
+<p>参考文档：<a href="https://www.originlab.com/doc/Quick-Help/Strange-Color-Block-On-3D-Graph">Strange-Color-Block-On-3D-Graph</a></p>
+<h2 id="坊间解决方案"><a href="#坊间解决方案" class="headerlink" title="坊间解决方案"></a>坊间解决方案</h2><blockquote>
+<p>以下方法为<strong>可能有效</strong>的方案，不保证解决问题。</p>
+</blockquote>
+<ul>
+<li>如果你是双显卡用户，可以将 Origin 调用的显卡切换为另一张显卡；</li>
+<li>尝试将 AMD 显卡的驱动程序<strong>更新到最新</strong>，或<strong>降级到上一个版本</strong>。</li>
+</ul>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
+<li>Windows 11 (22621);</li>
+<li>Origin 2023b beta2 (Academic).</li>
+</ol>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文禁止转载；</li>
+<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Origin</tag>
+        <tag>Graph</tag>
       </tags>
   </entry>
   <entry>
@@ -6262,88 +6232,8 @@
         <category>Science</category>
       </categories>
       <tags>
-        <tag>Graph</tag>
         <tag>Origin</tag>
-        <tag>Data-Analysis</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Origin 通过 Y 轴偏移制作层叠式线图的五种思路</title>
-    <url>/archives/71ef1cd6.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>层叠式线图是比较多组数据差异的重要手段，当数据对 Y 的实际值不敏感时，通过将数据堆叠在同一张图中，能够更好分析不同数据间峰强、峰位移等信息的变化。常见的表征手段中，XRD、XPS、XAS、FT-IR、Raman 等光（能）谱的数据，均可通过类似下图的手段，在 Y 方向上进行堆叠制图。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-04/17-966e0351a4f04e3d61b4d7513f19cb59.png" alt="10.1038/s41467-021-27768-6"></p>
-<p>在 Origin 中，软件至少提供了五种方法以实现层叠式线图，本文将简要介绍这些思路。</p>
-<span id="more"></span>
-
-<h2 id="示例数据"><a href="#示例数据" class="headerlink" title="示例数据"></a>示例数据</h2><p>本科期间，我曾向 OriginLab GraphGallery 贡献过层叠式线图的<a href="https://www.originlab.com/www/products/GraphGallery.aspx?GID=472">例图</a>，此后 OriginLab 官方以该图为蓝本制作了《<a href="https://www.bilibili.com/video/BV1Rv411a7e5">XRD 二维层叠式带标准卡片</a>》的教学视频，感兴趣的同学可以下载原始工程和数据进行学习。</p>
-<img src="https://img.yeslu.cn/blog/2022-04/17-c920c3f79cf63206ec16fcf2064c8e2d.png!blog_watermark" style="zoom: 50%;">
-
-<p>本教程为简化复杂程度，使用如下图所示的精简数据。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-04/17-1c181793129e8219d40dc2e73b28b0d6.png!blog_watermark"></p>
-<h2 id="制作层叠式线图的五种思路"><a href="#制作层叠式线图的五种思路" class="headerlink" title="制作层叠式线图的五种思路"></a>制作层叠式线图的五种思路</h2><h3 id="1-同加同减"><a href="#1-同加同减" class="headerlink" title="1 同加同减"></a>1 同加同减</h3><p>函数中，将 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="5.42ex" height="1.783ex" role="img" focusable="false" viewBox="0 -583 2395.6 788"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(767.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mi" transform="translate(1823.6,0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g></g></g></svg></mjx-container> 向上平移 2 个单位长度，得到 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="9.317ex" height="1.971ex" role="img" focusable="false" viewBox="0 -666 4118 871"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(767.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mi" transform="translate(1823.6,0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="mo" transform="translate(2617.8,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="mn" transform="translate(3618,0)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g></g></svg></mjx-container>。这与本例十分类似，也是所有方案中，最简单，也最容易想到的方法。</p>
-<p>利用 Origin 的 <a href="https://www.originlab.com/doc/Tutorials/SetColVal">Set Column/Cell Values</a> 功能，我们可以轻松的将整列值同加同减，得到拉开两线间距的效果。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-04/17-993706cc81af193971abbda9dc8e55c6.png!blog_watermark"></p>
-<h4 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h4><ol>
-<li>纯数学操作，方法简单；</li>
-<li>可以较为精准的将多条线拉开相同间距。</li>
-</ol>
-<h4 id="劣势"><a href="#劣势" class="headerlink" title="劣势"></a>劣势</h4><ol>
-<li>操作不够直观，需要多次调整获得合适的距离。</li>
-</ol>
-<h3 id="2-Individual-Offset"><a href="#2-Individual-Offset" class="headerlink" title="2 Individual Offset"></a>2 Individual Offset</h3><ul>
-<li>官方说明：<a href="https://www.originlab.com/doc/Origin-Help/PD-Dialog-Stack-Tab#Individual">PD-Dialog-Stack-Tab</a></li>
-</ul>
-<p>那么有没有直接在图中操作的方法呢？答案是肯定的。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-04/17-fb2d9f2b1cbf61c8c385030edeb3ea02.png!blog_watermark"></p>
-<p>Origin 为我们提供了 Y/X 方向上独立的功能，通过启用 Y 方向上独立，在图中就可以直接上下拖动，调整需要的位置。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-04/17-dc17987bd35c6a44fcc0ce4c640c41b6.gif"></p>
-<h3 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h3><p>当 Individual 勾选时，<a href="https://www.originlab.com/doc/Origin-Help/PD-offset-tab">Offset 功能</a>便会启用，这里的 Multiplier 和 Offset 遵循如下公式，如果需要精确控制线间距，可以尝试使用本功能。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">X' = Multiplier_X * X + Offset_X</span><br><span class="line">Y' = Multiplier_Y * Y + Offset_Y</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://img.yeslu.cn/blog/2022-07/30-92fb884e232bfd418a186c642c0d1a48.png"></p>
-<h4 id="优势-1"><a href="#优势-1" class="headerlink" title="优势"></a>优势</h4><ol>
-<li>操作直观，所看即所得。</li>
-</ol>
-<h4 id="劣势-1"><a href="#劣势-1" class="headerlink" title="劣势"></a>劣势</h4><ol>
-<li>两线间距仅能靠肉眼控制，不够精确；</li>
-<li>线条多时，不易点选拖动。</li>
-</ol>
-<h3 id="3-Stacked-Lines-by-Y-Offsets"><a href="#3-Stacked-Lines-by-Y-Offsets" class="headerlink" title="3 Stacked Lines by Y Offsets"></a>3 Stacked Lines by Y Offsets</h3><ul>
-<li>官方说明：<a href="https://www.originlab.com/doc/Origin-Help/StackLineYOffset-Graph">StackLineYOffset-Graph</a></li>
-</ul>
-<p>Stacked Lines by Y Offsets 是 Origin 中的一种图形模板，实为上述“Individual Offset”的变体，其本质依然是允许数据在 Y 轴方向上偏移。此外，软件也提供了其他的 Offset 模式，大家可以根据自己的实际需要选择。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-07/30-12cf176d57c518d338eab6ddb1535f14.png"></p>
-<p>当制作“Stacked Lines by Y Offsets”图时，软件会自动调整多条线的间距，以实现快速制图的功能。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-04/17-f8f30f90f8ef64f1ebeda00a334b92ec.png!blog_watermark"></p>
-<p><img src="https://img.yeslu.cn/blog/2022-04/17-67557d6306f84fb0a28f8a0cc065965e.gif"></p>
-<h3 id="4-Vertical-Translate"><a href="#4-Vertical-Translate" class="headerlink" title="4 Vertical Translate"></a>4 Vertical Translate</h3><ul>
-<li>官方说明：<a href="https://www.originlab.com/doc/Origin-Help/Translate-Curve">Translate-Curve</a></li>
-</ul>
-<p>上述几种方法，要么不够直观，要么不够精确，本方法融合了这两个优点。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-04/17-b0bf1c67283c274b9e4764ef53726d3f.png!blog_watermark"></p>
-<p>在拖动的同时，左侧数据点坐标随之变化。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-04/17-1767a66f5a12f4dbd5bc909283dfddbd.gif"></p>
-<h3 id="5-Multi-Layers"><a href="#5-Multi-Layers" class="headerlink" title="5 Multi- Layers"></a>5 Multi- Layers</h3><p>如果上述功能还是无法满足你的需要，那就只能使用多图层绘制了。将每条曲线绘制于一个独立图层，几乎可以达到完全的可定制效果。</p>
-<h4 id="5-1-绘制独立图"><a href="#5-1-绘制独立图" class="headerlink" title="5.1 绘制独立图"></a>5.1 绘制独立图</h4><p>使用 A-B 列数据和 A-C 列数据分别绘图（画在同一个 Graph 的两个图层上，或者干脆画两张图均可，这里只是为了更清楚的展示）</p>
-<p><img src="https://img.yeslu.cn/blog/2022-04/17-82e4715d738902716a0ac3ec16ed87f9.png!blog_watermark"></p>
-<h4 id="5-2-合并图层并对齐"><a href="#5-2-合并图层并对齐" class="headerlink" title="5.2 合并图层并对齐"></a>5.2 合并图层并对齐</h4><p><img src="https://img.yeslu.cn/blog/2022-04/17-c780cff130ad1ffa369f4eb0ac3004c7.gif"></p>
-<h4 id="5-3-隐藏多余的坐标轴"><a href="#5-3-隐藏多余的坐标轴" class="headerlink" title="5.3 隐藏多余的坐标轴"></a>5.3 隐藏多余的坐标轴</h4><p><img src="https://img.yeslu.cn/blog/2022-04/17-7e4db71d54adba5421cfd6cacc502fc5.png!blog_watermark"></p>
-<h4 id="5-4-拖动至需要的位置"><a href="#5-4-拖动至需要的位置" class="headerlink" title="5.4 拖动至需要的位置"></a>5.4 拖动至需要的位置</h4><p><img src="https://img.yeslu.cn/blog/2022-04/17-5d29c84fe70ef35a587f35119d2f5506.gif"></p>
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
-<li>Windows 11 (22000.652);</li>
-<li>Origin 2022 SR1 (Academic).</li>
-</ol>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文禁止转载；</li>
-<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
         <tag>Graph</tag>
-        <tag>Origin</tag>
         <tag>Data-Analysis</tag>
       </tags>
   </entry>
@@ -6504,25 +6394,28 @@
         <category>Science</category>
       </categories>
       <tags>
-        <tag>Graph</tag>
         <tag>Origin</tag>
+        <tag>Graph</tag>
         <tag>Data-Analysis</tag>
       </tags>
   </entry>
   <entry>
-    <title>Origin 快速绘制带 PDF 卡片的 XRD 图谱</title>
-    <url>/archives/b4c2c415.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>X射线衍射（X-ray Diffraction, XRD）可用于揭示物质的晶体结构、化学组成以及物理性质，在处理 XRD 数据时，常与 PDF 卡片结合绘制。文本将介绍使用Origin 绘制带 PDF 卡片的 XRD 图谱。</p>
+    <title>Origin 部分中文字体加粗不显示</title>
+    <url>/archives/f49d4612.html</url>
+    <content><![CDATA[<h2 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h2><p>Origin <strong>部分中文字体</strong>（宋体、黑体、楷体等）在<strong>垂直方向</strong>上加粗后，实际不显示加粗。</p>
+<img src="https://img.yeslu.cn/blog/2023-05/05-8e92bc4a588a2195d4082ec88845e429.png!blog_watermark" style="zoom: 33%;" />
+
 <span id="more"></span>
 
-<h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><img src="https://img.yeslu.cn/blog/2022-06/19-5f70a86a40402f95859c4a22bdb0eb95!blog_watermark" alt="XRD Curves" style="zoom: 67%;" />
-
-<p>本科期间，我向 OriginLab GraphGallery 贡献带 PDF 卡片的 XRD 图谱的<a href="https://www.originlab.com/www/products/GraphGallery.aspx?GID=472">例图</a>，此后 OriginLab 官方以该图数据及绘制思路为蓝本制作了<a href="https://www.bilibili.com/video/BV1Rv411a7e5">《XRD 二维层叠式带标准卡片》</a>的教学视频。</p>
-<p>在 <a href="https://originlab.jira.com/wiki/spaces/main/pages/2543452161/Origin+2023+Features">Origin 2023</a> 中，我和 Origin 的官方童鞋再一次优化了此图，将例图与快速绘制模板内嵌于该版本的 Origin 中。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-10/22-cd0f162d6b883805bed0a57344485ee6.jpg" alt="Learning Center &amp; Template Center"></p>
-<p>该版本下，只需要将 XRD 原始数据和标准 PDF 卡片数据如下图所示，填写于两个 Sheet 中，全选所有数据，使用上图模板即可一键完成制图。</p>
-<p><img src="https://img.yeslu.cn/blog/2023-05/09-7e27f5cfe27205c0bebe7564f04a1830.png"></p>
-<p><img src="https://img.yeslu.cn/blog/2023-05/09-deb82a3489e98e60b70f0e70f0d29b47.png"></p>
+<h2 id="问题报告"><a href="#问题报告" class="headerlink" title="问题报告"></a>问题报告</h2><p>此问题为 OriginLab 方的已知问题（ORG-23517），但现阶段未能被修复。</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><h3 id="修改字体"><a href="#修改字体" class="headerlink" title="修改字体"></a>修改字体</h3><p>更换相近字体，有一部分中文字体的加粗能够被正常显示。</p>
+<p><img src="https://img.yeslu.cn/blog/2023-05/05-fbed6e174f7128ee9118cecb2dd8ddfa.png!blog_watermark"></p>
+<h3 id="修改旋转角度"><a href="#修改旋转角度" class="headerlink" title="修改旋转角度"></a>修改旋转角度</h3><p>将旋转角度修改至 89 度或者 91 度，也可以使加粗正常显示。</p>
+<p><img src="https://img.yeslu.cn/blog/2023-05/05-a5a37f89ec0c0e03959718d3ec0205de.png!blog_watermark"></p>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
+<li>Windows 11 (22621);</li>
+<li>Origin 2023b (Academic).</li>
+</ol>
 <h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
 <li>本文禁止转载；</li>
 <li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
@@ -6532,8 +6425,87 @@
         <category>Science</category>
       </categories>
       <tags>
-        <tag>Graph</tag>
         <tag>Origin</tag>
+        <tag>Graph</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Origin 通过 Y 轴偏移制作层叠式线图的五种思路</title>
+    <url>/archives/71ef1cd6.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>层叠式线图是比较多组数据差异的重要手段，当数据对 Y 的实际值不敏感时，通过将数据堆叠在同一张图中，能够更好分析不同数据间峰强、峰位移等信息的变化。常见的表征手段中，XRD、XPS、XAS、FT-IR、Raman 等光（能）谱的数据，均可通过类似下图的手段，在 Y 方向上进行堆叠制图。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-04/17-966e0351a4f04e3d61b4d7513f19cb59.png" alt="10.1038/s41467-021-27768-6"></p>
+<p>在 Origin 中，软件至少提供了五种方法以实现层叠式线图，本文将简要介绍这些思路。</p>
+<span id="more"></span>
+
+<h2 id="示例数据"><a href="#示例数据" class="headerlink" title="示例数据"></a>示例数据</h2><p>本科期间，我曾向 OriginLab GraphGallery 贡献过层叠式线图的<a href="https://www.originlab.com/www/products/GraphGallery.aspx?GID=472">例图</a>，此后 OriginLab 官方以该图为蓝本制作了《<a href="https://www.bilibili.com/video/BV1Rv411a7e5">XRD 二维层叠式带标准卡片</a>》的教学视频，感兴趣的同学可以下载原始工程和数据进行学习。</p>
+<img src="https://img.yeslu.cn/blog/2022-04/17-c920c3f79cf63206ec16fcf2064c8e2d.png!blog_watermark" style="zoom: 50%;">
+
+<p>本教程为简化复杂程度，使用如下图所示的精简数据。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-04/17-1c181793129e8219d40dc2e73b28b0d6.png!blog_watermark"></p>
+<h2 id="制作层叠式线图的五种思路"><a href="#制作层叠式线图的五种思路" class="headerlink" title="制作层叠式线图的五种思路"></a>制作层叠式线图的五种思路</h2><h3 id="1-同加同减"><a href="#1-同加同减" class="headerlink" title="1 同加同减"></a>1 同加同减</h3><p>函数中，将 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="5.42ex" height="1.783ex" role="img" focusable="false" viewBox="0 -583 2395.6 788"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(767.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mi" transform="translate(1823.6,0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g></g></g></svg></mjx-container> 向上平移 2 个单位长度，得到 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="9.317ex" height="1.971ex" role="img" focusable="false" viewBox="0 -666 4118 871"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(767.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mi" transform="translate(1823.6,0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="mo" transform="translate(2617.8,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="mn" transform="translate(3618,0)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g></g></svg></mjx-container>。这与本例十分类似，也是所有方案中，最简单，也最容易想到的方法。</p>
+<p>利用 Origin 的 <a href="https://www.originlab.com/doc/Tutorials/SetColVal">Set Column/Cell Values</a> 功能，我们可以轻松的将整列值同加同减，得到拉开两线间距的效果。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-04/17-993706cc81af193971abbda9dc8e55c6.png!blog_watermark"></p>
+<h4 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h4><ol>
+<li>纯数学操作，方法简单；</li>
+<li>可以较为精准的将多条线拉开相同间距。</li>
+</ol>
+<h4 id="劣势"><a href="#劣势" class="headerlink" title="劣势"></a>劣势</h4><ol>
+<li>操作不够直观，需要多次调整获得合适的距离。</li>
+</ol>
+<h3 id="2-Individual-Offset"><a href="#2-Individual-Offset" class="headerlink" title="2 Individual Offset"></a>2 Individual Offset</h3><ul>
+<li>官方说明：<a href="https://www.originlab.com/doc/Origin-Help/PD-Dialog-Stack-Tab#Individual">PD-Dialog-Stack-Tab</a></li>
+</ul>
+<p>那么有没有直接在图中操作的方法呢？答案是肯定的。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-04/17-fb2d9f2b1cbf61c8c385030edeb3ea02.png!blog_watermark"></p>
+<p>Origin 为我们提供了 Y/X 方向上独立的功能，通过启用 Y 方向上独立，在图中就可以直接上下拖动，调整需要的位置。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-04/17-dc17987bd35c6a44fcc0ce4c640c41b6.gif"></p>
+<h3 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h3><p>当 Individual 勾选时，<a href="https://www.originlab.com/doc/Origin-Help/PD-offset-tab">Offset 功能</a>便会启用，这里的 Multiplier 和 Offset 遵循如下公式，如果需要精确控制线间距，可以尝试使用本功能。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">X' = Multiplier_X * X + Offset_X</span><br><span class="line">Y' = Multiplier_Y * Y + Offset_Y</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img.yeslu.cn/blog/2022-07/30-92fb884e232bfd418a186c642c0d1a48.png"></p>
+<h4 id="优势-1"><a href="#优势-1" class="headerlink" title="优势"></a>优势</h4><ol>
+<li>操作直观，所看即所得。</li>
+</ol>
+<h4 id="劣势-1"><a href="#劣势-1" class="headerlink" title="劣势"></a>劣势</h4><ol>
+<li>两线间距仅能靠肉眼控制，不够精确；</li>
+<li>线条多时，不易点选拖动。</li>
+</ol>
+<h3 id="3-Stacked-Lines-by-Y-Offsets"><a href="#3-Stacked-Lines-by-Y-Offsets" class="headerlink" title="3 Stacked Lines by Y Offsets"></a>3 Stacked Lines by Y Offsets</h3><ul>
+<li>官方说明：<a href="https://www.originlab.com/doc/Origin-Help/StackLineYOffset-Graph">StackLineYOffset-Graph</a></li>
+</ul>
+<p>Stacked Lines by Y Offsets 是 Origin 中的一种图形模板，实为上述“Individual Offset”的变体，其本质依然是允许数据在 Y 轴方向上偏移。此外，软件也提供了其他的 Offset 模式，大家可以根据自己的实际需要选择。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-07/30-12cf176d57c518d338eab6ddb1535f14.png"></p>
+<p>当制作“Stacked Lines by Y Offsets”图时，软件会自动调整多条线的间距，以实现快速制图的功能。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-04/17-f8f30f90f8ef64f1ebeda00a334b92ec.png!blog_watermark"></p>
+<p><img src="https://img.yeslu.cn/blog/2022-04/17-67557d6306f84fb0a28f8a0cc065965e.gif"></p>
+<h3 id="4-Vertical-Translate"><a href="#4-Vertical-Translate" class="headerlink" title="4 Vertical Translate"></a>4 Vertical Translate</h3><ul>
+<li>官方说明：<a href="https://www.originlab.com/doc/Origin-Help/Translate-Curve">Translate-Curve</a></li>
+</ul>
+<p>上述几种方法，要么不够直观，要么不够精确，本方法融合了这两个优点。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-04/17-b0bf1c67283c274b9e4764ef53726d3f.png!blog_watermark"></p>
+<p>在拖动的同时，左侧数据点坐标随之变化。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-04/17-1767a66f5a12f4dbd5bc909283dfddbd.gif"></p>
+<h3 id="5-Multi-Layers"><a href="#5-Multi-Layers" class="headerlink" title="5 Multi- Layers"></a>5 Multi- Layers</h3><p>如果上述功能还是无法满足你的需要，那就只能使用多图层绘制了。将每条曲线绘制于一个独立图层，几乎可以达到完全的可定制效果。</p>
+<h4 id="5-1-绘制独立图"><a href="#5-1-绘制独立图" class="headerlink" title="5.1 绘制独立图"></a>5.1 绘制独立图</h4><p>使用 A-B 列数据和 A-C 列数据分别绘图（画在同一个 Graph 的两个图层上，或者干脆画两张图均可，这里只是为了更清楚的展示）</p>
+<p><img src="https://img.yeslu.cn/blog/2022-04/17-82e4715d738902716a0ac3ec16ed87f9.png!blog_watermark"></p>
+<h4 id="5-2-合并图层并对齐"><a href="#5-2-合并图层并对齐" class="headerlink" title="5.2 合并图层并对齐"></a>5.2 合并图层并对齐</h4><p><img src="https://img.yeslu.cn/blog/2022-04/17-c780cff130ad1ffa369f4eb0ac3004c7.gif"></p>
+<h4 id="5-3-隐藏多余的坐标轴"><a href="#5-3-隐藏多余的坐标轴" class="headerlink" title="5.3 隐藏多余的坐标轴"></a>5.3 隐藏多余的坐标轴</h4><p><img src="https://img.yeslu.cn/blog/2022-04/17-7e4db71d54adba5421cfd6cacc502fc5.png!blog_watermark"></p>
+<h4 id="5-4-拖动至需要的位置"><a href="#5-4-拖动至需要的位置" class="headerlink" title="5.4 拖动至需要的位置"></a>5.4 拖动至需要的位置</h4><p><img src="https://img.yeslu.cn/blog/2022-04/17-5d29c84fe70ef35a587f35119d2f5506.gif"></p>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
+<li>Windows 11 (22000.652);</li>
+<li>Origin 2022 SR1 (Academic).</li>
+</ol>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文禁止转载；</li>
+<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Origin</tag>
+        <tag>Graph</tag>
         <tag>Data-Analysis</tag>
       </tags>
   </entry>
@@ -6751,8 +6723,8 @@
         <category>Science</category>
       </categories>
       <tags>
-        <tag>Graph</tag>
         <tag>Origin</tag>
+        <tag>Graph</tag>
       </tags>
   </entry>
   <entry>
@@ -6812,6 +6784,34 @@
       </tags>
   </entry>
   <entry>
+    <title>Origin 快速绘制带 PDF 卡片的 XRD 图谱</title>
+    <url>/archives/b4c2c415.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>X射线衍射（X-ray Diffraction, XRD）可用于揭示物质的晶体结构、化学组成以及物理性质，在处理 XRD 数据时，常与 PDF 卡片结合绘制。文本将介绍使用Origin 绘制带 PDF 卡片的 XRD 图谱。</p>
+<span id="more"></span>
+
+<h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><img src="https://img.yeslu.cn/blog/2022-06/19-5f70a86a40402f95859c4a22bdb0eb95!blog_watermark" alt="XRD Curves" style="zoom: 67%;" />
+
+<p>本科期间，我向 OriginLab GraphGallery 贡献带 PDF 卡片的 XRD 图谱的<a href="https://www.originlab.com/www/products/GraphGallery.aspx?GID=472">例图</a>，此后 OriginLab 官方以该图数据及绘制思路为蓝本制作了<a href="https://www.bilibili.com/video/BV1Rv411a7e5">《XRD 二维层叠式带标准卡片》</a>的教学视频。</p>
+<p>在 <a href="https://originlab.jira.com/wiki/spaces/main/pages/2543452161/Origin+2023+Features">Origin 2023</a> 中，我和 Origin 的官方童鞋再一次优化了此图，将例图与快速绘制模板内嵌于该版本的 Origin 中。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-10/22-cd0f162d6b883805bed0a57344485ee6.jpg" alt="Learning Center &amp; Template Center"></p>
+<p>该版本下，只需要将 XRD 原始数据和标准 PDF 卡片数据如下图所示，填写于两个 Sheet 中，全选所有数据，使用上图模板即可一键完成制图。</p>
+<p><img src="https://img.yeslu.cn/blog/2023-05/09-7e27f5cfe27205c0bebe7564f04a1830.png"></p>
+<p><img src="https://img.yeslu.cn/blog/2023-05/09-deb82a3489e98e60b70f0e70f0d29b47.png"></p>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文禁止转载；</li>
+<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Origin</tag>
+        <tag>Graph</tag>
+        <tag>Data-Analysis</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>论文实用干货：总目录</title>
     <url>/archives/dcc4cb4a.html</url>
     <content><![CDATA[<h2 id="总目录"><a href="#总目录" class="headerlink" title="总目录"></a>总目录</h2><ul>
@@ -6823,31 +6823,6 @@
 <li><a href="https://www.yeslu.cn/archives/510fef2a.html">06 - Endnote 避坑指南</a></li>
 <li><a href="https://www.yeslu.cn/archives/2aff811f.html">07 - Office 设置优化</a></li>
 </ul>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Office</tag>
-        <tag>Paper</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>论文实用干货：分页符与分节符（02）</title>
-    <url>/archives/2d8df6ac.html</url>
-    <content><![CDATA[<h2 id="重要说明"><a href="#重要说明" class="headerlink" title="重要说明"></a>重要说明</h2><p>在 Word 中，分页符、分隔符等标记符号<strong>默认不显示</strong>，点击如图所示按钮可使上述标记显示。未来的所有教程，均在<strong>显示标记符号</strong>的情况下演示。<br><img src="https://img.yeslu.cn/blog/paper/paper-02-1.png!blog_watermark"></p>
-<h2 id="分页符（Page-Break）"><a href="#分页符（Page-Break）" class="headerlink" title="分页符（Page Break）"></a>分页符（Page Break）</h2><h3 id="官方介绍"><a href="#官方介绍" class="headerlink" title="官方介绍"></a>官方介绍</h3><p>微软的官方说明建议直接阅读英文版，因为中文版为机翻，部分内容语序十分诡异：<a href="https://support.office.com/en-us/article/insert-a-page-break-7613ff46-96e5-4e46-9491-40d7d410a043?ui=en-US&rs=en-US&ad=US">Insert a page break</a></p>
-<span id="more"></span>
-
-<h3 id="通俗解释"><a href="#通俗解释" class="headerlink" title="通俗解释"></a>通俗解释</h3><p>换一张<strong>相同</strong>的纸，即前后纸张的版式（主要指页眉、页脚、格式、间距）相同。</p>
-<h3 id="图片演示"><a href="#图片演示" class="headerlink" title="图片演示"></a>图片演示</h3><p>在本图片中，我们已经完成了前言部分的写作，现在需要将“实验部分”另起一页。因此，我们在光标所示位置插入分页符。<br><img src="https://img.yeslu.cn/blog/paper/paper-02-2.png!blog_watermark"></p>
-<p>插入后，无论之前的内容怎么更改，“实验部分”将始终处在新的一页。<br><img src="https://img.yeslu.cn/blog/paper/paper-02-3.png!blog_watermark"></p>
-<h2 id="分节符（Section-Break）"><a href="#分节符（Section-Break）" class="headerlink" title="分节符（Section Break）"></a>分节符（Section Break）</h2><h3 id="官方介绍-1"><a href="#官方介绍-1" class="headerlink" title="官方介绍"></a>官方介绍</h3><p><a href="https://support.office.com/en-us/article/insert-a-section-break-eef20fd8-e38c-4ba6-a027-e503bdf8375c?ui=en-US&rs=en-US&ad=US">Insert a section break</a></p>
-<h3 id="通俗解释-1"><a href="#通俗解释-1" class="headerlink" title="通俗解释"></a>通俗解释</h3><p>换一张<strong>不同</strong>的纸，即前后纸张的版式（主要指页眉、页脚、格式、间距）可以不同。</p>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>分节符的相关说明，将在<a href="https://www.yeslu.cn/archives/ff3dc88a.html">第 4 节</a>中进行详细讲解。</li>
-<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
-</ol>
 ]]></content>
       <categories>
         <category>Science</category>
@@ -6881,6 +6856,31 @@
 <li>最后，通过对第一列的列宽进行调整，使全表居中<br><img src="https://img.yeslu.cn/blog/paper/paper-01-10.png!blog_watermark"></li>
 </ol>
 <h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Office</tag>
+        <tag>Paper</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>论文实用干货：分页符与分节符（02）</title>
+    <url>/archives/2d8df6ac.html</url>
+    <content><![CDATA[<h2 id="重要说明"><a href="#重要说明" class="headerlink" title="重要说明"></a>重要说明</h2><p>在 Word 中，分页符、分隔符等标记符号<strong>默认不显示</strong>，点击如图所示按钮可使上述标记显示。未来的所有教程，均在<strong>显示标记符号</strong>的情况下演示。<br><img src="https://img.yeslu.cn/blog/paper/paper-02-1.png!blog_watermark"></p>
+<h2 id="分页符（Page-Break）"><a href="#分页符（Page-Break）" class="headerlink" title="分页符（Page Break）"></a>分页符（Page Break）</h2><h3 id="官方介绍"><a href="#官方介绍" class="headerlink" title="官方介绍"></a>官方介绍</h3><p>微软的官方说明建议直接阅读英文版，因为中文版为机翻，部分内容语序十分诡异：<a href="https://support.office.com/en-us/article/insert-a-page-break-7613ff46-96e5-4e46-9491-40d7d410a043?ui=en-US&rs=en-US&ad=US">Insert a page break</a></p>
+<span id="more"></span>
+
+<h3 id="通俗解释"><a href="#通俗解释" class="headerlink" title="通俗解释"></a>通俗解释</h3><p>换一张<strong>相同</strong>的纸，即前后纸张的版式（主要指页眉、页脚、格式、间距）相同。</p>
+<h3 id="图片演示"><a href="#图片演示" class="headerlink" title="图片演示"></a>图片演示</h3><p>在本图片中，我们已经完成了前言部分的写作，现在需要将“实验部分”另起一页。因此，我们在光标所示位置插入分页符。<br><img src="https://img.yeslu.cn/blog/paper/paper-02-2.png!blog_watermark"></p>
+<p>插入后，无论之前的内容怎么更改，“实验部分”将始终处在新的一页。<br><img src="https://img.yeslu.cn/blog/paper/paper-02-3.png!blog_watermark"></p>
+<h2 id="分节符（Section-Break）"><a href="#分节符（Section-Break）" class="headerlink" title="分节符（Section Break）"></a>分节符（Section Break）</h2><h3 id="官方介绍-1"><a href="#官方介绍-1" class="headerlink" title="官方介绍"></a>官方介绍</h3><p><a href="https://support.office.com/en-us/article/insert-a-section-break-eef20fd8-e38c-4ba6-a027-e503bdf8375c?ui=en-US&rs=en-US&ad=US">Insert a section break</a></p>
+<h3 id="通俗解释-1"><a href="#通俗解释-1" class="headerlink" title="通俗解释"></a>通俗解释</h3><p>换一张<strong>不同</strong>的纸，即前后纸张的版式（主要指页眉、页脚、格式、间距）可以不同。</p>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>分节符的相关说明，将在<a href="https://www.yeslu.cn/archives/ff3dc88a.html">第 4 节</a>中进行详细讲解。</li>
 <li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
 </ol>
 ]]></content>
