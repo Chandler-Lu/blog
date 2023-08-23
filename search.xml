@@ -203,24 +203,6 @@
       </tags>
   </entry>
   <entry>
-    <title>我和我的软件们：目录</title>
-    <url>/archives/2ae541fb.html</url>
-    <content><![CDATA[<h2 id="总目录"><a href="#总目录" class="headerlink" title="总目录"></a>总目录</h2><ul>
-<li><a href="https://www.yeslu.cn/archives/86a324ce.html">01 - 前言</a></li>
-<li><a href="https://www.yeslu.cn/archives/9b841902.html">02 - 日记</a></li>
-</ul>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Software</category>
-      </categories>
-      <tags>
-        <tag>Recommend</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>我和我的软件们：前言（01）</title>
     <url>/archives/86a324ce.html</url>
     <content><![CDATA[<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>鉴于 App Store 内软件质量良莠不齐，很多软件过度关注新颖、美观和价格，却做不到此类软件最应该做到的功能，这样的软件并不具有过高的实用性，如某日记软件每天只能记一篇日记，看似高端小清新，实则实用性全无。</p>
@@ -266,6 +248,71 @@
 </ol>
 <h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
 <li>总目录：<a href="https://www.yeslu.cn/archives/2ae541fb.html">https://www.yeslu.cn/archives/2ae541fb.html</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Software</category>
+      </categories>
+      <tags>
+        <tag>Recommend</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我和我的软件们：日记（02）</title>
+    <url>/archives/9b841902.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本期来说一说日记软件。</p>
+<p>真正意义上的日记软件，我在这里只推荐一个，所以本期主要并不是来推荐软件，而是想说说我对这种相对比较<strong>小众</strong>和<strong>专有功能</strong>的软件的看法。</p>
+<h2 id="日记软件需要什么"><a href="#日记软件需要什么" class="headerlink" title="日记软件需要什么"></a>日记软件需要什么</h2><h3 id="通用格式导入导出"><a href="#通用格式导入导出" class="headerlink" title="通用格式导入导出"></a>通用格式导入导出</h3><p>什么是通用格式呢？可以简单理解为这个格式中所包含的内容可以被主流软件读取，里面所包含的内容可以被人类理解。</p>
+<span id="more"></span>
+
+<p>要是这样还觉得不好理解，那么举个例子。</p>
+<p>一个日记软件导出的格式如下：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;entries&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;测试内容&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;location&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;region&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">          <span class="attr">&quot;center&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;longitude&quot;</span><span class="punctuation">:</span> <span class="number">0</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;latitude&quot;</span><span class="punctuation">:</span> <span class="number">0</span></span><br><span class="line">          <span class="punctuation">&#125;</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;country&quot;</span><span class="punctuation">:</span> <span class="string">&quot;中国&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;timeZone&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Asia Shanghai&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">]</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>这是一个 json 格式，从结构中就可以看出，我在什么地方，发送了什么内容。这样的文本可以被几乎任何一个文本编辑器打开，你也可以自己编写程序，将其转换为你所需要的版式。</p>
+<p>大多数软件通常很难长久的更新下去，随着新系统的发布，技术的更新，又或者是软件开发者的自身原因，总会有新软件的兴起，旧软件的衰败。一旦一个软件停止维护，随着系统更新、手机升级，将产生越来越多的 Bug；甚至因为软件使用的某种开发方案不再被新系统支持，将直接导致软件无法在新系统上工作。</p>
+<p>如果您是一个真正的日记爱好者，那您一定想在未来十几年，甚至几十年之后，看到我那时候都在做什么，想什么。但是，当您在新系统上安装上那个已经数年未更新的软件之后，发现软件已经无法工作，仅有旧手机上还保留着原先的日记。您想把数据导出来存档，却发现软件并不支持导出，或者导出的数据都是加密后的，根本无法被读取和阅读，那就只能让这些日记永远尘封在旧手机上了。</p>
+<p>如果这款已经停止更新的软件可以以通用格式导出，而您准备用的新日记软件又支持通用格式导入的话，那么您的日记迁移便可以做到无缝衔接，或者仅需要稍作修改。</p>
+<p>上面说的情况其实不是个案，生活中数量可观的软件都不提供导出功能，甚至一部分老式手机的通讯录、短信也无法导出，所带来的不方便，相信大家也是体会过的。这也更凸显了笔记（日记）类软件，以 <strong>通用格式导入导出</strong> 的重要性。</p>
+<h3 id="友好的记录功能"><a href="#友好的记录功能" class="headerlink" title="友好的记录功能"></a>友好的记录功能</h3><p>我认为一个日记软件应当可以如下元素：</p>
+<ul>
+<li>主体：文字</li>
+<li>媒体：图片、语音、视频</li>
+<li>环境：时间、地点、天气</li>
+</ul>
+<p>当然，如果您还把日记当成游记，或者是手账本用的话，软件还应当支持更强大的图文混排，如 markdown，或者是类似 onenote 的无限扩展画布。很多日记软件只能记录几句话和日期，那这样的软件和备忘录又有什么区别呢？</p>
+<h3 id="那年今日"><a href="#那年今日" class="headerlink" title="那年今日"></a>那年今日</h3><p>几年下来，我记录了有数千条日记，但是真的想翻一翻日记，要从头刷到尾也是很困难的，所以 “那年今日” 是我觉得一个相对比较重要的功能。几乎每一天，我都可以看到去年的今天我在做什么，前年的今天我在做什么…… 时光流转，物是人非，“那年今日”能让人有一种穿越时空的感觉，也能带你找回当年的记忆。</p>
+<p>前段时间，我用 <a href="https://github.com/wwwpf/QzoneExporter">QzoneExporter</a> 导出了 QQ 空间所有说说，并导入了我接下来将会推荐的软件 Day One。我只要打开 Day One，就可以看到几年前的今天，我发了什么动态，想来还是别有一番滋味的。</p>
+<h2 id="真的需要日记软件？"><a href="#真的需要日记软件？" class="headerlink" title="真的需要日记软件？"></a>真的需要日记软件？</h2><p>上面所说的一些功能仅仅是我个人的看法，如果你对这些需求并不感冒，那么就需要考量一下自己是否真的需要一个专业的日记软件了。</p>
+<p>回归日记的本源，无非是时间地点人物事件，比如：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">今天妈妈开着车带我去会展中心买年货。我看见会场外面彩旗飘扬。进了会场，我看见会场里人山人海的，热闹极了！我们买了腊肉、香肠、旺旺大礼包。</span><br><span class="line">回家的时候，我还帮妈妈提了不少东西哦！我明年还想去，好快乐哟！</span><br></pre></td></tr></table></figure>
+
+<p>【手动狗头】你们看，完成一篇日记需要一个专业软件吗？答案是否定的。我也曾经陷入这样的误区，觉得什么需要都要搞一个对应的软件来做，结果增加了学习和经济成本，却没有带来对应的效率提升，希望大家可以不要陷入这样的误区。</p>
+<p>某种程度上来说，你手上任何一个可以写文字和图片的软件都可以完成记日记的需求，小到记事本，大到Word，等等。只是有些功能可能需要手动实现，有些功能用起来没有那么顺手罢了。但是比起多使用一个软件，多增加一份成本，这个问题并非不能克服。</p>
+<h2 id="软件推荐"><a href="#软件推荐" class="headerlink" title="软件推荐"></a>软件推荐</h2><p>当然了，说了这么多，还是回到主题，日记软件推荐，本次想推荐的软件叫做<a href="https://dayoneapp.com/">Day One</a>，是迄今为止我觉得做的最专业的日记软件，没有之一。</p>
+<h3 id="Day-One"><a href="#Day-One" class="headerlink" title="Day One"></a>Day One</h3><h4 id="支持平台"><a href="#支持平台" class="headerlink" title="支持平台"></a>支持平台</h4><p>iOS，iPadOS，macOS，watchOS</p>
+<p>未完待续</p>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
+<li>总目录：<a href="https://www.yeslu.cn/archives/2ae541fb.html">https://www.yeslu.cn/archives/2ae541fb.html</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Software</category>
+      </categories>
+      <tags>
+        <tag>Recommend</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我和我的软件们：目录</title>
+    <url>/archives/2ae541fb.html</url>
+    <content><![CDATA[<h2 id="总目录"><a href="#总目录" class="headerlink" title="总目录"></a>总目录</h2><ul>
+<li><a href="https://www.yeslu.cn/archives/86a324ce.html">01 - 前言</a></li>
+<li><a href="https://www.yeslu.cn/archives/9b841902.html">02 - 日记</a></li>
+</ul>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
 </ol>
 ]]></content>
       <categories>
@@ -398,53 +445,6 @@
       </tags>
   </entry>
   <entry>
-    <title>我和我的软件们：日记（02）</title>
-    <url>/archives/9b841902.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本期来说一说日记软件。</p>
-<p>真正意义上的日记软件，我在这里只推荐一个，所以本期主要并不是来推荐软件，而是想说说我对这种相对比较<strong>小众</strong>和<strong>专有功能</strong>的软件的看法。</p>
-<h2 id="日记软件需要什么"><a href="#日记软件需要什么" class="headerlink" title="日记软件需要什么"></a>日记软件需要什么</h2><h3 id="通用格式导入导出"><a href="#通用格式导入导出" class="headerlink" title="通用格式导入导出"></a>通用格式导入导出</h3><p>什么是通用格式呢？可以简单理解为这个格式中所包含的内容可以被主流软件读取，里面所包含的内容可以被人类理解。</p>
-<span id="more"></span>
-
-<p>要是这样还觉得不好理解，那么举个例子。</p>
-<p>一个日记软件导出的格式如下：</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;entries&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;测试内容&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;location&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;region&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">          <span class="attr">&quot;center&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;longitude&quot;</span><span class="punctuation">:</span> <span class="number">0</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;latitude&quot;</span><span class="punctuation">:</span> <span class="number">0</span></span><br><span class="line">          <span class="punctuation">&#125;</span></span><br><span class="line">        <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;country&quot;</span><span class="punctuation">:</span> <span class="string">&quot;中国&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;timeZone&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Asia Shanghai&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">]</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-
-<p>这是一个 json 格式，从结构中就可以看出，我在什么地方，发送了什么内容。这样的文本可以被几乎任何一个文本编辑器打开，你也可以自己编写程序，将其转换为你所需要的版式。</p>
-<p>大多数软件通常很难长久的更新下去，随着新系统的发布，技术的更新，又或者是软件开发者的自身原因，总会有新软件的兴起，旧软件的衰败。一旦一个软件停止维护，随着系统更新、手机升级，将产生越来越多的 Bug；甚至因为软件使用的某种开发方案不再被新系统支持，将直接导致软件无法在新系统上工作。</p>
-<p>如果您是一个真正的日记爱好者，那您一定想在未来十几年，甚至几十年之后，看到我那时候都在做什么，想什么。但是，当您在新系统上安装上那个已经数年未更新的软件之后，发现软件已经无法工作，仅有旧手机上还保留着原先的日记。您想把数据导出来存档，却发现软件并不支持导出，或者导出的数据都是加密后的，根本无法被读取和阅读，那就只能让这些日记永远尘封在旧手机上了。</p>
-<p>如果这款已经停止更新的软件可以以通用格式导出，而您准备用的新日记软件又支持通用格式导入的话，那么您的日记迁移便可以做到无缝衔接，或者仅需要稍作修改。</p>
-<p>上面说的情况其实不是个案，生活中数量可观的软件都不提供导出功能，甚至一部分老式手机的通讯录、短信也无法导出，所带来的不方便，相信大家也是体会过的。这也更凸显了笔记（日记）类软件，以 <strong>通用格式导入导出</strong> 的重要性。</p>
-<h3 id="友好的记录功能"><a href="#友好的记录功能" class="headerlink" title="友好的记录功能"></a>友好的记录功能</h3><p>我认为一个日记软件应当可以如下元素：</p>
-<ul>
-<li>主体：文字</li>
-<li>媒体：图片、语音、视频</li>
-<li>环境：时间、地点、天气</li>
-</ul>
-<p>当然，如果您还把日记当成游记，或者是手账本用的话，软件还应当支持更强大的图文混排，如 markdown，或者是类似 onenote 的无限扩展画布。很多日记软件只能记录几句话和日期，那这样的软件和备忘录又有什么区别呢？</p>
-<h3 id="那年今日"><a href="#那年今日" class="headerlink" title="那年今日"></a>那年今日</h3><p>几年下来，我记录了有数千条日记，但是真的想翻一翻日记，要从头刷到尾也是很困难的，所以 “那年今日” 是我觉得一个相对比较重要的功能。几乎每一天，我都可以看到去年的今天我在做什么，前年的今天我在做什么…… 时光流转，物是人非，“那年今日”能让人有一种穿越时空的感觉，也能带你找回当年的记忆。</p>
-<p>前段时间，我用 <a href="https://github.com/wwwpf/QzoneExporter">QzoneExporter</a> 导出了 QQ 空间所有说说，并导入了我接下来将会推荐的软件 Day One。我只要打开 Day One，就可以看到几年前的今天，我发了什么动态，想来还是别有一番滋味的。</p>
-<h2 id="真的需要日记软件？"><a href="#真的需要日记软件？" class="headerlink" title="真的需要日记软件？"></a>真的需要日记软件？</h2><p>上面所说的一些功能仅仅是我个人的看法，如果你对这些需求并不感冒，那么就需要考量一下自己是否真的需要一个专业的日记软件了。</p>
-<p>回归日记的本源，无非是时间地点人物事件，比如：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">今天妈妈开着车带我去会展中心买年货。我看见会场外面彩旗飘扬。进了会场，我看见会场里人山人海的，热闹极了！我们买了腊肉、香肠、旺旺大礼包。</span><br><span class="line">回家的时候，我还帮妈妈提了不少东西哦！我明年还想去，好快乐哟！</span><br></pre></td></tr></table></figure>
-
-<p>【手动狗头】你们看，完成一篇日记需要一个专业软件吗？答案是否定的。我也曾经陷入这样的误区，觉得什么需要都要搞一个对应的软件来做，结果增加了学习和经济成本，却没有带来对应的效率提升，希望大家可以不要陷入这样的误区。</p>
-<p>某种程度上来说，你手上任何一个可以写文字和图片的软件都可以完成记日记的需求，小到记事本，大到Word，等等。只是有些功能可能需要手动实现，有些功能用起来没有那么顺手罢了。但是比起多使用一个软件，多增加一份成本，这个问题并非不能克服。</p>
-<h2 id="软件推荐"><a href="#软件推荐" class="headerlink" title="软件推荐"></a>软件推荐</h2><p>当然了，说了这么多，还是回到主题，日记软件推荐，本次想推荐的软件叫做<a href="https://dayoneapp.com/">Day One</a>，是迄今为止我觉得做的最专业的日记软件，没有之一。</p>
-<h3 id="Day-One"><a href="#Day-One" class="headerlink" title="Day One"></a>Day One</h3><h4 id="支持平台"><a href="#支持平台" class="headerlink" title="支持平台"></a>支持平台</h4><p>iOS，iPadOS，macOS，watchOS</p>
-<p>未完待续</p>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
-<li>总目录：<a href="https://www.yeslu.cn/archives/2ae541fb.html">https://www.yeslu.cn/archives/2ae541fb.html</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Software</category>
-      </categories>
-      <tags>
-        <tag>Recommend</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>双排键演奏 - Olympic Fanfare</title>
     <url>/archives/b7422f24.html</url>
     <content><![CDATA[<blockquote>
@@ -549,6 +549,126 @@
       <tags>
         <tag>English</tag>
         <tag>Word</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ESXI 和 OpenWrt 避坑指南</title>
+    <url>/archives/bd3ebe3.html</url>
+    <content><![CDATA[<h2 id="软硬件"><a href="#软硬件" class="headerlink" title="软硬件"></a>软硬件</h2><ul>
+<li>CPU: <a href="https://www.intel.com/content/www/us/en/products/sku/197305/intel-celeron-processor-j4125-4m-cache-up-to-2-70-ghz/specifications.html">Intel J4125</a></li>
+<li>网卡: <a href="https://www.intel.com/content/www/us/en/products/details/ethernet/gigabit-controllers/i211-controllers/downloads.html">Intel I211</a> * 4</li>
+<li>内存: 8G</li>
+<li>硬盘: 32G</li>
+<li>ESXI 6.7u3</li>
+</ul>
+<h2 id="ESXI-配置"><a href="#ESXI-配置" class="headerlink" title="ESXI 配置"></a>ESXI 配置</h2><h3 id="修改-ESXI-主机名称"><a href="#修改-ESXI-主机名称" class="headerlink" title="修改 ESXI 主机名称"></a>修改 ESXI 主机名称</h3><blockquote>
+<p>本节参考: <a href="https://kb.vmware.com/s/article/1010821?lang=zh_CN">https://kb.vmware.com/s/article/1010821?lang=zh_CN</a></p>
+</blockquote>
+<ol>
+<li>ssh 连入 ESXI；</li>
+<li>运行 <code>esxcfg-advcfg -s HOSTNAME /Misc/hostname</code>，其中，大写 HOSTNAME 改写为你需要修改的主机名；</li>
+<li>重启 ESXI。</li>
+</ol>
+<span id="more"></span>
+
+<h2 id="ESXI-坑"><a href="#ESXI-坑" class="headerlink" title="ESXI 坑"></a>ESXI 坑</h2><h3 id="对象类型需要托管的-I-O"><a href="#对象类型需要托管的-I-O" class="headerlink" title="对象类型需要托管的 I&#x2F;O"></a>对象类型需要托管的 I&#x2F;O</h3><blockquote>
+<p>ESXI 重启后，启动 OpenWrt 时报错：ESXI 无法打开虚拟机电源， 对象类型需要托管的 I&#x2F;O。</p>
+</blockquote>
+<p>目前，Lean 的 <a href="https://github.com/coolsnowwolf/lede">LEDE 固件</a>支持在编译时输出 ESXI 的镜像文件 (.vmdk)，经过论坛检索和自己实测，使用该镜像文件直接启动，大概率存在 ESXI 断电后，启动 OpenWrt 报上述错误的情况。而将 img 文件通过 StarWind V2V Converter 转换为 _.vmdk 和 _-flat.vmdk 再导入后，则很少出现上述情况。</p>
+<h4 id="若此问题已经出现，则可以通过以下方案修复："><a href="#若此问题已经出现，则可以通过以下方案修复：" class="headerlink" title="若此问题已经出现，则可以通过以下方案修复："></a>若此问题已经出现，则可以通过以下方案修复：</h4><ol>
+<li>ssh 连入 ESXI；</li>
+<li>VSXI 主界面 -&gt; 主机 -&gt; 监控 -&gt; 任务，找到错误信息和错误文件路径；</li>
+<li>输入 <code>vmkfstools -x check 路径</code>，若提示 <code>Disk needs repair.</code>，则输入 <code>vmkfstools -x repair 路径</code> 修复文件，修复成功后，应提示 <code>Disk was successfully repaired.</code></li>
+</ol>
+<h3 id="请输入大于原始容量的磁盘大小"><a href="#请输入大于原始容量的磁盘大小" class="headerlink" title="请输入大于原始容量的磁盘大小"></a>请输入大于原始容量的磁盘大小</h3><blockquote>
+<p>再次编辑虚拟机设置时，提示”请输入大于原始容量的磁盘大小”。</p>
+</blockquote>
+<p>通过 StarWind V2V Converter 转换后导入的虚拟机，再次编辑虚拟机设置时，会提示上述错误。</p>
+<h4 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h4><ol>
+<li>ssh 连入 ESXI；</li>
+<li><code>cd</code> 到 vmdk 所上传的路径；</li>
+<li>输入 <code>vmkfstools -X 384M vmdk文件名</code>，将该虚拟机扩容（此处 384M 为需要扩容到的容量，请根据实际情况修改）。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>OS</category>
+      </categories>
+      <tags>
+        <tag>Router</tag>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>获取 iOS 设备所链接 Wi-Fi 的具体信息</title>
+    <url>/archives/dd75b10a.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>很多人像我一样，在测试 Wi-Fi 的时候需要知道我的设备链接到 Wi-Fi 的什么频段，什么信道，信号强度如何等等，但 iOS&#x2F;iPadOS 并不像 macOS 一样，对用户直接提供 Wi-Fi 的详细调试信息【<strong>macOS 可通过按住 option，鼠标点击 Wi-Fi 图标来获取</strong>】。因此，我们可以使用 Apple 面向开发者的调试文件来获得。</p>
+<span id="more"></span>
+
+<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p><img src="https://img.yeslu.cn/blog/early/learn-get-ios-wifi-band-01.png!blog_watermark"></p>
+<ol>
+<li>进入 <a href="https://developer.apple.com/bug-reporting/profiles-and-logs">https://developer.apple.com/bug-reporting/profiles-and-logs/</a> ，找到 Wi-Fi for iOS 的字样，并下载后面的 Profile 文件；</li>
+<li>将上述配置文件传输至 iPhone&#x2F;iPad，当然你也可以直接在手机上直接操作上述内容。</li>
+</ol>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ol>
+<li>点击<code>“设置” -&gt; “通用” -&gt; “描述文件”</code>，找到刚刚导入的描述文件；</li>
+<li>点击右上角“安装”，并输入密码完成安装。</li>
+</ol>
+<img src="https://img.yeslu.cn/blog/early/learn-get-ios-wifi-band-02.png!blog_watermark" style="zoom:50%;" />
+
+<img src="https://img.yeslu.cn/blog/early/learn-get-ios-wifi-band-03.png!blog_watermark" style="zoom:50%;" />
+
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><ul>
+<li>进入 Wi-Fi 设置界面，打开当前所连接 Wi-Fi 的详细信息，选择“Diagnostics”，就可以看到 Wi-Fi 的详细信息啦。</li>
+</ul>
+<img src="https://img.yeslu.cn/blog/early/learn-get-ios-wifi-band-04.png!blog_watermark" style="zoom:50%;" />
+
+<img src="https://img.yeslu.cn/blog/early/learn-get-ios-wifi-band-05.png!blog_watermark" style="zoom:50%;" />
+
+<img src="https://img.yeslu.cn/blog/early/learn-get-ios-wifi-band-06.png!blog_watermark" style="zoom:50%;" />
+
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ul>
+<li>为了避免一些不必要的系统日志或者引发一些 Bug，个人不建议在非调试需求下长期打开调试模式；如需关闭，请删除描述文件。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>OS</category>
+      </categories>
+      <tags>
+        <tag>Router</tag>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>利用 GitHub API 获取最新 Releases 的版本号</title>
+    <url>/archives/3a47af3d.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文以 <a href="https://github.com/iina/iina">iina&#x2F;iina: The modern video player for macOS</a> 为例，展示利用 GitHub API 获取 Repo 中最新 Releases 的版本号。 </p>
+<span id="more"></span>
+
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -qO- -t1 -T2 <span class="string">&quot;https://api.github.com/repos/iina/iina/releases/latest&quot;</span> | grep <span class="string">&quot;tag_name&quot;</span> | <span class="built_in">head</span> -n 1 | awk -F <span class="string">&quot;:&quot;</span> <span class="string">&#x27;&#123;print $2&#125;&#x27;</span> | sed <span class="string">&#x27;s/\&quot;//g;s/,//g;s/ //g&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="代码解释"><a href="#代码解释" class="headerlink" title="代码解释"></a>代码解释</h2><h3 id="主字段"><a href="#主字段" class="headerlink" title="主字段"></a>主字段</h3><p><code>https://api.github.com/repos/iina/iina/releases/latest</code>这里用的是 GitHub 的官方 API，格式为<code>https://api.github.com/repos/&#123;项目名&#125;/releases/latest</code><br>打开上述链接后，可见包含下述字段的内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&quot;html_url&quot;: &quot;https://github.com/lhc70000/iina/releases/tag/v0.0.15.1&quot;,</span><br><span class="line">&quot;id&quot;: 10774475,</span><br><span class="line">&quot;node_id&quot;: &quot;MDc6UmVsZWFzZTEwNzc0NDc1&quot;,</span><br><span class="line">&quot;tag_name&quot;: &quot;v0.0.15.1&quot;,</span><br><span class="line">&quot;target_commitish&quot;: &quot;0.0.15.1&quot;,</span><br><span class="line">&quot;name&quot;: &quot;v0.0.15.1&quot;,</span><br></pre></td></tr></table></figure>
+
+<p>那么这里的<code>tag_name</code>就是我们所需要的东西啦</p>
+<h3 id="wget-参数"><a href="#wget-参数" class="headerlink" title="wget 参数"></a>wget 参数</h3><p><code>wget -qO- -t1 -T2</code>，在这里，我们使用了 4 个参数，分别是<code>q,O-,t1,T2</code></p>
+<ol>
+<li><code>-q</code>: q 就是 quiet 的意思了，没有该参数将会显示从请求到输出全过程的所有内容，这肯定不是我们想要的。</li>
+<li><code>-O-</code>: <code>-O</code>是指把文档写入文件中，而<code>-O-</code>是将内容写入标准输出，而不保存为文件。（注：这里是大写英文字母 O (Out)，不是数字 0）</li>
+<li><code>-t1,-T2</code>: 前者是设定最大尝试链接次数为 1 次，后者是设定响应超时的秒数为 2 秒，两者可以防止失败后反复获取，导致后续脚本无法执行。</li>
+</ol>
+<h3 id="筛选参数"><a href="#筛选参数" class="headerlink" title="筛选参数"></a>筛选参数</h3><ol>
+<li><code>grep &quot;tag_name&quot;</code>: grep 是 Linux 一个强大的文本搜索工具，在本代码中输出 tag_name 所在行，即输出<code>&quot;tag_name&quot;: &quot;v0.0.15.1&quot;,</code></li>
+<li><code>head -n 1</code>: <code>head -n</code>用于显示输出的行数，考虑到某些项目可能存在多个不同版本的 tag_name，这里我们只要第一个。</li>
+<li><code>awk -F &quot;:&quot; &#39;&#123;print $2&#125;&#39;</code>: awk 主要用于文本分析，在这里指定<code>:</code>为分隔符，将该行切分成多列，并输出第二列。于是我们得到了<code>(空格)&quot;v0.0.15.1&quot;,</code></li>
+<li><code>sed &#39;s/\&quot;//g;s/,//g;s/ //g&#39;</code>: 在这里 sed 用于数据查找替换，如<code>sed &#39;s/要被取代的字串/新的字串/g&#39;</code> ，因此本段命令可分为 3 个，以分号分隔。<code>s/\&quot;//g</code>即将引号删除（反斜杠是为了防止引号被转义），以此类推，最终留下我们需要的内容：<code>v0.0.15.1</code>。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Batch</category>
+      </categories>
+      <tags>
+        <tag>GitHub</tag>
+        <tag>API</tag>
       </tags>
   </entry>
   <entry>
@@ -2008,196 +2128,290 @@
       </tags>
   </entry>
   <entry>
-    <title>ESXI 和 OpenWrt 避坑指南</title>
-    <url>/archives/bd3ebe3.html</url>
-    <content><![CDATA[<h2 id="软硬件"><a href="#软硬件" class="headerlink" title="软硬件"></a>软硬件</h2><ul>
-<li>CPU: <a href="https://www.intel.com/content/www/us/en/products/sku/197305/intel-celeron-processor-j4125-4m-cache-up-to-2-70-ghz/specifications.html">Intel J4125</a></li>
-<li>网卡: <a href="https://www.intel.com/content/www/us/en/products/details/ethernet/gigabit-controllers/i211-controllers/downloads.html">Intel I211</a> * 4</li>
-<li>内存: 8G</li>
-<li>硬盘: 32G</li>
-<li>ESXI 6.7u3</li>
-</ul>
-<h2 id="ESXI-配置"><a href="#ESXI-配置" class="headerlink" title="ESXI 配置"></a>ESXI 配置</h2><h3 id="修改-ESXI-主机名称"><a href="#修改-ESXI-主机名称" class="headerlink" title="修改 ESXI 主机名称"></a>修改 ESXI 主机名称</h3><blockquote>
-<p>本节参考: <a href="https://kb.vmware.com/s/article/1010821?lang=zh_CN">https://kb.vmware.com/s/article/1010821?lang=zh_CN</a></p>
-</blockquote>
-<ol>
-<li>ssh 连入 ESXI；</li>
-<li>运行 <code>esxcfg-advcfg -s HOSTNAME /Misc/hostname</code>，其中，大写 HOSTNAME 改写为你需要修改的主机名；</li>
-<li>重启 ESXI。</li>
-</ol>
+    <title>存储设备性能对比测试</title>
+    <url>/archives/fe0135af.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>由于经常使用各类摄影设备，同时在数据存储方面也有一定的需求，本人经常会购买一些存储设备，如 SD、TF、U盘、硬盘等，而市面上存储设备（尤其是SD卡）的读写性能对比相对较少。本文将对自购的存储设备进行性能测试，给想要购买相关硬件的用户提供参考。</p>
 <span id="more"></span>
 
-<h2 id="ESXI-坑"><a href="#ESXI-坑" class="headerlink" title="ESXI 坑"></a>ESXI 坑</h2><h3 id="对象类型需要托管的-I-O"><a href="#对象类型需要托管的-I-O" class="headerlink" title="对象类型需要托管的 I&#x2F;O"></a>对象类型需要托管的 I&#x2F;O</h3><blockquote>
-<p>ESXI 重启后，启动 OpenWrt 时报错：ESXI 无法打开虚拟机电源， 对象类型需要托管的 I&#x2F;O。</p>
-</blockquote>
-<p>目前，Lean 的 <a href="https://github.com/coolsnowwolf/lede">LEDE 固件</a>支持在编译时输出 ESXI 的镜像文件 (.vmdk)，经过论坛检索和自己实测，使用该镜像文件直接启动，大概率存在 ESXI 断电后，启动 OpenWrt 报上述错误的情况。而将 img 文件通过 StarWind V2V Converter 转换为 _.vmdk 和 _-flat.vmdk 再导入后，则很少出现上述情况。</p>
-<h4 id="若此问题已经出现，则可以通过以下方案修复："><a href="#若此问题已经出现，则可以通过以下方案修复：" class="headerlink" title="若此问题已经出现，则可以通过以下方案修复："></a>若此问题已经出现，则可以通过以下方案修复：</h4><ol>
-<li>ssh 连入 ESXI；</li>
-<li>VSXI 主界面 -&gt; 主机 -&gt; 监控 -&gt; 任务，找到错误信息和错误文件路径；</li>
-<li>输入 <code>vmkfstools -x check 路径</code>，若提示 <code>Disk needs repair.</code>，则输入 <code>vmkfstools -x repair 路径</code> 修复文件，修复成功后，应提示 <code>Disk was successfully repaired.</code></li>
+<h2 id="基准"><a href="#基准" class="headerlink" title="基准"></a>基准</h2><h3 id="硬件"><a href="#硬件" class="headerlink" title="硬件"></a>硬件</h3><ol>
+<li>CPU: Intel Core i7 11370H</li>
+<li>Memory: 16 GB</li>
+<li>SSD: SanDisk Ultra 3D NVMe 1T</li>
+<li>Interface: USB 3.1 Type-C Thunderbolt 4</li>
+<li>Card-reader: UGreen USB-C to SD4.0+TF4.0</li>
 </ol>
-<h3 id="请输入大于原始容量的磁盘大小"><a href="#请输入大于原始容量的磁盘大小" class="headerlink" title="请输入大于原始容量的磁盘大小"></a>请输入大于原始容量的磁盘大小</h3><blockquote>
-<p>再次编辑虚拟机设置时，提示”请输入大于原始容量的磁盘大小”。</p>
-</blockquote>
-<p>通过 StarWind V2V Converter 转换后导入的虚拟机，再次编辑虚拟机设置时，会提示上述错误。</p>
-<h4 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h4><ol>
-<li>ssh 连入 ESXI；</li>
-<li><code>cd</code> 到 vmdk 所上传的路径；</li>
-<li>输入 <code>vmkfstools -X 384M vmdk文件名</code>，将该虚拟机扩容（此处 384M 为需要扩容到的容量，请根据实际情况修改）。</li>
+<img src="https://img.yeslu.cn/blog/2022-06/14-e316fb3833fc77562cb3ddce857b8b9a.PNG" style="zoom: 50%;" />
+
+<h3 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h3><ol>
+<li>AS SSD Benchmark 2.0.7316</li>
+<li>ATTO Disk Benchmark 4.01.0f1</li>
+<li>CrystalDiskInfo</li>
+</ol>
+<h2 id="SD"><a href="#SD" class="headerlink" title="SD"></a>SD</h2><h3 id="SanDisk-Extreme-Pro-32-GB"><a href="#SanDisk-Extreme-Pro-32-GB" class="headerlink" title="SanDisk Extreme Pro 32 GB"></a>SanDisk Extreme Pro 32 GB</h3><h4 id="测速"><a href="#测速" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/14-f7b15727327efde6f4fa6aa05c6bc52d.jpg" style="zoom:50%;" />
+
+<h4 id="等级"><a href="#等级" class="headerlink" title="等级"></a>等级</h4><table>
+<thead>
+<tr>
+<th align="center">接口</th>
+<th align="center">UHS 速度等级</th>
+<th align="center">速度等级</th>
+<th align="center">视频速度等级</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">UHS-I</td>
+<td align="center">U3</td>
+<td align="center">C10</td>
+<td align="center">V30</td>
+</tr>
+</tbody></table>
+<h4 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h4><ol>
+<li>购买时间：2017.04.10</li>
+<li>测试时间：2022.06.14</li>
+<li>用途：Sony A7R2</li>
+</ol>
+<h3 id="Sony-SF64UX2-64-GB"><a href="#Sony-SF64UX2-64-GB" class="headerlink" title="Sony SF64UX2 64 GB"></a>Sony SF64UX2 64 GB</h3><h4 id="测速-1"><a href="#测速-1" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/14-ceb5d75ddf140dd8ccccb3812c20bf02.jpg" style="zoom:50%;" />
+
+<h4 id="等级-1"><a href="#等级-1" class="headerlink" title="等级"></a>等级</h4><table>
+<thead>
+<tr>
+<th align="center">接口</th>
+<th align="center">UHS 速度等级</th>
+<th align="center">速度等级</th>
+<th align="center">视频速度等级</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">UHS-I</td>
+<td align="center">U3</td>
+<td align="center">C10</td>
+<td align="center">-</td>
+</tr>
+</tbody></table>
+<h4 id="说明-1"><a href="#说明-1" class="headerlink" title="说明"></a>说明</h4><ol>
+<li>购买时间：2017.06.11</li>
+<li>测试时间：2022.06.14</li>
+<li>用途：Sony A7R2</li>
+</ol>
+<h3 id="SAMSUNG-PRO-Plus-128-GB"><a href="#SAMSUNG-PRO-Plus-128-GB" class="headerlink" title="SAMSUNG PRO Plus 128 GB"></a>SAMSUNG PRO Plus 128 GB</h3><h4 id="测速-2"><a href="#测速-2" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-07/14-7fc1f190dafa9a743cea84017187a953.jpg" style="zoom:50%;" />
+
+<h4 id="等级-2"><a href="#等级-2" class="headerlink" title="等级"></a>等级</h4><table>
+<thead>
+<tr>
+<th align="center">接口</th>
+<th align="center">UHS 速度等级</th>
+<th align="center">速度等级</th>
+<th align="center">视频速度等级</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">UHS-I</td>
+<td align="center">U3</td>
+<td align="center">C10</td>
+<td align="center">V30</td>
+</tr>
+</tbody></table>
+<h4 id="说明-2"><a href="#说明-2" class="headerlink" title="说明"></a>说明</h4><ol>
+<li>购买时间：2022.07.13</li>
+<li>测试时间：2022.07.14</li>
+<li>用途：Sony A7R2</li>
+</ol>
+<h2 id="TF"><a href="#TF" class="headerlink" title="TF"></a>TF</h2><h3 id="SanDisk-Extreme-32-GB"><a href="#SanDisk-Extreme-32-GB" class="headerlink" title="SanDisk Extreme 32 GB"></a>SanDisk Extreme 32 GB</h3><h4 id="测速-3"><a href="#测速-3" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/14-1f9dad0858287adc89d176b790c94008.jpg" style="zoom:50%;" />
+
+<h4 id="等级-3"><a href="#等级-3" class="headerlink" title="等级"></a>等级</h4><table>
+<thead>
+<tr>
+<th align="center">接口</th>
+<th align="center">UHS 速度等级</th>
+<th align="center">速度等级</th>
+<th align="center">视频速度等级</th>
+<th align="center">应用程序等级</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">UHS-I</td>
+<td align="center">U3</td>
+<td align="center">C10</td>
+<td align="center">V30</td>
+<td align="center">A1</td>
+</tr>
+</tbody></table>
+<h4 id="说明-3"><a href="#说明-3" class="headerlink" title="说明"></a>说明</h4><ol>
+<li>购买时间：2018.05.01</li>
+<li>测试时间：2022.06.14</li>
+<li>用途：DJI Mini 2</li>
+</ol>
+<h3 id="SanDisk-Extreme-128-GB"><a href="#SanDisk-Extreme-128-GB" class="headerlink" title="SanDisk Extreme 128 GB"></a>SanDisk Extreme 128 GB</h3><h4 id="测速-4"><a href="#测速-4" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/18-cddeb98895f41cb57b5a1c725e1f2bc3.jpg" style="zoom:50%;" />
+
+<h4 id="等级-4"><a href="#等级-4" class="headerlink" title="等级"></a>等级</h4><table>
+<thead>
+<tr>
+<th align="center">接口</th>
+<th align="center">UHS 速度等级</th>
+<th align="center">速度等级</th>
+<th align="center">视频速度等级</th>
+<th align="center">应用程序等级</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">UHS-I</td>
+<td align="center">U3</td>
+<td align="center">C10</td>
+<td align="center">V30</td>
+<td align="center">A2</td>
+</tr>
+</tbody></table>
+<h4 id="说明-4"><a href="#说明-4" class="headerlink" title="说明"></a>说明</h4><ol>
+<li>购买时间：2022.02.02</li>
+<li>测试时间：2022.06.14</li>
+<li>用途：DJI Action 2</li>
+</ol>
+<h3 id="Lexar-633x-Blue-64-GB"><a href="#Lexar-633x-Blue-64-GB" class="headerlink" title="Lexar 633x Blue 64 GB"></a>Lexar 633x Blue 64 GB</h3><h4 id="测速-5"><a href="#测速-5" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/17-8473ec157265a831f2348b08eab43e3c.jpg" style="zoom:50%;" />
+
+<h4 id="等级-5"><a href="#等级-5" class="headerlink" title="等级"></a>等级</h4><table>
+<thead>
+<tr>
+<th align="center">接口</th>
+<th align="center">UHS 速度等级</th>
+<th align="center">速度等级</th>
+<th align="center">视频速度等级</th>
+<th align="center">应用程序等级</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">UHS-I</td>
+<td align="center">U1</td>
+<td align="center">C10</td>
+<td align="center">V30</td>
+<td align="center">A1</td>
+</tr>
+</tbody></table>
+<h4 id="说明-5"><a href="#说明-5" class="headerlink" title="说明"></a>说明</h4><ol>
+<li>购买时间：2022.06.02（赠送）</li>
+<li>测试时间：2022.06.14</li>
+<li>用途：DJI Mini 2</li>
+</ol>
+<h3 id="Lexar-1066x-Sliver-128-GB"><a href="#Lexar-1066x-Sliver-128-GB" class="headerlink" title="Lexar 1066x Sliver 128 GB"></a>Lexar 1066x Sliver 128 GB</h3><h4 id="测速-6"><a href="#测速-6" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/14-a2fc4fa1d10b891a31d8ccc6425a541b.jpg" style="zoom:50%;" />
+
+<h4 id="等级-6"><a href="#等级-6" class="headerlink" title="等级"></a>等级</h4><table>
+<thead>
+<tr>
+<th align="center">接口</th>
+<th align="center">UHS 速度等级</th>
+<th align="center">速度等级</th>
+<th align="center">视频速度等级</th>
+<th align="center">应用程序等级</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">UHS-I</td>
+<td align="center">U3</td>
+<td align="center">C10</td>
+<td align="center">V30</td>
+<td align="center">A2</td>
+</tr>
+</tbody></table>
+<h4 id="说明-6"><a href="#说明-6" class="headerlink" title="说明"></a>说明</h4><ol>
+<li>购买时间：2021.01.20</li>
+<li>测试时间：2022.06.14</li>
+<li>用途：DJI Pocket 2、DJI Action 3</li>
+</ol>
+<h3 id="SAMSUNG-EVO-Plus-32-GB"><a href="#SAMSUNG-EVO-Plus-32-GB" class="headerlink" title="SAMSUNG EVO Plus 32 GB"></a>SAMSUNG EVO Plus 32 GB</h3><h4 id="测速-7"><a href="#测速-7" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/17-cce54c4941bd238fe6bc44f81148a094.jpg" style="zoom:50%;" />
+
+<h4 id="等级-7"><a href="#等级-7" class="headerlink" title="等级"></a>等级</h4><table>
+<thead>
+<tr>
+<th align="center">接口</th>
+<th align="center">UHS 速度等级</th>
+<th align="center">速度等级</th>
+<th align="center">视频速度等级</th>
+<th align="center">应用程序等级</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">UHS-I</td>
+<td align="center">U1</td>
+<td align="center">C10</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+</tbody></table>
+<h4 id="说明-7"><a href="#说明-7" class="headerlink" title="说明"></a>说明</h4><ol>
+<li>测试时间：2022.06.17</li>
+<li>用途：Zoom H2n</li>
+</ol>
+<h3 id="SAMSUNG-PRO-Plus-256-GB"><a href="#SAMSUNG-PRO-Plus-256-GB" class="headerlink" title="SAMSUNG PRO Plus 256 GB"></a>SAMSUNG PRO Plus 256 GB</h3><h4 id="测速-8"><a href="#测速-8" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/16-7a3a01b42201bc7d60a0d791f26b28a7.png" style="zoom:50%;" />
+
+<h4 id="等级-8"><a href="#等级-8" class="headerlink" title="等级"></a>等级</h4><table>
+<thead>
+<tr>
+<th align="center">接口</th>
+<th align="center">UHS 速度等级</th>
+<th align="center">速度等级</th>
+<th align="center">视频速度等级</th>
+<th align="center">应用程序等级</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">UHS-I</td>
+<td align="center">U3</td>
+<td align="center">C10</td>
+<td align="center">V30</td>
+<td align="center">A2</td>
+</tr>
+</tbody></table>
+<h4 id="说明-8"><a href="#说明-8" class="headerlink" title="说明"></a>说明</h4><ol>
+<li>购买时间：2022.06.16</li>
+<li>测试时间：2022.06.16</li>
+<li>用途：DJI Air 2S</li>
+<li>备注：此卡在使用时，出现了无人机内可读，但电脑要求格式化的问题，且更换读卡器和电脑均未能读取数据，只能格式化。暂时无法得知问题出现原因并复现问题。</li>
+</ol>
+<h2 id="U盘"><a href="#U盘" class="headerlink" title="U盘"></a>U盘</h2><h3 id="IS903-64-GB-DIY"><a href="#IS903-64-GB-DIY" class="headerlink" title="IS903 64 GB (DIY)"></a>IS903 64 GB (DIY)</h3><h4 id="测速-9"><a href="#测速-9" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/14-da5d47707bf7cbe7cb83cf90d5cb9f79.PNG" style="zoom:50%;" />
+
+<h4 id="说明-9"><a href="#说明-9" class="headerlink" title="说明"></a>说明</h4><ol>
+<li>购买时间：2020.08.20</li>
+<li>测试时间：2022.06.14</li>
+<li>闪存：KIOXIA TH58TEG7DBHBAMC MLC</li>
+<li>其他：IS903 的 4K 读写速度没有测试意义</li>
+</ol>
+<h2 id="硬盘"><a href="#硬盘" class="headerlink" title="硬盘"></a>硬盘</h2><h3 id="WD-My-Passport-2-TB"><a href="#WD-My-Passport-2-TB" class="headerlink" title="WD My Passport 2 TB"></a>WD My Passport 2 TB</h3><h4 id="测速-10"><a href="#测速-10" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/18-e6b4d067271d1e0e586431da8a30deac.jpeg" style="zoom:50%;" />
+
+<h4 id="说明-10"><a href="#说明-10" class="headerlink" title="说明"></a>说明</h4><ol>
+<li>购买时间：2017.10.30</li>
+<li>测试时间：2022.06.18</li>
+<li>型号：WD20NMVW-11EDZS6</li>
+<li>磁记录：CMR</li>
+</ol>
+<h2 id="SSD"><a href="#SSD" class="headerlink" title="SSD"></a>SSD</h2><h3 id="小米笔记本-Pro-14-机载硬盘-512-GB（外置）"><a href="#小米笔记本-Pro-14-机载硬盘-512-GB（外置）" class="headerlink" title="小米笔记本 Pro 14 机载硬盘 512 GB（外置）"></a>小米笔记本 Pro 14 机载硬盘 512 GB（外置）</h3><h4 id="测速-11"><a href="#测速-11" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/14-64fdc63e5c2e2d7b4dcd59708f3e78a1.png" style="zoom:50%;" />
+
+<h4 id="说明-11"><a href="#说明-11" class="headerlink" title="说明"></a>说明</h4><ol>
+<li>购买时间：2021.09.14</li>
+<li>测试时间：2022.06.14</li>
+<li>型号：KIOXIA KBG40ZNV512G</li>
+<li>硬盘盒：ROG Strix Arion</li>
+<li>测试时总写入：866 GB</li>
+</ol>
+<h3 id="SAMSUNG-860-1-TB（外置）"><a href="#SAMSUNG-860-1-TB（外置）" class="headerlink" title="SAMSUNG 860 1 TB（外置）"></a>SAMSUNG 860 1 TB（外置）</h3><h4 id="测速-12"><a href="#测速-12" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-09/10-f0aea8e721a6f2a5624cb366e8c539e5.jpg" style="zoom:50%;" />
+
+<h4 id="说明-12"><a href="#说明-12" class="headerlink" title="说明"></a>说明</h4><ol>
+<li>购买时间：2022.09.10</li>
+<li>测试时间：2022.09.10</li>
+<li>硬盘盒：ROG Strix Arion</li>
+</ol>
+<h2 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a>特别说明</h2><ol>
+<li>所有产品（除商家附送）均购自京东自营、天猫旗舰等授权店铺；</li>
+<li>存储设备并不都是全新空卡测速，文中已写明购买时间和测试时间；</li>
+<li>测试结果与测试平台、读卡器、存储设备批次等密切相关，本测试仅供参考。</li>
+</ol>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ol>
+<li>本文禁止转载。</li>
 </ol>
 ]]></content>
       <categories>
-        <category>OS</category>
+        <category>Hardware</category>
       </categories>
       <tags>
-        <tag>Router</tag>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>利用 GitHub API 获取最新 Releases 的版本号</title>
-    <url>/archives/3a47af3d.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文以 <a href="https://github.com/iina/iina">iina&#x2F;iina: The modern video player for macOS</a> 为例，展示利用 GitHub API 获取 Repo 中最新 Releases 的版本号。 </p>
-<span id="more"></span>
-
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -qO- -t1 -T2 <span class="string">&quot;https://api.github.com/repos/iina/iina/releases/latest&quot;</span> | grep <span class="string">&quot;tag_name&quot;</span> | <span class="built_in">head</span> -n 1 | awk -F <span class="string">&quot;:&quot;</span> <span class="string">&#x27;&#123;print $2&#125;&#x27;</span> | sed <span class="string">&#x27;s/\&quot;//g;s/,//g;s/ //g&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="代码解释"><a href="#代码解释" class="headerlink" title="代码解释"></a>代码解释</h2><h3 id="主字段"><a href="#主字段" class="headerlink" title="主字段"></a>主字段</h3><p><code>https://api.github.com/repos/iina/iina/releases/latest</code>这里用的是 GitHub 的官方 API，格式为<code>https://api.github.com/repos/&#123;项目名&#125;/releases/latest</code><br>打开上述链接后，可见包含下述字段的内容：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&quot;html_url&quot;: &quot;https://github.com/lhc70000/iina/releases/tag/v0.0.15.1&quot;,</span><br><span class="line">&quot;id&quot;: 10774475,</span><br><span class="line">&quot;node_id&quot;: &quot;MDc6UmVsZWFzZTEwNzc0NDc1&quot;,</span><br><span class="line">&quot;tag_name&quot;: &quot;v0.0.15.1&quot;,</span><br><span class="line">&quot;target_commitish&quot;: &quot;0.0.15.1&quot;,</span><br><span class="line">&quot;name&quot;: &quot;v0.0.15.1&quot;,</span><br></pre></td></tr></table></figure>
-
-<p>那么这里的<code>tag_name</code>就是我们所需要的东西啦</p>
-<h3 id="wget-参数"><a href="#wget-参数" class="headerlink" title="wget 参数"></a>wget 参数</h3><p><code>wget -qO- -t1 -T2</code>，在这里，我们使用了 4 个参数，分别是<code>q,O-,t1,T2</code></p>
-<ol>
-<li><code>-q</code>: q 就是 quiet 的意思了，没有该参数将会显示从请求到输出全过程的所有内容，这肯定不是我们想要的。</li>
-<li><code>-O-</code>: <code>-O</code>是指把文档写入文件中，而<code>-O-</code>是将内容写入标准输出，而不保存为文件。（注：这里是大写英文字母 O (Out)，不是数字 0）</li>
-<li><code>-t1,-T2</code>: 前者是设定最大尝试链接次数为 1 次，后者是设定响应超时的秒数为 2 秒，两者可以防止失败后反复获取，导致后续脚本无法执行。</li>
-</ol>
-<h3 id="筛选参数"><a href="#筛选参数" class="headerlink" title="筛选参数"></a>筛选参数</h3><ol>
-<li><code>grep &quot;tag_name&quot;</code>: grep 是 Linux 一个强大的文本搜索工具，在本代码中输出 tag_name 所在行，即输出<code>&quot;tag_name&quot;: &quot;v0.0.15.1&quot;,</code></li>
-<li><code>head -n 1</code>: <code>head -n</code>用于显示输出的行数，考虑到某些项目可能存在多个不同版本的 tag_name，这里我们只要第一个。</li>
-<li><code>awk -F &quot;:&quot; &#39;&#123;print $2&#125;&#39;</code>: awk 主要用于文本分析，在这里指定<code>:</code>为分隔符，将该行切分成多列，并输出第二列。于是我们得到了<code>(空格)&quot;v0.0.15.1&quot;,</code></li>
-<li><code>sed &#39;s/\&quot;//g;s/,//g;s/ //g&#39;</code>: 在这里 sed 用于数据查找替换，如<code>sed &#39;s/要被取代的字串/新的字串/g&#39;</code> ，因此本段命令可分为 3 个，以分号分隔。<code>s/\&quot;//g</code>即将引号删除（反斜杠是为了防止引号被转义），以此类推，最终留下我们需要的内容：<code>v0.0.15.1</code>。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Batch</category>
-      </categories>
-      <tags>
-        <tag>GitHub</tag>
-        <tag>API</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>获取 iOS 设备所链接 Wi-Fi 的具体信息</title>
-    <url>/archives/dd75b10a.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>很多人像我一样，在测试 Wi-Fi 的时候需要知道我的设备链接到 Wi-Fi 的什么频段，什么信道，信号强度如何等等，但 iOS&#x2F;iPadOS 并不像 macOS 一样，对用户直接提供 Wi-Fi 的详细调试信息【<strong>macOS 可通过按住 option，鼠标点击 Wi-Fi 图标来获取</strong>】。因此，我们可以使用 Apple 面向开发者的调试文件来获得。</p>
-<span id="more"></span>
-
-<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p><img src="https://img.yeslu.cn/blog/early/learn-get-ios-wifi-band-01.png!blog_watermark"></p>
-<ol>
-<li>进入 <a href="https://developer.apple.com/bug-reporting/profiles-and-logs">https://developer.apple.com/bug-reporting/profiles-and-logs/</a> ，找到 Wi-Fi for iOS 的字样，并下载后面的 Profile 文件；</li>
-<li>将上述配置文件传输至 iPhone&#x2F;iPad，当然你也可以直接在手机上直接操作上述内容。</li>
-</ol>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ol>
-<li>点击<code>“设置” -&gt; “通用” -&gt; “描述文件”</code>，找到刚刚导入的描述文件；</li>
-<li>点击右上角“安装”，并输入密码完成安装。</li>
-</ol>
-<img src="https://img.yeslu.cn/blog/early/learn-get-ios-wifi-band-02.png!blog_watermark" style="zoom:50%;" />
-
-<img src="https://img.yeslu.cn/blog/early/learn-get-ios-wifi-band-03.png!blog_watermark" style="zoom:50%;" />
-
-<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><ul>
-<li>进入 Wi-Fi 设置界面，打开当前所连接 Wi-Fi 的详细信息，选择“Diagnostics”，就可以看到 Wi-Fi 的详细信息啦。</li>
-</ul>
-<img src="https://img.yeslu.cn/blog/early/learn-get-ios-wifi-band-04.png!blog_watermark" style="zoom:50%;" />
-
-<img src="https://img.yeslu.cn/blog/early/learn-get-ios-wifi-band-05.png!blog_watermark" style="zoom:50%;" />
-
-<img src="https://img.yeslu.cn/blog/early/learn-get-ios-wifi-band-06.png!blog_watermark" style="zoom:50%;" />
-
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ul>
-<li>为了避免一些不必要的系统日志或者引发一些 Bug，个人不建议在非调试需求下长期打开调试模式；如需关闭，请删除描述文件。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>OS</category>
-      </categories>
-      <tags>
-        <tag>Router</tag>
-        <tag>iOS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Jade 6.5 图文安装教程</title>
-    <url>/archives/403feac4.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Jade 是一种功能强大、全功能的粉末 XRD 图处理和分析软件，尤其注重定量分析和鉴定物相，可实现非常规少量物相的准确鉴定和定量分析。考虑到国内购买 Jade 的机构数量极其有限，本文将介绍 Jade 6.5 的安装方法，但不会提供安装程序。</p>
-<span id="more"></span>
-
-<h2 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h2><ol>
-<li>你下载下来并解压的文件，以下称为”安装包”。</li>
-<li>安装时让你选择的路径，以下称为”安装目录”。</li>
-</ol>
-<h2 id="账户名查看"><a href="#账户名查看" class="headerlink" title="账户名查看"></a>账户名查看</h2><p>打开任务管理器，找到”用户”，这就是你的账户名（务必注意大小写和特殊符号），本步骤下面会用到。<br><img src="https://img.yeslu.cn/blog/early/15121411501122.jpg!blog_watermark"></p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol>
-<li>关闭所有安全软件以防在修改注册表时被拒绝。</li>
-<li>确保目前登陆账户不是 Administrator（上面说了怎么查看账户名）。</li>
-<li>将安装文件拷贝至不含<strong>任何中文及特殊符号</strong>的目录中。</li>
-<li><strong>下载后务必将安装包解压！</strong></li>
-</ol>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ol>
-<li>选择安装路径，点击安装，直至安装完成。安装结束后，窗口会自动关闭。<br><img src="https://img.yeslu.cn/blog/early/15121359925268.jpg!blog_watermark"></li>
-</ol>
-<h2 id="控件注册"><a href="#控件注册" class="headerlink" title="控件注册"></a>控件注册</h2><blockquote>
-<p>安装结束后，软件是无法正常运行的，此时我们要注册对象链接和嵌入用户控件（OCX）。</p>
-</blockquote>
-<ol>
-<li><p>在安装包中找到”ocx”文件夹，编辑”注册 ocx.bat”；<br><img src="https://img.yeslu.cn/blog/early/15121367159312.jpg!blog_watermark"></p>
-</li>
-<li><p>将第一行修改为安装盘符（安装路径前 2 个字符，如 C:），第二行修改为”cd 安装路径”，如图所示，然后保存；<br><img src="https://img.yeslu.cn/blog/early/15121368895189.jpg!blog_watermark"></p>
-</li>
-<li><p>管理员模式运行”注册 ocx.bat”，接着会提示多个”xxxx 已成功”，全部点击确定直到窗口关闭；<br><img src="https://img.yeslu.cn/blog/early/15121369776732.jpg!blog_watermark"></p>
-</li>
-</ol>
-<h3 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h3><p>在进行以上步骤时，如果 <code>grid32.ocx</code> 和 <code>MSCOMCTL.OCX</code> 安装报错，请将安装包中所有的 <code>.ocx</code> 文件拷贝至 <code>C:\Windows\SysWOW64（假设系统盘是 C 盘）</code>后，重做第二、三步。此时，将第一行修改为安装盘符 <code>C:</code>，第二行修改为 <code>cd C:\Windows\SysWOW64</code>，然后保存，接着以管理员模式运行。</p>
-<h2 id="添加注册表"><a href="#添加注册表" class="headerlink" title="添加注册表"></a>添加注册表</h2><blockquote>
-<p>本步骤务必注意大小写。</p>
-</blockquote>
-<ol>
-<li>使用”win+R”组合键打开”运行”，键入以下命令，打开注册表编辑器；</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">%</span><span class="language-bash">systemroot%/regedit <span class="comment"># (32-bit OS)</span></span></span><br><span class="line"><span class="meta prompt_">%</span><span class="language-bash">systemroot%/syswow64/regedit <span class="comment"># (64-bit OS)</span></span></span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li><p>展开”HKEY_LOCAL_MACHINE”，展开”SOFTWARE”，右键”SOFTWARE”，选择”添加项”，命名为”MDI”；<br><img src="https://img.yeslu.cn/blog/early/15121381401160.jpg!blog_watermark"></p>
-</li>
-<li><p>在”MDI”下新建一个新项，名为”license”；<br><img src="https://img.yeslu.cn/blog/early/15121382062726.jpg!blog_watermark"></p>
-</li>
-<li><p>在”license”左侧新建一个”字符串值”，命名为”Owner”；</p>
-</li>
-<li><p>修改”Owner”的值为你的用户名。<br><img src="https://img.yeslu.cn/blog/early/15121383163559.jpg!blog_watermark"><br><img src="https://img.yeslu.cn/blog/early/15121384083615.jpg!blog_watermark"></p>
-</li>
-</ol>
-<h2 id="配置-PDF-卡片"><a href="#配置-PDF-卡片" class="headerlink" title="配置 PDF 卡片"></a>配置 PDF 卡片</h2><ol>
-<li><p>随便打开一个示例文件（打开你自己的也行），点击上方”pdf”，选择”setup”；</p>
-</li>
-<li><p>点击如图所示按钮，在安装包中找到”pdf2.dat”文件，这个文件在安装包的”jade65&#x2F;PDF22004”中；<br><img src="https://img.yeslu.cn/blog/early/15121393867949.jpg!blog_watermark"></p>
-</li>
-<li><p>选定后，点击”select all”，然后”create”；<br><img src="https://img.yeslu.cn/blog/early/15121396295982.jpg!blog_watermark"></p>
-</li>
-<li><p>由于本步骤时间很长，开始时会提示是否在完成后关机&#x2F;注销，选择否；</p>
-</li>
-<li><p>全部完成后，将提示（已知部分系统在载入 pdf 卡片时出现 Run-time error ‘75’的报错，原因是没有管理员权限，无法写入相关数据。解决方法是，以管理员模式启动 Jade（以后不再需要，此问题多发于 win7 以上系统）；<br><img src="https://img.yeslu.cn/blog/early/15121406359428.jpg!blog_watermark"></p>
-</li>
-<li><p>如果可以正常查找，则安装成功。<br><img src="https://img.yeslu.cn/blog/early/15121410448613.jpg!blog_watermark"></p>
-</li>
-</ol>
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><p>虚拟机：Parallels Desktop 13<br>操作系统环境：基于 MSDN 的 win10 专业版（1703）</p>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Jade</tag>
+        <tag>Storage</tag>
       </tags>
   </entry>
   <entry>
@@ -4950,290 +5164,198 @@
       </tags>
   </entry>
   <entry>
-    <title>存储设备性能对比测试</title>
-    <url>/archives/fe0135af.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>由于经常使用各类摄影设备，同时在数据存储方面也有一定的需求，本人经常会购买一些存储设备，如 SD、TF、U盘、硬盘等，而市面上存储设备（尤其是SD卡）的读写性能对比相对较少。本文将对自购的存储设备进行性能测试，给想要购买相关硬件的用户提供参考。</p>
+    <title>Jade 6.5 图文安装教程</title>
+    <url>/archives/403feac4.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Jade 是一种功能强大、全功能的粉末 XRD 图处理和分析软件，尤其注重定量分析和鉴定物相，可实现非常规少量物相的准确鉴定和定量分析。考虑到国内购买 Jade 的机构数量极其有限，本文将介绍 Jade 6.5 的安装方法，但不会提供安装程序。</p>
 <span id="more"></span>
 
-<h2 id="基准"><a href="#基准" class="headerlink" title="基准"></a>基准</h2><h3 id="硬件"><a href="#硬件" class="headerlink" title="硬件"></a>硬件</h3><ol>
-<li>CPU: Intel Core i7 11370H</li>
-<li>Memory: 16 GB</li>
-<li>SSD: SanDisk Ultra 3D NVMe 1T</li>
-<li>Interface: USB 3.1 Type-C Thunderbolt 4</li>
-<li>Card-reader: UGreen USB-C to SD4.0+TF4.0</li>
+<h2 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h2><ol>
+<li>你下载下来并解压的文件，以下称为”安装包”。</li>
+<li>安装时让你选择的路径，以下称为”安装目录”。</li>
 </ol>
-<img src="https://img.yeslu.cn/blog/2022-06/14-e316fb3833fc77562cb3ddce857b8b9a.PNG" style="zoom: 50%;" />
+<h2 id="账户名查看"><a href="#账户名查看" class="headerlink" title="账户名查看"></a>账户名查看</h2><p>打开任务管理器，找到”用户”，这就是你的账户名（务必注意大小写和特殊符号），本步骤下面会用到。<br><img src="https://img.yeslu.cn/blog/early/15121411501122.jpg!blog_watermark"></p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol>
+<li>关闭所有安全软件以防在修改注册表时被拒绝。</li>
+<li>确保目前登陆账户不是 Administrator（上面说了怎么查看账户名）。</li>
+<li>将安装文件拷贝至不含<strong>任何中文及特殊符号</strong>的目录中。</li>
+<li><strong>下载后务必将安装包解压！</strong></li>
+</ol>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ol>
+<li>选择安装路径，点击安装，直至安装完成。安装结束后，窗口会自动关闭。<br><img src="https://img.yeslu.cn/blog/early/15121359925268.jpg!blog_watermark"></li>
+</ol>
+<h2 id="控件注册"><a href="#控件注册" class="headerlink" title="控件注册"></a>控件注册</h2><blockquote>
+<p>安装结束后，软件是无法正常运行的，此时我们要注册对象链接和嵌入用户控件（OCX）。</p>
+</blockquote>
+<ol>
+<li><p>在安装包中找到”ocx”文件夹，编辑”注册 ocx.bat”；<br><img src="https://img.yeslu.cn/blog/early/15121367159312.jpg!blog_watermark"></p>
+</li>
+<li><p>将第一行修改为安装盘符（安装路径前 2 个字符，如 C:），第二行修改为”cd 安装路径”，如图所示，然后保存；<br><img src="https://img.yeslu.cn/blog/early/15121368895189.jpg!blog_watermark"></p>
+</li>
+<li><p>管理员模式运行”注册 ocx.bat”，接着会提示多个”xxxx 已成功”，全部点击确定直到窗口关闭；<br><img src="https://img.yeslu.cn/blog/early/15121369776732.jpg!blog_watermark"></p>
+</li>
+</ol>
+<h3 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h3><p>在进行以上步骤时，如果 <code>grid32.ocx</code> 和 <code>MSCOMCTL.OCX</code> 安装报错，请将安装包中所有的 <code>.ocx</code> 文件拷贝至 <code>C:\Windows\SysWOW64（假设系统盘是 C 盘）</code>后，重做第二、三步。此时，将第一行修改为安装盘符 <code>C:</code>，第二行修改为 <code>cd C:\Windows\SysWOW64</code>，然后保存，接着以管理员模式运行。</p>
+<h2 id="添加注册表"><a href="#添加注册表" class="headerlink" title="添加注册表"></a>添加注册表</h2><blockquote>
+<p>本步骤务必注意大小写。</p>
+</blockquote>
+<ol>
+<li>使用”win+R”组合键打开”运行”，键入以下命令，打开注册表编辑器；</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">%</span><span class="language-bash">systemroot%/regedit <span class="comment"># (32-bit OS)</span></span></span><br><span class="line"><span class="meta prompt_">%</span><span class="language-bash">systemroot%/syswow64/regedit <span class="comment"># (64-bit OS)</span></span></span><br></pre></td></tr></table></figure>
 
-<h3 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h3><ol>
-<li>AS SSD Benchmark 2.0.7316</li>
-<li>ATTO Disk Benchmark 4.01.0f1</li>
-<li>CrystalDiskInfo</li>
+<ol start="2">
+<li><p>展开”HKEY_LOCAL_MACHINE”，展开”SOFTWARE”，右键”SOFTWARE”，选择”添加项”，命名为”MDI”；<br><img src="https://img.yeslu.cn/blog/early/15121381401160.jpg!blog_watermark"></p>
+</li>
+<li><p>在”MDI”下新建一个新项，名为”license”；<br><img src="https://img.yeslu.cn/blog/early/15121382062726.jpg!blog_watermark"></p>
+</li>
+<li><p>在”license”左侧新建一个”字符串值”，命名为”Owner”；</p>
+</li>
+<li><p>修改”Owner”的值为你的用户名。<br><img src="https://img.yeslu.cn/blog/early/15121383163559.jpg!blog_watermark"><br><img src="https://img.yeslu.cn/blog/early/15121384083615.jpg!blog_watermark"></p>
+</li>
 </ol>
-<h2 id="SD"><a href="#SD" class="headerlink" title="SD"></a>SD</h2><h3 id="SanDisk-Extreme-Pro-32-GB"><a href="#SanDisk-Extreme-Pro-32-GB" class="headerlink" title="SanDisk Extreme Pro 32 GB"></a>SanDisk Extreme Pro 32 GB</h3><h4 id="测速"><a href="#测速" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/14-f7b15727327efde6f4fa6aa05c6bc52d.jpg" style="zoom:50%;" />
-
-<h4 id="等级"><a href="#等级" class="headerlink" title="等级"></a>等级</h4><table>
-<thead>
-<tr>
-<th align="center">接口</th>
-<th align="center">UHS 速度等级</th>
-<th align="center">速度等级</th>
-<th align="center">视频速度等级</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">UHS-I</td>
-<td align="center">U3</td>
-<td align="center">C10</td>
-<td align="center">V30</td>
-</tr>
-</tbody></table>
-<h4 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h4><ol>
-<li>购买时间：2017.04.10</li>
-<li>测试时间：2022.06.14</li>
-<li>用途：Sony A7R2</li>
+<h2 id="配置-PDF-卡片"><a href="#配置-PDF-卡片" class="headerlink" title="配置 PDF 卡片"></a>配置 PDF 卡片</h2><ol>
+<li><p>随便打开一个示例文件（打开你自己的也行），点击上方”pdf”，选择”setup”；</p>
+</li>
+<li><p>点击如图所示按钮，在安装包中找到”pdf2.dat”文件，这个文件在安装包的”jade65&#x2F;PDF22004”中；<br><img src="https://img.yeslu.cn/blog/early/15121393867949.jpg!blog_watermark"></p>
+</li>
+<li><p>选定后，点击”select all”，然后”create”；<br><img src="https://img.yeslu.cn/blog/early/15121396295982.jpg!blog_watermark"></p>
+</li>
+<li><p>由于本步骤时间很长，开始时会提示是否在完成后关机&#x2F;注销，选择否；</p>
+</li>
+<li><p>全部完成后，将提示（已知部分系统在载入 pdf 卡片时出现 Run-time error ‘75’的报错，原因是没有管理员权限，无法写入相关数据。解决方法是，以管理员模式启动 Jade（以后不再需要，此问题多发于 win7 以上系统）；<br><img src="https://img.yeslu.cn/blog/early/15121406359428.jpg!blog_watermark"></p>
+</li>
+<li><p>如果可以正常查找，则安装成功。<br><img src="https://img.yeslu.cn/blog/early/15121410448613.jpg!blog_watermark"></p>
+</li>
 </ol>
-<h3 id="Sony-SF64UX2-64-GB"><a href="#Sony-SF64UX2-64-GB" class="headerlink" title="Sony SF64UX2 64 GB"></a>Sony SF64UX2 64 GB</h3><h4 id="测速-1"><a href="#测速-1" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/14-ceb5d75ddf140dd8ccccb3812c20bf02.jpg" style="zoom:50%;" />
-
-<h4 id="等级-1"><a href="#等级-1" class="headerlink" title="等级"></a>等级</h4><table>
-<thead>
-<tr>
-<th align="center">接口</th>
-<th align="center">UHS 速度等级</th>
-<th align="center">速度等级</th>
-<th align="center">视频速度等级</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">UHS-I</td>
-<td align="center">U3</td>
-<td align="center">C10</td>
-<td align="center">-</td>
-</tr>
-</tbody></table>
-<h4 id="说明-1"><a href="#说明-1" class="headerlink" title="说明"></a>说明</h4><ol>
-<li>购买时间：2017.06.11</li>
-<li>测试时间：2022.06.14</li>
-<li>用途：Sony A7R2</li>
-</ol>
-<h3 id="SAMSUNG-PRO-Plus-128-GB"><a href="#SAMSUNG-PRO-Plus-128-GB" class="headerlink" title="SAMSUNG PRO Plus 128 GB"></a>SAMSUNG PRO Plus 128 GB</h3><h4 id="测速-2"><a href="#测速-2" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-07/14-7fc1f190dafa9a743cea84017187a953.jpg" style="zoom:50%;" />
-
-<h4 id="等级-2"><a href="#等级-2" class="headerlink" title="等级"></a>等级</h4><table>
-<thead>
-<tr>
-<th align="center">接口</th>
-<th align="center">UHS 速度等级</th>
-<th align="center">速度等级</th>
-<th align="center">视频速度等级</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">UHS-I</td>
-<td align="center">U3</td>
-<td align="center">C10</td>
-<td align="center">V30</td>
-</tr>
-</tbody></table>
-<h4 id="说明-2"><a href="#说明-2" class="headerlink" title="说明"></a>说明</h4><ol>
-<li>购买时间：2022.07.13</li>
-<li>测试时间：2022.07.14</li>
-<li>用途：Sony A7R2</li>
-</ol>
-<h2 id="TF"><a href="#TF" class="headerlink" title="TF"></a>TF</h2><h3 id="SanDisk-Extreme-32-GB"><a href="#SanDisk-Extreme-32-GB" class="headerlink" title="SanDisk Extreme 32 GB"></a>SanDisk Extreme 32 GB</h3><h4 id="测速-3"><a href="#测速-3" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/14-1f9dad0858287adc89d176b790c94008.jpg" style="zoom:50%;" />
-
-<h4 id="等级-3"><a href="#等级-3" class="headerlink" title="等级"></a>等级</h4><table>
-<thead>
-<tr>
-<th align="center">接口</th>
-<th align="center">UHS 速度等级</th>
-<th align="center">速度等级</th>
-<th align="center">视频速度等级</th>
-<th align="center">应用程序等级</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">UHS-I</td>
-<td align="center">U3</td>
-<td align="center">C10</td>
-<td align="center">V30</td>
-<td align="center">A1</td>
-</tr>
-</tbody></table>
-<h4 id="说明-3"><a href="#说明-3" class="headerlink" title="说明"></a>说明</h4><ol>
-<li>购买时间：2018.05.01</li>
-<li>测试时间：2022.06.14</li>
-<li>用途：DJI Mini 2</li>
-</ol>
-<h3 id="SanDisk-Extreme-128-GB"><a href="#SanDisk-Extreme-128-GB" class="headerlink" title="SanDisk Extreme 128 GB"></a>SanDisk Extreme 128 GB</h3><h4 id="测速-4"><a href="#测速-4" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/18-cddeb98895f41cb57b5a1c725e1f2bc3.jpg" style="zoom:50%;" />
-
-<h4 id="等级-4"><a href="#等级-4" class="headerlink" title="等级"></a>等级</h4><table>
-<thead>
-<tr>
-<th align="center">接口</th>
-<th align="center">UHS 速度等级</th>
-<th align="center">速度等级</th>
-<th align="center">视频速度等级</th>
-<th align="center">应用程序等级</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">UHS-I</td>
-<td align="center">U3</td>
-<td align="center">C10</td>
-<td align="center">V30</td>
-<td align="center">A2</td>
-</tr>
-</tbody></table>
-<h4 id="说明-4"><a href="#说明-4" class="headerlink" title="说明"></a>说明</h4><ol>
-<li>购买时间：2022.02.02</li>
-<li>测试时间：2022.06.14</li>
-<li>用途：DJI Action 2</li>
-</ol>
-<h3 id="Lexar-633x-Blue-64-GB"><a href="#Lexar-633x-Blue-64-GB" class="headerlink" title="Lexar 633x Blue 64 GB"></a>Lexar 633x Blue 64 GB</h3><h4 id="测速-5"><a href="#测速-5" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/17-8473ec157265a831f2348b08eab43e3c.jpg" style="zoom:50%;" />
-
-<h4 id="等级-5"><a href="#等级-5" class="headerlink" title="等级"></a>等级</h4><table>
-<thead>
-<tr>
-<th align="center">接口</th>
-<th align="center">UHS 速度等级</th>
-<th align="center">速度等级</th>
-<th align="center">视频速度等级</th>
-<th align="center">应用程序等级</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">UHS-I</td>
-<td align="center">U1</td>
-<td align="center">C10</td>
-<td align="center">V30</td>
-<td align="center">A1</td>
-</tr>
-</tbody></table>
-<h4 id="说明-5"><a href="#说明-5" class="headerlink" title="说明"></a>说明</h4><ol>
-<li>购买时间：2022.06.02（赠送）</li>
-<li>测试时间：2022.06.14</li>
-<li>用途：DJI Mini 2</li>
-</ol>
-<h3 id="Lexar-1066x-Sliver-128-GB"><a href="#Lexar-1066x-Sliver-128-GB" class="headerlink" title="Lexar 1066x Sliver 128 GB"></a>Lexar 1066x Sliver 128 GB</h3><h4 id="测速-6"><a href="#测速-6" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/14-a2fc4fa1d10b891a31d8ccc6425a541b.jpg" style="zoom:50%;" />
-
-<h4 id="等级-6"><a href="#等级-6" class="headerlink" title="等级"></a>等级</h4><table>
-<thead>
-<tr>
-<th align="center">接口</th>
-<th align="center">UHS 速度等级</th>
-<th align="center">速度等级</th>
-<th align="center">视频速度等级</th>
-<th align="center">应用程序等级</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">UHS-I</td>
-<td align="center">U3</td>
-<td align="center">C10</td>
-<td align="center">V30</td>
-<td align="center">A2</td>
-</tr>
-</tbody></table>
-<h4 id="说明-6"><a href="#说明-6" class="headerlink" title="说明"></a>说明</h4><ol>
-<li>购买时间：2021.01.20</li>
-<li>测试时间：2022.06.14</li>
-<li>用途：DJI Pocket 2、DJI Action 3</li>
-</ol>
-<h3 id="SAMSUNG-EVO-Plus-32-GB"><a href="#SAMSUNG-EVO-Plus-32-GB" class="headerlink" title="SAMSUNG EVO Plus 32 GB"></a>SAMSUNG EVO Plus 32 GB</h3><h4 id="测速-7"><a href="#测速-7" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/17-cce54c4941bd238fe6bc44f81148a094.jpg" style="zoom:50%;" />
-
-<h4 id="等级-7"><a href="#等级-7" class="headerlink" title="等级"></a>等级</h4><table>
-<thead>
-<tr>
-<th align="center">接口</th>
-<th align="center">UHS 速度等级</th>
-<th align="center">速度等级</th>
-<th align="center">视频速度等级</th>
-<th align="center">应用程序等级</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">UHS-I</td>
-<td align="center">U1</td>
-<td align="center">C10</td>
-<td align="center">-</td>
-<td align="center">-</td>
-</tr>
-</tbody></table>
-<h4 id="说明-7"><a href="#说明-7" class="headerlink" title="说明"></a>说明</h4><ol>
-<li>测试时间：2022.06.17</li>
-<li>用途：Zoom H2n</li>
-</ol>
-<h3 id="SAMSUNG-PRO-Plus-256-GB"><a href="#SAMSUNG-PRO-Plus-256-GB" class="headerlink" title="SAMSUNG PRO Plus 256 GB"></a>SAMSUNG PRO Plus 256 GB</h3><h4 id="测速-8"><a href="#测速-8" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/16-7a3a01b42201bc7d60a0d791f26b28a7.png" style="zoom:50%;" />
-
-<h4 id="等级-8"><a href="#等级-8" class="headerlink" title="等级"></a>等级</h4><table>
-<thead>
-<tr>
-<th align="center">接口</th>
-<th align="center">UHS 速度等级</th>
-<th align="center">速度等级</th>
-<th align="center">视频速度等级</th>
-<th align="center">应用程序等级</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">UHS-I</td>
-<td align="center">U3</td>
-<td align="center">C10</td>
-<td align="center">V30</td>
-<td align="center">A2</td>
-</tr>
-</tbody></table>
-<h4 id="说明-8"><a href="#说明-8" class="headerlink" title="说明"></a>说明</h4><ol>
-<li>购买时间：2022.06.16</li>
-<li>测试时间：2022.06.16</li>
-<li>用途：DJI Air 2S</li>
-<li>备注：此卡在使用时，出现了无人机内可读，但电脑要求格式化的问题，且更换读卡器和电脑均未能读取数据，只能格式化。暂时无法得知问题出现原因并复现问题。</li>
-</ol>
-<h2 id="U盘"><a href="#U盘" class="headerlink" title="U盘"></a>U盘</h2><h3 id="IS903-64-GB-DIY"><a href="#IS903-64-GB-DIY" class="headerlink" title="IS903 64 GB (DIY)"></a>IS903 64 GB (DIY)</h3><h4 id="测速-9"><a href="#测速-9" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/14-da5d47707bf7cbe7cb83cf90d5cb9f79.PNG" style="zoom:50%;" />
-
-<h4 id="说明-9"><a href="#说明-9" class="headerlink" title="说明"></a>说明</h4><ol>
-<li>购买时间：2020.08.20</li>
-<li>测试时间：2022.06.14</li>
-<li>闪存：KIOXIA TH58TEG7DBHBAMC MLC</li>
-<li>其他：IS903 的 4K 读写速度没有测试意义</li>
-</ol>
-<h2 id="硬盘"><a href="#硬盘" class="headerlink" title="硬盘"></a>硬盘</h2><h3 id="WD-My-Passport-2-TB"><a href="#WD-My-Passport-2-TB" class="headerlink" title="WD My Passport 2 TB"></a>WD My Passport 2 TB</h3><h4 id="测速-10"><a href="#测速-10" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/18-e6b4d067271d1e0e586431da8a30deac.jpeg" style="zoom:50%;" />
-
-<h4 id="说明-10"><a href="#说明-10" class="headerlink" title="说明"></a>说明</h4><ol>
-<li>购买时间：2017.10.30</li>
-<li>测试时间：2022.06.18</li>
-<li>型号：WD20NMVW-11EDZS6</li>
-<li>磁记录：CMR</li>
-</ol>
-<h2 id="SSD"><a href="#SSD" class="headerlink" title="SSD"></a>SSD</h2><h3 id="小米笔记本-Pro-14-机载硬盘-512-GB（外置）"><a href="#小米笔记本-Pro-14-机载硬盘-512-GB（外置）" class="headerlink" title="小米笔记本 Pro 14 机载硬盘 512 GB（外置）"></a>小米笔记本 Pro 14 机载硬盘 512 GB（外置）</h3><h4 id="测速-11"><a href="#测速-11" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/14-64fdc63e5c2e2d7b4dcd59708f3e78a1.png" style="zoom:50%;" />
-
-<h4 id="说明-11"><a href="#说明-11" class="headerlink" title="说明"></a>说明</h4><ol>
-<li>购买时间：2021.09.14</li>
-<li>测试时间：2022.06.14</li>
-<li>型号：KIOXIA KBG40ZNV512G</li>
-<li>硬盘盒：ROG Strix Arion</li>
-<li>测试时总写入：866 GB</li>
-</ol>
-<h3 id="SAMSUNG-860-1-TB（外置）"><a href="#SAMSUNG-860-1-TB（外置）" class="headerlink" title="SAMSUNG 860 1 TB（外置）"></a>SAMSUNG 860 1 TB（外置）</h3><h4 id="测速-12"><a href="#测速-12" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-09/10-f0aea8e721a6f2a5624cb366e8c539e5.jpg" style="zoom:50%;" />
-
-<h4 id="说明-12"><a href="#说明-12" class="headerlink" title="说明"></a>说明</h4><ol>
-<li>购买时间：2022.09.10</li>
-<li>测试时间：2022.09.10</li>
-<li>硬盘盒：ROG Strix Arion</li>
-</ol>
-<h2 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a>特别说明</h2><ol>
-<li>所有产品（除商家附送）均购自京东自营、天猫旗舰等授权店铺；</li>
-<li>存储设备并不都是全新空卡测速，文中已写明购买时间和测试时间；</li>
-<li>测试结果与测试平台、读卡器、存储设备批次等密切相关，本测试仅供参考。</li>
-</ol>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ol>
-<li>本文禁止转载。</li>
-</ol>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><p>虚拟机：Parallels Desktop 13<br>操作系统环境：基于 MSDN 的 win10 专业版（1703）</p>
 ]]></content>
       <categories>
-        <category>Hardware</category>
+        <category>Science</category>
       </categories>
       <tags>
-        <tag>Storage</tag>
+        <tag>Jade</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Nginx 反向代理 Sci-Hub</title>
+    <url>/archives/1005f72b.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><ul>
+<li>Sci-Hub 是科研民工重要的学术工具，但是 Sci-Hub 特殊的情况导致其服务器的网络并不是很好，为了解决此问题，自建镜像站点以优化 Sci-Hub 的访问是十分有意义的；</li>
+<li>本教程基于 Ubuntu 18.04.6 LTS 制作，在阅读本教程前，<strong>希望您已具备 Linux 和 Nginx 相关知识</strong>。<span id="more"></span></li>
+</ul>
+<h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><ol>
+<li><a href="http://nginx.org/en/download.html">Nginx</a></li>
+<li><a href="https://www.pcre.org/">PCRE library</a>: 本例中请使用 PCRE v1</li>
+<li><a href="https://zlib.net/">zlib</a></li>
+<li><a href="https://www.openssl.org/source/">OpenSSL</a></li>
+</ol>
+<h2 id="模块解析"><a href="#模块解析" class="headerlink" title="模块解析"></a>模块解析</h2><ol>
+<li>ngx_http_sub_module: 用于进行关键字替换；</li>
+<li>ngx_http_gunzip_module: 用于解决 gzip 后无法进行关键字替换的问题。</li>
+</ol>
+<h2 id="Nginx-编译"><a href="#Nginx-编译" class="headerlink" title="Nginx 编译"></a>Nginx 编译</h2><h3 id="基础依赖"><a href="#基础依赖" class="headerlink" title="基础依赖"></a>基础依赖</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">apt-get install build-essential</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">其他的缺什么补什么</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="所需依赖"><a href="#所需依赖" class="headerlink" title="所需依赖"></a>所需依赖</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash"><span class="built_in">ls</span> /usr/local/src</span></span><br><span class="line"></span><br><span class="line">nginx-1.20.2  openssl-3.0.1  pcre-8.45  zlib-1.2.11</span><br></pre></td></tr></table></figure>
+
+<h3 id="开始编译"><a href="#开始编译" class="headerlink" title="开始编译"></a>开始编译</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash"><span class="built_in">cd</span> nginx-1.20.2</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">./configure \</span></span><br><span class="line"><span class="language-bash">    --sbin-path=/usr/local/nginx/nginx \</span></span><br><span class="line"><span class="language-bash">    --conf-path=/usr/local/nginx/nginx.conf \</span></span><br><span class="line"><span class="language-bash">    --pid-path=/usr/local/nginx/nginx.pid \</span></span><br><span class="line"><span class="language-bash">    --with-http_ssl_module \</span></span><br><span class="line"><span class="language-bash">    --with-http_gzip_static_module \</span></span><br><span class="line"><span class="language-bash">    --with-http_v2_module \</span></span><br><span class="line"><span class="language-bash">    --with-http_sub_module\</span></span><br><span class="line"><span class="language-bash">    --with-http_gunzip_module\</span></span><br><span class="line"><span class="language-bash">    --with-pcre=../pcre-8.45 \</span></span><br><span class="line"><span class="language-bash">    --with-zlib=../zlib-1.2.11 \</span></span><br><span class="line"><span class="language-bash">    --with-openssl=../openssl-3.0.1</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">make install</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="编译检查"><a href="#编译检查" class="headerlink" title="编译检查"></a>编译检查</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">/usr/local/nginx/nginx -V</span></span><br><span class="line"></span><br><span class="line">nginx version: nginx/1.20.2</span><br><span class="line">built by gcc 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) </span><br><span class="line">built with OpenSSL 3.0.1 14 Dec 2021</span><br><span class="line">TLS SNI support enabled</span><br><span class="line">configure arguments: --sbin-path=/usr/local/nginx/nginx --conf-path=/usr/local/nginx/nginx.conf --pid-path=/usr/local/nginx/nginx.pid --with-http_ssl_module --with-http_gzip_static_module --with-http_v2_module --with-http_sub_module --with-http_gunzip_module --with-pcre=../pcre-8.45 --with-zlib=../zlib-1.2.11 --with-openssl=../openssl-3.0.1</span><br></pre></td></tr></table></figure>
+
+<h3 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash"><span class="built_in">ln</span> -s /usr/local/nginx/nginx /usr/local/bin</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">nginx -v</span></span><br><span class="line"></span><br><span class="line">nginx version: nginx/1.20.2</span><br></pre></td></tr></table></figure>
+
+<h3 id="开机自启"><a href="#开机自启" class="headerlink" title="开机自启"></a>开机自启</h3><blockquote>
+<p>参考：<a href="https://www.nginx.com/resources/wiki/start/topics/examples/systemd/">https://www.nginx.com/resources/wiki/start/topics/examples/systemd/</a></p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=The NGINX HTTP and reverse proxy server</span><br><span class="line">After=syslog.target network-online.target remote-fs.target nss-lookup.target</span><br><span class="line">Wants=network-online.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type=forking</span><br><span class="line">PIDFile=/usr/local/nginx/nginx/nginx.pid</span><br><span class="line">ExecStartPre=/usr/local/nginx/nginx -t</span><br><span class="line">ExecStart=/usr/local/nginx/nginx</span><br><span class="line">ExecReload=/usr/local/nginx/nginx -s reload</span><br><span class="line">ExecStop=/bin/kill -s QUIT $MAINPID</span><br><span class="line">PrivateTmp=true</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
+
+<h2 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a>反向代理</h2><figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="section">server</span> &#123;</span><br><span class="line">  <span class="attribute">resolver</span> <span class="number">8.8.8.8</span>;</span><br><span class="line">  <span class="section">location</span> / &#123;</span><br><span class="line">    <span class="attribute">proxy_pass</span> https://sci-hub.se;</span><br><span class="line">    <span class="attribute">proxy_set_header</span> Host sci-hub.se;</span><br><span class="line">    <span class="attribute">proxy_set_header</span> X-Forwarded-Proto <span class="string">&quot;&quot;</span>;</span><br><span class="line">    <span class="attribute">proxy_set_header</span> X-Forwarded-Host <span class="variable">$host</span>;</span><br><span class="line">    <span class="attribute">proxy_set_header</span> X-Forwarded-For <span class="variable">$remote_addr</span>;</span><br><span class="line">    <span class="attribute">proxy_pass_request_headers</span> <span class="literal">on</span>;</span><br><span class="line">    <span class="attribute">proxy_ssl_name</span> sci-hub.se;</span><br><span class="line">    <span class="attribute">proxy_ssl_server_name</span> <span class="literal">on</span>;</span><br><span class="line">    <span class="attribute">gunzip</span> <span class="literal">on</span>;</span><br><span class="line">    <span class="attribute">gzip_disable</span> <span class="string">&quot;.&quot;</span>;</span><br><span class="line">    <span class="attribute">sub_filter</span> <span class="string">&#x27;sci-hub.se&#x27;</span> <span class="string">&#x27;sci.example.com&#x27;</span>;</span><br><span class="line">    <span class="attribute">sub_filter_once</span> <span class="literal">off</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>本代码参考自 <a href="https://gist.github.com/iczero/7cd7c90e9785449eeff7251be1ab3958">Sci-Hub nginx reverse proxy setup</a>，但该代码只是反代了主界面，而数据量最大的资源文件依然从原始站点获取，实际上并不能起到效果。</p>
+<p>我这里加入了 <code>sub_filter</code> ，将全页面的所有原始站点链接全部替换为 <code>sci.example.com</code>，以达到良好的效果。需要注意的是，<code>sub_filter</code> 无法修改 gzip 后的页面，所以本例中使用 <code>gunzip</code> 和 <code>gzip_disable</code> 来处理。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">gunzip on;</span><br><span class="line">gzip_disable &quot;.&quot;;</span><br><span class="line">sub_filter &#x27;sci-hub.se&#x27; &#x27;sci.example.com&#x27;;</span><br><span class="line">sub_filter_once off;</span><br></pre></td></tr></table></figure>
+
+<h2 id="追加模块"><a href="#追加模块" class="headerlink" title="追加模块"></a>追加模块</h2><p>Nginx 编译完成后，如果需要更新程序或者追加编译模块，只需要在原编译命令的基础上，增加你想要的模块，采用 <code>make</code> 而不是 <code>make install</code> 来编译即可。编译后的文件为 <code>objs/nginx</code>，将其替换原先的文件就可以啦。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">./configure \</span></span><br><span class="line"><span class="language-bash">    --sbin-path=/usr/local/nginx/nginx \</span></span><br><span class="line"><span class="language-bash">    --conf-path=/usr/local/nginx/nginx.conf \</span></span><br><span class="line"><span class="language-bash">    --pid-path=/usr/local/nginx/nginx.pid \</span></span><br><span class="line"><span class="language-bash">    --with-http_ssl_module \</span></span><br><span class="line"><span class="language-bash">    --... \</span></span><br><span class="line"><span class="language-bash">    -- &lt;modules you want to add&gt;</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">make</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash"><span class="built_in">cp</span> -f objs/nginx /usr/local/nginx/nginx</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Develop</category>
+      </categories>
+      <tags>
+        <tag>Nginx</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>部署我的 Alfred-OCR 插件</title>
+    <url>/archives/7fe802d0.html</url>
+    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><ul>
+<li><a href="https://github.com/Chandler-Lu/alfred-ocr">Chandler-Lu&#x2F;alfred-ocr</a></li>
+</ul>
+<span id="more"></span>
+
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ul>
+<li>本教程在 macOS Catalina 10.15.3，Alfred 4.0.8 下完成</li>
+</ul>
+<h2 id="安装-Python"><a href="#安装-Python" class="headerlink" title="安装 Python"></a>安装 Python</h2><ul>
+<li>访问 <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></li>
+</ul>
+<p><img src="https://img.yeslu.cn/blog/early/InstallPython-1.png!blog_watermark"></p>
+<ul>
+<li><p>点击 Download Python （由于您看到此文的时间不同，获取的 Python 版本也可能不同）</p>
+</li>
+<li><p>打开安装文件，您可以看到如下界面，点击“继续”直至安装完成</p>
+</li>
+</ul>
+<p><img src="https://img.yeslu.cn/blog/early/InstallPython-2.png!blog_watermark"></p>
+<ul>
+<li>打开“终端”工具，在终端工具中依次输入如下两行，您应当得到类似图片的内容。</li>
+</ul>
+<p><img src="https://img.yeslu.cn/blog/early/InstallPython-3.png!blog_watermark"></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">which</span> python3 (请记录此行返回的内容)</span><br><span class="line">python3 --version</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img.yeslu.cn/blog/early/InstallPython-4.png!blog_watermark"></p>
+<h2 id="安装-Python-模块"><a href="#安装-Python-模块" class="headerlink" title="安装 Python 模块"></a>安装 Python 模块</h2><ul>
+<li>打开“终端”工具，在终端工具中依次输入如下三行（需要注意的是，由于 cnocr 模块所依赖的数据文件位于 Dropbox，在国内无法正常访问，如果您不需要离线识别，则可不安装）</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip3 install cnocr (可选)</span><br><span class="line">pip3 install zxing</span><br><span class="line">pip3 install requests</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>如果您在国内，以上安装方式可能速度较慢，您可以通过更换<a href="https://mirror.tuna.tsinghua.edu.cn/help/pypi/">清华镜像</a>的方式安装。在终端工具中输入如下命令，然后重复以上操作。</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip3 config <span class="built_in">set</span> global.index-url https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>一切顺利的话，您将完成全部的部署工作</li>
+</ul>
+<h2 id="配置-Alfred"><a href="#配置-Alfred" class="headerlink" title="配置 Alfred"></a>配置 Alfred</h2><ul>
+<li>打开 Alfred 配置界面（您可以在 Alfred 窗口输入 Alfred 以打开配置界面）</li>
+</ul>
+<p><img src="https://img.yeslu.cn/blog/early/InstallPython-5.png!blog_watermark"></p>
+<ul>
+<li>进入 Capture than OCR 插件页，并点击右上角的环境变量配置按钮</li>
+</ul>
+<p><img src="https://img.yeslu.cn/blog/early/InstallPython-6.png!blog_watermark"></p>
+<ul>
+<li>找到 PYTHON_PATH 项目，双击右侧的 Value 值，修改为在“安装 Python”中由<code>which python3</code>返回的内容，如<code>/usr/bin/python3</code>，并保存。</li>
+</ul>
+<p><img src="https://img.yeslu.cn/blog/early/InstallPython-7.png!blog_watermark"></p>
+<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>通过<code>Ctrl+V</code>触发百度 OCR 截屏，如果可以正确返回识别内容，那么恭喜你安装成功。</p>
+<h2 id="反馈"><a href="#反馈" class="headerlink" title="反馈"></a>反馈</h2><p>如果您的没有得到预期的内容，请按如下方式操作：</p>
+<p><img src="https://img.yeslu.cn/blog/early/InstallPython-8.png!blog_watermark"></p>
+<ul>
+<li>点击插件配置页面右上角的 Debug 按钮</li>
+<li>触发一次识别</li>
+<li>下方的日志将会出现错误报告，点击右上角“Copy”，并将内容以 Issue 形式提交。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Utilize</category>
+      </categories>
+      <tags>
+        <tag>OCR</tag>
+        <tag>Alfred</tag>
+        <tag>Extension</tag>
       </tags>
   </entry>
   <entry>
@@ -5658,125 +5780,48 @@
       </categories>
   </entry>
   <entry>
-    <title>Nginx 反向代理 Sci-Hub</title>
-    <url>/archives/1005f72b.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><ul>
-<li>Sci-Hub 是科研民工重要的学术工具，但是 Sci-Hub 特殊的情况导致其服务器的网络并不是很好，为了解决此问题，自建镜像站点以优化 Sci-Hub 的访问是十分有意义的；</li>
-<li>本教程基于 Ubuntu 18.04.6 LTS 制作，在阅读本教程前，<strong>希望您已具备 Linux 和 Nginx 相关知识</strong>。<span id="more"></span></li>
-</ul>
-<h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><ol>
-<li><a href="http://nginx.org/en/download.html">Nginx</a></li>
-<li><a href="https://www.pcre.org/">PCRE library</a>: 本例中请使用 PCRE v1</li>
-<li><a href="https://zlib.net/">zlib</a></li>
-<li><a href="https://www.openssl.org/source/">OpenSSL</a></li>
-</ol>
-<h2 id="模块解析"><a href="#模块解析" class="headerlink" title="模块解析"></a>模块解析</h2><ol>
-<li>ngx_http_sub_module: 用于进行关键字替换；</li>
-<li>ngx_http_gunzip_module: 用于解决 gzip 后无法进行关键字替换的问题。</li>
-</ol>
-<h2 id="Nginx-编译"><a href="#Nginx-编译" class="headerlink" title="Nginx 编译"></a>Nginx 编译</h2><h3 id="基础依赖"><a href="#基础依赖" class="headerlink" title="基础依赖"></a>基础依赖</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">apt-get install build-essential</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">其他的缺什么补什么</span></span><br></pre></td></tr></table></figure>
+    <title>Origin 绘制 3D 图时无法正常显示图例</title>
+    <url>/archives/863b7bad.html</url>
+    <content><![CDATA[<h2 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h2><p>Origin 部分版本在绘制图形时，图例等部分会出现如下图所示的异常的黑色色块，此问题与 AMD 显卡 OpenGL 与 Origin 的兼容性有关，本文将简述解决方案。</p>
+<img src="https://img.yeslu.cn/blog/2023-04/25-88b961d88dd9f971b194e69d3e1a79fc.png" alt="图片来自群友聊天记录" style="zoom: 50%;" />
 
-<h3 id="所需依赖"><a href="#所需依赖" class="headerlink" title="所需依赖"></a>所需依赖</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash"><span class="built_in">ls</span> /usr/local/src</span></span><br><span class="line"></span><br><span class="line">nginx-1.20.2  openssl-3.0.1  pcre-8.45  zlib-1.2.11</span><br></pre></td></tr></table></figure>
-
-<h3 id="开始编译"><a href="#开始编译" class="headerlink" title="开始编译"></a>开始编译</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash"><span class="built_in">cd</span> nginx-1.20.2</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">./configure \</span></span><br><span class="line"><span class="language-bash">    --sbin-path=/usr/local/nginx/nginx \</span></span><br><span class="line"><span class="language-bash">    --conf-path=/usr/local/nginx/nginx.conf \</span></span><br><span class="line"><span class="language-bash">    --pid-path=/usr/local/nginx/nginx.pid \</span></span><br><span class="line"><span class="language-bash">    --with-http_ssl_module \</span></span><br><span class="line"><span class="language-bash">    --with-http_gzip_static_module \</span></span><br><span class="line"><span class="language-bash">    --with-http_v2_module \</span></span><br><span class="line"><span class="language-bash">    --with-http_sub_module\</span></span><br><span class="line"><span class="language-bash">    --with-http_gunzip_module\</span></span><br><span class="line"><span class="language-bash">    --with-pcre=../pcre-8.45 \</span></span><br><span class="line"><span class="language-bash">    --with-zlib=../zlib-1.2.11 \</span></span><br><span class="line"><span class="language-bash">    --with-openssl=../openssl-3.0.1</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">make install</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="编译检查"><a href="#编译检查" class="headerlink" title="编译检查"></a>编译检查</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">/usr/local/nginx/nginx -V</span></span><br><span class="line"></span><br><span class="line">nginx version: nginx/1.20.2</span><br><span class="line">built by gcc 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) </span><br><span class="line">built with OpenSSL 3.0.1 14 Dec 2021</span><br><span class="line">TLS SNI support enabled</span><br><span class="line">configure arguments: --sbin-path=/usr/local/nginx/nginx --conf-path=/usr/local/nginx/nginx.conf --pid-path=/usr/local/nginx/nginx.pid --with-http_ssl_module --with-http_gzip_static_module --with-http_v2_module --with-http_sub_module --with-http_gunzip_module --with-pcre=../pcre-8.45 --with-zlib=../zlib-1.2.11 --with-openssl=../openssl-3.0.1</span><br></pre></td></tr></table></figure>
-
-<h3 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash"><span class="built_in">ln</span> -s /usr/local/nginx/nginx /usr/local/bin</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">nginx -v</span></span><br><span class="line"></span><br><span class="line">nginx version: nginx/1.20.2</span><br></pre></td></tr></table></figure>
-
-<h3 id="开机自启"><a href="#开机自启" class="headerlink" title="开机自启"></a>开机自启</h3><blockquote>
-<p>参考：<a href="https://www.nginx.com/resources/wiki/start/topics/examples/systemd/">https://www.nginx.com/resources/wiki/start/topics/examples/systemd/</a></p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=The NGINX HTTP and reverse proxy server</span><br><span class="line">After=syslog.target network-online.target remote-fs.target nss-lookup.target</span><br><span class="line">Wants=network-online.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type=forking</span><br><span class="line">PIDFile=/usr/local/nginx/nginx/nginx.pid</span><br><span class="line">ExecStartPre=/usr/local/nginx/nginx -t</span><br><span class="line">ExecStart=/usr/local/nginx/nginx</span><br><span class="line">ExecReload=/usr/local/nginx/nginx -s reload</span><br><span class="line">ExecStop=/bin/kill -s QUIT $MAINPID</span><br><span class="line">PrivateTmp=true</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
-
-<h2 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a>反向代理</h2><figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="section">server</span> &#123;</span><br><span class="line">  <span class="attribute">resolver</span> <span class="number">8.8.8.8</span>;</span><br><span class="line">  <span class="section">location</span> / &#123;</span><br><span class="line">    <span class="attribute">proxy_pass</span> https://sci-hub.se;</span><br><span class="line">    <span class="attribute">proxy_set_header</span> Host sci-hub.se;</span><br><span class="line">    <span class="attribute">proxy_set_header</span> X-Forwarded-Proto <span class="string">&quot;&quot;</span>;</span><br><span class="line">    <span class="attribute">proxy_set_header</span> X-Forwarded-Host <span class="variable">$host</span>;</span><br><span class="line">    <span class="attribute">proxy_set_header</span> X-Forwarded-For <span class="variable">$remote_addr</span>;</span><br><span class="line">    <span class="attribute">proxy_pass_request_headers</span> <span class="literal">on</span>;</span><br><span class="line">    <span class="attribute">proxy_ssl_name</span> sci-hub.se;</span><br><span class="line">    <span class="attribute">proxy_ssl_server_name</span> <span class="literal">on</span>;</span><br><span class="line">    <span class="attribute">gunzip</span> <span class="literal">on</span>;</span><br><span class="line">    <span class="attribute">gzip_disable</span> <span class="string">&quot;.&quot;</span>;</span><br><span class="line">    <span class="attribute">sub_filter</span> <span class="string">&#x27;sci-hub.se&#x27;</span> <span class="string">&#x27;sci.example.com&#x27;</span>;</span><br><span class="line">    <span class="attribute">sub_filter_once</span> <span class="literal">off</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>本代码参考自 <a href="https://gist.github.com/iczero/7cd7c90e9785449eeff7251be1ab3958">Sci-Hub nginx reverse proxy setup</a>，但该代码只是反代了主界面，而数据量最大的资源文件依然从原始站点获取，实际上并不能起到效果。</p>
-<p>我这里加入了 <code>sub_filter</code> ，将全页面的所有原始站点链接全部替换为 <code>sci.example.com</code>，以达到良好的效果。需要注意的是，<code>sub_filter</code> 无法修改 gzip 后的页面，所以本例中使用 <code>gunzip</code> 和 <code>gzip_disable</code> 来处理。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">gunzip on;</span><br><span class="line">gzip_disable &quot;.&quot;;</span><br><span class="line">sub_filter &#x27;sci-hub.se&#x27; &#x27;sci.example.com&#x27;;</span><br><span class="line">sub_filter_once off;</span><br></pre></td></tr></table></figure>
-
-<h2 id="追加模块"><a href="#追加模块" class="headerlink" title="追加模块"></a>追加模块</h2><p>Nginx 编译完成后，如果需要更新程序或者追加编译模块，只需要在原编译命令的基础上，增加你想要的模块，采用 <code>make</code> 而不是 <code>make install</code> 来编译即可。编译后的文件为 <code>objs/nginx</code>，将其替换原先的文件就可以啦。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">./configure \</span></span><br><span class="line"><span class="language-bash">    --sbin-path=/usr/local/nginx/nginx \</span></span><br><span class="line"><span class="language-bash">    --conf-path=/usr/local/nginx/nginx.conf \</span></span><br><span class="line"><span class="language-bash">    --pid-path=/usr/local/nginx/nginx.pid \</span></span><br><span class="line"><span class="language-bash">    --with-http_ssl_module \</span></span><br><span class="line"><span class="language-bash">    --... \</span></span><br><span class="line"><span class="language-bash">    -- &lt;modules you want to add&gt;</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">make</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash"><span class="built_in">cp</span> -f objs/nginx /usr/local/nginx/nginx</span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Develop</category>
-      </categories>
-      <tags>
-        <tag>Nginx</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>部署我的 Alfred-OCR 插件</title>
-    <url>/archives/7fe802d0.html</url>
-    <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><ul>
-<li><a href="https://github.com/Chandler-Lu/alfred-ocr">Chandler-Lu&#x2F;alfred-ocr</a></li>
-</ul>
 <span id="more"></span>
 
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ul>
-<li>本教程在 macOS Catalina 10.15.3，Alfred 4.0.8 下完成</li>
-</ul>
-<h2 id="安装-Python"><a href="#安装-Python" class="headerlink" title="安装 Python"></a>安装 Python</h2><ul>
-<li>访问 <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></li>
-</ul>
-<p><img src="https://img.yeslu.cn/blog/early/InstallPython-1.png!blog_watermark"></p>
+<h2 id="官方解决方案"><a href="#官方解决方案" class="headerlink" title="官方解决方案"></a>官方解决方案</h2><blockquote>
+<p>Origin 在 2023b 中修复了这个问题：<a href="https://originlab.jira.com/wiki/spaces/main/pages/2630582301/Origin+2023b+Bug+Fixes">ORG-24094</a></p>
+</blockquote>
+<ol>
+<li>将软件<strong>更新至 Origin 2023b 及以上版本</strong>；</li>
+<li>通过 <code>Preference -&gt; System Variables</code> 打开系统变量设置窗口；</li>
+<li>设置系统变量<code>OGLDP</code>的值为<code>1</code>；</li>
+<li>重新打开软件。</li>
+</ol>
+<p><img src="https://img.yeslu.cn/blog/2023-05/23-82874450a4ae3f76e0da65e359f8783a.png!blog_watermark"></p>
+<p>如果上述方法无法解决问题，可尝试通过 <code>Preference -&gt; 3D OpenGL Settings</code> 取消勾选 <code>Enable Display List</code>。</p>
+<p><img src="https://img.yeslu.cn/blog/2023-04/25-7cbc67c6d7c42d0a7e7948126944da6a.png!blog_watermark"></p>
+<p>参考文档：<a href="https://www.originlab.com/doc/Quick-Help/Strange-Color-Block-On-3D-Graph">Strange-Color-Block-On-3D-Graph</a></p>
+<h2 id="坊间解决方案"><a href="#坊间解决方案" class="headerlink" title="坊间解决方案"></a>坊间解决方案</h2><blockquote>
+<p>以下方法为<strong>可能有效</strong>的方案，不保证解决问题。</p>
+</blockquote>
 <ul>
-<li><p>点击 Download Python （由于您看到此文的时间不同，获取的 Python 版本也可能不同）</p>
-</li>
-<li><p>打开安装文件，您可以看到如下界面，点击“继续”直至安装完成</p>
-</li>
+<li>如果你是双显卡用户，可以将 Origin 调用的显卡切换为另一张显卡；</li>
+<li>尝试将 AMD 显卡的驱动程序<strong>更新到最新</strong>，或<strong>降级到上一个版本</strong>。</li>
 </ul>
-<p><img src="https://img.yeslu.cn/blog/early/InstallPython-2.png!blog_watermark"></p>
-<ul>
-<li>打开“终端”工具，在终端工具中依次输入如下两行，您应当得到类似图片的内容。</li>
-</ul>
-<p><img src="https://img.yeslu.cn/blog/early/InstallPython-3.png!blog_watermark"></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">which</span> python3 (请记录此行返回的内容)</span><br><span class="line">python3 --version</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://img.yeslu.cn/blog/early/InstallPython-4.png!blog_watermark"></p>
-<h2 id="安装-Python-模块"><a href="#安装-Python-模块" class="headerlink" title="安装 Python 模块"></a>安装 Python 模块</h2><ul>
-<li>打开“终端”工具，在终端工具中依次输入如下三行（需要注意的是，由于 cnocr 模块所依赖的数据文件位于 Dropbox，在国内无法正常访问，如果您不需要离线识别，则可不安装）</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip3 install cnocr (可选)</span><br><span class="line">pip3 install zxing</span><br><span class="line">pip3 install requests</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>如果您在国内，以上安装方式可能速度较慢，您可以通过更换<a href="https://mirror.tuna.tsinghua.edu.cn/help/pypi/">清华镜像</a>的方式安装。在终端工具中输入如下命令，然后重复以上操作。</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">pip3 config <span class="built_in">set</span> global.index-url https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>一切顺利的话，您将完成全部的部署工作</li>
-</ul>
-<h2 id="配置-Alfred"><a href="#配置-Alfred" class="headerlink" title="配置 Alfred"></a>配置 Alfred</h2><ul>
-<li>打开 Alfred 配置界面（您可以在 Alfred 窗口输入 Alfred 以打开配置界面）</li>
-</ul>
-<p><img src="https://img.yeslu.cn/blog/early/InstallPython-5.png!blog_watermark"></p>
-<ul>
-<li>进入 Capture than OCR 插件页，并点击右上角的环境变量配置按钮</li>
-</ul>
-<p><img src="https://img.yeslu.cn/blog/early/InstallPython-6.png!blog_watermark"></p>
-<ul>
-<li>找到 PYTHON_PATH 项目，双击右侧的 Value 值，修改为在“安装 Python”中由<code>which python3</code>返回的内容，如<code>/usr/bin/python3</code>，并保存。</li>
-</ul>
-<p><img src="https://img.yeslu.cn/blog/early/InstallPython-7.png!blog_watermark"></p>
-<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>通过<code>Ctrl+V</code>触发百度 OCR 截屏，如果可以正确返回识别内容，那么恭喜你安装成功。</p>
-<h2 id="反馈"><a href="#反馈" class="headerlink" title="反馈"></a>反馈</h2><p>如果您的没有得到预期的内容，请按如下方式操作：</p>
-<p><img src="https://img.yeslu.cn/blog/early/InstallPython-8.png!blog_watermark"></p>
-<ul>
-<li>点击插件配置页面右上角的 Debug 按钮</li>
-<li>触发一次识别</li>
-<li>下方的日志将会出现错误报告，点击右上角“Copy”，并将内容以 Issue 形式提交。</li>
-</ul>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
+<li>Windows 11 (22621);</li>
+<li>Origin 2023b beta2 (Academic).</li>
+</ol>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文禁止转载；</li>
+<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
+</ol>
 ]]></content>
       <categories>
-        <category>Utilize</category>
+        <category>Science</category>
       </categories>
       <tags>
-        <tag>OCR</tag>
-        <tag>Alfred</tag>
-        <tag>Extension</tag>
+        <tag>Graph</tag>
+        <tag>Origin</tag>
       </tags>
   </entry>
   <entry>
@@ -6083,6 +6128,36 @@
       </tags>
   </entry>
   <entry>
+    <title>Origin 部分中文字体加粗不显示</title>
+    <url>/archives/f49d4612.html</url>
+    <content><![CDATA[<h2 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h2><p>Origin <strong>部分中文字体</strong>（宋体、黑体、楷体等）在<strong>垂直方向</strong>上加粗后，实际不显示加粗。</p>
+<img src="https://img.yeslu.cn/blog/2023-05/05-8e92bc4a588a2195d4082ec88845e429.png!blog_watermark" style="zoom: 33%;" />
+
+<span id="more"></span>
+
+<h2 id="问题报告"><a href="#问题报告" class="headerlink" title="问题报告"></a>问题报告</h2><p>此问题为 OriginLab 方的已知问题（ORG-23517），但现阶段未能被修复。</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><h3 id="修改字体"><a href="#修改字体" class="headerlink" title="修改字体"></a>修改字体</h3><p>更换相近字体，有一部分中文字体的加粗能够被正常显示。</p>
+<p><img src="https://img.yeslu.cn/blog/2023-05/05-fbed6e174f7128ee9118cecb2dd8ddfa.png!blog_watermark"></p>
+<h3 id="修改旋转角度"><a href="#修改旋转角度" class="headerlink" title="修改旋转角度"></a>修改旋转角度</h3><p>将旋转角度修改至 89 度或者 91 度，也可以使加粗正常显示。</p>
+<p><img src="https://img.yeslu.cn/blog/2023-05/05-a5a37f89ec0c0e03959718d3ec0205de.png!blog_watermark"></p>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
+<li>Windows 11 (22621);</li>
+<li>Origin 2023b (Academic).</li>
+</ol>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文禁止转载；</li>
+<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Graph</tag>
+        <tag>Origin</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Origin 修改中文语言</title>
     <url>/archives/2e6d2c4b.html</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Origin 原则上可以在软件内直接切换语言，但由于官方授权的一些特性和限制，部分用户无法在软件内切换，本文将详解语言切换的相关逻辑。</p>
@@ -6106,53 +6181,8 @@
         <category>Science</category>
       </categories>
       <tags>
-        <tag>Origin</tag>
         <tag>Graph</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Origin 绘制 3D 图时无法正常显示图例</title>
-    <url>/archives/863b7bad.html</url>
-    <content><![CDATA[<h2 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h2><p>Origin 部分版本在绘制图形时，图例等部分会出现如下图所示的异常的黑色色块，此问题与 AMD 显卡 OpenGL 与 Origin 的兼容性有关，本文将简述解决方案。</p>
-<img src="https://img.yeslu.cn/blog/2023-04/25-88b961d88dd9f971b194e69d3e1a79fc.png" alt="图片来自群友聊天记录" style="zoom: 50%;" />
-
-<span id="more"></span>
-
-<h2 id="官方解决方案"><a href="#官方解决方案" class="headerlink" title="官方解决方案"></a>官方解决方案</h2><blockquote>
-<p>Origin 在 2023b 中修复了这个问题：<a href="https://originlab.jira.com/wiki/spaces/main/pages/2630582301/Origin+2023b+Bug+Fixes">ORG-24094</a></p>
-</blockquote>
-<ol>
-<li>将软件<strong>更新至 Origin 2023b 及以上版本</strong>；</li>
-<li>通过 <code>Preference -&gt; System Variables</code> 打开系统变量设置窗口；</li>
-<li>设置系统变量<code>OGLDP</code>的值为<code>1</code>；</li>
-<li>重新打开软件。</li>
-</ol>
-<p><img src="https://img.yeslu.cn/blog/2023-05/23-82874450a4ae3f76e0da65e359f8783a.png!blog_watermark"></p>
-<p>如果上述方法无法解决问题，可尝试通过 <code>Preference -&gt; 3D OpenGL Settings</code> 取消勾选 <code>Enable Display List</code>。</p>
-<p><img src="https://img.yeslu.cn/blog/2023-04/25-7cbc67c6d7c42d0a7e7948126944da6a.png!blog_watermark"></p>
-<p>参考文档：<a href="https://www.originlab.com/doc/Quick-Help/Strange-Color-Block-On-3D-Graph">Strange-Color-Block-On-3D-Graph</a></p>
-<h2 id="坊间解决方案"><a href="#坊间解决方案" class="headerlink" title="坊间解决方案"></a>坊间解决方案</h2><blockquote>
-<p>以下方法为<strong>可能有效</strong>的方案，不保证解决问题。</p>
-</blockquote>
-<ul>
-<li>如果你是双显卡用户，可以将 Origin 调用的显卡切换为另一张显卡；</li>
-<li>尝试将 AMD 显卡的驱动程序<strong>更新到最新</strong>，或<strong>降级到上一个版本</strong>。</li>
-</ul>
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
-<li>Windows 11 (22621);</li>
-<li>Origin 2023b beta2 (Academic).</li>
-</ol>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文禁止转载；</li>
-<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
         <tag>Origin</tag>
-        <tag>Graph</tag>
       </tags>
   </entry>
   <entry>
@@ -6232,8 +6262,8 @@
         <category>Science</category>
       </categories>
       <tags>
-        <tag>Origin</tag>
         <tag>Graph</tag>
+        <tag>Origin</tag>
         <tag>Data-Analysis</tag>
       </tags>
   </entry>
@@ -6394,39 +6424,9 @@
         <category>Science</category>
       </categories>
       <tags>
-        <tag>Origin</tag>
         <tag>Graph</tag>
+        <tag>Origin</tag>
         <tag>Data-Analysis</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Origin 部分中文字体加粗不显示</title>
-    <url>/archives/f49d4612.html</url>
-    <content><![CDATA[<h2 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h2><p>Origin <strong>部分中文字体</strong>（宋体、黑体、楷体等）在<strong>垂直方向</strong>上加粗后，实际不显示加粗。</p>
-<img src="https://img.yeslu.cn/blog/2023-05/05-8e92bc4a588a2195d4082ec88845e429.png!blog_watermark" style="zoom: 33%;" />
-
-<span id="more"></span>
-
-<h2 id="问题报告"><a href="#问题报告" class="headerlink" title="问题报告"></a>问题报告</h2><p>此问题为 OriginLab 方的已知问题（ORG-23517），但现阶段未能被修复。</p>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><h3 id="修改字体"><a href="#修改字体" class="headerlink" title="修改字体"></a>修改字体</h3><p>更换相近字体，有一部分中文字体的加粗能够被正常显示。</p>
-<p><img src="https://img.yeslu.cn/blog/2023-05/05-fbed6e174f7128ee9118cecb2dd8ddfa.png!blog_watermark"></p>
-<h3 id="修改旋转角度"><a href="#修改旋转角度" class="headerlink" title="修改旋转角度"></a>修改旋转角度</h3><p>将旋转角度修改至 89 度或者 91 度，也可以使加粗正常显示。</p>
-<p><img src="https://img.yeslu.cn/blog/2023-05/05-a5a37f89ec0c0e03959718d3ec0205de.png!blog_watermark"></p>
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
-<li>Windows 11 (22621);</li>
-<li>Origin 2023b (Academic).</li>
-</ol>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文禁止转载；</li>
-<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Origin</tag>
-        <tag>Graph</tag>
       </tags>
   </entry>
   <entry>
@@ -6504,8 +6504,8 @@
         <category>Science</category>
       </categories>
       <tags>
-        <tag>Origin</tag>
         <tag>Graph</tag>
+        <tag>Origin</tag>
         <tag>Data-Analysis</tag>
       </tags>
   </entry>
@@ -6723,8 +6723,8 @@
         <category>Science</category>
       </categories>
       <tags>
-        <tag>Origin</tag>
         <tag>Graph</tag>
+        <tag>Origin</tag>
       </tags>
   </entry>
   <entry>
@@ -6806,8 +6806,8 @@
         <category>Science</category>
       </categories>
       <tags>
-        <tag>Origin</tag>
         <tag>Graph</tag>
+        <tag>Origin</tag>
         <tag>Data-Analysis</tag>
       </tags>
   </entry>
