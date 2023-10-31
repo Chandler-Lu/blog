@@ -7016,17 +7016,13 @@
 <p>对于中英文混排中出现的格式问题，已有前辈制作了非常完善的指南：<a href="https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.zh-CN.md">chinese-copywriting-guidelines</a>，这里将不再说明。</p>
 <span id="more"></span>
 
-<h2 id="如何修改"><a href="#如何修改" class="headerlink" title="如何修改"></a>如何修改</h2><p><strong>⚠️ 警告：这是一个危险操作，请务必阅读</strong></p>
-<p>Endnote 在向 Word 插入文献的过程中，会在 Word 中创建一个由 Endnote 管理的域，此区域随着 Endnote 中文献信息的更新而更新。</p>
-<p>因此，当该区域由 Endnote 管理的时候，是无法直接修改区域中内容的，否则当使用 “Update Citations and Bibliography” 更新文献信息时，所有的修改将丢失。</p>
-<p>在进行下述格式修正之前，你需要确保全篇论文的所有参考文献已被插入完毕。<strong>建议将当前文件备份，并在副本中操作。</strong></p>
-<p>使用 Tools - Convert to Plain Text，将该区域转换为纯文本。此时 Endnote 将失去对此区域的管理，并可作为常规文本进行编辑。</p>
+<h2 id="修改引用内容"><a href="#修改引用内容" class="headerlink" title="修改引用内容"></a>修改引用内容</h2><p><strong>⚠️ 警告：这是一个危险操作，请务必阅读</strong></p>
+<p>Endnote 在向 Word 插入文献的过程中，会在 Word 中创建一个由 Endnote 管理的域，此区域随着 Endnote 中文献信息的更新而更新。当该区域由 Endnote 管理的时候，是无法直接修改区域中内容的，否则增加、删除、更新引用信息时，所有的修改将丢失。</p>
+<p>因此在手动修改引用内容之前，你需要确保全篇论文的所有参考文献已被插入完毕。<strong>请务必将当前文件备份，并在副本中操作。</strong></p>
+<p>使用快捷键<code>Ctrl+Shift+F9</code>，将全文的域转换为纯文本，此时 Endnote 将失去对其区域的管理，并可作为常规文本进行编辑。</p>
+<p>这里有个小 Tips，虽然 Endnote 自带了如下图所示 Tools - Convert to Plain Text 的功能，同样可以将 Endnote 域转换为纯文本，但是此方法将可能导致全文格式混乱，个人并不建议使用。</p>
 <p><img src="https://img.yeslu.cn/blog/paper/paper-06-01.png!blog_watermark"></p>
-<h2 id="避坑汇总"><a href="#避坑汇总" class="headerlink" title="避坑汇总"></a>避坑汇总</h2><h3 id="软件卡顿"><a href="#软件卡顿" class="headerlink" title="软件卡顿"></a>软件卡顿</h3><p><img src="https://img.yeslu.cn/blog/paper/paper-06-02.png!blog_watermark"></p>
-<p>Endnote 启动时默认是这样的界面，但由于右侧 PDF 预览窗口会随着你切换当前选择的文献，而不断刷新，造成窗口卡顿。</p>
-<p><img src="https://img.yeslu.cn/blog/paper/paper-06-03.png!blog_watermark"></p>
-<p>当你不需要实时预览文献内容时，选择此处的 References Only 按钮，即可关闭文献预览界面，一定程度上解决卡顿问题。</p>
-<h3 id="数据源错误"><a href="#数据源错误" class="headerlink" title="数据源错误"></a>数据源错误</h3><p><img src="https://img.yeslu.cn/blog/paper/paper-06-04.png!blog_watermark"></p>
+<h2 id="避坑汇总"><a href="#避坑汇总" class="headerlink" title="避坑汇总"></a>避坑汇总</h2><h3 id="数据源错误"><a href="#数据源错误" class="headerlink" title="数据源错误"></a>数据源错误</h3><p><img src="https://img.yeslu.cn/blog/paper/paper-06-04.png!blog_watermark"></p>
 <p>以百度学术为例，大家通常从这里下载 Endnote 的数据文件并导入 Endnote。但无论是百度学术、谷歌学术，还是其他的文献平台，下载的数据文件本身可能存在内容缺失（如缺页码，缺年份等），这样最终导入 Word 的内容自然也不可能正确。</p>
 <h3 id="作者名格式"><a href="#作者名格式" class="headerlink" title="作者名格式"></a>作者名格式</h3><ul>
 <li>外文名作者，名在前，姓在后，姓名间空格分隔。对于 3 个及以上的外文名作者，使用 <code>A, B, C, et al.</code> 来表示，如 <code>Nitta N, Wu F, Lee J T, et al.</code></li>
