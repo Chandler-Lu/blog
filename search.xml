@@ -7209,11 +7209,13 @@
 <h3 id="参考线"><a href="#参考线" class="headerlink" title="参考线"></a>参考线</h3><p>在坐标轴设置的 “Reference Line” Tab 能够精确设置纵向和横向参考线，并可以自定义参考线之间的填充，通过右下方的 Details 可以修改线形和填充的参数。</p>
 <p><img src="https://img.yeslu.cn/blog/2024-01/20-29a51d58b365a4c07bd04f881709faaa.png!blog_watermark"></p>
 <p>参考文档：<a href="https://www.originlab.com/doc/Origin-Help/AxesRef-RefLines">AxesRef-RefLines</a></p>
-<h3 id="不规则填充"><a href="#不规则填充" class="headerlink" title="不规则填充"></a>不规则填充</h3><p>示例数据请前往 Learning Center（Help: Learning Center 或 F11）搜索 Shading Between Curve。</p>
-<p><img src="https://img.yeslu.cn/blog/2024-01/20-ef4d80ba619ed225047820cbd58c9cf1.png!blog_watermark"></p>
+<h3 id="不规则填充"><a href="#不规则填充" class="headerlink" title="不规则填充"></a>不规则填充</h3><p><img src="https://img.yeslu.cn/blog/2024-01/20-ef4d80ba619ed225047820cbd58c9cf1.png!blog_watermark"></p>
+<blockquote>
+<p>示例数据请前往 Learning Center（Help: Learning Center 或 F11）搜索 Shading Between Curve。</p>
+</blockquote>
 <p>在本图中，我们希望从上方曲线填充到下方基线。这里我们用到了 Gadgets: Integrate 功能，在 “Integration” Tab 中勾选 “Keep the shading color after New Output”，并在 “Baseline” Tab 中选择需要填充到的基线。</p>
 <p><img src="https://img.yeslu.cn/blog/2024-01/21-a3b18447c1680ce26479f64e148d24ca.png!blog_watermark"></p>
-<p>接着在该工具的设置中更改起始数据，即可填充从上方曲线到下方基线的色块，如需增加新的填充，可以使用 “New Output” 新建一个填充，上一个填充将被保留。</p>
+<p>接着在该工具的设置中更改起始数据，即可创建从上方曲线到下方基线的色块，如需增加新的填充，可以使用 “New Output” 新建一个填充，上一个填充将被保留。</p>
 <p><img src="https://img.yeslu.cn/blog/2024-01/21-94976188dfdb0c7df43834ec33a8650e.png!blog_watermark"></p>
 <h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
 <li>Windows 11 (22631);</li>
