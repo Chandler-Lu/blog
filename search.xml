@@ -7168,4 +7168,68 @@
         <tag>Security</tag>
       </tags>
   </entry>
+  <entry>
+    <title>一网打尽 Origin 中的分段绘图</title>
+    <url>/archives/4a2ecdfb.html</url>
+    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>在数据绘图中，我们常需要通过分段的形式来展现数据。在本文中，我将从<strong>轴分段</strong>（断点）、<strong>数据分段</strong>（颜色和连接方式）、<strong>背景分段</strong>（规则色块填充、不规则色块填充）三个方面，详细讲解 Origin 中的分段绘图。</p>
+<span id="more"></span>
+
+
+
+<h2 id="轴分段"><a href="#轴分段" class="headerlink" title="轴分段"></a>轴分段</h2><p>Origin 提供了坐标轴断点的功能，通过<strong>双击坐标轴</strong>或者<strong>右键坐标轴-Properties</strong>，进入 “Breaks” Tab，选择断点数量，既可实现断点功能。</p>
+<img src="https://img.yeslu.cn/blog/2024-01/20-2a2af699d05e5bdfa00b4a885c72f6de.png!blog_watermark" style="zoom: 50%;" />
+
+<p>当断点功能开启（如图所示 4.25-12.75 为断点范围）时，断点前（如图所示 0-4.25 的部分）坐标轴的部分参数由 “Scale” 和 “Tick Labels” Tab 控制，用于修改断点前的坐标轴增量和标签等功能。</p>
+<img src="https://img.yeslu.cn/blog/2024-01/20-fdb6466c1c6736791920d48f5802f1e2.png!blog_watermark" alt="" style="zoom: 50%;" />
+
+<p>断点后（如图所示 12.75-17 的部分）的坐标轴的部分参数由该断点的详细设置管理。当有多个断点时，该设置用于调整当前选中的断点到下一个断点之间的参数。</p>
+<img src="https://img.yeslu.cn/blog/2024-01/20-03b4ec37d01c7d8e7ca57efac18edd31.png!blog_watermark" style="zoom:50%;" />
+
+<p><strong>特别注意</strong>，有同学在设置断点后发现坐标轴增量无法按照预期设置，这是因为<code>轴起点+增量</code>在断点范围内。例如断点范围为 <code>4-6</code>，坐标轴起点为 <code>0</code>，增量为 <code>5</code>，则该设置下的第一个主刻度落在了断点区间内，因此该增量无法被应用。同理，当存在多个断点时，<code>断点终点+增量</code> 不应落在下一个断点范围，否则该增量同样无法被应用。</p>
+<p>参考文档：<a href="https://www.originlab.com/doc/Origin-Help/AxesRef-Breaks">AxesRef-Breaks</a></p>
+<h2 id="数据分段"><a href="#数据分段" class="headerlink" title="数据分段"></a>数据分段</h2><h3 id="单点设置"><a href="#单点设置" class="headerlink" title="单点设置"></a>单点设置</h3><p>此方法适用于数据中有<strong>极少数量的</strong>特殊点需要调整。</p>
+<p>在 Origin 中，我们可以通过 <strong>Ctrl+单击</strong>或者<strong>两次单击（点一次，再点一次）</strong>的方式选中单个数据点，而 <strong>Ctrl+双击</strong>或者<strong>两次单击+双击</strong>则可以对单点的颜色、连接方式等参数进行调整。</p>
+<p><img src="https://img.yeslu.cn/blog/2024-01/20-2aa77533affb9497b6dcd033985f77ae.png!blog_watermark"></p>
+<p>当单个数据点被选中时，我们可以对该点的颜色及该点到后一个点的连接线参数进行调整。</p>
+<p><img src="https://img.yeslu.cn/blog/2024-01/20-9371a9beb93138dfd3d28e5a554d6566.png!blog_watermark"></p>
+<p>参考文档：<a href="https://www.originlab.com/doc/Quick-Help/Customize-Single-Data-Point">Customize-Single-Data-Point</a></p>
+<h3 id="颜色映射"><a href="#颜色映射" class="headerlink" title="颜色映射"></a>颜色映射</h3><p>此方法适用于数据中有<strong>大量</strong>特殊点需要调整。</p>
+<p>Origin 提供了一系列的色卡和映射方式，学习此方法的重点是创建颜色映射策略，也就是将每个点的颜色分配到一张色卡上。</p>
+<p>由于映射策略繁多，这里以 Index 映射策略为例说明，具体映射策略请阅读官方文档 <a href="https://www.originlab.com/doc/en/Origin-Help/PlotColor-DatasetControl">Using a Dataset to Control Plot Color</a>。</p>
+<h4 id="Index-策略"><a href="#Index-策略" class="headerlink" title="Index 策略"></a>Index 策略</h4><p>Index 的映射策略是 <code>数据 mod 色卡颜色总数</code>。</p>
+<p>在这里，我创建并设置了映射列 C，则第一个点和第二个点被正常映射到了该彩虹色卡的一号颜色（红色）和三号颜色（黄色）上，而第三个点的映射值为 8（8 mod 7 &#x3D; 1），第四个点的映射值为 11（11 mod 7 &#x3D; 4），因此会被映射到色卡的一号颜色（红色）和四号颜色（绿色）上。</p>
+<p><img src="https://img.yeslu.cn/blog/2024-01/20-dc2d4f1eacc369c5197b11a4513caaf2.png!blog_watermark"></p>
+<p>参考文档：<a href="https://www.originlab.com/doc/Origin-Help/Customize-PlotColor">Customize-PlotColor</a></p>
+<h3 id="Data-Highlighter-插件"><a href="#Data-Highlighter-插件" class="headerlink" title="Data Highlighter 插件"></a>Data Highlighter 插件</h3><p>下载链接：<a href="https://www.originlab.com/FileExchange/details.aspx?fid=398">Data Highlighter</a></p>
+<p>Data Highlighter 插件的本质是上述的颜色映射，只是可视化的形式能够更直观的进行修改。</p>
+<p><img src="https://img.yeslu.cn/blog/2024-01/20-6ad30bf5c0cac851d2c81e84c7ac90a8.png!blog_watermark"></p>
+<p>参考文档：<a href="https://www.originlab.com/doc/App/Data-Highlighter">Data Highlighter</a></p>
+<h2 id="背景分段"><a href="#背景分段" class="headerlink" title="背景分段"></a>背景分段</h2><h3 id="规则填充"><a href="#规则填充" class="headerlink" title="规则填充"></a>规则填充</h3><h4 id="矩形工具"><a href="#矩形工具" class="headerlink" title="矩形工具"></a>矩形工具</h4><p>利用矩形工具直接在图中画框，是最简单的填充方法。右键矩形框选择 “Push to back of data”，可以将矩形框置于数据点后，通过 “Properties” 或双击矩形框设置矩形颜色。</p>
+<p><img src="https://img.yeslu.cn/blog/2024-01/20-c01e6e5e8ae730de39beef3b27b88ab7.png!blog_watermark"></p>
+<h3 id="参考线"><a href="#参考线" class="headerlink" title="参考线"></a>参考线</h3><p>在坐标轴设置的 “Reference Line” Tab 能够精确设置纵向和横向参考线，并可以自定义参考线之间的填充，通过右下方的 Details 可以修改线形和填充的参数。</p>
+<p><img src="https://img.yeslu.cn/blog/2024-01/20-29a51d58b365a4c07bd04f881709faaa.png!blog_watermark"></p>
+<p>参考文档：<a href="https://www.originlab.com/doc/Origin-Help/AxesRef-RefLines">AxesRef-RefLines</a></p>
+<h3 id="不规则填充"><a href="#不规则填充" class="headerlink" title="不规则填充"></a>不规则填充</h3><p>本图的示例数据请前往 Learning Center（Help: Learning Center 或 F11）搜索 Shading Between Curve。</p>
+<p><img src="https://img.yeslu.cn/blog/2024-01/20-ef4d80ba619ed225047820cbd58c9cf1.png!blog_watermark"></p>
+<p>在本图中，我们希望从上方曲线填充到下方基线。在这里，我们用到了 Gadgets: Integrate 功能，在 “Integration” Tab 中勾选 “Keep the shading color after New Output”，在 “Baseline” Tab 中选择需要填充到的基线。</p>
+<p><img src="https://img.yeslu.cn/blog/2024-01/21-a3b18447c1680ce26479f64e148d24ca.png!blog_watermark"></p>
+<p>接着在该工具的设置中更改填充的起始数据，即可实现从上方曲线到下方基线的色块，如需增加新的填充，可以使用 “New Output” 新建，上一个填充将被保留。</p>
+<p><img src="https://img.yeslu.cn/blog/2024-01/21-94976188dfdb0c7df43834ec33a8650e.png!blog_watermark"></p>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
+<li>Windows 11 (22631);</li>
+<li>Origin 2024 SR1 (Academic).</li>
+</ol>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文禁止转载；</li>
+<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Graph</tag>
+        <tag>Origin</tag>
+      </tags>
+  </entry>
 </search>
