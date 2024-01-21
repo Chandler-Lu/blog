@@ -44,7 +44,7 @@
 <meta property="og:image" content="https://img.yeslu.cn/blog/2024-01/21-a3b18447c1680ce26479f64e148d24ca.png!blog_watermark">
 <meta property="og:image" content="https://img.yeslu.cn/blog/2024-01/21-94976188dfdb0c7df43834ec33a8650e.png!blog_watermark">
 <meta property="article:published_time" content="2024-01-20T13:56:00.000Z">
-<meta property="article:modified_time" content="2024-01-21T03:05:36.086Z">
+<meta property="article:modified_time" content="2024-01-21T03:11:35.148Z">
 <meta property="article:author" content="Chandler-Lu">
 <meta property="article:tag" content="Graph">
 <meta property="article:tag" content="Origin">
@@ -304,7 +304,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-01-21 11:05:36" itemprop="dateModified" datetime="2024-01-21T11:05:36+08:00">2024-01-21</time>
+      <time title="修改时间：2024-01-21 11:11:35" itemprop="dateModified" datetime="2024-01-21T11:11:35+08:00">2024-01-21</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -330,10 +330,10 @@
 
 
 
-<h2 id="轴分段"><a href="#轴分段" class="headerlink" title="轴分段"></a>轴分段</h2><p>Origin 提供了坐标轴断点的功能，通过<strong>双击坐标轴</strong>或者<strong>右键坐标轴-Properties</strong>，进入 “Breaks” Tab，选择断点数量，既可实现断点功能。</p>
+<h2 id="轴分段"><a href="#轴分段" class="headerlink" title="轴分段"></a>轴分段</h2><p>Origin 提供了坐标轴断点的功能，通过<strong>双击坐标轴</strong>或者<strong>右键坐标轴-Properties</strong>，进入 Breaks Tab，选择断点数量，既可实现断点功能。</p>
 <img src="https://img.yeslu.cn/blog/2024-01/20-2a2af699d05e5bdfa00b4a885c72f6de.png!blog_watermark" style="zoom: 50%;" />
 
-<p>当断点功能开启（如图所示 4.25-12.75 为断点范围）时，断点前（如图所示 0-4.25 的部分）坐标轴的部分参数由 “Scale” 和 “Tick Labels” Tab 控制，用于修改断点前的坐标轴增量和标签等功能。</p>
+<p>当断点功能开启（如图所示 4.25-12.75 为断点范围）时，断点前（如图所示 0-4.25 的部分）坐标轴的部分参数由 Scale 和 Tick Labels Tab 控制，用于修改断点前的坐标轴增量和标签等功能。</p>
 <img src="https://img.yeslu.cn/blog/2024-01/20-fdb6466c1c6736791920d48f5802f1e2.png!blog_watermark" alt="" style="zoom: 50%;" />
 
 <p>断点后（如图所示 12.75-17 的部分）的坐标轴的部分参数由该断点的详细设置管理。当有多个断点时，该设置用于调整当前选中的断点到下一个断点之间的参数。</p>
@@ -351,16 +351,16 @@
 <p>Origin 提供了一系列的色卡和映射方式，学习此方法的重点是创建颜色映射策略，也就是将每个点的颜色分配到一张色卡上。</p>
 <p>由于映射策略繁多，这里以 Index 映射策略为例说明，具体映射策略请阅读官方文档 <a target="_blank" rel="noopener" href="https://www.originlab.com/doc/en/Origin-Help/PlotColor-DatasetControl">Using a Dataset to Control Plot Color</a>。</p>
 <h4 id="Index-策略"><a href="#Index-策略" class="headerlink" title="Index 策略"></a>Index 策略</h4><p>Index 的映射策略是 <code>数据 mod 色卡颜色总数</code>。</p>
-<p>在这里，我创建并设置了映射列 C，则第一个点和第二个点被正常映射到了该彩虹色卡的一号颜色（红色）和三号颜色（黄色）上，而第三个点的映射值为 8（8 mod 7 &#x3D; 1），第四个点的映射值为 11（11 mod 7 &#x3D; 4），因此会被映射到色卡的一号颜色（红色）和四号颜色（绿色）上。</p>
+<p>在这里，我创建并设置了映射列 C，则第一个点和第二个点被正常映射到了该彩虹色卡的一号颜色（红色）和三号颜色（黄色）上，而第三个点的映射值为 8，第四个点的映射值为 11，因此会被映射到色卡的一号颜色（8 mod 7 &#x3D; 1）和四号颜色（11 mod 7 &#x3D; 4）上。</p>
 <p><img src="https://img.yeslu.cn/blog/2024-01/20-dc2d4f1eacc369c5197b11a4513caaf2.png!blog_watermark"></p>
 <p>参考文档：<a target="_blank" rel="noopener" href="https://www.originlab.com/doc/Origin-Help/Customize-PlotColor">Customize-PlotColor</a></p>
 <h3 id="Data-Highlighter-插件"><a href="#Data-Highlighter-插件" class="headerlink" title="Data Highlighter 插件"></a>Data Highlighter 插件</h3><p>下载链接：<a target="_blank" rel="noopener" href="https://www.originlab.com/FileExchange/details.aspx?fid=398">Data Highlighter</a></p>
 <p>Data Highlighter 插件的本质是上述的颜色映射，只是可视化的形式能够更直观的进行修改。</p>
 <p><img src="https://img.yeslu.cn/blog/2024-01/20-6ad30bf5c0cac851d2c81e84c7ac90a8.png!blog_watermark"></p>
 <p>参考文档：<a target="_blank" rel="noopener" href="https://www.originlab.com/doc/App/Data-Highlighter">Data Highlighter</a></p>
-<h2 id="背景分段"><a href="#背景分段" class="headerlink" title="背景分段"></a>背景分段</h2><h3 id="规则填充"><a href="#规则填充" class="headerlink" title="规则填充"></a>规则填充</h3><h4 id="矩形工具"><a href="#矩形工具" class="headerlink" title="矩形工具"></a>矩形工具</h4><p>利用矩形工具直接在图中画框，是最简单的填充方法。右键矩形框选择 “Push to back of data”，可以将矩形框置于数据点后，通过 “Properties” 或双击矩形框设置矩形颜色。</p>
+<h2 id="背景分段"><a href="#背景分段" class="headerlink" title="背景分段"></a>背景分段</h2><h3 id="规则填充"><a href="#规则填充" class="headerlink" title="规则填充"></a>规则填充</h3><h4 id="矩形工具"><a href="#矩形工具" class="headerlink" title="矩形工具"></a>矩形工具</h4><p>利用矩形工具直接在图中画框，是最简单的填充方法。在图中画出矩形框后，右键矩形框选择 “Push to back of data”，将矩形框置于数据点后，通过 “Properties” 或双击矩形框设置矩形颜色。</p>
 <p><img src="https://img.yeslu.cn/blog/2024-01/20-c01e6e5e8ae730de39beef3b27b88ab7.png!blog_watermark"></p>
-<h3 id="参考线"><a href="#参考线" class="headerlink" title="参考线"></a>参考线</h3><p>在坐标轴设置的 “Reference Line” Tab 能够精确设置纵向和横向参考线，并可以自定义参考线之间的填充，通过右下方的 Details 可以修改线形和填充的参数。</p>
+<h3 id="参考线"><a href="#参考线" class="headerlink" title="参考线"></a>参考线</h3><p>在坐标轴设置的 Reference Line Tab 能够精确设置纵向和横向参考线，并可以自定义参考线之间的填充，通过右下方的 Details 可以修改线形和填充的参数。</p>
 <p><img src="https://img.yeslu.cn/blog/2024-01/20-29a51d58b365a4c07bd04f881709faaa.png!blog_watermark"></p>
 <p>参考文档：<a target="_blank" rel="noopener" href="https://www.originlab.com/doc/Origin-Help/AxesRef-RefLines">AxesRef-RefLines</a></p>
 <h3 id="不规则填充"><a href="#不规则填充" class="headerlink" title="不规则填充"></a>不规则填充</h3><p><img src="https://img.yeslu.cn/blog/2024-01/20-ef4d80ba619ed225047820cbd58c9cf1.png!blog_watermark"></p>
