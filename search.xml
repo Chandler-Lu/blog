@@ -7213,9 +7213,9 @@
 <blockquote>
 <p>示例数据请前往 Learning Center（Help: Learning Center 或 F11）搜索 Shading Between Curve。</p>
 </blockquote>
-<p>在本图中，我们希望从上方曲线填充到下方基线。这里我们用到了 Gadgets: Integrate 功能，在 “Integration” Tab 中勾选 “Keep the shading color after New Output”，并在 “Baseline” Tab 中选择需要填充到的基线。</p>
+<p>这里我们用到了 <strong>Gadgets: Integrate</strong> 功能，从上方曲线的一部分填充到下方基线。在 Integration Tab 中勾选 “Keep the shading color after New Output”，并在 Baseline Tab 中选择需要填充到的基线。</p>
 <p><img src="https://img.yeslu.cn/blog/2024-01/21-a3b18447c1680ce26479f64e148d24ca.png!blog_watermark"></p>
-<p>接着在该工具的设置中更改起始数据，即可创建从上方曲线到下方基线的色块，如需增加新的填充，可以使用 “New Output” 新建一个填充，上一个填充将被保留。</p>
+<p>接着在该工具的设置中修改当前需要操作的数据，并调整合适的填充范围。如需增加新的填充，可以使用 “New Output” 新建一个填充，上一个填充将被保留。</p>
 <p><img src="https://img.yeslu.cn/blog/2024-01/21-94976188dfdb0c7df43834ec33a8650e.png!blog_watermark"></p>
 <h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
 <li>Windows 11 (22631);</li>
