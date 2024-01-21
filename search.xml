@@ -7171,7 +7171,7 @@
   <entry>
     <title>一网打尽 Origin 中的分段绘图</title>
     <url>/archives/4a2ecdfb.html</url>
-    <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>在数据绘图中，我们常需要通过分段的形式来展现数据。在本文中，我将从<strong>轴分段</strong>（断点）、<strong>数据分段</strong>（颜色和连接方式）、<strong>背景分段</strong>（规则色块填充、不规则色块填充）三个方面，详细讲解 Origin 中的分段绘图。</p>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在数据可视化的过程中，分段展示数据是一种常用且有效的方法。本文将重点介绍如何在 Origin 软件中实现分段绘图，具体从三个关键方面进行详细阐述：<strong>轴分段</strong>（断点）、<strong>数据分段</strong>（颜色和连接方式）、<strong>背景分段</strong>（规则与不规则色块填充）。</p>
 <span id="more"></span>
 
 
@@ -7217,6 +7217,91 @@
 <p><img src="https://img.yeslu.cn/blog/2024-01/21-a3b18447c1680ce26479f64e148d24ca.png!blog_watermark"></p>
 <p>接着在该工具的设置中修改当前需要操作的数据，并调整合适的填充范围。如需增加新的填充，可以使用 “New Output” 新建一个填充，上一个填充将被保留。</p>
 <p><img src="https://img.yeslu.cn/blog/2024-01/21-94976188dfdb0c7df43834ec33a8650e.png!blog_watermark"></p>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
+<li>Windows 11 (22631);</li>
+<li>Origin 2024 SR1 (Academic).</li>
+</ol>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文禁止转载；</li>
+<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Graph</tag>
+        <tag>Origin</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>在 Origin 中绘制直线的 N 种方法</title>
+    <url>/archives/f7a89bc1.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在本文中，我将深入探索并充分利用 Origin 软件的众多功能，以在其绘图界面上绘制一条直线。本文的核心不仅仅是绘图技巧的展示，而是一种寓教于乐的探索，旨在强调深入理解软件的各项功能的重要性。这样，当在绘图过程中遇到难题时，我们就不会局限于单一的解决方案，而能灵活运用多种工具和方法。</p>
+<span id="more"></span>
+
+<h2 id="快速标注工具"><a href="#快速标注工具" class="headerlink" title="快速标注工具"></a>快速标注工具</h2><h3 id="直线标注（Line-Tool）"><a href="#直线标注（Line-Tool）" class="headerlink" title="直线标注（Line Tool）"></a>直线标注（Line Tool）</h3><ul>
+<li>长度：可调</li>
+<li>方向：可调</li>
+<li>颜色、粗细、线型：可调</li>
+<li>位置：任意</li>
+</ul>
+<p><img src="https://img.yeslu.cn/blog/2024-01/21-66de8904b38ecc0dda22e085aaa6652d.png!blog_watermark"></p>
+<h3 id="箭头-距离标注（Arrow-Tool-Distance-Annotation）"><a href="#箭头-距离标注（Arrow-Tool-Distance-Annotation）" class="headerlink" title="箭头&#x2F;距离标注（Arrow Tool&#x2F;Distance Annotation）"></a>箭头&#x2F;距离标注（Arrow Tool&#x2F;Distance Annotation）</h3><ul>
+<li>长度：可调</li>
+<li>方向：可调</li>
+<li>颜色、粗细、线型：可调</li>
+<li>位置：任意</li>
+</ul>
+<p><img src="https://img.yeslu.cn/blog/2024-01/21-6980945fc57215acfb30f61c61d153bd.png!blog_watermark"></p>
+<h2 id="坐标轴工具"><a href="#坐标轴工具" class="headerlink" title="坐标轴工具"></a>坐标轴工具</h2><h3 id="参考线（Reference-Lines）"><a href="#参考线（Reference-Lines）" class="headerlink" title="参考线（Reference Lines）"></a>参考线（Reference Lines）</h3><ul>
+<li>长度：不可独立调整</li>
+<li>方向：垂直于坐标轴</li>
+<li>颜色、粗细、线型：可调</li>
+<li>位置：两坐标轴围成的象限内</li>
+</ul>
+<p><img src="https://img.yeslu.cn/blog/2024-01/21-20a4503ac41dc40352e745e2de49ae03.png!blog_watermark"></p>
+<p>特别的，Mini Toolbars 提供了一个非常便捷的功能 —— “Add Stats Reference Lines”。通过这一功能，用户可以迅速添加具有统计学意义的参考线，从而在图表中快速标注重要的统计数据。</p>
+<p><img src="https://img.yeslu.cn/blog/2024-01/21-9c47c638c882c1fc256b3319ce890758.png!blog_watermark"></p>
+<h3 id="附加线（Additional-Lines）"><a href="#附加线（Additional-Lines）" class="headerlink" title="附加线（Additional Lines）"></a>附加线（Additional Lines）</h3><ul>
+<li>长度：不可独立调整</li>
+<li>方向：垂直于坐标轴</li>
+<li>颜色、粗细：跟随坐标轴</li>
+<li>位置：两坐标轴围成的象限内</li>
+</ul>
+<p><img src="https://img.yeslu.cn/blog/2024-01/21-03c1525a1428f4dea19e499390ca7d6e.png!blog_watermark"></p>
+<h2 id="插入工具"><a href="#插入工具" class="headerlink" title="插入工具"></a>插入工具</h2><h3 id="直线（Straight-Line）"><a href="#直线（Straight-Line）" class="headerlink" title="直线（Straight Line）"></a>直线（Straight Line）</h3><ul>
+<li>长度：当直线属性的 Line: Stretching 为 None 时可调</li>
+<li>方向：当直线属性的 Line: Alignment 为 None 时可调</li>
+<li>颜色、粗细、线型：可调</li>
+<li>位置：当直线属性的 Line: Stretching 为 None 时任意</li>
+</ul>
+<p><img src="https://img.yeslu.cn/blog/2024-01/21-be4bf8d22879964d279a1f0a2f8536ee.png!blog_watermark"></p>
+<h3 id="垂直光标（Vertical-Cursor"><a href="#垂直光标（Vertical-Cursor" class="headerlink" title="垂直光标（Vertical Cursor)"></a>垂直光标（Vertical Cursor)</h3><p>本质是能够显示多面板绘图上数据点 X、Y 坐标值的直线工具。</p>
+<p><img src="https://img.yeslu.cn/blog/2024-01/21-d5c64356c21d7649a2eda7fc7322817e.png!blog_watermark"></p>
+<p>参考文档：<a href="https://www.originlab.com/doc/Origin-Help/Gadget-VerticalCursor">VerticalCursor</a></p>
+<h3 id="插入函数（2D-Function-Plot）"><a href="#插入函数（2D-Function-Plot）" class="headerlink" title="插入函数（2D Function Plot）"></a>插入函数（2D Function Plot）</h3><ul>
+<li>长度：任意</li>
+<li>方向：垂直于 Y 轴</li>
+<li>颜色、粗细、线形：任意</li>
+<li>位置：两坐标轴围成的象限内</li>
+</ul>
+<p><img src="https://img.yeslu.cn/blog/2024-01/21-04414451f45809048cbfb1647aa1f48a.png!blog_watermark"></p>
+<p>参考文档：<a href="https://www.originlab.com/doc/Origin-Help/PD-Dialog-2DFunc-Tab">2DFunc</a></p>
+<h2 id="基于数据的直线"><a href="#基于数据的直线" class="headerlink" title="基于数据的直线"></a>基于数据的直线</h2><h3 id="连接两点"><a href="#连接两点" class="headerlink" title="连接两点"></a>连接两点</h3><ul>
+<li>长度：任意</li>
+<li>方向：任意</li>
+<li>颜色、粗细、线形：任意</li>
+<li>位置：两坐标轴围成的象限内</li>
+</ul>
+<p><img src="https://img.yeslu.cn/blog/2024-01/21-40c77eb2b698818813327d0b9e482efd.png!blog_watermark"></p>
+<h3 id="数据垂线（Drop-Lines）"><a href="#数据垂线（Drop-Lines）" class="headerlink" title="数据垂线（Drop Lines）"></a>数据垂线（Drop Lines）</h3><ul>
+<li>长度：不可独立调整</li>
+<li>方向：垂直于坐标轴</li>
+<li>颜色、粗细、线形：任意</li>
+<li>位置：两坐标轴围成的象限内</li>
+</ul>
+<p><img src="https://img.yeslu.cn/blog/2024-01/21-e93b6f417905420be146bb72fbc37e84.png!blog_watermark"></p>
 <h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
 <li>Windows 11 (22631);</li>
 <li>Origin 2024 SR1 (Academic).</li>
