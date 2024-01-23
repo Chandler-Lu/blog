@@ -7294,10 +7294,10 @@
 <li>长度：不可调</li>
 <li>方向：不可调</li>
 <li>颜色、粗细、线型：可调</li>
-<li>位置：不可调</li>
+<li>位置：两坐标轴围成的象限内</li>
 </ul>
 <p><img src="https://img.yeslu.cn/blog/2024-01/21-be4bf8d22879964d279a1f0a2f8536ee.png!blog_watermark"></p>
-<p>特别的，当直线属性的 Line: Stretching 为 None 时，其长度和位置可调；当直线属性的 Line: Alignment 为 None 时，其方向可调。</p>
+<p>特别的，当直线属性的 Line: Alignment 为 None 时，其方向可调；当直线属性的 Line: Stretching 为 None 时，其长度和位置可调。</p>
 <p><img src="https://img.yeslu.cn/blog/2024-01/23-127008b51eb756fbe20f6d2ba0e0b065.png!blog_watermark"></p>
 <h3 id="垂直光标（Vertical-Cursor"><a href="#垂直光标（Vertical-Cursor" class="headerlink" title="垂直光标（Vertical Cursor)"></a>垂直光标（Vertical Cursor)</h3><p>本质是能够显示多面板绘图上数据点 X、Y 坐标值的直线工具。</p>
 <p><img src="https://img.yeslu.cn/blog/2024-01/21-d5c64356c21d7649a2eda7fc7322817e.png!blog_watermark"></p>
