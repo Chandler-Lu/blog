@@ -7344,7 +7344,7 @@
   <entry>
     <title>解决 Origin 中修改 Copy Page 后的图片不更新</title>
     <url>/archives/abaee2cb.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在 <strong>Origin 2024 SR1</strong> 中，用户可能遇到修改 PPT 中使用 Copy Page 功能复制的图片后，图片未能正常更新的问题，本文将提供解决办法。</p>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在 <strong>Origin 2024 SR1</strong> 中，用户可能遇到修改 PPT 中使用 Copy Page (复制页面) 功能复制的图片后，图片未能正常更新的问题，本文将提供解决办法。</p>
 <span id="more"></span>
 
 <h2 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h2><blockquote>
