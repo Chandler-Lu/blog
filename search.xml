@@ -7352,7 +7352,7 @@
 </blockquote>
 <ol>
 <li>Copy Page 到 PowerPoint (PPT) 后，双击打开 PPT 中的图片，任意修改后关闭 Origin，PPT 中的图片不更新；但再次双击打开后，Origin 中显示正常；</li>
-<li>此现象仅发生于  PowerPoint (尤其是 Office 2021)，在 Word 中工作正常；</li>
+<li>此现象仅发生于  PPT (尤其是 Office 2021)，在 Word 中工作正常；</li>
 <li>Origin 老版本工作正常，但在更新 Origin 2024 SR1 后出现异常。</li>
 </ol>
 <h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><ol>
@@ -7369,7 +7369,7 @@
 <h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
 <li>Windows 11 (22631);</li>
 <li>Origin 2024 SR1 (Academic);</li>
-<li>Office 365 Version 2312 (Build 17126.20132).</li>
+<li>Office 365 Ver 2312 (Build 17126.20132).</li>
 </ol>
 <h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
 <li>本文禁止转载；</li>
