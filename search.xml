@@ -7269,7 +7269,7 @@
 <p>使用本文方案时，请确保以下所有情况均符合。</p>
 </blockquote>
 <ol>
-<li>Copy Page 到 PowerPoint (PPT) 后，双击打开 PPT 中的图片，任意修改后关闭 Origin，PPT 中的图片不更新；但再次双击打开后，Origin 中显示正常；</li>
+<li>Copy Page 到 PowerPoint (PPT) 后，双击打开 PPT 中的图片，任意修改后关闭 Origin，PPT 中的图片不更新，但再次打开后Origin 中显示正常；</li>
 <li>此现象仅发生于  PPT (尤其是 Office 2021)，在 Word 中工作正常；</li>
 <li>Origin 老版本工作正常，但在更新 Origin 2024 SR1 后出现异常。</li>
 </ol>
