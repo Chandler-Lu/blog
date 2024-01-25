@@ -7344,16 +7344,16 @@
 <p><img src="https://img.yeslu.cn/blog/2022-06/19-d2a1b2b9452c030407beaa3edc212e2c.gif"></p>
 <h2 id="数据标注"><a href="#数据标注" class="headerlink" title="数据标注"></a>数据标注</h2><p>这里介绍一个简便方法标注各个中间路径的名称。</p>
 <ol>
-<li>增加 B 列（名称列）和 C、D 列（全为零），，</li>
+<li>增加 B 列（名称列）和 C、D 列（全为零）；</li>
 </ol>
 <img src="https://img.yeslu.cn/blog/2024-01/25-cadf94cbd037e27588d2d745cd1e6779.png!blog_watermark" style="zoom: 80%;" />
 
 <ol start="2">
-<li>将 C、D 列数据添加至图中，并将该组数据的颜色设置为无色，显示其 Label。</li>
+<li>将 C、D 列数据添加至图中，并将该组数据的颜色设置为无色，显示其 Label；</li>
 </ol>
 <p><img src="https://img.yeslu.cn/blog/2024-01/25-b073720a93899037e7f136c86a115cb5.png!blog_watermark"></p>
 <ol start="3">
-<li>保存后即可创建在同一水平线，且与真实数据垂直对齐的名称。</li>
+<li>保存后即可创建在同一水平线，且与真实数据垂直对齐的标签。</li>
 </ol>
 <p><img src="https://img.yeslu.cn/blog/2024-01/25-4835bb13e7cac3abc50b858ed31ce9e8.png!blog_watermark"></p>
 <h2 id="Labtalk-详解"><a href="#Labtalk-详解" class="headerlink" title="Labtalk 详解"></a>Labtalk 详解</h2><h3 id="Range"><a href="#Range" class="headerlink" title="Range"></a>Range</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">range</span> rsrc = <span class="number">1</span>!; </span><br><span class="line"><span class="built_in">range</span> rdst = <span class="number">2</span>!;</span><br></pre></td></tr></table></figure>
