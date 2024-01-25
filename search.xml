@@ -6197,88 +6197,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Origin 绘制反应能量图</title>
-    <url>/archives/9836d17.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>反应能量图（reaction energy diagram）是 DFT 计算中展现化学反应的重要方式，OriginLab 官方也提供了很有意思的<a href="http://blog.originlab.com/make-energy-diagram-in-origin">方案</a>来绘制这样的路径图。本文将以下图中的一条路径为例，对官方提供的方案进行详细解释和扩展。</p>
-<img src="https://img.yeslu.cn/blog/2022-06/19-1a1f48fcc08abea813bf23917a8dd95d.png" alt="10.1038/s41467-022-29428-9" style="zoom:80%;" />
-
-<span id="more"></span>
-
-<h2 id="绘图思路"><a href="#绘图思路" class="headerlink" title="绘图思路"></a>绘图思路</h2><p>使用 Origin 绘制大部分图像都需要明确以下两点：</p>
-<ol>
-<li>数据点的表现形式</li>
-<li>数据点之间的连接方式</li>
-</ol>
-<p>本图与最常见的“Line”图十分相近，但实际数据却区别于“Line”图需要的数据。“Line”图是将一个个数据点连接成线，但本例中每一个中间产物只对应一个能量。也就是说，数据是不具有“平台”这个概念的，而图中却要将其表现出“平台”的样式。</p>
-<p>由此思路，我们得到了第一种绘图方法：人为地扩展数据点的横坐标。假设原数据为 <code>(A, 1.5)</code>，那么在绘图时，手动增加 <code>(A-1, 1.5)</code>、<code>(A+1, 1.5)</code> 两个点，即可得到“平台”的效果。</p>
-<p>然而，当反应的中间路径较多时，人为增加数据点是十分困难的。由此，官方提供了一个非常巧妙的方法，即 <a href="https://www.originlab.com/doc/Origin-Help/Floating-Column-Graph">Floating Column</a>。Floating Column 本是柱状图的一种，数据至少分为三列：X、Y 下界、Y 上界。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-06/19-b1f3537a91174d360532a7edf897160f.png!blog_watermark" alt="Floating Column Graph"></p>
-<p>利用柱状图绘制具备天然的优势，即：<strong>柱状图宽度可调</strong>、<strong>可进行数据间的连接</strong>，<strong>连接线样式可独立调整</strong>。当上界与下界数据相同时，柱状图的高度为零，其本身的宽度即可作为我们的“平台”。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-06/19-754eaec36d2c0f76d267e6d5700895bc.png!blog_watermark"></p>
-<h2 id="数据准备"><a href="#数据准备" class="headerlink" title="数据准备"></a>数据准备</h2><h3 id="初始数据"><a href="#初始数据" class="headerlink" title="初始数据"></a>初始数据</h3><p>一般的，初始数据如下图所示，X 列为路径编号，每个 Y 列的 <code>Long Name</code> 为反应路径名，数值为反应能，<strong>从左至右</strong>为反应路径顺序。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-06/19-44ff0b592a580445566aa06553a8d48f.png!blog_watermark"></p>
-<h3 id="数据转置"><a href="#数据转置" class="headerlink" title="数据转置"></a>数据转置</h3><p>由于柱状图每一行为一个数据点，为了满足柱状图的数据要求，需要将数据转置，转置后，<strong>从上至下</strong>为反应路径顺序。</p>
-<img src="https://img.yeslu.cn/blog/2022-06/19-a6eff20b4a0a45daa1a244f7fff5d240.png!blog_watermark" style="zoom: 50%;" />
-
-<h3 id="生成制图数据"><a href="#生成制图数据" class="headerlink" title="生成制图数据"></a>生成制图数据</h3><p>在 Origin 官方教程中，使用了 Labtalk 脚本进行数据操作，此脚本是为了生成两列相同的数据分别作为 Floating Column 的<strong>上界</strong>和<strong>下界</strong>，<a href="#Labtalk-%E8%AF%A6%E8%A7%A3">文末</a>将详细说明。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">newsheet;</span><br><span class="line"><span class="built_in">range</span> rsrc = <span class="number">1</span>!; </span><br><span class="line"><span class="built_in">range</span> rdst = <span class="number">2</span>!;</span><br><span class="line">rdst.ncols = rsrc.ncols*<span class="number">2</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="built_in">int</span> ii = <span class="number">0</span>; ii &lt; rsrc.ncols; ii++)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">range</span> r1 = <span class="number">1</span>!$(ii+<span class="number">1</span>);</span><br><span class="line">	<span class="built_in">range</span> r2 = <span class="number">2</span>!$(<span class="number">2</span>*ii+<span class="number">1</span>);</span><br><span class="line">	<span class="built_in">range</span> r3 = <span class="number">2</span>!$(<span class="number">2</span>*ii+<span class="number">2</span>);	</span><br><span class="line">	colcopy irng:=r1 orng:=r2;</span><br><span class="line">	colcopy irng:=r1 orng:=r3;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://img.yeslu.cn/blog/2022-06/19-0583652a875cfeaab12de74dd2ed3b31.png!blog_watermark"></p>
-<p>最后，新增 X 列作为路径编号，并将列类型设置为 <code>XYY</code>。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-06/19-6b414a6f0b3136d5b1a2dfd47de68ab8.png!blog_watermark"></p>
-<h2 id="图像绘制"><a href="#图像绘制" class="headerlink" title="图像绘制"></a>图像绘制</h2><h3 id="第一条路径"><a href="#第一条路径" class="headerlink" title="第一条路径"></a>第一条路径</h3><p>本绘图方法中，每一条路径都需要独立绘制，每次选择一组数据。</p>
-<p>选中 B、C 列，选择 <code>Plot -&gt; Bar -&gt; Floating Columns</code> 制图，但此时图中是没有图像的，这是由于当柱状图高度为零时，Origin 默认不显示。我们可以通过 <a href="https://www.originlab.com/doc/ja/LabTalk/ref/Page-obj">Labtalk 命令</a> <code>page.BarShowZero = 1</code> 或者勾选 <code>Preference -&gt; Options -&gt; Bar graph show Zero Value</code> 令其显示。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-06/19-4d7b7ee8cba64927acf97aa5791400b8.png!blog_watermark"></p>
-<h4 id="数据连接"><a href="#数据连接" class="headerlink" title="数据连接"></a>数据连接</h4><p>利用数据连接功能，我们可以将每个柱子连接起来，并自定义线形。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-06/19-2d934c24c6adb97c4c68bf0806358bec.png!blog_watermark"></p>
-<h3 id="增加多条路径"><a href="#增加多条路径" class="headerlink" title="增加多条路径"></a>增加多条路径</h3><p>如果需要绘制的路径不止一条，可以利用 Origin 的 <a href="https://www.originlab.com/doc/Quick-Help/Add-Data-to-Layer">Add Data to Layer</a> 功能，将其他组数据拖入图像中。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-06/19-d2a1b2b9452c030407beaa3edc212e2c.gif"></p>
-<h2 id="数据标注"><a href="#数据标注" class="headerlink" title="数据标注"></a>数据标注</h2><p>这里介绍一个简便方法标注各个中间路径的名称，如图所示，增加 B 列（名称列）和 C、D 列（全为零），将 C、D 列数据添加至图中，并将该组路径的颜色设置为无色，显示其 Label，即可创建在同一水平线且与真实数据垂直对齐的名称。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-06/19-6ac75391aa5553ebcf00fe8eb9a7ae57.png!blog_watermark"></p>
-<h2 id="Labtalk-详解"><a href="#Labtalk-详解" class="headerlink" title="Labtalk 详解"></a>Labtalk 详解</h2><h3 id="Range"><a href="#Range" class="headerlink" title="Range"></a>Range</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">range</span> rsrc = <span class="number">1</span>!; </span><br><span class="line"><span class="built_in">range</span> rdst = <span class="number">2</span>!;</span><br></pre></td></tr></table></figure>
-
-<p>类似于 <code>range a = 1!</code> 是指当前活动工作簿的第一个工作表。本组命令是将数据来源设置为第一个工作表，将目标数据存放在第二个工作表。</p>
-<blockquote>
-<p>参考文档：<a href="https://www.originlab.com/doc/en/LabTalk/guide/Range-Notation">Range-Notation</a></p>
-</blockquote>
-<h3 id="New-Column"><a href="#New-Column" class="headerlink" title="New Column"></a>New Column</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">rdst.ncols = rsrc.ncols*<span class="number">2</span>;</span><br></pre></td></tr></table></figure>
-
-<p>上面我们说过，该 Labtalk 脚本是为了将一列数据复制成两列作为 Floating Column 的下界和上界，<code>ncol</code> 代表的是 <code>new column</code>。本组命令是将 <code>rdst</code> 的列数设置为 <code>rsrc</code> 的两倍。</p>
-<blockquote>
-<p>参考文档：<a href="https://www.originlab.com/doc/LabTalk/guide/Basic-Worksheet-Column-Operation">Basic Worksheet Column</a></p>
-</blockquote>
-<h3 id="Loop"><a href="#Loop" class="headerlink" title="Loop"></a>Loop</h3><h4 id="Header"><a href="#Header" class="headerlink" title="Header"></a>Header</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="built_in">int</span> ii = <span class="number">0</span>; ii &lt; rsrc.ncols; ii++)&#123;&#125;</span><br></pre></td></tr></table></figure>
-
-<p>控制本次循环在遍历完源工作表的所有列后结束。</p>
-<h4 id="Body"><a href="#Body" class="headerlink" title="Body"></a>Body</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">range</span> r1 = <span class="number">1</span>!$(ii+<span class="number">1</span>);</span><br><span class="line"><span class="built_in">range</span> r2 = <span class="number">2</span>!$(<span class="number">2</span>*ii+<span class="number">1</span>);</span><br><span class="line"><span class="built_in">range</span> r3 = <span class="number">2</span>!$(<span class="number">2</span>*ii+<span class="number">2</span>);	</span><br><span class="line">colcopy irng:=r1 orng:=r2;</span><br><span class="line">colcopy irng:=r1 orng:=r3;</span><br></pre></td></tr></table></figure>
-
-<p>此处 <code>irng</code> 为 <code>input range</code>，<code>orng</code> 为 <code>output range</code>。</p>
-<p>当 <code>ii = 0</code>，则 <code>r1</code> 为源工作表的第 1 列， <code>r2</code> 为目标工作表的第 1 列， <code>r3</code> 为目标工作表的第 2 列。接着将源工作表的第 1 列追加到目标工作表的第 1、2 列。</p>
-<p>当 <code>ii = 1</code>，则 <code>r1</code> 为源数据工作表的第 2 列， <code>r2</code> 为目标数据工作表的第 3 列， <code>r3</code> 为目标数据工作表的第 4 列。接着将源工作表的第 2 列追加到目标工作表的第 3、4 列。</p>
-<p>由此可见，随着循环的进行，源工作表的每一列都被拷贝成了两列。</p>
-<blockquote>
-<p>参考文档：<a href="https://www.originlab.com/doc/LabTalk/guide/Getting-Started-with-LT">Getting Started with LabTalk</a></p>
-</blockquote>
-<h3 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h3><p>在执行本 Labtalk 命令时，当前活动工作簿的第二个工作表会被覆盖，<strong>请确保第二个工作表内为空或没有有效数据</strong>。</p>
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
-<li>Windows 11 (22000.652);</li>
-<li>Origin 2022b (Academic).</li>
-</ol>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文禁止转载；</li>
-<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Graph</tag>
-        <tag>Origin</tag>
-        <tag>Data-Analysis</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Origin 简明答疑合集</title>
     <url>/archives/4033bbae.html</url>
     <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Origin 是由 OriginLab 公司开发的一个科学绘图、数据分析软件。Origin 支持各种各样的 2D&#x2F;3D 图形。Origin 中的数据分析功能包括统计，信号处理，曲线拟合以及峰值分析。</p>
@@ -7382,6 +7300,102 @@
       <tags>
         <tag>Graph</tag>
         <tag>Origin</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Origin 绘制反应能量图</title>
+    <url>/archives/9836d17.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>反应能量图（reaction energy diagram）是 DFT 计算中展现化学反应的重要方式，OriginLab 官方也提供了很有意思的<a href="http://blog.originlab.com/make-energy-diagram-in-origin">方案</a>来绘制这样的路径图。本文将以下图中的一条路径为例，对官方提供的方案进行详细解释和扩展。</p>
+<img src="https://img.yeslu.cn/blog/2022-06/19-1a1f48fcc08abea813bf23917a8dd95d.png" alt="10.1038/s41467-022-29428-9" style="zoom:80%;" />
+
+<span id="more"></span>
+
+<h2 id="绘图思路"><a href="#绘图思路" class="headerlink" title="绘图思路"></a>绘图思路</h2><p>使用 Origin 绘制大部分图像都需要明确以下两点：</p>
+<ol>
+<li>数据点的表现形式</li>
+<li>数据点之间的连接方式</li>
+</ol>
+<p>本图与最常见的“Line”图十分相近，但实际数据却区别于“Line”图需要的数据。“Line”图是将一个个数据点连接成线，但本例中每一个中间产物只对应一个能量。也就是说，数据是不具有“平台”这个概念的，而图中却要将其表现出“平台”的样式。</p>
+<p>由此思路，我们得到了第一种绘图方法：人为地扩展数据点的横坐标。假设原数据为 <code>(A, 1.5)</code>，那么在绘图时，手动增加 <code>(A-1, 1.5)</code>、<code>(A+1, 1.5)</code> 两个点，即可得到“平台”的效果。</p>
+<p>然而，当反应的中间路径较多时，人为增加数据点是十分困难的。由此，官方提供了一个非常巧妙的方法，即 <a href="https://www.originlab.com/doc/Origin-Help/Floating-Column-Graph">Floating Column</a>。Floating Column 本是柱状图的一种，数据至少分为三列：X、Y 下界、Y 上界。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-b1f3537a91174d360532a7edf897160f.png!blog_watermark" alt="Floating Column Graph"></p>
+<p>利用柱状图绘制具备天然的优势，即：<strong>柱状图宽度可调</strong>、<strong>可进行数据间的连接</strong>，<strong>连接线样式可独立调整</strong>。当上界与下界数据相同时，柱状图的高度为零，其本身的宽度即可作为我们的“平台”。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-754eaec36d2c0f76d267e6d5700895bc.png!blog_watermark"></p>
+<h2 id="数据准备"><a href="#数据准备" class="headerlink" title="数据准备"></a>数据准备</h2><h3 id="初始数据"><a href="#初始数据" class="headerlink" title="初始数据"></a>初始数据</h3><p>一般的，初始数据如下图所示，X 列为路径编号，每个 Y 列的 <code>Long Name</code> 为反应路径名，数值为反应能，<strong>从左至右</strong>为反应路径顺序。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-44ff0b592a580445566aa06553a8d48f.png!blog_watermark"></p>
+<h3 id="数据转置"><a href="#数据转置" class="headerlink" title="数据转置"></a>数据转置</h3><p>由于柱状图每一行为一个数据点，为满足柱状图的数据要求，需要将数据转置。使用 <strong>Restructure: Transpose</strong> 转置后，<strong>从上至下</strong>为反应路径顺序。</p>
+<img src="https://img.yeslu.cn/blog/2022-06/19-a6eff20b4a0a45daa1a244f7fff5d240.png!blog_watermark" style="zoom: 50%;" />
+
+<h3 id="生成制图数据"><a href="#生成制图数据" class="headerlink" title="生成制图数据"></a>生成制图数据</h3><blockquote>
+<p>在执行本 Labtalk 命令时，当前活动工作簿的第二个工作表会被覆盖，<strong>请确保第二个工作表内为空或没有有效数据</strong>！</p>
+</blockquote>
+<p>由于需要<strong>两列相同的数据</strong>分别作为 Floating Column 的<strong>上界</strong>和<strong>下界</strong>，这里使用 Labtalk 脚本进行生成。通过 <strong>Window: Command Window</strong> 打开脚本窗口，应用以下脚本，在<a href="#Labtalk-%E8%AF%A6%E8%A7%A3">文末</a>将对该脚本进行详细解析。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">newsheet;</span><br><span class="line"><span class="built_in">range</span> rsrc = <span class="number">1</span>!; </span><br><span class="line"><span class="built_in">range</span> rdst = <span class="number">2</span>!;</span><br><span class="line">rdst.ncols = rsrc.ncols*<span class="number">2</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="built_in">int</span> ii = <span class="number">0</span>; ii &lt; rsrc.ncols; ii++)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">range</span> r1 = <span class="number">1</span>!$(ii+<span class="number">1</span>);</span><br><span class="line">	<span class="built_in">range</span> r2 = <span class="number">2</span>!$(<span class="number">2</span>*ii+<span class="number">1</span>);</span><br><span class="line">	<span class="built_in">range</span> r3 = <span class="number">2</span>!$(<span class="number">2</span>*ii+<span class="number">2</span>);	</span><br><span class="line">	colcopy irng:=r1 orng:=r2;</span><br><span class="line">	colcopy irng:=r1 orng:=r3;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-0583652a875cfeaab12de74dd2ed3b31.png!blog_watermark"></p>
+<p>最后，新增一列作为路径编号（令 <code>F(x) = i</code> 生成正整数递增列，即行号），并将列类型设置为 <code>XYY</code>。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-6b414a6f0b3136d5b1a2dfd47de68ab8.png!blog_watermark"></p>
+<h2 id="图像绘制"><a href="#图像绘制" class="headerlink" title="图像绘制"></a>图像绘制</h2><h3 id="第一条路径"><a href="#第一条路径" class="headerlink" title="第一条路径"></a>第一条路径</h3><p>本绘图方法中，每一条路径都需要独立绘制，每次选择一组数据。</p>
+<p>选中 B、C 列，选择 <strong>Plot: Bar -&gt; Floating Columns</strong> 制图，但此时图中是没有图像的，这是由于当柱状图高度为零时，Origin 默认不显示。我们可以通过 <a href="https://www.originlab.com/doc/ja/LabTalk/ref/Page-obj">Labtalk 命令</a> <code>page.BarShowZero = 1</code> 或者勾选 <strong>Preference: Options -&gt; Bar graph show Zero Value</strong> 令其显示。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-4d7b7ee8cba64927acf97aa5791400b8.png!blog_watermark"></p>
+<h4 id="数据连接"><a href="#数据连接" class="headerlink" title="数据连接"></a>数据连接</h4><p>利用数据连接功能，我们可以将每个柱子连接起来，并自定义线形。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-2d934c24c6adb97c4c68bf0806358bec.png!blog_watermark"></p>
+<h3 id="增加多条路径"><a href="#增加多条路径" class="headerlink" title="增加多条路径"></a>增加多条路径</h3><p>如果需要绘制的路径不止一条，可以利用 Origin 的 <a href="https://www.originlab.com/doc/Quick-Help/Add-Data-to-Layer">Add Data to Layer</a> 功能，将其他组数据拖入图像中。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-d2a1b2b9452c030407beaa3edc212e2c.gif"></p>
+<h2 id="数据标注"><a href="#数据标注" class="headerlink" title="数据标注"></a>数据标注</h2><p>这里介绍一个简便方法标注各个中间路径的名称。</p>
+<ol>
+<li>增加 B 列（名称列）和 C、D 列（全为零），，</li>
+</ol>
+<img src="https://img.yeslu.cn/blog/2024-01/25-cadf94cbd037e27588d2d745cd1e6779.png!blog_watermark" style="zoom: 80%;" />
+
+<ol start="2">
+<li>将 C、D 列数据添加至图中，并将该组数据的颜色设置为无色，显示其 Label。</li>
+</ol>
+<p><img src="https://img.yeslu.cn/blog/2024-01/25-b073720a93899037e7f136c86a115cb5.png!blog_watermark"></p>
+<ol start="3">
+<li>保存后即可创建在同一水平线，且与真实数据垂直对齐的名称。</li>
+</ol>
+<p><img src="https://img.yeslu.cn/blog/2024-01/25-4835bb13e7cac3abc50b858ed31ce9e8.png!blog_watermark"></p>
+<h2 id="Labtalk-详解"><a href="#Labtalk-详解" class="headerlink" title="Labtalk 详解"></a>Labtalk 详解</h2><h3 id="Range"><a href="#Range" class="headerlink" title="Range"></a>Range</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">range</span> rsrc = <span class="number">1</span>!; </span><br><span class="line"><span class="built_in">range</span> rdst = <span class="number">2</span>!;</span><br></pre></td></tr></table></figure>
+
+<p>类似于 <code>range a = 1!</code> 是指当前活动工作簿的第一个工作表。本组命令是将数据来源设置为第一个工作表，将目标数据存放在第二个工作表。</p>
+<blockquote>
+<p>参考文档：<a href="https://www.originlab.com/doc/en/LabTalk/guide/Range-Notation">Range-Notation</a></p>
+</blockquote>
+<h3 id="New-Column"><a href="#New-Column" class="headerlink" title="New Column"></a>New Column</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">rdst.ncols = rsrc.ncols*<span class="number">2</span>;</span><br></pre></td></tr></table></figure>
+
+<p>上面我们说过，该 Labtalk 脚本是为了将一列数据复制成两列作为 Floating Column 的下界和上界，<code>ncol</code> 代表的是 <code>new column</code>。本组命令是将 <code>rdst</code> 的列数设置为 <code>rsrc</code> 的两倍。</p>
+<blockquote>
+<p>参考文档：<a href="https://www.originlab.com/doc/LabTalk/guide/Basic-Worksheet-Column-Operation">Basic Worksheet Column</a></p>
+</blockquote>
+<h3 id="Loop"><a href="#Loop" class="headerlink" title="Loop"></a>Loop</h3><h4 id="Header"><a href="#Header" class="headerlink" title="Header"></a>Header</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="built_in">int</span> ii = <span class="number">0</span>; ii &lt; rsrc.ncols; ii++)&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>控制本次循环在遍历完源工作表的所有列后结束。</p>
+<h4 id="Body"><a href="#Body" class="headerlink" title="Body"></a>Body</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">range</span> r1 = <span class="number">1</span>!$(ii+<span class="number">1</span>);</span><br><span class="line"><span class="built_in">range</span> r2 = <span class="number">2</span>!$(<span class="number">2</span>*ii+<span class="number">1</span>);</span><br><span class="line"><span class="built_in">range</span> r3 = <span class="number">2</span>!$(<span class="number">2</span>*ii+<span class="number">2</span>);	</span><br><span class="line">colcopy irng:=r1 orng:=r2;</span><br><span class="line">colcopy irng:=r1 orng:=r3;</span><br></pre></td></tr></table></figure>
+
+<p>此处 <code>irng</code> 为 <code>input range</code>，<code>orng</code> 为 <code>output range</code>。</p>
+<p>当 <code>ii = 0</code>，则 <code>r1</code> 为源工作表的第 1 列， <code>r2</code> 为目标工作表的第 1 列， <code>r3</code> 为目标工作表的第 2 列。接着将源工作表的第 1 列追加到目标工作表的第 1、2 列。</p>
+<p>当 <code>ii = 1</code>，则 <code>r1</code> 为源数据工作表的第 2 列， <code>r2</code> 为目标数据工作表的第 3 列， <code>r3</code> 为目标数据工作表的第 4 列。接着将源工作表的第 2 列追加到目标工作表的第 3、4 列。</p>
+<p>由此可见，随着循环的进行，源工作表的每一列都被拷贝成了两列。</p>
+<blockquote>
+<p>参考文档：<a href="https://www.originlab.com/doc/LabTalk/guide/Getting-Started-with-LT">Getting Started with LabTalk</a></p>
+</blockquote>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
+<li>Windows 11 (22000.652);</li>
+<li>Origin 2022b (Academic).</li>
+</ol>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文禁止转载；</li>
+<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Graph</tag>
+        <tag>Origin</tag>
+        <tag>Data-Analysis</tag>
       </tags>
   </entry>
 </search>
