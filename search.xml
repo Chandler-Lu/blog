@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>我和我的软件们：目录</title>
+    <url>/archives/2ae541fb.html</url>
+    <content><![CDATA[<h2 id="总目录"><a href="#总目录" class="headerlink" title="总目录"></a>总目录</h2><ul>
+<li><a href="https://www.yeslu.cn/archives/86a324ce.html">01 - 前言</a></li>
+<li><a href="https://www.yeslu.cn/archives/9b841902.html">02 - 日记</a></li>
+</ul>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Software</category>
+      </categories>
+      <tags>
+        <tag>Recommend</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>精读：《小王子》笔记</title>
     <url>/archives/5bb81735.html</url>
     <content><![CDATA[<h2 id="第五章-猴面包树"><a href="#第五章-猴面包树" class="headerlink" title="第五章 猴面包树"></a>第五章 猴面包树</h2><h3 id="今日短语"><a href="#今日短语" class="headerlink" title="今日短语"></a>今日短语</h3><ol>
@@ -200,24 +218,6 @@
       <tags>
         <tag>Book</tag>
         <tag>English</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我和我的软件们：目录</title>
-    <url>/archives/2ae541fb.html</url>
-    <content><![CDATA[<h2 id="总目录"><a href="#总目录" class="headerlink" title="总目录"></a>总目录</h2><ul>
-<li><a href="https://www.yeslu.cn/archives/86a324ce.html">01 - 前言</a></li>
-<li><a href="https://www.yeslu.cn/archives/9b841902.html">02 - 日记</a></li>
-</ul>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Software</category>
-      </categories>
-      <tags>
-        <tag>Recommend</tag>
       </tags>
   </entry>
   <entry>
@@ -549,53 +549,6 @@
       <tags>
         <tag>English</tag>
         <tag>Word</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ESXI 和 OpenWrt 避坑指南</title>
-    <url>/archives/bd3ebe3.html</url>
-    <content><![CDATA[<h2 id="软硬件"><a href="#软硬件" class="headerlink" title="软硬件"></a>软硬件</h2><ul>
-<li>CPU: <a href="https://www.intel.com/content/www/us/en/products/sku/197305/intel-celeron-processor-j4125-4m-cache-up-to-2-70-ghz/specifications.html">Intel J4125</a></li>
-<li>网卡: <a href="https://www.intel.com/content/www/us/en/products/details/ethernet/gigabit-controllers/i211-controllers/downloads.html">Intel I211</a> * 4</li>
-<li>内存: 8G</li>
-<li>硬盘: 32G</li>
-<li>ESXI 6.7u3</li>
-</ul>
-<h2 id="ESXI-配置"><a href="#ESXI-配置" class="headerlink" title="ESXI 配置"></a>ESXI 配置</h2><h3 id="修改-ESXI-主机名称"><a href="#修改-ESXI-主机名称" class="headerlink" title="修改 ESXI 主机名称"></a>修改 ESXI 主机名称</h3><blockquote>
-<p>本节参考: <a href="https://kb.vmware.com/s/article/1010821?lang=zh_CN">https://kb.vmware.com/s/article/1010821?lang=zh_CN</a></p>
-</blockquote>
-<ol>
-<li>ssh 连入 ESXI；</li>
-<li>运行 <code>esxcfg-advcfg -s HOSTNAME /Misc/hostname</code>，其中，大写 HOSTNAME 改写为你需要修改的主机名；</li>
-<li>重启 ESXI。</li>
-</ol>
-<span id="more"></span>
-
-<h2 id="ESXI-坑"><a href="#ESXI-坑" class="headerlink" title="ESXI 坑"></a>ESXI 坑</h2><h3 id="对象类型需要托管的-I-O"><a href="#对象类型需要托管的-I-O" class="headerlink" title="对象类型需要托管的 I&#x2F;O"></a>对象类型需要托管的 I&#x2F;O</h3><blockquote>
-<p>ESXI 重启后，启动 OpenWrt 时报错：ESXI 无法打开虚拟机电源， 对象类型需要托管的 I&#x2F;O。</p>
-</blockquote>
-<p>目前，Lean 的 <a href="https://github.com/coolsnowwolf/lede">LEDE 固件</a>支持在编译时输出 ESXI 的镜像文件 (.vmdk)，经过论坛检索和自己实测，使用该镜像文件直接启动，大概率存在 ESXI 断电后，启动 OpenWrt 报上述错误的情况。而将 img 文件通过 StarWind V2V Converter 转换为 _.vmdk 和 _-flat.vmdk 再导入后，则很少出现上述情况。</p>
-<h4 id="若此问题已经出现，则可以通过以下方案修复："><a href="#若此问题已经出现，则可以通过以下方案修复：" class="headerlink" title="若此问题已经出现，则可以通过以下方案修复："></a>若此问题已经出现，则可以通过以下方案修复：</h4><ol>
-<li>ssh 连入 ESXI；</li>
-<li>VSXI 主界面 -&gt; 主机 -&gt; 监控 -&gt; 任务，找到错误信息和错误文件路径；</li>
-<li>输入 <code>vmkfstools -x check 路径</code>，若提示 <code>Disk needs repair.</code>，则输入 <code>vmkfstools -x repair 路径</code> 修复文件，修复成功后，应提示 <code>Disk was successfully repaired.</code></li>
-</ol>
-<h3 id="请输入大于原始容量的磁盘大小"><a href="#请输入大于原始容量的磁盘大小" class="headerlink" title="请输入大于原始容量的磁盘大小"></a>请输入大于原始容量的磁盘大小</h3><blockquote>
-<p>再次编辑虚拟机设置时，提示”请输入大于原始容量的磁盘大小”。</p>
-</blockquote>
-<p>通过 StarWind V2V Converter 转换后导入的虚拟机，再次编辑虚拟机设置时，会提示上述错误。</p>
-<h4 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h4><ol>
-<li>ssh 连入 ESXI；</li>
-<li><code>cd</code> 到 vmdk 所上传的路径；</li>
-<li>输入 <code>vmkfstools -X 384M vmdk文件名</code>，将该虚拟机扩容（此处 384M 为需要扩容到的容量，请根据实际情况修改）。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>OS</category>
-      </categories>
-      <tags>
-        <tag>Router</tag>
-        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -2055,76 +2008,50 @@
       </tags>
   </entry>
   <entry>
-    <title>获取 iOS 设备所链接 Wi-Fi 的具体信息</title>
-    <url>/archives/dd75b10a.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>很多人像我一样，在测试 Wi-Fi 的时候需要知道我的设备链接到 Wi-Fi 的什么频段，什么信道，信号强度如何等等，但 iOS&#x2F;iPadOS 并不像 macOS 一样，对用户直接提供 Wi-Fi 的详细调试信息【<strong>macOS 可通过按住 option，鼠标点击 Wi-Fi 图标来获取</strong>】。因此，我们可以使用 Apple 面向开发者的调试文件来获得。</p>
+    <title>ESXI 和 OpenWrt 避坑指南</title>
+    <url>/archives/bd3ebe3.html</url>
+    <content><![CDATA[<h2 id="软硬件"><a href="#软硬件" class="headerlink" title="软硬件"></a>软硬件</h2><ul>
+<li>CPU: <a href="https://www.intel.com/content/www/us/en/products/sku/197305/intel-celeron-processor-j4125-4m-cache-up-to-2-70-ghz/specifications.html">Intel J4125</a></li>
+<li>网卡: <a href="https://www.intel.com/content/www/us/en/products/details/ethernet/gigabit-controllers/i211-controllers/downloads.html">Intel I211</a> * 4</li>
+<li>内存: 8G</li>
+<li>硬盘: 32G</li>
+<li>ESXI 6.7u3</li>
+</ul>
+<h2 id="ESXI-配置"><a href="#ESXI-配置" class="headerlink" title="ESXI 配置"></a>ESXI 配置</h2><h3 id="修改-ESXI-主机名称"><a href="#修改-ESXI-主机名称" class="headerlink" title="修改 ESXI 主机名称"></a>修改 ESXI 主机名称</h3><blockquote>
+<p>本节参考: <a href="https://kb.vmware.com/s/article/1010821?lang=zh_CN">https://kb.vmware.com/s/article/1010821?lang=zh_CN</a></p>
+</blockquote>
+<ol>
+<li>ssh 连入 ESXI；</li>
+<li>运行 <code>esxcfg-advcfg -s HOSTNAME /Misc/hostname</code>，其中，大写 HOSTNAME 改写为你需要修改的主机名；</li>
+<li>重启 ESXI。</li>
+</ol>
 <span id="more"></span>
 
-<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p><img src="https://img.yeslu.cn/blog/early/learn-get-ios-wifi-band-01.png!blog_watermark"></p>
-<ol>
-<li>进入 <a href="https://developer.apple.com/bug-reporting/profiles-and-logs">https://developer.apple.com/bug-reporting/profiles-and-logs/</a> ，找到 Wi-Fi for iOS 的字样，并下载后面的 Profile 文件；</li>
-<li>将上述配置文件传输至 iPhone&#x2F;iPad，当然你也可以直接在手机上直接操作上述内容。</li>
+<h2 id="ESXI-坑"><a href="#ESXI-坑" class="headerlink" title="ESXI 坑"></a>ESXI 坑</h2><h3 id="对象类型需要托管的-I-O"><a href="#对象类型需要托管的-I-O" class="headerlink" title="对象类型需要托管的 I&#x2F;O"></a>对象类型需要托管的 I&#x2F;O</h3><blockquote>
+<p>ESXI 重启后，启动 OpenWrt 时报错：ESXI 无法打开虚拟机电源， 对象类型需要托管的 I&#x2F;O。</p>
+</blockquote>
+<p>目前，Lean 的 <a href="https://github.com/coolsnowwolf/lede">LEDE 固件</a>支持在编译时输出 ESXI 的镜像文件 (.vmdk)，经过论坛检索和自己实测，使用该镜像文件直接启动，大概率存在 ESXI 断电后，启动 OpenWrt 报上述错误的情况。而将 img 文件通过 StarWind V2V Converter 转换为 _.vmdk 和 _-flat.vmdk 再导入后，则很少出现上述情况。</p>
+<h4 id="若此问题已经出现，则可以通过以下方案修复："><a href="#若此问题已经出现，则可以通过以下方案修复：" class="headerlink" title="若此问题已经出现，则可以通过以下方案修复："></a>若此问题已经出现，则可以通过以下方案修复：</h4><ol>
+<li>ssh 连入 ESXI；</li>
+<li>VSXI 主界面 -&gt; 主机 -&gt; 监控 -&gt; 任务，找到错误信息和错误文件路径；</li>
+<li>输入 <code>vmkfstools -x check 路径</code>，若提示 <code>Disk needs repair.</code>，则输入 <code>vmkfstools -x repair 路径</code> 修复文件，修复成功后，应提示 <code>Disk was successfully repaired.</code></li>
 </ol>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ol>
-<li>点击<code>“设置” -&gt; “通用” -&gt; “描述文件”</code>，找到刚刚导入的描述文件；</li>
-<li>点击右上角“安装”，并输入密码完成安装。</li>
+<h3 id="请输入大于原始容量的磁盘大小"><a href="#请输入大于原始容量的磁盘大小" class="headerlink" title="请输入大于原始容量的磁盘大小"></a>请输入大于原始容量的磁盘大小</h3><blockquote>
+<p>再次编辑虚拟机设置时，提示”请输入大于原始容量的磁盘大小”。</p>
+</blockquote>
+<p>通过 StarWind V2V Converter 转换后导入的虚拟机，再次编辑虚拟机设置时，会提示上述错误。</p>
+<h4 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h4><ol>
+<li>ssh 连入 ESXI；</li>
+<li><code>cd</code> 到 vmdk 所上传的路径；</li>
+<li>输入 <code>vmkfstools -X 384M vmdk文件名</code>，将该虚拟机扩容（此处 384M 为需要扩容到的容量，请根据实际情况修改）。</li>
 </ol>
-<img src="https://img.yeslu.cn/blog/early/learn-get-ios-wifi-band-02.png!blog_watermark" style="zoom:50%;" />
-
-<img src="https://img.yeslu.cn/blog/early/learn-get-ios-wifi-band-03.png!blog_watermark" style="zoom:50%;" />
-
-<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><ul>
-<li>进入 Wi-Fi 设置界面，打开当前所连接 Wi-Fi 的详细信息，选择“Diagnostics”，就可以看到 Wi-Fi 的详细信息啦。</li>
-</ul>
-<img src="https://img.yeslu.cn/blog/early/learn-get-ios-wifi-band-04.png!blog_watermark" style="zoom:50%;" />
-
-<img src="https://img.yeslu.cn/blog/early/learn-get-ios-wifi-band-05.png!blog_watermark" style="zoom:50%;" />
-
-<img src="https://img.yeslu.cn/blog/early/learn-get-ios-wifi-band-06.png!blog_watermark" style="zoom:50%;" />
-
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ul>
-<li>为了避免一些不必要的系统日志或者引发一些 Bug，个人不建议在非调试需求下长期打开调试模式；如需关闭，请删除描述文件。</li>
-</ul>
 ]]></content>
       <categories>
         <category>OS</category>
       </categories>
       <tags>
         <tag>Router</tag>
-        <tag>iOS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>利用 GitHub API 获取最新 Releases 的版本号</title>
-    <url>/archives/3a47af3d.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文以 <a href="https://github.com/iina/iina">iina&#x2F;iina: The modern video player for macOS</a> 为例，展示利用 GitHub API 获取 Repo 中最新 Releases 的版本号。 </p>
-<span id="more"></span>
-
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -qO- -t1 -T2 <span class="string">&quot;https://api.github.com/repos/iina/iina/releases/latest&quot;</span> | grep <span class="string">&quot;tag_name&quot;</span> | <span class="built_in">head</span> -n 1 | awk -F <span class="string">&quot;:&quot;</span> <span class="string">&#x27;&#123;print $2&#125;&#x27;</span> | sed <span class="string">&#x27;s/\&quot;//g;s/,//g;s/ //g&#x27;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="代码解释"><a href="#代码解释" class="headerlink" title="代码解释"></a>代码解释</h2><h3 id="主字段"><a href="#主字段" class="headerlink" title="主字段"></a>主字段</h3><p><code>https://api.github.com/repos/iina/iina/releases/latest</code> 这里用的是 GitHub 的官方 API，格式为 <code>https://api.github.com/repos/&#123;项目名&#125;/releases/latest</code><br>打开上述链接后，可见包含下述字段的内容：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&quot;html_url&quot;: &quot;https://github.com/lhc70000/iina/releases/tag/v0.0.15.1&quot;,</span><br><span class="line">&quot;id&quot;: 10774475,</span><br><span class="line">&quot;node_id&quot;: &quot;MDc6UmVsZWFzZTEwNzc0NDc1&quot;,</span><br><span class="line">&quot;tag_name&quot;: &quot;v0.0.15.1&quot;,</span><br><span class="line">&quot;target_commitish&quot;: &quot;0.0.15.1&quot;,</span><br><span class="line">&quot;name&quot;: &quot;v0.0.15.1&quot;,</span><br></pre></td></tr></table></figure>
-
-<p>那么这里的<code>tag_name</code>就是我们所需要的东西啦</p>
-<h3 id="wget-参数"><a href="#wget-参数" class="headerlink" title="wget 参数"></a>wget 参数</h3><p><code>wget -qO- -t1 -T2</code>，在这里，我们使用了 4 个参数，分别是<code>q,O-,t1,T2</code></p>
-<ol>
-<li><code>-q</code>: q 就是 quiet 的意思了，没有该参数将会显示从请求到输出全过程的所有内容，这肯定不是我们想要的。</li>
-<li><code>-O-</code>: <code>-O</code>是指把文档写入文件中，而<code>-O-</code>是将内容写入标准输出，而不保存为文件。（注：这里是大写英文字母 O (Out)，不是数字 0）</li>
-<li><code>-t1,-T2</code>: 前者是设定最大尝试链接次数为 1 次，后者是设定响应超时的秒数为 2 秒，两者可以防止失败后反复获取，导致后续脚本无法执行。</li>
-</ol>
-<h3 id="筛选参数"><a href="#筛选参数" class="headerlink" title="筛选参数"></a>筛选参数</h3><ol>
-<li><code>grep &quot;tag_name&quot;</code>: grep 是 Linux 一个强大的文本搜索工具，在本代码中输出 tag_name 所在行，即输出<code>&quot;tag_name&quot;: &quot;v0.0.15.1&quot;,</code></li>
-<li><code>head -n 1</code>: <code>head -n</code>用于显示输出的行数，考虑到某些项目可能存在多个不同版本的 tag_name，这里我们只要第一个。</li>
-<li><code>awk -F &quot;:&quot; &#39;&#123;print $2&#125;&#39;</code>: awk 主要用于文本分析，在这里指定<code>:</code>为分隔符，将该行切分成多列，并输出第二列。于是我们得到了<code>(空格)&quot;v0.0.15.1&quot;,</code></li>
-<li><code>sed &#39;s/\&quot;//g;s/,//g;s/ //g&#39;</code>: 在这里 sed 用于数据查找替换，如<code>sed &#39;s/要被取代的字串/新的字串/g&#39;</code> ，因此本段命令可分为 3 个，以分号分隔。<code>s/\&quot;//g</code>即将引号删除（反斜杠是为了防止引号被转义），以此类推，最终留下我们需要的内容：<code>v0.0.15.1</code>。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Batch</category>
-      </categories>
-      <tags>
-        <tag>GitHub</tag>
-        <tag>API</tag>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -4877,6 +4804,79 @@
       </tags>
   </entry>
   <entry>
+    <title>利用 GitHub API 获取最新 Releases 的版本号</title>
+    <url>/archives/3a47af3d.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文以 <a href="https://github.com/iina/iina">iina&#x2F;iina: The modern video player for macOS</a> 为例，展示利用 GitHub API 获取 Repo 中最新 Releases 的版本号。 </p>
+<span id="more"></span>
+
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">wget -qO- -t1 -T2 <span class="string">&quot;https://api.github.com/repos/iina/iina/releases/latest&quot;</span> | grep <span class="string">&quot;tag_name&quot;</span> | <span class="built_in">head</span> -n 1 | awk -F <span class="string">&quot;:&quot;</span> <span class="string">&#x27;&#123;print $2&#125;&#x27;</span> | sed <span class="string">&#x27;s/\&quot;//g;s/,//g;s/ //g&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="代码解释"><a href="#代码解释" class="headerlink" title="代码解释"></a>代码解释</h2><h3 id="主字段"><a href="#主字段" class="headerlink" title="主字段"></a>主字段</h3><p><code>https://api.github.com/repos/iina/iina/releases/latest</code> 这里用的是 GitHub 的官方 API，格式为 <code>https://api.github.com/repos/&#123;项目名&#125;/releases/latest</code><br>打开上述链接后，可见包含下述字段的内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&quot;html_url&quot;: &quot;https://github.com/lhc70000/iina/releases/tag/v0.0.15.1&quot;,</span><br><span class="line">&quot;id&quot;: 10774475,</span><br><span class="line">&quot;node_id&quot;: &quot;MDc6UmVsZWFzZTEwNzc0NDc1&quot;,</span><br><span class="line">&quot;tag_name&quot;: &quot;v0.0.15.1&quot;,</span><br><span class="line">&quot;target_commitish&quot;: &quot;0.0.15.1&quot;,</span><br><span class="line">&quot;name&quot;: &quot;v0.0.15.1&quot;,</span><br></pre></td></tr></table></figure>
+
+<p>那么这里的<code>tag_name</code>就是我们所需要的东西啦</p>
+<h3 id="wget-参数"><a href="#wget-参数" class="headerlink" title="wget 参数"></a>wget 参数</h3><p><code>wget -qO- -t1 -T2</code>，在这里，我们使用了 4 个参数，分别是<code>q,O-,t1,T2</code></p>
+<ol>
+<li><code>-q</code>: q 就是 quiet 的意思了，没有该参数将会显示从请求到输出全过程的所有内容，这肯定不是我们想要的。</li>
+<li><code>-O-</code>: <code>-O</code>是指把文档写入文件中，而<code>-O-</code>是将内容写入标准输出，而不保存为文件。（注：这里是大写英文字母 O (Out)，不是数字 0）</li>
+<li><code>-t1,-T2</code>: 前者是设定最大尝试链接次数为 1 次，后者是设定响应超时的秒数为 2 秒，两者可以防止失败后反复获取，导致后续脚本无法执行。</li>
+</ol>
+<h3 id="筛选参数"><a href="#筛选参数" class="headerlink" title="筛选参数"></a>筛选参数</h3><ol>
+<li><code>grep &quot;tag_name&quot;</code>: grep 是 Linux 一个强大的文本搜索工具，在本代码中输出 tag_name 所在行，即输出<code>&quot;tag_name&quot;: &quot;v0.0.15.1&quot;,</code></li>
+<li><code>head -n 1</code>: <code>head -n</code>用于显示输出的行数，考虑到某些项目可能存在多个不同版本的 tag_name，这里我们只要第一个。</li>
+<li><code>awk -F &quot;:&quot; &#39;&#123;print $2&#125;&#39;</code>: awk 主要用于文本分析，在这里指定<code>:</code>为分隔符，将该行切分成多列，并输出第二列。于是我们得到了<code>(空格)&quot;v0.0.15.1&quot;,</code></li>
+<li><code>sed &#39;s/\&quot;//g;s/,//g;s/ //g&#39;</code>: 在这里 sed 用于数据查找替换，如<code>sed &#39;s/要被取代的字串/新的字串/g&#39;</code> ，因此本段命令可分为 3 个，以分号分隔。<code>s/\&quot;//g</code>即将引号删除（反斜杠是为了防止引号被转义），以此类推，最终留下我们需要的内容：<code>v0.0.15.1</code>。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Batch</category>
+      </categories>
+      <tags>
+        <tag>GitHub</tag>
+        <tag>API</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>获取 iOS 设备所链接 Wi-Fi 的具体信息</title>
+    <url>/archives/dd75b10a.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>很多人像我一样，在测试 Wi-Fi 的时候需要知道我的设备链接到 Wi-Fi 的什么频段，什么信道，信号强度如何等等，但 iOS&#x2F;iPadOS 并不像 macOS 一样，对用户直接提供 Wi-Fi 的详细调试信息【<strong>macOS 可通过按住 option，鼠标点击 Wi-Fi 图标来获取</strong>】。因此，我们可以使用 Apple 面向开发者的调试文件来获得。</p>
+<span id="more"></span>
+
+<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p><img src="https://img.yeslu.cn/blog/early/learn-get-ios-wifi-band-01.png!blog_watermark"></p>
+<ol>
+<li>进入 <a href="https://developer.apple.com/bug-reporting/profiles-and-logs">https://developer.apple.com/bug-reporting/profiles-and-logs/</a> ，找到 Wi-Fi for iOS 的字样，并下载后面的 Profile 文件；</li>
+<li>将上述配置文件传输至 iPhone&#x2F;iPad，当然你也可以直接在手机上直接操作上述内容。</li>
+</ol>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ol>
+<li>点击<code>“设置” -&gt; “通用” -&gt; “描述文件”</code>，找到刚刚导入的描述文件；</li>
+<li>点击右上角“安装”，并输入密码完成安装。</li>
+</ol>
+<img src="https://img.yeslu.cn/blog/early/learn-get-ios-wifi-band-02.png!blog_watermark" style="zoom:50%;" />
+
+<img src="https://img.yeslu.cn/blog/early/learn-get-ios-wifi-band-03.png!blog_watermark" style="zoom:50%;" />
+
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><ul>
+<li>进入 Wi-Fi 设置界面，打开当前所连接 Wi-Fi 的详细信息，选择“Diagnostics”，就可以看到 Wi-Fi 的详细信息啦。</li>
+</ul>
+<img src="https://img.yeslu.cn/blog/early/learn-get-ios-wifi-band-04.png!blog_watermark" style="zoom:50%;" />
+
+<img src="https://img.yeslu.cn/blog/early/learn-get-ios-wifi-band-05.png!blog_watermark" style="zoom:50%;" />
+
+<img src="https://img.yeslu.cn/blog/early/learn-get-ios-wifi-band-06.png!blog_watermark" style="zoom:50%;" />
+
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ul>
+<li>为了避免一些不必要的系统日志或者引发一些 Bug，个人不建议在非调试需求下长期打开调试模式；如需关闭，请删除描述文件。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>OS</category>
+      </categories>
+      <tags>
+        <tag>Router</tag>
+        <tag>iOS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>存储设备性能对比测试</title>
     <url>/archives/fe0135af.html</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>由于经常使用各类摄影设备，同时在数据存储方面也有一定的需求，本人经常会购买一些存储设备，如 SD、TF、U盘、硬盘等，而市面上存储设备（尤其是SD卡）的读写性能对比相对较少。本文将对自购的存储设备进行性能测试，给想要购买相关硬件的用户提供参考。</p>
@@ -5171,129 +5171,6 @@
       </categories>
       <tags>
         <tag>Storage</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Jade 6.5 图文安装教程</title>
-    <url>/archives/403feac4.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Jade 是一种功能强大、全功能的粉末 XRD 图处理和分析软件，尤其注重定量分析和鉴定物相，可实现非常规少量物相的准确鉴定和定量分析。考虑到国内购买 Jade 的机构数量极其有限，本文将介绍 Jade 6.5 的安装方法，但不会提供安装程序。</p>
-<span id="more"></span>
-
-<h2 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h2><ol>
-<li>你下载下来并解压的文件，以下称为”安装包”。</li>
-<li>安装时让你选择的路径，以下称为”安装目录”。</li>
-</ol>
-<h2 id="账户名查看"><a href="#账户名查看" class="headerlink" title="账户名查看"></a>账户名查看</h2><p>打开任务管理器，找到”用户”，这就是你的账户名（务必注意大小写和特殊符号），本步骤下面会用到。<br><img src="https://img.yeslu.cn/blog/early/15121411501122.jpg!blog_watermark"></p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol>
-<li>关闭所有安全软件以防在修改注册表时被拒绝。</li>
-<li>确保目前登陆账户不是 Administrator（上面说了怎么查看账户名）。</li>
-<li>将安装文件拷贝至不含<strong>任何中文及特殊符号</strong>的目录中。</li>
-<li><strong>下载后务必将安装包解压！</strong></li>
-</ol>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ol>
-<li>选择安装路径，点击安装，直至安装完成。安装结束后，窗口会自动关闭。<br><img src="https://img.yeslu.cn/blog/early/15121359925268.jpg!blog_watermark"></li>
-</ol>
-<h2 id="控件注册"><a href="#控件注册" class="headerlink" title="控件注册"></a>控件注册</h2><blockquote>
-<p>安装结束后，软件是无法正常运行的，此时我们要注册对象链接和嵌入用户控件（OCX）。</p>
-</blockquote>
-<ol>
-<li><p>在安装包中找到”ocx”文件夹，编辑”注册 ocx.bat”；<br><img src="https://img.yeslu.cn/blog/early/15121367159312.jpg!blog_watermark"></p>
-</li>
-<li><p>将第一行修改为安装盘符（安装路径前 2 个字符，如 C:），第二行修改为”cd 安装路径”，如图所示，然后保存；<br><img src="https://img.yeslu.cn/blog/early/15121368895189.jpg!blog_watermark"></p>
-</li>
-<li><p>管理员模式运行”注册 ocx.bat”，接着会提示多个”xxxx 已成功”，全部点击确定直到窗口关闭；<br><img src="https://img.yeslu.cn/blog/early/15121369776732.jpg!blog_watermark"></p>
-</li>
-</ol>
-<h3 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h3><p>在进行以上步骤时，如果 <code>grid32.ocx</code> 和 <code>MSCOMCTL.OCX</code> 安装报错，请将安装包中所有的 <code>.ocx</code> 文件拷贝至 <code>C:\Windows\SysWOW64（假设系统盘是 C 盘）</code>后，重做第二、三步。此时，将第一行修改为安装盘符 <code>C:</code>，第二行修改为 <code>cd C:\Windows\SysWOW64</code>，然后保存，接着以管理员模式运行。</p>
-<h2 id="添加注册表"><a href="#添加注册表" class="headerlink" title="添加注册表"></a>添加注册表</h2><blockquote>
-<p>本步骤务必注意大小写。</p>
-</blockquote>
-<ol>
-<li>使用”win+R”组合键打开”运行”，键入以下命令，打开注册表编辑器；</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">%</span><span class="language-bash">systemroot%/regedit <span class="comment"># (32-bit OS)</span></span></span><br><span class="line"><span class="meta prompt_">%</span><span class="language-bash">systemroot%/syswow64/regedit <span class="comment"># (64-bit OS)</span></span></span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li><p>展开”HKEY_LOCAL_MACHINE”，展开”SOFTWARE”，右键”SOFTWARE”，选择”添加项”，命名为”MDI”；<br><img src="https://img.yeslu.cn/blog/early/15121381401160.jpg!blog_watermark"></p>
-</li>
-<li><p>在”MDI”下新建一个新项，名为”license”；<br><img src="https://img.yeslu.cn/blog/early/15121382062726.jpg!blog_watermark"></p>
-</li>
-<li><p>在”license”左侧新建一个”字符串值”，命名为”Owner”；</p>
-</li>
-<li><p>修改”Owner”的值为你的用户名。<br><img src="https://img.yeslu.cn/blog/early/15121383163559.jpg!blog_watermark"><br><img src="https://img.yeslu.cn/blog/early/15121384083615.jpg!blog_watermark"></p>
-</li>
-</ol>
-<h2 id="配置-PDF-卡片"><a href="#配置-PDF-卡片" class="headerlink" title="配置 PDF 卡片"></a>配置 PDF 卡片</h2><ol>
-<li><p>随便打开一个示例文件（打开你自己的也行），点击上方”pdf”，选择”setup”；</p>
-</li>
-<li><p>点击如图所示按钮，在安装包中找到”pdf2.dat”文件，这个文件在安装包的”jade65&#x2F;PDF22004”中；<br><img src="https://img.yeslu.cn/blog/early/15121393867949.jpg!blog_watermark"></p>
-</li>
-<li><p>选定后，点击”select all”，然后”create”；<br><img src="https://img.yeslu.cn/blog/early/15121396295982.jpg!blog_watermark"></p>
-</li>
-<li><p>由于本步骤时间很长，开始时会提示是否在完成后关机&#x2F;注销，选择否；</p>
-</li>
-<li><p>全部完成后，将提示（已知部分系统在载入 pdf 卡片时出现 Run-time error ‘75’的报错，原因是没有管理员权限，无法写入相关数据。解决方法是，以管理员模式启动 Jade（以后不再需要，此问题多发于 win7 以上系统）；<br><img src="https://img.yeslu.cn/blog/early/15121406359428.jpg!blog_watermark"></p>
-</li>
-<li><p>如果可以正常查找，则安装成功。<br><img src="https://img.yeslu.cn/blog/early/15121410448613.jpg!blog_watermark"></p>
-</li>
-</ol>
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><p>虚拟机：Parallels Desktop 13<br>操作系统环境：基于 MSDN 的 win10 专业版（1703）</p>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Jade</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Nginx 反向代理 Sci-Hub</title>
-    <url>/archives/1005f72b.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><ul>
-<li>Sci-Hub 是科研民工重要的学术工具，但是 Sci-Hub 特殊的情况导致其服务器的网络并不是很好，为了解决此问题，自建镜像站点以优化 Sci-Hub 的访问是十分有意义的；</li>
-<li>本教程基于 Ubuntu 18.04.6 LTS 制作，在阅读本教程前，<strong>希望您已具备 Linux 和 Nginx 相关知识</strong>。<span id="more"></span></li>
-</ul>
-<h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><ol>
-<li><a href="http://nginx.org/en/download.html">Nginx</a></li>
-<li><a href="https://www.pcre.org/">PCRE library</a>: 本例中请使用 PCRE v1</li>
-<li><a href="https://zlib.net/">zlib</a></li>
-<li><a href="https://www.openssl.org/source/">OpenSSL</a></li>
-</ol>
-<h2 id="模块解析"><a href="#模块解析" class="headerlink" title="模块解析"></a>模块解析</h2><ol>
-<li>ngx_http_sub_module: 用于进行关键字替换；</li>
-<li>ngx_http_gunzip_module: 用于解决 gzip 后无法进行关键字替换的问题。</li>
-</ol>
-<h2 id="Nginx-编译"><a href="#Nginx-编译" class="headerlink" title="Nginx 编译"></a>Nginx 编译</h2><h3 id="基础依赖"><a href="#基础依赖" class="headerlink" title="基础依赖"></a>基础依赖</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">apt-get install build-essential</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">其他的缺什么补什么</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="所需依赖"><a href="#所需依赖" class="headerlink" title="所需依赖"></a>所需依赖</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash"><span class="built_in">ls</span> /usr/local/src</span></span><br><span class="line"></span><br><span class="line">nginx-1.20.2  openssl-3.0.1  pcre-8.45  zlib-1.2.11</span><br></pre></td></tr></table></figure>
-
-<h3 id="开始编译"><a href="#开始编译" class="headerlink" title="开始编译"></a>开始编译</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash"><span class="built_in">cd</span> nginx-1.20.2</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">./configure \</span></span><br><span class="line"><span class="language-bash">    --sbin-path=/usr/local/nginx/nginx \</span></span><br><span class="line"><span class="language-bash">    --conf-path=/usr/local/nginx/nginx.conf \</span></span><br><span class="line"><span class="language-bash">    --pid-path=/usr/local/nginx/nginx.pid \</span></span><br><span class="line"><span class="language-bash">    --with-http_ssl_module \</span></span><br><span class="line"><span class="language-bash">    --with-http_gzip_static_module \</span></span><br><span class="line"><span class="language-bash">    --with-http_v2_module \</span></span><br><span class="line"><span class="language-bash">    --with-http_sub_module\</span></span><br><span class="line"><span class="language-bash">    --with-http_gunzip_module\</span></span><br><span class="line"><span class="language-bash">    --with-pcre=../pcre-8.45 \</span></span><br><span class="line"><span class="language-bash">    --with-zlib=../zlib-1.2.11 \</span></span><br><span class="line"><span class="language-bash">    --with-openssl=../openssl-3.0.1</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">make install</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="编译检查"><a href="#编译检查" class="headerlink" title="编译检查"></a>编译检查</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">/usr/local/nginx/nginx -V</span></span><br><span class="line"></span><br><span class="line">nginx version: nginx/1.20.2</span><br><span class="line">built by gcc 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) </span><br><span class="line">built with OpenSSL 3.0.1 14 Dec 2021</span><br><span class="line">TLS SNI support enabled</span><br><span class="line">configure arguments: --sbin-path=/usr/local/nginx/nginx --conf-path=/usr/local/nginx/nginx.conf --pid-path=/usr/local/nginx/nginx.pid --with-http_ssl_module --with-http_gzip_static_module --with-http_v2_module --with-http_sub_module --with-http_gunzip_module --with-pcre=../pcre-8.45 --with-zlib=../zlib-1.2.11 --with-openssl=../openssl-3.0.1</span><br></pre></td></tr></table></figure>
-
-<h3 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash"><span class="built_in">ln</span> -s /usr/local/nginx/nginx /usr/local/bin</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">nginx -v</span></span><br><span class="line"></span><br><span class="line">nginx version: nginx/1.20.2</span><br></pre></td></tr></table></figure>
-
-<h3 id="开机自启"><a href="#开机自启" class="headerlink" title="开机自启"></a>开机自启</h3><blockquote>
-<p>参考：<a href="https://www.nginx.com/resources/wiki/start/topics/examples/systemd/">https://www.nginx.com/resources/wiki/start/topics/examples/systemd/</a></p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=The NGINX HTTP and reverse proxy server</span><br><span class="line">After=syslog.target network-online.target remote-fs.target nss-lookup.target</span><br><span class="line">Wants=network-online.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type=forking</span><br><span class="line">PIDFile=/usr/local/nginx/nginx/nginx.pid</span><br><span class="line">ExecStartPre=/usr/local/nginx/nginx -t</span><br><span class="line">ExecStart=/usr/local/nginx/nginx</span><br><span class="line">ExecReload=/usr/local/nginx/nginx -s reload</span><br><span class="line">ExecStop=/bin/kill -s QUIT $MAINPID</span><br><span class="line">PrivateTmp=true</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
-
-<h2 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a>反向代理</h2><figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="section">server</span> &#123;</span><br><span class="line">  <span class="attribute">resolver</span> <span class="number">8.8.8.8</span>;</span><br><span class="line">  <span class="section">location</span> / &#123;</span><br><span class="line">    <span class="attribute">proxy_pass</span> https://sci-hub.se;</span><br><span class="line">    <span class="attribute">proxy_set_header</span> Host sci-hub.se;</span><br><span class="line">    <span class="attribute">proxy_set_header</span> X-Forwarded-Proto <span class="string">&quot;&quot;</span>;</span><br><span class="line">    <span class="attribute">proxy_set_header</span> X-Forwarded-Host <span class="variable">$host</span>;</span><br><span class="line">    <span class="attribute">proxy_set_header</span> X-Forwarded-For <span class="variable">$remote_addr</span>;</span><br><span class="line">    <span class="attribute">proxy_pass_request_headers</span> <span class="literal">on</span>;</span><br><span class="line">    <span class="attribute">proxy_ssl_name</span> sci-hub.se;</span><br><span class="line">    <span class="attribute">proxy_ssl_server_name</span> <span class="literal">on</span>;</span><br><span class="line">    <span class="attribute">gunzip</span> <span class="literal">on</span>;</span><br><span class="line">    <span class="attribute">gzip_disable</span> <span class="string">&quot;.&quot;</span>;</span><br><span class="line">    <span class="attribute">sub_filter</span> <span class="string">&#x27;sci-hub.se&#x27;</span> <span class="string">&#x27;sci.example.com&#x27;</span>;</span><br><span class="line">    <span class="attribute">sub_filter_once</span> <span class="literal">off</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>本代码参考自 <a href="https://gist.github.com/iczero/7cd7c90e9785449eeff7251be1ab3958">Sci-Hub nginx reverse proxy setup</a>，但该代码只是反代了主界面，而数据量最大的资源文件依然从原始站点获取，实际上并不能起到效果。</p>
-<p>我这里加入了 <code>sub_filter</code> ，将全页面的所有原始站点链接全部替换为 <code>sci.example.com</code>，以达到良好的效果。需要注意的是，<code>sub_filter</code> 无法修改 gzip 后的页面，所以本例中使用 <code>gunzip</code> 和 <code>gzip_disable</code> 来处理。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">gunzip on;</span><br><span class="line">gzip_disable &quot;.&quot;;</span><br><span class="line">sub_filter &#x27;sci-hub.se&#x27; &#x27;sci.example.com&#x27;;</span><br><span class="line">sub_filter_once off;</span><br></pre></td></tr></table></figure>
-
-<h2 id="追加模块"><a href="#追加模块" class="headerlink" title="追加模块"></a>追加模块</h2><p>Nginx 编译完成后，如果需要更新程序或者追加编译模块，只需要在原编译命令的基础上，增加你想要的模块，采用 <code>make</code> 而不是 <code>make install</code> 来编译即可。编译后的文件为 <code>objs/nginx</code>，将其替换原先的文件就可以啦。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">./configure \</span></span><br><span class="line"><span class="language-bash">    --sbin-path=/usr/local/nginx/nginx \</span></span><br><span class="line"><span class="language-bash">    --conf-path=/usr/local/nginx/nginx.conf \</span></span><br><span class="line"><span class="language-bash">    --pid-path=/usr/local/nginx/nginx.pid \</span></span><br><span class="line"><span class="language-bash">    --with-http_ssl_module \</span></span><br><span class="line"><span class="language-bash">    --... \</span></span><br><span class="line"><span class="language-bash">    -- &lt;modules you want to add&gt;</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">make</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash"><span class="built_in">cp</span> -f objs/nginx /usr/local/nginx/nginx</span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Develop</category>
-      </categories>
-      <tags>
-        <tag>Nginx</tag>
       </tags>
   </entry>
   <entry>
@@ -5718,6 +5595,79 @@
       </categories>
   </entry>
   <entry>
+    <title>Jade 6.5 图文安装教程</title>
+    <url>/archives/403feac4.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Jade 是一种功能强大、全功能的粉末 XRD 图处理和分析软件，尤其注重定量分析和鉴定物相，可实现非常规少量物相的准确鉴定和定量分析。考虑到国内购买 Jade 的机构数量极其有限，本文将介绍 Jade 6.5 的安装方法，但不会提供安装程序。</p>
+<span id="more"></span>
+
+<h2 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h2><ol>
+<li>你下载下来并解压的文件，以下称为”安装包”。</li>
+<li>安装时让你选择的路径，以下称为”安装目录”。</li>
+</ol>
+<h2 id="账户名查看"><a href="#账户名查看" class="headerlink" title="账户名查看"></a>账户名查看</h2><p>打开任务管理器，找到”用户”，这就是你的账户名（务必注意大小写和特殊符号），本步骤下面会用到。<br><img src="https://img.yeslu.cn/blog/early/15121411501122.jpg!blog_watermark"></p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol>
+<li>关闭所有安全软件以防在修改注册表时被拒绝。</li>
+<li>确保目前登陆账户不是 Administrator（上面说了怎么查看账户名）。</li>
+<li>将安装文件拷贝至不含<strong>任何中文及特殊符号</strong>的目录中。</li>
+<li><strong>下载后务必将安装包解压！</strong></li>
+</ol>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ol>
+<li>选择安装路径，点击安装，直至安装完成。安装结束后，窗口会自动关闭。<br><img src="https://img.yeslu.cn/blog/early/15121359925268.jpg!blog_watermark"></li>
+</ol>
+<h2 id="控件注册"><a href="#控件注册" class="headerlink" title="控件注册"></a>控件注册</h2><blockquote>
+<p>安装结束后，软件是无法正常运行的，此时我们要注册对象链接和嵌入用户控件（OCX）。</p>
+</blockquote>
+<ol>
+<li><p>在安装包中找到”ocx”文件夹，编辑”注册 ocx.bat”；<br><img src="https://img.yeslu.cn/blog/early/15121367159312.jpg!blog_watermark"></p>
+</li>
+<li><p>将第一行修改为安装盘符（安装路径前 2 个字符，如 C:），第二行修改为”cd 安装路径”，如图所示，然后保存；<br><img src="https://img.yeslu.cn/blog/early/15121368895189.jpg!blog_watermark"></p>
+</li>
+<li><p>管理员模式运行”注册 ocx.bat”，接着会提示多个”xxxx 已成功”，全部点击确定直到窗口关闭；<br><img src="https://img.yeslu.cn/blog/early/15121369776732.jpg!blog_watermark"></p>
+</li>
+</ol>
+<h3 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h3><p>在进行以上步骤时，如果 <code>grid32.ocx</code> 和 <code>MSCOMCTL.OCX</code> 安装报错，请将安装包中所有的 <code>.ocx</code> 文件拷贝至 <code>C:\Windows\SysWOW64（假设系统盘是 C 盘）</code>后，重做第二、三步。此时，将第一行修改为安装盘符 <code>C:</code>，第二行修改为 <code>cd C:\Windows\SysWOW64</code>，然后保存，接着以管理员模式运行。</p>
+<h2 id="添加注册表"><a href="#添加注册表" class="headerlink" title="添加注册表"></a>添加注册表</h2><blockquote>
+<p>本步骤务必注意大小写。</p>
+</blockquote>
+<ol>
+<li>使用”win+R”组合键打开”运行”，键入以下命令，打开注册表编辑器；</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">%</span><span class="language-bash">systemroot%/regedit <span class="comment"># (32-bit OS)</span></span></span><br><span class="line"><span class="meta prompt_">%</span><span class="language-bash">systemroot%/syswow64/regedit <span class="comment"># (64-bit OS)</span></span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><p>展开”HKEY_LOCAL_MACHINE”，展开”SOFTWARE”，右键”SOFTWARE”，选择”添加项”，命名为”MDI”；<br><img src="https://img.yeslu.cn/blog/early/15121381401160.jpg!blog_watermark"></p>
+</li>
+<li><p>在”MDI”下新建一个新项，名为”license”；<br><img src="https://img.yeslu.cn/blog/early/15121382062726.jpg!blog_watermark"></p>
+</li>
+<li><p>在”license”左侧新建一个”字符串值”，命名为”Owner”；</p>
+</li>
+<li><p>修改”Owner”的值为你的用户名。<br><img src="https://img.yeslu.cn/blog/early/15121383163559.jpg!blog_watermark"><br><img src="https://img.yeslu.cn/blog/early/15121384083615.jpg!blog_watermark"></p>
+</li>
+</ol>
+<h2 id="配置-PDF-卡片"><a href="#配置-PDF-卡片" class="headerlink" title="配置 PDF 卡片"></a>配置 PDF 卡片</h2><ol>
+<li><p>随便打开一个示例文件（打开你自己的也行），点击上方”pdf”，选择”setup”；</p>
+</li>
+<li><p>点击如图所示按钮，在安装包中找到”pdf2.dat”文件，这个文件在安装包的”jade65&#x2F;PDF22004”中；<br><img src="https://img.yeslu.cn/blog/early/15121393867949.jpg!blog_watermark"></p>
+</li>
+<li><p>选定后，点击”select all”，然后”create”；<br><img src="https://img.yeslu.cn/blog/early/15121396295982.jpg!blog_watermark"></p>
+</li>
+<li><p>由于本步骤时间很长，开始时会提示是否在完成后关机&#x2F;注销，选择否；</p>
+</li>
+<li><p>全部完成后，将提示（已知部分系统在载入 pdf 卡片时出现 Run-time error ‘75’的报错，原因是没有管理员权限，无法写入相关数据。解决方法是，以管理员模式启动 Jade（以后不再需要，此问题多发于 win7 以上系统）；<br><img src="https://img.yeslu.cn/blog/early/15121406359428.jpg!blog_watermark"></p>
+</li>
+<li><p>如果可以正常查找，则安装成功。<br><img src="https://img.yeslu.cn/blog/early/15121410448613.jpg!blog_watermark"></p>
+</li>
+</ol>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><p>虚拟机：Parallels Desktop 13<br>操作系统环境：基于 MSDN 的 win10 专业版（1703）</p>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Jade</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>部署我的 Alfred-OCR 插件</title>
     <url>/archives/7fe802d0.html</url>
     <content><![CDATA[<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><ul>
@@ -5787,6 +5737,56 @@
         <tag>OCR</tag>
         <tag>Alfred</tag>
         <tag>Extension</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Nginx 反向代理 Sci-Hub</title>
+    <url>/archives/1005f72b.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><ul>
+<li>Sci-Hub 是科研民工重要的学术工具，但是 Sci-Hub 特殊的情况导致其服务器的网络并不是很好，为了解决此问题，自建镜像站点以优化 Sci-Hub 的访问是十分有意义的；</li>
+<li>本教程基于 Ubuntu 18.04.6 LTS 制作，在阅读本教程前，<strong>希望您已具备 Linux 和 Nginx 相关知识</strong>。<span id="more"></span></li>
+</ul>
+<h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><ol>
+<li><a href="http://nginx.org/en/download.html">Nginx</a></li>
+<li><a href="https://www.pcre.org/">PCRE library</a>: 本例中请使用 PCRE v1</li>
+<li><a href="https://zlib.net/">zlib</a></li>
+<li><a href="https://www.openssl.org/source/">OpenSSL</a></li>
+</ol>
+<h2 id="模块解析"><a href="#模块解析" class="headerlink" title="模块解析"></a>模块解析</h2><ol>
+<li>ngx_http_sub_module: 用于进行关键字替换；</li>
+<li>ngx_http_gunzip_module: 用于解决 gzip 后无法进行关键字替换的问题。</li>
+</ol>
+<h2 id="Nginx-编译"><a href="#Nginx-编译" class="headerlink" title="Nginx 编译"></a>Nginx 编译</h2><h3 id="基础依赖"><a href="#基础依赖" class="headerlink" title="基础依赖"></a>基础依赖</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">apt-get install build-essential</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">其他的缺什么补什么</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="所需依赖"><a href="#所需依赖" class="headerlink" title="所需依赖"></a>所需依赖</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash"><span class="built_in">ls</span> /usr/local/src</span></span><br><span class="line"></span><br><span class="line">nginx-1.20.2  openssl-3.0.1  pcre-8.45  zlib-1.2.11</span><br></pre></td></tr></table></figure>
+
+<h3 id="开始编译"><a href="#开始编译" class="headerlink" title="开始编译"></a>开始编译</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash"><span class="built_in">cd</span> nginx-1.20.2</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">./configure \</span></span><br><span class="line"><span class="language-bash">    --sbin-path=/usr/local/nginx/nginx \</span></span><br><span class="line"><span class="language-bash">    --conf-path=/usr/local/nginx/nginx.conf \</span></span><br><span class="line"><span class="language-bash">    --pid-path=/usr/local/nginx/nginx.pid \</span></span><br><span class="line"><span class="language-bash">    --with-http_ssl_module \</span></span><br><span class="line"><span class="language-bash">    --with-http_gzip_static_module \</span></span><br><span class="line"><span class="language-bash">    --with-http_v2_module \</span></span><br><span class="line"><span class="language-bash">    --with-http_sub_module\</span></span><br><span class="line"><span class="language-bash">    --with-http_gunzip_module\</span></span><br><span class="line"><span class="language-bash">    --with-pcre=../pcre-8.45 \</span></span><br><span class="line"><span class="language-bash">    --with-zlib=../zlib-1.2.11 \</span></span><br><span class="line"><span class="language-bash">    --with-openssl=../openssl-3.0.1</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">make install</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="编译检查"><a href="#编译检查" class="headerlink" title="编译检查"></a>编译检查</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">/usr/local/nginx/nginx -V</span></span><br><span class="line"></span><br><span class="line">nginx version: nginx/1.20.2</span><br><span class="line">built by gcc 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) </span><br><span class="line">built with OpenSSL 3.0.1 14 Dec 2021</span><br><span class="line">TLS SNI support enabled</span><br><span class="line">configure arguments: --sbin-path=/usr/local/nginx/nginx --conf-path=/usr/local/nginx/nginx.conf --pid-path=/usr/local/nginx/nginx.pid --with-http_ssl_module --with-http_gzip_static_module --with-http_v2_module --with-http_sub_module --with-http_gunzip_module --with-pcre=../pcre-8.45 --with-zlib=../zlib-1.2.11 --with-openssl=../openssl-3.0.1</span><br></pre></td></tr></table></figure>
+
+<h3 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash"><span class="built_in">ln</span> -s /usr/local/nginx/nginx /usr/local/bin</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">nginx -v</span></span><br><span class="line"></span><br><span class="line">nginx version: nginx/1.20.2</span><br></pre></td></tr></table></figure>
+
+<h3 id="开机自启"><a href="#开机自启" class="headerlink" title="开机自启"></a>开机自启</h3><blockquote>
+<p>参考：<a href="https://www.nginx.com/resources/wiki/start/topics/examples/systemd/">https://www.nginx.com/resources/wiki/start/topics/examples/systemd/</a></p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=The NGINX HTTP and reverse proxy server</span><br><span class="line">After=syslog.target network-online.target remote-fs.target nss-lookup.target</span><br><span class="line">Wants=network-online.target</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type=forking</span><br><span class="line">PIDFile=/usr/local/nginx/nginx/nginx.pid</span><br><span class="line">ExecStartPre=/usr/local/nginx/nginx -t</span><br><span class="line">ExecStart=/usr/local/nginx/nginx</span><br><span class="line">ExecReload=/usr/local/nginx/nginx -s reload</span><br><span class="line">ExecStop=/bin/kill -s QUIT $MAINPID</span><br><span class="line">PrivateTmp=true</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
+
+<h2 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a>反向代理</h2><figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="section">server</span> &#123;</span><br><span class="line">  <span class="attribute">resolver</span> <span class="number">8.8.8.8</span>;</span><br><span class="line">  <span class="section">location</span> / &#123;</span><br><span class="line">    <span class="attribute">proxy_pass</span> https://sci-hub.se;</span><br><span class="line">    <span class="attribute">proxy_set_header</span> Host sci-hub.se;</span><br><span class="line">    <span class="attribute">proxy_set_header</span> X-Forwarded-Proto <span class="string">&quot;&quot;</span>;</span><br><span class="line">    <span class="attribute">proxy_set_header</span> X-Forwarded-Host <span class="variable">$host</span>;</span><br><span class="line">    <span class="attribute">proxy_set_header</span> X-Forwarded-For <span class="variable">$remote_addr</span>;</span><br><span class="line">    <span class="attribute">proxy_pass_request_headers</span> <span class="literal">on</span>;</span><br><span class="line">    <span class="attribute">proxy_ssl_name</span> sci-hub.se;</span><br><span class="line">    <span class="attribute">proxy_ssl_server_name</span> <span class="literal">on</span>;</span><br><span class="line">    <span class="attribute">gunzip</span> <span class="literal">on</span>;</span><br><span class="line">    <span class="attribute">gzip_disable</span> <span class="string">&quot;.&quot;</span>;</span><br><span class="line">    <span class="attribute">sub_filter</span> <span class="string">&#x27;sci-hub.se&#x27;</span> <span class="string">&#x27;sci.example.com&#x27;</span>;</span><br><span class="line">    <span class="attribute">sub_filter_once</span> <span class="literal">off</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>本代码参考自 <a href="https://gist.github.com/iczero/7cd7c90e9785449eeff7251be1ab3958">Sci-Hub nginx reverse proxy setup</a>，但该代码只是反代了主界面，而数据量最大的资源文件依然从原始站点获取，实际上并不能起到效果。</p>
+<p>我这里加入了 <code>sub_filter</code> ，将全页面的所有原始站点链接全部替换为 <code>sci.example.com</code>，以达到良好的效果。需要注意的是，<code>sub_filter</code> 无法修改 gzip 后的页面，所以本例中使用 <code>gunzip</code> 和 <code>gzip_disable</code> 来处理。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">gunzip on;</span><br><span class="line">gzip_disable &quot;.&quot;;</span><br><span class="line">sub_filter &#x27;sci-hub.se&#x27; &#x27;sci.example.com&#x27;;</span><br><span class="line">sub_filter_once off;</span><br></pre></td></tr></table></figure>
+
+<h2 id="追加模块"><a href="#追加模块" class="headerlink" title="追加模块"></a>追加模块</h2><p>Nginx 编译完成后，如果需要更新程序或者追加编译模块，只需要在原编译命令的基础上，增加你想要的模块，采用 <code>make</code> 而不是 <code>make install</code> 来编译即可。编译后的文件为 <code>objs/nginx</code>，将其替换原先的文件就可以啦。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">./configure \</span></span><br><span class="line"><span class="language-bash">    --sbin-path=/usr/local/nginx/nginx \</span></span><br><span class="line"><span class="language-bash">    --conf-path=/usr/local/nginx/nginx.conf \</span></span><br><span class="line"><span class="language-bash">    --pid-path=/usr/local/nginx/nginx.pid \</span></span><br><span class="line"><span class="language-bash">    --with-http_ssl_module \</span></span><br><span class="line"><span class="language-bash">    --... \</span></span><br><span class="line"><span class="language-bash">    -- &lt;modules you want to add&gt;</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">make</span></span><br><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash"><span class="built_in">cp</span> -f objs/nginx /usr/local/nginx/nginx</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Develop</category>
+      </categories>
+      <tags>
+        <tag>Nginx</tag>
       </tags>
   </entry>
   <entry>
@@ -6179,6 +6179,102 @@
       </tags>
   </entry>
   <entry>
+    <title>Origin 绘制反应能量图</title>
+    <url>/archives/9836d17.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>反应能量图（reaction energy diagram）是 DFT 计算中展现化学反应的重要方式，OriginLab 官方也提供了很有意思的<a href="http://blog.originlab.com/make-energy-diagram-in-origin">方案</a>来绘制这样的路径图。本文将以下图中的一条路径为例，对官方提供的方案进行详细解释和扩展。</p>
+<img src="https://img.yeslu.cn/blog/2022-06/19-1a1f48fcc08abea813bf23917a8dd95d.png" alt="10.1038/s41467-022-29428-9" style="zoom:80%;" />
+
+<span id="more"></span>
+
+<h2 id="绘图思路"><a href="#绘图思路" class="headerlink" title="绘图思路"></a>绘图思路</h2><p>使用 Origin 绘制大部分图像都需要明确以下两点：</p>
+<ol>
+<li>数据点的表现形式</li>
+<li>数据点之间的连接方式</li>
+</ol>
+<p>本图与最常见的“Line”图十分相近，但实际数据却区别于“Line”图需要的数据。“Line”图是将一个个数据点连接成线，但本例中每一个中间产物只对应一个能量。也就是说，数据是不具有“平台”这个概念的，而图中却要将其表现出“平台”的样式。</p>
+<p>由此思路，我们得到了第一种绘图方法：人为地扩展数据点的横坐标。假设原数据为 <code>(A, 1.5)</code>，那么在绘图时，手动增加 <code>(A-1, 1.5)</code>、<code>(A+1, 1.5)</code> 两个点，即可得到“平台”的效果。</p>
+<p>然而，当反应的中间路径较多时，人为增加数据点是十分困难的。由此，官方提供了一个非常巧妙的方法，即 <a href="https://www.originlab.com/doc/Origin-Help/Floating-Column-Graph">Floating Column</a>。Floating Column 本是柱状图的一种，数据至少分为三列：X、Y 下界、Y 上界。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-b1f3537a91174d360532a7edf897160f.png!blog_watermark" alt="Floating Column Graph"></p>
+<p>利用柱状图绘制具备天然的优势，即：<strong>柱状图宽度可调</strong>、<strong>可进行数据间的连接</strong>，<strong>连接线样式可独立调整</strong>。当上界与下界数据相同时，柱状图的高度为零，其本身的宽度即可作为我们的“平台”。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-754eaec36d2c0f76d267e6d5700895bc.png!blog_watermark"></p>
+<h2 id="数据准备"><a href="#数据准备" class="headerlink" title="数据准备"></a>数据准备</h2><h3 id="初始数据"><a href="#初始数据" class="headerlink" title="初始数据"></a>初始数据</h3><p>一般的，初始数据如下图所示，X 列为路径编号，每个 Y 列的 <code>Long Name</code> 为反应路径名，数值为反应能，<strong>从左至右</strong>为反应路径顺序。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-44ff0b592a580445566aa06553a8d48f.png!blog_watermark"></p>
+<h3 id="数据转置"><a href="#数据转置" class="headerlink" title="数据转置"></a>数据转置</h3><p>由于柱状图每一行为一个数据点，为满足柱状图的数据要求，需要将数据转置。使用 <strong>Restructure: Transpose</strong> 转置后，<strong>从上至下</strong>为反应路径顺序。</p>
+<img src="https://img.yeslu.cn/blog/2022-06/19-a6eff20b4a0a45daa1a244f7fff5d240.png!blog_watermark" style="zoom: 50%;" />
+
+<h3 id="生成制图数据"><a href="#生成制图数据" class="headerlink" title="生成制图数据"></a>生成制图数据</h3><blockquote>
+<p>在执行本 Labtalk 命令时，当前活动工作簿的第二个工作表会被覆盖，<strong>请确保第二个工作表内为空或没有有效数据</strong>！</p>
+</blockquote>
+<p>由于需要<strong>两列相同的数据</strong>分别作为 Floating Column 的<strong>上界</strong>和<strong>下界</strong>，这里使用 Labtalk 脚本进行生成。通过 <strong>Window: Command Window</strong> 打开脚本窗口，应用以下脚本，在<a href="#Labtalk-%E8%AF%A6%E8%A7%A3">文末</a>将对该脚本进行详细解析。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">newsheet;</span><br><span class="line"><span class="built_in">range</span> rsrc = <span class="number">1</span>!; </span><br><span class="line"><span class="built_in">range</span> rdst = <span class="number">2</span>!;</span><br><span class="line">rdst.ncols = rsrc.ncols*<span class="number">2</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="built_in">int</span> ii = <span class="number">0</span>; ii &lt; rsrc.ncols; ii++)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">range</span> r1 = <span class="number">1</span>!$(ii+<span class="number">1</span>);</span><br><span class="line">	<span class="built_in">range</span> r2 = <span class="number">2</span>!$(<span class="number">2</span>*ii+<span class="number">1</span>);</span><br><span class="line">	<span class="built_in">range</span> r3 = <span class="number">2</span>!$(<span class="number">2</span>*ii+<span class="number">2</span>);	</span><br><span class="line">	colcopy irng:=r1 orng:=r2;</span><br><span class="line">	colcopy irng:=r1 orng:=r3;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-0583652a875cfeaab12de74dd2ed3b31.png!blog_watermark"></p>
+<p>最后，新增一列作为路径编号（令 <code>F(x) = i</code> 生成正整数递增列，即行号），并将列类型设置为 <code>XYY</code>。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-6b414a6f0b3136d5b1a2dfd47de68ab8.png!blog_watermark"></p>
+<h2 id="图像绘制"><a href="#图像绘制" class="headerlink" title="图像绘制"></a>图像绘制</h2><h3 id="第一条路径"><a href="#第一条路径" class="headerlink" title="第一条路径"></a>第一条路径</h3><p>本绘图方法中，每一条路径都需要独立绘制，每次选择一组数据。</p>
+<p>选中 B、C 列，选择 <strong>Plot: Bar -&gt; Floating Columns</strong> 制图，但此时图中是没有图像的，这是由于当柱状图高度为零时，Origin 默认不显示。我们可以通过 <a href="https://www.originlab.com/doc/ja/LabTalk/ref/Page-obj">Labtalk 命令</a> <code>page.BarShowZero = 1</code> 或者勾选 <strong>Preference: Options -&gt; Bar graph show Zero Value</strong> 令其显示。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-4d7b7ee8cba64927acf97aa5791400b8.png!blog_watermark"></p>
+<h4 id="数据连接"><a href="#数据连接" class="headerlink" title="数据连接"></a>数据连接</h4><p>利用数据连接功能，我们可以将每个柱子连接起来，并自定义线形。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-2d934c24c6adb97c4c68bf0806358bec.png!blog_watermark"></p>
+<h3 id="增加多条路径"><a href="#增加多条路径" class="headerlink" title="增加多条路径"></a>增加多条路径</h3><p>如果需要绘制的路径不止一条，可以利用 Origin 的 <a href="https://www.originlab.com/doc/Quick-Help/Add-Data-to-Layer">Add Data to Layer</a> 功能，将其他组数据拖入图像中。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-06/19-d2a1b2b9452c030407beaa3edc212e2c.gif"></p>
+<h2 id="数据标注"><a href="#数据标注" class="headerlink" title="数据标注"></a>数据标注</h2><p>这里介绍一个简便方法标注各个中间路径的名称。</p>
+<ol>
+<li>增加 B 列（名称列）和 C、D 列（全为零）；</li>
+</ol>
+<img src="https://img.yeslu.cn/blog/2024-01/25-cadf94cbd037e27588d2d745cd1e6779.png!blog_watermark" style="zoom: 80%;" />
+
+<ol start="2">
+<li>将 C、D 列数据添加至图中，并将该组数据的颜色设置为无色，显示其 Label；</li>
+</ol>
+<p><img src="https://img.yeslu.cn/blog/2024-01/25-b073720a93899037e7f136c86a115cb5.png!blog_watermark"></p>
+<ol start="3">
+<li>保存后即可创建在同一水平线，且与真实数据垂直对齐的标签。</li>
+</ol>
+<p><img src="https://img.yeslu.cn/blog/2024-01/25-4835bb13e7cac3abc50b858ed31ce9e8.png!blog_watermark"></p>
+<h2 id="Labtalk-详解"><a href="#Labtalk-详解" class="headerlink" title="Labtalk 详解"></a>Labtalk 详解</h2><h3 id="Range"><a href="#Range" class="headerlink" title="Range"></a>Range</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">range</span> rsrc = <span class="number">1</span>!; </span><br><span class="line"><span class="built_in">range</span> rdst = <span class="number">2</span>!;</span><br></pre></td></tr></table></figure>
+
+<p>类似于 <code>range a = 1!</code> 是指当前活动工作簿的第一个工作表。本组命令是将数据来源设置为第一个工作表，将目标数据存放在第二个工作表。</p>
+<blockquote>
+<p>参考文档：<a href="https://www.originlab.com/doc/en/LabTalk/guide/Range-Notation">Range-Notation</a></p>
+</blockquote>
+<h3 id="New-Column"><a href="#New-Column" class="headerlink" title="New Column"></a>New Column</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">rdst.ncols = rsrc.ncols*<span class="number">2</span>;</span><br></pre></td></tr></table></figure>
+
+<p>上面我们说过，该 Labtalk 脚本是为了将一列数据复制成两列作为 Floating Column 的下界和上界，<code>ncol</code> 代表的是 <code>new column</code>。本组命令是将 <code>rdst</code> 的列数设置为 <code>rsrc</code> 的两倍。</p>
+<blockquote>
+<p>参考文档：<a href="https://www.originlab.com/doc/LabTalk/guide/Basic-Worksheet-Column-Operation">Basic Worksheet Column</a></p>
+</blockquote>
+<h3 id="Loop"><a href="#Loop" class="headerlink" title="Loop"></a>Loop</h3><h4 id="Header"><a href="#Header" class="headerlink" title="Header"></a>Header</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="built_in">int</span> ii = <span class="number">0</span>; ii &lt; rsrc.ncols; ii++)&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>控制本次循环在遍历完源工作表的所有列后结束。</p>
+<h4 id="Body"><a href="#Body" class="headerlink" title="Body"></a>Body</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">range</span> r1 = <span class="number">1</span>!$(ii+<span class="number">1</span>);</span><br><span class="line"><span class="built_in">range</span> r2 = <span class="number">2</span>!$(<span class="number">2</span>*ii+<span class="number">1</span>);</span><br><span class="line"><span class="built_in">range</span> r3 = <span class="number">2</span>!$(<span class="number">2</span>*ii+<span class="number">2</span>);	</span><br><span class="line">colcopy irng:=r1 orng:=r2;</span><br><span class="line">colcopy irng:=r1 orng:=r3;</span><br></pre></td></tr></table></figure>
+
+<p>此处 <code>irng</code> 为 <code>input range</code>，<code>orng</code> 为 <code>output range</code>。</p>
+<p>当 <code>ii = 0</code>，则 <code>r1</code> 为源工作表的第 1 列， <code>r2</code> 为目标工作表的第 1 列， <code>r3</code> 为目标工作表的第 2 列。接着将源工作表的第 1 列追加到目标工作表的第 1、2 列。</p>
+<p>当 <code>ii = 1</code>，则 <code>r1</code> 为源数据工作表的第 2 列， <code>r2</code> 为目标数据工作表的第 3 列， <code>r3</code> 为目标数据工作表的第 4 列。接着将源工作表的第 2 列追加到目标工作表的第 3、4 列。</p>
+<p>由此可见，随着循环的进行，源工作表的每一列都被拷贝成了两列。</p>
+<blockquote>
+<p>参考文档：<a href="https://www.originlab.com/doc/LabTalk/guide/Getting-Started-with-LT">Getting Started with LabTalk</a></p>
+</blockquote>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
+<li>Windows 11 (22000.652);</li>
+<li>Origin 2022b (Academic).</li>
+</ol>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文禁止转载；</li>
+<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Graph</tag>
+        <tag>Origin</tag>
+        <tag>Data-Analysis</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Origin 部分中文字体加粗不显示</title>
     <url>/archives/f49d4612.html</url>
     <content><![CDATA[<h2 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h2><p>Origin <strong>部分中文字体</strong>（宋体、黑体、楷体等）在<strong>垂直方向</strong>上加粗后，实际不显示加粗。</p>
@@ -6206,6 +6302,86 @@
       <tags>
         <tag>Graph</tag>
         <tag>Origin</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Origin 通过 Y 轴偏移制作层叠式线图的五种思路</title>
+    <url>/archives/71ef1cd6.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>层叠式线图是比较多组数据差异的重要手段，当数据对 Y 的实际值不敏感时，通过将数据堆叠在同一张图中，能够更好分析不同数据间峰强、峰位移等信息的变化。常见的表征手段中，XRD、XPS、XAS、FT-IR、Raman 等光（能）谱的数据，均可通过类似下图的手段，在 Y 方向上进行堆叠制图。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-04/17-966e0351a4f04e3d61b4d7513f19cb59.png" alt="10.1038/s41467-021-27768-6"></p>
+<p>在 Origin 中，软件至少提供了五种方法以实现层叠式线图，本文将简要介绍这些思路。</p>
+<span id="more"></span>
+
+<h2 id="示例数据"><a href="#示例数据" class="headerlink" title="示例数据"></a>示例数据</h2><p>本科期间，我曾向 OriginLab GraphGallery 贡献过层叠式线图的<a href="https://www.originlab.com/www/products/GraphGallery.aspx?GID=472">例图</a>，此后 OriginLab 官方以该图为蓝本制作了《<a href="https://www.bilibili.com/video/BV1Rv411a7e5">XRD 二维层叠式带标准卡片</a>》的教学视频，感兴趣的同学可以下载原始工程和数据进行学习。</p>
+<img src="https://img.yeslu.cn/blog/2022-04/17-c920c3f79cf63206ec16fcf2064c8e2d.png!blog_watermark" style="zoom: 50%;">
+
+<p>本教程为简化复杂程度，使用如下图所示的精简数据。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-04/17-1c181793129e8219d40dc2e73b28b0d6.png!blog_watermark"></p>
+<h2 id="制作层叠式线图的五种思路"><a href="#制作层叠式线图的五种思路" class="headerlink" title="制作层叠式线图的五种思路"></a>制作层叠式线图的五种思路</h2><h3 id="1-同加同减"><a href="#1-同加同减" class="headerlink" title="1 同加同减"></a>1 同加同减</h3><p>函数中，将 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="5.42ex" height="1.783ex" role="img" focusable="false" viewBox="0 -583 2395.6 788"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(767.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mi" transform="translate(1823.6,0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g></g></g></svg></mjx-container> 向上平移 2 个单位长度，得到 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="9.317ex" height="1.971ex" role="img" focusable="false" viewBox="0 -666 4118 871"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(767.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mi" transform="translate(1823.6,0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="mo" transform="translate(2617.8,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="mn" transform="translate(3618,0)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g></g></svg></mjx-container>。这与本例十分类似，也是所有方案中，最简单，也最容易想到的方法。</p>
+<p>利用 Origin 的 <a href="https://www.originlab.com/doc/Tutorials/SetColVal">Set Column/Cell Values</a> 功能，我们可以轻松的将整列值同加同减，得到拉开两线间距的效果。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-04/17-993706cc81af193971abbda9dc8e55c6.png!blog_watermark"></p>
+<h4 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h4><ol>
+<li>纯数学操作，方法简单；</li>
+<li>可以较为精准的将多条线拉开相同间距。</li>
+</ol>
+<h4 id="劣势"><a href="#劣势" class="headerlink" title="劣势"></a>劣势</h4><ol>
+<li>操作不够直观，需要多次调整获得合适的距离。</li>
+</ol>
+<h3 id="2-Individual-Offset"><a href="#2-Individual-Offset" class="headerlink" title="2 Individual Offset"></a>2 Individual Offset</h3><ul>
+<li>官方说明：<a href="https://www.originlab.com/doc/Origin-Help/PD-Dialog-Stack-Tab#Individual">PD-Dialog-Stack-Tab</a></li>
+</ul>
+<p>那么有没有直接在图中操作的方法呢？答案是肯定的。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-04/17-fb2d9f2b1cbf61c8c385030edeb3ea02.png!blog_watermark"></p>
+<p>Origin 为我们提供了 Y/X 方向上独立的功能，通过启用 Y 方向上独立，在图中就可以直接上下拖动，调整需要的位置。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-04/17-dc17987bd35c6a44fcc0ce4c640c41b6.gif"></p>
+<h3 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h3><p>当 Individual 勾选时，<a href="https://www.originlab.com/doc/Origin-Help/PD-offset-tab">Offset 功能</a>便会启用，这里的 Multiplier 和 Offset 遵循如下公式，如果需要精确控制线间距，可以尝试使用本功能。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">X' = Multiplier_X * X + Offset_X</span><br><span class="line">Y' = Multiplier_Y * Y + Offset_Y</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img.yeslu.cn/blog/2022-07/30-92fb884e232bfd418a186c642c0d1a48.png"></p>
+<h4 id="优势-1"><a href="#优势-1" class="headerlink" title="优势"></a>优势</h4><ol>
+<li>操作直观，所看即所得。</li>
+</ol>
+<h4 id="劣势-1"><a href="#劣势-1" class="headerlink" title="劣势"></a>劣势</h4><ol>
+<li>两线间距仅能靠肉眼控制，不够精确；</li>
+<li>线条多时，不易点选拖动。</li>
+</ol>
+<h3 id="3-Stacked-Lines-by-Y-Offsets"><a href="#3-Stacked-Lines-by-Y-Offsets" class="headerlink" title="3 Stacked Lines by Y Offsets"></a>3 Stacked Lines by Y Offsets</h3><ul>
+<li>官方说明：<a href="https://www.originlab.com/doc/Origin-Help/StackLineYOffset-Graph">StackLineYOffset-Graph</a></li>
+</ul>
+<p>Stacked Lines by Y Offsets 是 Origin 中的一种图形模板，实为上述“Individual Offset”的变体，其本质依然是允许数据在 Y 轴方向上偏移。此外，软件也提供了其他的 Offset 模式，大家可以根据自己的实际需要选择。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-07/30-12cf176d57c518d338eab6ddb1535f14.png"></p>
+<p>当制作“Stacked Lines by Y Offsets”图时，软件会自动调整多条线的间距，以实现快速制图的功能。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-04/17-f8f30f90f8ef64f1ebeda00a334b92ec.png!blog_watermark"></p>
+<p><img src="https://img.yeslu.cn/blog/2022-04/17-67557d6306f84fb0a28f8a0cc065965e.gif"></p>
+<h3 id="4-Vertical-Translate"><a href="#4-Vertical-Translate" class="headerlink" title="4 Vertical Translate"></a>4 Vertical Translate</h3><ul>
+<li>官方说明：<a href="https://www.originlab.com/doc/Origin-Help/Translate-Curve">Translate-Curve</a></li>
+</ul>
+<p>上述几种方法，要么不够直观，要么不够精确，本方法融合了这两个优点。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-04/17-b0bf1c67283c274b9e4764ef53726d3f.png!blog_watermark"></p>
+<p>在拖动的同时，左侧数据点坐标随之变化。</p>
+<p><img src="https://img.yeslu.cn/blog/2022-04/17-1767a66f5a12f4dbd5bc909283dfddbd.gif"></p>
+<h3 id="5-Multi-Layers"><a href="#5-Multi-Layers" class="headerlink" title="5 Multi- Layers"></a>5 Multi- Layers</h3><p>如果上述功能还是无法满足你的需要，那就只能使用多图层绘制了。将每条曲线绘制于一个独立图层，几乎可以达到完全的可定制效果。</p>
+<h4 id="5-1-绘制独立图"><a href="#5-1-绘制独立图" class="headerlink" title="5.1 绘制独立图"></a>5.1 绘制独立图</h4><p>使用 A-B 列数据和 A-C 列数据分别绘图（画在同一个 Graph 的两个图层上，或者干脆画两张图均可，这里只是为了更清楚的展示）</p>
+<p><img src="https://img.yeslu.cn/blog/2022-04/17-82e4715d738902716a0ac3ec16ed87f9.png!blog_watermark"></p>
+<h4 id="5-2-合并图层并对齐"><a href="#5-2-合并图层并对齐" class="headerlink" title="5.2 合并图层并对齐"></a>5.2 合并图层并对齐</h4><p><img src="https://img.yeslu.cn/blog/2022-04/17-c780cff130ad1ffa369f4eb0ac3004c7.gif"></p>
+<h4 id="5-3-隐藏多余的坐标轴"><a href="#5-3-隐藏多余的坐标轴" class="headerlink" title="5.3 隐藏多余的坐标轴"></a>5.3 隐藏多余的坐标轴</h4><p><img src="https://img.yeslu.cn/blog/2022-04/17-7e4db71d54adba5421cfd6cacc502fc5.png!blog_watermark"></p>
+<h4 id="5-4-拖动至需要的位置"><a href="#5-4-拖动至需要的位置" class="headerlink" title="5.4 拖动至需要的位置"></a>5.4 拖动至需要的位置</h4><p><img src="https://img.yeslu.cn/blog/2022-04/17-5d29c84fe70ef35a587f35119d2f5506.gif"></p>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
+<li>Windows 11 (22000.652);</li>
+<li>Origin 2022 SR1 (Academic).</li>
+</ol>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文禁止转载；</li>
+<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Graph</tag>
+        <tag>Origin</tag>
+        <tag>Data-Analysis</tag>
       </tags>
   </entry>
   <entry>
@@ -6432,6 +6608,163 @@
       </tags>
   </entry>
   <entry>
+    <title>在 Origin 中绘制直线的 N 种方法</title>
+    <url>/archives/f7a89bc1.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在本文中，我将深入探索并充分利用 Origin 软件的众多功能，以在其绘图界面上绘制一条直线。本文的核心不仅仅是绘图技巧的展示，而是一种探索，旨在强调深入理解软件的各项功能的重要性。这样，当在绘图过程中遇到难题时，我们就不会局限于单一的解决方案，而能灵活运用多种工具和方法。</p>
+<span id="more"></span>
+
+<h2 id="快速标注工具"><a href="#快速标注工具" class="headerlink" title="快速标注工具"></a>快速标注工具</h2><h3 id="直线标注（Line-Tool）"><a href="#直线标注（Line-Tool）" class="headerlink" title="直线标注（Line Tool）"></a>直线标注（Line Tool）</h3><ul>
+<li>长度：可调</li>
+<li>方向：可调</li>
+<li>颜色、粗细、线型：可调</li>
+<li>位置：任意</li>
+</ul>
+<img src="https://img.yeslu.cn/blog/2024-01/21-66de8904b38ecc0dda22e085aaa6652d.png!blog_watermark" style="zoom: 67%;" />
+
+<h3 id="箭头-距离标注（Arrow-Tool-Distance-Annotation）"><a href="#箭头-距离标注（Arrow-Tool-Distance-Annotation）" class="headerlink" title="箭头&#x2F;距离标注（Arrow Tool&#x2F;Distance Annotation）"></a>箭头&#x2F;距离标注（Arrow Tool&#x2F;Distance Annotation）</h3><ul>
+<li>长度：可调</li>
+<li>方向：可调</li>
+<li>颜色、粗细、线型：可调</li>
+<li>位置：任意</li>
+</ul>
+<img src="https://img.yeslu.cn/blog/2024-01/21-6980945fc57215acfb30f61c61d153bd.png!blog_watermark" style="zoom:67%;" />
+
+<h2 id="坐标轴工具"><a href="#坐标轴工具" class="headerlink" title="坐标轴工具"></a>坐标轴工具</h2><h3 id="参考线（Reference-Lines）"><a href="#参考线（Reference-Lines）" class="headerlink" title="参考线（Reference Lines）"></a>参考线（Reference Lines）</h3><ul>
+<li>长度：不可独立调整</li>
+<li>方向：垂直于坐标轴</li>
+<li>颜色、粗细、线型：可调</li>
+<li>位置：两坐标轴围成的象限内</li>
+</ul>
+<p><img src="https://img.yeslu.cn/blog/2024-01/21-20a4503ac41dc40352e745e2de49ae03.png!blog_watermark"></p>
+<p>特别的，Mini Toolbars 提供了一个非常便捷的功能 —— “Add Stats Reference Lines”。通过这一功能，用户可以迅速添加具有统计学意义的参考线，从而在图表中快速标注重要的统计数据。</p>
+<img src="https://img.yeslu.cn/blog/2024-01/21-9c47c638c882c1fc256b3319ce890758.png!blog_watermark" style="zoom:67%;" />
+
+
+<h3 id="附加线（Additional-Lines）"><a href="#附加线（Additional-Lines）" class="headerlink" title="附加线（Additional Lines）"></a>附加线（Additional Lines）</h3><ul>
+<li>长度：不可独立调整</li>
+<li>方向：垂直于坐标轴</li>
+<li>颜色、粗细：跟随坐标轴</li>
+<li>位置：两坐标轴围成的象限内</li>
+</ul>
+<p><img src="https://img.yeslu.cn/blog/2024-01/21-03c1525a1428f4dea19e499390ca7d6e.png!blog_watermark"></p>
+<h2 id="插入工具"><a href="#插入工具" class="headerlink" title="插入工具"></a>插入工具</h2><h3 id="直线（Straight-Line）"><a href="#直线（Straight-Line）" class="headerlink" title="直线（Straight Line）"></a>直线（Straight Line）</h3><ul>
+<li>长度：不可调</li>
+<li>方向：不可调</li>
+<li>颜色、粗细、线型：可调</li>
+<li>位置：两坐标轴围成的象限内</li>
+</ul>
+<p><img src="https://img.yeslu.cn/blog/2024-01/21-be4bf8d22879964d279a1f0a2f8536ee.png!blog_watermark"></p>
+<p>特别的，当直线属性的 Line: Alignment 为 None 时，其方向可调；当直线属性的 Line: Stretching 为 None 时，其长度和位置可调。</p>
+<p><img src="https://img.yeslu.cn/blog/2024-01/23-127008b51eb756fbe20f6d2ba0e0b065.png!blog_watermark"></p>
+<h3 id="垂直光标（Vertical-Cursor"><a href="#垂直光标（Vertical-Cursor" class="headerlink" title="垂直光标（Vertical Cursor)"></a>垂直光标（Vertical Cursor)</h3><p>本质是能够显示多面板绘图上数据点 X、Y 坐标值的直线工具。</p>
+<p><img src="https://img.yeslu.cn/blog/2024-01/21-d5c64356c21d7649a2eda7fc7322817e.png!blog_watermark"></p>
+<p>参考文档：<a href="https://www.originlab.com/doc/Origin-Help/Gadget-VerticalCursor">VerticalCursor</a></p>
+<h3 id="插入函数（2D-Function-Plot）"><a href="#插入函数（2D-Function-Plot）" class="headerlink" title="插入函数（2D Function Plot）"></a>插入函数（2D Function Plot）</h3><ul>
+<li>长度：任意</li>
+<li>方向：垂直于 Y 轴</li>
+<li>颜色、粗细、线形：任意</li>
+<li>位置：两坐标轴围成的象限内</li>
+</ul>
+<p><img src="https://img.yeslu.cn/blog/2024-01/21-04414451f45809048cbfb1647aa1f48a.png!blog_watermark"></p>
+<p>参考文档：<a href="https://www.originlab.com/doc/Origin-Help/PD-Dialog-2DFunc-Tab">2DFunc</a></p>
+<h2 id="基于数据的直线"><a href="#基于数据的直线" class="headerlink" title="基于数据的直线"></a>基于数据的直线</h2><h3 id="连接两点"><a href="#连接两点" class="headerlink" title="连接两点"></a>连接两点</h3><ul>
+<li>长度：任意</li>
+<li>方向：任意</li>
+<li>颜色、粗细、线形：任意</li>
+<li>位置：两坐标轴围成的象限内</li>
+</ul>
+<p><img src="https://img.yeslu.cn/blog/2024-01/21-40c77eb2b698818813327d0b9e482efd.png!blog_watermark"></p>
+<h3 id="数据垂线（Drop-Lines）"><a href="#数据垂线（Drop-Lines）" class="headerlink" title="数据垂线（Drop Lines）"></a>数据垂线（Drop Lines）</h3><ul>
+<li>长度：不可独立调整</li>
+<li>方向：垂直于坐标轴</li>
+<li>颜色、粗细、线形：任意</li>
+<li>位置：两坐标轴围成的象限内</li>
+</ul>
+<p><img src="https://img.yeslu.cn/blog/2024-01/21-e93b6f417905420be146bb72fbc37e84.png!blog_watermark"></p>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
+<li>Windows 11 (22631);</li>
+<li>Origin 2024 SR1 (Academic).</li>
+</ol>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文禁止转载；</li>
+<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Graph</tag>
+        <tag>Origin</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一网打尽 Origin 中的分段绘图</title>
+    <url>/archives/4a2ecdfb.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在数据可视化的过程中，分段展示数据是一种常用且有效的方法。本文将重点介绍如何在 Origin 软件中实现分段绘图，具体从三个关键方面进行详细阐述：<strong>轴分段</strong>（断点）、<strong>数据分段</strong>（颜色和连接方式）、<strong>背景分段</strong>（规则与不规则色块填充）。</p>
+<span id="more"></span>
+
+
+
+<h2 id="轴分段"><a href="#轴分段" class="headerlink" title="轴分段"></a>轴分段</h2><p>Origin 提供了坐标轴断点的功能，通过<strong>双击坐标轴</strong>或者<strong>右键坐标轴-Properties</strong>，进入 Breaks Tab，选择断点数量，既可实现断点功能。</p>
+<img src="https://img.yeslu.cn/blog/2024-01/20-2a2af699d05e5bdfa00b4a885c72f6de.png!blog_watermark" style="zoom: 50%;" />
+
+<p>当断点功能开启（如图所示 4.25-12.75 为断点范围）时，断点前（如图所示 0-4.25 的部分）坐标轴的部分参数由 Scale 和 Tick Labels Tab 控制，用于修改断点前的坐标轴增量和标签等功能。</p>
+<img src="https://img.yeslu.cn/blog/2024-01/20-fdb6466c1c6736791920d48f5802f1e2.png!blog_watermark" alt="" style="zoom: 50%;" />
+
+<p>断点后（如图所示 12.75-17 的部分）的坐标轴的部分参数由该断点的详细设置管理。当有多个断点时，该设置用于调整当前选中的断点到下一个断点之间的参数。</p>
+<img src="https://img.yeslu.cn/blog/2024-01/20-03b4ec37d01c7d8e7ca57efac18edd31.png!blog_watermark" style="zoom:50%;" />
+
+<p><strong>特别注意</strong>，有同学在设置断点后发现坐标轴增量无法按照预期设置，这是因为<code>轴起点+增量</code>在断点范围内。例如断点范围为 <code>4-6</code>，坐标轴起点为 <code>0</code>，增量为 <code>5</code>，则该设置下的第一个主刻度落在了断点区间内，因此该增量无法被应用。同理，当存在多个断点时，<code>断点终点+增量</code> 不应落在下一个断点范围，否则该增量同样无法被应用。</p>
+<p>参考文档：<a href="https://www.originlab.com/doc/Origin-Help/AxesRef-Breaks">AxesRef-Breaks</a></p>
+<h2 id="数据分段"><a href="#数据分段" class="headerlink" title="数据分段"></a>数据分段</h2><h3 id="单点设置"><a href="#单点设置" class="headerlink" title="单点设置"></a>单点设置</h3><p>此方法适用于数据中有<strong>极少数量的</strong>特殊点需要调整。</p>
+<p>在 Origin 中，我们可以通过 <strong>Ctrl+单击</strong>或者<strong>两次单击（点一次，再点一次）</strong>的方式选中单个数据点，而 <strong>Ctrl+双击</strong>或者<strong>两次单击+双击</strong>则可以对单点的颜色、连接方式等参数进行调整。</p>
+<p><img src="https://img.yeslu.cn/blog/2024-01/20-2aa77533affb9497b6dcd033985f77ae.png!blog_watermark"></p>
+<p>当单个数据点被选中时，我们可以对该点的颜色及该点到后一个点的连接线参数进行调整。</p>
+<p><img src="https://img.yeslu.cn/blog/2024-01/20-9371a9beb93138dfd3d28e5a554d6566.png!blog_watermark"></p>
+<p>参考文档：<a href="https://www.originlab.com/doc/Quick-Help/Customize-Single-Data-Point">Customize-Single-Data-Point</a></p>
+<h3 id="颜色映射"><a href="#颜色映射" class="headerlink" title="颜色映射"></a>颜色映射</h3><p>此方法适用于数据中有<strong>大量</strong>特殊点需要调整。</p>
+<p>Origin 提供了一系列的色卡和映射方式，学习此方法的重点是创建颜色映射策略，也就是将每个点的颜色分配到一张色卡上。</p>
+<p>由于映射策略繁多，这里以 Index 映射策略为例说明，具体映射策略请阅读官方文档 <a href="https://www.originlab.com/doc/en/Origin-Help/PlotColor-DatasetControl">Using a Dataset to Control Plot Color</a>。</p>
+<h4 id="Index-策略"><a href="#Index-策略" class="headerlink" title="Index 策略"></a>Index 策略</h4><p>Index 的映射策略是 <code>数据 mod 色卡颜色总数</code>。</p>
+<p>在这里，我创建并设置了映射列 C，则第一个点和第二个点被正常映射到了该彩虹色卡的一号颜色（红色）和三号颜色（黄色）上，而第三个点的映射值为 8，第四个点的映射值为 11，因此会被映射到色卡的一号颜色（8 mod 7 &#x3D; 1）和四号颜色（11 mod 7 &#x3D; 4）上。</p>
+<p><img src="https://img.yeslu.cn/blog/2024-01/20-dc2d4f1eacc369c5197b11a4513caaf2.png!blog_watermark"></p>
+<p>参考文档：<a href="https://www.originlab.com/doc/Origin-Help/Customize-PlotColor">Customize-PlotColor</a></p>
+<h3 id="Data-Highlighter-插件"><a href="#Data-Highlighter-插件" class="headerlink" title="Data Highlighter 插件"></a>Data Highlighter 插件</h3><p>下载链接：<a href="https://www.originlab.com/FileExchange/details.aspx?fid=398">Data Highlighter</a></p>
+<p>Data Highlighter 插件的本质是上述的颜色映射，只是可视化的形式能够更直观的进行修改。</p>
+<p><img src="https://img.yeslu.cn/blog/2024-01/20-6ad30bf5c0cac851d2c81e84c7ac90a8.png!blog_watermark"></p>
+<p>参考文档：<a href="https://www.originlab.com/doc/App/Data-Highlighter">Data Highlighter</a></p>
+<h2 id="背景分段"><a href="#背景分段" class="headerlink" title="背景分段"></a>背景分段</h2><h3 id="规则填充"><a href="#规则填充" class="headerlink" title="规则填充"></a>规则填充</h3><h4 id="矩形工具"><a href="#矩形工具" class="headerlink" title="矩形工具"></a>矩形工具</h4><p>利用矩形工具直接在图中画框，是最简单的填充方法。在图中画出矩形框后，右键矩形框选择 “Push to back of data”，将矩形框置于数据点后，通过 “Properties” 或双击矩形框设置矩形颜色。</p>
+<p><img src="https://img.yeslu.cn/blog/2024-01/20-c01e6e5e8ae730de39beef3b27b88ab7.png!blog_watermark"></p>
+<h3 id="参考线"><a href="#参考线" class="headerlink" title="参考线"></a>参考线</h3><p>在坐标轴设置的 Reference Line Tab 能够精确设置纵向和横向参考线，并可以自定义参考线之间的填充，通过右下方的 Details 可以修改线形和填充的参数。</p>
+<p><img src="https://img.yeslu.cn/blog/2024-01/20-29a51d58b365a4c07bd04f881709faaa.png!blog_watermark"></p>
+<p>参考文档：<a href="https://www.originlab.com/doc/Origin-Help/AxesRef-RefLines">AxesRef-RefLines</a></p>
+<h3 id="不规则填充"><a href="#不规则填充" class="headerlink" title="不规则填充"></a>不规则填充</h3><p><img src="https://img.yeslu.cn/blog/2024-01/20-ef4d80ba619ed225047820cbd58c9cf1.png!blog_watermark"></p>
+<blockquote>
+<p>示例数据请前往 Learning Center（Help: Learning Center 或 F11）搜索 Shading Between Curve。</p>
+</blockquote>
+<p>这里我们用到了 <strong>Gadgets: Integrate</strong> 功能，从上方曲线的一部分填充到下方基线。在 Integration Tab 中勾选 “Keep the shading color after New Output”，并在 Baseline Tab 中选择需要填充到的基线。</p>
+<p><img src="https://img.yeslu.cn/blog/2024-01/21-a3b18447c1680ce26479f64e148d24ca.png!blog_watermark"></p>
+<p>接着在该工具的设置中修改当前需要操作的数据，并调整合适的填充范围。如需增加新的填充，可以使用 “New Output” 新建一个填充，上一个填充将被保留。</p>
+<p><img src="https://img.yeslu.cn/blog/2024-01/21-94976188dfdb0c7df43834ec33a8650e.png!blog_watermark"></p>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
+<li>Windows 11 (22631);</li>
+<li>Origin 2024 SR1 (Academic).</li>
+</ol>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文禁止转载；</li>
+<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Graph</tag>
+        <tag>Origin</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Origin 快速绘制带 PDF 卡片的 XRD 图谱</title>
     <url>/archives/b4c2c415.html</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>X射线衍射（X-ray Diffraction, XRD）可用于揭示物质的晶体结构、化学组成以及物理性质，在处理 XRD 数据时，常与 PDF 卡片结合绘制。文本将介绍使用Origin 绘制带 PDF 卡片的 XRD 图谱。</p>
@@ -6541,519 +6874,6 @@
       </tags>
   </entry>
   <entry>
-    <title>论文实用干货：创建目录（03）</title>
-    <url>/archives/5b5ea310.html</url>
-    <content><![CDATA[<h2 id="官方介绍"><a href="#官方介绍" class="headerlink" title="官方介绍"></a>官方介绍</h2><p><a href="https://support.office.com/en-us/article/insert-a-table-of-contents-882e8564-0edb-435e-84b5-1d8552ccf0c0?ui=en-US&rs=en-US&ad=US">Insert a table of contents</a></p>
-<span id="more"></span>
-
-<h2 id="重要说明"><a href="#重要说明" class="headerlink" title="重要说明"></a>重要说明</h2><p>前面的两节主要讲解了制作论文封面信息和分页操作，为了方便后文的讲解，我对论文文档的结构进行了完善，使其具备论文的核心要素（封面，摘要，目录，正文，参考文献和致谢）。</p>
-<h2 id="修改样式"><a href="#修改样式" class="headerlink" title="修改样式"></a>修改样式</h2><p>为了使用 word 自动生成目录的功能，我们首先要修改同层级标题的字体和段落设置等参数，并应用于不同的标题。</p>
-<ol>
-<li><p>点击“样式窗格”按钮调出样式面板<br><img src="https://img.yeslu.cn/blog/paper/paper-03-1.png!blog_watermark"></p>
-</li>
-<li><p>对“标题 1”的样式进行修改：字体使用宋体&#x2F;Times New Roman，四号；段落使用 1.5 倍行距。<br><img src="https://img.yeslu.cn/blog/paper/paper-03-2.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-03-3.png!blog_watermark"></p>
-</li>
-<li><p>使用同样的方法，对“标题 2”和“标题 3”进行修改。这里分别使用小四和五号字体，其余格式不变。<br><img src="https://img.yeslu.cn/blog/paper/paper-03-4.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-03-5.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-03-6.png!blog_watermark"></p>
-</li>
-</ol>
-<h2 id="应用样式"><a href="#应用样式" class="headerlink" title="应用样式"></a>应用样式</h2><ol>
-<li><p>n 级标题默认对整个段落生效，因此我们只需要将光标移至段首，点击需要的样式按钮即可。<br><img src="https://img.yeslu.cn/blog/paper/paper-03-7.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-03-8.png!blog_watermark"></p>
-</li>
-<li><p>对不同层级的标题应用样式后，我们在“导航”中已经可以看到整篇文章的基本结构。当然，通过“导航”中的层级也可判断样式应用是否正确。<br><img src="https://img.yeslu.cn/blog/paper/paper-03-9.png!blog_watermark"></p>
-</li>
-</ol>
-<h2 id="创建目录"><a href="#创建目录" class="headerlink" title="创建目录"></a>创建目录</h2><ol>
-<li><p>将光标移动到需要插入目录的位置，选择“引用”-“目录”-“自定义目录”<br><img src="https://img.yeslu.cn/blog/paper/paper-03-10.png!blog_watermark"></p>
-</li>
-<li><p>通过“修改”按钮，可以修改目录中所显示 n 级标题的格式。这里我们依然沿用上述格式，但为了体现标题间的层级关系，TOC 2 缩进 2 字符，TOC 3 缩进 4 字符。<br><img src="https://img.yeslu.cn/blog/paper/paper-03-11.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-03-12.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-03-13.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-03-14.png!blog_watermark"></p>
-</li>
-<li><p>全部设置完成后，在此点击“确定”创建目录。<br><img src="https://img.yeslu.cn/blog/paper/paper-03-15.png!blog_watermark"></p>
-</li>
-<li><p>至此，完成目录的创建工作。<br><img src="https://img.yeslu.cn/blog/paper/paper-03-16.png!blog_watermark"></p>
-</li>
-</ol>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Office</tag>
-        <tag>Paper</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>论文实用干货：编辑页眉和页码（04）</title>
-    <url>/archives/ff3dc88a.html</url>
-    <content><![CDATA[<h2 id="官方介绍"><a href="#官方介绍" class="headerlink" title="官方介绍"></a>官方介绍</h2><p><a href="https://support.office.com/en-us/article/insert-a-header-or-footer-b87ee4df-abc1-41f8-995b-b39f6d99c7ed?ui=en-US&rs=en-US&ad=US">Insert a header or footer</a></p>
-<span id="more"></span>
-
-<h2 id="重要说明"><a href="#重要说明" class="headerlink" title="重要说明"></a>重要说明</h2><p>本节需要对具体的页面进行操作，请在阅读时重点关注是对哪一页的哪个位置进行操作。</p>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>编辑论文的页码是很多童鞋在排版过程中遇到的难题，有些不要页码，有些用罗马数字，有些用阿拉伯数字(o´д`o)&#x3D;３ 这时，第 2 节中没有详述的分节符就派上用场了。<br>我们先来梳理一下每一页所对应的页码。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-1.png!blog_watermark"></p>
-<h2 id="文章分节"><a href="#文章分节" class="headerlink" title="文章分节"></a>文章分节</h2><p>在上图中，我们使用分节符将文章分为四节，分别位于封面、英文摘要和目录的结尾。分节符的插入位于“布局”-“分隔符”-“分节符”-“下一页”。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-2.png!blog_watermark"><br>打开页眉页脚设置后，可以看到每一节所对应的节号。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-3.png!blog_watermark"></p>
-<h2 id="页码编辑"><a href="#页码编辑" class="headerlink" title="页码编辑"></a>页码编辑</h2><h3 id="插入页码"><a href="#插入页码" class="headerlink" title="插入页码"></a>插入页码</h3><p>将光标移至<strong>封面任意位置</strong>，插入页码，页码格式暂且不用设置。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-4.png!blog_watermark"></p>
-<h3 id="封面页"><a href="#封面页" class="headerlink" title="封面页"></a>封面页</h3><p>进入<strong>页眉页脚设置</strong>，选择封面的页脚，勾选“首页不同”，即可去除封面页码。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-5.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-04-6.png!blog_watermark"></p>
-<h3 id="摘要页"><a href="#摘要页" class="headerlink" title="摘要页"></a>摘要页</h3><p>将光标移至<strong>摘要页的页脚</strong>，选择“页码”-“设置页码格式”，勾选“起始编号”并设置为罗马数字 I，即可将中文摘要设置为第 I 页，英文摘要设置为第 II 页。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-7.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-04-8.png!blog_watermark"></p>
-<h3 id="目录页"><a href="#目录页" class="headerlink" title="目录页"></a>目录页</h3><p>目录和封面一样，不需要页码。我们使用设置封面的方法，在目录页勾选“首页不同”，即可去除目录的页码。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-9.png!blog_watermark"></p>
-<h3 id="正文页（含参考文献和致谢）"><a href="#正文页（含参考文献和致谢）" class="headerlink" title="正文页（含参考文献和致谢）"></a>正文页（含参考文献和致谢）</h3><p>正文与摘要一样，需要设置起始页码。我们将光标移至<strong>正文第一页的页脚部分</strong>，设置页码格式如图所示即可。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-10.png!blog_watermark"><br>至此，页码设置结束，正文首页的页码为第 1 页。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-11.png!blog_watermark"></p>
-<h3 id="更新目录"><a href="#更新目录" class="headerlink" title="更新目录"></a>更新目录</h3><p>在目录部分右键“更新域”，即可对目录应用新页码。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-12.png!blog_watermark"></p>
-<h2 id="页眉编辑"><a href="#页眉编辑" class="headerlink" title="页眉编辑"></a>页眉编辑</h2><p>我校要求在正文页及其之后的所有页面添加页眉，下面讲述页眉添加方法。</p>
-<h3 id="插入页眉"><a href="#插入页眉" class="headerlink" title="插入页眉"></a>插入页眉</h3><p>将光标移至<strong>正文第一页</strong>，选择“插入”-“页眉”，这里使用默认的“空白”页眉。输入文字，并作适当调整。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-14.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-04-15.png!blog_watermark"></p>
-<h3 id="删除多余的页眉"><a href="#删除多余的页眉" class="headerlink" title="删除多余的页眉"></a>删除多余的页眉</h3><p>由于插入页眉操作对全文生效，我们发现操作后，中英文摘要部分也被插入了页眉（封面和目录没有被插入是因为我们对其设置了“首页不同”）。</p>
-<ol>
-<li>将光标移至<strong>正文第一页</strong>，取消“链接到上一节”，这样，我们对上一节的所有编辑不会影响到本节之后的设置。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-16.png!blog_watermark"></li>
-<li>将光标移至<strong>摘要页</strong>，选择“插入”-“页眉”-“删除页眉”即可。但是，删除仅删掉了文字，横线依然还在，我们可以选择以下两种方法删除横线。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-17.png!blog_watermark"></li>
-</ol>
-<p><strong>方法 1</strong>：进入“编辑页眉”界面后，直接点击“关闭页眉和页脚”，系统检测到页眉中没有内容，会自动删掉横线。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-18.png!blog_watermark"><br><strong>方法 2</strong>：如果上述方法不行，我们可以手动操作。选中页眉中的回车符，点击“下框线”按钮，即可删除横线。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-19.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-04-20.png"></p>
-<h3 id="设置奇偶页不同"><a href="#设置奇偶页不同" class="headerlink" title="设置奇偶页不同"></a>设置奇偶页不同</h3><p><img src="https://img.yeslu.cn/blog/2023-03/17-1460f27433aeab81a5a50c3f4fcd865c.png!blog_watermark"></p>
-<p>通常，上图所示方法可以为页眉页脚设置奇偶页不同，但应用本方法后可能出现<strong>排版混乱</strong>的情况，此问题可通过下图方法解决。</p>
-<p>需要注意的是，当勾选下图“页面设置”中的“奇偶页不同”后，上图所示位置也会被勾选，<strong>如需取消此功能，仍需要通过下图位置取消</strong>，否则排版会再次改变。</p>
-<img src="https://img.yeslu.cn/blog/2023-03/17-173f4e38f1aabc3f5036391a544a233d.png!blog_watermark" alt="" style="zoom: 33%;" />
-
-<p>这个问题也许是 Word 的 Bug，该解决方案未找到相关说明文档，仅为经验。</p>
-<h3 id="显示章节标题"><a href="#显示章节标题" class="headerlink" title="显示章节标题"></a>显示章节标题</h3><p>部分论文可能要求在页眉显示当前章节的标题，可通过下图方式增加。</p>
-<p><img src="https://img.yeslu.cn/blog/2023-03/17-79b4ed1b26b47bb128508e04b3b83636!blog_watermark"></p>
-<p><img src="https://img.yeslu.cn/blog/2023-03/17-e51d554678463868799c9dc82d700b4e!blog_watermark"></p>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
-<li>本文同步发布于个人微信【<a href="https://mp.weixin.qq.com/s/vonp-eZ6ouaFXItN-jvaqg">一只兔儿</a>】</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Office</tag>
-        <tag>Paper</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>论文实用干货：将摘要加入目录（05）</title>
-    <url>/archives/7b0cfbef.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>很多同学在生成目录之后，会有另一个疑问：如何将摘要和关键词加入目录中。想要将指定文字加入标题中，必须为该文字应用标题样式。然而，系统默认的标题样式对段落生效，并不能应用于单个文字。因此，我们需要新建一个可应用于文字的样式。</p>
-<span id="more"></span>
-
-<h2 id="新建样式"><a href="#新建样式" class="headerlink" title="新建样式"></a>新建样式</h2><p>有了前文的基础，这里的操作就比较简单了，在新建样式的时候，除选择正确的字体、段落格式外，只需要注意两点：</p>
-<ul>
-<li>“样式类型”选择“链接段落和字符”，以此保证我们新建的样式可以应用于字符。</li>
-<li>“大纲级别”选择“1 级”，以此保证在创建目录时，应用该样式的文字位于一级标题中。</li>
-</ul>
-<p><img src="https://img.yeslu.cn/blog/paper/paper-05-01.png!blog_watermark"></p>
-<p>接下来，我们将该样式应用于摘要、关键词等文字，并生成目录即可。当然，此方法还可以用于对“参考文献”，“致谢”等文字的处理。</p>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
-<li>本文同步发布于个人微信【<a href="https://mp.weixin.qq.com/s/I7JloFOUU2DAqXPcTGVDkg">一只兔儿</a>】</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Office</tag>
-        <tag>Paper</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>论文实用干货：Endnote 避坑指南（06）</title>
-    <url>/archives/510fef2a.html</url>
-    <content><![CDATA[<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ul>
-<li>Endnote: X9.3.2</li>
-<li>GB&#x2F;T 7714 Style: <a href="https://github.com/wanzhenchn/EndNote_Tutorial_Hand_by_Hand/blob/master/resource/Chinese%20Std%20GBT7714%20(numeric)_20190409.ens">Chinese Std GBT7714 (numeric)</a></li>
-</ul>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>很多同学以为把参考文献用 Endnote 一股脑插进论文就完事了，那真是太图样图森破。在实际使用过程中，数据来源不同，参考文献类别不同，语言不同，软件本身限制，导致在使用过程中，导入的文献存在格式错误，需要手动修正。本文将介绍本人在使用过程中，遇到的几种不同类型的错误点，以供参考。</p>
-<p>对于中英文混排中出现的格式问题，已有前辈制作了非常完善的指南：<a href="https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.zh-CN.md">chinese-copywriting-guidelines</a>，这里将不再说明。</p>
-<span id="more"></span>
-
-<h2 id="修改引用内容"><a href="#修改引用内容" class="headerlink" title="修改引用内容"></a>修改引用内容</h2><p><strong>⚠️ 警告：这是一个危险操作，请务必阅读</strong></p>
-<p>Endnote 在向 Word 插入文献的过程中，会在 Word 中创建一个由 Endnote 管理的域，此区域随着 Endnote 中文献信息的更新而更新。当该区域由 Endnote 管理的时候，是无法直接修改区域中内容的，否则增加、删除、更新引用信息时，所有的修改将丢失。</p>
-<p>因此在手动修改引用内容之前，你需要确保全篇论文的所有参考文献已被插入完毕。<strong>请务必将当前文件备份，并在副本中操作。</strong></p>
-<p>全选整个文档，使用快捷键<code>Ctrl+Shift+F9</code>，能够将全文的域转换为纯文本，此时 Endnote 将失去对其区域的管理，并可作为常规文本进行编辑。</p>
-<p>这里有个小 Tips，虽然 Endnote 自带了如下图所示 Tools - Convert to Plain Text 的功能，同样可以将 Endnote 域转换为纯文本，但是此方法将可能导致全文格式混乱，个人并不建议使用。</p>
-<p><img src="https://img.yeslu.cn/blog/paper/paper-06-01.png!blog_watermark"></p>
-<h2 id="避坑汇总"><a href="#避坑汇总" class="headerlink" title="避坑汇总"></a>避坑汇总</h2><h3 id="数据源错误"><a href="#数据源错误" class="headerlink" title="数据源错误"></a>数据源错误</h3><p><img src="https://img.yeslu.cn/blog/paper/paper-06-04.png!blog_watermark"></p>
-<p>以百度学术为例，大家通常从这里下载 Endnote 的数据文件并导入 Endnote。但无论是百度学术、谷歌学术，还是其他的文献平台，下载的数据文件本身可能存在内容缺失（如缺页码，缺年份等），这样最终导入 Word 的内容自然也不可能正确。</p>
-<h3 id="作者名格式"><a href="#作者名格式" class="headerlink" title="作者名格式"></a>作者名格式</h3><ul>
-<li>外文名作者，名在前，姓在后，姓名间空格分隔。对于 3 个及以上的外文名作者，使用 <code>A, B, C, et al.</code> 来表示，如 <code>Nitta N, Wu F, Lee J T, et al.</code></li>
-<li>中文名作者，姓在前，名在后，姓名间无分隔。对于 3 个及以上的中文名名作者，使用 <code>王, 赵, 李, 等.</code> 来表示，如 <code>张天戈, 张竹柳, 李延伟, 等.</code></li>
-<li>需要注意的是，无论作者名是中文还是外文，姓名之间、姓名和“等”之间，使用英文逗号+空格的形式来分隔，“等”之后使用英文句点。</li>
-</ul>
-<h3 id="公式格式"><a href="#公式格式" class="headerlink" title="公式格式"></a>公式格式</h3><p>一般的，标题中的含上下标的文字，在 Endnote 中和被导入 Word 时，会被显示为如 Al_(2)O_(3) 【氧化铝】的格式，需要手动将其改为正确的上下标格式。</p>
-<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>对于拿捏不准的格式问题，请直接查阅国标[ 《信息与文献 参考文献著录规则》 ][3]。</p>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
-<li>总目录：<a href="https://www.yeslu.cn/archives/dcc4cb4a.html">https://www.yeslu.cn/archives/dcc4cb4a.html</a></li>
-<li>本文同步发布于个人微信【<a href="https://mp.weixin.qq.com/s/BQQi0s65is7AeW-BKHWndQ">一只兔儿</a>】</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Office</tag>
-        <tag>Paper</tag>
-        <tag>Endnote</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决群晖 NTP 自动同步失败</title>
-    <url>/archives/ff52424d.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>自从群晖（Synology）DSM 某个版本更新后，NTP 自动同步总是提示“无法同步。因为没有网络或网络连接不稳定。请参阅本文以了解详细信息”，而手动同步正常。群晖官方虽然提供了<a href="https://kb.synology.cn/zh-cn/DSM/tutorial/Troubleshooting_issues_syncing_with_NTP_server">解决方案</a>，但测试后并没有解决问题。通过与群晖技术支持交流，获得了较好的解决方案。</p>
-<span id="more"></span>
-
-<h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><h3 id="20221009"><a href="#20221009" class="headerlink" title="20221009"></a>20221009</h3><ul>
-<li>在 DSM 7.1.1-42962 Update 1 上，群晖似乎已经修复了这个问题。</li>
-</ul>
-<h2 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h2><p>NTP 无法正常自动同步，能够正常手动同步。</p>
-<img src="https://img.yeslu.cn/blog/2022-08/07-f221c5426bd4f7e911ba251e28132703.png"  />
-
-
-
-<h2 id="影响"><a href="#影响" class="headerlink" title="影响"></a>影响</h2><p>本人开启了 DSM 的 TOTP (Time-based One-Time Password) 二次验证，TOTP 与设备时间紧密相关。当 NTP 无法正常同步时，群晖平均每一天慢若干秒，约一周后，群晖与其他设备的时间误差超出 TOTP 的容忍范围，直接导致 TOTP 无法正常验证。</p>
-<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>群晖技术支持给出了 NTP 的自动更新策略：</p>
-<blockquote>
-<p>NAS 与 NTP 服务器进行轮询时，必须连续八次全部成功，才会认为该 NTP 服务器可信，从而显示自动更新成功，而您当前所处的网络环境似乎并不稳定，所以会导致轮询中出现失败。</p>
-</blockquote>
-<h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>技术支持向我提供了 NTP 更新脚本，利用 DSM 自带的“任务计划”功能进行自动同步。</p>
-<ul>
-<li>新建“用户自定义脚本”；</li>
-</ul>
-<p><img src="https://img.yeslu.cn/blog/2022-08/07-cd305dd0674ca68f2e4d3f7cc7b98b9c.png"></p>
-<ul>
-<li>以“root”账户执行，并在“用户定义的脚本”下输入如下脚本（<strong>root 账户具有系统最高执行权限，除非你知道自己在做什么，否则请勿随意修改如下脚本</strong>）；</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line">ntp_server=<span class="string">&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> grep -q <span class="string">&quot;time.google.com.conf&quot;</span> <span class="string">&quot;/etc/ntp.conf&quot;</span> ; <span class="keyword">then</span></span><br><span class="line">ntp_server=<span class="string">&quot;time.google.com&quot;</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">if</span> grep -q <span class="string">&quot;pool.ntp.org&quot;</span> <span class="string">&quot;/etc/ntp.conf&quot;</span> ; <span class="keyword">then</span></span><br><span class="line">ntp_server=<span class="string">&quot;pool.ntp.org&quot;</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">if</span> grep -q <span class="string">&quot;server &quot;</span> <span class="string">&quot;/etc/ntp.conf&quot;</span> ; <span class="keyword">then</span></span><br><span class="line">ntp_server=<span class="string">&quot;<span class="subst">$(grep <span class="string">&quot;server &quot;</span> <span class="string">&quot;/etc/ntp.conf&quot;</span> | cut -d <span class="string">&quot; &quot;</span> -f2)</span>&quot;</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$ntp_server</span>&quot;</span> != <span class="string">&quot;&quot;</span> ] ; <span class="keyword">then</span></span><br><span class="line">/sbin/ntpdate -u -b <span class="string">&quot;<span class="variable">$ntp_server</span>&quot;</span></span><br><span class="line"><span class="built_in">echo</span> $? &gt; /run/ntpdate.result</span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://img.yeslu.cn/blog/2022-08/07-08a5d9ce1aa2604ddc930b82cdf3b52b.png"></p>
-<ul>
-<li>手动运行并检查执行结果，如果提示正常，则部署成功。</li>
-</ul>
-<img src="https://img.yeslu.cn/blog/2022-08/07-1175b5e91cf36bb07df832354960c938.png" style="zoom:50%;" />
-
-
-
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
-<li>Synology DS720+</li>
-<li>DSM 7.1-42661 Update 3</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Hardware</category>
-      </categories>
-      <tags>
-        <tag>Synology</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>论文实用干货：Office 设置优化（07）</title>
-    <url>/archives/2aff811f.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Office 中的一些奇怪设置，会在使用过程中产生不符合逻辑的操作，本文是笔者自己遇到的坑以及进行的优化。</p>
-<span id="more"></span>
-
-<h2 id="异常的选中"><a href="#异常的选中" class="headerlink" title="异常的选中"></a>异常的选中</h2><p><img src="https://img.yeslu.cn/blog/2023-07%2F24-7e9f98008ce83b6c6636c3a886e43d21.gif"></p>
-<p>在 Word&#x2F;PPT 中，默认设置下会产生异常的选中问题，如上图所示，我想选中不包含换行符的其他文字，但要么只能选中<strong>文字</strong>，要么只能选中<strong>文字+结尾标点+换行符</strong>，此问题需要关闭 Word 选项中的“使用智能段落选择”。</p>
-<img src="https://img.yeslu.cn/blog/2023-07/24-e217300b4dbbe682054f369ac46a3658.png!blog_watermark" style="zoom:80%;" />
-
-<p>同理，PPT 中建议关闭“选定时自动选定整个单词”的功能。</p>
-<img src="https://img.yeslu.cn/blog/2023-07/24-537c51ce69d86be30b26bb6ba3c3478f.png!blog_watermark" style="zoom:80%;" />
-
-<h2 id="OriginLab-Endnote-插入后“乱码”"><a href="#OriginLab-Endnote-插入后“乱码”" class="headerlink" title="OriginLab&#x2F;Endnote 插入后“乱码”"></a>OriginLab&#x2F;Endnote 插入后“乱码”</h2><p><img src="https://img.yeslu.cn/blog/2023-07/24-9060696582e4362352cdfeb4337de5c1.png!blog_watermark"></p>
-<p>当使用 OriginLab 的 Copy Page 功能，或者使用 Endnote 等通过域来管理的内容时，会显示如上图所示的“乱码”，这实际上是域代码，切换域代码和域值之间的显示，可以在设置中修改“显示域代码而非域值“。</p>
-<img src="https://img.yeslu.cn/blog/2023-07/24-89009b3e108eb99c82b5f2d36da2876c.png!blog_watermark" style="zoom:80%;" />
-
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
-<li>总目录：<a href="https://www.yeslu.cn/archives/dcc4cb4a.html">https://www.yeslu.cn/archives/dcc4cb4a.html</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Office</tag>
-        <tag>Paper</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>获取腾讯云基于 TOTP 的 MFA Token</title>
-    <url>/archives/30dcf858.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>多因素身份验证（Multi-Factor Authentication, MFA）可以在登录等重要操作中增加一层额外的保护，基于虚拟设备的 MFA 是能产生 6 位数字认证码的应用程序，遵循基于时间的一次性密码 （TOTP）标准（<a href="https://datatracker.ietf.org/doc/html/rfc6238">RFC 6238</a>）。</p>
-<p>众多知名的 APP，如 Google Authenticator、Microsoft Authenticator、Authy 和一些常见的密码管理器，如 1Password、Bitwarden 等均支持生成一次性密码。然而，腾讯云并不直接提供用于生成一次性密码的 Token，而是将 MFA 其内置于“腾讯云助手”微信小程序中，这给实际操作带来了不便。</p>
-<p>文本通过抓包程序抓取真实 Token，从而优化腾讯云 MFA 验证的实际体验。</p>
-<span id="more"></span>
-
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ul>
-<li>iOS 15.3</li>
-<li>微信 (App Store) 8.0.18</li>
-<li>Thor (App Store) 1.4.4.891</li>
-</ul>
-<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol>
-<li>如您已经绑定 MFA，需要首先前往<a href="https://console.cloud.tencent.com/developer/security">腾讯云后台</a>解绑；</li>
-</ol>
-<p><img src="https://img.yeslu.cn/blog/2022-01/30-da42d78a67e26b4604bd754e08abb158.png!blog_watermark"></p>
-<ol start="2">
-<li>打开抓包软件，通过微信扫码绑定，直至流程结束；</li>
-</ol>
-<p><img src="https://img.yeslu.cn/blog/2022-01/30-89b28443c09e6ee62b5a5aea7e9ef869.PNG!blog_watermark"></p>
-<ol start="3">
-<li>找到 <a href="https://weapp.cloud.tencent.com/authenticator/ajax/">https://weapp.cloud.tencent.com/authenticator/ajax/</a> 请求，查看其 Request 的消息体；</li>
-</ol>
-<p><img src="https://img.yeslu.cn/blog/2022-01/30-a99c715bd6df438e003dc56f9f5f00aa.PNG!blog_watermark"><br><img src="https://img.yeslu.cn/blog/2022-01/30-32d0e9d05efa3041ba2dc6227653db9a.PNG!blog_watermark"></p>
-<ol start="4">
-<li>其消息体结构如下，这里的 <code>secret</code> 就是 TOTP 的 Token 了；</li>
-</ol>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;authCode&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;ownerUin&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;uin&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;secret&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;version&quot;</span><span class="punctuation">:</span> <span class="string">&quot;v1&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;code&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;rawData&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;signature&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;iv&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;encryptedData&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-
-<ol start="5">
-<li>填入第三方 MFA 工具后，不妨核对一下其和微信小程序中的一次性密码是否一致以及是否同时变化，一定保管好 Token。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Development</category>
-      </categories>
-      <tags>
-        <tag>Security</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一网打尽 Origin 中的分段绘图</title>
-    <url>/archives/4a2ecdfb.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在数据可视化的过程中，分段展示数据是一种常用且有效的方法。本文将重点介绍如何在 Origin 软件中实现分段绘图，具体从三个关键方面进行详细阐述：<strong>轴分段</strong>（断点）、<strong>数据分段</strong>（颜色和连接方式）、<strong>背景分段</strong>（规则与不规则色块填充）。</p>
-<span id="more"></span>
-
-
-
-<h2 id="轴分段"><a href="#轴分段" class="headerlink" title="轴分段"></a>轴分段</h2><p>Origin 提供了坐标轴断点的功能，通过<strong>双击坐标轴</strong>或者<strong>右键坐标轴-Properties</strong>，进入 Breaks Tab，选择断点数量，既可实现断点功能。</p>
-<img src="https://img.yeslu.cn/blog/2024-01/20-2a2af699d05e5bdfa00b4a885c72f6de.png!blog_watermark" style="zoom: 50%;" />
-
-<p>当断点功能开启（如图所示 4.25-12.75 为断点范围）时，断点前（如图所示 0-4.25 的部分）坐标轴的部分参数由 Scale 和 Tick Labels Tab 控制，用于修改断点前的坐标轴增量和标签等功能。</p>
-<img src="https://img.yeslu.cn/blog/2024-01/20-fdb6466c1c6736791920d48f5802f1e2.png!blog_watermark" alt="" style="zoom: 50%;" />
-
-<p>断点后（如图所示 12.75-17 的部分）的坐标轴的部分参数由该断点的详细设置管理。当有多个断点时，该设置用于调整当前选中的断点到下一个断点之间的参数。</p>
-<img src="https://img.yeslu.cn/blog/2024-01/20-03b4ec37d01c7d8e7ca57efac18edd31.png!blog_watermark" style="zoom:50%;" />
-
-<p><strong>特别注意</strong>，有同学在设置断点后发现坐标轴增量无法按照预期设置，这是因为<code>轴起点+增量</code>在断点范围内。例如断点范围为 <code>4-6</code>，坐标轴起点为 <code>0</code>，增量为 <code>5</code>，则该设置下的第一个主刻度落在了断点区间内，因此该增量无法被应用。同理，当存在多个断点时，<code>断点终点+增量</code> 不应落在下一个断点范围，否则该增量同样无法被应用。</p>
-<p>参考文档：<a href="https://www.originlab.com/doc/Origin-Help/AxesRef-Breaks">AxesRef-Breaks</a></p>
-<h2 id="数据分段"><a href="#数据分段" class="headerlink" title="数据分段"></a>数据分段</h2><h3 id="单点设置"><a href="#单点设置" class="headerlink" title="单点设置"></a>单点设置</h3><p>此方法适用于数据中有<strong>极少数量的</strong>特殊点需要调整。</p>
-<p>在 Origin 中，我们可以通过 <strong>Ctrl+单击</strong>或者<strong>两次单击（点一次，再点一次）</strong>的方式选中单个数据点，而 <strong>Ctrl+双击</strong>或者<strong>两次单击+双击</strong>则可以对单点的颜色、连接方式等参数进行调整。</p>
-<p><img src="https://img.yeslu.cn/blog/2024-01/20-2aa77533affb9497b6dcd033985f77ae.png!blog_watermark"></p>
-<p>当单个数据点被选中时，我们可以对该点的颜色及该点到后一个点的连接线参数进行调整。</p>
-<p><img src="https://img.yeslu.cn/blog/2024-01/20-9371a9beb93138dfd3d28e5a554d6566.png!blog_watermark"></p>
-<p>参考文档：<a href="https://www.originlab.com/doc/Quick-Help/Customize-Single-Data-Point">Customize-Single-Data-Point</a></p>
-<h3 id="颜色映射"><a href="#颜色映射" class="headerlink" title="颜色映射"></a>颜色映射</h3><p>此方法适用于数据中有<strong>大量</strong>特殊点需要调整。</p>
-<p>Origin 提供了一系列的色卡和映射方式，学习此方法的重点是创建颜色映射策略，也就是将每个点的颜色分配到一张色卡上。</p>
-<p>由于映射策略繁多，这里以 Index 映射策略为例说明，具体映射策略请阅读官方文档 <a href="https://www.originlab.com/doc/en/Origin-Help/PlotColor-DatasetControl">Using a Dataset to Control Plot Color</a>。</p>
-<h4 id="Index-策略"><a href="#Index-策略" class="headerlink" title="Index 策略"></a>Index 策略</h4><p>Index 的映射策略是 <code>数据 mod 色卡颜色总数</code>。</p>
-<p>在这里，我创建并设置了映射列 C，则第一个点和第二个点被正常映射到了该彩虹色卡的一号颜色（红色）和三号颜色（黄色）上，而第三个点的映射值为 8，第四个点的映射值为 11，因此会被映射到色卡的一号颜色（8 mod 7 &#x3D; 1）和四号颜色（11 mod 7 &#x3D; 4）上。</p>
-<p><img src="https://img.yeslu.cn/blog/2024-01/20-dc2d4f1eacc369c5197b11a4513caaf2.png!blog_watermark"></p>
-<p>参考文档：<a href="https://www.originlab.com/doc/Origin-Help/Customize-PlotColor">Customize-PlotColor</a></p>
-<h3 id="Data-Highlighter-插件"><a href="#Data-Highlighter-插件" class="headerlink" title="Data Highlighter 插件"></a>Data Highlighter 插件</h3><p>下载链接：<a href="https://www.originlab.com/FileExchange/details.aspx?fid=398">Data Highlighter</a></p>
-<p>Data Highlighter 插件的本质是上述的颜色映射，只是可视化的形式能够更直观的进行修改。</p>
-<p><img src="https://img.yeslu.cn/blog/2024-01/20-6ad30bf5c0cac851d2c81e84c7ac90a8.png!blog_watermark"></p>
-<p>参考文档：<a href="https://www.originlab.com/doc/App/Data-Highlighter">Data Highlighter</a></p>
-<h2 id="背景分段"><a href="#背景分段" class="headerlink" title="背景分段"></a>背景分段</h2><h3 id="规则填充"><a href="#规则填充" class="headerlink" title="规则填充"></a>规则填充</h3><h4 id="矩形工具"><a href="#矩形工具" class="headerlink" title="矩形工具"></a>矩形工具</h4><p>利用矩形工具直接在图中画框，是最简单的填充方法。在图中画出矩形框后，右键矩形框选择 “Push to back of data”，将矩形框置于数据点后，通过 “Properties” 或双击矩形框设置矩形颜色。</p>
-<p><img src="https://img.yeslu.cn/blog/2024-01/20-c01e6e5e8ae730de39beef3b27b88ab7.png!blog_watermark"></p>
-<h3 id="参考线"><a href="#参考线" class="headerlink" title="参考线"></a>参考线</h3><p>在坐标轴设置的 Reference Line Tab 能够精确设置纵向和横向参考线，并可以自定义参考线之间的填充，通过右下方的 Details 可以修改线形和填充的参数。</p>
-<p><img src="https://img.yeslu.cn/blog/2024-01/20-29a51d58b365a4c07bd04f881709faaa.png!blog_watermark"></p>
-<p>参考文档：<a href="https://www.originlab.com/doc/Origin-Help/AxesRef-RefLines">AxesRef-RefLines</a></p>
-<h3 id="不规则填充"><a href="#不规则填充" class="headerlink" title="不规则填充"></a>不规则填充</h3><p><img src="https://img.yeslu.cn/blog/2024-01/20-ef4d80ba619ed225047820cbd58c9cf1.png!blog_watermark"></p>
-<blockquote>
-<p>示例数据请前往 Learning Center（Help: Learning Center 或 F11）搜索 Shading Between Curve。</p>
-</blockquote>
-<p>这里我们用到了 <strong>Gadgets: Integrate</strong> 功能，从上方曲线的一部分填充到下方基线。在 Integration Tab 中勾选 “Keep the shading color after New Output”，并在 Baseline Tab 中选择需要填充到的基线。</p>
-<p><img src="https://img.yeslu.cn/blog/2024-01/21-a3b18447c1680ce26479f64e148d24ca.png!blog_watermark"></p>
-<p>接着在该工具的设置中修改当前需要操作的数据，并调整合适的填充范围。如需增加新的填充，可以使用 “New Output” 新建一个填充，上一个填充将被保留。</p>
-<p><img src="https://img.yeslu.cn/blog/2024-01/21-94976188dfdb0c7df43834ec33a8650e.png!blog_watermark"></p>
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
-<li>Windows 11 (22631);</li>
-<li>Origin 2024 SR1 (Academic).</li>
-</ol>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文禁止转载；</li>
-<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Graph</tag>
-        <tag>Origin</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>在 Origin 中绘制直线的 N 种方法</title>
-    <url>/archives/f7a89bc1.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在本文中，我将深入探索并充分利用 Origin 软件的众多功能，以在其绘图界面上绘制一条直线。本文的核心不仅仅是绘图技巧的展示，而是一种探索，旨在强调深入理解软件的各项功能的重要性。这样，当在绘图过程中遇到难题时，我们就不会局限于单一的解决方案，而能灵活运用多种工具和方法。</p>
-<span id="more"></span>
-
-<h2 id="快速标注工具"><a href="#快速标注工具" class="headerlink" title="快速标注工具"></a>快速标注工具</h2><h3 id="直线标注（Line-Tool）"><a href="#直线标注（Line-Tool）" class="headerlink" title="直线标注（Line Tool）"></a>直线标注（Line Tool）</h3><ul>
-<li>长度：可调</li>
-<li>方向：可调</li>
-<li>颜色、粗细、线型：可调</li>
-<li>位置：任意</li>
-</ul>
-<img src="https://img.yeslu.cn/blog/2024-01/21-66de8904b38ecc0dda22e085aaa6652d.png!blog_watermark" style="zoom: 67%;" />
-
-<h3 id="箭头-距离标注（Arrow-Tool-Distance-Annotation）"><a href="#箭头-距离标注（Arrow-Tool-Distance-Annotation）" class="headerlink" title="箭头&#x2F;距离标注（Arrow Tool&#x2F;Distance Annotation）"></a>箭头&#x2F;距离标注（Arrow Tool&#x2F;Distance Annotation）</h3><ul>
-<li>长度：可调</li>
-<li>方向：可调</li>
-<li>颜色、粗细、线型：可调</li>
-<li>位置：任意</li>
-</ul>
-<img src="https://img.yeslu.cn/blog/2024-01/21-6980945fc57215acfb30f61c61d153bd.png!blog_watermark" style="zoom:67%;" />
-
-<h2 id="坐标轴工具"><a href="#坐标轴工具" class="headerlink" title="坐标轴工具"></a>坐标轴工具</h2><h3 id="参考线（Reference-Lines）"><a href="#参考线（Reference-Lines）" class="headerlink" title="参考线（Reference Lines）"></a>参考线（Reference Lines）</h3><ul>
-<li>长度：不可独立调整</li>
-<li>方向：垂直于坐标轴</li>
-<li>颜色、粗细、线型：可调</li>
-<li>位置：两坐标轴围成的象限内</li>
-</ul>
-<p><img src="https://img.yeslu.cn/blog/2024-01/21-20a4503ac41dc40352e745e2de49ae03.png!blog_watermark"></p>
-<p>特别的，Mini Toolbars 提供了一个非常便捷的功能 —— “Add Stats Reference Lines”。通过这一功能，用户可以迅速添加具有统计学意义的参考线，从而在图表中快速标注重要的统计数据。</p>
-<img src="https://img.yeslu.cn/blog/2024-01/21-9c47c638c882c1fc256b3319ce890758.png!blog_watermark" style="zoom:67%;" />
-
-
-<h3 id="附加线（Additional-Lines）"><a href="#附加线（Additional-Lines）" class="headerlink" title="附加线（Additional Lines）"></a>附加线（Additional Lines）</h3><ul>
-<li>长度：不可独立调整</li>
-<li>方向：垂直于坐标轴</li>
-<li>颜色、粗细：跟随坐标轴</li>
-<li>位置：两坐标轴围成的象限内</li>
-</ul>
-<p><img src="https://img.yeslu.cn/blog/2024-01/21-03c1525a1428f4dea19e499390ca7d6e.png!blog_watermark"></p>
-<h2 id="插入工具"><a href="#插入工具" class="headerlink" title="插入工具"></a>插入工具</h2><h3 id="直线（Straight-Line）"><a href="#直线（Straight-Line）" class="headerlink" title="直线（Straight Line）"></a>直线（Straight Line）</h3><ul>
-<li>长度：不可调</li>
-<li>方向：不可调</li>
-<li>颜色、粗细、线型：可调</li>
-<li>位置：两坐标轴围成的象限内</li>
-</ul>
-<p><img src="https://img.yeslu.cn/blog/2024-01/21-be4bf8d22879964d279a1f0a2f8536ee.png!blog_watermark"></p>
-<p>特别的，当直线属性的 Line: Alignment 为 None 时，其方向可调；当直线属性的 Line: Stretching 为 None 时，其长度和位置可调。</p>
-<p><img src="https://img.yeslu.cn/blog/2024-01/23-127008b51eb756fbe20f6d2ba0e0b065.png!blog_watermark"></p>
-<h3 id="垂直光标（Vertical-Cursor"><a href="#垂直光标（Vertical-Cursor" class="headerlink" title="垂直光标（Vertical Cursor)"></a>垂直光标（Vertical Cursor)</h3><p>本质是能够显示多面板绘图上数据点 X、Y 坐标值的直线工具。</p>
-<p><img src="https://img.yeslu.cn/blog/2024-01/21-d5c64356c21d7649a2eda7fc7322817e.png!blog_watermark"></p>
-<p>参考文档：<a href="https://www.originlab.com/doc/Origin-Help/Gadget-VerticalCursor">VerticalCursor</a></p>
-<h3 id="插入函数（2D-Function-Plot）"><a href="#插入函数（2D-Function-Plot）" class="headerlink" title="插入函数（2D Function Plot）"></a>插入函数（2D Function Plot）</h3><ul>
-<li>长度：任意</li>
-<li>方向：垂直于 Y 轴</li>
-<li>颜色、粗细、线形：任意</li>
-<li>位置：两坐标轴围成的象限内</li>
-</ul>
-<p><img src="https://img.yeslu.cn/blog/2024-01/21-04414451f45809048cbfb1647aa1f48a.png!blog_watermark"></p>
-<p>参考文档：<a href="https://www.originlab.com/doc/Origin-Help/PD-Dialog-2DFunc-Tab">2DFunc</a></p>
-<h2 id="基于数据的直线"><a href="#基于数据的直线" class="headerlink" title="基于数据的直线"></a>基于数据的直线</h2><h3 id="连接两点"><a href="#连接两点" class="headerlink" title="连接两点"></a>连接两点</h3><ul>
-<li>长度：任意</li>
-<li>方向：任意</li>
-<li>颜色、粗细、线形：任意</li>
-<li>位置：两坐标轴围成的象限内</li>
-</ul>
-<p><img src="https://img.yeslu.cn/blog/2024-01/21-40c77eb2b698818813327d0b9e482efd.png!blog_watermark"></p>
-<h3 id="数据垂线（Drop-Lines）"><a href="#数据垂线（Drop-Lines）" class="headerlink" title="数据垂线（Drop Lines）"></a>数据垂线（Drop Lines）</h3><ul>
-<li>长度：不可独立调整</li>
-<li>方向：垂直于坐标轴</li>
-<li>颜色、粗细、线形：任意</li>
-<li>位置：两坐标轴围成的象限内</li>
-</ul>
-<p><img src="https://img.yeslu.cn/blog/2024-01/21-e93b6f417905420be146bb72fbc37e84.png!blog_watermark"></p>
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
-<li>Windows 11 (22631);</li>
-<li>Origin 2024 SR1 (Academic).</li>
-</ol>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文禁止转载；</li>
-<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Graph</tag>
-        <tag>Origin</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Origin 通过 Y 轴偏移制作层叠式线图的五种思路</title>
-    <url>/archives/71ef1cd6.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>层叠式线图是比较多组数据差异的重要手段，当数据对 Y 的实际值不敏感时，通过将数据堆叠在同一张图中，能够更好分析不同数据间峰强、峰位移等信息的变化。常见的表征手段中，XRD、XPS、XAS、FT-IR、Raman 等光（能）谱的数据，均可通过类似下图的手段，在 Y 方向上进行堆叠制图。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-04/17-966e0351a4f04e3d61b4d7513f19cb59.png" alt="10.1038/s41467-021-27768-6"></p>
-<p>在 Origin 中，软件至少提供了五种方法以实现层叠式线图，本文将简要介绍这些思路。</p>
-<span id="more"></span>
-
-<h2 id="示例数据"><a href="#示例数据" class="headerlink" title="示例数据"></a>示例数据</h2><p>本科期间，我曾向 OriginLab GraphGallery 贡献过层叠式线图的<a href="https://www.originlab.com/www/products/GraphGallery.aspx?GID=472">例图</a>，此后 OriginLab 官方以该图为蓝本制作了《<a href="https://www.bilibili.com/video/BV1Rv411a7e5">XRD 二维层叠式带标准卡片</a>》的教学视频，感兴趣的同学可以下载原始工程和数据进行学习。</p>
-<img src="https://img.yeslu.cn/blog/2022-04/17-c920c3f79cf63206ec16fcf2064c8e2d.png!blog_watermark" style="zoom: 50%;">
-
-<p>本教程为简化复杂程度，使用如下图所示的精简数据。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-04/17-1c181793129e8219d40dc2e73b28b0d6.png!blog_watermark"></p>
-<h2 id="制作层叠式线图的五种思路"><a href="#制作层叠式线图的五种思路" class="headerlink" title="制作层叠式线图的五种思路"></a>制作层叠式线图的五种思路</h2><h3 id="1-同加同减"><a href="#1-同加同减" class="headerlink" title="1 同加同减"></a>1 同加同减</h3><p>函数中，将 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="5.42ex" height="1.783ex" role="img" focusable="false" viewBox="0 -583 2395.6 788"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(767.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mi" transform="translate(1823.6,0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g></g></g></svg></mjx-container> 向上平移 2 个单位长度，得到 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="9.317ex" height="1.971ex" role="img" focusable="false" viewBox="0 -666 4118 871"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(767.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mi" transform="translate(1823.6,0)"><path data-c="1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path></g><g data-mml-node="mo" transform="translate(2617.8,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="mn" transform="translate(3618,0)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g></g></svg></mjx-container>。这与本例十分类似，也是所有方案中，最简单，也最容易想到的方法。</p>
-<p>利用 Origin 的 <a href="https://www.originlab.com/doc/Tutorials/SetColVal">Set Column/Cell Values</a> 功能，我们可以轻松的将整列值同加同减，得到拉开两线间距的效果。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-04/17-993706cc81af193971abbda9dc8e55c6.png!blog_watermark"></p>
-<h4 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h4><ol>
-<li>纯数学操作，方法简单；</li>
-<li>可以较为精准的将多条线拉开相同间距。</li>
-</ol>
-<h4 id="劣势"><a href="#劣势" class="headerlink" title="劣势"></a>劣势</h4><ol>
-<li>操作不够直观，需要多次调整获得合适的距离。</li>
-</ol>
-<h3 id="2-Individual-Offset"><a href="#2-Individual-Offset" class="headerlink" title="2 Individual Offset"></a>2 Individual Offset</h3><ul>
-<li>官方说明：<a href="https://www.originlab.com/doc/Origin-Help/PD-Dialog-Stack-Tab#Individual">PD-Dialog-Stack-Tab</a></li>
-</ul>
-<p>那么有没有直接在图中操作的方法呢？答案是肯定的。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-04/17-fb2d9f2b1cbf61c8c385030edeb3ea02.png!blog_watermark"></p>
-<p>Origin 为我们提供了 Y/X 方向上独立的功能，通过启用 Y 方向上独立，在图中就可以直接上下拖动，调整需要的位置。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-04/17-dc17987bd35c6a44fcc0ce4c640c41b6.gif"></p>
-<h3 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h3><p>当 Individual 勾选时，<a href="https://www.originlab.com/doc/Origin-Help/PD-offset-tab">Offset 功能</a>便会启用，这里的 Multiplier 和 Offset 遵循如下公式，如果需要精确控制线间距，可以尝试使用本功能。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">X' = Multiplier_X * X + Offset_X</span><br><span class="line">Y' = Multiplier_Y * Y + Offset_Y</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://img.yeslu.cn/blog/2022-07/30-92fb884e232bfd418a186c642c0d1a48.png"></p>
-<h4 id="优势-1"><a href="#优势-1" class="headerlink" title="优势"></a>优势</h4><ol>
-<li>操作直观，所看即所得。</li>
-</ol>
-<h4 id="劣势-1"><a href="#劣势-1" class="headerlink" title="劣势"></a>劣势</h4><ol>
-<li>两线间距仅能靠肉眼控制，不够精确；</li>
-<li>线条多时，不易点选拖动。</li>
-</ol>
-<h3 id="3-Stacked-Lines-by-Y-Offsets"><a href="#3-Stacked-Lines-by-Y-Offsets" class="headerlink" title="3 Stacked Lines by Y Offsets"></a>3 Stacked Lines by Y Offsets</h3><ul>
-<li>官方说明：<a href="https://www.originlab.com/doc/Origin-Help/StackLineYOffset-Graph">StackLineYOffset-Graph</a></li>
-</ul>
-<p>Stacked Lines by Y Offsets 是 Origin 中的一种图形模板，实为上述“Individual Offset”的变体，其本质依然是允许数据在 Y 轴方向上偏移。此外，软件也提供了其他的 Offset 模式，大家可以根据自己的实际需要选择。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-07/30-12cf176d57c518d338eab6ddb1535f14.png"></p>
-<p>当制作“Stacked Lines by Y Offsets”图时，软件会自动调整多条线的间距，以实现快速制图的功能。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-04/17-f8f30f90f8ef64f1ebeda00a334b92ec.png!blog_watermark"></p>
-<p><img src="https://img.yeslu.cn/blog/2022-04/17-67557d6306f84fb0a28f8a0cc065965e.gif"></p>
-<h3 id="4-Vertical-Translate"><a href="#4-Vertical-Translate" class="headerlink" title="4 Vertical Translate"></a>4 Vertical Translate</h3><ul>
-<li>官方说明：<a href="https://www.originlab.com/doc/Origin-Help/Translate-Curve">Translate-Curve</a></li>
-</ul>
-<p>上述几种方法，要么不够直观，要么不够精确，本方法融合了这两个优点。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-04/17-b0bf1c67283c274b9e4764ef53726d3f.png!blog_watermark"></p>
-<p>在拖动的同时，左侧数据点坐标随之变化。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-04/17-1767a66f5a12f4dbd5bc909283dfddbd.gif"></p>
-<h3 id="5-Multi-Layers"><a href="#5-Multi-Layers" class="headerlink" title="5 Multi- Layers"></a>5 Multi- Layers</h3><p>如果上述功能还是无法满足你的需要，那就只能使用多图层绘制了。将每条曲线绘制于一个独立图层，几乎可以达到完全的可定制效果。</p>
-<h4 id="5-1-绘制独立图"><a href="#5-1-绘制独立图" class="headerlink" title="5.1 绘制独立图"></a>5.1 绘制独立图</h4><p>使用 A-B 列数据和 A-C 列数据分别绘图（画在同一个 Graph 的两个图层上，或者干脆画两张图均可，这里只是为了更清楚的展示）</p>
-<p><img src="https://img.yeslu.cn/blog/2022-04/17-82e4715d738902716a0ac3ec16ed87f9.png!blog_watermark"></p>
-<h4 id="5-2-合并图层并对齐"><a href="#5-2-合并图层并对齐" class="headerlink" title="5.2 合并图层并对齐"></a>5.2 合并图层并对齐</h4><p><img src="https://img.yeslu.cn/blog/2022-04/17-c780cff130ad1ffa369f4eb0ac3004c7.gif"></p>
-<h4 id="5-3-隐藏多余的坐标轴"><a href="#5-3-隐藏多余的坐标轴" class="headerlink" title="5.3 隐藏多余的坐标轴"></a>5.3 隐藏多余的坐标轴</h4><p><img src="https://img.yeslu.cn/blog/2022-04/17-7e4db71d54adba5421cfd6cacc502fc5.png!blog_watermark"></p>
-<h4 id="5-4-拖动至需要的位置"><a href="#5-4-拖动至需要的位置" class="headerlink" title="5.4 拖动至需要的位置"></a>5.4 拖动至需要的位置</h4><p><img src="https://img.yeslu.cn/blog/2022-04/17-5d29c84fe70ef35a587f35119d2f5506.gif"></p>
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
-<li>Windows 11 (22000.652);</li>
-<li>Origin 2022 SR1 (Academic).</li>
-</ol>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文禁止转载；</li>
-<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Graph</tag>
-        <tag>Origin</tag>
-        <tag>Data-Analysis</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>解决 Origin 中修改 Copy Page 后的图片不更新</title>
     <url>/archives/abaee2cb.html</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在 <strong>Origin 2024 SR1</strong> 中，用户可能遇到修改 PPT 中使用 Copy Page (复制页面) 功能复制的图片后，图片未能正常更新的问题，本文将提供解决办法。</p>
@@ -7095,102 +6915,6 @@
       <tags>
         <tag>Graph</tag>
         <tag>Origin</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Origin 绘制反应能量图</title>
-    <url>/archives/9836d17.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>反应能量图（reaction energy diagram）是 DFT 计算中展现化学反应的重要方式，OriginLab 官方也提供了很有意思的<a href="http://blog.originlab.com/make-energy-diagram-in-origin">方案</a>来绘制这样的路径图。本文将以下图中的一条路径为例，对官方提供的方案进行详细解释和扩展。</p>
-<img src="https://img.yeslu.cn/blog/2022-06/19-1a1f48fcc08abea813bf23917a8dd95d.png" alt="10.1038/s41467-022-29428-9" style="zoom:80%;" />
-
-<span id="more"></span>
-
-<h2 id="绘图思路"><a href="#绘图思路" class="headerlink" title="绘图思路"></a>绘图思路</h2><p>使用 Origin 绘制大部分图像都需要明确以下两点：</p>
-<ol>
-<li>数据点的表现形式</li>
-<li>数据点之间的连接方式</li>
-</ol>
-<p>本图与最常见的“Line”图十分相近，但实际数据却区别于“Line”图需要的数据。“Line”图是将一个个数据点连接成线，但本例中每一个中间产物只对应一个能量。也就是说，数据是不具有“平台”这个概念的，而图中却要将其表现出“平台”的样式。</p>
-<p>由此思路，我们得到了第一种绘图方法：人为地扩展数据点的横坐标。假设原数据为 <code>(A, 1.5)</code>，那么在绘图时，手动增加 <code>(A-1, 1.5)</code>、<code>(A+1, 1.5)</code> 两个点，即可得到“平台”的效果。</p>
-<p>然而，当反应的中间路径较多时，人为增加数据点是十分困难的。由此，官方提供了一个非常巧妙的方法，即 <a href="https://www.originlab.com/doc/Origin-Help/Floating-Column-Graph">Floating Column</a>。Floating Column 本是柱状图的一种，数据至少分为三列：X、Y 下界、Y 上界。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-06/19-b1f3537a91174d360532a7edf897160f.png!blog_watermark" alt="Floating Column Graph"></p>
-<p>利用柱状图绘制具备天然的优势，即：<strong>柱状图宽度可调</strong>、<strong>可进行数据间的连接</strong>，<strong>连接线样式可独立调整</strong>。当上界与下界数据相同时，柱状图的高度为零，其本身的宽度即可作为我们的“平台”。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-06/19-754eaec36d2c0f76d267e6d5700895bc.png!blog_watermark"></p>
-<h2 id="数据准备"><a href="#数据准备" class="headerlink" title="数据准备"></a>数据准备</h2><h3 id="初始数据"><a href="#初始数据" class="headerlink" title="初始数据"></a>初始数据</h3><p>一般的，初始数据如下图所示，X 列为路径编号，每个 Y 列的 <code>Long Name</code> 为反应路径名，数值为反应能，<strong>从左至右</strong>为反应路径顺序。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-06/19-44ff0b592a580445566aa06553a8d48f.png!blog_watermark"></p>
-<h3 id="数据转置"><a href="#数据转置" class="headerlink" title="数据转置"></a>数据转置</h3><p>由于柱状图每一行为一个数据点，为满足柱状图的数据要求，需要将数据转置。使用 <strong>Restructure: Transpose</strong> 转置后，<strong>从上至下</strong>为反应路径顺序。</p>
-<img src="https://img.yeslu.cn/blog/2022-06/19-a6eff20b4a0a45daa1a244f7fff5d240.png!blog_watermark" style="zoom: 50%;" />
-
-<h3 id="生成制图数据"><a href="#生成制图数据" class="headerlink" title="生成制图数据"></a>生成制图数据</h3><blockquote>
-<p>在执行本 Labtalk 命令时，当前活动工作簿的第二个工作表会被覆盖，<strong>请确保第二个工作表内为空或没有有效数据</strong>！</p>
-</blockquote>
-<p>由于需要<strong>两列相同的数据</strong>分别作为 Floating Column 的<strong>上界</strong>和<strong>下界</strong>，这里使用 Labtalk 脚本进行生成。通过 <strong>Window: Command Window</strong> 打开脚本窗口，应用以下脚本，在<a href="#Labtalk-%E8%AF%A6%E8%A7%A3">文末</a>将对该脚本进行详细解析。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">newsheet;</span><br><span class="line"><span class="built_in">range</span> rsrc = <span class="number">1</span>!; </span><br><span class="line"><span class="built_in">range</span> rdst = <span class="number">2</span>!;</span><br><span class="line">rdst.ncols = rsrc.ncols*<span class="number">2</span>;</span><br><span class="line"><span class="keyword">for</span> (<span class="built_in">int</span> ii = <span class="number">0</span>; ii &lt; rsrc.ncols; ii++)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">range</span> r1 = <span class="number">1</span>!$(ii+<span class="number">1</span>);</span><br><span class="line">	<span class="built_in">range</span> r2 = <span class="number">2</span>!$(<span class="number">2</span>*ii+<span class="number">1</span>);</span><br><span class="line">	<span class="built_in">range</span> r3 = <span class="number">2</span>!$(<span class="number">2</span>*ii+<span class="number">2</span>);	</span><br><span class="line">	colcopy irng:=r1 orng:=r2;</span><br><span class="line">	colcopy irng:=r1 orng:=r3;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://img.yeslu.cn/blog/2022-06/19-0583652a875cfeaab12de74dd2ed3b31.png!blog_watermark"></p>
-<p>最后，新增一列作为路径编号（令 <code>F(x) = i</code> 生成正整数递增列，即行号），并将列类型设置为 <code>XYY</code>。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-06/19-6b414a6f0b3136d5b1a2dfd47de68ab8.png!blog_watermark"></p>
-<h2 id="图像绘制"><a href="#图像绘制" class="headerlink" title="图像绘制"></a>图像绘制</h2><h3 id="第一条路径"><a href="#第一条路径" class="headerlink" title="第一条路径"></a>第一条路径</h3><p>本绘图方法中，每一条路径都需要独立绘制，每次选择一组数据。</p>
-<p>选中 B、C 列，选择 <strong>Plot: Bar -&gt; Floating Columns</strong> 制图，但此时图中是没有图像的，这是由于当柱状图高度为零时，Origin 默认不显示。我们可以通过 <a href="https://www.originlab.com/doc/ja/LabTalk/ref/Page-obj">Labtalk 命令</a> <code>page.BarShowZero = 1</code> 或者勾选 <strong>Preference: Options -&gt; Bar graph show Zero Value</strong> 令其显示。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-06/19-4d7b7ee8cba64927acf97aa5791400b8.png!blog_watermark"></p>
-<h4 id="数据连接"><a href="#数据连接" class="headerlink" title="数据连接"></a>数据连接</h4><p>利用数据连接功能，我们可以将每个柱子连接起来，并自定义线形。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-06/19-2d934c24c6adb97c4c68bf0806358bec.png!blog_watermark"></p>
-<h3 id="增加多条路径"><a href="#增加多条路径" class="headerlink" title="增加多条路径"></a>增加多条路径</h3><p>如果需要绘制的路径不止一条，可以利用 Origin 的 <a href="https://www.originlab.com/doc/Quick-Help/Add-Data-to-Layer">Add Data to Layer</a> 功能，将其他组数据拖入图像中。</p>
-<p><img src="https://img.yeslu.cn/blog/2022-06/19-d2a1b2b9452c030407beaa3edc212e2c.gif"></p>
-<h2 id="数据标注"><a href="#数据标注" class="headerlink" title="数据标注"></a>数据标注</h2><p>这里介绍一个简便方法标注各个中间路径的名称。</p>
-<ol>
-<li>增加 B 列（名称列）和 C、D 列（全为零）；</li>
-</ol>
-<img src="https://img.yeslu.cn/blog/2024-01/25-cadf94cbd037e27588d2d745cd1e6779.png!blog_watermark" style="zoom: 80%;" />
-
-<ol start="2">
-<li>将 C、D 列数据添加至图中，并将该组数据的颜色设置为无色，显示其 Label；</li>
-</ol>
-<p><img src="https://img.yeslu.cn/blog/2024-01/25-b073720a93899037e7f136c86a115cb5.png!blog_watermark"></p>
-<ol start="3">
-<li>保存后即可创建在同一水平线，且与真实数据垂直对齐的标签。</li>
-</ol>
-<p><img src="https://img.yeslu.cn/blog/2024-01/25-4835bb13e7cac3abc50b858ed31ce9e8.png!blog_watermark"></p>
-<h2 id="Labtalk-详解"><a href="#Labtalk-详解" class="headerlink" title="Labtalk 详解"></a>Labtalk 详解</h2><h3 id="Range"><a href="#Range" class="headerlink" title="Range"></a>Range</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">range</span> rsrc = <span class="number">1</span>!; </span><br><span class="line"><span class="built_in">range</span> rdst = <span class="number">2</span>!;</span><br></pre></td></tr></table></figure>
-
-<p>类似于 <code>range a = 1!</code> 是指当前活动工作簿的第一个工作表。本组命令是将数据来源设置为第一个工作表，将目标数据存放在第二个工作表。</p>
-<blockquote>
-<p>参考文档：<a href="https://www.originlab.com/doc/en/LabTalk/guide/Range-Notation">Range-Notation</a></p>
-</blockquote>
-<h3 id="New-Column"><a href="#New-Column" class="headerlink" title="New Column"></a>New Column</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">rdst.ncols = rsrc.ncols*<span class="number">2</span>;</span><br></pre></td></tr></table></figure>
-
-<p>上面我们说过，该 Labtalk 脚本是为了将一列数据复制成两列作为 Floating Column 的下界和上界，<code>ncol</code> 代表的是 <code>new column</code>。本组命令是将 <code>rdst</code> 的列数设置为 <code>rsrc</code> 的两倍。</p>
-<blockquote>
-<p>参考文档：<a href="https://www.originlab.com/doc/LabTalk/guide/Basic-Worksheet-Column-Operation">Basic Worksheet Column</a></p>
-</blockquote>
-<h3 id="Loop"><a href="#Loop" class="headerlink" title="Loop"></a>Loop</h3><h4 id="Header"><a href="#Header" class="headerlink" title="Header"></a>Header</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="built_in">int</span> ii = <span class="number">0</span>; ii &lt; rsrc.ncols; ii++)&#123;&#125;</span><br></pre></td></tr></table></figure>
-
-<p>控制本次循环在遍历完源工作表的所有列后结束。</p>
-<h4 id="Body"><a href="#Body" class="headerlink" title="Body"></a>Body</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="built_in">range</span> r1 = <span class="number">1</span>!$(ii+<span class="number">1</span>);</span><br><span class="line"><span class="built_in">range</span> r2 = <span class="number">2</span>!$(<span class="number">2</span>*ii+<span class="number">1</span>);</span><br><span class="line"><span class="built_in">range</span> r3 = <span class="number">2</span>!$(<span class="number">2</span>*ii+<span class="number">2</span>);	</span><br><span class="line">colcopy irng:=r1 orng:=r2;</span><br><span class="line">colcopy irng:=r1 orng:=r3;</span><br></pre></td></tr></table></figure>
-
-<p>此处 <code>irng</code> 为 <code>input range</code>，<code>orng</code> 为 <code>output range</code>。</p>
-<p>当 <code>ii = 0</code>，则 <code>r1</code> 为源工作表的第 1 列， <code>r2</code> 为目标工作表的第 1 列， <code>r3</code> 为目标工作表的第 2 列。接着将源工作表的第 1 列追加到目标工作表的第 1、2 列。</p>
-<p>当 <code>ii = 1</code>，则 <code>r1</code> 为源数据工作表的第 2 列， <code>r2</code> 为目标数据工作表的第 3 列， <code>r3</code> 为目标数据工作表的第 4 列。接着将源工作表的第 2 列追加到目标工作表的第 3、4 列。</p>
-<p>由此可见，随着循环的进行，源工作表的每一列都被拷贝成了两列。</p>
-<blockquote>
-<p>参考文档：<a href="https://www.originlab.com/doc/LabTalk/guide/Getting-Started-with-LT">Getting Started with LabTalk</a></p>
-</blockquote>
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
-<li>Windows 11 (22000.652);</li>
-<li>Origin 2022b (Academic).</li>
-</ol>
-<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
-<li>本文禁止转载；</li>
-<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Science</category>
-      </categories>
-      <tags>
-        <tag>Graph</tag>
-        <tag>Origin</tag>
-        <tag>Data-Analysis</tag>
       </tags>
   </entry>
   <entry>
@@ -7409,6 +7133,282 @@
       <tags>
         <tag>Graph</tag>
         <tag>Origin</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>论文实用干货：创建目录（03）</title>
+    <url>/archives/5b5ea310.html</url>
+    <content><![CDATA[<h2 id="官方介绍"><a href="#官方介绍" class="headerlink" title="官方介绍"></a>官方介绍</h2><p><a href="https://support.office.com/en-us/article/insert-a-table-of-contents-882e8564-0edb-435e-84b5-1d8552ccf0c0?ui=en-US&rs=en-US&ad=US">Insert a table of contents</a></p>
+<span id="more"></span>
+
+<h2 id="重要说明"><a href="#重要说明" class="headerlink" title="重要说明"></a>重要说明</h2><p>前面的两节主要讲解了制作论文封面信息和分页操作，为了方便后文的讲解，我对论文文档的结构进行了完善，使其具备论文的核心要素（封面，摘要，目录，正文，参考文献和致谢）。</p>
+<h2 id="修改样式"><a href="#修改样式" class="headerlink" title="修改样式"></a>修改样式</h2><p>为了使用 word 自动生成目录的功能，我们首先要修改同层级标题的字体和段落设置等参数，并应用于不同的标题。</p>
+<ol>
+<li><p>点击“样式窗格”按钮调出样式面板<br><img src="https://img.yeslu.cn/blog/paper/paper-03-1.png!blog_watermark"></p>
+</li>
+<li><p>对“标题 1”的样式进行修改：字体使用宋体&#x2F;Times New Roman，四号；段落使用 1.5 倍行距。<br><img src="https://img.yeslu.cn/blog/paper/paper-03-2.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-03-3.png!blog_watermark"></p>
+</li>
+<li><p>使用同样的方法，对“标题 2”和“标题 3”进行修改。这里分别使用小四和五号字体，其余格式不变。<br><img src="https://img.yeslu.cn/blog/paper/paper-03-4.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-03-5.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-03-6.png!blog_watermark"></p>
+</li>
+</ol>
+<h2 id="应用样式"><a href="#应用样式" class="headerlink" title="应用样式"></a>应用样式</h2><ol>
+<li><p>n 级标题默认对整个段落生效，因此我们只需要将光标移至段首，点击需要的样式按钮即可。<br><img src="https://img.yeslu.cn/blog/paper/paper-03-7.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-03-8.png!blog_watermark"></p>
+</li>
+<li><p>对不同层级的标题应用样式后，我们在“导航”中已经可以看到整篇文章的基本结构。当然，通过“导航”中的层级也可判断样式应用是否正确。<br><img src="https://img.yeslu.cn/blog/paper/paper-03-9.png!blog_watermark"></p>
+</li>
+</ol>
+<h2 id="创建目录"><a href="#创建目录" class="headerlink" title="创建目录"></a>创建目录</h2><ol>
+<li><p>将光标移动到需要插入目录的位置，选择“引用”-“目录”-“自定义目录”<br><img src="https://img.yeslu.cn/blog/paper/paper-03-10.png!blog_watermark"></p>
+</li>
+<li><p>通过“修改”按钮，可以修改目录中所显示 n 级标题的格式。这里我们依然沿用上述格式，但为了体现标题间的层级关系，TOC 2 缩进 2 字符，TOC 3 缩进 4 字符。<br><img src="https://img.yeslu.cn/blog/paper/paper-03-11.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-03-12.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-03-13.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-03-14.png!blog_watermark"></p>
+</li>
+<li><p>全部设置完成后，在此点击“确定”创建目录。<br><img src="https://img.yeslu.cn/blog/paper/paper-03-15.png!blog_watermark"></p>
+</li>
+<li><p>至此，完成目录的创建工作。<br><img src="https://img.yeslu.cn/blog/paper/paper-03-16.png!blog_watermark"></p>
+</li>
+</ol>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Office</tag>
+        <tag>Paper</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>论文实用干货：将摘要加入目录（05）</title>
+    <url>/archives/7b0cfbef.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>很多同学在生成目录之后，会有另一个疑问：如何将摘要和关键词加入目录中。想要将指定文字加入标题中，必须为该文字应用标题样式。然而，系统默认的标题样式对段落生效，并不能应用于单个文字。因此，我们需要新建一个可应用于文字的样式。</p>
+<span id="more"></span>
+
+<h2 id="新建样式"><a href="#新建样式" class="headerlink" title="新建样式"></a>新建样式</h2><p>有了前文的基础，这里的操作就比较简单了，在新建样式的时候，除选择正确的字体、段落格式外，只需要注意两点：</p>
+<ul>
+<li>“样式类型”选择“链接段落和字符”，以此保证我们新建的样式可以应用于字符。</li>
+<li>“大纲级别”选择“1 级”，以此保证在创建目录时，应用该样式的文字位于一级标题中。</li>
+</ul>
+<p><img src="https://img.yeslu.cn/blog/paper/paper-05-01.png!blog_watermark"></p>
+<p>接下来，我们将该样式应用于摘要、关键词等文字，并生成目录即可。当然，此方法还可以用于对“参考文献”，“致谢”等文字的处理。</p>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
+<li>本文同步发布于个人微信【<a href="https://mp.weixin.qq.com/s/I7JloFOUU2DAqXPcTGVDkg">一只兔儿</a>】</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Office</tag>
+        <tag>Paper</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>论文实用干货：编辑页眉和页码（04）</title>
+    <url>/archives/ff3dc88a.html</url>
+    <content><![CDATA[<h2 id="官方介绍"><a href="#官方介绍" class="headerlink" title="官方介绍"></a>官方介绍</h2><p><a href="https://support.office.com/en-us/article/insert-a-header-or-footer-b87ee4df-abc1-41f8-995b-b39f6d99c7ed?ui=en-US&rs=en-US&ad=US">Insert a header or footer</a></p>
+<span id="more"></span>
+
+<h2 id="重要说明"><a href="#重要说明" class="headerlink" title="重要说明"></a>重要说明</h2><p>本节需要对具体的页面进行操作，请在阅读时重点关注是对哪一页的哪个位置进行操作。</p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>编辑论文的页码是很多童鞋在排版过程中遇到的难题，有些不要页码，有些用罗马数字，有些用阿拉伯数字(o´д`o)&#x3D;３ 这时，第 2 节中没有详述的分节符就派上用场了。<br>我们先来梳理一下每一页所对应的页码。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-1.png!blog_watermark"></p>
+<h2 id="文章分节"><a href="#文章分节" class="headerlink" title="文章分节"></a>文章分节</h2><p>在上图中，我们使用分节符将文章分为四节，分别位于封面、英文摘要和目录的结尾。分节符的插入位于“布局”-“分隔符”-“分节符”-“下一页”。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-2.png!blog_watermark"><br>打开页眉页脚设置后，可以看到每一节所对应的节号。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-3.png!blog_watermark"></p>
+<h2 id="页码编辑"><a href="#页码编辑" class="headerlink" title="页码编辑"></a>页码编辑</h2><h3 id="插入页码"><a href="#插入页码" class="headerlink" title="插入页码"></a>插入页码</h3><p>将光标移至<strong>封面任意位置</strong>，插入页码，页码格式暂且不用设置。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-4.png!blog_watermark"></p>
+<h3 id="封面页"><a href="#封面页" class="headerlink" title="封面页"></a>封面页</h3><p>进入<strong>页眉页脚设置</strong>，选择封面的页脚，勾选“首页不同”，即可去除封面页码。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-5.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-04-6.png!blog_watermark"></p>
+<h3 id="摘要页"><a href="#摘要页" class="headerlink" title="摘要页"></a>摘要页</h3><p>将光标移至<strong>摘要页的页脚</strong>，选择“页码”-“设置页码格式”，勾选“起始编号”并设置为罗马数字 I，即可将中文摘要设置为第 I 页，英文摘要设置为第 II 页。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-7.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-04-8.png!blog_watermark"></p>
+<h3 id="目录页"><a href="#目录页" class="headerlink" title="目录页"></a>目录页</h3><p>目录和封面一样，不需要页码。我们使用设置封面的方法，在目录页勾选“首页不同”，即可去除目录的页码。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-9.png!blog_watermark"></p>
+<h3 id="正文页（含参考文献和致谢）"><a href="#正文页（含参考文献和致谢）" class="headerlink" title="正文页（含参考文献和致谢）"></a>正文页（含参考文献和致谢）</h3><p>正文与摘要一样，需要设置起始页码。我们将光标移至<strong>正文第一页的页脚部分</strong>，设置页码格式如图所示即可。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-10.png!blog_watermark"><br>至此，页码设置结束，正文首页的页码为第 1 页。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-11.png!blog_watermark"></p>
+<h3 id="更新目录"><a href="#更新目录" class="headerlink" title="更新目录"></a>更新目录</h3><p>在目录部分右键“更新域”，即可对目录应用新页码。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-12.png!blog_watermark"></p>
+<h2 id="页眉编辑"><a href="#页眉编辑" class="headerlink" title="页眉编辑"></a>页眉编辑</h2><p>我校要求在正文页及其之后的所有页面添加页眉，下面讲述页眉添加方法。</p>
+<h3 id="插入页眉"><a href="#插入页眉" class="headerlink" title="插入页眉"></a>插入页眉</h3><p>将光标移至<strong>正文第一页</strong>，选择“插入”-“页眉”，这里使用默认的“空白”页眉。输入文字，并作适当调整。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-14.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-04-15.png!blog_watermark"></p>
+<h3 id="删除多余的页眉"><a href="#删除多余的页眉" class="headerlink" title="删除多余的页眉"></a>删除多余的页眉</h3><p>由于插入页眉操作对全文生效，我们发现操作后，中英文摘要部分也被插入了页眉（封面和目录没有被插入是因为我们对其设置了“首页不同”）。</p>
+<ol>
+<li>将光标移至<strong>正文第一页</strong>，取消“链接到上一节”，这样，我们对上一节的所有编辑不会影响到本节之后的设置。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-16.png!blog_watermark"></li>
+<li>将光标移至<strong>摘要页</strong>，选择“插入”-“页眉”-“删除页眉”即可。但是，删除仅删掉了文字，横线依然还在，我们可以选择以下两种方法删除横线。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-17.png!blog_watermark"></li>
+</ol>
+<p><strong>方法 1</strong>：进入“编辑页眉”界面后，直接点击“关闭页眉和页脚”，系统检测到页眉中没有内容，会自动删掉横线。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-18.png!blog_watermark"><br><strong>方法 2</strong>：如果上述方法不行，我们可以手动操作。选中页眉中的回车符，点击“下框线”按钮，即可删除横线。<br><img src="https://img.yeslu.cn/blog/paper/paper-04-19.png!blog_watermark"><br><img src="https://img.yeslu.cn/blog/paper/paper-04-20.png"></p>
+<h3 id="设置奇偶页不同"><a href="#设置奇偶页不同" class="headerlink" title="设置奇偶页不同"></a>设置奇偶页不同</h3><p><img src="https://img.yeslu.cn/blog/2023-03/17-1460f27433aeab81a5a50c3f4fcd865c.png!blog_watermark"></p>
+<p>通常，上图所示方法可以为页眉页脚设置奇偶页不同，但应用本方法后可能出现<strong>排版混乱</strong>的情况，此问题可通过下图方法解决。</p>
+<p>需要注意的是，当勾选下图“页面设置”中的“奇偶页不同”后，上图所示位置也会被勾选，<strong>如需取消此功能，仍需要通过下图位置取消</strong>，否则排版会再次改变。</p>
+<img src="https://img.yeslu.cn/blog/2023-03/17-173f4e38f1aabc3f5036391a544a233d.png!blog_watermark" alt="" style="zoom: 33%;" />
+
+<p>这个问题也许是 Word 的 Bug，该解决方案未找到相关说明文档，仅为经验。</p>
+<h3 id="显示章节标题"><a href="#显示章节标题" class="headerlink" title="显示章节标题"></a>显示章节标题</h3><p>部分论文可能要求在页眉显示当前章节的标题，可通过下图方式增加。</p>
+<p><img src="https://img.yeslu.cn/blog/2023-03/17-79b4ed1b26b47bb128508e04b3b83636!blog_watermark"></p>
+<p><img src="https://img.yeslu.cn/blog/2023-03/17-e51d554678463868799c9dc82d700b4e!blog_watermark"></p>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
+<li>本文同步发布于个人微信【<a href="https://mp.weixin.qq.com/s/vonp-eZ6ouaFXItN-jvaqg">一只兔儿</a>】</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Office</tag>
+        <tag>Paper</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>论文实用干货：Endnote 避坑指南（06）</title>
+    <url>/archives/510fef2a.html</url>
+    <content><![CDATA[<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ul>
+<li>Endnote: X9.3.2</li>
+<li>GB&#x2F;T 7714 Style: <a href="https://github.com/wanzhenchn/EndNote_Tutorial_Hand_by_Hand/blob/master/resource/Chinese%20Std%20GBT7714%20(numeric)_20190409.ens">Chinese Std GBT7714 (numeric)</a></li>
+</ul>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>很多同学以为把参考文献用 Endnote 一股脑插进论文就完事了，那真是太图样图森破。在实际使用过程中，数据来源不同，参考文献类别不同，语言不同，软件本身限制，导致在使用过程中，导入的文献存在格式错误，需要手动修正。本文将介绍本人在使用过程中，遇到的几种不同类型的错误点，以供参考。</p>
+<p>对于中英文混排中出现的格式问题，已有前辈制作了非常完善的指南：<a href="https://github.com/sparanoid/chinese-copywriting-guidelines/blob/master/README.zh-CN.md">chinese-copywriting-guidelines</a>，这里将不再说明。</p>
+<span id="more"></span>
+
+<h2 id="修改引用内容"><a href="#修改引用内容" class="headerlink" title="修改引用内容"></a>修改引用内容</h2><p><strong>⚠️ 警告：这是一个危险操作，请务必阅读</strong></p>
+<p>Endnote 在向 Word 插入文献的过程中，会在 Word 中创建一个由 Endnote 管理的域，此区域随着 Endnote 中文献信息的更新而更新。当该区域由 Endnote 管理的时候，是无法直接修改区域中内容的，否则增加、删除、更新引用信息时，所有的修改将丢失。</p>
+<p>因此在手动修改引用内容之前，你需要确保全篇论文的所有参考文献已被插入完毕。<strong>请务必将当前文件备份，并在副本中操作。</strong></p>
+<p>全选整个文档，使用快捷键<code>Ctrl+Shift+F9</code>，能够将全文的域转换为纯文本，此时 Endnote 将失去对其区域的管理，并可作为常规文本进行编辑。</p>
+<p>这里有个小 Tips，虽然 Endnote 自带了如下图所示 Tools - Convert to Plain Text 的功能，同样可以将 Endnote 域转换为纯文本，但是此方法将可能导致全文格式混乱，个人并不建议使用。</p>
+<p><img src="https://img.yeslu.cn/blog/paper/paper-06-01.png!blog_watermark"></p>
+<h2 id="避坑汇总"><a href="#避坑汇总" class="headerlink" title="避坑汇总"></a>避坑汇总</h2><h3 id="数据源错误"><a href="#数据源错误" class="headerlink" title="数据源错误"></a>数据源错误</h3><p><img src="https://img.yeslu.cn/blog/paper/paper-06-04.png!blog_watermark"></p>
+<p>以百度学术为例，大家通常从这里下载 Endnote 的数据文件并导入 Endnote。但无论是百度学术、谷歌学术，还是其他的文献平台，下载的数据文件本身可能存在内容缺失（如缺页码，缺年份等），这样最终导入 Word 的内容自然也不可能正确。</p>
+<h3 id="作者名格式"><a href="#作者名格式" class="headerlink" title="作者名格式"></a>作者名格式</h3><ul>
+<li>外文名作者，名在前，姓在后，姓名间空格分隔。对于 3 个及以上的外文名作者，使用 <code>A, B, C, et al.</code> 来表示，如 <code>Nitta N, Wu F, Lee J T, et al.</code></li>
+<li>中文名作者，姓在前，名在后，姓名间无分隔。对于 3 个及以上的中文名名作者，使用 <code>王, 赵, 李, 等.</code> 来表示，如 <code>张天戈, 张竹柳, 李延伟, 等.</code></li>
+<li>需要注意的是，无论作者名是中文还是外文，姓名之间、姓名和“等”之间，使用英文逗号+空格的形式来分隔，“等”之后使用英文句点。</li>
+</ul>
+<h3 id="公式格式"><a href="#公式格式" class="headerlink" title="公式格式"></a>公式格式</h3><p>一般的，标题中的含上下标的文字，在 Endnote 中和被导入 Word 时，会被显示为如 Al_(2)O_(3) 【氧化铝】的格式，需要手动将其改为正确的上下标格式。</p>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>对于拿捏不准的格式问题，请直接查阅国标[ 《信息与文献 参考文献著录规则》 ][3]。</p>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
+<li>总目录：<a href="https://www.yeslu.cn/archives/dcc4cb4a.html">https://www.yeslu.cn/archives/dcc4cb4a.html</a></li>
+<li>本文同步发布于个人微信【<a href="https://mp.weixin.qq.com/s/BQQi0s65is7AeW-BKHWndQ">一只兔儿</a>】</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Office</tag>
+        <tag>Paper</tag>
+        <tag>Endnote</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决群晖 NTP 自动同步失败</title>
+    <url>/archives/ff52424d.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>自从群晖（Synology）DSM 某个版本更新后，NTP 自动同步总是提示“无法同步。因为没有网络或网络连接不稳定。请参阅本文以了解详细信息”，而手动同步正常。群晖官方虽然提供了<a href="https://kb.synology.cn/zh-cn/DSM/tutorial/Troubleshooting_issues_syncing_with_NTP_server">解决方案</a>，但测试后并没有解决问题。通过与群晖技术支持交流，获得了较好的解决方案。</p>
+<span id="more"></span>
+
+<h2 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h2><h3 id="20221009"><a href="#20221009" class="headerlink" title="20221009"></a>20221009</h3><ul>
+<li>在 DSM 7.1.1-42962 Update 1 上，群晖似乎已经修复了这个问题。</li>
+</ul>
+<h2 id="现象"><a href="#现象" class="headerlink" title="现象"></a>现象</h2><p>NTP 无法正常自动同步，能够正常手动同步。</p>
+<img src="https://img.yeslu.cn/blog/2022-08/07-f221c5426bd4f7e911ba251e28132703.png"  />
+
+
+
+<h2 id="影响"><a href="#影响" class="headerlink" title="影响"></a>影响</h2><p>本人开启了 DSM 的 TOTP (Time-based One-Time Password) 二次验证，TOTP 与设备时间紧密相关。当 NTP 无法正常同步时，群晖平均每一天慢若干秒，约一周后，群晖与其他设备的时间误差超出 TOTP 的容忍范围，直接导致 TOTP 无法正常验证。</p>
+<h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>群晖技术支持给出了 NTP 的自动更新策略：</p>
+<blockquote>
+<p>NAS 与 NTP 服务器进行轮询时，必须连续八次全部成功，才会认为该 NTP 服务器可信，从而显示自动更新成功，而您当前所处的网络环境似乎并不稳定，所以会导致轮询中出现失败。</p>
+</blockquote>
+<h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>技术支持向我提供了 NTP 更新脚本，利用 DSM 自带的“任务计划”功能进行自动同步。</p>
+<ul>
+<li>新建“用户自定义脚本”；</li>
+</ul>
+<p><img src="https://img.yeslu.cn/blog/2022-08/07-cd305dd0674ca68f2e4d3f7cc7b98b9c.png"></p>
+<ul>
+<li>以“root”账户执行，并在“用户定义的脚本”下输入如下脚本（<strong>root 账户具有系统最高执行权限，除非你知道自己在做什么，否则请勿随意修改如下脚本</strong>）；</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line">ntp_server=<span class="string">&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> grep -q <span class="string">&quot;time.google.com.conf&quot;</span> <span class="string">&quot;/etc/ntp.conf&quot;</span> ; <span class="keyword">then</span></span><br><span class="line">ntp_server=<span class="string">&quot;time.google.com&quot;</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">if</span> grep -q <span class="string">&quot;pool.ntp.org&quot;</span> <span class="string">&quot;/etc/ntp.conf&quot;</span> ; <span class="keyword">then</span></span><br><span class="line">ntp_server=<span class="string">&quot;pool.ntp.org&quot;</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">if</span> grep -q <span class="string">&quot;server &quot;</span> <span class="string">&quot;/etc/ntp.conf&quot;</span> ; <span class="keyword">then</span></span><br><span class="line">ntp_server=<span class="string">&quot;<span class="subst">$(grep <span class="string">&quot;server &quot;</span> <span class="string">&quot;/etc/ntp.conf&quot;</span> | cut -d <span class="string">&quot; &quot;</span> -f2)</span>&quot;</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$ntp_server</span>&quot;</span> != <span class="string">&quot;&quot;</span> ] ; <span class="keyword">then</span></span><br><span class="line">/sbin/ntpdate -u -b <span class="string">&quot;<span class="variable">$ntp_server</span>&quot;</span></span><br><span class="line"><span class="built_in">echo</span> $? &gt; /run/ntpdate.result</span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img.yeslu.cn/blog/2022-08/07-08a5d9ce1aa2604ddc930b82cdf3b52b.png"></p>
+<ul>
+<li>手动运行并检查执行结果，如果提示正常，则部署成功。</li>
+</ul>
+<img src="https://img.yeslu.cn/blog/2022-08/07-1175b5e91cf36bb07df832354960c938.png" style="zoom:50%;" />
+
+
+
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
+<li>Synology DS720+</li>
+<li>DSM 7.1-42661 Update 3</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Hardware</category>
+      </categories>
+      <tags>
+        <tag>Synology</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>获取腾讯云基于 TOTP 的 MFA Token</title>
+    <url>/archives/30dcf858.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>多因素身份验证（Multi-Factor Authentication, MFA）可以在登录等重要操作中增加一层额外的保护，基于虚拟设备的 MFA 是能产生 6 位数字认证码的应用程序，遵循基于时间的一次性密码 （TOTP）标准（<a href="https://datatracker.ietf.org/doc/html/rfc6238">RFC 6238</a>）。</p>
+<p>众多知名的 APP，如 Google Authenticator、Microsoft Authenticator、Authy 和一些常见的密码管理器，如 1Password、Bitwarden 等均支持生成一次性密码。然而，腾讯云并不直接提供用于生成一次性密码的 Token，而是将 MFA 其内置于“腾讯云助手”微信小程序中，这给实际操作带来了不便。</p>
+<p>文本通过抓包程序抓取真实 Token，从而优化腾讯云 MFA 验证的实际体验。</p>
+<span id="more"></span>
+
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ul>
+<li>iOS 15.3</li>
+<li>微信 (App Store) 8.0.18</li>
+<li>Thor (App Store) 1.4.4.891</li>
+</ul>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol>
+<li>如您已经绑定 MFA，需要首先前往<a href="https://console.cloud.tencent.com/developer/security">腾讯云后台</a>解绑；</li>
+</ol>
+<p><img src="https://img.yeslu.cn/blog/2022-01/30-da42d78a67e26b4604bd754e08abb158.png!blog_watermark"></p>
+<ol start="2">
+<li>打开抓包软件，通过微信扫码绑定，直至流程结束；</li>
+</ol>
+<p><img src="https://img.yeslu.cn/blog/2022-01/30-89b28443c09e6ee62b5a5aea7e9ef869.PNG!blog_watermark"></p>
+<ol start="3">
+<li>找到 <a href="https://weapp.cloud.tencent.com/authenticator/ajax/">https://weapp.cloud.tencent.com/authenticator/ajax/</a> 请求，查看其 Request 的消息体；</li>
+</ol>
+<p><img src="https://img.yeslu.cn/blog/2022-01/30-a99c715bd6df438e003dc56f9f5f00aa.PNG!blog_watermark"><br><img src="https://img.yeslu.cn/blog/2022-01/30-32d0e9d05efa3041ba2dc6227653db9a.PNG!blog_watermark"></p>
+<ol start="4">
+<li>其消息体结构如下，这里的 <code>secret</code> 就是 TOTP 的 Token 了；</li>
+</ol>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;authCode&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;ownerUin&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;uin&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;secret&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;version&quot;</span><span class="punctuation">:</span> <span class="string">&quot;v1&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;code&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;rawData&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;signature&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;iv&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;encryptedData&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>填入第三方 MFA 工具后，不妨核对一下其和微信小程序中的一次性密码是否一致以及是否同时变化，一定保管好 Token。</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Development</category>
+      </categories>
+      <tags>
+        <tag>Security</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>论文实用干货：Office 设置优化（07）</title>
+    <url>/archives/2aff811f.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Office 中的一些奇怪设置，会在使用过程中产生不符合逻辑的操作，本文是笔者自己遇到的坑以及进行的优化。</p>
+<span id="more"></span>
+
+<h2 id="异常的选中"><a href="#异常的选中" class="headerlink" title="异常的选中"></a>异常的选中</h2><p><img src="https://img.yeslu.cn/blog/2023-07%2F24-7e9f98008ce83b6c6636c3a886e43d21.gif"></p>
+<p>在 Word&#x2F;PPT 中，默认设置下会产生异常的选中问题，如上图所示，我想选中不包含换行符的其他文字，但要么只能选中<strong>文字</strong>，要么只能选中<strong>文字+结尾标点+换行符</strong>，此问题需要关闭 Word 选项中的“使用智能段落选择”。</p>
+<img src="https://img.yeslu.cn/blog/2023-07/24-e217300b4dbbe682054f369ac46a3658.png!blog_watermark" style="zoom:80%;" />
+
+<p>同理，PPT 中建议关闭“选定时自动选定整个单词”的功能。</p>
+<img src="https://img.yeslu.cn/blog/2023-07/24-537c51ce69d86be30b26bb6ba3c3478f.png!blog_watermark" style="zoom:80%;" />
+
+<h2 id="OriginLab-Endnote-插入后“乱码”"><a href="#OriginLab-Endnote-插入后“乱码”" class="headerlink" title="OriginLab&#x2F;Endnote 插入后“乱码”"></a>OriginLab&#x2F;Endnote 插入后“乱码”</h2><p><img src="https://img.yeslu.cn/blog/2023-07/24-9060696582e4362352cdfeb4337de5c1.png!blog_watermark"></p>
+<p>当使用 OriginLab 的 Copy Page 功能，或者使用 Endnote 等通过域来管理的内容时，会显示如上图所示的“乱码”，这实际上是域代码，切换域代码和域值之间的显示，可以在设置中修改“显示域代码而非域值“。</p>
+<img src="https://img.yeslu.cn/blog/2023-07/24-89009b3e108eb99c82b5f2d36da2876c.png!blog_watermark" style="zoom:80%;" />
+
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文由 Chandler-Lu 首发于个人博客 <a href="https://www.yeslu.cn/">https://www.yeslu.cn</a></li>
+<li>总目录：<a href="https://www.yeslu.cn/archives/dcc4cb4a.html">https://www.yeslu.cn/archives/dcc4cb4a.html</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Office</tag>
+        <tag>Paper</tag>
       </tags>
   </entry>
 </search>
