@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="p3nrVMZBUOfTth91mo4SrSJ3kcDao-5L0turXxUGhUU">
+  <meta name="msvalidate.01" content="EEDECC1EA4AE341CC57365E075EBC8B6">
+  <meta name="baidu-site-verification" content="Udzuh3od3qSnQYUO">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="/lib/@fortawesome/fontawesome-free/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous">
+  <link rel="stylesheet" href="/lib/animate.css/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="/lib/@fancyapps/ui/dist/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"www.yeslu.cn","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.19.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="说明 这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建； 目录及详细说明请阅读：目录； 本文除已授权单位外禁止转载； 更新时间：2024-04-04 13:49:40">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Origin 中文插件列表 - 数据处理（12 个）">
+<meta property="og:url" content="https://www.yeslu.cn/archives/da105a28.html">
+<meta property="og:site_name" content="这是只兔子">
+<meta property="og:description" content="说明 这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建； 目录及详细说明请阅读：目录； 本文除已授权单位外禁止转载； 更新时间：2024-04-04 13:49:40">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/data-handling/474/alignpeaks_screen_shot7.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/data-handling/341/Data%20Factory.jpg!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/data-handling/366/DataSlicerNewImage.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/data-handling/268/DistanceBetweenTwoPoints.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/data-handling/264/Hysteresis%20Curve%20Splitter%20Screenshot.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/data-handling/373/ImageObjectCounterScreenshot_2.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/data-handling/288/Onset_Of_Slope_Screenshot.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/data-handling/369/PiecewiseSmooth60.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/data-handling/667/Project_Manager_scs.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/data-handling/333/SMILEStoImage_Screenshot4.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/data-handling/524/simple_spec_screen_shot5.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/data-handling/219/Tafel_Extrapolation_Screen_Shot.png!blog_watermark">
+<meta property="article:published_time" content="2024-04-04T04:00:00.000Z">
+<meta property="article:modified_time" content="2024-04-04T05:49:40.681Z">
+<meta property="article:author" content="Chandler-Lu">
+<meta property="article:tag" content="Origin">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/data-handling/474/alignpeaks_screen_shot7.png!blog_watermark">
+
+
+<link rel="canonical" href="https://www.yeslu.cn/archives/da105a28.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":"","permalink":"https://www.yeslu.cn/archives/da105a28.html","path":"archives/da105a28.html","title":"Origin 中文插件列表 - 数据处理（12 个）"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Origin 中文插件列表 - 数据处理（12 个） | 这是只兔子</title>
+  
+
+
+
+
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "i3tut7r0p1");
+</script>
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">这是只兔子</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">This is a Rabbit.</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%B4%E6%98%8E"><span class="nav-number">1.</span> <span class="nav-text">说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#474-Align-Peaks"><span class="nav-number">2.</span> <span class="nav-text">474 - Align Peaks</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#341-Data-Factory"><span class="nav-number">3.</span> <span class="nav-text">341 - Data Factory</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#366-Data-Slicer"><span class="nav-number">4.</span> <span class="nav-text">366 - Data Slicer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#268-Distance-Between-Two-Points"><span class="nav-number">5.</span> <span class="nav-text">268 - Distance Between Two Points</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#264-Hysteresis"><span class="nav-number">6.</span> <span class="nav-text">264 - Hysteresis</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#373-Image-Object-Counter"><span class="nav-number">7.</span> <span class="nav-text">373 - Image Object Counter</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#288-Onset-Of-Slope"><span class="nav-number">8.</span> <span class="nav-text">288 - Onset Of Slope</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#369-Piecewise-Smooth"><span class="nav-number">9.</span> <span class="nav-text">369 - Piecewise Smooth</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#667-Project-Manager"><span class="nav-number">10.</span> <span class="nav-text">667 - Project Manager</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#333-SMILES-to-Image"><span class="nav-number">11.</span> <span class="nav-text">333 - SMILES to Image</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#524-Simple-Spectroscopy"><span class="nav-number">12.</span> <span class="nav-text">524 - Simple Spectroscopy</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#219-Tafel-Extrapolation"><span class="nav-number">13.</span> <span class="nav-text">219 - Tafel Extrapolation</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Chandler-Lu"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Chandler-Lu</p>
+  <div class="site-description" itemprop="description">这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">49</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="mailto:trlu.develop@outlook.com" title="E-Mail → mailto:trlu.develop@outlook.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/Chandler-Lu" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Chandler-Lu" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/1908825" title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;1908825" rel="noopener me" target="_blank"><i class="fa fa-bold fa-fw"></i>Bilibili</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.cndzq.com/bbs/home.php?mod=space&uid=138196" title="CNDZQ → https:&#x2F;&#x2F;www.cndzq.com&#x2F;bbs&#x2F;home.php?mod&#x3D;space&amp;uid&#x3D;138196" rel="noopener me" target="_blank"><i class="fa fa-music fa-fw"></i>CNDZQ</a>
+      </span>
+  </div>
+<!-- recent posts -->
+    <br />
+    <div class="links-of-blogroll motion-element links-of-blogroll-block">
+        <div class="links-of-blogroll-title recent-posts-title">
+	    <i class="fa fa-history " aria-hidden="true"></i>
+            近期文章
+	</div>
+	<ul class="links-of-blogroll-list recent-posts-list">
+	        <li class="my-links-of-blogroll-item">
+		    <a href="/archives/2bdf2924.html" title="Origin 中文插件列表 - 数据连接（28 个）" target="">
+		    Origin 中文插件列表 - 数据连接（28 个）
+		    </a>
+		</li>
+	        <li class="my-links-of-blogroll-item">
+		    <a href="/archives/da105a28.html" title="Origin 中文插件列表 - 数据处理（12 个）" target="">
+		    Origin 中文插件列表 - 数据处理（12 个）
+		    </a>
+		</li>
+	        <li class="my-links-of-blogroll-item">
+		    <a href="/archives/e935a643.html" title="Origin 中文插件列表 - 绘图（77 个）" target="">
+		    Origin 中文插件列表 - 绘图（77 个）
+		    </a>
+		</li>
+	        <li class="my-links-of-blogroll-item">
+		    <a href="/archives/aa0d88d7.html" title="Origin 中文插件列表 - 数据分析（140 个）" target="">
+		    Origin 中文插件列表 - 数据分析（140 个）
+		    </a>
+		</li>
+	        <li class="my-links-of-blogroll-item">
+		    <a href="/archives/8238d0d9.html" title="Origin 中文插件列表 - 其他（9 个）" target="">
+		    Origin 中文插件列表 - 其他（9 个）
+		    </a>
+		</li>
+	</ul>
+    </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.yeslu.cn/archives/da105a28.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Chandler-Lu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="这是只兔子">
+      <meta itemprop="description" content="这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Origin 中文插件列表 - 数据处理（12 个） | 这是只兔子">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Origin 中文插件列表 - 数据处理（12 个）
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2024-04-04 12:00:00 / 修改时间：13:49:40" itemprop="dateCreated datePublished" datetime="2024-04-04T12:00:00+08:00">2024-04-04</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Science/" itemprop="url" rel="index"><span itemprop="name">Science</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><ul>
+<li>这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建；</li>
+<li>目录及详细说明请阅读：<a href="https://www.yeslu.cn/archives/78c136de.html">目录</a>；</li>
+<li>本文除已授权单位外禁止转载；</li>
+<li>更新时间：2024-04-04 13:49:40</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="474-Align-Peaks"><a href="#474-Align-Peaks" class="headerlink" title="474 - Align Peaks"></a>474 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=474">Align Peaks</a></h2><blockquote>
+<p>移位，缩放和修剪数据以对齐不同的峰值。<br>Shift, scale and trim data to align various peaks.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-handling/474/alignpeaks_screen_shot7.png!blog_watermark"></p>
+<ul>
+<li>关键词：台词、进来、山峰、频谱、锚</li>
+<li>Keywords: line, enter, peaks, spectrum, anchor</li>
+</ul>
+<h2 id="341-Data-Factory"><a href="#341-Data-Factory" class="headerlink" title="341 - Data Factory"></a>341 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=341">Data Factory</a></h2><blockquote>
+<p>生成随机&#x2F;模式化数据<br>Generate random&#x2F;patterned data</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-handling/341/Data%20Factory.jpg!blog_watermark"></p>
+<ul>
+<li>关键词：专栏、分配、随机的、对话、打开</li>
+<li>Keywords: column, distribution, random, dialog, open</li>
+</ul>
+<h2 id="366-Data-Slicer"><a href="#366-Data-Slicer" class="headerlink" title="366 - Data Slicer"></a>366 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=366">Data Slicer</a></h2><blockquote>
+<p>通过应用过滤器交互式地减少图中的数据。<br>Interactively reduce data in graphs by applying filters.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-handling/366/DataSlicerNewImage.png!blog_watermark"></p>
+<ul>
+<li>关键词：选择、左边、过滤器、图表、柱子</li>
+<li>Keywords: select, left, filter, graph, columns</li>
+</ul>
+<h2 id="268-Distance-Between-Two-Points"><a href="#268-Distance-Between-Two-Points" class="headerlink" title="268 - Distance Between Two Points"></a>268 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=268">Distance Between Two Points</a></h2><blockquote>
+<p>用笛卡尔坐标表示二维图形上两点之间的距离。<br>Find the distance between two points on a 2D graph plotted in Cartesian coordinates.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-handling/268/DistanceBetweenTwoPoints.png!blog_watermark"></p>
+<ul>
+<li>关键词：台词、图表、纽扣、分数、拖</li>
+<li>Keywords: line, graph, button, points, drag</li>
+</ul>
+<h2 id="264-Hysteresis"><a href="#264-Hysteresis" class="headerlink" title="264 - Hysteresis"></a>264 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=264">Hysteresis</a></h2><blockquote>
+<p>为每段滞后数据创建和绘制单独的数据集。<br>Create and plot separate datasets for each segment of hysteresis data.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-handling/264/Hysteresis%20Curve%20Splitter%20Screenshot.png!blog_watermark"></p>
+<ul>
+<li>关键词：片段、输入、一、纽扣、图表</li>
+<li>Keywords: segments, input, one, button, graph</li>
+</ul>
+<h2 id="373-Image-Object-Counter"><a href="#373-Image-Object-Counter" class="headerlink" title="373 - Image Object Counter"></a>373 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=373">Image Object Counter</a></h2><blockquote>
+<p>基于图像的目标识别与测量。<br>Object identification and measurement on image.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-handling/373/ImageObjectCounterScreenshot_2.png!blog_watermark"></p>
+<ul>
+<li>关键词：价值、门槛、过滤器、物品、约束</li>
+<li>Keywords: value, threshold, filter, objects, bound</li>
+</ul>
+<h2 id="288-Onset-Of-Slope"><a href="#288-Onset-Of-Slope" class="headerlink" title="288 - Onset Of Slope"></a>288 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=288">Onset Of Slope</a></h2><blockquote>
+<p>这个应用程序可以用来估计坡度变化的开始在一个数据图。<br>This app can be used to estimate the onset of slope change in a data plot.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-handling/288/Onset_Of_Slope_Screenshot.png!blog_watermark"></p>
+<ul>
+<li>关键词：国王、图表、分数、十字路口、台词</li>
+<li>Keywords: roi, graph, points, intersection, lines</li>
+</ul>
+<h2 id="369-Piecewise-Smooth"><a href="#369-Piecewise-Smooth" class="headerlink" title="369 - Piecewise Smooth"></a>369 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=369">Piecewise Smooth</a></h2><blockquote>
+<p>使用“感兴趣区域”框平滑 XY 数据集的部分。<br>Smooth parts of an XY dataset using a “Region of Interest” box.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-handling/369/PiecewiseSmooth60.png!blog_watermark"></p>
+<ul>
+<li>关键词：国王、平滑、平滑、数据集、纸条</li>
+<li>Keywords: roi, smoothing, smoothed, dataset, note</li>
+</ul>
+<h2 id="667-Project-Manager"><a href="#667-Project-Manager" class="headerlink" title="667 - Project Manager"></a>667 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=667">Project Manager</a></h2><blockquote>
+<p>帮助在当前项目中执行批量操作<br>Help to do bulk operations in the current project</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-handling/667/Project_Manager_scs.png!blog_watermark"></p>
+<ul>
+<li>关键词：柱子、目前、选择、专栏、标签</li>
+<li>Keywords: columns, current, select, column, label</li>
+</ul>
+<h2 id="333-SMILES-to-Image"><a href="#333-SMILES-to-Image" class="headerlink" title="333 - SMILES to Image"></a>333 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=333">SMILES to Image</a></h2><blockquote>
+<p>根据工作表列中包含的 SMILES 或 InChI 字符串生成分子图像。<br>Generate images of molecules based on SMILES or InChI strings contained in a worksheet column.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-handling/333/SMILEStoImage_Screenshot4.png!blog_watermark"></p>
+<ul>
+<li>关键词：微笑、绳子、颜色、影像、英吉</li>
+<li>Keywords: smiles, strings, color, images, inchi</li>
+</ul>
+<h2 id="524-Simple-Spectroscopy"><a href="#524-Simple-Spectroscopy" class="headerlink" title="524 - Simple Spectroscopy"></a>524 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=524">Simple Spectroscopy</a></h2><blockquote>
+<p>通过各种操作操纵光谱。<br>Manipulate spectra through various operations.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-handling/524/simple_spec_screen_shot5.png!blog_watermark"></p>
+<ul>
+<li>关键词：光谱、被选中了、点、分数、射程</li>
+<li>Keywords: spectra, picked, point, points, range</li>
+</ul>
+<h2 id="219-Tafel-Extrapolation"><a href="#219-Tafel-Extrapolation" class="headerlink" title="219 - Tafel Extrapolation"></a>219 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=219">Tafel Extrapolation</a></h2><blockquote>
+<p>使用数据图上的切线估计 Tafel 外推。<br>Estimate Tafel Extrapolation using tangent lines on a data plot.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-handling/219/Tafel_Extrapolation_Screen_Shot.png!blog_watermark"></p>
+<ul>
+<li>关键词：对话、推断、Tafel、阴极、曲线</li>
+<li>Keywords: dialog, extrapolation, tafel, cathodic, curve</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Chandler-Lu
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://www.yeslu.cn/archives/da105a28.html" title="Origin 中文插件列表 - 数据处理（12 个）">https://www.yeslu.cn/archives/da105a28.html</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-ND</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Origin/" rel="tag"># Origin</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/archives/e935a643.html" rel="prev" title="Origin 中文插件列表 - 绘图（77 个）">
+                  <i class="fa fa-angle-left"></i> Origin 中文插件列表 - 绘图（77 个）
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/archives/2bdf2924.html" rel="next" title="Origin 中文插件列表 - 数据连接（28 个）">
+                  Origin 中文插件列表 - 数据连接（28 个） <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">皖ICP备16003997号 </a>
+      <img src="https://img.yeslu.cn/gongan_beian.png" alt=""><a href="https://beian.mps.gov.cn/#/query/webSearch?code=34011102003278" rel="noopener" target="_blank">皖公网安备34011102003278号 </a>
+  </div>
+  <div class="copyright">
+    &copy; 2014 – 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Chandler-Lu</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="/lib/animejs/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="/lib/@fancyapps/ui/dist/fancybox/fancybox.umd.js" integrity="sha256-+2+qOqR8CKoHh/AsVR9k2qaDBKWjYNC2nozhYmv5j9k=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="/lib/hexo-generator-searchdb/dist/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

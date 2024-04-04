@@ -275,7 +275,7 @@ mjx-container[display="true"] + br {
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">45</span>
+          <span class="site-state-item-count">49</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -314,28 +314,28 @@ mjx-container[display="true"] + br {
 	</div>
 	<ul class="links-of-blogroll-list recent-posts-list">
 	        <li class="my-links-of-blogroll-item">
-		    <a href="/archives/6597624a.html" title="Origin 中文插件列表 - 绘图（77个）" target="">
-		    Origin 中文插件列表 - 绘图（77个）
+		    <a href="/archives/2bdf2924.html" title="Origin 中文插件列表 - 数据连接（28 个）" target="">
+		    Origin 中文插件列表 - 数据连接（28 个）
 		    </a>
 		</li>
 	        <li class="my-links-of-blogroll-item">
-		    <a href="/archives/aa0d88d7.html" title="Origin 中文插件列表 - 数据分析（140个）" target="">
-		    Origin 中文插件列表 - 数据分析（140个）
+		    <a href="/archives/da105a28.html" title="Origin 中文插件列表 - 数据处理（12 个）" target="">
+		    Origin 中文插件列表 - 数据处理（12 个）
 		    </a>
 		</li>
 	        <li class="my-links-of-blogroll-item">
-		    <a href="/archives/78c136de.html" title="Origin 插件中文列表（目录）" target="">
-		    Origin 插件中文列表（目录）
+		    <a href="/archives/e935a643.html" title="Origin 中文插件列表 - 绘图（77 个）" target="">
+		    Origin 中文插件列表 - 绘图（77 个）
 		    </a>
 		</li>
 	        <li class="my-links-of-blogroll-item">
-		    <a href="/archives/98f216a2.html" title="Origin 直播公开课" target="">
-		    Origin 直播公开课
+		    <a href="/archives/aa0d88d7.html" title="Origin 中文插件列表 - 数据分析（140 个）" target="">
+		    Origin 中文插件列表 - 数据分析（140 个）
 		    </a>
 		</li>
 	        <li class="my-links-of-blogroll-item">
-		    <a href="/archives/abaee2cb.html" title="解决 Origin 中修改 Copy Page 后的图片不更新" target="">
-		    解决 Origin 中修改 Copy Page 后的图片不更新
+		    <a href="/archives/8238d0d9.html" title="Origin 中文插件列表 - 其他（9 个）" target="">
+		    Origin 中文插件列表 - 其他（9 个）
 		    </a>
 		</li>
 	</ul>
@@ -352,6 +352,375 @@ mjx-container[display="true"] + br {
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.yeslu.cn/archives/ff52424d.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Chandler-Lu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="这是只兔子">
+      <meta itemprop="description" content="这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 这是只兔子">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/archives/ff52424d.html" class="post-title-link" itemprop="url">解决群晖 NTP 自动同步失败</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-08-07 14:51:00" itemprop="dateCreated datePublished" datetime="2022-08-07T14:51:00+08:00">2022-08-07</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-10-19 14:38:49" itemprop="dateModified" datetime="2022-10-19T14:38:49+08:00">2022-10-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Hardware/" itemprop="url" rel="index"><span itemprop="name">Hardware</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>自从群晖（Synology）DSM 某个版本更新后，NTP 自动同步总是提示“无法同步。因为没有网络或网络连接不稳定。请参阅本文以了解详细信息”，而手动同步正常。群晖官方虽然提供了<a target="_blank" rel="noopener" href="https://kb.synology.cn/zh-cn/DSM/tutorial/Troubleshooting_issues_syncing_with_NTP_server">解决方案</a>，但测试后并没有解决问题。通过与群晖技术支持交流，获得了较好的解决方案。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/archives/ff52424d.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.yeslu.cn/archives/9836d17.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Chandler-Lu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="这是只兔子">
+      <meta itemprop="description" content="这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 这是只兔子">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/archives/9836d17.html" class="post-title-link" itemprop="url">Origin 绘制反应能量图</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-06-19 16:53:36" itemprop="dateCreated datePublished" datetime="2022-06-19T16:53:36+08:00">2022-06-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-01-25 10:11:11" itemprop="dateModified" datetime="2024-01-25T10:11:11+08:00">2024-01-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Science/" itemprop="url" rel="index"><span itemprop="name">Science</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>反应能量图（reaction energy diagram）是 DFT 计算中展现化学反应的重要方式，OriginLab 官方也提供了很有意思的<a target="_blank" rel="noopener" href="http://blog.originlab.com/make-energy-diagram-in-origin">方案</a>来绘制这样的路径图。本文将以下图中的一条路径为例，对官方提供的方案进行详细解释和扩展。</p>
+<img src="https://img.yeslu.cn/blog/2022-06/19-1a1f48fcc08abea813bf23917a8dd95d.png" alt="10.1038/s41467-022-29428-9" style="zoom:80%;" />
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/archives/9836d17.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.yeslu.cn/archives/fe0135af.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Chandler-Lu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="这是只兔子">
+      <meta itemprop="description" content="这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 这是只兔子">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/archives/fe0135af.html" class="post-title-link" itemprop="url">存储设备性能对比测试</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-06-14 19:56:21" itemprop="dateCreated datePublished" datetime="2022-06-14T19:56:21+08:00">2022-06-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-02-05 13:11:00" itemprop="dateModified" datetime="2024-02-05T13:11:00+08:00">2024-02-05</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Hardware/" itemprop="url" rel="index"><span itemprop="name">Hardware</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>由于经常使用各类摄影设备，同时在数据存储方面也有一定的需求，本人经常会购买一些存储设备，如 SD、TF、U盘、硬盘等，而市面上存储设备（尤其是SD卡）的读写性能对比相对较少。本文将对自购的存储设备进行性能测试，给想要购买相关硬件的用户提供参考。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/archives/fe0135af.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://www.yeslu.cn/archives/6969f4f4.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Chandler-Lu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="这是只兔子">
+      <meta itemprop="description" content="这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 这是只兔子">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/archives/6969f4f4.html" class="post-title-link" itemprop="url">Origin 配置 nVIDIA 独立显卡及显卡调用异常的处理</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-04-29 15:55:00" itemprop="dateCreated datePublished" datetime="2022-04-29T15:55:00+08:00">2022-04-29</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-08-23 19:22:57" itemprop="dateModified" datetime="2023-08-23T19:22:57+08:00">2023-08-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Science/" itemprop="url" rel="index"><span itemprop="name">Science</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在双显卡（本文中“双显卡”特指核心显卡+ nVIDIA 独立显卡）的设备中，Origin 默认调用核心显卡进行图形处理，这可能会带来一系列问题。同时，由于 nVIDIA 显卡驱动的特性，即使手动指定 Origin 调用独立显卡，也可能出现软件调用显卡错误的情况。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/archives/6969f4f4.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -541,396 +910,8 @@ mjx-container[display="true"] + br {
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.yeslu.cn/archives/30dcf858.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Chandler-Lu">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="这是只兔子">
-      <meta itemprop="description" content="这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 这是只兔子">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/archives/30dcf858.html" class="post-title-link" itemprop="url">获取腾讯云基于 TOTP 的 MFA Token</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2022-01-30 14:34:15" itemprop="dateCreated datePublished" datetime="2022-01-30T14:34:15+08:00">2022-01-30</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-08-23 19:22:05" itemprop="dateModified" datetime="2023-08-23T19:22:05+08:00">2023-08-23</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Development/" itemprop="url" rel="index"><span itemprop="name">Development</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>多因素身份验证（Multi-Factor Authentication, MFA）可以在登录等重要操作中增加一层额外的保护，基于虚拟设备的 MFA 是能产生 6 位数字认证码的应用程序，遵循基于时间的一次性密码 （TOTP）标准（<a target="_blank" rel="noopener" href="https://datatracker.ietf.org/doc/html/rfc6238">RFC 6238</a>）。</p>
-<p>众多知名的 APP，如 Google Authenticator、Microsoft Authenticator、Authy 和一些常见的密码管理器，如 1Password、Bitwarden 等均支持生成一次性密码。然而，腾讯云并不直接提供用于生成一次性密码的 Token，而是将 MFA 其内置于“腾讯云助手”微信小程序中，这给实际操作带来了不便。</p>
-<p>文本通过抓包程序抓取真实 Token，从而优化腾讯云 MFA 验证的实际体验。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/archives/30dcf858.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.yeslu.cn/archives/1005f72b.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Chandler-Lu">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="这是只兔子">
-      <meta itemprop="description" content="这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 这是只兔子">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/archives/1005f72b.html" class="post-title-link" itemprop="url">Nginx 反向代理 Sci-Hub</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2022-01-17 21:37:38" itemprop="dateCreated datePublished" datetime="2022-01-17T21:37:38+08:00">2022-01-17</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-08-23 19:23:39" itemprop="dateModified" datetime="2023-08-23T19:23:39+08:00">2023-08-23</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Develop/" itemprop="url" rel="index"><span itemprop="name">Develop</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><ul>
-<li>Sci-Hub 是科研民工重要的学术工具，但是 Sci-Hub 特殊的情况导致其服务器的网络并不是很好，为了解决此问题，自建镜像站点以优化 Sci-Hub 的访问是十分有意义的；</li>
-<li>本教程基于 Ubuntu 18.04.6 LTS 制作，在阅读本教程前，<strong>希望您已具备 Linux 和 Nginx 相关知识</strong>。
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/archives/1005f72b.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.yeslu.cn/archives/bd3ebe3.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Chandler-Lu">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="这是只兔子">
-      <meta itemprop="description" content="这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 这是只兔子">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/archives/bd3ebe3.html" class="post-title-link" itemprop="url">ESXI 和 OpenWrt 避坑指南</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-08-12 11:36:55" itemprop="dateCreated datePublished" datetime="2021-08-12T11:36:55+08:00">2021-08-12</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2022-04-09 09:32:57" itemprop="dateModified" datetime="2022-04-09T09:32:57+08:00">2022-04-09</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/OS/" itemprop="url" rel="index"><span itemprop="name">OS</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="软硬件"><a href="#软硬件" class="headerlink" title="软硬件"></a>软硬件</h2><ul>
-<li>CPU: <a target="_blank" rel="noopener" href="https://www.intel.com/content/www/us/en/products/sku/197305/intel-celeron-processor-j4125-4m-cache-up-to-2-70-ghz/specifications.html">Intel J4125</a></li>
-<li>网卡: <a target="_blank" rel="noopener" href="https://www.intel.com/content/www/us/en/products/details/ethernet/gigabit-controllers/i211-controllers/downloads.html">Intel I211</a> * 4</li>
-<li>内存: 8G</li>
-<li>硬盘: 32G</li>
-<li>ESXI 6.7u3</li>
-</ul>
-<h2 id="ESXI-配置"><a href="#ESXI-配置" class="headerlink" title="ESXI 配置"></a>ESXI 配置</h2><h3 id="修改-ESXI-主机名称"><a href="#修改-ESXI-主机名称" class="headerlink" title="修改 ESXI 主机名称"></a>修改 ESXI 主机名称</h3><blockquote>
-<p>本节参考: <a target="_blank" rel="noopener" href="https://kb.vmware.com/s/article/1010821?lang=zh_CN">https://kb.vmware.com/s/article/1010821?lang=zh_CN</a></p>
-</blockquote>
-<ol>
-<li>ssh 连入 ESXI；</li>
-<li>运行 <code>esxcfg-advcfg -s HOSTNAME /Misc/hostname</code>，其中，大写 HOSTNAME 改写为你需要修改的主机名；</li>
-<li>重启 ESXI。</li>
-</ol>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/archives/bd3ebe3.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.yeslu.cn/archives/9b841902.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Chandler-Lu">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="这是只兔子">
-      <meta itemprop="description" content="这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 这是只兔子">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/archives/9b841902.html" class="post-title-link" itemprop="url">我和我的软件们：日记（02）</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2020-03-28 21:51:45" itemprop="dateCreated datePublished" datetime="2020-03-28T21:51:45+08:00">2020-03-28</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-08-23 19:21:54" itemprop="dateModified" datetime="2023-08-23T19:21:54+08:00">2023-08-23</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Software/" itemprop="url" rel="index"><span itemprop="name">Software</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本期来说一说日记软件。</p>
-<p>真正意义上的日记软件，我在这里只推荐一个，所以本期主要并不是来推荐软件，而是想说说我对这种相对比较<strong>小众</strong>和<strong>专有功能</strong>的软件的看法。</p>
-<h2 id="日记软件需要什么"><a href="#日记软件需要什么" class="headerlink" title="日记软件需要什么"></a>日记软件需要什么</h2><h3 id="通用格式导入导出"><a href="#通用格式导入导出" class="headerlink" title="通用格式导入导出"></a>通用格式导入导出</h3><p>什么是通用格式呢？可以简单理解为这个格式中所包含的内容可以被主流软件读取，里面所包含的内容可以被人类理解。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/archives/9b841902.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
-    <a class="extend prev" rel="prev" title="上一页" aria-label="上一页" href="/page/3/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/5/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" title="上一页" aria-label="上一页" href="/page/3/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/5/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 </div>

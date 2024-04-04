@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="p3nrVMZBUOfTth91mo4SrSJ3kcDao-5L0turXxUGhUU">
+  <meta name="msvalidate.01" content="EEDECC1EA4AE341CC57365E075EBC8B6">
+  <meta name="baidu-site-verification" content="Udzuh3od3qSnQYUO">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="/lib/@fortawesome/fontawesome-free/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous">
+  <link rel="stylesheet" href="/lib/animate.css/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="/lib/@fancyapps/ui/dist/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"www.yeslu.cn","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.19.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="说明 这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建； 目录及详细说明请阅读：目录； 本文除已授权单位外禁止转载； 更新时间：2024-04-04 13:49:40">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Origin 中文插件列表 - 导入导出（33 个）">
+<meta property="og:url" content="https://www.yeslu.cn/archives/26810621.html">
+<meta property="og:site_name" content="这是只兔子">
+<meta property="og:description" content="说明 这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建； 目录及详细说明请阅读：目录； 本文除已授权单位外禁止转载； 更新时间：2024-04-04 13:49:40">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/607/ExportMultipleWorksheetsScreenshot.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/892/GeoTIFF_Export_scs.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/469/GraphPublisherScreenShot.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/370/MovieCreator.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/409/PE2WEScreenCapture2.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/363/notesToWordFeature.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/488/SendToOneNoteScreenshot.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/492/SendGraphsToPdf_Screenshot1.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/576/VideoExtractor1.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/287/AgilentMsScreenshot3.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/577/Baidu_Map_Import_Screenshot.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/527/bes3t%20screenshot.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/436/CFIScreenShot3.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/344/Google-Map-Import-Screenshot.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/269/HDF5%20Browser%20Screenshot%201.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/463/C3D%20Animation.gif!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/337/ImportChemDataScreenshot3.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/405/ImpDICOM_organizer.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/437/ImportFITS_Screenshot.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/394/ImportFilesFromFolder.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/391/ImportGamry%20Screenshot.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/468/LSM%20Screenshot.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/550/Import_NMR_Data_Screenshot.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/360/NanoscopeLargeIcon.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/587/Extract_PDF_Tables_Screenshot.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/358/Import%20PLEXONs%20PLX%20Screenshot.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/443/IMPORT_PNRF_SCREENSHOT.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/285/Import%20Shapefile%20Screenshot%20v1.1.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/294/Imp_WFM_FE_Img.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/435/ImportVAMASScreenshot.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/1011/JMP_Connector_Screenshot.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/438/OPJ%20Packer%20Feature.png!blog_watermark">
+<meta property="og:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/625/Tianditu-Map-Import-Screenshot.png!blog_watermark">
+<meta property="article:published_time" content="2024-04-04T04:00:00.000Z">
+<meta property="article:modified_time" content="2024-04-04T05:49:40.689Z">
+<meta property="article:author" content="Chandler-Lu">
+<meta property="article:tag" content="Origin">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/607/ExportMultipleWorksheetsScreenshot.png!blog_watermark">
+
+
+<link rel="canonical" href="https://www.yeslu.cn/archives/26810621.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":"","permalink":"https://www.yeslu.cn/archives/26810621.html","path":"archives/26810621.html","title":"Origin 中文插件列表 - 导入导出（33 个）"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Origin 中文插件列表 - 导入导出（33 个） | 这是只兔子</title>
+  
+
+
+
+
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "i3tut7r0p1");
+</script>
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">这是只兔子</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">This is a Rabbit.</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%B4%E6%98%8E"><span class="nav-number">1.</span> <span class="nav-text">说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%BC%E5%87%BA"><span class="nav-number">2.</span> <span class="nav-text">导出</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#607-Export-Multiple-Worksheets"><span class="nav-number">2.1.</span> <span class="nav-text">607 - Export Multiple Worksheets</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#892-GeoTIFF-Export"><span class="nav-number">2.2.</span> <span class="nav-text">892 - GeoTIFF Export</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#469-Graph-Publisher"><span class="nav-number">2.3.</span> <span class="nav-text">469 - Graph Publisher</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#370-Movie-Creator"><span class="nav-number">2.4.</span> <span class="nav-text">370 - Movie Creator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#409-PE-to-WE"><span class="nav-number">2.5.</span> <span class="nav-text">409 - PE to WE</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#363-Save-Notes-To-Word"><span class="nav-number">2.6.</span> <span class="nav-text">363 - Save Notes To Word</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#488-Send-Graphs-to-OneNote"><span class="nav-number">2.7.</span> <span class="nav-text">488 - Send Graphs to OneNote</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#492-Send-Graphs-to-PDF"><span class="nav-number">2.8.</span> <span class="nav-text">492 - Send Graphs to PDF</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#576-Video-Data-Extractor"><span class="nav-number">2.9.</span> <span class="nav-text">576 - Video Data Extractor</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%BC%E5%85%A5"><span class="nav-number">3.</span> <span class="nav-text">导入</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#287-Agilent-MS-Reader"><span class="nav-number">3.1.</span> <span class="nav-text">287 - Agilent MS Reader</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#577-Baidu-Map-Import"><span class="nav-number">3.2.</span> <span class="nav-text">577 - Baidu Map Import</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#527-Bruker-BES3T-files-import"><span class="nav-number">3.3.</span> <span class="nav-text">527 - Bruker BES3T files import</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#436-Clone-Folder-Import"><span class="nav-number">3.4.</span> <span class="nav-text">436 - Clone Folder Import</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#344-Google-Map-Import"><span class="nav-number">3.5.</span> <span class="nav-text">344 - Google Map Import</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#269-HDF5-Browser"><span class="nav-number">3.6.</span> <span class="nav-text">269 - HDF5 Browser</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#463-Import-C3D"><span class="nav-number">3.7.</span> <span class="nav-text">463 - Import C3D</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#337-Import-Chem-Data"><span class="nav-number">3.8.</span> <span class="nav-text">337 - Import Chem Data</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#405-Import-DICOM"><span class="nav-number">3.9.</span> <span class="nav-text">405 - Import DICOM</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#437-Import-FITS"><span class="nav-number">3.10.</span> <span class="nav-text">437 - Import FITS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#394-Import-Files-from-a-Folder"><span class="nav-number">3.11.</span> <span class="nav-text">394 - Import Files from a Folder</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#391-Import-Gamry-Voltammetry-Files"><span class="nav-number">3.12.</span> <span class="nav-text">391 - Import Gamry Voltammetry Files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#468-Import-LSM"><span class="nav-number">3.13.</span> <span class="nav-text">468 - Import LSM</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#550-Import-NMR-Data"><span class="nav-number">3.14.</span> <span class="nav-text">550 - Import NMR Data</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#360-Import-NanoScope"><span class="nav-number">3.15.</span> <span class="nav-text">360 - Import NanoScope</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#587-Import-PDF-Tables"><span class="nav-number">3.16.</span> <span class="nav-text">587 - Import PDF Tables</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#358-Import-PLEXON%E2%80%99s-PLX"><span class="nav-number">3.17.</span> <span class="nav-text">358 - Import PLEXON’s PLX</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#443-Import-PNRF"><span class="nav-number">3.18.</span> <span class="nav-text">443 - Import PNRF</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#285-Import-Shapefile"><span class="nav-number">3.19.</span> <span class="nav-text">285 - Import Shapefile</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#294-Import-Tektronix-WFM-Files"><span class="nav-number">3.20.</span> <span class="nav-text">294 - Import Tektronix WFM Files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#435-Import-VAMAS-Data"><span class="nav-number">3.21.</span> <span class="nav-text">435 - Import VAMAS Data</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1011-JMP-Connector"><span class="nav-number">3.22.</span> <span class="nav-text">1011 - JMP Connector</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#438-OPJ-Packer"><span class="nav-number">3.23.</span> <span class="nav-text">438 - OPJ Packer</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#625-Tianditu-Map-Import"><span class="nav-number">3.24.</span> <span class="nav-text">625 - Tianditu Map Import</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Chandler-Lu"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Chandler-Lu</p>
+  <div class="site-description" itemprop="description">这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">49</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="mailto:trlu.develop@outlook.com" title="E-Mail → mailto:trlu.develop@outlook.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/Chandler-Lu" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Chandler-Lu" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/1908825" title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;1908825" rel="noopener me" target="_blank"><i class="fa fa-bold fa-fw"></i>Bilibili</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.cndzq.com/bbs/home.php?mod=space&uid=138196" title="CNDZQ → https:&#x2F;&#x2F;www.cndzq.com&#x2F;bbs&#x2F;home.php?mod&#x3D;space&amp;uid&#x3D;138196" rel="noopener me" target="_blank"><i class="fa fa-music fa-fw"></i>CNDZQ</a>
+      </span>
+  </div>
+<!-- recent posts -->
+    <br />
+    <div class="links-of-blogroll motion-element links-of-blogroll-block">
+        <div class="links-of-blogroll-title recent-posts-title">
+	    <i class="fa fa-history " aria-hidden="true"></i>
+            近期文章
+	</div>
+	<ul class="links-of-blogroll-list recent-posts-list">
+	        <li class="my-links-of-blogroll-item">
+		    <a href="/archives/2bdf2924.html" title="Origin 中文插件列表 - 数据连接（28 个）" target="">
+		    Origin 中文插件列表 - 数据连接（28 个）
+		    </a>
+		</li>
+	        <li class="my-links-of-blogroll-item">
+		    <a href="/archives/da105a28.html" title="Origin 中文插件列表 - 数据处理（12 个）" target="">
+		    Origin 中文插件列表 - 数据处理（12 个）
+		    </a>
+		</li>
+	        <li class="my-links-of-blogroll-item">
+		    <a href="/archives/e935a643.html" title="Origin 中文插件列表 - 绘图（77 个）" target="">
+		    Origin 中文插件列表 - 绘图（77 个）
+		    </a>
+		</li>
+	        <li class="my-links-of-blogroll-item">
+		    <a href="/archives/aa0d88d7.html" title="Origin 中文插件列表 - 数据分析（140 个）" target="">
+		    Origin 中文插件列表 - 数据分析（140 个）
+		    </a>
+		</li>
+	        <li class="my-links-of-blogroll-item">
+		    <a href="/archives/8238d0d9.html" title="Origin 中文插件列表 - 其他（9 个）" target="">
+		    Origin 中文插件列表 - 其他（9 个）
+		    </a>
+		</li>
+	</ul>
+    </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.yeslu.cn/archives/26810621.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Chandler-Lu">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="这是只兔子">
+      <meta itemprop="description" content="这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Origin 中文插件列表 - 导入导出（33 个） | 这是只兔子">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Origin 中文插件列表 - 导入导出（33 个）
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2024-04-04 12:00:00 / 修改时间：13:49:40" itemprop="dateCreated datePublished" datetime="2024-04-04T12:00:00+08:00">2024-04-04</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Science/" itemprop="url" rel="index"><span itemprop="name">Science</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><ul>
+<li>这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建；</li>
+<li>目录及详细说明请阅读：<a href="https://www.yeslu.cn/archives/78c136de.html">目录</a>；</li>
+<li>本文除已授权单位外禁止转载；</li>
+<li>更新时间：2024-04-04 13:49:40</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="导出"><a href="#导出" class="headerlink" title="导出"></a>导出</h2><h3 id="607-Export-Multiple-Worksheets"><a href="#607-Export-Multiple-Worksheets" class="headerlink" title="607 - Export Multiple Worksheets"></a>607 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=607">Export Multiple Worksheets</a></h3><blockquote>
+<p>将多个工作表导出到多个 ASCII 文件中。<br>Export multiple worksheets into multiple ASCII files.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/607/ExportMultipleWorksheetsScreenshot.png!blog_watermark"></p>
+<ul>
+<li>关键词：工作表、工作表、项目、激活、文件</li>
+<li>Keywords: worksheet, worksheets, project, active, files</li>
+</ul>
+<h3 id="892-GeoTIFF-Export"><a href="#892-GeoTIFF-Export" class="headerlink" title="892 - GeoTIFF Export"></a>892 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=892">GeoTIFF Export</a></h3><blockquote>
+<p>将矩阵导出为 GeoTIFF 格式文件<br>Export matrix as GeoTIFF format file</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/892/GeoTIFF_Export_scs.png!blog_watermark"></p>
+<ul>
+<li>关键词：矩阵、床单、输入、出口、脚</li>
+<li>Keywords: matrix, sheet, input, export, foot</li>
+</ul>
+<h3 id="469-Graph-Publisher"><a href="#469-Graph-Publisher" class="headerlink" title="469 - Graph Publisher"></a>469 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=469">Graph Publisher</a></h3><blockquote>
+<p>导出图表并准备发布图表的简化工具。<br>A simplified tool to export graphs and prepare a graph for publication.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/469/GraphPublisherScreenShot.png!blog_watermark"></p>
+<ul>
+<li>关键词：图表、日记、出口、正在查、对话</li>
+<li>Keywords: graph, journal, export, checking, dialog</li>
+</ul>
+<h3 id="370-Movie-Creator"><a href="#370-Movie-Creator" class="headerlink" title="370 - Movie Creator"></a>370 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=370">Movie Creator</a></h3><blockquote>
+<p>通过更改绘制的数据为图形创建视频<br>Create video for a graph by changing plotted data</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/370/MovieCreator.png!blog_watermark"></p>
+<ul>
+<li>关键词：图表、视频、阴谋、选择、时间</li>
+<li>Keywords: graph, video, plot, select, time</li>
+</ul>
+<h3 id="409-PE-to-WE"><a href="#409-PE-to-WE" class="headerlink" title="409 - PE to WE"></a>409 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=409">PE to WE</a></h3><blockquote>
+<p>应用程序打开或保存 OGG (U)、 OGW (U)和 OGM (U)文件，同时复制源文件夹结构。<br>App opens or saves OGG(U), OGW(U), and OGM(U) files, while replicating the source folder structure.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/409/PE2WEScreenCapture2.png!blog_watermark"></p>
+<ul>
+<li>关键词：项目、文件、系统、探险家、拯救</li>
+<li>Keywords: project, files, system, explorer, save</li>
+</ul>
+<h3 id="363-Save-Notes-To-Word"><a href="#363-Save-Notes-To-Word" class="headerlink" title="363 - Save Notes To Word"></a>363 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=363">Save Notes To Word</a></h3><blockquote>
+<p>将 OriginNotes 窗口内容保存到 Word 文件中<br>Save Origin Notes window contents to a Word file</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/363/notesToWordFeature.png!blog_watermark"></p>
+<ul>
+<li>关键词：笔记、激活、拯救、字、滴答</li>
+<li>Keywords: notes, active, save, word, clickokto</li>
+</ul>
+<h3 id="488-Send-Graphs-to-OneNote"><a href="#488-Send-Graphs-to-OneNote" class="headerlink" title="488 - Send Graphs to OneNote"></a>488 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=488">Send Graphs to OneNote</a></h3><blockquote>
+<p>向 MicrosoftOfficeOneNote 发送图表。<br>Send graphs from Origin to Microsoft Office OneNote.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/488/SendToOneNoteScreenshot.png!blog_watermark"></p>
+<ul>
+<li>关键词：单音符、办公室、图表、呼叫、微软</li>
+<li>Keywords: onenote, office, graphs, page, microsoft</li>
+</ul>
+<h3 id="492-Send-Graphs-to-PDF"><a href="#492-Send-Graphs-to-PDF" class="headerlink" title="492 - Send Graphs to PDF"></a>492 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=492">Send Graphs to PDF</a></h3><blockquote>
+<p>将图形发送到具有指定页面大小的多个 PDF 页面。<br>Send Graphs to multiple PDF pages with specified page size.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/492/SendGraphsToPdf_Screenshot1.png!blog_watermark"></p>
+<ul>
+<li>关键词：选择、Pdf、图表、出现、发射</li>
+<li>Keywords: select, pdf, graphs, appear, launch</li>
+</ul>
+<h3 id="576-Video-Data-Extractor"><a href="#576-Video-Data-Extractor" class="headerlink" title="576 - Video Data Extractor"></a>576 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=576">Video Data Extractor</a></h3><blockquote>
+<p>从视频文件帧中提取数据点。<br>Extract data points from frames of video file.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/576/VideoExtractor1.png!blog_watermark"></p>
+<ul>
+<li>关键词：相框、框架、规模、开始、模式</li>
+<li>Keywords: frame, frames, scale, start, mode</li>
+</ul>
+<h2 id="导入"><a href="#导入" class="headerlink" title="导入"></a>导入</h2><h3 id="287-Agilent-MS-Reader"><a href="#287-Agilent-MS-Reader" class="headerlink" title="287 - Agilent MS Reader"></a>287 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=287">Agilent MS Reader</a></h3><blockquote>
+<p>这个应用程序从安捷伦大规模规格数据文件导入数据(。MS 分机)。此外，它还创建了一个交互式图形来探索数据。<br>This app imports data from Agilent mass spec data files (.MS extension). In addition it creates an interactive graph to explore the data.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/287/AgilentMsScreenshot3.png!blog_watermark"></p>
+<ul>
+<li>关键词：女士、质量、规格、阴谋、图表</li>
+<li>Keywords: ms, mass, spec, plot, graph</li>
+</ul>
+<h3 id="577-Baidu-Map-Import"><a href="#577-Baidu-Map-Import" class="headerlink" title="577 - Baidu Map Import"></a>577 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=577">Baidu Map Import</a></h3><blockquote>
+<p>将百度地图图像载入起源地图。<br>Load Map image from Baidu Map into Origin.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/577/Baidu_Map_Import_Screenshot.png!blog_watermark"></p>
+<ul>
+<li>关键词：地图、图表、百度、进口、对话</li>
+<li>Keywords: map, graph, thebaidu, import, dialog</li>
+</ul>
+<h3 id="527-Bruker-BES3T-files-import"><a href="#527-Bruker-BES3T-files-import" class="headerlink" title="527 - Bruker BES3T files import"></a>527 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=527">Bruker BES3T files import</a></h3><blockquote>
+<p>导入 BRUKER BES3T 格式的文件。<br>Import files in BRUKER BES3T format.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/527/bes3t%20screenshot.png!blog_watermark"></p>
+<ul>
+<li>关键词：上、工作空间、工作表、bes3t、放下</li>
+<li>Keywords: onto, workspace, worksheet, bes3t, drop</li>
+</ul>
+<h3 id="436-Clone-Folder-Import"><a href="#436-Clone-Folder-Import" class="headerlink" title="436 - Clone Folder Import"></a>436 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=436">Clone Folder Import</a></h3><blockquote>
+<p>将一个或多个文件导入到活动 ProjectExplorer 文件夹的克隆副本中。<br>Import one or more files into cloned copies of the active Project Explorer folder.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/436/CFIScreenShot3.png!blog_watermark"></p>
+<ul>
+<li>关键词：模板、书、项目、矩阵、进口</li>
+<li>Keywords: template, book, project, matrix, import</li>
+</ul>
+<h3 id="344-Google-Map-Import"><a href="#344-Google-Map-Import" class="headerlink" title="344 - Google Map Import"></a>344 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=344">Google Map Import</a></h3><blockquote>
+<p>从谷歌地图加载地图图像到起源。<br>Load map image from Google Map into Origin.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/344/Google-Map-Import-Screenshot.png!blog_watermark"></p>
+<ul>
+<li>关键词：地图、图表、分层、对话、进口</li>
+<li>Keywords: map, graph, layer, dialog, import</li>
+</ul>
+<h3 id="269-HDF5-Browser"><a href="#269-HDF5-Browser" class="headerlink" title="269 - HDF5 Browser"></a>269 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=269">HDF5 Browser</a></h3><blockquote>
+<p>浏览 HDF5 文件的内容并加载所需的数据。<br>Browse contents of an HDF5 file and load desired data.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/269/HDF5%20Browser%20Screenshot%201.png!blog_watermark"></p>
+<ul>
+<li>关键词：512、加载、选择、数据集、专栏</li>
+<li>Keywords: 512, load, select, dataset, column</li>
+</ul>
+<h3 id="463-Import-C3D"><a href="#463-Import-C3D" class="headerlink" title="463 - Import C3D"></a>463 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=463">Import C3D</a></h3><blockquote>
+<p>导入 C3D 格式的三维生物力学数据。<br>Import 3D Biomechanics Data in C3D Format.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/463/C3D%20Animation.gif!blog_watermark"></p>
+<ul>
+<li>关键词：C3d、项目、模拟信号、动画、工作表</li>
+<li>Keywords: c3d, project, analog, animation, worksheets</li>
+</ul>
+<h3 id="337-Import-Chem-Data"><a href="#337-Import-Chem-Data" class="headerlink" title="337 - Import Chem Data"></a>337 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=337">Import Chem Data</a></h3><blockquote>
+<p>从各种化学数据文件类型导入数据。需要事先安装 SMILES 到图像应用程序。<br>Import data from various chemical data file types. Requires prior installation of the SMILES to Image App.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/337/ImportChemDataScreenshot3.png!blog_watermark"></p>
+<ul>
+<li>关键词：文件、Sdf、田野、进口的、进口</li>
+<li>Keywords: files, sdf, fields, imported, import</li>
+</ul>
+<h3 id="405-Import-DICOM"><a href="#405-Import-DICOM" class="headerlink" title="405 - Import DICOM"></a>405 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=405">Import DICOM</a></h3><blockquote>
+<p>导入 DICOM 图像文件。<br>Import DICOM Image files.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/405/ImpDICOM_organizer.png!blog_watermark"></p>
+<ul>
+<li>关键词：组织者、新的、窗户、面板、形象</li>
+<li>Keywords: organizer, new, window, panel, image</li>
+</ul>
+<h3 id="437-Import-FITS"><a href="#437-Import-FITS" class="headerlink" title="437 - Import FITS"></a>437 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=437">Import FITS</a></h3><blockquote>
+<p>导入 FITS (柔性图像传输系统)数据。<br>Import FITS (Flexible Image Transport System) data.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/437/ImportFITS_Screenshot.png!blog_watermark"></p>
+<ul>
+<li>关键词：上膛了、专栏、工作表、符合、装弹</li>
+<li>Keywords: loaded, column, worksheet, fits, load</li>
+</ul>
+<h3 id="394-Import-Files-from-a-Folder"><a href="#394-Import-Files-from-a-Folder" class="headerlink" title="394 - Import Files from a Folder"></a>394 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=394">Import Files from a Folder</a></h3><blockquote>
+<p>导入扩展名相同的文件，在 OriginProjectExplorer 中创建结构相同的子文件夹，并执行批处理。<br>Import files with same extension, create subfolder with same structure in Origin Project Explorer, and perform batch processing.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/394/ImportFilesFromFolder.png!blog_watermark"></p>
+<ul>
+<li>关键词：进口、文件、激活、设定、模式</li>
+<li>Keywords: import, files, active, settings, mode</li>
+</ul>
+<h3 id="391-Import-Gamry-Voltammetry-Files"><a href="#391-Import-Gamry-Voltammetry-Files" class="headerlink" title="391 - Import Gamry Voltammetry Files"></a>391 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=391">Import Gamry Voltammetry Files</a></h3><blockquote>
+<p>从 Gamry 导入伏安数据 xlsx 和. DTA 文件。<br>Import Voltammetry data from Gamry .xlsx and .DTA files.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/391/ImportGamry%20Screenshot.png!blog_watermark"></p>
+<ul>
+<li>关键词：床单、具体说明、DTA、谢谢、对话</li>
+<li>Keywords: sheet, specify, dta, xlsx, dialog</li>
+</ul>
+<h3 id="468-Import-LSM"><a href="#468-Import-LSM" class="headerlink" title="468 - Import LSM"></a>468 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=468">Import LSM</a></h3><blockquote>
+<p>导入 LSM 映像<br>Import LSM images</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/468/LSM%20Screenshot.png!blog_watermark"></p>
+<ul>
+<li>关键词：矩阵、Lsm、影像、文件、上</li>
+<li>Keywords: matrix, lsm, images, files, onto</li>
+</ul>
+<h3 id="550-Import-NMR-Data"><a href="#550-Import-NMR-Data" class="headerlink" title="550 - Import NMR Data"></a>550 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=550">Import NMR Data</a></h3><blockquote>
+<p>导入不同格式的 NMR 数据。<br>Import NMR data in different formats.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/550/Import_NMR_Data_Screenshot.png!blog_watermark"></p>
+<ul>
+<li>关键词：NMR、上旋球、处理完毕、Fid、位置</li>
+<li>Keywords: nmr, topspin, processed, fid, located</li>
+</ul>
+<h3 id="360-Import-NanoScope"><a href="#360-Import-NanoScope" class="headerlink" title="360 - Import NanoScope"></a>360 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=360">Import NanoScope</a></h3><blockquote>
+<p>导入 Bruker NanoScope 文件<br>Import Bruker NanoScope files</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/360/NanoscopeLargeIcon.png!blog_watermark"></p>
+<ul>
+<li>关键词：纳米显微镜、窗户、出现、应用程序、工作表</li>
+<li>Keywords: nanoscope, window, appear, apps, worksheet</li>
+</ul>
+<h3 id="587-Import-PDF-Tables"><a href="#587-Import-PDF-Tables" class="headerlink" title="587 - Import PDF Tables"></a>587 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=587">Import PDF Tables</a></h3><blockquote>
+<p>输入 PDF 表格<br>Import PDF Tables</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/587/Extract_PDF_Tables_Screenshot.png!blog_watermark"></p>
+<ul>
+<li>关键词：特征、Pdf、应用程序、有空、求你了</li>
+<li>Keywords: features, pdf, apps, available, please</li>
+</ul>
+<h3 id="358-Import-PLEXON’s-PLX"><a href="#358-Import-PLEXON’s-PLX" class="headerlink" title="358 - Import PLEXON’s PLX"></a>358 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=358">Import PLEXON’s PLX</a></h3><blockquote>
+<p>从 PLX 文件导入数据。<br>Import data from a PLX file.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/358/Import%20PLEXONs%20PLX%20Screenshot.png!blog_watermark"></p>
+<ul>
+<li>关键词：Nid、请、进口、书1、单张1</li>
+<li>Keywords: nid, plx, import, book1, sheet1</li>
+</ul>
+<h3 id="443-Import-PNRF"><a href="#443-Import-PNRF" class="headerlink" title="443 - Import PNRF"></a>443 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=443">Import PNRF</a></h3><blockquote>
+<p>导入 HBM PNRF 格式的数据。<br>Import data in HBM PNRF format.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/443/IMPORT_PNRF_SCREENSHOT.png!blog_watermark"></p>
+<ul>
+<li>关键词：预览、时间、UTC、选择、Pnrf</li>
+<li>Keywords: preview, time, utc, select, pnrf</li>
+</ul>
+<h3 id="285-Import-Shapefile"><a href="#285-Import-Shapefile" class="headerlink" title="285 - Import Shapefile"></a>285 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=285">Import Shapefile</a></h3><blockquote>
+<p>根据 Shapefile 数据生成“起源”地图。<br>Generate maps in Origin from Shapefile data.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/285/Import%20Shapefile%20Screenshot%20v1.1.png!blog_watermark"></p>
+<ul>
+<li>关键词：Shapefile、图表、多边形、轴、规模</li>
+<li>Keywords: shapefile, graph, polygons, axis, scale</li>
+</ul>
+<h3 id="294-Import-Tektronix-WFM-Files"><a href="#294-Import-Tektronix-WFM-Files" class="headerlink" title="294 - Import Tektronix WFM Files"></a>294 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=294">Import Tektronix WFM Files</a></h3><blockquote>
+<p>从 Tektronix.wfm 文件导入 YT 数据。<br>Import YT data from Tektronix .wfm files.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/294/Imp_WFM_FE_Img.png!blog_watermark"></p>
+<ul>
+<li>关键词：Wfm、Tektronix、进口、出现、系列</li>
+<li>Keywords: wfm, tektronix, theimport, appear, series</li>
+</ul>
+<h3 id="435-Import-VAMAS-Data"><a href="#435-Import-VAMAS-Data" class="headerlink" title="435 - Import VAMAS Data"></a>435 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=435">Import VAMAS Data</a></h3><blockquote>
+<p>导入 VAMAS 格式的数据。<br>Import data in VAMAS format.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/435/ImportVAMASScreenshot.png!blog_watermark"></p>
+<ul>
+<li>关键词：走吧、出现、clickok、拖、放下</li>
+<li>Keywords: vamas, appear, clickok, drag, drop</li>
+</ul>
+<h3 id="1011-JMP-Connector"><a href="#1011-JMP-Connector" class="headerlink" title="1011 - JMP Connector"></a>1011 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=1011">JMP Connector</a></h3><blockquote>
+<p>连接到 JMP 表(* . JMP)文件。<br>Connect to JMP table (*.jmp) files.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/1011/JMP_Connector_Screenshot.png!blog_watermark"></p>
+<ul>
+<li>关键词：连接器、连接、书、项目、点击数据</li>
+<li>Keywords: connector, connect, book, project, clickdata</li>
+</ul>
+<h3 id="438-OPJ-Packer"><a href="#438-OPJ-Packer" class="headerlink" title="438 - OPJ Packer"></a>438 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=438">OPJ Packer</a></h3><blockquote>
+<p>打包项目文件，包括拟合函数和模板<br>Pack project file including fitting functions and templates</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/438/OPJ%20Packer%20Feature.png!blog_watermark"></p>
+<ul>
+<li>关键词：Opx、项目、模板、功能、很合适</li>
+<li>Keywords: opx, project, templates, functions, fitting</li>
+</ul>
+<h3 id="625-Tianditu-Map-Import"><a href="#625-Tianditu-Map-Import" class="headerlink" title="625 - Tianditu Map Import"></a>625 - <a target="_blank" rel="noopener" href="https://www.originlab.com/fileExchange/details.aspx?fid=625">Tianditu Map Import</a></h3><blockquote>
+<p>从 Tianditu 到起源地的装载地图图像。<br>Load map image from Tianditu into Origin.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/625/Tianditu-Map-Import-Screenshot.png!blog_watermark"></p>
+<ul>
+<li>关键词：纽扣、设计、帐户、副院长、使用</li>
+<li>Keywords: button, setup, account, prior, using</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Chandler-Lu
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://www.yeslu.cn/archives/26810621.html" title="Origin 中文插件列表 - 导入导出（33 个）">https://www.yeslu.cn/archives/26810621.html</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-ND</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Origin/" rel="tag"># Origin</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/archives/78c136de.html" rel="prev" title="Origin 中文插件列表（目录）">
+                  <i class="fa fa-angle-left"></i> Origin 中文插件列表（目录）
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/archives/8238d0d9.html" rel="next" title="Origin 中文插件列表 - 其他（9 个）">
+                  Origin 中文插件列表 - 其他（9 个） <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">皖ICP备16003997号 </a>
+      <img src="https://img.yeslu.cn/gongan_beian.png" alt=""><a href="https://beian.mps.gov.cn/#/query/webSearch?code=34011102003278" rel="noopener" target="_blank">皖公网安备34011102003278号 </a>
+  </div>
+  <div class="copyright">
+    &copy; 2014 – 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Chandler-Lu</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="/lib/animejs/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="/lib/@fancyapps/ui/dist/fancybox/fancybox.umd.js" integrity="sha256-+2+qOqR8CKoHh/AsVR9k2qaDBKWjYNC2nozhYmv5j9k=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="/lib/hexo-generator-searchdb/dist/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
