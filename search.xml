@@ -6197,7 +6197,7 @@
 
 <span id="more"></span>
 
-<h2 id="语言切换"><a href="#语言切换" class="headerlink" title="语言切换"></a>语言切换</h2><p>Origin 切换中文需要<strong>软件已经激活、具备中国大陆的授权（例如国内的学习版 (Learning Edition) ）且在中国大陆激活使用</strong>。</p>
+<h2 id="语言切换"><a href="#语言切换" class="headerlink" title="语言切换"></a>语言切换</h2><p>Origin 切换中文需要<strong>软件已经激活</strong>、<strong>具备中国大陆的授权</strong>（例如国内的学习版 (Learning Edition) ）、<strong>在中国大陆激活使用</strong>。</p>
 <p>为了满足上述条件，在申请和激活时，需要<strong>使用国内 IP 申请和激活</strong>软件，但由于 Origin IP 库自身问题，<strong>国内部分地区的移动和教育网络可能被识别为境外</strong>，故可能需要临时切换至电信或联通的网络。</p>
 <p>Origin 切换语言的底层逻辑是修改 <code>HKEY_CURRENT_USER\Software\OriginLab</code> 的注册表值，但官方从未建议用户自行修改注册表，这是由于软件启动时会检测上述条件是否满足。换而言之，当条件满足时，软件内一定可以修改语言，而软件内无法修改语言时，通过注册表修改一样无效。</p>
 <h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
@@ -7423,9 +7423,109 @@
       </tags>
   </entry>
   <entry>
-    <title>Origin 中文插件列表（目录）</title>
+    <title>Origin 中文插件列表 - 目录</title>
     <url>/archives/78c136de.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>未发布</p>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Origin 提供了功能十分丰富的插件系统，但由于没有完整的列表以全面展示每个插件的功能，导致用户很难想到自己需要的功能可以通过插件来解决。本文旨在帮助用户<strong>快速、高效</strong>的了解 Origin 的插件系统所能实现的功能，并快速匹配自己需求。</p>
+<span id="more"></span>
+
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
+<li><p><a href="https://www.yeslu.cn/archives/e935a643.html">绘图插件</a></p>
+</li>
+<li><p><a href="https://www.yeslu.cn/archives/aa0d88d7.html">数据分析插件</a></p>
+</li>
+<li><p><a href="https://www.yeslu.cn/archives/da105a28.html">数据处理插件</a></p>
+</li>
+<li><p><a href="https://www.yeslu.cn/archives/2bdf2924.html">数据连接插件</a></p>
+</li>
+<li><p><a href="https://www.yeslu.cn/archives/26810621.html">导入导出插件</a></p>
+</li>
+<li><p><a href="https://www.yeslu.cn/archives/8238d0d9.html">其他插件</a></p>
+</li>
+</ul>
+<h2 id="本文提供的"><a href="#本文提供的" class="headerlink" title="本文提供的"></a>本文提供的</h2><ul>
+<li>插件名及其官网链接；</li>
+<li>精确分类（部分）；</li>
+<li>简介（中、英文）；</li>
+<li>功能示意图；</li>
+<li>目标功能（中、英文，部分）；</li>
+<li>关键词（中、英文）；</li>
+<li>教程链接（待做）；</li>
+<li>相关插件（待做）</li>
+</ul>
+<h2 id="本文不提供的"><a href="#本文不提供的" class="headerlink" title="本文不提供的"></a>本文不提供的</h2><ul>
+<li>对盗版用户的支持；</li>
+<li>非官方途径的插件下载；</li>
+<li>其他 OriginLab Corporation 未主动提供的内容。</li>
+</ul>
+<h2 id="插件安装及更新"><a href="#插件安装及更新" class="headerlink" title="插件安装及更新"></a>插件安装及更新</h2><h3 id="查找插件"><a href="#查找插件" class="headerlink" title="查找插件"></a>查找插件</h3><p>通过 OriginLab 官网 <a href="https://www.originlab.com/fileExchange/index.aspx">File Exchange</a> 或 App Center 获取 Origin 的全部插件信息。App Center 可以通过软件右侧工具栏的 Add Apps，或是顶部工具栏的 <code>Tools: App Center</code> 打开。</p>
+<p><img src="https://img.yeslu.cn/blog/2024-04%2F04-22bfd5bb97db4ba9275603173ca555bf.png!blog_watermark"></p>
+<p>如果右侧工具栏没有显示，可以通过 <code>View: Apps</code> 显示 Apps 栏。</p>
+<p><img src="https://img.yeslu.cn/blog/2024-04%2F04-b2cb29ef56808e52f78f3befe4de7ce6.png!blog_watermark"></p>
+<h3 id="最低运行版本"><a href="#最低运行版本" class="headerlink" title="最低运行版本"></a>最低运行版本</h3><p>插件的工作需要依赖 Origin 主程序的特定功能，因此插件对 Origin 主程序的版本有所限制，当插件的最低运行版本低于实际使用的 主程序版本时，则无法正常安装或运行。</p>
+<p><img src="https://img.yeslu.cn/blog/2024-04%2F04-8ea33e96479292afb8e74679bf8f42fe.png!blog_watermark" alt="官网"></p>
+<img src="https://img.yeslu.cn/blog/2024-04%2F04-6df8ecd5c4ab96f4ac8c9a93b8cad400.png!blog_watermark" alt="App Center" style="zoom: 50%;" />
+
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>Origin 提供了两种插件安装方式，分别为软件内的在线安装和官网的离线安装，具体方法如下。</p>
+<h4 id="在线安装"><a href="#在线安装" class="headerlink" title="在线安装"></a>在线安装</h4><ol>
+<li>打开 App Center，搜索插件名字，并点击右侧下载。若因网络问题导致插件下载缓慢，可以在 <code>Preferences: Options</code> 的 Miscellaneous Tab 中设置代理。</li>
+</ol>
+<img src="https://img.yeslu.cn/blog/2024-04%2F04-36dc2c639e80b0c7d138c683dd0cb6d6.png!blog_watermark" alt="" style="zoom:50%;" />
+
+<h4 id="离线安装"><a href="#离线安装" class="headerlink" title="离线安装"></a>离线安装</h4><ol>
+<li>访问插件主页，点击左侧的 “Download File”，下载 <code>.opx</code> 插件文件。</li>
+<li>将该文件拖入 Origin 主界面，稍等片刻后，即可在右侧 Apps 栏中找到安装后的插件（特别注意，离线安装需要注册 OriginLab 网站账户，该账户不同于学习版（Learning Edition）等版本的申请邮箱）。</li>
+</ol>
+<p><img src="https://img.yeslu.cn/blog/2024-04%2F04-a71e968522275944380d45bf1d0a15ab.png!blog_watermark"></p>
+<h3 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h3><h4 id="在线更新"><a href="#在线更新" class="headerlink" title="在线更新"></a>在线更新</h4><ol>
+<li>当安装的插件存在更新时，通过 App Center 的 Updates 即可对插件进行更新。</li>
+</ol>
+<img src="https://img.yeslu.cn/blog/2024-04%2F04-8cd08ecde35e64e72891ae3f3c5bd0f3.png!blog_watermark" alt="image-20240404155425749" style="zoom:50%;" />
+
+<h4 id="离线更新"><a href="#离线更新" class="headerlink" title="离线更新"></a>离线更新</h4><ol>
+<li>下载新版本的 <code>.opx</code> 文件拖入 Origin 主界面，即可更新插件。</li>
+</ol>
+<h2 id="技术说明"><a href="#技术说明" class="headerlink" title="技术说明"></a>技术说明</h2><h3 id="插件列表字段"><a href="#插件列表字段" class="headerlink" title="插件列表字段"></a>插件列表字段</h3><ol>
+<li>主分类：由官网提供，共分为六类：Graphing、Data Analysis、Data Handling、Import and Export、Miscellaneous、Data Connector；</li>
+<li>二级、三级分类：由 ChatGPT 4 根据插件名称进行初步分类后，人工优化；</li>
+<li>标题：插件编号 - 插件英文名（含官网超链接）；</li>
+<li>简介（中、英文）：英文来源于插件详情页，中文通过机器翻译；</li>
+<li>功能示意图：来源于插件详情页；</li>
+<li>目标功能（中、英文）：英文来源于插件详情页，中文通过机器翻译；</li>
+<li>关键词（中、英文）：英文通过对插件描述进行 <code>TF-IDF</code> 算法，中文通过机器翻译</li>
+</ol>
+<h3 id="插件元数据获取"><a href="#插件元数据获取" class="headerlink" title="插件元数据获取"></a>插件元数据获取</h3><ol>
+<li>利用 Python 抓取了 OriginLab 官网的插件信息，以如下数据结构保存：</li>
+</ol>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span> # 插件名</span><br><span class="line">    <span class="attr">&quot;url&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span><span class="punctuation">,</span> # 插件页面</span><br><span class="line">    <span class="attr">&quot;summary&quot;</span><span class="punctuation">:</span> <span class="string">&quot;, # 插件描述</span></span><br><span class="line"><span class="string">    &quot;</span>image_url<span class="string">&quot;: &quot;</span><span class="string">&quot;, # 插件功能示意图</span></span><br><span class="line"><span class="string">    &quot;</span>appid<span class="string">&quot;: , # 插件编号</span></span><br><span class="line"><span class="string">    &quot;</span>propose<span class="string">&quot;: &quot;</span><span class="string">&quot; # 插件功能目标</span></span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><p>若插件数量和种类过多，通过 ChatGPT 4 对插件名进行分类，人工优化后，以如下数据结构保存：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;统计分析和回归模型&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;回归分析&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;方差分析&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;机器学习和人工智能&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;分类与聚类&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;深度学习与神经网络&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>利用 <code>TF-IDF</code> 算法，配合 <code>NLTK</code> 和人工筛选出的自定义 <code>Stop Words</code> 对 <code>summary</code> 进行分析，获得排名前 5 的关键词；</p>
+</li>
+<li><p>利用机器翻译对必要字段进行翻译。</p>
+</li>
+</ol>
+<h3 id="插件列表全文"><a href="#插件列表全文" class="headerlink" title="插件列表全文"></a>插件列表全文</h3><ul>
+<li>由 Python 根据上述插件元数据自动构建。</li>
+</ul>
+<h2 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h2><blockquote>
+<p>画饼 (๑•̌.•๑)</p>
+</blockquote>
+<ul>
+<li><input disabled="" type="checkbox"> 采用 ChatGPT 4 优化翻译</li>
+<li><input disabled="" type="checkbox"> 完成插件教程、相关插件</li>
+<li><input disabled="" type="checkbox"> 精细化分类</li>
+<li><input disabled="" type="checkbox"> 人工介入插件信息的维护</li>
+</ul>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
+<li>Origin 2024 SR1 (Academic).</li>
+</ol>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><ol>
+<li>本文禁止转载；</li>
+<li>随着版本更新，您所使用的功能可能与教程中有所不同。</li>
+</ol>
 ]]></content>
       <categories>
         <category>Science</category>
@@ -7441,7 +7541,7 @@
 <li>这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建；</li>
 <li>目录及详细说明请阅读：<a href="https://www.yeslu.cn/archives/78c136de.html">目录</a>；</li>
 <li>本文除已授权单位外禁止转载；</li>
-<li>更新时间：2024-04-04 14:02:58</li>
+<li>更新时间：2024-04-04 16:46:55</li>
 </ul>
 <span id="more"></span>
 
@@ -7684,7 +7784,7 @@
 <li>这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建；</li>
 <li>目录及详细说明请阅读：<a href="https://www.yeslu.cn/archives/78c136de.html">目录</a>；</li>
 <li>本文除已授权单位外禁止转载；</li>
-<li>更新时间：2024-04-04 14:02:58</li>
+<li>更新时间：2024-04-04 16:46:55</li>
 </ul>
 <span id="more"></span>
 
@@ -7799,7 +7899,7 @@
 <li>这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建；</li>
 <li>目录及详细说明请阅读：<a href="https://www.yeslu.cn/archives/78c136de.html">目录</a>；</li>
 <li>本文除已授权单位外禁止转载；</li>
-<li>更新时间：2024-04-04 14:02:58</li>
+<li>更新时间：2024-04-04 16:46:55</li>
 </ul>
 <span id="more"></span>
 
@@ -8434,7 +8534,7 @@
 <li>这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建；</li>
 <li>目录及详细说明请阅读：<a href="https://www.yeslu.cn/archives/78c136de.html">目录</a>；</li>
 <li>本文除已授权单位外禁止转载；</li>
-<li>更新时间：2024-04-04 14:02:58</li>
+<li>更新时间：2024-04-04 16:46:55</li>
 </ul>
 <span id="more"></span>
 
@@ -9647,7 +9747,7 @@
 <li>这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建；</li>
 <li>目录及详细说明请阅读：<a href="https://www.yeslu.cn/archives/78c136de.html">目录</a>；</li>
 <li>本文除已授权单位外禁止转载；</li>
-<li>更新时间：2024-04-04 14:02:58</li>
+<li>更新时间：2024-04-04 16:46:55</li>
 </ul>
 <span id="more"></span>
 
@@ -9738,7 +9838,7 @@
 <li>这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建；</li>
 <li>目录及详细说明请阅读：<a href="https://www.yeslu.cn/archives/78c136de.html">目录</a>；</li>
 <li>本文除已授权单位外禁止转载；</li>
-<li>更新时间：2024-04-04 14:02:58</li>
+<li>更新时间：2024-04-04 16:46:55</li>
 </ul>
 <span id="more"></span>
 
