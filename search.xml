@@ -8468,8 +8468,7 @@
 <p><img src="https://img.yeslu.cn/blog/2024-04%2F04-b2cb29ef56808e52f78f3befe4de7ce6.png!blog_watermark"></p>
 <h3 id="最低运行版本"><a href="#最低运行版本" class="headerlink" title="最低运行版本"></a>最低运行版本</h3><p>插件的工作需要依赖 Origin 主程序的特定功能，因此插件对 Origin 主程序的版本有所限制，当插件的最低运行版本低于实际使用的 主程序版本时，则无法正常安装或运行。</p>
 <p><figure><img src="https://img.yeslu.cn/blog/2024-04%2F04-8ea33e96479292afb8e74679bf8f42fe.png!blog_watermark" alt="官网"><figcaption aria-hidden="true">官网</figcaption></figure></p>
-<img src="https://img.yeslu.cn/blog/2024-04%2F04-6df8ecd5c4ab96f4ac8c9a93b8cad400.png!blog_watermark" alt="App Center" style="zoom: 50%;" />
-
+<p><figure><img src="https://img.yeslu.cn/blog/2024-04%2F04-6df8ecd5c4ab96f4ac8c9a93b8cad400.png!blog_watermark" alt="App Center"><figcaption aria-hidden="true">App Center</figcaption></figure></p>
 <h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>Origin 提供了两种插件安装方式，分别为软件内的在线安装和官网的离线安装，具体方法如下。</p>
 <h4 id="在线安装"><a href="#在线安装" class="headerlink" title="在线安装"></a>在线安装</h4><ol>
 <li>打开 App Center，搜索插件名字，并点击右侧下载。若因网络问题导致插件下载缓慢，可以在 <code>Preferences: Options</code> 的 Miscellaneous Tab 中设置代理。</li>
