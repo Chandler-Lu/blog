@@ -1717,6 +1717,16 @@ pre code {
 .back-to-top.back-to-top-on {
   bottom: 30px;
 }
+.reading-progress-bar {
+  --progress: 0;
+  background: #ffb47d;
+  height: 3px;
+  position: fixed;
+  z-index: 50;
+  width: var(--progress);
+  left: 0;
+  top: 0;
+}
 .rtl.post-body p,
 .rtl.post-body a,
 .rtl.post-body h1,
