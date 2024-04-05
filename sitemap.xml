@@ -479,6 +479,13 @@
 
   
   <url>
+    <loc>https://www.yeslu.cn/tags/Recommend/</loc>
+    <lastmod>2024-04-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.yeslu.cn/tags/Book/</loc>
     <lastmod>2024-04-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -487,13 +494,6 @@
   
   <url>
     <loc>https://www.yeslu.cn/tags/English/</loc>
-    <lastmod>2024-04-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.yeslu.cn/tags/Recommend/</loc>
     <lastmod>2024-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -542,6 +542,13 @@
   </url>
   
   <url>
+    <loc>https://www.yeslu.cn/tags/Storage/</loc>
+    <lastmod>2024-04-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.yeslu.cn/tags/iOS/</loc>
     <lastmod>2024-04-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -557,13 +564,6 @@
   
   <url>
     <loc>https://www.yeslu.cn/tags/API/</loc>
-    <lastmod>2024-04-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.yeslu.cn/tags/Storage/</loc>
     <lastmod>2024-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -654,14 +654,14 @@
   </url>
   
   <url>
-    <loc>https://www.yeslu.cn/tags/Synology/</loc>
+    <loc>https://www.yeslu.cn/tags/Security/</loc>
     <lastmod>2024-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.yeslu.cn/tags/Security/</loc>
+    <loc>https://www.yeslu.cn/tags/Synology/</loc>
     <lastmod>2024-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -670,14 +670,14 @@
 
   
   <url>
-    <loc>https://www.yeslu.cn/categories/Note/</loc>
+    <loc>https://www.yeslu.cn/categories/Software/</loc>
     <lastmod>2024-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.yeslu.cn/categories/Software/</loc>
+    <loc>https://www.yeslu.cn/categories/Note/</loc>
     <lastmod>2024-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -698,14 +698,14 @@
   </url>
   
   <url>
-    <loc>https://www.yeslu.cn/categories/Batch/</loc>
+    <loc>https://www.yeslu.cn/categories/Hardware/</loc>
     <lastmod>2024-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.yeslu.cn/categories/Hardware/</loc>
+    <loc>https://www.yeslu.cn/categories/Batch/</loc>
     <lastmod>2024-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
