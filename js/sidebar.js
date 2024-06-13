@@ -46,15 +46,5 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.classList.remove('sidebar-active');
     }
   };
-  if (CONFIG.sidebar.display !== 'remove') sidebarToggleMotion.init();
-
-  function updateFooterPosition() {
-    const footer = document.querySelector('.footer');
-    const containerHeight = document.querySelector('.main').offsetHeight + footer.offsetHeight;
-    footer.classList.toggle('footer-fixed', containerHeight <= window.innerHeight);
-  }
-
-  updateFooterPosition();
-  window.addEventListener('resize', updateFooterPosition);
-  window.addEventListener('scroll', updateFooterPosition, { passive: true });
+  sidebarToggleMotion.init();
 });

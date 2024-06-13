@@ -5814,7 +5814,7 @@
 <li>这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建；</li>
 <li>目录及详细说明请阅读：<a href="https://www.yeslu.cn/archives/78c136de.html">目录</a>；</li>
 <li>本文除已授权单位外禁止转载；</li>
-<li>更新时间：2024-04-04 16:46:55</li>
+<li>更新时间：2024-05-23 18:00:06</li>
 </ul>
 <span id="more"></span>
 
@@ -6051,13 +6051,13 @@
       </tags>
   </entry>
   <entry>
-    <title>Origin 中文插件列表 - 数据分析（140 个）</title>
+    <title>Origin 中文插件列表 - 数据分析（146 个）</title>
     <url>/archives/aa0d88d7.html</url>
     <content><![CDATA[<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><ul>
 <li>这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建；</li>
 <li>目录及详细说明请阅读：<a href="https://www.yeslu.cn/archives/78c136de.html">目录</a>；</li>
 <li>本文除已授权单位外禁止转载；</li>
-<li>更新时间：2024-04-04 16:46:55</li>
+<li>更新时间：2024-05-23 18:00:06</li>
 </ul>
 <span id="more"></span>
 
@@ -6513,6 +6513,16 @@
 <li>关键词：帽子、M1、M2、(法语)、压裂</li>
 <li>Keywords: hat, m1, m2, ij, frac</li>
 </ul>
+<h4 id="1018-Attribute-Agreement-Analysis"><a href="#1018-Attribute-Agreement-Analysis" class="headerlink" title="1018 - Attribute Agreement Analysis"></a>1018 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1018">Attribute Agreement Analysis</a></h4><blockquote>
+<p>它用于评估估价师是否与自己、相互之间以及与已知标准保持一致。<br>It is used to assess if appraisers are consistent with themselves, with each other, and with the known standards.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-analysis/1018/Attribute_Agreement_Analysis_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：该应用程序可用于评估评估师是否与自己、评估师之间以及评估师与已知标准保持一致。</li>
+<li>Propose: This app can be used to assess if appraisers are consistent with themselves, with each other, and with the known standards.</li>
+<li>关键词：评估、评估者、一致、已知标准</li>
+<li>Keywords: assess, appraisers, consistent, known standards</li>
+</ul>
 <h4 id="907-Bootstrap-Sampling"><a href="#907-Bootstrap-Sampling" class="headerlink" title="907 - Bootstrap Sampling"></a>907 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=907">Bootstrap Sampling</a></h4><blockquote>
 <p>使用自举抽样来估计输入数据的统计量。<br>Use bootstrap sampling to estimate the statistic of input data.</p>
 </blockquote>
@@ -6809,6 +6819,16 @@
 <li>关键词：基线、线性的、顶峰、片段、曲线</li>
 <li>Keywords: baseline, linear, peak, segments, curve</li>
 </ul>
+<h4 id="1012-Tolerance-Intervals"><a href="#1012-Tolerance-Intervals" class="headerlink" title="1012 - Tolerance Intervals"></a>1012 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1012">Tolerance Intervals</a></h4><blockquote>
+<p>计算正态分布或非正态分布数据的容差范围。<br>Calculate tolerance intervals for data from normal or non-normal distribution.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-analysis/1012/Tolerance_Intervals_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：此应用程序可用于确定量程，量程规定了正态分布或非正态分布数据的过程测量值的预期下降比例。</li>
+<li>Propose: This app can be used to determine the range, and this range specifies the proportion of the process measurements expected to fall for the data with normal or non-normal distribution.</li>
+<li>关键词：确定、范围、比例、过程测量、分配</li>
+<li>Keywords: determine, range, proportion, process measurements, distribution</li>
+</ul>
 <h3 id="优化算法"><a href="#优化算法" class="headerlink" title="优化算法"></a>优化算法</h3><h4 id="393-Equation-Solver"><a href="#393-Equation-Solver" class="headerlink" title="393 - Equation Solver"></a>393 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=393">Equation Solver</a></h4><blockquote>
 <p>求解一个具有不同参数的非线性方程组，研究这些参数对解的影响。<br>Solve a system of nonlinear equations with varying parameters. Examine how the parameters will affect the solutions.</p>
 </blockquote>
@@ -7029,7 +7049,7 @@
 <li>关键词：侧写、切断、长度、过滤器、粗暴</li>
 <li>Keywords: profile, cutoff, length, filter, roughness</li>
 </ul>
-<h2 id="信号处理"><a href="#信号处理" class="headerlink" title="信号处理"></a>信号处理</h2><h3 id="时间序列分析"><a href="#时间序列分析" class="headerlink" title="时间序列分析"></a>时间序列分析</h3><h4 id="675-Advanced-Time-Series-Analysis"><a href="#675-Advanced-Time-Series-Analysis" class="headerlink" title="675 - Advanced Time Series Analysis"></a>675 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=675">Advanced Time Series Analysis</a></h4><blockquote>
+<h2 id="信号和时序"><a href="#信号和时序" class="headerlink" title="信号和时序"></a>信号和时序</h2><h3 id="时间序列分析"><a href="#时间序列分析" class="headerlink" title="时间序列分析"></a>时间序列分析</h3><h4 id="675-Advanced-Time-Series-Analysis"><a href="#675-Advanced-Time-Series-Analysis" class="headerlink" title="675 - Advanced Time Series Analysis"></a>675 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=675">Advanced Time Series Analysis</a></h4><blockquote>
 <p>进行高级时间序列分析，包括平稳性测试、格兰杰因果关系和预白化等。<br>Perform advanced time series analysis including stationarity test, Granger causality test and prewhitening etc.</p>
 </blockquote>
 <p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-analysis/675/Advanced_Time_Series_Analysis_scs.png!blog_watermark"></p>
@@ -7055,6 +7075,16 @@
 <li>关键词：设置窗口、矩阵、窗户、扭曲、必须的</li>
 <li>Keywords: setwindow, matrix, window, warping, must</li>
 </ul>
+<h4 id="1019-Extract-Ridge-from-Spectrogram"><a href="#1019-Extract-Ridge-from-Spectrogram" class="headerlink" title="1019 - Extract Ridge from Spectrogram"></a>1019 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1019">Extract Ridge from Spectrogram</a></h4><blockquote>
+<p>从时频频谱图中提取最大时频脊。<br>Extract the maximum time-frequency ridge from the time-frequency spectrogram.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-analysis/1013/Signal_to_Noise_Ratio_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：该程序可用于从时频频谱图中提取最大时频脊。它能计算出每个时间段内功率最大的频率。</li>
+<li>Propose: This app can be used to extract the maximum time-frequency ridge from the time-frequency spectrogram. It calculates the frequency which has the largest power for each time.</li>
+<li>关键词：时频脊、频谱图、频率、功率</li>
+<li>Keywords: time-frequency ridge, spectrogram, frequency, power</li>
+</ul>
 <h4 id="332-Simple-Time-Series-Analysis"><a href="#332-Simple-Time-Series-Analysis" class="headerlink" title="332 - Simple Time Series Analysis"></a>332 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=332">Simple Time Series Analysis</a></h4><blockquote>
 <p>执行简单的时间序列分析，包括自相关，互相关，差异，和单指数平滑。<br>Perform simple time series analysis including autocorrelation, cross correlation, differencing, and single exponential smoothing.</p>
 </blockquote>
@@ -7063,7 +7093,35 @@
 <li>关键词：时间、系列、床单、结果、检查完毕</li>
 <li>Keywords: time, series, sheet, results, check</li>
 </ul>
-<h3 id="信号处理-1"><a href="#信号处理-1" class="headerlink" title="信号处理"></a>信号处理</h3><h4 id="497-2D-Correlation-Spectroscopy-Analysis"><a href="#497-2D-Correlation-Spectroscopy-Analysis" class="headerlink" title="497 - 2D Correlation Spectroscopy Analysis"></a>497 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=497">2D Correlation Spectroscopy Analysis</a></h4><blockquote>
+<h4 id="1016-Time-Series-Analysis"><a href="#1016-Time-Series-Analysis" class="headerlink" title="1016 - Time Series Analysis"></a>1016 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1016">Time Series Analysis</a></h4><blockquote>
+<p>分析和预测一段时间内连续记录的数据的工具。<br>Tools to analyze and forecast data recorded at consistent intervals over a period of time.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-analysis/1016/Time_Series_Analysis_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：时间序列分析是一种统计技术，用于分析和解释在一段时间内以一致的时间间隔记录的数据点。该应用程序提供了调查和模拟时间序列数据的工具。这些模型可用于预测时间序列。</li>
+<li>Propose: Time series analysis is a statistical technique used to analyze and interpret data points recorded at consistent intervals over a period of time. This App provides tools for investigating and modelling time series data. The models may then be used to forecast the series.</li>
+<li>关键词：时序分析、统计技术、分析、解释、数据点</li>
+<li>Keywords: timeseries analysis, statistical technique, analyze, interpret, data points</li>
+</ul>
+<h4 id="298-Time-Frequency-Analysis"><a href="#298-Time-Frequency-Analysis" class="headerlink" title="298 - Time-Frequency Analysis"></a>298 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=298">Time-Frequency Analysis</a></h4><blockquote>
+<p>计算一维连续小波变换系数和尺度图，生成时频等值线图。<br>Compute one-dimensional CWT coefficients and scalogram, and create a  time-frequency contour plot.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-analysis/298/TimeFrequencyAnalysisScreenshot.png!blog_watermark"></p>
+<ul>
+<li>关键词：矩阵、频率、阴谋、时间、分析</li>
+<li>Keywords: matrix, frequency, plot, time, analysis</li>
+</ul>
+<h4 id="1017-Time-Temperature-Superposition"><a href="#1017-Time-Temperature-Superposition" class="headerlink" title="1017 - Time-Temperature Superposition"></a>1017 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1017">Time-Temperature Superposition</a></h4><blockquote>
+<p>使用 Python 进行时间-温度叠加分析。<br>Perform time-temperature superposition analysis using Python.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-analysis/1017/Time-Temperature_Superposition_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：该应用程序提供了一个进行时间-温度叠加分析的工具。它有助于计算偏移因子并生成主曲线。</li>
+<li>Propose: This App provides a tool for performing time-temperature superposition analysis. It helps to calculate the shift factor and generate the master curve.</li>
+<li>关键词：计算、移动因子、生成、主曲线、嵌入式 Python</li>
+<li>Keywords: calculate, shift factor, generate, master curve, embedded Python</li>
+</ul>
+<h3 id="信号处理"><a href="#信号处理" class="headerlink" title="信号处理"></a>信号处理</h3><h4 id="497-2D-Correlation-Spectroscopy-Analysis"><a href="#497-2D-Correlation-Spectroscopy-Analysis" class="headerlink" title="497 - 2D Correlation Spectroscopy Analysis"></a>497 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=497">2D Correlation Spectroscopy Analysis</a></h4><blockquote>
 <p>计算同步和异步相关谱。<br>Calculate synchronous and asynchronous correlation spectra.</p>
 </blockquote>
 <p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-analysis/497/2dCorrSpec_screenshot2.png!blog_watermark"></p>
@@ -7177,6 +7235,16 @@
 <li>关键词：周期、射程、项目、样本、号码</li>
 <li>Keywords: cycle, range, project, sample, number</li>
 </ul>
+<h4 id="1013-Signal-to-Noise-Ratio"><a href="#1013-Signal-to-Noise-Ratio" class="headerlink" title="1013 - Signal to Noise Ratio"></a>1013 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1013">Signal to Noise Ratio</a></h4><blockquote>
+<p>计算信噪比。<br>Calculate signal to noise ratio.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-analysis/1013/Signal_to_Noise_Ratio_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：该应用程序可用于计算信噪比。</li>
+<li>Propose: This app can be used to calcuate the signal to noise rate.</li>
+<li>关键词：信噪比</li>
+<li>Keywords: noise rate</li>
+</ul>
 <h4 id="399-Spectral-Broadening"><a href="#399-Spectral-Broadening" class="headerlink" title="399 - Spectral Broadening"></a>399 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=399">Spectral Broadening</a></h4><blockquote>
 <p>应用滤波器扩展光谱。<br>Apply a filter to broaden spectra.</p>
 </blockquote>
@@ -7202,14 +7270,6 @@
 <li>Propose: This app helps to synchronize signals recorded with different sampling rates using a user-specified sampling frequency.</li>
 <li>关键词：取样、信号、频率、信号、原创的</li>
 <li>Keywords: sampling, signal, frequency, signals, original</li>
-</ul>
-<h4 id="298-Time-Frequency-Analysis"><a href="#298-Time-Frequency-Analysis" class="headerlink" title="298 - Time-Frequency Analysis"></a>298 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=298">Time-Frequency Analysis</a></h4><blockquote>
-<p>计算一维连续小波变换系数和尺度图，生成时频等值线图。<br>Compute one-dimensional CWT coefficients and scalogram, and create a  time-frequency contour plot.</p>
-</blockquote>
-<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-analysis/298/TimeFrequencyAnalysisScreenshot.png!blog_watermark"></p>
-<ul>
-<li>关键词：矩阵、频率、阴谋、时间、分析</li>
-<li>Keywords: matrix, frequency, plot, time, analysis</li>
 </ul>
 <h4 id="323-White-Noise"><a href="#323-White-Noise" class="headerlink" title="323 - White Noise"></a>323 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=323">White Noise</a></h4><blockquote>
 <p>信号数据产生高斯白噪声。<br>Generate Gaussian white noise for signal data.</p>
@@ -7270,7 +7330,7 @@
 <li>这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建；</li>
 <li>目录及详细说明请阅读：<a href="https://www.yeslu.cn/archives/78c136de.html">目录</a>；</li>
 <li>本文除已授权单位外禁止转载；</li>
-<li>更新时间：2024-04-04 16:46:55</li>
+<li>更新时间：2024-05-23 18:00:06</li>
 </ul>
 <span id="more"></span>
 
@@ -7385,7 +7445,7 @@
 <li>这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建；</li>
 <li>目录及详细说明请阅读：<a href="https://www.yeslu.cn/archives/78c136de.html">目录</a>；</li>
 <li>本文除已授权单位外禁止转载；</li>
-<li>更新时间：2024-04-04 16:46:55</li>
+<li>更新时间：2024-05-23 18:00:06</li>
 </ul>
 <span id="more"></span>
 
@@ -8014,13 +8074,13 @@
       </tags>
   </entry>
   <entry>
-    <title>Origin 中文插件列表 - 导入导出（33 个）</title>
+    <title>Origin 中文插件列表 - 导入导出（34 个）</title>
     <url>/archives/26810621.html</url>
     <content><![CDATA[<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><ul>
 <li>这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建；</li>
 <li>目录及详细说明请阅读：<a href="https://www.yeslu.cn/archives/78c136de.html">目录</a>；</li>
 <li>本文除已授权单位外禁止转载；</li>
-<li>更新时间：2024-04-04 16:46:55</li>
+<li>更新时间：2024-05-23 18:00:06</li>
 </ul>
 <span id="more"></span>
 
@@ -8119,6 +8179,14 @@
 <ul>
 <li>关键词：上、工作空间、工作表、bes3t、放下</li>
 <li>Keywords: onto, workspace, worksheet, bes3t, drop</li>
+</ul>
+<h3 id="1020-ChemStation-Reader"><a href="#1020-ChemStation-Reader" class="headerlink" title="1020 - ChemStation Reader"></a>1020 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1020">ChemStation Reader</a></h3><blockquote>
+<p>导入色谱和质谱二进制文件中编码的原始数据。<br>This App provides a tool to import the raw data encoded in chromatography and mass spectrometry binary files (*.ch, *.uc, *.ms).</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/1020/ChemStation_Reader_scs.png!blog_watermark"></p>
+<ul>
+<li>关键词：色谱、质谱</li>
+<li>Keywords: chromatography, mass spectrometry</li>
 </ul>
 <h3 id="436-Clone-Folder-Import"><a href="#436-Clone-Folder-Import" class="headerlink" title="436 - Clone Folder Import"></a>436 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=436">Clone Folder Import</a></h3><blockquote>
 <p>将一个或多个文件导入到活动 ProjectExplorer 文件夹的克隆副本中。<br>Import one or more files into cloned copies of the active Project Explorer folder.</p>
@@ -8303,7 +8371,7 @@
 <li>这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建；</li>
 <li>目录及详细说明请阅读：<a href="https://www.yeslu.cn/archives/78c136de.html">目录</a>；</li>
 <li>本文除已授权单位外禁止转载；</li>
-<li>更新时间：2024-04-04 16:46:55</li>
+<li>更新时间：2024-05-23 18:00:06</li>
 </ul>
 <span id="more"></span>
 
@@ -8791,6 +8859,18 @@
 <li>多组 XPS 面积图</li>
 <li>立方体上云图</li>
 </ul>
+<h2 id="2024-06-07"><a href="#2024-06-07" class="headerlink" title="2024.06.07"></a><a href="https://www.bilibili.com/video/BV1cM4m1S7JJ">2024.06.07</a></h2><h3 id="主题-37"><a href="#主题-37" class="headerlink" title="主题"></a>主题</h3><ul>
+<li>2024b 新功能介绍</li>
+</ul>
+<h3 id="内容-36"><a href="#内容-36" class="headerlink" title="内容"></a>内容</h3><p>本次直播将为您介绍 OriginPro 2024b 的新功能，内容包括</p>
+<ol>
+<li>重做和撤销</li>
+<li>图形注释的改进</li>
+<li>时间序列数据的绘图与分析</li>
+<li>提取数据的改进</li>
+<li>新的绘图类型与 Apps</li>
+<li>其他新功能，如坐标轴刻度标签换行等</li>
+</ol>
 ]]></content>
       <categories>
         <category>Science</category>
@@ -8807,9 +8887,13 @@
 
 <span id="more"></span>
 
-<h2 id="语言切换"><a href="#语言切换" class="headerlink" title="语言切换"></a>语言切换</h2><p>Origin 切换中文需要<strong>软件已经激活</strong>、<strong>具备中国大陆的授权</strong>（例如国内的学习版 (Learning Edition) ）、<strong>在中国大陆激活使用</strong>。</p>
-<p>为了满足上述条件，在申请和激活时，需要<strong>使用国内 IP 申请和激活</strong>软件，但由于 Origin IP 库自身问题，<strong>国内部分地区的移动和教育网络可能被识别为境外</strong>，故可能需要临时切换至电信或联通的网络。</p>
-<p>Origin 切换语言的底层逻辑是修改 <code>HKEY_CURRENT_USER\Software\OriginLab</code> 的注册表值，但官方从未建议用户自行修改注册表，这是由于软件启动时会检测上述条件是否满足。换而言之，当条件满足时，软件内一定可以修改语言，而软件内无法修改语言时，通过注册表修改一样无效。</p>
+<h2 id="语言切换"><a href="#语言切换" class="headerlink" title="语言切换"></a>语言切换</h2><p>Origin 切换中文需要：</p>
+<ol>
+<li><strong>在中国大陆激活、使用</strong></li>
+<li><strong>具备中国大陆的授权</strong>（例如国内的学习版 (Learning Edition) ）</li>
+</ol>
+<p>为了满足上述条件，在申请和激活时，需要使用<strong>国内 IP</strong> 申请和激活软件，但由于 OriginLab 的 IP 库自身问题，国内部分地区的<strong>移动和教育网络</strong>可能被识别为境外，故需要临时切换至电信或联通的网络。</p>
+<p>Origin 切换语言的底层逻辑是修改 <code>HKEY_CURRENT_USER\Software\OriginLab</code> 的注册表键值，但官方从未建议用户自行修改注册表，这是由于软件启动时会检测上述条件是否满足。换而言之，当条件满足时，软件内一定可以修改语言，而软件内无法修改语言时，通过注册表修改一样无效。</p>
 <h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ol>
 <li>Windows 11 (22621);</li>
 <li>Origin 2023b SR1 (Academic).</li>
@@ -9145,16 +9229,15 @@
 <h3 id="微信公众号：编辑之谭"><a href="#微信公众号：编辑之谭" class="headerlink" title="微信公众号：编辑之谭"></a>微信公众号：编辑之谭</h3><ul>
 <li>微信号：EditorTan</li>
 </ul>
-<p>考虑到教程覆盖的有限性，当您遇到上述教程无法解决的，或希望有针对性的解决自己的问题，建议您直接使用 <strong>Google 搜索</strong>“问题关键词（英文） + Origin”。</p>
-<p>例如，我希望了解 Origin 中 LabTalk 的语法知识，那么可以搜索 “LabTalk + Origin”。</p>
+<p>考虑到教程覆盖的有限性，当您遇到上述教程无法解决的，或希望有针对性的解决自己的问题，建议您直接使用 <strong>Google 搜索</strong>“问题关键词（英文） + OriginLab”。</p>
+<p>例如，我希望了解 Origin 中 LabTalk 的语法知识，那么可以搜索 “LabTalk + OriginLab”。</p>
 <h2 id="版本"><a href="#版本" class="headerlink" title="版本"></a>版本</h2><h3 id="稳定版"><a href="#稳定版" class="headerlink" title="稳定版"></a>稳定版</h3><ul>
-<li>发布时间：2023.12.08</li>
-<li>版本：<a href="https://www.originlab.com/2024">OriginPro 2024 SR1</a>【内部版本号：10.1.0.178】</li>
+<li>发布时间：2024.05.16</li>
+<li>版本：<a href="https://www.originlab.com/2024b">OriginPro 2024b</a>【内部版本号：10.1.5.132】</li>
 <li>备注：SR &#x3D; Stable Release</li>
 </ul>
 <h3 id="测试版"><a href="#测试版" class="headerlink" title="测试版"></a>测试版</h3><ul>
-<li>发布时间：2024.04.09</li>
-<li>版本：<a href="https://my.originlab.com/forum/topic.asp?TOPIC_ID=48273">OriginPro 2024b Beta 2</a>【内部版本号：10.1.5.101】</li>
+<li>发布时间：暂无</li>
 </ul>
 <h2 id="软件使用"><a href="#软件使用" class="headerlink" title="软件使用"></a>软件使用</h2><h3 id="00-学习版"><a href="#00-学习版" class="headerlink" title="00 学习版"></a>00 学习版</h3><h4 id="申请"><a href="#申请" class="headerlink" title="申请"></a>申请</h4><ul>
 <li>申请地址：<a href="http://www.originlab.com/OriginProLearning.aspx">点击查看</a></li>
