@@ -5905,13 +5905,13 @@
       </tags>
   </entry>
   <entry>
-    <title>Origin 中文插件列表 - 数据连接（28 个）</title>
+    <title>Origin 中文插件列表 - 数据连接（31 个）</title>
     <url>/archives/2bdf2924.html</url>
     <content><![CDATA[<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><ul>
 <li>这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建；</li>
 <li>目录及详细说明请阅读：<a href="https://www.yeslu.cn/archives/78c136de.html">目录</a>；</li>
 <li>本文除已授权单位外禁止转载；</li>
-<li>更新时间：2024-05-23 18:00:06</li>
+<li>更新时间：2024-11-22 22:39:47</li>
 </ul>
 <span id="more"></span>
 
@@ -5954,6 +5954,16 @@
 <ul>
 <li>关键词：细胞学、工作空间、应用程序、数据菜单、FCS</li>
 <li>Keywords: cytometry, workspace, theapps, thedatamenu, fcs</li>
+</ul>
+<h2 id="1026-GoogleSheets-Connector"><a href="#1026-GoogleSheets-Connector" class="headerlink" title="1026 - GoogleSheets Connector"></a>1026 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1026">GoogleSheets Connector</a></h2><blockquote>
+<p>连接到谷歌工作表。<br>Connect to google sheet.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-connector/1041/XRDML_Connector_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：此应用程序可用于在Origin中导入Google Sheet数据。它可以连接源文件，当源文件发生变化时，Origin 中导入的数据也会随之更新。</li>
+<li>Propose: This app can be used to import Google Sheet data in Origin. It can connect to the source file, when the source is changed, the imported data in Origin is also updated.</li>
+<li>关键词：Google 工作表</li>
+<li>Keywords: Google Sheets</li>
 </ul>
 <h2 id="535-HDF-Connector"><a href="#535-HDF-Connector" class="headerlink" title="535 - HDF Connector"></a>535 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=535">HDF Connector</a></h2><blockquote>
 <p>创建到 MATLAB 文件或 HDF5文件的连接。<br>Create a connection to a MATLAB file or HDF5 file.</p>
@@ -6067,6 +6077,16 @@
 <li>关键词：Nid、进口、华盛顿、普莱克森、连接器</li>
 <li>Keywords: nid, import, dc, plexon, connector</li>
 </ul>
+<h2 id="1039-Perkin-Elmer-Connector"><a href="#1039-Perkin-Elmer-Connector" class="headerlink" title="1039 - Perkin Elmer Connector"></a>1039 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1039">Perkin Elmer Connector</a></h2><blockquote>
+<p>连接至 Perkin Elmer 文件 (<em>.sp)。<br>Connect to an Perkin Elmer file (</em>.sp).</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-connector/1039/Perkin_Elmer_Connector_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：此应用程序可用于在Origin中从文件或网站导入珀金埃尔默文件（*.sp）。它可以连接源文件，当源文件发生变化时，Origin 中导入的数据也会随之更新。</li>
+<li>Propose: This app can be used to import PerkinElmer file (*.sp) from a file or website in Origin. It can connect to the source file, when the source is changed, the imported data in Origin is also updated.</li>
+<li>关键词：PerkinElmer文件</li>
+<li>Keywords: PerkinElmer File</li>
+</ul>
 <h2 id="610-Shapefile-Connector"><a href="#610-Shapefile-Connector" class="headerlink" title="610 - Shapefile Connector"></a>610 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=610">Shapefile Connector</a></h2><blockquote>
 <p>到 shapefile 数据的连接器。<br>Connector to shapefile data.</p>
 </blockquote>
@@ -6131,6 +6151,16 @@
 <li>关键词：连接、连接器、书、项目、选择</li>
 <li>Keywords: connect, connector, book, project, select</li>
 </ul>
+<h2 id="1041-XRDML-Connector"><a href="#1041-XRDML-Connector" class="headerlink" title="1041 - XRDML Connector"></a>1041 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1041">XRDML Connector</a></h2><blockquote>
+<p>连接到 XRDML 文件（*.xrdml、*.cpi）。<br>Connect to an XRDML file (*.xrdml, *.cpi).</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-connector/1041/XRDML_Connector_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：此应用程序可从Origin中的文件或网站导入XRDML文件（*.xrdml，*cpi）。它可以连接源文件，当源文件发生变化时，Origin 中导入的数据也会随之更新。</li>
+<li>Propose: This app can import an XRDML file (*.xrdml, *cpi) from a file or website in Origin. It can connect to the source file, when the source is changed, the imported data in Origin is also updated.</li>
+<li>关键词：XRDML文件</li>
+<li>Keywords: XRDML File</li>
+</ul>
 <h2 id="562-Yokogawa-WDF-Connector"><a href="#562-Yokogawa-WDF-Connector" class="headerlink" title="562 - Yokogawa WDF Connector"></a>562 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=562">Yokogawa WDF Connector</a></h2><blockquote>
 <p>连接到横河 WDF 文件。<br>Connect to a Yokogawa WDF file.</p>
 </blockquote>
@@ -6154,7 +6184,7 @@
 <li>这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建；</li>
 <li>目录及详细说明请阅读：<a href="https://www.yeslu.cn/archives/78c136de.html">目录</a>；</li>
 <li>本文除已授权单位外禁止转载；</li>
-<li>更新时间：2024-05-23 18:00:06</li>
+<li>更新时间：2024-11-22 22:39:47</li>
 </ul>
 <span id="more"></span>
 
@@ -6269,7 +6299,7 @@
 <li>这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建；</li>
 <li>目录及详细说明请阅读：<a href="https://www.yeslu.cn/archives/78c136de.html">目录</a>；</li>
 <li>本文除已授权单位外禁止转载；</li>
-<li>更新时间：2024-05-23 18:00:06</li>
+<li>更新时间：2024-11-22 22:39:47</li>
 </ul>
 <span id="more"></span>
 
@@ -6458,12 +6488,14 @@
 <li>Keywords: roi, matrix, plot, sub, image</li>
 </ul>
 <h3 id="404-Poincare-Plot"><a href="#404-Poincare-Plot" class="headerlink" title="404 - Poincare Plot"></a>404 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=404">Poincare Plot</a></h3><blockquote>
-<p>用置信椭圆创建庞加莱情节<br>Create Poincaré plot with a confidence ellipse</p>
+<p>创建带有置信椭圆的 Poincaré 图<br>Create Poincaré plot with a confidence ellipse</p>
 </blockquote>
 <p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/graph/404/ScreenShot.png!blog_watermark"></p>
 <ul>
-<li>关键词：Xt、Poincare、阴谋、自信、椭圆</li>
-<li>Keywords: xt, poincare, plot, confidence, ellipse</li>
+<li>应用目标：该应用程序可用于根据指定的阿尔法值创建带有置信椭圆的 Poincare 图。</li>
+<li>Propose: This app can be used to create a Poincare plot with a confidence ellipse from a specified alpha value.</li>
+<li>关键词：庞加莱图、置信椭圆、α值</li>
+<li>Keywords: Poincare Plot, Confidence Ellipse, Alpha Value</li>
 </ul>
 <h3 id="314-Polar-Contour-Profile"><a href="#314-Polar-Contour-Profile" class="headerlink" title="314 - Polar Contour Profile"></a>314 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=314">Polar Contour Profile</a></h3><blockquote>
 <p>极坐标图的计算剖面。<br>Compute profile for polar contour plot.</p>
@@ -6898,13 +6930,13 @@
       </tags>
   </entry>
   <entry>
-    <title>Origin 中文插件列表 - 导入导出（34 个）</title>
+    <title>Origin 中文插件列表 - 导入导出（35 个）</title>
     <url>/archives/26810621.html</url>
     <content><![CDATA[<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><ul>
 <li>这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建；</li>
 <li>目录及详细说明请阅读：<a href="https://www.yeslu.cn/archives/78c136de.html">目录</a>；</li>
 <li>本文除已授权单位外禁止转载；</li>
-<li>更新时间：2024-05-23 18:00:06</li>
+<li>更新时间：2024-11-22 22:39:47</li>
 </ul>
 <span id="more"></span>
 
@@ -6915,6 +6947,16 @@
 <ul>
 <li>关键词：工作表、工作表、项目、激活、文件</li>
 <li>Keywords: worksheet, worksheets, project, active, files</li>
+</ul>
+<h3 id="1028-Export-to-mat"><a href="#1028-Export-to-mat" class="headerlink" title="1028 - Export to mat"></a>1028 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1028">Export to mat</a></h3><blockquote>
+<p>将工作表和矩阵导出到 MAT 文件。<br>Export worksheets and matrices to MAT file.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/1028/Export_to_mat_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：此应用程序可用于将 Origin 工作表和 MSheets 中的数据导出为 MATLAB 的 mat 文件。</li>
+<li>Propose: This app can be used to export data in Origin’s worksheets and MSheets to MATLAB’s mat file.</li>
+<li>关键词：MATLAB Mat文件</li>
+<li>Keywords: MATLAB Mat File</li>
 </ul>
 <h3 id="892-GeoTIFF-Export"><a href="#892-GeoTIFF-Export" class="headerlink" title="892 - GeoTIFF Export"></a>892 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=892">GeoTIFF Export</a></h3><blockquote>
 <p>将矩阵导出为 GeoTIFF 格式文件<br>Export matrix as GeoTIFF format file</p>
@@ -7645,13 +7687,13 @@
       </tags>
   </entry>
   <entry>
-    <title>Origin 中文插件列表 - 数据分析（146 个）</title>
+    <title>Origin 中文插件列表 - 数据分析（151 个）</title>
     <url>/archives/aa0d88d7.html</url>
     <content><![CDATA[<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><ul>
 <li>这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建；</li>
 <li>目录及详细说明请阅读：<a href="https://www.yeslu.cn/archives/78c136de.html">目录</a>；</li>
 <li>本文除已授权单位外禁止转载；</li>
-<li>更新时间：2024-05-23 18:00:06</li>
+<li>更新时间：2024-11-22 22:39:47</li>
 </ul>
 <span id="more"></span>
 
@@ -7774,6 +7816,16 @@
 <ul>
 <li>关键词：分数、边界、阴谋、小组、多边形</li>
 <li>Keywords: points, boundary, plot, group, polygon</li>
+</ul>
+<h4 id="1042-Decision-Tree-Analysis"><a href="#1042-Decision-Tree-Analysis" class="headerlink" title="1042 - Decision Tree Analysis"></a>1042 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1042">Decision Tree Analysis</a></h4><blockquote>
+<p>拟合二叉决策树进行分类。<br>Fit binary decision tree for classification.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-analysis/1042/Decision_Tree_Analysis_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：该程序可用于从时频频谱图中提取最大时频脊。它能计算出每个时间段内功率最大的频率。</li>
+<li>Propose: This app can be used to fit binary decision tree for classification.</li>
+<li>关键词：二叉树、决策、分类</li>
+<li>Keywords: Binary Tree, Decision, Classification</li>
 </ul>
 <h4 id="472-Gaussian-Mixture-Models"><a href="#472-Gaussian-Mixture-Models" class="headerlink" title="472 - Gaussian Mixture Models"></a>472 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=472">Gaussian Mixture Models</a></h4><blockquote>
 <p>拟合高斯混合模型和聚类试验数据。<br>Fit Gaussian mixture models and cluster test data.</p>
@@ -8337,6 +8389,16 @@
 <li>关键词：真的、复杂、项目、输入、错误</li>
 <li>Keywords: real, complex, project, input, error</li>
 </ul>
+<h4 id="1033-Random-Sample"><a href="#1033-Random-Sample" class="headerlink" title="1033 - Random Sample"></a>1033 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1033">Random Sample</a></h4><blockquote>
+<p>从输入数据中随机选择样本，可以替换，也可以不替换。<br>Select samples from input data randomly with or without replacement.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-analysis/1033/Random_Sample_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：该程序可用于从输入数据中随机选择样本，可进行或不进行替换，并支持不等概率。</li>
+<li>Propose: This app can be used to select samples from input data randomly with or without replacement, and it supports unequal probabilities</li>
+<li>关键词：随机采样、不等概率、有放回或无放回</li>
+<li>Keywords: Random Sampling, Unequal Probabilities, With or Without Replacement</li>
+</ul>
 <h4 id="377-Randomness-Tests"><a href="#377-Randomness-Tests" class="headerlink" title="377 - Randomness Tests"></a>377 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=377">Randomness Tests</a></h4><blockquote>
 <p>测试序列的随机性。<br>Test randomness of sequences.</p>
 </blockquote>
@@ -8472,6 +8534,16 @@
 <ul>
 <li>关键词：下载、选择、选吧、选定、安装</li>
 <li>Keywords: download, select, choose, selected, installing</li>
+</ul>
+<h4 id="1037-Partial-Least-Squares-Discriminant-Analysis"><a href="#1037-Partial-Least-Squares-Discriminant-Analysis" class="headerlink" title="1037 - Partial Least Squares Discriminant Analysis"></a>1037 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1037">Partial Least Squares Discriminant Analysis</a></h4><blockquote>
+<p>使用偏最小二乘法进行判别分析。<br>Perform discriminant analysis with partial least squares.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-analysis/1037/Partial_Least_Squares_Discriminant_Analysis_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：该应用程序用于执行基于偏最小二乘回归的判别分析，这是一种从样本中提取最相关特征信息以促进分类分析的方法。</li>
+<li>Propose: This App is used to perform discriminant analysis based on partial least squares regression, a method that extracts the most relevant feature information from samples to facilitate classification analysis.</li>
+<li>关键词：判别分析、偏最小二乘回归、特征提取</li>
+<li>Keywords: Discriminant Analysis, Partial Least Squares Regression, Feature Extraction</li>
 </ul>
 <h4 id="328-Principal-Component-Analysis"><a href="#328-Principal-Component-Analysis" class="headerlink" title="328 - Principal Component Analysis"></a>328 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=328">Principal Component Analysis</a></h4><blockquote>
 <p>增强版的主成分分析工具。<br>An enhanced version of Principal Component Analysis tool.</p>
@@ -8723,6 +8795,16 @@
 <li>关键词：光谱、充满活力、相关性、扰动、缩放</li>
 <li>Keywords: spectra, dynamic, correlation, perturbation, scaling</li>
 </ul>
+<h4 id="1035-Batch-Peak-Integration"><a href="#1035-Batch-Peak-Integration" class="headerlink" title="1035 - Batch Peak Integration"></a>1035 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1035">Batch Peak Integration</a></h4><blockquote>
+<p>将曲线上的多个峰值与单独的基线设置相结合。<br>Integrate Multiple Peaks on the Curve with Individual Baseline Settings.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-analysis/1035/Batch_Peak_Integration_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：该程序可批量执行峰值积分。它支持为单个峰值定义单独的基线，并通过减去基线来整合峰值。</li>
+<li>Propose: This app can perform batch peak integration. It supports defining separate baselines for individual peaks and integrates the peak by subtracting the baseline.</li>
+<li>关键词：峰积分、基线扣除、批量处理</li>
+<li>Keywords: Peak Integration, Baseline Subtraction, Batch Processing</li>
+</ul>
 <h4 id="466-Correlation-Shift"><a href="#466-Correlation-Shift" class="headerlink" title="466 - Correlation Shift"></a>466 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=466">Correlation Shift</a></h4><blockquote>
 <p>用互相关法对齐信号。<br>Align signals with cross correlation.</p>
 </blockquote>
@@ -8762,6 +8844,16 @@
 <ul>
 <li>关键词：频谱、解卷、必须的、顶峰、画廊</li>
 <li>Keywords: spectrum, deconvolved, must, peak, gallery</li>
+</ul>
+<h4 id="1029-IIR-Comb-Filter"><a href="#1029-IIR-Comb-Filter" class="headerlink" title="1029 - IIR Comb Filter"></a>1029 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1029">IIR Comb Filter</a></h4><blockquote>
+<p>设计一个 IIR 梳状陷波滤波器，将其应用于信号，并去除指定频率的谐波成分。<br>Design an IIR comb notch filter, apply it to a signal, and remove harmonic components at specified frequencies.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-analysis/1029/IIR_Comb_Filter_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：此应用程序可用于设计 IIR 梳状陷波滤波器，并将其应用于信号。它可用于去除谐波频率附近的窄频带，并保留其余部分。</li>
+<li>Propose: This app can be used to design an IIR comb notch filter, and apply to a signal. It can be used to remove narrow frequency bands near harmonic frequencies and its and keep the rest.</li>
+<li>关键词：IIR梳状陷波滤波器、信号处理、谐波频率去除</li>
+<li>Keywords: IIR Comb Notch Filter, Signal Processing, Harmonic Frequency Removal</li>
 </ul>
 <h4 id="456-Inverse-Laplace-Transform-in-NMR"><a href="#456-Inverse-Laplace-Transform-in-NMR" class="headerlink" title="456 - Inverse Laplace Transform in NMR"></a>456 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=456">Inverse Laplace Transform in NMR</a></h4><blockquote>
 <p>使用正规化的拉普拉斯逆变换恢复核磁共振中的 t2或 ln (T2)分布。<br>Use regularized inverse Laplace transform to recover the distribution of T2 or ln(T2) in NMR.</p>
@@ -8900,14 +8992,14 @@
 <li>Keywords: operations, project, button, operation, selected</li>
 </ul>
 <h3 id="实验设计"><a href="#实验设计" class="headerlink" title="实验设计"></a>实验设计</h3><h4 id="462-Design-of-Experiments"><a href="#462-Design-of-Experiments" class="headerlink" title="462 - Design of Experiments"></a>462 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=462">Design of Experiments</a></h4><blockquote>
-<p>DOE: 设计一个实验，根据实验数据拟合一个模型，并找到最佳的因子设置来优化响应。<br>DOE: Design an experiment, fit a model to experimental data, and find best factor settings that optimize responses.</p>
+<p>DOE: 设计一个实验，根据实验数据拟合一个模型，并找到能优化反应的最佳因子设置。<br>DOE: Design an experiment, fit a model to experimental data, and find best factor settings that optimize responses.</p>
 </blockquote>
 <p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-analysis/462/DOE_screen_shot19.png!blog_watermark"></p>
 <ul>
-<li>应用目标：这个 DOE 应用程序可以帮助您确定影响流程的因素与该流程的输出之间的关系。你可以用它来设计一个实验，分析实验数据和优化输出。</li>
+<li>应用目标：该 DOE 应用程序可帮助您确定影响流程的因素与流程产出之间的关系。您可以用它来设计实验、分析实验数据和优化输出。</li>
 <li>Propose: This DOE app helps you determine the relationship between factors affecting a process and the output of that process.<br>You can use it to design an experiment, analyze experimental data and optimize output.</li>
-<li>关键词：设计、样本、对话、回应、因素</li>
-<li>Keywords: design, sample, dialog, response, factors</li>
+<li>关键词：实验设计、过程因子、输出关系</li>
+<li>Keywords: Design of Experiments, Process Factors, Output Relationship</li>
 </ul>
 ]]></content>
       <categories>
@@ -8954,7 +9046,7 @@
 <li>这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建；</li>
 <li>目录及详细说明请阅读：<a href="https://www.yeslu.cn/archives/78c136de.html">目录</a>；</li>
 <li>本文除已授权单位外禁止转载；</li>
-<li>更新时间：2024-05-23 18:00:06</li>
+<li>更新时间：2024-11-22 22:39:47</li>
 </ul>
 <span id="more"></span>
 
