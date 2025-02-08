@@ -18,11 +18,11 @@
 
 
 
-<link rel="stylesheet" href="/lib/@fortawesome/fontawesome-free/css/all.min.css" integrity="sha256-5eIC48iZUHmSlSUz9XtjRyK2mzQkHScZY1WdMaoz74E=" crossorigin="anonymous">
+<link rel="stylesheet" href="/lib/@fortawesome/fontawesome-free/css/all.min.css" integrity="sha256-dABdfBfUoC8vJUBOwGVdm8L9qlMWaHTIfXt+7GnZCIo=" crossorigin="anonymous">
   <link rel="stylesheet" href="/lib/animate.css/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
   <link rel="stylesheet" href="/lib/@fancyapps/ui/dist/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"www.yeslu.cn","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.21.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"www.yeslu.cn","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.22.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="前言在数据可视化的过程中，分段展示数据是一种常用且有效的方法。本文将重点介绍如何在 Origin 软件中实现分段绘图，具体从三个关键方面进行详细阐述：轴分段（断点）、数据分段（颜色和连接方式）、背景分段（规则与不规则色块填充）。">
 <meta property="og:type" content="article">
@@ -64,7 +64,7 @@
 
 
 
-  <script type="text/javascript">
+  <script>
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
@@ -306,7 +306,7 @@
 <p><strong>特别注意</strong>，有同学在设置断点后发现坐标轴增量无法按照预期设置，这是因为<code>轴起点+增量</code>在断点范围内。例如断点范围为 <code>4-6</code>，坐标轴起点为 <code>0</code>，增量为 <code>5</code>，则该设置下的第一个主刻度落在了断点区间内，因此该增量无法被应用。同理，当存在多个断点时，<code>断点终点+增量</code> 不应落在下一个断点范围，否则该增量同样无法被应用。</p>
 <p>参考文档：<a target="_blank" rel="noopener" href="https://www.originlab.com/doc/Origin-Help/AxesRef-Breaks">AxesRef-Breaks</a></p>
 <h2 id="数据分段"><a href="#数据分段" class="headerlink" title="数据分段"></a>数据分段</h2><h3 id="单点设置"><a href="#单点设置" class="headerlink" title="单点设置"></a>单点设置</h3><p>此方法适用于数据中有<strong>极少数量的</strong>特殊点需要调整。</p>
-<p>在 Origin 中，我们可以通过 <strong>Ctrl+单击</strong>或者<strong>两次单击（点一次，再点一次）</strong>的方式选中单个数据点，而 <strong>Ctrl+双击</strong>或者<strong>两次单击+双击</strong>则可以对单点的颜色、连接方式等参数进行调整。</p>
+<p>在 Origin 中，我们可以通过 <strong>Ctrl+单击</strong>或者<strong>两次单击（点一次，再点一次）<strong>的方式选中单个数据点，而 <strong>Ctrl+双击</strong>或者</strong>两次单击+双击</strong>则可以对单点的颜色、连接方式等参数进行调整。</p>
 <p><img src="https://img.yeslu.cn/blog/2024-01/20-2aa77533affb9497b6dcd033985f77ae.png!blog_watermark"></p>
 <p>当单个数据点被选中时，我们可以对该点的颜色及该点到后一个点的连接线参数进行调整。</p>
 <p><img src="https://img.yeslu.cn/blog/2024-01/20-9371a9beb93138dfd3d28e5a554d6566.png!blog_watermark"></p>
@@ -407,7 +407,7 @@
   </div>
   <div class="copyright">
     &copy; 2014 – 
-    <span itemprop="copyrightYear">2024</span>
+    <span itemprop="copyrightYear">2025</span>
     <span class="with-love">
       <i class="fa fa-heart"></i>
     </span>
