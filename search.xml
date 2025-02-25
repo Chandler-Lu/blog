@@ -7663,7 +7663,7 @@
 <h4 id="1037-Partial-Least-Squares-Discriminant-Analysis"><a href="#1037-Partial-Least-Squares-Discriminant-Analysis" class="headerlink" title="1037 - Partial Least Squares Discriminant Analysis"></a>1037 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1037">Partial Least Squares Discriminant Analysis</a></h4><blockquote>
 <p>使用偏最小二乘法进行判别分析。<br>Perform discriminant analysis with partial least squares.</p>
 </blockquote>
-<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-analysis/1037/Partial_Least_Squares_Discriminant_Analysis_scs.png!blog_watermark"></p>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-analysis/1307/Partial_Least_Squares_Discriminant_Analysis_scs.png!blog_watermark"></p>
 <ul>
 <li>应用目标：该应用程序用于执行基于偏最小二乘回归的判别分析，这是一种从样本中提取最相关特征信息以促进分类分析的方法。</li>
 <li>Propose: This App is used to perform discriminant analysis based on partial least squares regression, a method that extracts the most relevant feature information from samples to facilitate classification analysis.</li>
@@ -9479,8 +9479,8 @@
 <li>备注：SR &#x3D; Stable Release</li>
 </ul>
 <h3 id="测试版"><a href="#测试版" class="headerlink" title="测试版"></a>测试版</h3><ul>
-<li>发布时间：2025.01.15</li>
-<li>版本：<a href="https://originlab.jira.com/wiki/spaces/main/pages/3179937810/Origin+2025b+Features">OriginPro 2025b beta1</a></li>
+<li>发布时间：2025.02.07</li>
+<li>版本：<a href="https://originlab.jira.com/wiki/spaces/main/pages/3179937810/Origin+2025b+Features">OriginPro 2025b beta2</a></li>
 </ul>
 <h2 id="软件使用"><a href="#软件使用" class="headerlink" title="软件使用"></a>软件使用</h2><h3 id="00-学习版"><a href="#00-学习版" class="headerlink" title="00 学习版"></a>00 学习版</h3><h4 id="申请"><a href="#申请" class="headerlink" title="申请"></a>申请</h4><ul>
 <li>申请地址：<a href="http://www.originlab.com/OriginProLearning.aspx">点击查看</a></li>
