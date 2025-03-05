@@ -9486,106 +9486,109 @@
 <li>申请地址：<a href="http://www.originlab.com/OriginProLearning.aspx">点击查看</a></li>
 <li>申请后，下载地址将发送至邮箱。</li>
 </ul>
-<h3 id="01-文件问题"><a href="#01-文件问题" class="headerlink" title="01 文件问题"></a>01 文件问题</h3><h4 id="无法双击打开文件"><a href="#无法双击打开文件" class="headerlink" title="无法双击打开文件"></a>无法双击打开文件</h4><ul>
+<h3 id="01-文件相关"><a href="#01-文件相关" class="headerlink" title="01 文件相关"></a>01 文件相关</h3><h4 id="无法双击打开文件"><a href="#无法双击打开文件" class="headerlink" title="无法双击打开文件"></a>无法双击打开文件</h4><ul>
 <li>症状：双击已有文件后，实际显示空白页</li>
-<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/double-click-open-failed">点击查看</a></li>
+<li>解决方案：<a href="https://www.originlab.com/doc/Quick-Help/double-click-open-failed">点击查看</a></li>
 </ul>
 <h4 id="无法保存文件"><a href="#无法保存文件" class="headerlink" title="无法保存文件"></a>无法保存文件</h4><ul>
 <li>症状：提示“在保存项目或窗口之前，请关闭所有打开的对话框”</li>
-<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/saveOPJ-when-hidden-dialog">点击查看</a></li>
+<li>解决方案：<a href="https://www.originlab.com/doc/Quick-Help/saveOPJ-when-hidden-dialog">点击查看</a></li>
 </ul>
 <h4 id="保存的文件是只读的"><a href="#保存的文件是只读的" class="headerlink" title="保存的文件是只读的"></a>保存的文件是只读的</h4><ul>
 <li>症状：提示“此项目为只读文件”</li>
-<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/Declare-saving-file-read-only">点击查看</a></li>
+<li>解决方案：<a href="https://www.originlab.com/doc/Quick-Help/Declare-saving-file-read-only">点击查看</a></li>
 </ul>
-<h4 id="Origin-使用卡顿（Slow-or-Sluggish）"><a href="#Origin-使用卡顿（Slow-or-Sluggish）" class="headerlink" title="Origin 使用卡顿（Slow or Sluggish）"></a>Origin 使用卡顿（Slow or Sluggish）</h4><ul>
-<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/Origin-slow-Troubleshoot">点击查看</a></li>
+<h4 id="Origin-使用卡顿"><a href="#Origin-使用卡顿" class="headerlink" title="Origin 使用卡顿"></a>Origin 使用卡顿</h4><ul>
+<li>解决方案：<a href="https://www.originlab.com/doc/Quick-Help/Origin-slow-Troubleshoot">点击查看</a></li>
 </ul>
 <h4 id="Origin-闪退或没有响应"><a href="#Origin-闪退或没有响应" class="headerlink" title="Origin 闪退或没有响应"></a>Origin 闪退或没有响应</h4><ul>
 <li>症状：Origin 闪退，进入假死状态，没有响应</li>
-<li>解决：<a href="https://www.originlab.com/doc/en/Quick-Help/troubleshooting-Origin-crash">点击查看</a></li>
+<li>解决方案：<a href="https://www.originlab.com/doc/en/Quick-Help/troubleshooting-Origin-crash">点击查看</a></li>
 </ul>
 <h4 id="使用-Copy-Page-功能时提示“没有足够的内存实现此操作”"><a href="#使用-Copy-Page-功能时提示“没有足够的内存实现此操作”" class="headerlink" title="使用 Copy Page 功能时提示“没有足够的内存实现此操作”"></a>使用 Copy Page 功能时提示“没有足够的内存实现此操作”</h4><ul>
 <li>症状：将数据 Copy Page 至 PPT 时，提示“没有足够的内存实现此操作”。</li>
-<li>解决：该问题为 Office 的限制（<a href="https://www.originlab.com/doc/Quick-Help/OutOfMemory-CopyToPPT">点击查看</a>），无完美解决方案，但有网友称可以先 Copy Page 至 Word，再复制到PPT。</li>
+<li>解决方案：该问题为 Office 的限制（<a href="https://www.originlab.com/doc/Quick-Help/OutOfMemory-CopyToPPT">点击查看</a>），无完美解决方案。可以尝试可以先 Copy Page 至 Word，再复制到PPT。</li>
 </ul>
-<h3 id="02-数据问题"><a href="#02-数据问题" class="headerlink" title="02 数据问题"></a>02 数据问题</h3><h4 id="抓取图片上的数据点（Digitizer）"><a href="#抓取图片上的数据点（Digitizer）" class="headerlink" title="抓取图片上的数据点（Digitizer）"></a>抓取图片上的数据点（Digitizer）</h4><ul>
+<h3 id="02-数据相关"><a href="#02-数据相关" class="headerlink" title="02 数据相关"></a>02 数据相关</h3><h4 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h4><h5 id="抓取图片上的数据点（Digitizer）"><a href="#抓取图片上的数据点（Digitizer）" class="headerlink" title="抓取图片上的数据点（Digitizer）"></a>抓取图片上的数据点（Digitizer）</h5><ul>
 <li>地址：<a href="https://www.originlab.com/doc/Tutorials/enhanced-digitizer">点击查看</a></li>
 </ul>
-<h4 id="自定义数据格式（Custom-Numeric-Formats）"><a href="#自定义数据格式（Custom-Numeric-Formats）" class="headerlink" title="自定义数据格式（Custom Numeric Formats）"></a>自定义数据格式（Custom Numeric Formats）</h4><ul>
+<h5 id="自定义数据格式（Custom-Numeric-Formats）"><a href="#自定义数据格式（Custom-Numeric-Formats）" class="headerlink" title="自定义数据格式（Custom Numeric Formats）"></a>自定义数据格式（Custom Numeric Formats）</h5><ul>
 <li>地址：<a href="https://www.originlab.com/doc/Origin-Help/Custom-Formats">点击查看</a></li>
 </ul>
-<h4 id="内置函数列表（LabTalk-Supported-Functions）"><a href="#内置函数列表（LabTalk-Supported-Functions）" class="headerlink" title="内置函数列表（LabTalk-Supported Functions）"></a>内置函数列表（LabTalk-Supported Functions）</h4><ul>
+<h5 id="内置函数列表（LabTalk-Supported-Functions）"><a href="#内置函数列表（LabTalk-Supported-Functions）" class="headerlink" title="内置函数列表（LabTalk-Supported Functions）"></a>内置函数列表（LabTalk-Supported Functions）</h5><ul>
 <li>地址：<a href="https://www.originlab.com/doc/en/LabTalk/guide/LT-Supported-Functions">点击查看</a></li>
 </ul>
-<h4 id="支持的三角-双曲函数列表（Trigonometric-Hyperbolic-Functions）"><a href="#支持的三角-双曲函数列表（Trigonometric-Hyperbolic-Functions）" class="headerlink" title="支持的三角&#x2F;双曲函数列表（Trigonometric&#x2F;Hyperbolic Functions）"></a>支持的三角&#x2F;双曲函数列表（Trigonometric&#x2F;Hyperbolic Functions）</h4><ul>
+<h5 id="支持的三角-双曲函数列表（Trigonometric-Hyperbolic-Functions）"><a href="#支持的三角-双曲函数列表（Trigonometric-Hyperbolic-Functions）" class="headerlink" title="支持的三角&#x2F;双曲函数列表（Trigonometric&#x2F;Hyperbolic Functions）"></a>支持的三角&#x2F;双曲函数列表（Trigonometric&#x2F;Hyperbolic Functions）</h5><ul>
 <li>地址：<a href="https://www.originlab.com/doc/LabTalk/ref/Trigonometric-Hyperbolic-Functions">点击查看</a></li>
 </ul>
-<h3 id="03-制图问题"><a href="#03-制图问题" class="headerlink" title="03 制图问题"></a>03 制图问题</h3><h4 id="拷贝到-Word、PPT-等后图像失真"><a href="#拷贝到-Word、PPT-等后图像失真" class="headerlink" title="拷贝到 Word、PPT 等后图像失真"></a>拷贝到 Word、PPT 等后图像失真</h4><ul>
-<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/TextDistorted-in-ExpGraph">点击查看</a></li>
-</ul>
-<h4 id="Word-字号对应关系"><a href="#Word-字号对应关系" class="headerlink" title="Word 字号对应关系"></a>Word 字号对应关系</h4><ul>
-<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/How_to_set_font_size_to_number_n">点击查看</a></li>
-</ul>
-<h4 id="使用-Data-Connector-后数据丢失、图像中有一个下载标志"><a href="#使用-Data-Connector-后数据丢失、图像中有一个下载标志" class="headerlink" title="使用 Data Connector 后数据丢失、图像中有一个下载标志"></a>使用 Data Connector 后数据丢失、图像中有一个下载标志</h4><ul>
-<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/Connector-open-project-data-missing">点击查看</a></li>
+<h4 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h4><h5 id="使用-Data-Connector-后数据丢失、图像中有一个下载标志"><a href="#使用-Data-Connector-后数据丢失、图像中有一个下载标志" class="headerlink" title="使用 Data Connector 后数据丢失、图像中有一个下载标志"></a>使用 Data Connector 后数据丢失、图像中有一个下载标志</h5><ul>
+<li>解决方案：<a href="https://www.originlab.com/doc/Quick-Help/Connector-open-project-data-missing">点击查看</a></li>
 </ul>
 <p><img src="https://img.yeslu.cn/blog/2022-10/08-ddfe73484aadb491abf9ca9d3fc234b2.png"></p>
-<h4 id="无法退出缩放模式"><a href="#无法退出缩放模式" class="headerlink" title="无法退出缩放模式"></a>无法退出缩放模式</h4><ul>
-<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/Escape-from-Zooming-and-Panning">点击查看</a></li>
+<h3 id="03-制图问题"><a href="#03-制图问题" class="headerlink" title="03 制图问题"></a>03 制图问题</h3><h4 id="功能-1"><a href="#功能-1" class="headerlink" title="功能"></a>功能</h4><h5 id="Word-字号对应关系"><a href="#Word-字号对应关系" class="headerlink" title="Word 字号对应关系"></a>Word 字号对应关系</h5><ul>
+<li>地址：<a href="https://www.originlab.com/doc/Quick-Help/How_to_set_font_size_to_number_n">点击查看</a></li>
 </ul>
-<h4 id="无法通过双击编辑文字"><a href="#无法通过双击编辑文字" class="headerlink" title="无法通过双击编辑文字"></a>无法通过双击编辑文字</h4><ul>
-<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/Double-Click-Enter-In-Place-Edit-Mode">点击查看</a></li>
+<h5 id="数据点上的箭头和标记是什么"><a href="#数据点上的箭头和标记是什么" class="headerlink" title="数据点上的箭头和标记是什么"></a>数据点上的箭头和标记是什么</h5><ul>
+<li>地址：<a href="https://www.originlab.com/doc/Quick-Help/Markers-Lock">点击查看</a></li>
 </ul>
-<h4 id="无法修改页面尺寸"><a href="#无法修改页面尺寸" class="headerlink" title="无法修改页面尺寸"></a>无法修改页面尺寸</h4><ul>
+<p><img src="https://img.yeslu.cn/blog/2023-03/01-4e34ff4e8e1cef1ec3637c6a0abda6aa"></p>
+<h5 id="导出文字可编辑的图片"><a href="#导出文字可编辑的图片" class="headerlink" title="导出文字可编辑的图片"></a>导出文字可编辑的图片</h5><ul>
+<li>地址：<a href="https://www.originlab.com/doc/en/Quick-Help/Exp-Editable-Text-EPSl">点击查看</a></li>
+</ul>
+<img src="https://img.yeslu.cn/blog/2023-06/27-91a68139a21df670ac0dcfaad94b8e57.png" style="zoom: 33%;" />
+
+<h5 id="使用短连字符号作为负号（hyphen-short-minus）"><a href="#使用短连字符号作为负号（hyphen-short-minus）" class="headerlink" title="使用短连字符号作为负号（hyphen&#x2F;short minus）"></a>使用短连字符号作为负号（hyphen&#x2F;short minus）</h5><ul>
+<li>地址：<a href="https://www.originlab.com/doc/Quick-Help/add-real-minus-to-tick-labels">点击查看</a></li>
+</ul>
+<h5 id="富文本标签说明（Origin-Rich-Text）"><a href="#富文本标签说明（Origin-Rich-Text）" class="headerlink" title="富文本标签说明（Origin Rich Text）"></a>富文本标签说明（Origin Rich Text）</h5><ul>
+<li>备注：用于显示上下标等特殊符号的标记语法</li>
+<li>地址：<a href="https://www.originlab.com/doc/Origin-Help/Origin-Rich-Text">点击查看</a></li>
+</ul>
+<h5 id="文本标签替换（Text-Label-Substitution）"><a href="#文本标签替换（Text-Label-Substitution）" class="headerlink" title="文本标签替换（Text Label Substitution）"></a>文本标签替换（Text Label Substitution）</h5><ul>
+<li>备注：通过替换标记，引用工作表列中存储的数据集元数据</li>
+<li>地址：<a href="https://www.originlab.com/doc/en/LabTalk/ref/Text-Label-Options">点击查看</a></li>
+</ul>
+<h5 id="高级图例设置（Legend-Substitution-Notation）"><a href="#高级图例设置（Legend-Substitution-Notation）" class="headerlink" title="高级图例设置（Legend Substitution Notation）"></a>高级图例设置（Legend Substitution Notation）</h5><ul>
+<li>地址：<a href="https://www.originlab.com/doc/LabTalk/ref/Legend-Substitution-Notation">点击查看</a></li>
+</ul>
+<h5 id="色盲安全配色（ColorBlindSafe）"><a href="#色盲安全配色（ColorBlindSafe）" class="headerlink" title="色盲安全配色（ColorBlindSafe）"></a>色盲安全配色（ColorBlindSafe）</h5><ul>
+<li>地址：<a href="https://www.originlab.com/doc/Quick-Help/Colorblind-Friendly-Colors">点击查看</a></li>
+</ul>
+<img src="https://img.yeslu.cn/blog/2022-04/08-8e2ae1af7453a67551988cfa9637d61d.png" style="zoom:50%;" />
+
+<h5 id="复制格式（批量应用格式）"><a href="#复制格式（批量应用格式）" class="headerlink" title="复制格式（批量应用格式）"></a>复制格式（批量应用格式）</h5><ul>
+<li>地址：<a href="https://www.originlab.com/doc/en/Origin-Help/CopyPaste-Format">点击查看</a></li>
+</ul>
+<h4 id="异常-1"><a href="#异常-1" class="headerlink" title="异常"></a>异常</h4><h5 id="拷贝到-Word、PPT-等后图像失真"><a href="#拷贝到-Word、PPT-等后图像失真" class="headerlink" title="拷贝到 Word、PPT 等后图像失真"></a>拷贝到 Word、PPT 等后图像失真</h5><ul>
+<li>解决方案：<a href="https://www.originlab.com/doc/Quick-Help/TextDistorted-in-ExpGraph">点击查看</a></li>
+</ul>
+<h5 id="导出-PDF-EPS-等矢量图后字体、图形等出现问题"><a href="#导出-PDF-EPS-等矢量图后字体、图形等出现问题" class="headerlink" title="导出 PDF&#x2F;EPS 等矢量图后字体、图形等出现问题"></a>导出 PDF&#x2F;EPS 等矢量图后字体、图形等出现问题</h5><ul>
+<li>解决方案：<a href="https://www.originlab.com/doc/Quick-Help/export-pdf-prob">点击查看</a></li>
+</ul>
+<h5 id="无法退出缩放模式"><a href="#无法退出缩放模式" class="headerlink" title="无法退出缩放模式"></a>无法退出缩放模式</h5><ul>
+<li>解决方案：<a href="https://www.originlab.com/doc/Quick-Help/Escape-from-Zooming-and-Panning">点击查看</a></li>
+</ul>
+<h5 id="无法通过双击编辑文字"><a href="#无法通过双击编辑文字" class="headerlink" title="无法通过双击编辑文字"></a>无法通过双击编辑文字</h5><ul>
+<li>解决方案：<a href="https://www.originlab.com/doc/Quick-Help/Double-Click-Enter-In-Place-Edit-Mode">点击查看</a></li>
+</ul>
+<h5 id="无法修改页面尺寸"><a href="#无法修改页面尺寸" class="headerlink" title="无法修改页面尺寸"></a>无法修改页面尺寸</h5><ul>
 <li>症状：宽度和高度均为锁定状态，无法修改数值</li>
 </ul>
 <img src="https://img.yeslu.cn/blog/2023-03/01-bf932d958462531c74c1a558eba3e238.png" style="zoom: 33%;" />
 
 <ul>
-<li>解决：使用 Page View 模式，参考 <a href="https://www.originlab.com/doc/en/Origin-Help/Compare-PageView-Modes">Available Page Viewing Modes</a></li>
+<li>解决方案：使用 Page View 模式，参考 <a href="https://www.originlab.com/doc/en/Origin-Help/Compare-PageView-Modes">Available Page Viewing Modes</a></li>
 </ul>
 <img src="https://img.yeslu.cn/blog/2023-03/01-99fed584f15cec8df17de20e15669ccb.jpg" style="zoom: 33%;" />
 
-<h4 id="数据点上的箭头和标记是什么"><a href="#数据点上的箭头和标记是什么" class="headerlink" title="数据点上的箭头和标记是什么"></a>数据点上的箭头和标记是什么</h4><ul>
-<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/Markers-Lock">点击查看</a></li>
+<h5 id="无法正常显示图例，图例出现黑色色块"><a href="#无法正常显示图例，图例出现黑色色块" class="headerlink" title="无法正常显示图例，图例出现黑色色块"></a>无法正常显示图例，图例出现黑色色块</h5><ul>
+<li>解决方案：<a href="https://www.yeslu.cn/archives/863b7bad.html">点击查看</a></li>
 </ul>
-<p><img src="https://img.yeslu.cn/blog/2023-03/01-4e34ff4e8e1cef1ec3637c6a0abda6aa"></p>
-<h4 id="无法正常显示图例，图例出现黑色色块"><a href="#无法正常显示图例，图例出现黑色色块" class="headerlink" title="无法正常显示图例，图例出现黑色色块"></a>无法正常显示图例，图例出现黑色色块</h4><ul>
-<li>解决：<a href="https://www.yeslu.cn/archives/863b7bad.html">点击查看</a></li>
+<h5 id="标签过长或重叠"><a href="#标签过长或重叠" class="headerlink" title="标签过长或重叠"></a>标签过长或重叠</h5><ul>
+<li>解决方案：<a href="https://www.originlab.com/doc/Quick-Help/wrap-axis-tick-labels">点击查看</a></li>
 </ul>
-<h4 id="导出文字可编辑的图片"><a href="#导出文字可编辑的图片" class="headerlink" title="导出文字可编辑的图片"></a>导出文字可编辑的图片</h4><ul>
-<li>地址：<a href="https://www.originlab.com/doc/en/Quick-Help/Exp-Editable-Text-EPSl">点击查看</a></li>
-</ul>
-<img src="https://img.yeslu.cn/blog/2023-06/27-91a68139a21df670ac0dcfaad94b8e57.png" style="zoom: 33%;" />
-
 <h3 id="04-个性化"><a href="#04-个性化" class="headerlink" title="04 个性化"></a>04 个性化</h3><h4 id="在论文中描述“数据使用-Origin-处理”（Citation）"><a href="#在论文中描述“数据使用-Origin-处理”（Citation）" class="headerlink" title="在论文中描述“数据使用 Origin 处理”（Citation）"></a>在论文中描述“数据使用 Origin 处理”（Citation）</h4><ul>
 <li>地址：<a href="https://www.originlab.com/index.aspx?go=Company&pid=1130">点击查看</a></li>
-</ul>
-<h4 id="使用短连字符号作为负号（hyphen-short-minus）"><a href="#使用短连字符号作为负号（hyphen-short-minus）" class="headerlink" title="使用短连字符号作为负号（hyphen&#x2F;short minus）"></a>使用短连字符号作为负号（hyphen&#x2F;short minus）</h4><ul>
-<li>地址：<a href="https://www.originlab.com/doc/Quick-Help/add-real-minus-to-tick-labels">点击查看</a></li>
-</ul>
-<h4 id="富文本标签说明（Origin-Rich-Text）"><a href="#富文本标签说明（Origin-Rich-Text）" class="headerlink" title="富文本标签说明（Origin Rich Text）"></a>富文本标签说明（Origin Rich Text）</h4><ul>
-<li>备注：用于显示上下标等特殊符号的标记语法</li>
-<li>地址：<a href="https://www.originlab.com/doc/Origin-Help/Origin-Rich-Text">点击查看</a></li>
-</ul>
-<h4 id="文本标签替换（Text-Label-Substitution）"><a href="#文本标签替换（Text-Label-Substitution）" class="headerlink" title="文本标签替换（Text Label Substitution）"></a>文本标签替换（Text Label Substitution）</h4><ul>
-<li>备注：通过替换标记，引用工作表列中存储的数据集元数据</li>
-<li>地址：<a href="https://www.originlab.com/doc/en/LabTalk/ref/Text-Label-Options">点击查看</a></li>
-</ul>
-<h4 id="高级图例设置（Legend-Substitution-Notation）"><a href="#高级图例设置（Legend-Substitution-Notation）" class="headerlink" title="高级图例设置（Legend Substitution Notation）"></a>高级图例设置（Legend Substitution Notation）</h4><ul>
-<li>地址：<a href="https://www.originlab.com/doc/LabTalk/ref/Legend-Substitution-Notation">点击查看</a></li>
-</ul>
-<h4 id="色盲安全配色（ColorBlindSafe）"><a href="#色盲安全配色（ColorBlindSafe）" class="headerlink" title="色盲安全配色（ColorBlindSafe）"></a>色盲安全配色（ColorBlindSafe）</h4><ul>
-<li>地址：<a href="https://www.originlab.com/doc/Quick-Help/Colorblind-Friendly-Colors">点击查看</a></li>
-</ul>
-<img src="https://img.yeslu.cn/blog/2022-04/08-8e2ae1af7453a67551988cfa9637d61d.png" style="zoom:50%;" />
-
-<h4 id="复制格式（批量应用格式）"><a href="#复制格式（批量应用格式）" class="headerlink" title="复制格式（批量应用格式）"></a>复制格式（批量应用格式）</h4><ul>
-<li>解决：<a href="https://www.originlab.com/doc/en/Origin-Help/CopyPaste-Format">点击查看</a></li>
-</ul>
-<h4 id="标签过长或重叠"><a href="#标签过长或重叠" class="headerlink" title="标签过长或重叠"></a>标签过长或重叠</h4><ul>
-<li>解决：<a href="https://www.originlab.com/doc/Quick-Help/wrap-axis-tick-labels">点击查看</a></li>
 </ul>
 <h2 id="插件系统"><a href="#插件系统" class="headerlink" title="插件系统"></a>插件系统</h2><ul>
 <li>插件主页：<a href="https://www.originlab.com/Fileexchange/">点击查看</a></li>
