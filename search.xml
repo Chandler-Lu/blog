@@ -5671,6 +5671,7 @@
 </ol>
 <h3 id="SAMSUNG-T7-Shield-2-TB"><a href="#SAMSUNG-T7-Shield-2-TB" class="headerlink" title="SAMSUNG T7 Shield 2 TB"></a>SAMSUNG T7 Shield 2 TB</h3><h4 id="测速-20"><a href="#测速-20" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2025-03/06-f407e70a789b27b5a1470997208d8565.png" style="zoom:50%;" />
 
+<p><img src="https://img.yeslu.cn/blog/2025-03/13-19d4c93f651fc403383076fd9b619262.png"></p>
 <h4 id="说明-20"><a href="#说明-20" class="headerlink" title="说明"></a>说明</h4><ol>
 <li>购买时间：2025.03.06</li>
 <li>测试时间：2025.03.06</li>
@@ -10412,7 +10413,7 @@
   <entry>
     <title>第一台自组台式机</title>
     <url>/archives/81558531.html</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>鉴于有了新屋子，多年来自组台式机的想法终于可以落实了&lt;_&lt;</p>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>鉴于有了新屋子，多年来自组台式机的想法终于落实了&lt;_&lt; 提供一个配置清单给大家参考。</p>
 <span id="more"></span>
 
 
@@ -10500,5 +10501,101 @@
       <categories>
         <category>Hardware</category>
       </categories>
+  </entry>
+  <entry>
+    <title>Origin 例图分析 - Fan Performance Curves</title>
+    <url>/archives/f6f7abf.html</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在 Origin 的 Learning Center 中有这样一张风扇性能曲线图，但对于非专业人士来说解读曲线会有些困难。以下分析结果采用 ChatGPT o1 分析，经人工修正后给出。</p>
+<p><img src="https://img.yeslu.cn/blog/2025-03/15-d0dffd2ef984a96546f415237734abaa.png"></p>
+<span id="more"></span>
+
+<h2 id="解读"><a href="#解读" class="headerlink" title="解读"></a>解读</h2><p>For reference, this type of chart is commonly known as a fan performance curve, fan characteristic curve, or simply fan curve.</p>
+<h3 id="1-Axes-and-Basic-Layout"><a href="#1-Axes-and-Basic-Layout" class="headerlink" title="1. Axes and Basic Layout"></a>1. Axes and Basic Layout</h3><ol>
+<li><p><strong>X‐Axis (Horizontal)</strong></p>
+<ul>
+<li><strong>Flow Rate</strong>: Shown in cubic meters per hour (m³&#x2F;hr) along the top scale, and in cubic feet per minute (CFM) across the bottom scale. (You’ll see “CFM × 100” on the bottom axis.)</li>
+<li>As you move to the right on the x‐axis, the air volume (flow) increases.</li>
+</ul>
+</li>
+<li><p><strong>Y‐Axis (Vertical)</strong></p>
+<ul>
+<li><strong>Static Pressure</strong>:<ul>
+<li>The left label in <em>inches water gauge (in. w.g.)</em> (commonly used in some regions).</li>
+<li>The right label in <em>Pascals (Pa)</em> (SI unit).</li>
+</ul>
+</li>
+<li>Higher up the y‐axis corresponds to a higher static pressure the fan can provide.</li>
+</ul>
+</li>
+<li><p><strong>Curves on the Plot</strong></p>
+<ul>
+<li><strong>Red Curves (RPM)</strong>: Each red curve corresponds to a specific fan speed, in revolutions per minute. You’ll see labels like 500, 800, 1100, 1350, 1700, and 2100, etc.</li>
+<li><strong>Dashed Curves (kW)</strong>: These diagonal dashed lines represent the <em>power consumption</em> (in kW) at various operating points. For instance, 0.18 kW, 0.25 kW, 0.37 kW, and so on.</li>
+<li><strong>Black Curve (Max System Curve)</strong>: This is a <em>system resistance curve</em> (or sometimes simply a “system curve”). It shows how much pressure is required by the system at different flow rates.</li>
+</ul>
+</li>
+</ol>
+<h3 id="2-How-to-Read-the-Fan-Curves"><a href="#2-How-to-Read-the-Fan-Curves" class="headerlink" title="2. How to Read the Fan Curves"></a>2. How to Read the Fan Curves</h3><ol>
+<li><p><strong>Operating Points at Different RPM</strong></p>
+<ul>
+<li>Each red curve (for a specific RPM) shows how the <em>flow</em> and <em>pressure</em> of the fan relate at that speed. For example:<ul>
+<li>At 500 RPM, the fan might only produce a modest flow and static pressure.</li>
+<li>At 2100 RPM, you can achieve much higher flow, but also higher power usage and higher pressure capability.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Power Consumption (kW)</strong></p>
+<ul>
+<li>The dashed lines (e.g., 0.18 kW, 0.37 kW, etc.) show approximate power draw at certain flow &amp; pressure points. If you pick a point on a red RPM curve, you can see which dashed line it’s nearest to, giving you an estimate of the required motor power.</li>
+</ul>
+</li>
+<li><p><strong>System Curve (Black Curve)</strong></p>
+<ul>
+<li>A system curve tells you how much pressure is needed in the duct or system as flow changes. The black line labeled “Max System Curve” indicates the maximum pressure requirement that the system can impose.</li>
+<li>Where the <em>fan curve</em> (at a given RPM) intersects with this <em>system curve</em> is your fan’s operating point: the actual flow rate and pressure that will occur under those conditions.</li>
+</ul>
+</li>
+</ol>
+<h3 id="3-Practical-Usage"><a href="#3-Practical-Usage" class="headerlink" title="3. Practical Usage"></a>3. Practical Usage</h3><ol>
+<li><p><strong>Fan Selection</strong></p>
+<ul>
+<li>You typically select a fan by looking at the desired flow and pressure. For example, say your system needs 5000 m³&#x2F;hr at 600 Pa. Find the intersection of 5000 m³&#x2F;hr (on the x‐axis) and 600 Pa (on the y‐axis), then see which RPM curve meets that point.</li>
+<li>Ensure that the associated power consumption (kW) curve is within your motor’s rating.</li>
+</ul>
+</li>
+<li><p><strong>Matching System and Fan</strong></p>
+<ul>
+<li>If your actual system curve (black line) is steeper or higher than expected, you might end up with <em>less</em> flow than you hoped for, or you might need a higher RPM (and more powerful motor).</li>
+<li>If the system curve is flatter (less pressure drop), you might get more flow, but also need to check your fan’s power draw to avoid overloading the motor.</li>
+</ul>
+</li>
+<li><p><strong>Performance Boundaries</strong></p>
+<ul>
+<li>Each red RPM curve eventually slopes downward and to the right, which is typical: at higher flow rates, the fan cannot sustain as high a pressure.</li>
+<li>The maximum point on each curve (its “peak”) is often a best-efficiency region.</li>
+</ul>
+</li>
+</ol>
+<h3 id="4-Key-Takeaways"><a href="#4-Key-Takeaways" class="headerlink" title="4. Key Takeaways"></a>4. Key Takeaways</h3><ol>
+<li><strong>Higher RPM → Higher Flow &amp; Pressure</strong> but also higher kW.</li>
+<li><strong>Dashed kW Curves</strong> help ensure motor power requirements are met.</li>
+<li><strong>System Curve Intersection</strong> dictates the true operating point in a real‐world application.</li>
+<li><strong>Static Pressure vs. Flow</strong> is the fundamental trade‐off in fan operation.</li>
+</ol>
+<p><strong>In short, this chart helps engineers pick the right fan speed (RPM) and motor power (kW) to achieve the desired flow and pressure for a system, ensuring the chosen fan will meet the performance requirements without overloading the motor.</strong></p>
+<h4 id="Sources"><a href="#Sources" class="headerlink" title="Sources"></a>Sources</h4><ul>
+<li><a href="https://www.ashrae.org/">ASHRAE Handbook – Fundamentals</a> (fan and duct system design principles)  </li>
+<li><a href="https://www.amca.org/">AMCA (Air Movement and Control Association) Publications</a></li>
+</ul>
+<p>These organizations provide standards and guidelines commonly used for fan performance charts.</p>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
+        <tag>Graph</tag>
+        <tag>Origin</tag>
+      </tags>
   </entry>
 </search>
