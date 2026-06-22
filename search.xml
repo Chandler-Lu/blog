@@ -5348,34 +5348,9 @@
 <li>测试时间：2022.07.14</li>
 <li>用途：Sony A7R2</li>
 </ol>
-<h2 id="TF"><a href="#TF" class="headerlink" title="TF"></a>TF</h2><h3 id="Netac-P500-64-GB（监控专用）"><a href="#Netac-P500-64-GB（监控专用）" class="headerlink" title="Netac P500 64 GB（监控专用）"></a>Netac P500 64 GB（监控专用）</h3><h4 id="测速-3"><a href="#测速-3" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2024-10/19-80c7502ca6380f7a2652cd4b3dfb3567.png" alt="image-20241019213904978" style="zoom:50%;" />
+<h2 id="TF"><a href="#TF" class="headerlink" title="TF"></a>TF</h2><h3 id="SanDisk-Extreme-32-GB"><a href="#SanDisk-Extreme-32-GB" class="headerlink" title="SanDisk Extreme 32 GB"></a>SanDisk Extreme 32 GB</h3><h4 id="测速-3"><a href="#测速-3" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/14-1f9dad0858287adc89d176b790c94008.jpg" style="zoom:50%;" />
 
 <h4 id="等级-3"><a href="#等级-3" class="headerlink" title="等级"></a>等级</h4><table>
-<thead>
-<tr>
-<th align="center">接口</th>
-<th align="center">UHS 速度等级</th>
-<th align="center">速度等级</th>
-<th align="center">视频速度等级</th>
-<th align="center">应用程序等级</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">UHS-I</td>
-<td align="center">U3</td>
-<td align="center">-</td>
-<td align="center">V30</td>
-<td align="center">A1</td>
-</tr>
-</tbody></table>
-<h4 id="说明-3"><a href="#说明-3" class="headerlink" title="说明"></a>说明</h4><ol>
-<li>购买时间：2024.09.28</li>
-<li>测试时间：2024.10.19</li>
-<li>用途：小米监控</li>
-</ol>
-<h3 id="SanDisk-Extreme-32-GB"><a href="#SanDisk-Extreme-32-GB" class="headerlink" title="SanDisk Extreme 32 GB"></a>SanDisk Extreme 32 GB</h3><h4 id="测速-4"><a href="#测速-4" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/14-1f9dad0858287adc89d176b790c94008.jpg" style="zoom:50%;" />
-
-<h4 id="等级-4"><a href="#等级-4" class="headerlink" title="等级"></a>等级</h4><table>
 <thead>
 <tr>
 <th align="center">接口</th>
@@ -5393,11 +5368,36 @@
 <td align="center">A1</td>
 </tr>
 </tbody></table>
-<h4 id="说明-4"><a href="#说明-4" class="headerlink" title="说明"></a>说明</h4><ol>
+<h4 id="说明-3"><a href="#说明-3" class="headerlink" title="说明"></a>说明</h4><ol>
 <li>购买时间：2018.05.01</li>
 <li>测试时间：2022.06.14</li>
 </ol>
-<h3 id="SanDisk-Extreme-128-GB"><a href="#SanDisk-Extreme-128-GB" class="headerlink" title="SanDisk Extreme 128 GB"></a>SanDisk Extreme 128 GB</h3><h4 id="测速-5"><a href="#测速-5" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/18-cddeb98895f41cb57b5a1c725e1f2bc3.jpg" style="zoom:50%;" />
+<h3 id="SanDisk-Extreme-128-GB"><a href="#SanDisk-Extreme-128-GB" class="headerlink" title="SanDisk Extreme 128 GB"></a>SanDisk Extreme 128 GB</h3><h4 id="测速-4"><a href="#测速-4" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/18-cddeb98895f41cb57b5a1c725e1f2bc3.jpg" style="zoom:50%;" />
+
+<h4 id="等级-4"><a href="#等级-4" class="headerlink" title="等级"></a>等级</h4><table>
+<thead>
+<tr>
+<th align="center">接口</th>
+<th align="center">UHS 速度等级</th>
+<th align="center">速度等级</th>
+<th align="center">视频速度等级</th>
+<th align="center">应用程序等级</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">UHS-I</td>
+<td align="center">U3</td>
+<td align="center">C10</td>
+<td align="center">V30</td>
+<td align="center">A2</td>
+</tr>
+</tbody></table>
+<h4 id="说明-4"><a href="#说明-4" class="headerlink" title="说明"></a>说明</h4><ol>
+<li>购买时间：2022.02.02</li>
+<li>测试时间：2022.06.14</li>
+<li>用途：DJI Flip</li>
+</ol>
+<h3 id="SanDisk-Extreme-256GB"><a href="#SanDisk-Extreme-256GB" class="headerlink" title="SanDisk Extreme 256GB"></a>SanDisk Extreme 256GB</h3><h4 id="测速-5"><a href="#测速-5" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2024-12/15-3f863b58f18b95f652b3586eedc815db.png" alt="" style="zoom:50%;" />
 
 <h4 id="等级-5"><a href="#等级-5" class="headerlink" title="等级"></a>等级</h4><table>
 <thead>
@@ -5418,38 +5418,13 @@
 </tr>
 </tbody></table>
 <h4 id="说明-5"><a href="#说明-5" class="headerlink" title="说明"></a>说明</h4><ol>
-<li>购买时间：2022.02.02</li>
-<li>测试时间：2022.06.14</li>
-<li>用途：DJI Flip</li>
-</ol>
-<h3 id="SanDisk-Extreme-256GB"><a href="#SanDisk-Extreme-256GB" class="headerlink" title="SanDisk Extreme 256GB"></a>SanDisk Extreme 256GB</h3><h4 id="测速-6"><a href="#测速-6" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2024-12/15-3f863b58f18b95f652b3586eedc815db.png" alt="" style="zoom:50%;" />
-
-<h4 id="等级-6"><a href="#等级-6" class="headerlink" title="等级"></a>等级</h4><table>
-<thead>
-<tr>
-<th align="center">接口</th>
-<th align="center">UHS 速度等级</th>
-<th align="center">速度等级</th>
-<th align="center">视频速度等级</th>
-<th align="center">应用程序等级</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">UHS-I</td>
-<td align="center">U3</td>
-<td align="center">C10</td>
-<td align="center">V30</td>
-<td align="center">A2</td>
-</tr>
-</tbody></table>
-<h4 id="说明-6"><a href="#说明-6" class="headerlink" title="说明"></a>说明</h4><ol>
 <li>购买时间：2024.12.10</li>
 <li>测试时间：2024.12.15</li>
 <li>用途：DJI Osmo Pocket 3</li>
 </ol>
-<h3 id="Lexar-633x-Blue-64-GB"><a href="#Lexar-633x-Blue-64-GB" class="headerlink" title="Lexar 633x Blue 64 GB"></a>Lexar 633x Blue 64 GB</h3><h4 id="测速-7"><a href="#测速-7" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/17-8473ec157265a831f2348b08eab43e3c.jpg" style="zoom:50%;" />
+<h3 id="Lexar-633x-Blue-64-GB"><a href="#Lexar-633x-Blue-64-GB" class="headerlink" title="Lexar 633x Blue 64 GB"></a>Lexar 633x Blue 64 GB</h3><h4 id="测速-6"><a href="#测速-6" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/17-8473ec157265a831f2348b08eab43e3c.jpg" style="zoom:50%;" />
 
-<h4 id="等级-7"><a href="#等级-7" class="headerlink" title="等级"></a>等级</h4><table>
+<h4 id="等级-6"><a href="#等级-6" class="headerlink" title="等级"></a>等级</h4><table>
 <thead>
 <tr>
 <th align="center">接口</th>
@@ -5467,12 +5442,37 @@
 <td align="center">A1</td>
 </tr>
 </tbody></table>
-<h4 id="说明-7"><a href="#说明-7" class="headerlink" title="说明"></a>说明</h4><ol>
+<h4 id="说明-6"><a href="#说明-6" class="headerlink" title="说明"></a>说明</h4><ol>
 <li>购买时间：2022.06.02（赠送）</li>
 <li>测试时间：2022.06.14</li>
 <li>用途：小米监控</li>
 </ol>
-<h3 id="Lexar-1066x-Sliver-128-GB"><a href="#Lexar-1066x-Sliver-128-GB" class="headerlink" title="Lexar 1066x Sliver 128 GB"></a>Lexar 1066x Sliver 128 GB</h3><h4 id="测速-8"><a href="#测速-8" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/14-a2fc4fa1d10b891a31d8ccc6425a541b.jpg" style="zoom:50%;" />
+<h3 id="Lexar-1066x-Sliver-128-GB"><a href="#Lexar-1066x-Sliver-128-GB" class="headerlink" title="Lexar 1066x Sliver 128 GB"></a>Lexar 1066x Sliver 128 GB</h3><h4 id="测速-7"><a href="#测速-7" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/14-a2fc4fa1d10b891a31d8ccc6425a541b.jpg" style="zoom:50%;" />
+
+<h4 id="等级-7"><a href="#等级-7" class="headerlink" title="等级"></a>等级</h4><table>
+<thead>
+<tr>
+<th align="center">接口</th>
+<th align="center">UHS 速度等级</th>
+<th align="center">速度等级</th>
+<th align="center">视频速度等级</th>
+<th align="center">应用程序等级</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">UHS-I</td>
+<td align="center">U3</td>
+<td align="center">C10</td>
+<td align="center">V30</td>
+<td align="center">A2</td>
+</tr>
+</tbody></table>
+<h4 id="说明-7"><a href="#说明-7" class="headerlink" title="说明"></a>说明</h4><ol>
+<li>购买时间：2021.01.20</li>
+<li>测试时间：2022.06.14</li>
+<li>用途：DJI Air 2S</li>
+</ol>
+<h3 id="Lexar-Sliver-Plus-512-GB"><a href="#Lexar-Sliver-Plus-512-GB" class="headerlink" title="Lexar Sliver Plus 512 GB"></a>Lexar Sliver Plus 512 GB</h3><h4 id="测速-8"><a href="#测速-8" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2024-12/15-cdfb746ee2888e5e5f74163508ef3f81.png" style="zoom:50%;" />
 
 <h4 id="等级-8"><a href="#等级-8" class="headerlink" title="等级"></a>等级</h4><table>
 <thead>
@@ -5493,38 +5493,13 @@
 </tr>
 </tbody></table>
 <h4 id="说明-8"><a href="#说明-8" class="headerlink" title="说明"></a>说明</h4><ol>
-<li>购买时间：2021.01.20</li>
-<li>测试时间：2022.06.14</li>
-<li>用途：DJI Air 2S</li>
-</ol>
-<h3 id="Lexar-Sliver-Plus-512-GB"><a href="#Lexar-Sliver-Plus-512-GB" class="headerlink" title="Lexar Sliver Plus 512 GB"></a>Lexar Sliver Plus 512 GB</h3><h4 id="测速-9"><a href="#测速-9" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2024-12/15-cdfb746ee2888e5e5f74163508ef3f81.png" style="zoom:50%;" />
-
-<h4 id="等级-9"><a href="#等级-9" class="headerlink" title="等级"></a>等级</h4><table>
-<thead>
-<tr>
-<th align="center">接口</th>
-<th align="center">UHS 速度等级</th>
-<th align="center">速度等级</th>
-<th align="center">视频速度等级</th>
-<th align="center">应用程序等级</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">UHS-I</td>
-<td align="center">U3</td>
-<td align="center">C10</td>
-<td align="center">V30</td>
-<td align="center">A2</td>
-</tr>
-</tbody></table>
-<h4 id="说明-9"><a href="#说明-9" class="headerlink" title="说明"></a>说明</h4><ol>
 <li>购买时间：2024.12.02</li>
 <li>测试时间：2024.12.15</li>
 <li>用途：DJI Osmo Action 5 Pro、DJI Osmo 360</li>
 </ol>
-<h3 id="SAMSUNG-EVO-Plus-32-GB"><a href="#SAMSUNG-EVO-Plus-32-GB" class="headerlink" title="SAMSUNG EVO Plus 32 GB"></a>SAMSUNG EVO Plus 32 GB</h3><h4 id="测速-10"><a href="#测速-10" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/17-cce54c4941bd238fe6bc44f81148a094.jpg" style="zoom:50%;" />
+<h3 id="SAMSUNG-EVO-Plus-32-GB"><a href="#SAMSUNG-EVO-Plus-32-GB" class="headerlink" title="SAMSUNG EVO Plus 32 GB"></a>SAMSUNG EVO Plus 32 GB</h3><h4 id="测速-9"><a href="#测速-9" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/17-cce54c4941bd238fe6bc44f81148a094.jpg" style="zoom:50%;" />
 
-<h4 id="等级-10"><a href="#等级-10" class="headerlink" title="等级"></a>等级</h4><table>
+<h4 id="等级-9"><a href="#等级-9" class="headerlink" title="等级"></a>等级</h4><table>
 <thead>
 <tr>
 <th align="center">接口</th>
@@ -5542,11 +5517,36 @@
 <td align="center">-</td>
 </tr>
 </tbody></table>
-<h4 id="说明-10"><a href="#说明-10" class="headerlink" title="说明"></a>说明</h4><ol>
+<h4 id="说明-9"><a href="#说明-9" class="headerlink" title="说明"></a>说明</h4><ol>
 <li>测试时间：2022.06.17</li>
 <li>用途：Zoom H2n</li>
 </ol>
-<h3 id="SAMSUNG-PRO-Plus-256-GB"><a href="#SAMSUNG-PRO-Plus-256-GB" class="headerlink" title="SAMSUNG PRO Plus 256 GB"></a>SAMSUNG PRO Plus 256 GB</h3><h4 id="测速-11"><a href="#测速-11" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/16-7a3a01b42201bc7d60a0d791f26b28a7.png" style="zoom:50%;" />
+<h3 id="SAMSUNG-PRO-Plus-256-GB"><a href="#SAMSUNG-PRO-Plus-256-GB" class="headerlink" title="SAMSUNG PRO Plus 256 GB"></a>SAMSUNG PRO Plus 256 GB</h3><h4 id="测速-10"><a href="#测速-10" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/16-7a3a01b42201bc7d60a0d791f26b28a7.png" style="zoom:50%;" />
+
+<h4 id="等级-10"><a href="#等级-10" class="headerlink" title="等级"></a>等级</h4><table>
+<thead>
+<tr>
+<th align="center">接口</th>
+<th align="center">UHS 速度等级</th>
+<th align="center">速度等级</th>
+<th align="center">视频速度等级</th>
+<th align="center">应用程序等级</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">UHS-I</td>
+<td align="center">U3</td>
+<td align="center">C10</td>
+<td align="center">V30</td>
+<td align="center">A2</td>
+</tr>
+</tbody></table>
+<h4 id="说明-10"><a href="#说明-10" class="headerlink" title="说明"></a>说明</h4><ol>
+<li>购买时间：2022.06.16</li>
+<li>测试时间：2022.06.16</li>
+<li>用途：VIOFO A229Pro 行车记录仪（此卡在 DJI 平台上多次出现兼容性问题）</li>
+</ol>
+<h3 id="ZhiTai-Pro-256-GB"><a href="#ZhiTai-Pro-256-GB" class="headerlink" title="ZhiTai Pro 256 GB"></a>ZhiTai Pro 256 GB</h3><h4 id="测速-11"><a href="#测速-11" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2026-06/22-f4df90e8b3614af67856ed889d06c853.png" style="zoom:50%;" />
 
 <h4 id="等级-11"><a href="#等级-11" class="headerlink" title="等级"></a>等级</h4><table>
 <thead>
@@ -5567,11 +5567,12 @@
 </tr>
 </tbody></table>
 <h4 id="说明-11"><a href="#说明-11" class="headerlink" title="说明"></a>说明</h4><ol>
-<li>购买时间：2022.06.16</li>
-<li>测试时间：2022.06.16</li>
-<li>用途：此卡在 DJI 平台上多次出现兼容性问题，故用于 Switch OLED</li>
+<li>购买时间：2024.09.30</li>
+<li>测试时间：2024.10.19</li>
+<li>用途：DJI Avata 2</li>
+<li>备注：达不到标称速度，原因未知</li>
 </ol>
-<h3 id="ZhiTai-Pro-256-GB"><a href="#ZhiTai-Pro-256-GB" class="headerlink" title="ZhiTai Pro 256 GB"></a>ZhiTai Pro 256 GB</h3><h4 id="测速-12"><a href="#测速-12" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2024-10/19-391aa1ea2314d179c926d54c571070f0.png" alt="image-20241019212356072" style="zoom:50%;" />
+<h3 id="Kingston-Canvas-Go-Plus-128-GB"><a href="#Kingston-Canvas-Go-Plus-128-GB" class="headerlink" title="Kingston Canvas Go! Plus 128 GB"></a>Kingston Canvas Go! Plus 128 GB</h3><h4 id="测速-12"><a href="#测速-12" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2025-02/07-8f34fef35a9a475c210a0b9e36d275b5.png" alt="" style="zoom:50%;" />
 
 <h4 id="等级-12"><a href="#等级-12" class="headerlink" title="等级"></a>等级</h4><table>
 <thead>
@@ -5592,12 +5593,12 @@
 </tr>
 </tbody></table>
 <h4 id="说明-12"><a href="#说明-12" class="headerlink" title="说明"></a>说明</h4><ol>
-<li>购买时间：2024.09.30</li>
+<li>购买时间：2024.10.03</li>
 <li>测试时间：2024.10.19</li>
-<li>用途：DJI Avata 2</li>
-<li>备注：达不到标称速度，原因未知</li>
+<li>用途：DJI Goggles 3</li>
 </ol>
-<h3 id="Kingston-Canvas-Go-Plus-128-GB"><a href="#Kingston-Canvas-Go-Plus-128-GB" class="headerlink" title="Kingston Canvas Go! Plus 128 GB"></a>Kingston Canvas Go! Plus 128 GB</h3><h4 id="测速-13"><a href="#测速-13" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2025-02/07-8f34fef35a9a475c210a0b9e36d275b5.png" alt="" style="zoom:50%;" />
+<h3 id="Netac-P500-64-GB"><a href="#Netac-P500-64-GB" class="headerlink" title="Netac P500 64 GB"></a>Netac P500 64 GB</h3><h4 id="测速-13"><a href="#测速-13" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2026-06/22-356c2a20d3b5218084f227f195a9ccdb.png" style="zoom:50%;" />
+
 
 <h4 id="等级-13"><a href="#等级-13" class="headerlink" title="等级"></a>等级</h4><table>
 <thead>
@@ -5612,90 +5613,115 @@
 <tbody><tr>
 <td align="center">UHS-I</td>
 <td align="center">U3</td>
-<td align="center">C10</td>
+<td align="center">-</td>
 <td align="center">V30</td>
-<td align="center">A2</td>
+<td align="center">A1</td>
 </tr>
 </tbody></table>
 <h4 id="说明-13"><a href="#说明-13" class="headerlink" title="说明"></a>说明</h4><ol>
-<li>购买时间：2024.10.03</li>
-<li>测试时间：2024.10.19</li>
-<li>用途：DJI Goggles 3</li>
+<li>购买时间：2025.01.15</li>
+<li>测试时间：2026.06.14</li>
+<li>用途：Switch OLED</li>
 </ol>
-<h2 id="U盘"><a href="#U盘" class="headerlink" title="U盘"></a>U盘</h2><h3 id="IS903-64-GB-DIY"><a href="#IS903-64-GB-DIY" class="headerlink" title="IS903 64 GB (DIY)"></a>IS903 64 GB (DIY)</h3><h4 id="测速-14"><a href="#测速-14" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/14-da5d47707bf7cbe7cb83cf90d5cb9f79.PNG" style="zoom:50%;" />
+<h3 id="Netac-P500-64-GB（监控专用）"><a href="#Netac-P500-64-GB（监控专用）" class="headerlink" title="Netac P500 64 GB（监控专用）"></a>Netac P500 64 GB（监控专用）</h3><h4 id="测速-14"><a href="#测速-14" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2024-10/19-80c7502ca6380f7a2652cd4b3dfb3567.png" alt="image-20241019213904978" style="zoom:50%;" />
 
+<h4 id="等级-14"><a href="#等级-14" class="headerlink" title="等级"></a>等级</h4><table>
+<thead>
+<tr>
+<th align="center">接口</th>
+<th align="center">UHS 速度等级</th>
+<th align="center">速度等级</th>
+<th align="center">视频速度等级</th>
+<th align="center">应用程序等级</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">UHS-I</td>
+<td align="center">U3</td>
+<td align="center">-</td>
+<td align="center">V30</td>
+<td align="center">A1</td>
+</tr>
+</tbody></table>
 <h4 id="说明-14"><a href="#说明-14" class="headerlink" title="说明"></a>说明</h4><ol>
+<li>购买时间：2024.09.28</li>
+<li>测试时间：2024.10.19</li>
+<li>用途：小米监控</li>
+</ol>
+<h2 id="U盘"><a href="#U盘" class="headerlink" title="U盘"></a>U盘</h2><h3 id="IS903-64-GB-DIY"><a href="#IS903-64-GB-DIY" class="headerlink" title="IS903 64 GB (DIY)"></a>IS903 64 GB (DIY)</h3><h4 id="测速-15"><a href="#测速-15" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/14-da5d47707bf7cbe7cb83cf90d5cb9f79.PNG" style="zoom:50%;" />
+
+<h4 id="说明-15"><a href="#说明-15" class="headerlink" title="说明"></a>说明</h4><ol>
 <li>购买时间：2020.08.20</li>
 <li>测试时间：2022.06.14</li>
 <li>闪存：KIOXIA TH58TEG7DBHBAMC MLC</li>
 <li>其他：IS903 的 4K 读写速度没有测试意义</li>
 </ol>
-<h3 id="SanDisk-CZ880-128-GB"><a href="#SanDisk-CZ880-128-GB" class="headerlink" title="SanDisk CZ880 128 GB"></a>SanDisk CZ880 128 GB</h3><h4 id="测速-15"><a href="#测速-15" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2024-02/05-102846d64d2c691720df93b210f5bdf9.png" style="zoom:50%;" />
+<h3 id="SanDisk-CZ880-128-GB"><a href="#SanDisk-CZ880-128-GB" class="headerlink" title="SanDisk CZ880 128 GB"></a>SanDisk CZ880 128 GB</h3><h4 id="测速-16"><a href="#测速-16" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2024-02/05-102846d64d2c691720df93b210f5bdf9.png" style="zoom:50%;" />
 
-<h4 id="说明-15"><a href="#说明-15" class="headerlink" title="说明"></a>说明</h4><ol>
+<h4 id="说明-16"><a href="#说明-16" class="headerlink" title="说明"></a>说明</h4><ol>
 <li>购买时间：2024.01.25（京东）</li>
 <li>测试时间：2024.02.05</li>
 <li>闪存：无法获取，疑似 TLC</li>
 </ol>
-<h2 id="硬盘"><a href="#硬盘" class="headerlink" title="硬盘"></a>硬盘</h2><h3 id="WD-My-Passport-2-TB"><a href="#WD-My-Passport-2-TB" class="headerlink" title="WD My Passport 2 TB"></a>WD My Passport 2 TB</h3><h4 id="测速-16"><a href="#测速-16" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/18-e6b4d067271d1e0e586431da8a30deac.jpeg" style="zoom:50%;" />
+<h2 id="硬盘"><a href="#硬盘" class="headerlink" title="硬盘"></a>硬盘</h2><h3 id="WD-My-Passport-2-TB"><a href="#WD-My-Passport-2-TB" class="headerlink" title="WD My Passport 2 TB"></a>WD My Passport 2 TB</h3><h4 id="测速-17"><a href="#测速-17" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/18-e6b4d067271d1e0e586431da8a30deac.jpeg" style="zoom:50%;" />
 
-<h4 id="说明-16"><a href="#说明-16" class="headerlink" title="说明"></a>说明</h4><ol>
+<h4 id="说明-17"><a href="#说明-17" class="headerlink" title="说明"></a>说明</h4><ol>
 <li>购买时间：2017.10.30</li>
 <li>测试时间：2022.06.18</li>
 <li>型号：WD20NMVW-11EDZS6</li>
 <li>磁记录：CMR</li>
 </ol>
-<h2 id="SSD"><a href="#SSD" class="headerlink" title="SSD"></a>SSD</h2><h3 id="小米笔记本-Pro-14-机载硬盘-512-GB（外置）"><a href="#小米笔记本-Pro-14-机载硬盘-512-GB（外置）" class="headerlink" title="小米笔记本 Pro 14 机载硬盘 512 GB（外置）"></a>小米笔记本 Pro 14 机载硬盘 512 GB（外置）</h3><h4 id="测速-17"><a href="#测速-17" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/14-64fdc63e5c2e2d7b4dcd59708f3e78a1.png" style="zoom:50%;" />
+<h2 id="SSD"><a href="#SSD" class="headerlink" title="SSD"></a>SSD</h2><h3 id="小米笔记本-Pro-14-机载硬盘-512-GB（外置）"><a href="#小米笔记本-Pro-14-机载硬盘-512-GB（外置）" class="headerlink" title="小米笔记本 Pro 14 机载硬盘 512 GB（外置）"></a>小米笔记本 Pro 14 机载硬盘 512 GB（外置）</h3><h4 id="测速-18"><a href="#测速-18" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-06/14-64fdc63e5c2e2d7b4dcd59708f3e78a1.png" style="zoom:50%;" />
 
-<h4 id="说明-17"><a href="#说明-17" class="headerlink" title="说明"></a>说明</h4><ol>
+<h4 id="说明-18"><a href="#说明-18" class="headerlink" title="说明"></a>说明</h4><ol>
 <li>购买时间：2021.09.14</li>
 <li>测试时间：2022.06.14</li>
 <li>型号：KIOXIA KBG40ZNV512G</li>
 <li>硬盘盒：ROG Strix Arion</li>
 <li>测试时总写入：866 GB</li>
 </ol>
-<h3 id="SAMSUNG-860-1-TB（外置）"><a href="#SAMSUNG-860-1-TB（外置）" class="headerlink" title="SAMSUNG 860 1 TB（外置）"></a>SAMSUNG 860 1 TB（外置）</h3><h4 id="测速-18"><a href="#测速-18" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-09/10-f0aea8e721a6f2a5624cb366e8c539e5.jpg" style="zoom:50%;" />
+<h3 id="SAMSUNG-860-1-TB（外置）"><a href="#SAMSUNG-860-1-TB（外置）" class="headerlink" title="SAMSUNG 860 1 TB（外置）"></a>SAMSUNG 860 1 TB（外置）</h3><h4 id="测速-19"><a href="#测速-19" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2022-09/10-f0aea8e721a6f2a5624cb366e8c539e5.jpg" style="zoom:50%;" />
 
-<h4 id="说明-18"><a href="#说明-18" class="headerlink" title="说明"></a>说明</h4><ol>
+<h4 id="说明-19"><a href="#说明-19" class="headerlink" title="说明"></a>说明</h4><ol>
 <li>购买时间：2022.09.10</li>
 <li>测试时间：2022.09.10</li>
 <li>硬盘盒：ROG Strix Arion</li>
 <li>测试时总写入：5 GB</li>
 </ol>
-<h3 id="SAMSUNG-T7-Shield-1-TB"><a href="#SAMSUNG-T7-Shield-1-TB" class="headerlink" title="SAMSUNG T7 Shield 1 TB"></a>SAMSUNG T7 Shield 1 TB</h3><h4 id="测速-19"><a href="#测速-19" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2024-02/05-3c518ad206b47a2f9d32112b70434386.png" style="zoom:50%;" />
+<h3 id="SAMSUNG-T7-Shield-1-TB"><a href="#SAMSUNG-T7-Shield-1-TB" class="headerlink" title="SAMSUNG T7 Shield 1 TB"></a>SAMSUNG T7 Shield 1 TB</h3><h4 id="测速-20"><a href="#测速-20" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2024-02/05-3c518ad206b47a2f9d32112b70434386.png" style="zoom:50%;" />
 
-<h4 id="说明-19"><a href="#说明-19" class="headerlink" title="说明"></a>说明</h4><ol>
+<h4 id="说明-20"><a href="#说明-20" class="headerlink" title="说明"></a>说明</h4><ol>
 <li>购买时间：2023.05.13</li>
 <li>测试时间：2024.02.05</li>
 <li>测试时总写入：152 GB</li>
 </ol>
-<h3 id="SAMSUNG-T7-Shield-2-TB"><a href="#SAMSUNG-T7-Shield-2-TB" class="headerlink" title="SAMSUNG T7 Shield 2 TB"></a>SAMSUNG T7 Shield 2 TB</h3><h4 id="测速-20"><a href="#测速-20" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2025-03/06-f407e70a789b27b5a1470997208d8565.png" style="zoom:50%;" />
+<h3 id="SAMSUNG-T7-Shield-2-TB"><a href="#SAMSUNG-T7-Shield-2-TB" class="headerlink" title="SAMSUNG T7 Shield 2 TB"></a>SAMSUNG T7 Shield 2 TB</h3><h4 id="测速-21"><a href="#测速-21" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2025-03/06-f407e70a789b27b5a1470997208d8565.png" style="zoom:50%;" />
 
 <p><img src="https://img.yeslu.cn/blog/2025-03/13-19d4c93f651fc403383076fd9b619262.png"></p>
-<h4 id="说明-20"><a href="#说明-20" class="headerlink" title="说明"></a>说明</h4><ol>
+<h4 id="说明-21"><a href="#说明-21" class="headerlink" title="说明"></a>说明</h4><ol>
 <li>购买时间：2025.03.06</li>
 <li>测试时间：2025.03.06</li>
 <li>测试时总写入：0 GB</li>
 </ol>
-<h3 id="Zhitai-TiPro7000-1-TB"><a href="#Zhitai-TiPro7000-1-TB" class="headerlink" title="Zhitai TiPro7000 1 TB"></a>Zhitai TiPro7000 1 TB</h3><h4 id="测速-21"><a href="#测速-21" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2024-11/05-3ec18e3fd0e0a156060e4a044267d48f.png" style="zoom:50%;" />
+<h3 id="Zhitai-TiPro7000-1-TB"><a href="#Zhitai-TiPro7000-1-TB" class="headerlink" title="Zhitai TiPro7000 1 TB"></a>Zhitai TiPro7000 1 TB</h3><h4 id="测速-22"><a href="#测速-22" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2024-11/05-3ec18e3fd0e0a156060e4a044267d48f.png" style="zoom:50%;" />
 
-<h4 id="说明-21"><a href="#说明-21" class="headerlink" title="说明"></a>说明</h4><ol>
+<h4 id="说明-22"><a href="#说明-22" class="headerlink" title="说明"></a>说明</h4><ol>
 <li>购买时间：2024.09.31</li>
 <li>测试时间：2024.10.26</li>
 <li>测试平台：平台 2（PCIe 4.0）</li>
 <li>测试时总写入：1077 GB</li>
 </ol>
-<h3 id="Kioxia-XG7-1-TB"><a href="#Kioxia-XG7-1-TB" class="headerlink" title="Kioxia XG7 1 TB"></a>Kioxia XG7 1 TB</h3><h4 id="测速-22"><a href="#测速-22" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2024-11/05-7f78090fd6c894b5cc2cdbb41702a11e.png" style="zoom:50%;" />
+<h3 id="Kioxia-XG7-1-TB"><a href="#Kioxia-XG7-1-TB" class="headerlink" title="Kioxia XG7 1 TB"></a>Kioxia XG7 1 TB</h3><h4 id="测速-23"><a href="#测速-23" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2024-11/05-7f78090fd6c894b5cc2cdbb41702a11e.png" style="zoom:50%;" />
 
-<h4 id="说明-22"><a href="#说明-22" class="headerlink" title="说明"></a>说明</h4><ol>
+<h4 id="说明-23"><a href="#说明-23" class="headerlink" title="说明"></a>说明</h4><ol>
 <li>购买时间：2024.09.31</li>
 <li>测试时间：2024.10.26</li>
 <li>测试平台：平台 2（PCIe 3.0）</li>
 <li>测试时总写入：513 GB</li>
 </ol>
-<h3 id="Micron-5200-Pro-1-96-TB"><a href="#Micron-5200-Pro-1-96-TB" class="headerlink" title="Micron 5200 Pro 1.96 TB"></a>Micron 5200 Pro 1.96 TB</h3><h4 id="测速-23"><a href="#测速-23" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2024-12/15-b8e649a00e821e37d49fb5661c1b91d8.png" style="zoom:50%;" />
+<h3 id="Micron-5200-Pro-1-96-TB"><a href="#Micron-5200-Pro-1-96-TB" class="headerlink" title="Micron 5200 Pro 1.96 TB"></a>Micron 5200 Pro 1.96 TB</h3><h4 id="测速-24"><a href="#测速-24" class="headerlink" title="测速"></a>测速</h4><img src="https://img.yeslu.cn/blog/2024-12/15-b8e649a00e821e37d49fb5661c1b91d8.png" style="zoom:50%;" />
 
-<h4 id="说明-23"><a href="#说明-23" class="headerlink" title="说明"></a>说明</h4><ol>
+<h4 id="说明-24"><a href="#说明-24" class="headerlink" title="说明"></a>说明</h4><ol>
 <li>购买时间：2024.12.12</li>
 <li>测试时间：2024.12.15</li>
 <li>测试平台：平台 2（SATA）</li>
