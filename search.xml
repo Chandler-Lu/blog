@@ -6003,13 +6003,13 @@
       </tags>
   </entry>
   <entry>
-    <title>Origin 中文插件列表 - 绘图（77 个）</title>
+    <title>Origin 中文插件列表 - 绘图（79 个）</title>
     <url>/archives/e935a643.html</url>
     <content><![CDATA[<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><ul>
 <li>这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建；</li>
 <li>目录及详细说明请阅读：<a href="https://www.yeslu.cn/archives/78c136de.html">目录</a>；</li>
 <li>本文除已授权单位外禁止转载；</li>
-<li>更新时间：2024-11-22 22:39:47</li>
+<li>更新时间：2026-07-15 19:13:54</li>
 </ul>
 <span id="more"></span>
 
@@ -6559,6 +6559,24 @@
 <li>关键词：柱子、放下、图表、很合适、拖</li>
 <li>Keywords: columns, drop, graph, fitting, drag</li>
 </ul>
+<h3 id="1065-Graph-Maker"><a href="#1065-Graph-Maker" class="headerlink" title="1065 - Graph Maker"></a>1065 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1065">Graph Maker</a></h3><blockquote>
+<p>通过拖放交互式创建分组数据图表<br>Create graph with grouped data interactively by drag-and-drop.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/graph/1065/Graph_Maker_scs.png!blog_watermark"></p>
+<ul>
+<li>关键词：分组数据图表、拖放界面、统计图表、分面拆分、实时预览</li>
+<li>Keywords: grouped data graph, drag-and-drop interface, statistical graph, panel splitting, live preview</li>
+</ul>
+<h3 id="1055-Nyquist-Plot"><a href="#1055-Nyquist-Plot" class="headerlink" title="1055 - Nyquist Plot"></a>1055 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1055">Nyquist Plot</a></h3><blockquote>
+<p>为指定传递函数的频率响应创建奈奎斯特图<br>Creates a Nyquist plot of the frequency response of a specified transfer function.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/graph/1055/Nyquist_Plot_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：为指定传递函数的频率响应创建奈奎斯特图</li>
+<li>Propose: Creates a Nyquist plot of the frequency response of a specified transfer function.</li>
+<li>关键词：奈奎斯特图、频率响应、传递函数、控制系统分析、伯德图替代</li>
+<li>Keywords: Nyquist plot, frequency response, transfer function, control systems analysis, Bode plot alternative</li>
+</ul>
 <h3 id="374-Send-Graphs-to-PowerPoint"><a href="#374-Send-Graphs-to-PowerPoint" class="headerlink" title="374 - Send Graphs to PowerPoint"></a>374 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=374">Send Graphs to PowerPoint</a></h3><blockquote>
 <p>将图形作为图片或嵌入对象发送到 PowerPoint。<br>Send graphs to PowerPoint as picture or embedded object.</p>
 </blockquote>
@@ -6646,7 +6664,7 @@
 <li>这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建；</li>
 <li>目录及详细说明请阅读：<a href="https://www.yeslu.cn/archives/78c136de.html">目录</a>；</li>
 <li>本文除已授权单位外禁止转载；</li>
-<li>更新时间：2024-11-22 22:39:47</li>
+<li>更新时间：2026-07-15 19:13:54</li>
 </ul>
 <span id="more"></span>
 
@@ -6755,13 +6773,13 @@
       </tags>
   </entry>
   <entry>
-    <title>Origin 中文插件列表 - 其他（9 个）</title>
+    <title>Origin 中文插件列表 - 其他（10 个）</title>
     <url>/archives/8238d0d9.html</url>
     <content><![CDATA[<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><ul>
 <li>这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建；</li>
 <li>目录及详细说明请阅读：<a href="https://www.yeslu.cn/archives/78c136de.html">目录</a>；</li>
 <li>本文除已授权单位外禁止转载；</li>
-<li>更新时间：2024-11-22 22:39:47</li>
+<li>更新时间：2026-07-15 19:13:54</li>
 </ul>
 <span id="more"></span>
 
@@ -6813,6 +6831,14 @@
 <li>关键词：文件、纽扣、打开、紧迫、记者</li>
 <li>Keywords: files, button, open, pressing, press</li>
 </ul>
+<h2 id="1067-OriginC-Autocomplete"><a href="#1067-OriginC-Autocomplete" class="headerlink" title="1067 - OriginC Autocomplete"></a>1067 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1067">OriginC Autocomplete</a></h2><blockquote>
+<p>为 Origin 的 Code Builder 添加 OriginC 语言支持<br>Adds language support for OriginC in Code Builder for Origin</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/miscellaneous/1067/OCLSP.gif"></p>
+<ul>
+<li>关键词：OriginC 语言支持、自动补全、转到定义、LSP 集成、Code Builder 集成开发环境</li>
+<li>Keywords: OriginC language support, Auto Complete, Go to definition, LSP integration, Code Builder IDE</li>
+</ul>
 <h2 id="601-Popular-Constants"><a href="#601-Popular-Constants" class="headerlink" title="601 - Popular Constants"></a>601 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=601">Popular Constants</a></h2><blockquote>
 <p>将常用常数或用户定义的常数添加到 Origin。<br>Add commonly used constants or user-defined constants to Origin.</p>
 </blockquote>
@@ -6846,13 +6872,13 @@
       </tags>
   </entry>
   <entry>
-    <title>Origin 中文插件列表 - 数据分析（151 个）</title>
+    <title>Origin 中文插件列表 - 数据分析（154 个）</title>
     <url>/archives/aa0d88d7.html</url>
     <content><![CDATA[<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><ul>
 <li>这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建；</li>
 <li>目录及详细说明请阅读：<a href="https://www.yeslu.cn/archives/78c136de.html">目录</a>；</li>
 <li>本文除已授权单位外禁止转载；</li>
-<li>更新时间：2024-11-22 22:39:47</li>
+<li>更新时间：2026-07-15 19:13:54</li>
 </ul>
 <span id="more"></span>
 
@@ -6948,6 +6974,14 @@
 <li>关键词：NMR、打开、工具、对话、阴谋</li>
 <li>Keywords: nmr, open, tools, dialog, plot</li>
 </ul>
+<h4 id="1074-Raman-Peak-Studio"><a href="#1074-Raman-Peak-Studio" class="headerlink" title="1074 - Raman Peak Studio"></a>1074 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1074">Raman Peak Studio</a></h4><blockquote>
+<p>拖放式拉曼峰拟合：支持BWF&#x2F;非对称线型、arPLS基线、AIC&#x2F;BIC&#x2F;F检验模型选择、Bootstrap置信区间、双区域碳材料分析流程，并可导出至Origin。<br>Drag-and-drop Raman peak fitting: BWF&#x2F;asymmetric lineshapes, arPLS baselines, AIC&#x2F;BIC&#x2F;F-test model selection, bootstrap CIs, two-zone carbon workflow, and Origin export.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-analysis/1074/ScreenShot.png!blog_watermark"></p>
+<ul>
+<li>关键词：拉曼光谱、峰拟合、基线校正、模型选择、碳材料分析</li>
+<li>Keywords: Raman spectroscopy, peak fitting, baseline correction, model selection, carbon materials analysis</li>
+</ul>
 <h3 id="脑成像与神经科学"><a href="#脑成像与神经科学" class="headerlink" title="脑成像与神经科学"></a>脑成像与神经科学</h3><h4 id="962-Brain-Atlas-Analyzer"><a href="#962-Brain-Atlas-Analyzer" class="headerlink" title="962 - Brain Atlas Analyzer"></a>962 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=962">Brain Atlas Analyzer</a></h4><blockquote>
 <p>分析大脑图像，为集合中的每个所需图像定义多个 ROI，然后提取统计信息。<br>Analyze images of brain, define multiple ROIs for each desired image in the collection, and then extract stats.</p>
 </blockquote>
@@ -7003,6 +7037,16 @@
 <li>Propose: This App can be used to determine the optimal number of clusters, which is an important parameter in cluster analysis.</li>
 <li>关键词：集群、号码、集群、间隙、最佳状态</li>
 <li>Keywords: clusters, number, cluster, gap, optimal</li>
+</ul>
+<h4 id="1073-Predictive-Modeling-Advisor"><a href="#1073-Predictive-Modeling-Advisor" class="headerlink" title="1073 - Predictive Modeling Advisor"></a>1073 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1073">Predictive Modeling Advisor</a></h4><blockquote>
+<p>帮助确定合适的预测建模&#x2F;工具&#x2F;App<br>Help to determine the appropriate predictive modeling&#x2F;tool&#x2F;App.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-analysis/1073/Predictive_Modeling_Advisor_scs.gif"></p>
+<ul>
+<li>应用目标：帮助用户选择最适合其数据的预测建模方法，包括相关工具和App</li>
+<li>Propose: The purpose of this app is to help you pick the most appropriate predictive modeling that is best suited for your data, including the tools and Apps.</li>
+<li>关键词：预测建模、模型选择、决策支持、机器学习指导、数据分析工作流</li>
+<li>Keywords: predictive modeling, model selection, decision support, machine learning guidance, data analysis workflow</li>
 </ul>
 <h4 id="570-SVM-Classification"><a href="#570-SVM-Classification" class="headerlink" title="570 - SVM Classification"></a>570 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=570">SVM Classification</a></h4><blockquote>
 <p>分类支持向量机。<br>Support vector machine for classification.</p>
@@ -7099,6 +7143,16 @@
 <ul>
 <li>关键词：线性的、约束、准备好了、界限、多个</li>
 <li>Keywords: linear, bound, set, bounds, multiple</li>
+</ul>
+<h4 id="1063-Convert-Global-to-Local-Coordinates"><a href="#1063-Convert-Global-to-Local-Coordinates" class="headerlink" title="1063 - Convert Global to Local Coordinates"></a>1063 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1063">Convert Global to Local Coordinates</a></h4><blockquote>
+<p>将XY或XYZ数据的全局坐标转换为局部坐标<br>Convert global to local coordinates for XY or XYZ data.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-analysis/1063/Convert_Global_to_Local_Coordinates_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：本应用可将2D XY或3D XYZ点的全局坐标转换为局部坐标，支持矩形、球面（3D）和极坐标（2D）坐标系。</li>
+<li>Propose: This app can convert global to local coordinates for 2D XY or 3D XYZ points. It supports rectangle, spherical(3D) and polar(2D) coordinate systems.</li>
+<li>关键词：坐标变换、极坐标、球坐标、二维&#x2F;三维数据转换、旋转矩阵</li>
+<li>Keywords: coordinate transformation, polar coordinates, spherical coordinates, 2D&#x2F;3D data conversion, rotation matrix</li>
 </ul>
 <h4 id="597-Crystallization-Fit"><a href="#597-Crystallization-Fit" class="headerlink" title="597 - Crystallization Fit"></a>597 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=597">Crystallization Fit</a></h4><blockquote>
 <p>遵循结晶动力学使用 Avrami 和 Lauritzen 和 Hoffman 理论。只要把你的实验数据和一些理论参数输入应用程序，然后应用程序就会完成剩下的工作。<br>Follow the crystallization kinetics using the Avrami and Lauritzen and Hoffman Theory. Just feed the App with your experimental data and some theoretical parameters, and then the App will do the rest.</p>
@@ -7697,7 +7751,7 @@
 <h4 id="1037-Partial-Least-Squares-Discriminant-Analysis"><a href="#1037-Partial-Least-Squares-Discriminant-Analysis" class="headerlink" title="1037 - Partial Least Squares Discriminant Analysis"></a>1037 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1037">Partial Least Squares Discriminant Analysis</a></h4><blockquote>
 <p>使用偏最小二乘法进行判别分析。<br>Perform discriminant analysis with partial least squares.</p>
 </blockquote>
-<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-analysis/1307/Partial_Least_Squares_Discriminant_Analysis_scs.png!blog_watermark"></p>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-analysis/1037/Partial_Least_Squares_Discriminant_Analysis_scs.png!blog_watermark"></p>
 <ul>
 <li>应用目标：该应用程序用于执行基于偏最小二乘回归的判别分析，这是一种从样本中提取最相关特征信息以促进分类分析的方法。</li>
 <li>Propose: This App is used to perform discriminant analysis based on partial least squares regression, a method that extracts the most relevant feature information from samples to facilitate classification analysis.</li>
@@ -8519,13 +8573,13 @@
       </tags>
   </entry>
   <entry>
-    <title>Origin 中文插件列表 - 数据连接（31 个）</title>
+    <title>Origin 中文插件列表 - 数据连接（42 个）</title>
     <url>/archives/2bdf2924.html</url>
     <content><![CDATA[<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><ul>
 <li>这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建；</li>
 <li>目录及详细说明请阅读：<a href="https://www.yeslu.cn/archives/78c136de.html">目录</a>；</li>
 <li>本文除已授权单位外禁止转载；</li>
-<li>更新时间：2024-11-22 22:39:47</li>
+<li>更新时间：2026-07-15 19:13:54</li>
 </ul>
 <span id="more"></span>
 
@@ -8552,6 +8606,26 @@
 <ul>
 <li>关键词：连接、连接器、书、项目、点击数据</li>
 <li>Keywords: connect, connector, book, project, clickdata</li>
+</ul>
+<h2 id="1066-DIFFRAC-Connector"><a href="#1066-DIFFRAC-Connector" class="headerlink" title="1066 - DIFFRAC Connector"></a>1066 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1066">DIFFRAC Connector</a></h2><blockquote>
+<p>连接至 Bruker DQL&#x2F;RAW 文件（*.raw 和 <em>.dql）<br>Connect to Bruker DQL&#x2F;RAW files (</em>.raw and *.dql)</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-connector/1066/DIFFRAC_Connector_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：此应用程序可将 Bruker DQL&#x2F;RAW 文件（<em>.raw、</em>.dql）从文件或网站导入 Origin。它可以连接到源文件，当源文件更改时，Origin 中导入的数据也会同步更新。</li>
+<li>Propose: This app can import a Bruker DQL&#x2F;RAW files (*.raw, *dql) from a file or website in Origin. It can connect to the source file, and when the source is changed, the imported data in Origin is also updated.</li>
+<li>关键词：Bruker DQL&#x2F;RAW 文件导入、实时数据连接、X射线衍射数据、文件同步、网络数据连接器</li>
+<li>Keywords: Bruker DQL&#x2F;RAW file import, live data connection, X-ray diffraction data, file synchronization, web data connector</li>
+</ul>
+<h2 id="1059-DMD-Connector"><a href="#1059-DMD-Connector" class="headerlink" title="1059 - DMD Connector"></a>1059 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1059">DMD Connector</a></h2><blockquote>
+<p>连接 DMD 文件 (<em>.dmd)<br>Connect to DMD files (</em>.dmd)</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-connector/1059/DMD_Connector_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：此应用可在 Origin 中从文件或网站导入 DMD 文件 (*.dmd)。它可以连接到源文件，当源文件更改时，Origin 中导入的数据也会同步更新。</li>
+<li>Propose: This app can import a DMD file (*.dmd) from a file or website in Origin. It can connect to the source file, and when the source is changed, the imported data in Origin is also updated.</li>
+<li>关键词：DMD 文件导入、数据连接器、实时数据链接、网页数据连接、文件同步</li>
+<li>Keywords: DMD file import, data connector, live data link, web data connection, file synchronization</li>
 </ul>
 <h2 id="530-Excel-Connector"><a href="#530-Excel-Connector" class="headerlink" title="530 - Excel Connector"></a>530 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=530">Excel Connector</a></h2><blockquote>
 <p>从文件或网站将 Origin 项目连接到 Excel 文件。<br>Connect the Origin project to an Excel file from a file or web site.</p>
@@ -8603,6 +8677,16 @@
 <li>关键词：进口、过滤器、过滤器、连接器、进口的</li>
 <li>Keywords: import, filters, filter, connector, imported</li>
 </ul>
+<h2 id="1061-Ivium-Connector"><a href="#1061-Ivium-Connector" class="headerlink" title="1061 - Ivium Connector"></a>1061 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1061">Ivium Connector</a></h2><blockquote>
+<p>连接 Ivium 文件（*.ids 和 <em>.idf）<br>Connect to Ivium files (</em>.ids and *.idf) Ivium Ivium</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-connector/1061/Ivium_Connector_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：此应用可从文件或网站将 Ivium 文件（*.ids 和 *.idf）导入 Origin。它可以连接到源文件，当源文件更改时，Origin 中导入的数据也会同步更新。</li>
+<li>Propose: This app can import a Ivium file (*.ids and *.idf) from a file or website in Origin. It can connect to the source file, and when the source is changed, the imported data in Origin is also updated.</li>
+<li>关键词：Ivium 文件导入、电化学数据、实时数据连接、文件同步、网络数据连接器</li>
+<li>Keywords: Ivium file import, electrochemical data, live data connection, file synchronization, web data connector</li>
+</ul>
 <h2 id="505-JSON-Connector"><a href="#505-JSON-Connector" class="headerlink" title="505 - JSON Connector"></a>505 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=505">JSON Connector</a></h2><blockquote>
 <p>从文件或网站导入 JSON。<br>Import JSON from a file or web site.</p>
 </blockquote>
@@ -8618,6 +8702,14 @@
 <ul>
 <li>关键词：连接、连接器、项目、书、点击数据</li>
 <li>Keywords: connect, connector, project, book, clickdata</li>
+</ul>
+<h2 id="1047-LiDAR-Connector"><a href="#1047-LiDAR-Connector" class="headerlink" title="1047 - LiDAR Connector"></a>1047 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1047">LiDAR Connector</a></h2><blockquote>
+<p>连接 LiDAR 文件（*.las, <em>.laz）<br>Connect to LiDAR files (</em>.las, *.laz).</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-connector/1047/LiDAR_Connector_scs.png!blog_watermark"></p>
+<ul>
+<li>关键词：LiDAR 数据导入、LAS 文件格式、点云数据、地理空间数据连接器、三维数据可视化</li>
+<li>Keywords: LiDAR data import, LAS file format, point cloud data, geospatial data connector, 3D data visualization</li>
 </ul>
 <h2 id="513-MATLAB-Connector"><a href="#513-MATLAB-Connector" class="headerlink" title="513 - MATLAB Connector"></a>513 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=513">MATLAB Connector</a></h2><blockquote>
 <p>连接到 Matlab 文件<br>Connect to matlab file</p>
@@ -8635,6 +8727,16 @@
 <li>关键词：连接器、连接、书、信号、项目</li>
 <li>Keywords: connector, connect, book, signals, project</li>
 </ul>
+<h2 id="1058-Maccor-Connector"><a href="#1058-Maccor-Connector" class="headerlink" title="1058 - Maccor Connector"></a>1058 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1058">Maccor Connector</a></h2><blockquote>
+<p>连接 Maccor 文件<br>Connect to Maccor files</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-connector/1058/Maccor_Connector_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：此应用可从文件或网站将 Maccor 数据集导入 Origin。它可以连接到源文件，当源文件更改时，Origin 中导入的数据也会同步更新。</li>
+<li>Propose: This app can import a Maccor dataset from a file or website in Origin. It can connect to the source file, and when the source is changed, the imported data in Origin is also updated.</li>
+<li>关键词：Maccor 数据导入、电池测试数据、数据连接器、实时数据更新、网络数据连接</li>
+<li>Keywords: Maccor data import, battery test data, data connector, live data update, web data connection</li>
+</ul>
 <h2 id="559-MetroPro-Connector"><a href="#559-MetroPro-Connector" class="headerlink" title="559 - MetroPro Connector"></a>559 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=559">MetroPro Connector</a></h2><blockquote>
 <p>连接到 MetroPro 二进制数据。<br>Connect to MetroPro binary data.</p>
 </blockquote>
@@ -8642,6 +8744,16 @@
 <ul>
 <li>关键词：连接、连接器、书、点击数据、项目</li>
 <li>Keywords: connect, connector, book, clickdata, project</li>
+</ul>
+<h2 id="1053-Metrohm-Connector"><a href="#1053-Metrohm-Connector" class="headerlink" title="1053 - Metrohm Connector"></a>1053 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1053">Metrohm Connector</a></h2><blockquote>
+<p>创建与 *.nox 和 *.irf 文件的连接。<br>Create a connection to *.nox and *.irf files.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-connector/1053/Metrohm_Connector_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：此应用可将 Metrohm 文件（*.irf、*nox）从文件或网站导入 Origin。它可以连接到源文件，当源文件更改时，Origin 中导入的数据也会同步更新。</li>
+<li>Propose: This app can import a Metrohm file (*.irf, *nox) from a file or website in Origin. It can connect to the source file, and when the source is changed, the imported data in Origin is also updated.</li>
+<li>关键词：Metrohm 文件导入、数据连接器、实时数据连接、光谱数据、电化学数据</li>
+<li>Keywords: Metrohm file import, data connector, live data connection, spectroscopy data, electrochemical data</li>
 </ul>
 <h2 id="561-Minitab-Connector"><a href="#561-Minitab-Connector" class="headerlink" title="561 - Minitab Connector"></a>561 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=561">Minitab Connector</a></h2><blockquote>
 <p>连接到 Minitab 项目(* . mpx)和工作表(* . mwx)文件。<br>Connecto to Minitab project (<em>.mpx) and worksheet (</em>.mwx) files.</p>
@@ -8667,6 +8779,16 @@
 <li>关键词：连接器、连接、数据集、支持、华盛顿</li>
 <li>Keywords: connector, connect, dataset, supported, dc</li>
 </ul>
+<h2 id="1056-Neware-Connector"><a href="#1056-Neware-Connector" class="headerlink" title="1056 - Neware Connector"></a>1056 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1056">Neware Connector</a></h2><blockquote>
+<p>连接 Neware 文件（*.nda 和 <em>.ndax）<br>Connect to Neware files (</em>.nda and *.ndax)</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-connector/1056/Neware_Connector_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：该应用可将 Neware 文件（*.nda、*ndax）从文件或网站导入 Origin。它能连接到源文件，当源文件发生变化时，Origin 中导入的数据也会同步更新。</li>
+<li>Propose: This app can import a Neware file (*.nda, *ndax) from a file or website in Origin. It can connect to the source file, and when the source is changed, the imported data in Origin is also updated.</li>
+<li>关键词：电池数据导入、实时数据同步、文件连接器、网络数据连接、电化学数据</li>
+<li>Keywords: battery data import, real-time data synchronization, file connector, web data connection, electrochemical data</li>
+</ul>
 <h2 id="961-Nicolet-WFT-Connector"><a href="#961-Nicolet-WFT-Connector" class="headerlink" title="961 - Nicolet WFT Connector"></a>961 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=961">Nicolet WFT Connector</a></h2><blockquote>
 <p>连接到尼古拉 WFT 文件。<br>Connect to Nicolet WFT files.</p>
 </blockquote>
@@ -8675,6 +8797,14 @@
 <li>关键词：WFT、工作空间、工作表、数据菜单、应用程序</li>
 <li>Keywords: wft, workspace, worksheet, thedatamenu, theapps</li>
 </ul>
+<h2 id="1048-OMNIC-Connector"><a href="#1048-OMNIC-Connector" class="headerlink" title="1048 - OMNIC Connector"></a>1048 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1048">OMNIC Connector</a></h2><blockquote>
+<p>OMNIC spa文件连接器<br>Connector to OMNIC spa files (*.spa).</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-connector/1048/OMNIC_Connector_scs.png!blog_watermark"></p>
+<ul>
+<li>关键词：OMNIC文件导入、SPA文件连接器、光谱数据、赛默飞世尔、基于文件的数据连接器</li>
+<li>Keywords: OMNIC file import, SPA file connector, spectroscopy data, Thermo Fisher, file-based data connector</li>
+</ul>
 <h2 id="509-Origin-Connector"><a href="#509-Origin-Connector" class="headerlink" title="509 - Origin Connector"></a>509 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=509">Origin Connector</a></h2><blockquote>
 <p>连接到 Origin 项目或窗口文件。<br>Connect to an Origin project or window file.</p>
 </blockquote>
@@ -8682,6 +8812,14 @@
 <ul>
 <li>关键词：连接器、项目、书、连接、进口的</li>
 <li>Keywords: connector, project, book, connect, imported</li>
+</ul>
+<h2 id="1049-PHI-Connector"><a href="#1049-PHI-Connector" class="headerlink" title="1049 - PHI Connector"></a>1049 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1049">PHI Connector</a></h2><blockquote>
+<p>连接 PHI 文件 (<em>.spe)<br>Connect to PHI files (</em>.spe).</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-connector/1049/PHI_Connector_scs.png!blog_watermark"></p>
+<ul>
+<li>关键词：PHI 光谱仪、SPE 文件导入、多区域测量、数据连接器、表面分析</li>
+<li>Keywords: PHI spectrometer, SPE file import, multiregion measurement, data connector, surface analysis</li>
 </ul>
 <h2 id="523-PLEXON-Connector"><a href="#523-PLEXON-Connector" class="headerlink" title="523 - PLEXON Connector"></a>523 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=523">PLEXON Connector</a></h2><blockquote>
 <p>连接到 PL2格式的 PLEXON 文件。<br>Connect to a PLEXON file in PL2 format.</p>
@@ -8700,6 +8838,26 @@
 <li>Propose: This app can be used to import PerkinElmer file (*.sp) from a file or website in Origin. It can connect to the source file, when the source is changed, the imported data in Origin is also updated.</li>
 <li>关键词：PerkinElmer文件</li>
 <li>Keywords: PerkinElmer File</li>
+</ul>
+<h2 id="1070-Prism-Connector"><a href="#1070-Prism-Connector" class="headerlink" title="1070 - Prism Connector"></a>1070 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1070">Prism Connector</a></h2><blockquote>
+<p>将 Prism 文件（.xml、.pzfx、.prism、.prismt）导入以自动构建结构化工作表。<br>Import Prism file (.xml, .pzfx, .prism, .prismt) to automatically construct structured worksheet.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-connector/1070/Prism_Connector_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：此应用可从文件或网站将 Prism 文件（.xml、.pzfx、.prism、.prismt）导入 Origin。</li>
+<li>Propose: This app can import a Prism file (.xml, .pzfx, .prism, .prismt) from a file or website in Origin.</li>
+<li>关键词：Prism 文件导入、数据连接器、结构化工作表、网络数据连接、多格式支持</li>
+<li>Keywords: Prism file import, data connector, structured worksheet, web data connection, multi-format support</li>
+</ul>
+<h2 id="1060-RPC3-Connector"><a href="#1060-RPC3-Connector" class="headerlink" title="1060 - RPC3 Connector"></a>1060 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1060">RPC3 Connector</a></h2><blockquote>
+<p>连接 RPC3 文件 (<em>.rsp)<br>Connect to RPC3 files (</em>.rsp)</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/data-connector/1060/RPC3_Connector_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：此应用可在 Origin 中从本地文件或网站导入 RPC3 文件 (*.rsp)。它可以连接到源文件，当源文件更改时，Origin 中导入的数据也会同步更新。</li>
+<li>Propose: This app can import a RPC3 file (*.rsp) from a file or website in Origin. It can connect to the source file, and when the source is changed, the imported data in Origin is also updated.</li>
+<li>关键词：RPC3 文件导入、数据连接器、实时数据连接、网页数据导入、自动数据更新</li>
+<li>Keywords: RPC3 file import, data connector, live data connection, web data import, automatic data update</li>
 </ul>
 <h2 id="610-Shapefile-Connector"><a href="#610-Shapefile-Connector" class="headerlink" title="610 - Shapefile Connector"></a>610 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=610">Shapefile Connector</a></h2><blockquote>
 <p>到 shapefile 数据的连接器。<br>Connector to shapefile data.</p>
@@ -8792,13 +8950,13 @@
       </tags>
   </entry>
   <entry>
-    <title>Origin 中文插件列表 - 导入导出（35 个）</title>
+    <title>Origin 中文插件列表 - 导入导出（36 个）</title>
     <url>/archives/26810621.html</url>
     <content><![CDATA[<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><ul>
 <li>这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建；</li>
 <li>目录及详细说明请阅读：<a href="https://www.yeslu.cn/archives/78c136de.html">目录</a>；</li>
 <li>本文除已授权单位外禁止转载；</li>
-<li>更新时间：2024-11-22 22:39:47</li>
+<li>更新时间：2026-07-15 19:13:54</li>
 </ul>
 <span id="more"></span>
 
@@ -9060,6 +9218,16 @@
 <li>关键词：走吧、出现、clickok、拖、放下</li>
 <li>Keywords: vamas, appear, clickok, drag, drop</li>
 </ul>
+<h3 id="1050-Import-and-Export-STL"><a href="#1050-Import-and-Export-STL" class="headerlink" title="1050 - Import and Export STL"></a>1050 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1050">Import and Export STL</a></h3><blockquote>
+<p>导入STL文件，创建曲面，并将数据导出为STL文件。<br>Import STL file, create surface, and export data to STL file.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/import-and-export/1050/Import_and_Export_STL_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：此应用程序允许您以STL文件格式导入和导出3D模型。</li>
+<li>Propose: This app allows you to import and export 3D models in STL file format.</li>
+<li>关键词：三维模型导入、三维模型导出、曲面图生成、STL文件格式、网格可视化</li>
+<li>Keywords: 3D model import, 3D model export, surface plot generation, STL file format, mesh visualization</li>
+</ul>
 <h3 id="1011-JMP-Connector"><a href="#1011-JMP-Connector" class="headerlink" title="1011 - JMP Connector"></a>1011 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1011">JMP Connector</a></h3><blockquote>
 <p>连接到 JMP 表(* . JMP)文件。<br>Connect to JMP table (*.jmp) files.</p>
 </blockquote>
@@ -9230,6 +9398,7 @@
 <li><a href="https://www.yeslu.cn/archives/da105a28.html">数据处理插件</a></li>
 <li><a href="https://www.yeslu.cn/archives/2bdf2924.html">数据连接插件</a></li>
 <li><a href="https://www.yeslu.cn/archives/26810621.html">导入导出插件</a></li>
+<li><a href="https://www.yeslu.cn/archives/lna79yc9.html">统计插件</a></li>
 <li><a href="https://www.yeslu.cn/archives/8238d0d9.html">其他插件</a></li>
 </ul>
 <h2 id="本文提供的"><a href="#本文提供的" class="headerlink" title="本文提供的"></a>本文提供的</h2><ul>
@@ -10629,6 +10798,85 @@
       </categories>
       <tags>
         <tag>Graph</tag>
+        <tag>Origin</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Origin 中文插件列表 - 统计（6 个）</title>
+    <url>/archives/lna79yc9.html</url>
+    <content><![CDATA[<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><ul>
+<li>这是 Origin 中文插件列表中的一个部分，基于 Origin 插件数据库自动构建；</li>
+<li>目录及详细说明请阅读：<a href="https://www.yeslu.cn/archives/78c136de.html">目录</a>；</li>
+<li>本文除已授权单位外禁止转载；</li>
+<li>更新时间：2026-07-15 19:13:54</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="1071-Acceptance-Sampling-Analysis"><a href="#1071-Acceptance-Sampling-Analysis" class="headerlink" title="1071 - Acceptance Sampling Analysis"></a>1071 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1071">Acceptance Sampling Analysis</a></h2><blockquote>
+<p>根据代表性样本中观察到的质量，决定接受或拒收批次。<br>Decide whether to accept or reject a lot based on the quality observed in a representative sample.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/statistics/1071/Acceptance_Sampling_Analysis_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：验收抽样分析提供统计框架，用于根据代表性样本获得的信息，决定接受或拒收入货物料批次。</li>
+<li>Propose: Acceptance Sampling Analysis provides a statistical framework for deciding whether to accept or reject incoming material lots based on information obtained from a representative sample.</li>
+<li>关键词：验收抽样、质量控制、抽样方案、AQL RQL分析、批次检验</li>
+<li>Keywords: acceptance sampling, quality control, sampling plan, AQL RQL analysis, lot inspection</li>
+</ul>
+<h2 id="1054-Best-Subset-Selection"><a href="#1054-Best-Subset-Selection" class="headerlink" title="1054 - Best Subset Selection"></a>1054 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1054">Best Subset Selection</a></h2><blockquote>
+<p>对给定自变量比较所有可能的多元线性回归模型，并针对不同统计量显示最优自变量子集。<br>Compare all possible multiple linear regression models for given independent variables, and display optimal subsets of independent variables for different statistics.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/statistics/1054/Best_Subset_Selection_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：该应用可将输入数据拟合所有可能的多元线性回归模型，比较这些模型，并针对不同统计标准找到最优自变量子集。</li>
+<li>Propose: This app can fit input data with all possible multiple linear regression models, compare these models, and find optimal subsets of independent variables for different statistics criteria.</li>
+<li>关键词：多元线性回归、最优子集选择、模型比较、变量选择、回归诊断</li>
+<li>Keywords: multiple linear regression, best subset selection, model comparison, variable selection, regression diagnostics</li>
+</ul>
+<h2 id="1069-Random-Forest"><a href="#1069-Random-Forest" class="headerlink" title="1069 - Random Forest"></a>1069 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1069">Random Forest</a></h2><blockquote>
+<p>构建并分析用于分类和回归任务的随机森林模型<br>Build and analyze random forest models for both classification and regression tasks.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/statistics/1069/Random_Forest_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：此应用可训练并应用随机森林模型进行预测分析</li>
+<li>Propose: This app can train and apply random forest models for predictive analysis.</li>
+<li>关键词：随机森林、分类、回归、预测建模、机器学习</li>
+<li>Keywords: random forest, classification, regression, predictive modeling, machine learning</li>
+</ul>
+<h2 id="1062-Reliability-and-Survival-Analysis"><a href="#1062-Reliability-and-Survival-Analysis" class="headerlink" title="1062 - Reliability and Survival Analysis"></a>1062 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1062">Reliability and Survival Analysis</a></h2><blockquote>
+<p>分析可靠性及生存分析中的时间-事件数据，包括删失数据<br>Analyze time-to-event data including censored data in reliability and survival.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/statistics/1062/Reliability_and_Survival_Analysis_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：该应用程序可用于分析可靠性及生存分析中的时间-事件数据，包括删失数据。包含四个工具：右删失参数分布分析、任意删失非参数分布分析、保修分析和加速寿命试验。</li>
+<li>Propose: This app can be used to analyze time-to-event data including censored data in reliability and survival. It includes four tools: Parametric Distribution Analysis for Right Censoring , Nonparametric Distribution Analysis for Arbitrary Censoring , Warranty Analysis and Accelerated Life Testing .</li>
+<li>关键词：可靠性分析、生存分析、删失数据、寿命分布、加速寿命试验</li>
+<li>Keywords: reliability analysis, survival analysis, censored data, life distribution, accelerated life testing</li>
+</ul>
+<h2 id="1072-Stability-Study"><a href="#1072-Stability-Study" class="headerlink" title="1072 - Stability Study"></a>1072 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1072">Stability Study</a></h2><blockquote>
+<p>创建稳定性研究数据收集的自定义工作表，并分析产品稳定性以预测其保质期。<br>Create a custom worksheet for stability study data collection, and analyze the stability of a product to predict its shelf life.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/statistics/1072/Stability_Study_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：本应用提供创建稳定性研究数据收集自定义工作表的工具，以及另一个拟合时间和批次的一般线性模型的工具，可用于预测保质期。</li>
+<li>Propose: This App provides a tool to create a custom worksheet for stability study data collection, and another tool to fit a general linear model against time and batch, which can be used to predict shelf life.</li>
+<li>关键词：稳定性研究、保质期预测、一般线性模型、批次分析、规格限</li>
+<li>Keywords: stability study, shelf life prediction, general linear model, batch analysis, specification limits</li>
+</ul>
+<h2 id="1064-Stem-and-Leaf-Plot"><a href="#1064-Stem-and-Leaf-Plot" class="headerlink" title="1064 - Stem-and-Leaf Plot"></a>1064 - <a href="https://www.originlab.com/fileExchange/details.aspx?fid=1064">Stem-and-Leaf Plot</a></h2><blockquote>
+<p>从数据创建茎叶图<br>Create a stem-and-leaf plot from data.</p>
+</blockquote>
+<p><img src="https://img.yeslu.cn/blog/origin-apps-graphs/statistics/1064/Stem-and-Leaf_Plot_scs.png!blog_watermark"></p>
+<ul>
+<li>应用目标：创建茎叶图</li>
+<li>Propose: Create Stem-and-Leaf Plot</li>
+<li>关键词：茎叶图、探索性数据分析、数据可视化、统计图形、异常值检测</li>
+<li>Keywords: stem-and-leaf plot, exploratory data analysis, data visualization, statistical graphics, outlier detection</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Science</category>
+      </categories>
+      <tags>
         <tag>Origin</tag>
       </tags>
   </entry>
